@@ -40,6 +40,7 @@ import unicodedata
 import urllib.parse
 import urllib.request
 from datetime import date, datetime
+from email.utils import format_datetime
 from html import escape
 from pathlib import Path
 from xml.sax.saxutils import escape as escape_xml
@@ -145,6 +146,12 @@ header nav a:hover { color:var(--oro); }
 .legal ul { padding-left:22px; }
 
 .articulo p { margin-bottom:14px; }
+.compartir { margin-top:40px; padding:20px 16px; border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); text-align:center; }
+.compartir p { margin-bottom:12px; color:var(--pergamino-2); }
+.compartir div { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+.compartir a, .compartir button { font-family:'Special Elite','Courier New',monospace; font-size:14px; letter-spacing:.06em; cursor:pointer;
+  padding:8px 14px; border-radius:4px; border:1px solid rgba(201,180,138,.35); background:transparent; color:var(--pergamino); text-decoration:none; }
+.compartir a:hover, .compartir button:hover { border-color:var(--oro); color:var(--oro); }
 .nota { color:var(--pergamino-2); font-size:15px; }
 .apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 16px;
   border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); }
@@ -205,7 +212,10 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
            f'<meta property="og:description" content="{desc}">\n'
            f'<meta property="og:url" content="{URL}/{ruta}">\n'
            f'<meta property="og:image" content="{escape(url_absoluta(imagen))}">\n'
-           '<meta name="twitter:card" content="summary_large_image">\n')
+           '<meta name="twitter:card" content="summary_large_image">\n'
+           # Imágenes grandes en Google Discover y en los resultados
+           '<meta name="robots" content="max-image-preview:large">\n'
+           f'<link rel="alternate" type="application/rss+xml" title="{escape(canal["nombre"])}" href="{URL}/feed.xml">\n')
     if canal.get("google_verificacion"):
         seo += f'<meta name="google-site-verification" content="{escape(canal["google_verificacion"])}">\n'
     if canal.get("bing_verificacion"):
@@ -231,7 +241,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 </div></header>
 {cuerpo}
 {apoyo(canal)}
-<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a>{aviso_afiliados(canal)}</footer>
+<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {extra}
 </body>
 </html>
@@ -266,6 +276,32 @@ def enlace_libro(libro: dict, canal: dict) -> str:
     busqueda = urllib.parse.quote_plus(f"{libro['titulo']} {libro.get('autor', '')}".strip())
     url = f"https://www.amazon.es/s?k={busqueda}&tag={urllib.parse.quote(canal['amazon_tag'])}"
     return f'<li><a href="{escape(url)}" rel="sponsored noopener">{texto}</a></li>'
+
+
+COPIAR_JS = """
+<script>
+document.querySelectorAll('.copiar').forEach(function (b) {
+  b.addEventListener('click', function () {
+    navigator.clipboard.writeText(b.dataset.url).then(function () { b.textContent = '¡ENLACE COPIADO!'; });
+  });
+});
+</script>
+"""
+
+
+def compartir(e: dict, ruta: str) -> str:
+    """Botones para compartir el expediente (enlaces normales, sin scripts de terceros)."""
+    url = f"{URL}/{ruta}"
+    texto = f"{e['titulo']} · El Archivo Curioso"
+    q = urllib.parse.quote
+    redes = (("WHATSAPP", f"https://wa.me/?text={q(texto + ' ' + url)}"),
+             ("TELEGRAM", f"https://t.me/share/url?url={q(url)}&text={q(texto)}"),
+             ("X", f"https://twitter.com/intent/tweet?url={q(url)}&text={q(texto)}"),
+             ("MENÉAME", f"https://www.meneame.net/submit?url={q(url)}"),
+             ("REDDIT", f"https://www.reddit.com/submit?url={q(url)}&title={q(e['titulo'])}"))
+    botones = "".join(f'<a href="{escape(u)}" rel="noopener" target="_blank">{n}</a>' for n, u in redes)
+    return (f'<div class="compartir"><p>¿Conoces a alguien a quien le encantaría este expediente? Pásaselo.</p>'
+            f'<div>{botones}<button class="copiar" data-url="{escape(url)}">COPIAR ENLACE</button></div></div>')
 
 
 def ficha(e: dict) -> str:
@@ -354,6 +390,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 <div class="datos">{datos}</div>
 {video}
 {bloques}
+{compartir(e, f"expedientes/{e['_slug']}.html")}
 {nav}
 </main>"""
     ruta = f"expedientes/{e['_slug']}.html"
@@ -376,7 +413,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     if e.get("etiquetas"):
         jsonld["keywords"] = ", ".join(e["etiquetas"])
     return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
-                  ruta=ruta, imagen=e["_img"], tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld)
+                  ruta=ruta, imagen=e["_img"], tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
+                  extra=COPIAR_JS)
 
 
 def acerca(canal: dict) -> str:
@@ -497,6 +535,20 @@ def generar() -> int:
     if canal.get("google_archivo"):
         (WEB / canal["google_archivo"]).write_text(f"google-site-verification: {canal['google_archivo']}",
                                                    encoding="utf-8")
+
+    # Feed RSS: para lectores como Feedly o Inoreader y agregadores de noticias
+    items = "".join(
+        f"<item><title>{escape_xml(e['titulo'])}</title>"
+        f"<link>{URL}/expedientes/{e['_slug']}.html</link>"
+        f"<guid>{URL}/expedientes/{e['_slug']}.html</guid>"
+        f"<pubDate>{format_datetime(datetime.fromisoformat(e['fecha']).astimezone())}</pubDate>"
+        f"<description>{escape_xml(e.get('resumen', ''))}</description></item>"
+        for e in visibles)
+    (WEB / "feed.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+        f"<title>{escape_xml(canal['nombre'])}</title><link>{URL}/</link>"
+        f"<description>{escape_xml(canal['descripcion'])}</description><language>es</language>"
+        f"{items}</channel></rss>\n", encoding="utf-8")
 
     # Mapa del sitio y robots.txt: así los buscadores encuentran todas las páginas
     hoy = date.today().isoformat()
