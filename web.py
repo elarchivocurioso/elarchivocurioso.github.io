@@ -387,6 +387,10 @@ def generar() -> int:
         shutil.copyfile(LOGO_ORIGEN, WEB / "logo.png")
     if BANNER_ORIGEN.exists():
         shutil.copyfile(BANNER_ORIGEN, WEB / "compartir.png")
+    # Archivo de verificación de Google Search Console (no se debe borrar nunca)
+    if canal.get("google_archivo"):
+        (WEB / canal["google_archivo"]).write_text(f"google-site-verification: {canal['google_archivo']}",
+                                                   encoding="utf-8")
 
     # Mapa del sitio y robots.txt: así los buscadores encuentran todas las páginas
     hoy = date.today().isoformat()
