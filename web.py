@@ -496,14 +496,21 @@ def generar() -> int:
     ahora = datetime.now()
     visibles = [e for e in datos["expedientes"] if datetime.fromisoformat(e["fecha"]) <= ahora]
     visibles.sort(key=lambda e: e["fecha"], reverse=True)
-    # Un provisional (sin YouTube) desaparece cuando llega su entrada de YouTube con el mismo título
-    con_video = {e["titulo"]: e for e in visibles if e.get("youtube")}
-    for e in [e for e in visibles if not e.get("youtube") and e["titulo"] in con_video]:
-        destino = con_video[e["titulo"]]
-        for campo in ("articulo", "lecturas", "slug"):
-            if e.get(campo) and not destino.get(campo):
-                destino[campo] = e[campo]
-        visibles.remove(e)
+    # Un mismo expediente puede aparecer dos veces (provisional sin YouTube, o vídeo subido dos veces):
+    # se queda la primera entrada con YouTube y hereda el artículo y las lecturas de las otras
+    por_titulo: dict[str, list[dict]] = {}
+    for e in datos["expedientes"]:
+        if e in visibles:
+            por_titulo.setdefault(e["titulo"], []).append(e)
+    for repetidas in (g for g in por_titulo.values() if len(g) > 1):
+        destino = next((e for e in repetidas if e.get("youtube")), repetidas[0])
+        for e in repetidas:
+            if e is destino:
+                continue
+            for campo in ("articulo", "lecturas", "slug"):
+                if e.get(campo) and not destino.get(campo):
+                    destino[campo] = e[campo]
+            visibles.remove(e)
 
     dir_min = WEB / "miniaturas"
     if dir_min.exists():

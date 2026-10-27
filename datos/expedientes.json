@@ -561,7 +561,7 @@
       ]
     },
     {
-      "youtube": "",
+      "youtube": "6FOBq5w86vg",
       "num": "A002",
       "tipo": "video",
       "titulo": "La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas",
@@ -607,7 +607,7 @@
         "Desastres",
         "Ciencia"
       ],
-      "fecha": "2026-10-27T21:50",
+      "fecha": "2026-10-27T21:37",
       "articulo": [
         {
           "titulo": "",
@@ -672,7 +672,7 @@
       ]
     },
     {
-      "youtube": "",
+      "youtube": "Q4L4l8-mS1M",
       "num": "A003",
       "tipo": "video",
       "titulo": "La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)",
@@ -714,7 +714,7 @@
         "Animales",
         "Absurdos"
       ],
-      "fecha": "2026-10-27T21:51",
+      "fecha": "2026-10-27T22:55",
       "articulo": [
         {
           "titulo": "",
@@ -768,6 +768,58 @@
             "Tampoco está del todo claro por qué se montó la operación. La versión oficial era ayudar a los granjeros. El historiador Murray Johnson ha sugerido que fue en parte un ejercicio de propaganda, para que el gobierno pareciera hacer algo por unos veteranos en apuros, y otros autores apuntan al deseo de calmar a una región molesta con el gobierno federal. Son interpretaciones razonables, pero no pueden darse por demostradas. Lo indiscutible es el desenlace: las aves siguieron ahí, y el problema se gestionó durante décadas con recompensas y vallas, no con ametralladoras."
           ]
         }
+      ]
+    },
+    {
+      "youtube": "c--zhvTm08U",
+      "num": "S105",
+      "tipo": "short",
+      "fecha": "2026-10-27T21:03",
+      "titulo": "La ola de melaza que mató a 21 personas: el culpable fue el frío",
+      "epoca": "1919",
+      "lugar": "Boston (Estados Unidos)",
+      "resumen": "Una ola de melaza mató a 21 personas en Boston en 1919. En 2016 se explicó por qué: el frío la espesó y atrapó a las víctimas.",
+      "curiosidades": [
+        "El tanque tenía más de ocho millones de litros de melaza.",
+        "La ola avanzó a unos 50 km/h, según estimaciones.",
+        "Con el aire helado de enero, la melaza se volvió todavía más espesa."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Great Molasses Flood (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Desastres",
+        "Ciencia"
+      ]
+    },
+    {
+      "youtube": "uTWN9_BrErg",
+      "num": "S106",
+      "tipo": "short",
+      "fecha": "2026-10-27T21:05",
+      "titulo": "Australia mandó ametralladoras contra los emús… y no pudo con ellos",
+      "epoca": "1932",
+      "lugar": "Australia Occidental",
+      "resumen": "En 1932 un mayor, dos soldados y dos ametralladoras se enfrentaron a miles de emús. Según su propio informe, hicieron falta diez balas por ave.",
+      "curiosidades": [
+        "Los emús se dispersaban al primer disparo.",
+        "Una ametralladora se atascó en plena emboscada.",
+        "El informe del mayor habló de 9.860 balas para 986 emús."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Emu War (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Emu_War"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Animales",
+        "Absurdos"
       ]
     }
   ]
