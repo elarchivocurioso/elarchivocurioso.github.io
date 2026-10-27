@@ -128,11 +128,24 @@ footer a { color:rgba(235,221,191,.8); }
   <a class="boton" href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">VER EL CANAL EN YOUTUBE</a>
 </section>
 <section id="expedientes">
-  <div class="etiqueta" style="text-align:center; margin-bottom:12px">Expedientes abiertos: 0</div>
-  <div class="vacio"><div class="sello"><span>AC</span></div><p>Los primeros expedientes se están catalogando.<br>Muy pronto los encontrarás aquí.</p></div>
+  <div class="etiqueta" style="text-align:center; margin-bottom:12px">Expedientes abiertos: 1</div>
+  <div class="filtros"><button class="activo" data-filtro="todos">TODOS</button><button data-filtro="video">VÍDEOS</button><button data-filtro="short">SHORTS</button></div><div class="rejilla"><a class="ficha" data-tipo="short" href="expedientes/edison-invento-la-bombilla-la-verdad.html"><div class="img" style="background-image:url(https://i.ytimg.com/vi/VzDGAwrxWM4/hqdefault.jpg)"><span class="tipo short">SHORT</span></div><div class="txt"><h3>¿Edison inventó la bombilla? La verdad</h3><div class="meta">1879 · Newcastle y Menlo Park · 27 de octubre de 2026</div></div></a></div>
 </section>
 </main>
 <footer>© 2026 El Archivo Curioso · <a href="privacidad.html">Política de privacidad</a></footer>
+
+<script>
+document.querySelectorAll('.filtros button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.filtros button').forEach(function (x) { x.classList.remove('activo'); });
+    b.classList.add('activo');
+    var f = b.dataset.filtro;
+    document.querySelectorAll('.ficha').forEach(function (c) {
+      c.style.display = (f === 'todos' || c.dataset.tipo === f) ? '' : 'none';
+    });
+  });
+});
+</script>
 
 </body>
 </html>
