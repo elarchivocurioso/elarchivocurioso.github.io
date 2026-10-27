@@ -34,6 +34,7 @@ import subprocess
 import sys
 import time
 import unicodedata
+import urllib.parse
 import urllib.request
 from datetime import date, datetime
 from html import escape
@@ -140,6 +141,14 @@ header nav a:hover { color:var(--oro); }
 .legal p, .legal li { font-size:16px; }
 .legal ul { padding-left:22px; }
 
+.articulo p { margin-bottom:14px; }
+.nota { color:var(--pergamino-2); font-size:15px; }
+.apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 16px;
+  border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); }
+.apoyo div:nth-child(2) { flex:1; min-width:220px; }
+.apoyo h2 { font-family:'Playfair Display',Georgia,serif; font-size:22px; }
+.apoyo p { color:var(--pergamino-2); font-size:16px; }
+footer small { display:inline-block; margin-top:6px; font-size:12px; }
 footer { border-top:1px solid rgba(201,180,138,.15); padding:24px 16px; text-align:center; font-size:14px; color:rgba(235,221,191,.6); }
 footer a { color:rgba(235,221,191,.8); }
 @media (max-width:600px) { header nav { display:none; } }
@@ -215,14 +224,45 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <header><div class="ancho">
   <a class="sello" style="--t:46px" href="{raiz}index.html" aria-label="Inicio"><span>AC</span></a>
   <a class="nombre" href="{raiz}index.html">El Archivo <em>Curioso</em></a>
-  <nav><a href="{raiz}index.html#expedientes">Expedientes</a><a href="{escape(canal['youtube'])}">YouTube</a></nav>
+  <nav><a href="{raiz}index.html#expedientes">Expedientes</a><a href="{raiz}acerca.html">El archivo</a><a href="{escape(canal['youtube'])}">YouTube</a></nav>
 </div></header>
 {cuerpo}
-<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}privacidad.html">Política de privacidad</a></footer>
+{apoyo(canal)}
+<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a>{aviso_afiliados(canal)}</footer>
 {extra}
 </body>
 </html>
 """
+
+
+def apoyo(canal: dict) -> str:
+    """Bloque de donaciones; no aparece hasta que haya un enlace en "donaciones_url"."""
+    if not canal.get("donaciones_url"):
+        return ""
+    return (f'<section class="apoyo ancho"><div class="sello" style="--t:54px"><span>AC</span></div>'
+            f'<div><h2>¿Te gusta El Archivo Curioso?</h2><p>Cada expediente lleva horas de investigación. '
+            f'Si quieres ayudar a abrir el siguiente, puedes invitarnos a un café.</p></div>'
+            f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener">'
+            f'{escape(canal.get("donaciones_texto") or "INVÍTANOS A UN CAFÉ")}</a></section>')
+
+
+def aviso_afiliados(canal: dict) -> str:
+    # Texto obligatorio del programa de Afiliados de Amazon
+    if not canal.get("amazon_tag"):
+        return ""
+    return ("<br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas "
+            "que cumplen los requisitos aplicables.</small>")
+
+
+def enlace_libro(libro: dict, canal: dict) -> str:
+    texto = f"<i>{escape(libro['titulo'])}</i>" + (f", {escape(libro['autor'])}" if libro.get("autor") else "")
+    if libro.get("nota"):
+        texto += f" <span class='nota'>— {escape(libro['nota'])}</span>"
+    if not canal.get("amazon_tag"):
+        return f"<li>{texto}</li>"
+    busqueda = urllib.parse.quote_plus(f"{libro['titulo']} {libro.get('autor', '')}".strip())
+    url = f"https://www.amazon.es/s?k={busqueda}&tag={urllib.parse.quote(canal['amazon_tag'])}"
+    return f'<li><a href="{escape(url)}" rel="sponsored noopener">{texto}</a></li>'
 
 
 def ficha(e: dict) -> str:
@@ -272,9 +312,16 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         ("Época", e.get("epoca", "")), ("Lugar", e.get("lugar", "")), ("Publicado", fecha_larga(e["fecha"])),
         ("Formato", "Short" if tipo == "short" else "Vídeo")) if v)
     bloques = f'<div class="bloque"><h2>El caso</h2><p>{escape(e["resumen"])}</p></div>' if e.get("resumen") else ""
+    # Artículo completo: lista de secciones {"titulo": "...", "parrafos": ["...", ...]}
+    for seccion in e.get("articulo", []):
+        bloques += (f'<div class="bloque articulo"><h2>{escape(seccion["titulo"])}</h2>'
+                    + "".join(f"<p>{escape(p)}</p>" for p in seccion["parrafos"]) + "</div>")
     if e.get("curiosidades"):
         bloques += ('<div class="bloque"><h2>Curiosidades del expediente</h2><ul class="curiosidades">'
                     + "".join(f"<li>{escape(c)}</li>" for c in e["curiosidades"]) + "</ul></div>")
+    if e.get("lecturas"):
+        bloques += ('<div class="bloque"><h2>Para saber más</h2><ul class="fuentes">'
+                    + "".join(enlace_libro(l, canal) for l in e["lecturas"]) + "</ul></div>")
     if e.get("fuentes"):
         bloques += ('<div class="bloque"><h2>Fuentes</h2><ul class="fuentes">'
                     + "".join(f'<li><a href="{escape(f["url"])}" rel="noopener">{escape(f["titulo"])}</a></li>'
@@ -310,6 +357,34 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         jsonld["keywords"] = ", ".join(e["etiquetas"])
     return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
                   ruta=ruta, imagen=e["_img"], tipo_og="video.other", jsonld=jsonld)
+
+
+def acerca(canal: dict) -> str:
+    redes = "".join(f'<li><a href="{escape(u)}" rel="noopener">{escape(n)}</a></li>' for n, u in (
+        ("YouTube · El Archivo Curioso", canal["youtube"]),
+        ("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
+        ("TikTok · @elarchivocurioso", "https://www.tiktok.com/@elarchivocurioso")))
+    cuerpo = f"""<main class="ancho legal">
+<a class="volver" href="index.html">← Inicio</a>
+<h1>Acerca de El Archivo Curioso</h1>
+<div class="fecha">{escape(canal['lema'])}</div>
+<h2>Qué es este archivo</h2>
+<p>El Archivo Curioso es un proyecto de divulgación en español que abre «expedientes» sobre la historia: sucesos reales tan extraños que parecen inventados, mitos que se repiten desde hace siglos, personajes olvidados y curiosidades que no suelen contarse en clase. Cada expediente se publica como vídeo o Short en YouTube y aquí, en la web, con más contexto, curiosidades y fuentes.</p>
+<h2>Cómo trabajamos</h2>
+<ul>
+  <li><b>Fuentes primero.</b> Cada expediente se basa en fuentes que citamos al final de su página: estudios, enciclopedias de referencia, museos y obras de historiadores.</li>
+  <li><b>Lo dudoso se dice.</b> Cuando una cifra o una explicación está discutida, lo indicamos en lugar de presentarla como un hecho.</li>
+  <li><b>Mitos, desmontados con datos.</b> Si un dato muy repetido no aparece en las fuentes de la época, lo señalamos.</li>
+  <li><b>Imágenes libres.</b> Usamos obras de dominio público o con licencias libres (sobre todo de Wikimedia Commons) y citamos su origen.</li>
+  <li><b>Transparencia.</b> La narración de los vídeos usa una voz sintética, y para preparar los guiones nos ayudamos de herramientas de inteligencia artificial; los datos se contrastan con las fuentes citadas.</li>
+</ul>
+<h2>¿Has encontrado un error?</h2>
+<p>La historia se revisa constantemente. Si crees que un expediente contiene un error, escríbenos en los comentarios del vídeo en YouTube o por mensaje privado en redes, con la fuente si la tienes, y lo revisaremos.</p>
+<h2>Dónde encontrarnos</h2>
+<ul>{redes}</ul>
+</main>"""
+    return pagina(f"Acerca de · {canal['nombre']}", cuerpo, canal, ruta="acerca.html",
+                  descripcion="Qué es El Archivo Curioso, cómo elegimos y comprobamos cada expediente y cómo contactar.")
 
 
 def privacidad(canal: dict) -> str:
@@ -382,6 +457,7 @@ def generar() -> int:
 
     (WEB / "index.html").write_text(inicio(canal, visibles), encoding="utf-8")
     (WEB / "privacidad.html").write_text(privacidad(canal), encoding="utf-8")
+    (WEB / "acerca.html").write_text(acerca(canal), encoding="utf-8")
     (WEB / ".nojekyll").write_text("", encoding="utf-8")
     if LOGO_ORIGEN.exists():
         shutil.copyfile(LOGO_ORIGEN, WEB / "logo.png")
@@ -396,6 +472,7 @@ def generar() -> int:
     hoy = date.today().isoformat()
     entradas = [(f"{URL}/", visibles[0]["fecha"][:10] if visibles else hoy)]
     entradas += [(f"{URL}/expedientes/{e['_slug']}.html", e["fecha"][:10]) for e in visibles]
+    entradas.append((f"{URL}/acerca.html", hoy))
     entradas.append((f"{URL}/privacidad.html", hoy))
     (WEB / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

@@ -107,6 +107,14 @@ header nav a:hover { color:var(--oro); }
 .legal p, .legal li { font-size:16px; }
 .legal ul { padding-left:22px; }
 
+.articulo p { margin-bottom:14px; }
+.nota { color:var(--pergamino-2); font-size:15px; }
+.apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 16px;
+  border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); }
+.apoyo div:nth-child(2) { flex:1; min-width:220px; }
+.apoyo h2 { font-family:'Playfair Display',Georgia,serif; font-size:22px; }
+.apoyo p { color:var(--pergamino-2); font-size:16px; }
+footer small { display:inline-block; margin-top:6px; font-size:12px; }
 footer { border-top:1px solid rgba(201,180,138,.15); padding:24px 16px; text-align:center; font-size:14px; color:rgba(235,221,191,.6); }
 footer a { color:rgba(235,221,191,.8); }
 @media (max-width:600px) { header nav { display:none; } }
@@ -116,7 +124,7 @@ footer a { color:rgba(235,221,191,.8); }
 <header><div class="ancho">
   <a class="sello" style="--t:46px" href="index.html" aria-label="Inicio"><span>AC</span></a>
   <a class="nombre" href="index.html">El Archivo <em>Curioso</em></a>
-  <nav><a href="index.html#expedientes">Expedientes</a><a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a></nav>
+  <nav><a href="index.html#expedientes">Expedientes</a><a href="acerca.html">El archivo</a><a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a></nav>
 </div></header>
 <main class="ancho">
 <section class="portada">
@@ -132,7 +140,8 @@ footer a { color:rgba(235,221,191,.8); }
   <div class="filtros"><button class="activo" data-filtro="todos">TODOS</button><button data-filtro="video">VÍDEOS</button><button data-filtro="short">SHORTS</button></div><div class="rejilla"><a class="ficha" data-tipo="short" href="expedientes/napoleon-era-bajito-el-mito-que-nos-creimos-200-anos.html"><div class="img" style="background-image:url(https://i.ytimg.com/vi/QJhFpKyG5Bc/hqdefault.jpg)"><span class="tipo short">SHORT</span></div><div class="txt"><h3>¿Napoleón era bajito? El mito que nos creímos 200 años</h3><div class="meta">1769-1821 · Francia · 27 de octubre de 2026</div></div></a><a class="ficha" data-tipo="short" href="expedientes/los-vikingos-nunca-llevaron-cuernos-la-culpa-es-de-una-opera.html"><div class="img" style="background-image:url(https://i.ytimg.com/vi/n2VzGwBZtVs/hqdefault.jpg)"><span class="tipo short">SHORT</span></div><div class="txt"><h3>Los vikingos nunca llevaron cuernos (la culpa es de una ópera)</h3><div class="meta">Siglos VIII-XI · Escandinavia · 27 de octubre de 2026</div></div></a><a class="ficha" data-tipo="short" href="expedientes/cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides.html"><div class="img" style="background-image:url(https://i.ytimg.com/vi/UgproHL8drs/hqdefault.jpg)"><span class="tipo short">SHORT</span></div><div class="txt"><h3>Cleopatra vivió más cerca del iPhone que de las pirámides</h3><div class="meta">69-30 a. C. · Egipto · 27 de octubre de 2026</div></div></a><a class="ficha" data-tipo="short" href="expedientes/edison-invento-la-bombilla-la-verdad.html"><div class="img" style="background-image:url(https://i.ytimg.com/vi/VzDGAwrxWM4/hqdefault.jpg)"><span class="tipo short">SHORT</span></div><div class="txt"><h3>¿Edison inventó la bombilla? La verdad</h3><div class="meta">1879 · Newcastle y Menlo Park · 27 de octubre de 2026</div></div></a><a class="ficha" data-tipo="video" href="expedientes/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.html"><div class="img" style="background-image:url(miniaturas/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.png)"><span class="tipo video">VÍDEO</span></div><div class="txt"><h3>La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar</h3><div class="meta">1518 · Estrasburgo · 27 de octubre de 2026</div></div></a></div>
 </section>
 </main>
-<footer>© 2026 El Archivo Curioso · <a href="privacidad.html">Política de privacidad</a></footer>
+
+<footer>© 2026 El Archivo Curioso · <a href="acerca.html">Acerca del archivo</a> · <a href="privacidad.html">Política de privacidad</a></footer>
 
 <script>
 document.querySelectorAll('.filtros button').forEach(function (b) {

@@ -39,7 +39,44 @@
         "Misterios",
         "Medicina"
       ],
-      "fecha": "2026-10-27T19:41"
+      "fecha": "2026-10-27T19:41",
+      "articulo": [
+        {
+          "titulo": "Julio de 1518: empieza el baile",
+          "parrafos": [
+            "A mediados de julio de 1518, en Estrasburgo, una ciudad del Sacro Imperio Romano Germánico, una mujer a la que las crónicas llaman Frau Troffea salió a la calle y empezó a bailar. No había música ni fiesta. Siguió bailando durante horas, se desplomaba agotada y volvía a empezar, así durante días.",
+            "En una semana ya eran varias decenas de personas las que bailaban sin poder parar. Las cifras que dan las fuentes para las semanas siguientes varían mucho: desde unas cincuenta personas hasta cerca de cuatrocientas. Lo que sí coinciden en describir es el agotamiento, los pies ensangrentados y la imposibilidad de detenerse."
+          ]
+        },
+        {
+          "titulo": "La cura: todavía más música",
+          "parrafos": [
+            "Las autoridades consultaron a los médicos de la ciudad, que descartaron causas sobrenaturales y lo atribuyeron a la «sangre caliente», según la teoría de los humores que se aplicaba entonces. La conclusión fue sorprendente: si el mal hacía bailar, había que dejar que los afectados bailaran hasta sacarlo del cuerpo.",
+            "La ciudad habilitó salones gremiales, montó un escenario de madera y contrató músicos para acompañar a los danzantes. Lejos de calmarse, la situación empeoró: la música y el espectáculo parecían atraer a más personas.",
+            "Las autoridades cambiaron entonces de rumbo: prohibieron la música y el baile en público y llevaron a muchos de los afectados a un santuario dedicado a San Vito, en las montañas cercanas, para que rezaran por su curación. Con el tiempo, el brote se apagó."
+          ]
+        },
+        {
+          "titulo": "¿Cuántas personas murieron?",
+          "parrafos": [
+            "Es habitual leer que llegaron a morir quince personas al día. Sin embargo, esa cifra no aparece en las fuentes de la época que se conservan, y los historiadores la consideran una exageración posterior. Es posible que hubiera víctimas por el agotamiento, pero no sabemos cuántas."
+          ]
+        },
+        {
+          "titulo": "¿Qué pasó realmente?",
+          "parrafos": [
+            "La explicación más aceptada es la del historiador John Waller: una histeria colectiva, hoy llamada enfermedad psicógena masiva. Estrasburgo venía de años de malas cosechas, hambre y epidemias, y en la región se creía que San Vito podía castigar a los pecadores haciéndoles bailar. En ese clima de angustia y de creencia compartida, el baile se contagió.",
+            "Otra hipótesis, hoy bastante descartada, culpa al cornezuelo, un hongo del centeno que puede provocar convulsiones y alucinaciones. El problema es que el ergotismo produce espasmos, no horas de baile coordinado. Además, el de 1518 no fue un caso único: en la Edad Media se registraron otros brotes de «manía del baile», como el que recorrió la región del Rin en 1374."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "A Time to Dance, a Time to Die: The Extraordinary Story of the Dancing Plague of 1518",
+          "autor": "John Waller",
+          "nota": "el estudio de referencia sobre el caso (en inglés)"
+        }
+      ]
     },
     {
       "youtube": "VzDGAwrxWM4",
@@ -69,7 +106,48 @@
         "Inventos",
         "Mitos"
       ],
-      "fecha": "2026-10-27T19:52"
+      "fecha": "2026-10-27T19:52",
+      "articulo": [
+        {
+          "titulo": "Una carrera de casi ochenta años",
+          "parrafos": [
+            "La bombilla no tiene un único inventor. A principios del siglo XIX, el químico británico Humphry Davy ya demostró que la electricidad podía producir luz, tanto con el arco eléctrico como poniendo al rojo un filamento metálico. Durante las décadas siguientes, muchos inventores intentaron fabricar una lámpara incandescente práctica.",
+            "El gran problema era que el filamento se quemaba enseguida. Para que durara había que encerrarlo en una ampolla casi sin aire, y las bombas de vacío de la época no eran lo bastante buenas. La mejora de esas bombas en la segunda mitad del siglo hizo posible el salto."
+          ]
+        },
+        {
+          "titulo": "Joseph Swan, en Newcastle",
+          "parrafos": [
+            "El químico inglés Joseph Swan llevaba desde los años cincuenta experimentando con filamentos de carbono. A finales de 1878 presentó su lámpara en Newcastle y, el 3 de febrero de 1879, la usó para iluminar una sala de conferencias ante unas setecientas personas.",
+            "Poco después, sus lámparas iluminaron Cragside, la casa de campo del industrial William Armstrong, y en 1881 el Savoy Theatre de Londres, uno de los primeros edificios públicos iluminados por completo con electricidad."
+          ]
+        },
+        {
+          "titulo": "Lo que sí hizo Edison",
+          "parrafos": [
+            "En octubre de 1879, el equipo de Thomas Edison en Menlo Park (Nueva Jersey) consiguió que una lámpara con filamento de hilo de algodón carbonizado funcionara durante unas trece horas. Poco después, los filamentos de bambú carbonizado llegaron a superar las mil horas.",
+            "Su gran aportación no fue solo la bombilla, sino todo lo que la rodeaba: generadores, cables, contadores y portalámparas para llevar la electricidad a los hogares. En 1882 inauguró en Nueva York la central de Pearl Street, que daba luz a todo un barrio."
+          ]
+        },
+        {
+          "titulo": "Rivales y socios",
+          "parrafos": [
+            "En Gran Bretaña, las patentes de los dos inventores chocaban. En lugar de enfrentarse en los tribunales, en 1883 unieron sus negocios en una sola empresa, la Edison and Swan United Electric Light Company, conocida como «Ediswan». La historia de la bombilla es, en realidad, la historia de muchos inventores."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Edison: A Life of Invention",
+          "autor": "Paul Israel",
+          "nota": "biografía detallada (en inglés)"
+        },
+        {
+          "titulo": "Empires of Light",
+          "autor": "Jill Jonnes",
+          "nota": "Edison, Tesla, Westinghouse y la carrera por electrificar el mundo (en inglés)"
+        }
+      ]
     },
     {
       "youtube": "QJhFpKyG5Bc",
@@ -98,7 +176,42 @@
         "Mitos",
         "Personajes"
       ],
-      "fecha": "2026-10-27T20:00"
+      "fecha": "2026-10-27T20:00",
+      "articulo": [
+        {
+          "titulo": "Las medidas que nos confundieron",
+          "parrafos": [
+            "Tras la muerte de Napoleón en Santa Elena, en 1821, su médico registró que medía 5 pies y 2 pulgadas. El detalle clave es que eran pies y pulgadas franceses, más largos que los ingleses. Convertida bien, esa medida equivale a alrededor de 1,68 metros.",
+            "Leída como si fueran unidades inglesas, la misma cifra se convierte en unos 1,57 metros. Ese error de traducción es una de las raíces del mito."
+          ]
+        },
+        {
+          "titulo": "Normal para su época",
+          "parrafos": [
+            "A principios del siglo XIX, la estatura media de los hombres franceses rondaba el metro sesenta y pocos. Con cerca de 1,68 metros, Napoleón estaba en la media o incluso algo por encima. No era un gigante, pero tampoco bajo para su tiempo."
+          ]
+        },
+        {
+          "titulo": "Caricaturas y apodos",
+          "parrafos": [
+            "La imagen del Napoleón diminuto y colérico debe mucho a la propaganda británica. El caricaturista James Gillray lo dibujaba como un hombrecillo con rabietas, el «Little Boney». Sus caricaturas circularon por toda Europa y fijaron una imagen que ha durado dos siglos.",
+            "El apodo de «le petit caporal» (el pequeño cabo), que le dieron sus soldados, era una muestra de cariño y no una referencia a su altura. Además, solía aparecer rodeado de los granaderos de su Guardia Imperial, a los que se exigía una estatura elevada, lo que lo hacía parecer más bajo."
+          ]
+        },
+        {
+          "titulo": "Un mito con nombre propio",
+          "parrafos": [
+            "Hoy se habla del «complejo de Napoleón» para describir a las personas bajas que compensarían su estatura con ambición o agresividad. Es una de esas expresiones que sobreviven al dato que las contradice: el hombre que le da nombre no era bajito."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Napoleón: una vida",
+          "autor": "Andrew Roberts",
+          "nota": "biografía completa y amena"
+        }
+      ]
     },
     {
       "youtube": "n2VzGwBZtVs",
@@ -126,7 +239,42 @@
         "Edad Media",
         "Mitos"
       ],
-      "fecha": "2026-10-27T20:00"
+      "fecha": "2026-10-27T20:00",
+      "articulo": [
+        {
+          "titulo": "Lo que dice la arqueología",
+          "parrafos": [
+            "El casco vikingo más completo que se conoce se encontró en 1943 en Gjermundbu, en Noruega, y data del siglo X. Es un casquete redondeado de hierro con una protección para los ojos y la nariz. No tiene cuernos.",
+            "Los hallazgos de cascos de la época vikinga son muy escasos, y muchos historiadores creen que la mayoría de los guerreros luchaba con protecciones más sencillas o sin casco de metal. En ninguno de los que conocemos aparecen cuernos."
+          ]
+        },
+        {
+          "titulo": "La culpa es de una ópera",
+          "parrafos": [
+            "En el siglo XIX, el Romanticismo y los nacionalismos escandinavos y alemanes recuperaron con entusiasmo el pasado nórdico, y los artistas empezaron a imaginar a sus guerreros con cascos alados o con cuernos.",
+            "La imagen se popularizó definitivamente en 1876, cuando el diseñador Carl Emil Doepler vistió a los personajes de «El anillo del nibelungo», de Richard Wagner, en el primer festival de Bayreuth. Desde entonces, el vikingo con cuernos pasó a ilustraciones, cómics, películas y disfraces."
+          ]
+        },
+        {
+          "titulo": "Cuernos, sí, pero mucho antes",
+          "parrafos": [
+            "En el norte de Europa sí se han encontrado cascos con cuernos, como los de Veksø, en Dinamarca. Pero son de la Edad del Bronce, unos 1.700 años anteriores a los vikingos, y probablemente se usaban en ceremonias, no en combate."
+          ]
+        },
+        {
+          "titulo": "Poco práctico en la batalla",
+          "parrafos": [
+            "Unos cuernos en el casco habrían sido un estorbo en la lucha: podían engancharse o servir de agarre al enemigo, y harían el casco más pesado y fácil de desequilibrar. Por eso, aunque el mito sea muy vistoso, la imagen del vikingo con cuernos dice más del siglo XIX que de la Edad Media."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Children of Ash and Elm: A History of the Vikings",
+          "autor": "Neil Price",
+          "nota": "historia de los vikingos basada en la arqueología (en inglés)"
+        }
+      ]
     },
     {
       "youtube": "UgproHL8drs",
@@ -154,7 +302,37 @@
         "Edad Antigua",
         "Datos curiosos"
       ],
-      "fecha": "2026-10-27T20:00"
+      "fecha": "2026-10-27T20:00",
+      "articulo": [
+        {
+          "titulo": "Haz la cuenta",
+          "parrafos": [
+            "La Gran Pirámide de Guiza, construida para el faraón Keops, se terminó hacia el año 2560 antes de Cristo (las estimaciones varían algunas décadas). Cleopatra VII nació en el 69 a. C. y murió en el 30 a. C. Es decir, cuando ella vivió, la pirámide ya tenía unos 2.500 años.",
+            "El primer iPhone salió a la venta en 2007, unos 2.000 años después de la muerte de Cleopatra. Por eso se puede decir, sin trampa, que Cleopatra vivió más cerca de nuestra época que de la construcción de la Gran Pirámide."
+          ]
+        },
+        {
+          "titulo": "Una reina griega en Egipto",
+          "parrafos": [
+            "Cleopatra pertenecía a la dinastía ptolemaica, de origen macedonio, fundada por Ptolomeo, uno de los generales de Alejandro Magno. Esta familia gobernó Egipto durante unos tres siglos y hablaba griego.",
+            "Según el historiador Plutarco, Cleopatra fue la primera de su dinastía que aprendió la lengua egipcia, además de otros muchos idiomas. Para ella, las pirámides ya eran monumentos antiquísimos."
+          ]
+        },
+        {
+          "titulo": "Otros saltos de tiempo que engañan",
+          "parrafos": [
+            "No es el único dato que desafía nuestra intuición. Los estudios indican que en la isla de Wrangel, en el océano Ártico, sobrevivieron mamuts lanudos hasta hace unos 4.000 años, cuando las pirámides de Guiza ya estaban construidas.",
+            "Tendemos a juntar en una misma «Antigüedad» épocas separadas por miles de años. Este tipo de comparaciones ayuda a ver lo larga que es, en realidad, la historia."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Cleopatra",
+          "autor": "Stacy Schiff",
+          "nota": "biografía premiada con el Pulitzer"
+        }
+      ]
     }
   ]
 }
