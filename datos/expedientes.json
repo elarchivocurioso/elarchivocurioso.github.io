@@ -794,7 +794,8 @@
         "Siglo XX",
         "Desastres",
         "Ciencia"
-      ]
+      ],
+      "de": "A002"
     },
     {
       "youtube": "uTWN9_BrErg",
@@ -820,7 +821,8 @@
         "Siglo XX",
         "Animales",
         "Absurdos"
-      ]
+      ],
+      "de": "A003"
     },
     {
       "youtube": "pnpMJ9tX8JI",
@@ -856,7 +858,8 @@
         "Historia de la medicina",
         "Cerebro"
       ],
-      "fecha": "2026-10-27T23:29"
+      "fecha": "2026-10-27T23:29",
+      "num": "A004"
     },
     {
       "youtube": "xmxdzH-pZSU",
@@ -886,7 +889,9 @@
         "Cerebro",
         "Historia de la medicina"
       ],
-      "fecha": "2026-10-27T23:30"
+      "fecha": "2026-10-27T23:30",
+      "num": "S107",
+      "de": "A004"
     },
     {
       "youtube": "9SYd1HiSA1M",
@@ -922,7 +927,8 @@
         "Volcán Tambora",
         "Frankenstein"
       ],
-      "fecha": "2026-10-27T23:35"
+      "fecha": "2026-10-27T23:35",
+      "num": "A005"
     },
     {
       "youtube": "YbPF0QQVU0I",
@@ -950,7 +956,9 @@
         "Año sin verano",
         "Volcán Tambora"
       ],
-      "fecha": "2026-10-27T23:38"
+      "fecha": "2026-10-27T23:38",
+      "num": "S108",
+      "de": "A005"
     },
     {
       "youtube": "m8tW15aqnWo",
@@ -982,7 +990,8 @@
         "Tormenta solar",
         "Auroras"
       ],
-      "fecha": "2026-10-27T23:48"
+      "fecha": "2026-10-27T23:48",
+      "num": "A006"
     },
     {
       "youtube": "gCFYlkS09xo",
@@ -1010,7 +1019,9 @@
         "Tormenta solar",
         "Telégrafo"
       ],
-      "fecha": "2026-10-27T23:49"
+      "fecha": "2026-10-27T23:49",
+      "num": "S109",
+      "de": "A006"
     },
     {
       "youtube": "M3-R2WDHpKw",
@@ -1046,7 +1057,8 @@
         "Torre Eiffel",
         "Estafas históricas"
       ],
-      "fecha": "2026-10-27T23:54"
+      "fecha": "2026-10-27T23:54",
+      "num": "A007"
     },
     {
       "youtube": "fD5IBQsYNtY",
@@ -1074,7 +1086,9 @@
         "Torre Eiffel",
         "Estafas históricas"
       ],
-      "fecha": "2026-10-27T23:55"
+      "fecha": "2026-10-27T23:55",
+      "num": "S110",
+      "de": "A007"
     },
     {
       "youtube": "JKUBZ1wBI5s",
@@ -1110,7 +1124,221 @@
         "Burbujas económicas",
         "Países Bajos"
       ],
-      "fecha": "2026-10-27T23:59"
+      "fecha": "2026-10-27T23:59",
+      "num": "A008"
+    },
+    {
+      "youtube": "5CsaTHjV0tc",
+      "tipo": "short",
+      "titulo": "La FIEBRE DE LOS TULIPANES no arruinó Holanda 🌷 (el mito que te contaron)",
+      "epoca": "1637",
+      "lugar": "Países Bajos",
+      "resumen": "Te han contado que la fiebre de los tulipanes hundió la economía de Holanda. No es verdad.",
+      "curiosidades": [
+        "Burbuja y desplome en febrero de 1637",
+        "Anne Goldgar no halló pruebas de suicidios ni quiebras masivas; las historias proceden en gran parte de panfletos satíricos",
+        "Charles Mackay (1841) popularizó la versión exagerada, unos dos siglos después"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Smithsonian Magazine, «There Never Was a Real Tulip Fever»",
+          "url": "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XVII",
+        "Burbujas económicas",
+        "Mitos de la historia"
+      ],
+      "fecha": "2026-10-28T00:02"
+    },
+    {
+      "youtube": "PAjZ8g7deHM",
+      "tipo": "video",
+      "titulo": "El MISTERIO del MARY CELESTE: el barco que apareció sin nadie a bordo (1872)",
+      "epoca": "1872",
+      "lugar": "Océano Atlántico (entre las Azores y Portugal)",
+      "miniatura": "Identidad/Miniaturas/miniatura-A009-mary-celeste-1872.png",
+      "resumen": "En diciembre de 1872, unos marineros encontraron un barco navegando a la deriva en mitad del Atlántico. Estaba en buen estado y con su carga intacta. Pero no había nadie a bordo.",
+      "curiosidades": [
+        "Zarpó de Nueva York hacia Génova en noviembre de 1872 con alcohol; 10 personas a bordo, incluidos el capitán Benjamin Briggs, su mujer y su hija de 2 años",
+        "Última anotación del cuaderno el 25 de noviembre cerca de las Azores; hallado por el Dei Gratia unos 10 días después (4 de diciembre de 1872)",
+        "Barco navegable, carga casi intacta, faltaba el bote salvavidas",
+        "Investigación en Gibraltar sin pruebas de violencia; teoría de que Briggs creyó que el barco se hundía",
+        "Relato de ficción de Arthur Conan Doyle «J. Habakuk Jephson's Statement» (1884, anónimo) sobre la \"Marie Celeste\""
+      ],
+      "fuentes": [
+        {
+          "titulo": "Britannica, «Mary Celeste»",
+          "url": "https://www.britannica.com/topic/Mary-Celeste"
+        },
+        {
+          "titulo": "Smithsonian Magazine, «An abandoned merchant ship was discovered floating in the Atlantic in 1872»",
+          "url": "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/"
+        },
+        {
+          "titulo": "The Arthur Conan Doyle Encyclopedia, «Mary Celeste»",
+          "url": "https://www.arthur-conan-doyle.com/wiki/Mary_Celeste"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Barco fantasma",
+        "Misterios de la historia"
+      ],
+      "fecha": "2026-10-28T00:09"
+    },
+    {
+      "youtube": "q-4LNa7J4F4",
+      "tipo": "short",
+      "titulo": "El barco fantasma MARY CELESTE: el creador de Sherlock Holmes inventó parte del misterio",
+      "epoca": "1872-1884",
+      "lugar": "Océano Atlántico",
+      "resumen": "En 1872 apareció en el Atlántico un barco intacto… y sin nadie a bordo. Pero parte de su leyenda la inventó el creador de Sherlock Holmes.",
+      "curiosidades": [
+        "Hallado sin nadie a bordo en diciembre de 1872; 10 desaparecidos (capitán, su mujer, su hija de 2 años y 7 tripulantes); faltaba el bote",
+        "Relato de ficción de Arthur Conan Doyle «J. Habakuk Jephson's Statement» (1884) sobre la \"Marie Celeste\""
+      ],
+      "fuentes": [
+        {
+          "titulo": "Britannica, «Mary Celeste»",
+          "url": "https://www.britannica.com/topic/Mary-Celeste"
+        },
+        {
+          "titulo": "The Arthur Conan Doyle Encyclopedia, «Mary Celeste»",
+          "url": "https://www.arthur-conan-doyle.com/wiki/Mary_Celeste"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Barco fantasma",
+        "Arthur Conan Doyle"
+      ],
+      "fecha": "2026-10-28T00:06"
+    },
+    {
+      "youtube": "cGdxWX4mSQI",
+      "tipo": "video",
+      "titulo": "NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)",
+      "epoca": "1922-1925",
+      "lugar": "Alemania",
+      "miniatura": "Identidad/Miniaturas/miniatura-A010-nosferatu-1922.png",
+      "resumen": "En 1922 se estrenó en Berlín una película de miedo. Un vampiro calvo, de orejas puntiagudas y dedos larguísimos. Hoy es una de las películas más famosas de la historia del cine.",
+      "curiosidades": [
+        "Estreno el 4 de marzo de 1922 en el Marmorsaal del Zoológico de Berlín (en Países Bajos se estrenó antes, el 16 de febrero)",
+        "Prana Film, fundada en 1921 por Enrico Dieckmann y el artista ocultista Albin Grau; Nosferatu fue su única producción y quebró poco después",
+        "Dirigida por F. W. Murnau, guion de Henrik Galeen; Drácula → Orlok, Harker → Hutter; ciudad ficticia de Wisborg",
+        "Exteriores en Wismar, Lübeck y otras ciudades; escenas de Transilvania en el norte de Eslovaquia, incluido el castillo de Orava",
+        "Primera película en mostrar a un vampiro muriendo por la luz del sol"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Nosferatu»",
+          "url": "https://en.wikipedia.org/wiki/Nosferatu"
+        },
+        {
+          "titulo": "NPR, sobre el centenario de Nosferatu y la orden de destrucción",
+          "url": "https://www.npr.org/transcripts/1086605684"
+        },
+        {
+          "titulo": "Wikipedia, «Max Schreck»",
+          "url": "https://en.wikipedia.org/wiki/Max_Schreck"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Cine mudo",
+        "Drácula"
+      ],
+      "fecha": "2026-10-28T00:14"
+    },
+    {
+      "youtube": "XtHCT32B-Fw",
+      "tipo": "short",
+      "titulo": "La película de vampiros que un JUEZ ordenó DESTRUIR: Nosferatu (1922)",
+      "epoca": "1922-1925",
+      "lugar": "Alemania",
+      "resumen": "En 1925, un tribunal ordenó destruir todas las copias de esta película. Todas. ¿Por qué?",
+      "curiosidades": [
+        "Nosferatu (1922) era una adaptación no autorizada de Drácula; Orlok en lugar de Drácula",
+        "Florence Stoker demandó; en julio de 1925 se ordenó destruir copias y negativos; sobrevivieron copias"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Nosferatu»",
+          "url": "https://en.wikipedia.org/wiki/Nosferatu"
+        },
+        {
+          "titulo": "NPR, sobre el centenario de Nosferatu",
+          "url": "https://www.npr.org/transcripts/1086605684"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Cine mudo",
+        "Drácula"
+      ],
+      "fecha": "2026-10-28T00:14"
+    },
+    {
+      "youtube": "DujLCXw4XMk",
+      "tipo": "video",
+      "titulo": "H. H. HOLMES: el estafador de Chicago y la verdad sobre su famoso edificio (1893)",
+      "epoca": "1886-1896",
+      "lugar": "Chicago y Filadelfia (Estados Unidos)",
+      "miniatura": "Identidad/Miniaturas/miniatura-A011-h-h-holmes-castillo.png",
+      "resumen": "Seguro que has oído hablar de él. Un edificio en Chicago lleno de pasadizos secretos, trampillas y habitaciones sin salida. Y un asesino que, según la leyenda, mató allí a doscientas personas.",
+      "curiosidades": [
+        "Nombre real Herman Webster Mudgett, nacido el 16 de mayo de 1861 en Gilmanton (New Hampshire); usó alias como \"Dr. Henry Howard Holmes\"",
+        "Se licenció en medicina por la Universidad de Michigan",
+        "Estafador: fraude a aseguradoras, falsificación, bigamia (tres o cuatro matrimonios), robo de caballos",
+        "Edificio de tres plantas en la calle 63 (Englewood, Chicago); tercera planta añadida en 1892 con la promesa de un hotel para la Exposición de 1893",
+        "Las habitaciones ocultas servían para esconder muebles comprados a crédito; el diseño irregular se debía al fraude; el historiador Adam Selzer ha desmontado muchas exageraciones"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «H. H. Holmes»",
+          "url": "https://en.wikipedia.org/wiki/H._H._Holmes"
+        },
+        {
+          "titulo": "Adam Selzer, «H. H. Holmes: The True History of the White City Devil» (2017)",
+          "url": "https://en.wikipedia.org/wiki/H._H._Holmes#Further_reading"
+        },
+        {
+          "titulo": "Wikipedia, «World's Columbian Exposition»",
+          "url": "https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Crímenes históricos",
+        "Chicago 1893"
+      ],
+      "fecha": "2026-10-28T00:14"
+    },
+    {
+      "youtube": "B5MRTu9xLBA",
+      "tipo": "short",
+      "titulo": "La VERDAD sobre las habitaciones secretas de H. H. Holmes, el estafador de Chicago",
+      "epoca": "1892-1895",
+      "lugar": "Chicago (Estados Unidos)",
+      "resumen": "Dicen que este edificio de Chicago era un «castillo del terror», lleno de habitaciones secretas. Pero… ¿para qué servían de verdad?",
+      "curiosidades": [
+        "Las habitaciones ocultas servían para esconder muebles comprados a crédito; el diseño irregular respondía al fraude",
+        "9 víctimas confirmadas; cifras infladas por la prensa sensacionalista"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «H. H. Holmes»",
+          "url": "https://en.wikipedia.org/wiki/H._H._Holmes"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Mitos de la historia",
+        "Chicago 1893"
+      ],
+      "fecha": "2026-10-28T00:14"
     }
   ]
 }
