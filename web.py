@@ -317,18 +317,48 @@ def compartir(e: dict, ruta: str) -> str:
             f'<div>{botones}<button class="copiar" data-url="{escape(url)}">COPIAR ENLACE</button></div></div>')
 
 
-def ficha(e: dict) -> str:
+def ficha(e: dict, raiz: str = "") -> str:
     tipo = "short" if e.get("tipo") == "short" else "video"
     meta = " · ".join(x for x in (e.get("epoca", ""), e.get("lugar", ""), fecha_larga(e["fecha"])) if x)
-    return (f'<a class="ficha" data-tipo="{tipo}" href="expedientes/{e["_slug"]}.html">'
-            f'<div class="img" style="background-image:url({escape(e["_img"])})">'
+    img = e["_img"] if e["_img"].startswith("http") else raiz + e["_img"]
+    return (f'<a class="ficha" data-tipo="{tipo}" href="{raiz}expedientes/{e["_slug"]}.html">'
+            f'<div class="img" style="background-image:url({escape(img)})">'
             f'<span class="tipo {tipo}">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
             f'<div class="txt"><h3>{escape(e["titulo"])}</h3><div class="meta">{escape(meta)}</div></div></a>')
 
 
+def temas_de(expedientes: list[dict]) -> dict[str, list[dict]]:
+    """Etiqueta → expedientes, solo las que tienen al menos 2 (una página con 1 aporta poco)."""
+    temas: dict[str, list[dict]] = {}
+    for e in expedientes:
+        for t in e.get("etiquetas", []):
+            temas.setdefault(t, []).append(e)
+    return {t: es for t, es in sorted(temas.items()) if len(es) >= 2}
+
+
+def pagina_tema(tema: str, expedientes: list[dict], canal: dict) -> str:
+    ruta = f"temas/{slug(tema)}.html"
+    descripcion = (f"{len(expedientes)} expedientes de El Archivo Curioso sobre {tema.lower()}: "
+                   "historias reales que parecen inventadas, con fuentes.")
+    cuerpo = f"""<main class="ancho expediente">
+<a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
+<h1>Expedientes: {escape(tema)}</h1>
+<p class="nota" style="margin-bottom:28px">{escape(descripcion)}</p>
+<div class="rejilla">{"".join(ficha(e, "../") for e in expedientes)}</div>
+</main>"""
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": f"Expedientes: {tema}",
+              "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}
+    return pagina(f"{tema}: historias y curiosidades · {canal['nombre']}", cuerpo, canal, raiz="../",
+                  descripcion=descripcion, ruta=ruta, jsonld=jsonld)
+
+
 def inicio(canal: dict, expedientes: list[dict]) -> str:
+    temas = temas_de(expedientes)
+    lista_temas = ('<div class="etiquetas" style="justify-content:center; margin:0 0 24px">'
+                   + "".join(f'<a href="temas/{slug(t)}.html"><span>#{escape(t)} ({len(es)})</span></a>'
+                             for t, es in temas.items()) + "</div>") if temas else ""
     if expedientes:
-        lista = ('<div class="filtros"><button class="activo" data-filtro="todos">TODOS</button>'
+        lista = (lista_temas + '<div class="filtros"><button class="activo" data-filtro="todos">TODOS</button>'
                  '<button data-filtro="video">VÍDEOS</button><button data-filtro="short">SHORTS</button></div>'
                  f'<div class="rejilla">{"".join(ficha(e) for e in expedientes)}</div>')
     else:
@@ -381,7 +411,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                               for f in e["fuentes"]) + "</ul></div>")
     if e.get("etiquetas"):
         bloques += ('<div class="bloque etiquetas">'
-                    + "".join(f"<span>#{escape(t)}</span>" for t in e["etiquetas"]) + "</div>")
+                    + "".join(f'<a href="../temas/{slug(t)}.html"><span>#{escape(t)}</span></a>' for t in e["etiquetas"])
+                    + "</div>")
     nav = '<div class="navegacion">'
     nav += f'<a href="{anterior["_slug"]}.html">← {escape(anterior["titulo"])}</a>' if anterior else "<span></span>"
     nav += f'<a href="{siguiente["_slug"]}.html" style="text-align:right">{escape(siguiente["titulo"])} →</a>' if siguiente else ""
@@ -560,6 +591,20 @@ def generar() -> int:
         siguiente = visibles[i - 1] if i > 0 else None                  # más reciente
         (dir_exp / f"{e['_slug']}.html").write_text(expediente(e, anterior, siguiente, canal), encoding="utf-8")
 
+    # Una página por tema (etiqueta): más puertas de entrada desde Google
+    dir_temas = WEB / "temas"
+    if dir_temas.exists():
+        shutil.rmtree(dir_temas)
+    dir_temas.mkdir()
+    temas = temas_de(visibles)
+    for tema, es in temas.items():
+        (dir_temas / f"{slug(tema)}.html").write_text(pagina_tema(tema, es, canal), encoding="utf-8")
+
+    # Enlace de cada vídeo de YouTube a su página (para ponerlo en las descripciones de YouTube)
+    (WEB / "enlaces.json").write_text(json.dumps(
+        {e["youtube"]: {"num": e.get("num", ""), "titulo": e["titulo"], "url": f"{URL}/expedientes/{e['_slug']}.html"}
+         for e in visibles if e.get("youtube")}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     (WEB / "index.html").write_text(inicio(canal, visibles), encoding="utf-8")
     (WEB / "privacidad.html").write_text(privacidad(canal), encoding="utf-8")
     (WEB / "acerca.html").write_text(acerca(canal), encoding="utf-8")
@@ -591,6 +636,7 @@ def generar() -> int:
     hoy = date.today().isoformat()
     entradas = [(f"{URL}/", visibles[0]["fecha"][:10] if visibles else hoy)]
     entradas += [(f"{URL}/expedientes/{e['_slug']}.html", e["fecha"][:10]) for e in visibles]
+    entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/acerca.html", hoy))
     entradas.append((f"{URL}/privacidad.html", hoy))
     (WEB / "sitemap.xml").write_text(
