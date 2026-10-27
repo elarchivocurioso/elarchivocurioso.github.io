@@ -793,6 +793,22 @@
         {
           "titulo": "Great Molasses Flood (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+        },
+        {
+          "titulo": "Smithsonian Magazine, «Why the Boston Molasses Disaster Was So Deadly»",
+          "url": "https://www.smithsonianmag.com/smart-news/why-boston-molasses-disaster-was-so-deadly-180961209/"
+        },
+        {
+          "titulo": "APS News, «January 15, 1919: Physics and the Boston Molasses Flood»",
+          "url": "https://www.aps.org/apsnews/2017/01/this-month-in-physics-history"
+        },
+        {
+          "titulo": "The Christian Science Monitor, «Scientists finally decode the Great Molasses Flood of 1919»",
+          "url": "https://www.csmonitor.com/Science/2016/1129/Scientists-finally-decode-the-Great-Molasses-Flood-of-1919"
+        },
+        {
+          "titulo": "Gizmodo, «Researchers Dig Into Boston's Mysterious Tsunami of Molasses»",
+          "url": "https://gizmodo.com/researchers-dig-into-bostons-mysterious-tsunami-of-mola-1789400151"
         }
       ],
       "etiquetas": [
@@ -800,7 +816,43 @@
         "Desastres",
         "Ciencia"
       ],
-      "de": "A002"
+      "de": "A002",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Quien haya intentado sacar miel del bote en pleno invierno ya conoce la mitad de esta historia. El 15 de enero de 1919, un tanque reventó en Boston y soltó más de ocho millones de litros de melaza que mataron a 21 personas. La ola fue lo más espectacular, pero lo que explica tantas muertes es una propiedad física cotidiana: la viscosidad, y lo mucho que cambia con la temperatura."
+          ]
+        },
+        {
+          "titulo": "Qué es la viscosidad y por qué depende tanto del calor",
+          "parrafos": [
+            "La viscosidad mide cuánto se resiste un líquido a fluir. El agua apenas se resiste; la melaza, el jarabe espeso que queda al refinar el azúcar de caña, muchísimo. Y en los líquidos tan azucarados esa resistencia depende mucho de la temperatura. Los estudios técnicos sobre la melaza describen una relación exponencial: al calentarla se vuelve mucho más fluida y al enfriarla se espesa deprisa.",
+            "Por eso la melaza se calentaba para poder bombearla. La del tanque, en parte recién descargada de un barco, seguía algo más templada que el aire de Boston. Las estimaciones de esa diferencia van de unos 2 a 5 grados centígrados."
+          ]
+        },
+        {
+          "titulo": "Primero, una avalancha; después, un pantano",
+          "parrafos": [
+            "Cuando el tanque se abrió, mandaba la gravedad. Unas 12.000 toneladas de un líquido cerca de un 40 % más denso que el agua cayeron de golpe. En 2016, la ingeniera Nicole Sharp, junto con Jordan Kennedy y Shmuel Rubinstein, de la Universidad de Harvard, concluyó que esa masa bastaba para explicar la velocidad que contaron los testigos, sin necesidad de ninguna explosión.",
+            "Pero la melaza se extendió en una capa por las calles y, con tanta superficie expuesta, perdió calor deprisa. Esa noche la temperatura bajó de cero. El equipo reprodujo el proceso con jarabe de maíz en una cámara frigorífica, y Sharp calculó que la viscosidad pudo multiplicarse por cuatro o más.",
+            "Hay un detalle curioso. Normalmente, la melaza se vuelve algo más fluida cuando se la empuja con fuerza. Según el resumen del estudio que publicó la American Physical Society, con un frío tan intenso pesa mucho más la temperatura que ese efecto. Dicho de otro modo: forcejear apenas ayudaba."
+          ]
+        },
+        {
+          "titulo": "Atrapados en un líquido que no suelta",
+          "parrafos": [
+            "Mover un brazo dentro de un fluido tan denso y viscoso exige empujar una masa enorme que se resiste a deslizarse. Quien había quedado aprisionado entre escombros se agotaba enseguida. Sharp describió a las víctimas intentando apartar la melaza de la boca y la nariz para respirar, mientras los rescatadores avanzaban hundidos en el mismo jarabe. Rubinstein calculó que alrededor de la mitad de los muertos fallecieron, básicamente, porque se quedaron atascados."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "No es cierto que la melaza matara por ser lenta: la primera ola fue rapidísima. El frío convirtió después la zona inundada en una trampa.",
+            "Las cifras son estimaciones. Ni la diferencia de temperatura ni el «cuatro veces más viscosa» se midieron en 1919: salen de reconstrucciones hechas casi un siglo después. Lo sólido es el mecanismo: un jarabe azucarado que se enfría se espesa muy deprisa, y aquel día eso separó a quienes pudieron escapar de quienes no."
+          ]
+        }
+      ]
     },
     {
       "youtube": "uTWN9_BrErg",
@@ -820,6 +872,14 @@
         {
           "titulo": "Emu War (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Emu_War"
+        },
+        {
+          "titulo": "Wikipedia, «Emu»",
+          "url": "https://en.wikipedia.org/wiki/Emu"
+        },
+        {
+          "titulo": "Wikipedia, «Lewis gun»",
+          "url": "https://en.wikipedia.org/wiki/Lewis_gun"
         }
       ],
       "etiquetas": [
@@ -827,7 +887,42 @@
         "Animales",
         "Absurdos"
       ],
-      "de": "A003"
+      "de": "A003",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Según el informe del propio mayor Meredith, en 1932 sus hombres necesitaron unas diez balas por cada emú abatido. Visto desde fuera parece un chiste, pero tiene una explicación bastante lógica. Una ametralladora es un arma pensada para barrer grupos compactos de soldados que avanzan o se atrincheran. Los emús no hacían ninguna de las dos cosas: corrían, se dispersaban y vigilaban."
+          ]
+        },
+        {
+          "titulo": "Un corredor de casi dos metros",
+          "parrafos": [
+            "El emú es un ave enorme. Los ejemplares más grandes miden entre 1,5 y 1,9 metros de altura y pesan entre 18 y 60 kilos. No vuela, pero sus patas son una máquina de correr: puede alcanzar unos 48 kilómetros por hora, y a toda velocidad cada zancada llega a medir unos 2,75 metros. Tiene un rasgo único entre las aves: el gemelo, el gran músculo de la parte trasera de la pata, tiene cuatro vientres musculares en lugar de los tres habituales.",
+            "Además, ve y oye muy bien, de modo que detecta las amenazas a bastante distancia. Cuando van en grupo, unos comen mientras otros vigilan. Y frente a un ataque desde el aire, como el del águila audaz, su defensa es correr de forma caótica, cambiando de dirección sin parar. Justo lo que más desespera a un tirador."
+          ]
+        },
+        {
+          "titulo": "La «guerrilla» de los emús",
+          "parrafos": [
+            "Lo normal es que los emús vayan en parejas. Las grandes bandadas son poco habituales y se forman sobre todo cuando se desplazan hacia una nueva fuente de comida. Eso es lo que ocurrió en Australia Occidental, donde se mueven hacia el norte en verano y hacia el sur en invierno.",
+            "Lo que vieron los soldados encaja con esa biología. En cuanto sonaban los primeros disparos, las aves se dividían en grupos pequeños y huían en direcciones distintas. Un relato publicado en prensa en 1953 añadía que cada grupo parecía tener su propio «jefe»: un ave alta de plumaje negro que vigilaba mientras las demás comían. La imagen es muy militar, pero describe algo conocido: la vigilancia compartida del grupo."
+          ]
+        },
+        {
+          "titulo": "Un arma pensada para otra guerra",
+          "parrafos": [
+            "Las dos ametralladoras eran Lewis, un arma ligera de la Primera Guerra Mundial que pesaba unos 13 kilos. Disparaba entre 500 y 600 balas por minuto y se alimentaba con cargadores circulares de 47 o 97 cartuchos. Con 47 balas a ese ritmo, el disparo continuo se agota en unos cinco segundos. Su alcance eficaz rondaba los 800 metros, y unas notas militares de la Primera Guerra Mundial ya le reprochaban ser «delicada».",
+            "Con esos datos se entiende el problema. Si los emús se dispersaban al primer disparo, cada ráfaga se perdía en el aire y había que recargar enseguida. A larga distancia, un ave que corre en zigzag es un blanco pequeño y móvil, y es más fácil herirla que matarla. La emboscada en la que se atascó un arma y el intento de disparar desde un camión que no podía seguirles el ritmo hicieron el resto."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "La cifra de diez balas por ave es la del propio Meredith, sospechosamente redonda: 986 emús con 9.860 cartuchos. El historiador Greg Beyer la considera muy discutida y probablemente inflada. Tampoco está demostrado que los emús «aguanten balas» mejor que otros animales. Cuando Meredith los comparó con tanques, hablaba desde la frustración, no a partir de ninguna medición. Y aunque a menudo se dice que miden «dos metros», los más grandes se quedan algo por debajo."
+          ]
+        }
+      ]
     },
     {
       "youtube": "pnpMJ9tX8JI",
@@ -959,6 +1054,14 @@
         {
           "titulo": "The Psychologist (BPS), «Phineas Gage – Unravelling the myth»",
           "url": "https://bps.org.uk/psychologist/phineas-gage-unravelling-myth"
+        },
+        {
+          "titulo": "Harvard Medical School, Countway Library, pregunta frecuente sobre el cráneo y la barra de Phineas Gage",
+          "url": "https://asklib.hms.harvard.edu/faq/153359"
+        },
+        {
+          "titulo": "Countway Library, «Public Hours for Center for the History of Medicine Exhibits»",
+          "url": "https://countway.harvard.edu/news/public-hours-center-history-medicine-exhibits"
         }
       ],
       "etiquetas": [
@@ -968,7 +1071,43 @@
       ],
       "fecha": "2026-10-27T23:30",
       "num": "S107",
-      "de": "A004"
+      "de": "A004",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En 1848, una barra de hierro de seis kilos atravesó la cabeza de Phineas Gage, que a los pocos minutos estaba hablando. Su cráneo es famoso, pero la barra es el otro protagonista de la historia: todavía existe, lleva grabada una inscripción con un error y viajó más de lo que se suele contar."
+          ]
+        },
+        {
+          "titulo": "No era una palanca",
+          "parrafos": [
+            "En el siglo XIX, el caso se conocía en medicina como el *American Crowbar Case*, «el caso de la palanca», porque el cirujano Henry Jacob Bigelow, de Harvard, habló de una *crowbar*. Pero John Martyn Harlow, el médico que atendió a Gage, la llamó siempre *tamping iron*: una barra de atacar barrenos.",
+            "Los barreneros perforaban la roca, metían pólvora y mecha y rellenaban el agujero con arena o arcilla, que apretaban con la barra para que la explosión se concentrara en la roca. La de Gage no tenía ni curva ni uña. Era un cilindro de hierro de 1,1 metros y 3,2 centímetros de grosor que en un extremo se estrechaba, a lo largo de unos 28 centímetros, hasta una punta de medio centímetro. Parecía más una jabalina que una palanca. Según Harlow, la hizo un herrero de la zona para satisfacer el capricho de su dueño.",
+            "Ese diseño pudo salvarle la vida. Harlow atribuyó parte de la supervivencia a que la barra era puntiaguda, redonda y bastante lisa."
+          ]
+        },
+        {
+          "titulo": "Su compañera inseparable",
+          "parrafos": [
+            "Gage se quedó la barra, a la que llamaba «mi barra de hierro». En enero de 1850 la depositó en el Museo Anatómico Warren, de la Facultad de Medicina de Harvard, y Bigelow mandó grabarle una inscripción. Según ella, la barra atravesó la cabeza de Gage en Cavendish (Vermont) el 14 de septiembre de 1848. El accidente fue, en realidad, el día 13.",
+            "La barra no se quedó quieta. Gage la tenía consigo cuando volvió a exhibirse brevemente, poco antes de embarcar hacia Chile en 1852. Y el museo conserva una nota suya del 26 de agosto de 1854: «Por favor, entregue mi barra de hierro al portador». Todo indica que un pariente, Benjamin Sweetland, la recogió y se la llevó o se la envió a Valparaíso, aunque eso último es una suposición.",
+            "Gage murió en California en 1860. En 1867 se exhumó su cráneo, y la familia se lo entregó a Harlow junto con la barra. Tras estudiarlos para su informe de 1868, Harlow devolvió la barra al Museo Warren, esta vez con el cráneo."
+          ]
+        },
+        {
+          "titulo": "Dónde verla hoy",
+          "parrafos": [
+            "La barra, el cráneo y una mascarilla de yeso hecha en vida, hacia 1849 o 1850, se exhiben en la galería del Museo Warren, en la quinta planta de la Biblioteca de Medicina Countway, en Boston. Según un aviso de abril de 2025, abre los sábados de 10:00 a 16:00 y los domingos de 12:00 a 17:00. La entrada es gratuita, con un pase que se recoge en el número 695 de Huntington Avenue. Conviene confirmarlo antes."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "No era una palanca, sino una herramienta hecha por encargo. Algunos relatos dicen que enterraron a Gage con ella, pero no hay pruebas: la familia se la dio a Harlow. Y aunque es probable que viajara a Chile, ese trayecto no está documentado."
+          ]
+        }
+      ]
     },
     {
       "youtube": "9SYd1HiSA1M",
@@ -1106,6 +1245,18 @@
         {
           "titulo": "The Paris Review, «The Year Without Summer»",
           "url": "https://www.theparisreview.org/blog/2016/10/25/year-without-summer/"
+        },
+        {
+          "titulo": "Project Gutenberg, «History of a Six Weeks' Tour» (1817)",
+          "url": "https://www.gutenberg.org/ebooks/52790"
+        },
+        {
+          "titulo": "Project Gutenberg, «Frankenstein; Or, The Modern Prometheus»",
+          "url": "https://www.gutenberg.org/ebooks/84"
+        },
+        {
+          "titulo": "Science Museum (Londres), «The year without summer»",
+          "url": "https://blog.sciencemuseum.org.uk/the-year-without-summer/"
         }
       ],
       "etiquetas": [
@@ -1115,7 +1266,41 @@
       ],
       "fecha": "2026-10-27T23:38",
       "num": "S108",
-      "de": "A005"
+      "de": "A005",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "La erupción del Tambora, en Indonesia, en 1815, enfrió el planeta y trajo en 1816 un verano frío y lluvioso que encerró en casa a Lord Byron y a sus invitados junto al lago de Ginebra, donde surgió el reto de escribir historias de miedo. Lo menos conocido es que aquel tiempo también quedó escrito en la novela: las tormentas que Mary Shelley vio desde la orilla reaparecen en sus páginas casi con las mismas palabras."
+          ]
+        },
+        {
+          "titulo": "Del otro lado del mundo hasta Ginebra",
+          "parrafos": [
+            "Los gases de azufre del Tambora formaron en la estratosfera un velo de diminutas gotas que dio la vuelta al planeta y reflejó parte de la luz solar. Más de un año después, Europa seguía notándolo. En Suiza, el verano de 1816 trajo lluvias torrenciales que hicieron crecer el lago de Ginebra y tormentas eléctricas sobre las montañas."
+          ]
+        },
+        {
+          "titulo": "Lo que Mary vio desde la orilla",
+          "parrafos": [
+            "Mary Godwin, que no se casaría con Percy Shelley hasta finales de ese año, tenía 18 años y vivía con él cerca de Villa Diodati. El 1 de junio de 1816 escribió una carta, publicada en 1817 en *History of a Six Weeks' Tour*, en la que contaba que una lluvia casi perpetua los obligaba a quedarse en casa y que las tormentas eran las más grandiosas y terribles que había visto. Una noche, escribió, el lago se iluminó, los pinos del Jura se hicieron visibles un instante y luego llegó una negrura absoluta, con los truenos estallando sobre sus cabezas."
+          ]
+        },
+        {
+          "titulo": "La tormenta dentro de la novela",
+          "parrafos": [
+            "En *Frankenstein*, la electricidad del cielo está en el origen de todo. Con unos quince años, Victor ve desde su casa, cerca de Ginebra, una tormenta violenta que llega desde el Jura. Un rayo alcanza un viejo roble y, a la mañana siguiente, del árbol solo quedan finas tiras de madera. Ese espectáculo despierta su interés por la electricidad.",
+            "Más adelante, tras la muerte de su hermano William, Victor cruza el lago mientras los rayos juegan sobre el Mont Blanc. Los truenos resuenan en el Salève y el Jura, los relámpagos convierten el lago en una lámina de fuego y después todo queda a oscuras. A la luz de un relámpago descubre a la criatura. Es casi la carta de junio: el mismo lago, las mismas montañas, la misma alternancia de luz cegadora y negrura.",
+            "El verano dejó otra huella. El 25 de julio de 1816, durante una excursión a Chamonix, los Shelley visitaron el Mar de Hielo, el glaciar del Montenvers. En la novela, es allí donde Victor se encuentra cara a cara con su criatura."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es real que el verano de 1816 fue anormalmente frío y lluvioso, y que la ciencia lo atribuye sobre todo al Tambora. También lo es el parecido entre la carta y la novela. Pero ninguna tormenta concreta puede achacarse al volcán, porque los Alpes tienen tormentas casi todos los veranos. Lo que pesó fue una estación entera de mal tiempo que encerró al grupo en casa. El resto lo pusieron las lecturas, las conversaciones y el talento de una escritora de 18 años."
+          ]
+        }
+      ]
     },
     {
       "youtube": "m8tW15aqnWo",
@@ -1249,6 +1434,18 @@
         {
           "titulo": "History.com, «A Perfect Solar Superstorm»",
           "url": "https://www.history.com/articles/a-perfect-solar-superstorm-the-1859-carrington-event"
+        },
+        {
+          "titulo": "Wikipedia, «Geomagnetically induced current»",
+          "url": "https://en.wikipedia.org/wiki/Geomagnetically_induced_current"
+        },
+        {
+          "titulo": "Wikipedia, «Electrical telegraph»",
+          "url": "https://en.wikipedia.org/wiki/Electrical_telegraph"
+        },
+        {
+          "titulo": "Green et al., «Eyewitness Reports of the Great Auroral Storm of 1859» (NASA)",
+          "url": "https://ntrs.nasa.gov/citations/20050210157"
         }
       ],
       "etiquetas": [
@@ -1258,7 +1455,42 @@
       ],
       "fecha": "2026-10-27T23:49",
       "num": "S109",
-      "de": "A006"
+      "de": "A006",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En la noche del 2 de septiembre de 1859, dos telegrafistas de Boston y Portland (Maine) desconectaron sus baterías y siguieron enviándose mensajes. Suena a magia, pero tiene una explicación física precisa. Para entenderla hay que saber cómo funcionaba un telégrafo de la época y qué le hace una tormenta solar a un cable de muchos kilómetros."
+          ]
+        },
+        {
+          "titulo": "Un cable, una pila y la tierra",
+          "parrafos": [
+            "El telégrafo Morse usaba un único cable entre dos oficinas. Para cerrar el circuito se aprovechaba la propia tierra: cada extremo de la línea se conectaba al suelo, que hacía de cable de vuelta. Este retorno por tierra se había estrenado en Alemania en 1838 y ahorraba la mitad del cable.",
+            "La energía la ponían las baterías, pilas químicas que empujaban la corriente por la línea. El operador abría y cerraba el circuito con el manipulador para formar los puntos y rayas del código Morse. Al otro extremo, la corriente activaba un electroimán, el relé, que hacía funcionar el aparato receptor. Solo importaba una cosa: que hubiera corriente o no."
+          ]
+        },
+        {
+          "titulo": "Cuando el campo magnético se agita",
+          "parrafos": [
+            "Durante una tormenta geomagnética, las corrientes eléctricas de la alta atmósfera cambian deprisa, y con ellas el campo magnético que se mide en el suelo. Por la ley de inducción de Faraday, un campo magnético que varía crea un campo eléctrico, en este caso en la superficie terrestre, que se mide en voltios por kilómetro.",
+            "Un cable de decenas o cientos de kilómetros conectado a tierra por los dos extremos recoge la diferencia de voltaje entre ambos puntos, y por él circula una corriente que nadie ha generado. Cuanto más larga es la línea, mayor es ese voltaje. Son las corrientes inducidas geomagnéticamente. El telégrafo las sufrió por primera vez en 1847 y 1848, pero en 1859 fueron tan intensas que llegaron a sustituir a las pilas."
+          ]
+        },
+        {
+          "titulo": "La conversación entre Boston y Portland",
+          "parrafos": [
+            "El diálogo lo publicó el periódico *Boston Evening Traveller*. El operador de Boston pidió a su colega que cortara la batería durante quince minutos. Ambos la desconectaron y siguieron trabajando, según Boston, con «la corriente auroral». Portland respondió que recibía mejor que con las baterías, aunque la corriente iba y venía poco a poco.",
+            "Boston explicó el motivo: la aurora parecía anular y reforzar sus baterías alternativamente, y a veces la corriente era demasiado fuerte para los relés. Tiene lógica. La corriente inducida cambiaba de sentido: cuando coincidía con la de la pila, se sumaba y saturaba los aparatos; cuando iba en contra, la anulaba. Sin baterías, bastaba con abrir y cerrar el circuito, y la tormenta ponía la energía. No fue un caso único: una recopilación publicada ese año en el *American Journal of Science* afirma que el 3 de septiembre varias líneas funcionaron solo gracias a la «influencia atmosférica»."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "El Sol no envió electricidad por el cable: sacudió el campo magnético terrestre, y esa sacudida indujo la corriente. Tampoco era una fuente estable, pero bastaba porque el telégrafo solo necesitaba pulsos. La duración, unas dos horas según el relato más citado, procede de testimonios, no de mediciones. Lo que sí está bien documentado es el fenómeno, que hoy preocupa a las compañías eléctricas."
+          ]
+        }
+      ]
     },
     {
       "youtube": "M3-R2WDHpKw",
@@ -1393,6 +1625,14 @@
         {
           "titulo": "ISRI, «Selling the Eiffel Tower»",
           "url": "https://isri.org/scrap-articles/selling-the-eiffel-tower"
+        },
+        {
+          "titulo": "Wikipedia, «David W. Maurer»",
+          "url": "https://en.wikipedia.org/wiki/David_W._Maurer"
+        },
+        {
+          "titulo": "Today I Found Out, «The Man Who Sold the Eiffel Tower»",
+          "url": "https://www.todayifoundout.com/index.php/2015/01/man-sold-eiffel-tower-twice/"
         }
       ],
       "etiquetas": [
@@ -1402,7 +1642,49 @@
       ],
       "fecha": "2026-10-27T23:55",
       "num": "S110",
-      "de": "A007"
+      "de": "A007",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "¿Cómo se convence a un empresario de que compre la Torre Eiffel? Victor Lustig no recurrió a la magia, sino a una técnica que los estafadores de su época conocían bien. En lugar de pedir confianza, creó un escenario en el que dudar parecía absurdo. Y añadió una última pieza que garantizaba el silencio de su víctima."
+          ]
+        },
+        {
+          "titulo": "Responder a las preguntas antes de que se hagan",
+          "parrafos": [
+            "Cada detalle del montaje de 1925 desactivaba una duda. ¿Era auténtico el funcionario? Tenía un cargo en el Ministerio de Correos y Telégrafos, papel con membrete oficial y citaba a los chatarreros en un hotel de lujo. ¿Era absurda la venta? La prensa había hablado de lo cara que salía la torre. ¿Por qué no había concurso público? Porque el asunto debía llevarse en secreto para evitar el escándalo.",
+            "Ese secreto servía para algo más: impedía comprobar nada con nadie. Una víctima que no puede consultar a un amigo, a un abogado o a un ministerio está sola frente al estafador. A eso se sumaban dos empujones clásicos: el halago, al decirles que los habían elegido por su fama de hombres de negocios honrados, y la competencia, porque debían pujar unos contra otros."
+          ]
+        },
+        {
+          "titulo": "Elegir a la víctima adecuada",
+          "parrafos": [
+            "Lustig se fijó en André Poisson, el más interesado y el más inseguro del grupo, que ansiaba hacerse un sitio entre los grandes empresarios de París. Su deseo de prestigio pesaba más que su prudencia.",
+            "En la jerga que recogió el lingüista David W. Maurer en *The Big Con* (1940), tras entrevistar a cientos de estafadores, esa persona es la *mark*, la víctima señalada. Maurer partía de una idea incómoda: el timador prospera gracias a la falta de honradez de su propia víctima, a la que tienta con un negocio turbio que parece seguro."
+          ]
+        },
+        {
+          "titulo": "El soborno, la pieza maestra",
+          "parrafos": [
+            "Según los relatos más difundidos, Poisson, o su mujer en algunas versiones, desconfiaba de tanto secreto y tanta prisa. Lustig se presentó entonces como un funcionario mal pagado y dejó entrever que aceptaría una compensación. Poisson pagó el soborno además del precio.",
+            "Ese gesto lo convirtió en cómplice. Denunciar el engaño suponía confesar un soborno y ser el hazmerreír de París. Es lo que describía Maurer: el estafador no solo explota la codicia ajena, también la usa como candado. Cuando Lustig repitió la jugada con otro grupo, el candado falló y alguien avisó a la policía."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "A Lustig se le atribuyen unos «diez mandamientos del estafador»: escuchar con paciencia, no parecer nunca aburrido, dar la razón al otro en política y en religión, insinuar conversaciones picantes sin insistir, no hablar de enfermedades, no curiosear en la vida ajena, no presumir, no ir desaliñado y no emborracharse. Casi ninguno habla de mentir, sino de escuchar y reflejar lo que el otro quiere oír. Pero la lista aparece en un libro de 1993, medio siglo después de su muerte, y no hay pruebas de que él la escribiera. Tampoco son seguros las dudas de la esposa de Poisson ni las cifras pagadas, que cambian según el relato."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "The Big Con",
+          "autor": "David W. Maurer",
+          "nota": "El estudio clásico de 1940 sobre los grandes timos y la jerga de los estafadores, que sirvió de material para la película *El golpe* (en inglés)."
+        }
+      ]
     },
     {
       "youtube": "JKUBZ1wBI5s",
@@ -1530,6 +1812,22 @@
         {
           "titulo": "Smithsonian Magazine, «There Never Was a Real Tulip Fever»",
           "url": "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/"
+        },
+        {
+          "titulo": "Anne Goldgar, «Tulip mania: the classic story of a Dutch financial bubble is mostly wrong», The Conversation",
+          "url": "https://theconversation.com/tulip-mania-the-classic-story-of-a-dutch-financial-bubble-is-mostly-wrong-91413"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Extraordinary Popular Delusions and the Madness of Crowds»",
+          "url": "https://en.wikipedia.org/wiki/Extraordinary_Popular_Delusions_and_the_Madness_of_Crowds"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Tulip mania»",
+          "url": "https://en.wikipedia.org/wiki/Tulip_mania"
+        },
+        {
+          "titulo": "Charles Mackay, «The Tulipomania» (texto completo), Econlib",
+          "url": "https://www.econlib.org/library/Mackay/macEx3.html"
         }
       ],
       "etiquetas": [
@@ -1539,7 +1837,47 @@
       ],
       "fecha": "2026-10-28T00:02",
       "num": "S111",
-      "de": "A008"
+      "de": "A008",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Casi todo lo que se repite sobre la «tulipomanía» tiene un origen muy concreto: un capítulo de un libro publicado en Londres en 1841. En él aparecen deshollinadores que apuestan sus ahorros, ricos comerciantes reducidos a la mendicidad y un país en crisis. Su autor, el periodista escocés Charles Mackay, trabajó con fuentes de segunda mano. Más de siglo y medio después, la historiadora Anne Goldgar fue a los archivos holandeses, y lo que encontró explica por qué esa versión se considera hoy, en buena parte, un mito."
+          ]
+        },
+        {
+          "titulo": "Un éxito editorial sobre la locura de las masas",
+          "parrafos": [
+            "El libro se tituló primero *Memoirs of Extraordinary Popular Delusions* y, más tarde, *Extraordinary Popular Delusions and the Madness of Crowds*. Era un catálogo de manías colectivas, de la alquimia a las cazas de brujas, con tres burbujas financieras entre ellas. Mackay escribía con gancho, pero con un estilo que buscaba más el asombro que la precisión.",
+            "Su capítulo sobre los tulipanes asegura que hasta los deshollinadores y las ropavejeras especulaban con bulbos, y que tras el desplome hubo comerciantes acomodados que quedaron casi en la miseria. Su anécdota más famosa es la de un marinero que confundió un valiosísimo bulbo de Semper Augustus con una cebolla, se lo comió con un arenque y acabó varios meses en prisión. Es una historia redonda, pero difícil de creer: el bulbo de tulipán sabe mal y puede resultar tóxico."
+          ]
+        },
+        {
+          "titulo": "De dónde sacó Mackay sus historias",
+          "parrafos": [
+            "Mackay tomó buena parte de su relato de la historia de los inventos del alemán Johann Beckmann. Y la fuente última era casi siempre la misma: los panfletos satíricos que circularon tras el desplome de febrero de 1637, sobre todo unos diálogos entre dos personajes llamados Waermondt y Gaergoedt, impresos en Haarlem ese mismo año.",
+            "Aquellos panfletos no eran crónicas, sino sátiras morales de tono religioso, escritas para ridiculizar la codicia y no por quienes habían perdido dinero. Según Goldgar, mucho de lo que contó Mackay sale directamente de esas canciones y sátiras de 1637."
+          ]
+        },
+        {
+          "titulo": "Lo que encontró Goldgar",
+          "parrafos": [
+            "Tras años revisando documentos notariales y judiciales, Goldgar identificó a menos de media docena de participantes con problemas financieros, y ni siquiera estaba claro que los tulipanes fueran la causa. Como el dinero casi nunca llegó a cambiar de manos, la mayoría de las pérdidas fueron sobre el papel. Aun así, Goldgar sostiene que el golpe fue real en otro sentido: puso en duda la confianza en los contratos y en la palabra dada."
+          ]
+        },
+        {
+          "titulo": "La ironía final",
+          "parrafos": [
+            "Según el matemático Andrew Odlyzko, en octubre de 1845, en plena fiebre especulativa de los ferrocarriles británicos, Mackay escribió como editorialista de *The Glasgow Argus* que no había motivo alguno para temer un crac. Aquella burbuja estalló poco después, y en ediciones posteriores de su libro él mismo la calificó de delirio colectivo."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es cierto que hubo precios muy altos por algunos bulbos y un desplome brusco en 1637. Es mito la ruina general, y las anécdotas más citadas, como la del marinero, proceden de sátiras y relatos de segunda mano, no de documentos de archivo."
+          ]
+        }
+      ]
     },
     {
       "youtube": "PAjZ8g7deHM",
@@ -1672,6 +2010,18 @@
         {
           "titulo": "The Arthur Conan Doyle Encyclopedia, «Mary Celeste»",
           "url": "https://www.arthur-conan-doyle.com/wiki/Mary_Celeste"
+        },
+        {
+          "titulo": "The Arthur Conan Doyle Encyclopedia, «J. Habakuk Jephson's Statement»",
+          "url": "https://www.arthur-conan-doyle.com/index.php/J._Habakuk_Jephson%27s_Statement"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «J. Habakuk Jephson's Statement»",
+          "url": "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Mary Celeste»",
+          "url": "https://en.wikipedia.org/wiki/Mary_Celeste"
         }
       ],
       "etiquetas": [
@@ -1681,7 +2031,42 @@
       ],
       "fecha": "2026-10-28T00:06",
       "num": "S112",
-      "de": "A009"
+      "de": "A009",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En enero de 1884, *The Cornhill Magazine*, una prestigiosa revista literaria londinense, publicó sin firma la declaración de un médico estadounidense que decía ser el único superviviente del «Marie Celeste». Contaba con todo detalle qué había pasado a bordo. Nada era cierto. El autor era un médico de 24 años llamado Arthur Conan Doyle, que aún no había creado a Sherlock Holmes, y su relato acabó mezclándose con la historia real del barco hasta hoy."
+          ]
+        },
+        {
+          "titulo": "Un médico joven con tiempo para escribir",
+          "parrafos": [
+            "En 1882, Doyle había abierto una consulta en Southsea, junto a Portsmouth, y los pacientes llegaban despacio. Conocía bien el mar: había sido médico de a bordo en un ballenero y en un vapor que viajó a la costa de África occidental. Con esos ingredientes escribió «J. Habakuk Jephson's Statement», «La declaración de J. Habakuk Jephson».",
+            "El texto salió sin el nombre del autor. Algunos críticos lo atribuyeron a Robert Louis Stevenson y otros lo compararon con Edgar Allan Poe, un elogio enorme para un principiante."
+          ]
+        },
+        {
+          "titulo": "Una ficción con apariencia de documento",
+          "parrafos": [
+            "El narrador es Jephson, un médico de Brooklyn que viaja enfermo de los pulmones. A bordo coincide con Septimius Goring, un pasajero siniestro que manipula los instrumentos, provoca un motín y desvía el barco hacia África. Es un argumento de aventuras, con un componente racial muy propio de su época, que no tiene nada que ver con lo que se sabe del caso.",
+            "Lo que hizo creíble la historia fue su envoltorio. Doyle abrió el relato con un supuesto recorte de la *Gibraltar Gazette* y un telegrama de Boston, que imitaban el lenguaje de la prensa. Y cambió casi todos los datos. El barco es el «Marie Celeste»; el capitán, un tal J. W. Tibbs, con su mujer y un hijo de 5 años, y no Benjamin Briggs con su mujer y su hija de 2. La travesía es de 1873, de Boston a Lisboa, con sebo y relojes americanos, cuando la real fue en 1872, de Nueva York a Génova y con alcohol. Y los botes salvavidas siguen en su sitio, cuando lo esencial del caso real es que faltaba el único bote."
+          ]
+        },
+        {
+          "titulo": "Cuando la ficción se leyó como noticia",
+          "parrafos": [
+            "Para sorpresa de Doyle, hubo quien se lo tomó en serio. El *Boston Herald* lo reprodujo el 3 de abril de 1885 como «Strange Tale of the Sea», con un subtítulo que prometía un misterio por fin explicado. Horatio Sprague, cónsul de Estados Unidos en Gibraltar, llegó a preguntar si había algo de verdad en él.",
+            "La consecuencia más duradera fue el nombre. El relato llegó a mucho más público que las actas del juicio de Gibraltar, y la grafía «Marie Celeste» se volvió más habitual que la auténtica. Décadas después, en los años veinte, un falso testimonio de un supuesto superviviente todavía usaba ese nombre equivocado, señal de que bebía de Doyle y no de los documentos."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es real que el Mary Celeste apareció a la deriva en 1872 sin nadie a bordo y sin su bote. Es ficción todo lo que cuenta Jephson: el motín, Goring, el viaje a África y el propio narrador. Y es un error, nacido de este relato, llamar al barco «Marie Celeste»."
+          ]
+        }
+      ]
     },
     {
       "youtube": "cGdxWX4mSQI",
@@ -1811,6 +2196,18 @@
         {
           "titulo": "NPR, sobre el centenario de Nosferatu",
           "url": "https://www.npr.org/transcripts/1086605684"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Florence Stoker»",
+          "url": "https://en.wikipedia.org/wiki/Florence_Stoker"
+        },
+        {
+          "titulo": "EBSCO Research Starters, «Nosferatu Is Found to Have Violated Dracula Copyright»",
+          "url": "https://www.ebsco.com/research-starters/film/nosferatu-found-have-violated-dracula-copyright"
+        },
+        {
+          "titulo": "Mental Floss, «How the Classic Vampire Movie ‘Nosferatu’ Cheated Court-Ordered Death»",
+          "url": "https://www.mentalfloss.com/entertainment/movies/how-nosferatu-vampire-movie-went-worldwide"
         }
       ],
       "etiquetas": [
@@ -1820,7 +2217,50 @@
       ],
       "fecha": "2026-10-28T00:14",
       "num": "S113",
-      "de": "A010"
+      "de": "A010",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En julio de 1925, la justicia alemana dio la razón a Florence Stoker, viuda del autor de «Drácula»: todos los negativos y todas las copias de «Nosferatu» debían entregarse para ser destruidos. Sobre el papel, la película estaba condenada. En la práctica, Florence Stoker pasó años persiguiendo copias por Europa y nunca cobró un céntimo."
+          ]
+        },
+        {
+          "titulo": "Una viuda frente a un estudio en quiebra",
+          "parrafos": [
+            "Bram Stoker murió en 1912 y su viuda, Florence, heredó los derechos de «Drácula» en una situación económica apurada. Cuando supo que en Berlín se había estrenado en 1922 una adaptación sin su permiso, se unió a la Sociedad de Autores británica, que contrató en Berlín al abogado Manfred Wronker-Flatow. Pedía dos cosas: una compensación económica y la destrucción del negativo y de todas las copias.",
+            "El problema era que el demandado se hundía. La productora, Prana Film, entró en quiebra en 1922, y el caso pasó a manos de los administradores de la quiebra. Según el relato más detallado del pleito, estos le ofrecieron a Florence una parte de los beneficios si permitía exhibir la película en los países de habla inglesa con el título de «Drácula». Ella, aconsejada por la Sociedad, lo rechazó."
+          ]
+        },
+        {
+          "titulo": "Del primer fallo a la orden de destrucción",
+          "parrafos": [
+            "En 1924, un primer fallo le dio la razón. Florence se ofreció entonces a vender los derechos por 5.000 libras, pero los administradores recurrieron. Perdieron, y en julio de 1925 llegó la orden definitiva de destruir la película. Fue una victoria sin dinero: Prana, en quiebra, no pagó indemnización alguna.",
+            "Hay una duda que las fuentes no resuelven: si la quiebra de Prana se debió solo al fracaso de la película y a sus gastos, o si el estudio la usó también para no tener que pagar a la viuda."
+          ]
+        },
+        {
+          "titulo": "Copias que ya habían cruzado fronteras",
+          "parrafos": [
+            "La sentencia llegaba tarde. Ya en 1922, Florence Stoker había tenido noticia de proyecciones en Budapest y en París. En el Reino Unido, en cambio, la junta de censura negó ese año el certificado a quien quería estrenarla.",
+            "En octubre de 1925, recién dictada la sentencia, la London Film Society anunció una sesión con una copia comprada en Alemania. Tras sus protestas, se canceló. Pero la sociedad volvió a programarla en diciembre de 1928 y esta vez ella no pudo impedirlo. El historiador David J. Skal escribe que aquella copia probablemente se destruyó en 1929, aunque no consta con certeza.",
+            "Lo que no pudo controlar fue lo que pasaba fuera de Europa. En 1929, «Nosferatu» se estrenó en Estados Unidos, en el Film Guild Cinema de Greenwich Village, en Nueva York, y luego en otras ciudades. Algunos historiadores creen que allí se vio una versión remontada y con otros nombres."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es cierto que una sentencia de 1925 ordenó destruir todas las copias. Es mito que «sobreviviera una sola copia»: había varias en distintos países, con montajes diferentes, y de ellas salen las restauraciones actuales. No está claro cuántas escaparon exactamente."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Hollywood Gothic: The Tangled Web of Dracula from Novel to Stage to Screen",
+          "autor": "David J. Skal",
+          "nota": "Reconstruye el viaje de «Drácula» de la novela al cine, incluida la batalla de Florence Stoker contra «Nosferatu» (1990; en inglés)."
+        }
+      ]
     },
     {
       "youtube": "DujLCXw4XMk",
@@ -1944,6 +2384,14 @@
         {
           "titulo": "Wikipedia, «H. H. Holmes»",
           "url": "https://en.wikipedia.org/wiki/H._H._Holmes"
+        },
+        {
+          "titulo": "Smithsonian Magazine, «The Enduring Mystery of H.H. Holmes, America’s ‘First’ Serial Killer»",
+          "url": "https://www.smithsonianmag.com/smart-news/enduring-mystery-hh-holmes-americas-first-serial-killer-180977646/"
+        },
+        {
+          "titulo": "Adam Selzer, «Is all that stuff about H.H. Holmes true?», Time Out Chicago (2015)",
+          "url": "https://www.timeout.com/chicago/blog/is-all-that-stuff-about-h-h-holmes-true-081115"
         }
       ],
       "etiquetas": [
@@ -1953,7 +2401,49 @@
       ],
       "fecha": "2026-10-28T00:14",
       "num": "S114",
-      "de": "A011"
+      "de": "A011",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Las «habitaciones secretas» del edificio de H. H. Holmes en Chicago se han convertido en un tópico del terror. Pero cuando la prensa de Chicago habló de ellas por primera vez, en marzo de 1893, la noticia no era de crímenes, sino de deudas: aquellos cuartos escondidos servían para ocultar muebles que Holmes había comprado a plazos y no pensaba pagar. Antes que nada, el edificio fue una máquina de estafar."
+          ]
+        },
+        {
+          "titulo": "Un edificio que nadie terminaba de cobrar",
+          "parrafos": [
+            "Holmes empezó a construir en 1887 en Englewood, en la esquina de la calle 63 con Wallace. Tiendas abajo, viviendas arriba. Lo difícil era cobrarle. En 1888, los arquitectos y la empresa que suministraba el acero, Aetna Iron and Steel, ya lo habían llevado a los tribunales por facturas impagadas.",
+            "En 1892 añadió una tercera planta y les explicó a inversores y proveedores que sería un hotel para la Exposición Mundial de 1893. Con la ciudad esperando millones de visitantes, era un buen argumento para conseguir crédito. Según el historiador Adam Selzer, esa planta nunca se terminó, nunca se amuebló y nunca se abrió al público. Para Selzer, todo el proyecto fue sobre todo un vehículo para estafar a quienes ponían el dinero o el material."
+          ]
+        },
+        {
+          "titulo": "El truco de los muebles",
+          "parrafos": [
+            "Holmes compraba muebles y enseres a crédito, y cuando los acreedores venían a reclamarlos, desaparecían. Según la versión que recoge la revista *Smithsonian* a partir de la prensa de la época, una empresa de muebles envió a sus operarios a recuperar lo que no había cobrado y encontró el edificio vacío. Más tarde, un conserje sobornado por la propia empresa reveló el secreto: Holmes había metido todo en una sola habitación y había tapiado la puerta.",
+            "Ese es el origen mejor documentado de las habitaciones ocultas. En marzo de 1893, antes de que abriera la Exposición, el *Chicago Tribune* publicó un amplio artículo sobre ellas. La ciudad conocía, pues, los escondites, y los asociaba a un fraude comercial."
+          ]
+        },
+        {
+          "titulo": "Albañiles, alias y seguros",
+          "parrafos": [
+            "Una idea muy repetida es que Holmes contrataba y despedía cuadrillas de obreros constantemente para que nadie conociera el plano completo del edificio. No hay pruebas de esa intención, y hay una explicación más prosaica: cambiaba de constructores porque no les pagaba.",
+            "El fraude no se limitaba a los muebles. Holmes usaba varios alias e intentó quemar el edificio para cobrar el seguro, y las aseguradoras presionaron para que lo procesaran por ello. En julio de 1894 pasó unos días en una cárcel de San Luis (Misuri) por vender bienes hipotecados."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es real que el edificio tenía cuartos ocultos y un diseño irregular, y que al menos parte de ellos servía para esconder bienes impagados. Son reales las demandas de proveedores, el intento de incendio y la detención en San Luis. Es dudoso que funcionara alguna vez como hotel, no hay pruebas de que el laberinto se diseñara como una trampa y lo de los obreros despedidos para guardar el secreto no tiene respaldo."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "H. H. Holmes: The True History of the White City Devil",
+          "autor": "Adam Selzer",
+          "nota": "La biografía que volvió a los documentos originales para separar los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
+        }
+      ]
     },
     {
       "youtube": "vML9AgGkMfc",
@@ -1982,6 +2472,18 @@
         {
           "titulo": "GameSpot, «Original Grand Theft Auto 'almost canned'»",
           "url": "https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Grand Theft Auto V»",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Grand Theft Auto: Vice City»",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City"
+        },
+        {
+          "titulo": "Game Developer (antes Gamasutra), «Penn: First Grand Theft Auto Was 'Almost Canned'» (2011)",
+          "url": "https://www.gamedeveloper.com/game-platforms/penn-first-i-grand-theft-auto-i-was-almost-canned-"
         }
       ],
       "etiquetas": [
@@ -1989,7 +2491,84 @@
         "GTA 6",
         "Grand Theft Auto"
       ],
-      "fecha": "2026-10-28T00:26"
+      "fecha": "2026-10-28T00:26",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "El 19 de noviembre de 2026 está previsto que salga Grand Theft Auto VI, el sexto título principal de una saga que lleva casi tres décadas en las tiendas. Pocos lanzamientos culturales han generado tanta expectación: sus tráileres han batido récords de audiencia, su fecha se ha movido dos veces y los analistas calculan sus reservas por millones.",
+            "Detrás de ese fenómeno hay una historia menos conocida, que no empieza en Miami ni en Los Ángeles, sino en una ciudad portuaria del este de Escocia, con un equipo pequeño, un proyecto que no funcionaba y unos coches de policía que hicieron algo que nadie había previsto."
+          ]
+        },
+        {
+          "titulo": "Dundee, 1995: un juego de policías que aburría",
+          "parrafos": [
+            "En abril de 1995, el estudio escocés DMA Design, con sede en Dundee, empezó a desarrollar un juego llamado «Race'n'Chase», algo así como «carrera y persecución». La idea original era que el jugador hiciera de policía y persiguiera a los delincuentes por una ciudad vista desde arriba.",
+            "El planteamiento tenía un problema serio: no era divertido. Perseguir a otros respetando las normas resultaba monótono, y el equipo decidió darle la vuelta a la idea. ¿Y si el jugador fuera el delincuente y la policía, el obstáculo?"
+          ]
+        },
+        {
+          "titulo": "El fallo que cambió el proyecto",
+          "parrafos": [
+            "En ese proceso ocurrió el episodio que hoy forma parte de la leyenda de la saga. Gary Penn, entonces director creativo de DMA Design, contó en una entrevista de 2011 que durante las pruebas, por lo que parecía un error del programa, los coches de policía se volvieron extremadamente agresivos: en vez de detener al jugador, intentaban sacarlo de la calzada a golpes.",
+            "Lo lógico habría sido corregirlo. Pero al equipo le pareció tan divertido que lo conservó, y esa persecución caótica se convirtió en el corazón del juego. Conviene matizarlo: la historia procede del testimonio de Penn, que la recuerda como un fallo aparente, y no hay otra documentación técnica que la confirme. Aun así, ilustra bien cómo se trabajaba entonces, probando y corrigiendo sobre la marcha."
+          ]
+        },
+        {
+          "titulo": "1997: un nombre legal y una polémica rentable",
+          "parrafos": [
+            "El juego terminó llamándose Grand Theft Auto, la denominación que usa el derecho de varios estados de Estados Unidos para el robo de vehículos. Salió en Europa para ordenador el 28 de noviembre de 1997.",
+            "Su lanzamiento estuvo rodeado de polémica por la violencia, y la campaña de promoción, dirigida por el publicista británico Max Clifford, supo aprovecharla: cada crítica en la prensa funcionaba como publicidad gratuita. El resultado fue un éxito considerable para la época. En marzo de 2001, el primer GTA ya había vendido unos seis millones de copias.",
+            "Mientras tanto, el estudio cambió de manos y de nombre. Aquel pequeño equipo de Dundee acabó integrado en Rockstar Games y convertido en Rockstar North, con sede en Edimburgo, el estudio que ha liderado el desarrollo de los grandes títulos de la serie."
+          ]
+        },
+        {
+          "titulo": "De Vice City a los mil millones de GTA V",
+          "parrafos": [
+            "La saga dio el salto definitivo con el paso a las tres dimensiones. En 2002 llegó Vice City, una ciudad inspirada en el Miami de los años ochenta, con su estética de neón, música de la época y guiños al cine de gánsteres. Ese escenario es clave para entender el nuevo juego, porque GTA VI vuelve a él.",
+            "En septiembre de 2013 llegó GTA V, y sus cifras siguen siendo difíciles de igualar: unos 800 millones de dólares en su primer día y 1.000 millones en tres, lo que lo convirtió en el producto de entretenimiento que más deprisa había alcanzado esa cifra. Con el tiempo ha superado los 230 millones de copias, lo que lo sitúa como el segundo videojuego más vendido de la historia. Su longevidad, impulsada por el modo en línea y por sucesivas reediciones en nuevas consolas, explica en parte por qué la espera de su sucesor ha sido tan larga."
+          ]
+        },
+        {
+          "titulo": "La filtración de 2022",
+          "parrafos": [
+            "Rockstar es conocida por controlar al detalle lo que muestra de sus juegos. Por eso fue un golpe tan duro lo que pasó el 18 de septiembre de 2022: alguien publicó en un foro 90 vídeos de GTA VI en pleno desarrollo, unos 50 minutos de material que no estaba pensado para el público.",
+            "El responsable resultó ser un joven británico de 17 años, que fue detenido días después. Un tribunal británico concluyó que había cometido los hechos. Rockstar estimó que la filtración le costó unos cinco millones de dólares, además de miles de horas de trabajo de su plantilla. Aquí no damos su nombre: era menor cuando ocurrió."
+          ]
+        },
+        {
+          "titulo": "Los tráileres más vistos",
+          "parrafos": [
+            "La mala suerte con las filtraciones continuó. El primer tráiler oficial, previsto para diciembre de 2023, apareció en internet antes de tiempo y Rockstar tuvo que publicarlo por adelantado. Aun así, alcanzó 46 millones de visitas en YouTube en sus primeras 12 horas, un récord para un vídeo no musical en la plataforma, y superó los 100 millones en dos días.",
+            "El segundo tráiler, publicado el 6 de mayo de 2025, fue todavía más lejos: 475 millones de visualizaciones en 24 horas sumando todas las plataformas.",
+            "Esos tráileres revelaron el escenario y los protagonistas. El juego transcurre en Leonida, un estado ficticio inspirado en Florida, cuya gran ciudad es de nuevo Vice City. El protagonismo lo comparte una pareja, Jason Duval y Lucia Caminos, inspirados en Bonnie y Clyde, la famosa pareja de delincuentes estadounidenses de los años treinta."
+          ]
+        },
+        {
+          "titulo": "Dos aplazamientos y reservas millonarias",
+          "parrafos": [
+            "El primer tráiler prometía el juego para 2025. En mayo de ese año, Rockstar lo aplazó al 26 de mayo de 2026, y en noviembre de 2025 anunció un segundo retraso, hasta el 19 de noviembre de 2026, para pulir los últimos detalles.",
+            "Las reservas se abrieron el 25 de junio de 2026. La consultora Newzoo estimó que en siete días habían sumado unos 260 millones de dólares, y en octubre de 2026 se calculaban alrededor de 6,45 millones de reservas. Son estimaciones de analistas: Rockstar no publica estas cifras.",
+            "Lo que sí ha confirmado la compañía es que el juego saldrá solo en PlayStation 5 y Xbox Series X/S, y que en ambas consolas funcionará a 30 imágenes por segundo. De la versión para ordenador no hay fecha oficial."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "**Que el juego nació de un fallo** es, en parte, verdad: lo cuenta uno de sus creadores, que lo recuerda como un error aparente. Es un testimonio personal, no un documento técnico, pero es la versión aceptada.",
+            "**Que GTA VI ha costado 2.000 millones de dólares** es un rumor. Se han publicado cifras de entre 1.000 y 2.000 millones, pero Rockstar negó las que superaban los 1.500 millones sin dar una cifra propia. El presupuesto real sigue siendo un secreto.",
+            "**Que ya ha vendido millones de copias** hay que matizarlo: lo que existen son estimaciones de reservas, no ventas oficiales.",
+            "Y una advertencia final: la fecha del 19 de noviembre de 2026 es la vigente a finales de octubre de 2026. Rockstar ya la ha cambiado dos veces, así que conviene confirmarla en sus canales oficiales."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Jacked: The Outlaw Story of Grand Theft Auto",
+          "autor": "David Kushner",
+          "nota": "La crónica periodística de cómo nació la saga y de las polémicas que la acompañaron (Wiley, 2012; en inglés)."
+        }
+      ]
     },
     {
       "youtube": "G4ysC_DHmCw",
@@ -2011,6 +2590,18 @@
         {
           "titulo": "GameSpot, «Original Grand Theft Auto 'almost canned'»",
           "url": "https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/"
+        },
+        {
+          "titulo": "Game Developer (antes Gamasutra), «The Replay Interviews: Gary Penn»",
+          "url": "https://www.gamedeveloper.com/design/the-replay-interviews-gary-penn"
+        },
+        {
+          "titulo": "PC Gamer, «The original Grand Theft Auto was almost axed, saved by psycho police car bug»",
+          "url": "https://www.pcgamer.com/the-original-grand-theft-auto-was-almost-axed-saved-by-psycho-police-car-bug/"
+        },
+        {
+          "titulo": "GTA Wiki, «Wanted Level in GTA (1997 game)»",
+          "url": "https://gta.wiki/w/Wanted_Level_in_GTA_(1997_game)"
         }
       ],
       "etiquetas": [
@@ -2018,7 +2609,49 @@
         "GTA VI",
         "Grand Theft Auto"
       ],
-      "fecha": "2026-10-28T00:26"
+      "fecha": "2026-10-28T00:26",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Antes de llamarse Grand Theft Auto, el juego que dio origen a una de las sagas más vendidas de la historia tenía un nombre mucho más modesto: «Race'n'Chase». Se desarrollaba en Dundee (Escocia), en el estudio DMA Design, y estuvo a punto de cancelarse. Lo salvó, según uno de sus responsables, una policía inesperadamente agresiva que acabó convertida en una mecánica central de la saga."
+          ]
+        },
+        {
+          "titulo": "Un proyecto con plan, pero sin rumbo",
+          "parrafos": [
+            "DMA Design ya era conocido por «Lemmings» cuando, en marzo de 1995, empezó a dar forma a un nuevo juego para ordenador. El documento de diseño original, firmado por Keith R. Hamilton y fechado el 22 de marzo de 1995, lo describía como un juego de carreras y choques multijugador con un sistema gráfico novedoso. El motor de vista cenital lo había programado Mike Dailly, que en 2011 publicó aquel documento en internet.",
+            "La propuesta incluía tres ciudades y varias modalidades: una carrera, un derbi de demolición y atracos a bancos en los que se podía jugar como ladrón o como policía. El desarrollo empezó el 4 de abril de 1995 con un calendario que preveía acabar en julio de 1996; el juego no salió hasta finales de 1997."
+          ]
+        },
+        {
+          "titulo": "La policía que quería atravesarte",
+          "parrafos": [
+            "El relato más citado lo dio el diseñador Gary Penn, director creativo del estudio en aquella época, en una entrevista con el periodista Tristan Donovan publicada en 2011. Según Penn, el juego se colgaba constantemente, el manejo de los coches era pésimo y la editora, BMG Interactive, quería cancelarlo.",
+            "Entonces, durante las pruebas, la policía empezó a comportarse de forma agresiva. Penn cree que fue un fallo: el sistema que calculaba la ruta de los coches patrulla funcionaba mal y estos intentaban pasar a través del coche del jugador y lo embestían una y otra vez. Resultaba tan emocionante que el equipo lo mantuvo. Y añadió otra clave: nadie quería ser el policía, era más divertido ser el malo."
+          ]
+        },
+        {
+          "titulo": "De cabezas de policía a estrellas",
+          "parrafos": [
+            "En el primer GTA, cada delito aumentaba el nivel de búsqueda, representado en pantalla con cuatro cabezas de policía. Con tres llegaban los controles de carretera y los agentes intentaban sacar al jugador de la calzada, y con cuatro las calles se vaciaban. Esconderse no servía: había que repintar el coche en un taller o encontrar un soborno escondido en una caja.",
+            "«GTA 2» amplió el sistema a seis niveles, y «GTA III», en 2001, sustituyó las cabezas por estrellas. Desde entonces, la «estrella de búsqueda» es uno de los símbolos más reconocibles de la saga."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es cierto que el juego empezó como «Race'n'Chase», que estuvo a punto de cancelarse y que la policía agresiva se quedó a propósito. Hay que matizar que fuera un fallo: lo cuenta Penn de memoria, con un «creo», y no hay documentación técnica que lo confirme. Y conviene no atribuir la anécdota a Mike Dailly: él programó el motor, pero el testimonio publicado sobre la policía es de Penn."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Replay: The History of Video Games",
+          "autor": "Tristan Donovan",
+          "nota": "La historia del videojuego para la que se hizo la entrevista con Gary Penn (2010; en inglés)."
+        }
+      ]
     }
   ]
 }

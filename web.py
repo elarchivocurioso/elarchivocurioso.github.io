@@ -664,6 +664,13 @@ def git(*args: str) -> subprocess.CompletedProcess:
 
 
 def publicar() -> None:
+    # Antes de generar, se pasan a la web los artículos que GUIÓN haya dejado en Guiones/web/
+    importador = WEB.parent / "Promocion" / "importar_articulos.py"
+    if importador.exists():
+        r = subprocess.run([sys.executable, "-X", "utf8", str(importador)], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
+        if r.returncode != 0:
+            print(f"AVISO: no se pudieron importar los artículos:\n{r.stderr.strip()}")
     generar()
     git("add", "-A")
     if git("status", "--porcelain").stdout.strip():
