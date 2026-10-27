@@ -1,5 +1,5 @@
 """
-web.py - Genera y publica la web de El Archivo Curioso (albapascua.github.io).
+web.py - Genera y publica la web de El Archivo Curioso (elarchivocurioso.github.io).
 
 Uso:
     python web.py generar     Rehace la web a partir de datos/expedientes.json
@@ -10,7 +10,8 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "youtube": "ID del vídeo",
       "tipo": "video" | "short",
       "titulo": "...",
-      "fecha": "AAAA-MM-DD",            fecha de publicación en YouTube
+      "fecha": "AAAA-MM-DDTHH:MM",      fecha (y hora local, opcional) de publicación en YouTube
+      "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",   opcional, ruta desde "Canal YouTube"
       "epoca": "1518",                  opcional
       "lugar": "Estrasburgo",           opcional
       "resumen": "2-3 frases",
@@ -18,7 +19,8 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "fuentes": [{"titulo": "...", "url": "https://..."}],
       "etiquetas": ["..."]              opcional
     }
-Las entradas con fecha futura no se muestran hasta ese día (vídeos programados).
+Las entradas con fecha futura no se muestran hasta esa fecha y hora (vídeos programados);
+aparecen la siguiente vez que se ejecute "publicar".
 Solo usa la biblioteca estándar de Python.
 """
 
@@ -30,7 +32,7 @@ import shutil
 import subprocess
 import sys
 import unicodedata
-from datetime import date
+from datetime import date, datetime
 from html import escape
 from pathlib import Path
 
@@ -92,7 +94,7 @@ header nav a:hover { color:var(--oro); }
   overflow:hidden; text-decoration:none; color:inherit; transition:transform .15s, border-color .15s; }
 .ficha:hover { transform:translateY(-3px); border-color:var(--oro); }
 .ficha .img { position:relative; aspect-ratio:16/9; background:var(--tinta-3) center/cover no-repeat; }
-.ficha .tipo { position:absolute; left:10px; top:10px; padding:3px 9px; border-radius:3px; font-family:'Special Elite',monospace;
+.ficha .tipo { position:absolute; right:10px; top:10px; padding:3px 9px; border-radius:3px; font-family:'Special Elite',monospace;
   font-size:12px; letter-spacing:.1em; background:var(--lacre); color:#F3D9C2; }
 .ficha .tipo.short { background:var(--oro); color:var(--tinta); }
 .ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:6px; }
@@ -107,9 +109,9 @@ header nav a:hover { color:var(--oro); }
 .expediente h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(30px,5.5vw,48px); line-height:1.1; margin:16px 0 14px; }
 .datos { display:flex; flex-wrap:wrap; gap:8px 22px; margin-bottom:26px; font-family:'Special Elite',monospace; font-size:14px; color:var(--pergamino-2); letter-spacing:.04em; }
 .datos b { color:var(--oro); font-weight:400; }
-.video { position:relative; width:100%; aspect-ratio:16/9; border-radius:8px; overflow:hidden; background:#000; box-shadow:0 20px 50px rgba(0,0,0,.5); }
-.video.short { max-width:360px; aspect-ratio:9/16; margin:0 auto; }
-.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.reproductor { position:relative; width:100%; aspect-ratio:16/9; border-radius:8px; overflow:hidden; background:#000; box-shadow:0 20px 50px rgba(0,0,0,.5); }
+.reproductor.short { max-width:360px; aspect-ratio:9/16; margin:0 auto; }
+.reproductor iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
 .bloque { margin-top:36px; }
 .bloque h2 { font-family:'Playfair Display',Georgia,serif; font-size:26px; margin-bottom:12px; color:var(--pergamino); }
 .bloque p { font-size:18px; }
@@ -193,7 +195,7 @@ def ficha(e: dict) -> str:
     tipo = "short" if e.get("tipo") == "short" else "video"
     meta = " · ".join(x for x in (e.get("epoca", ""), e.get("lugar", ""), fecha_larga(e["fecha"])) if x)
     return (f'<a class="ficha" data-tipo="{tipo}" href="expedientes/{e["_slug"]}.html">'
-            f'<div class="img" style="background-image:url(https://i.ytimg.com/vi/{escape(e["youtube"])}/hqdefault.jpg)">'
+            f'<div class="img" style="background-image:url({escape(e["_img"])})">'
             f'<span class="tipo {tipo}">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
             f'<div class="txt"><h3>{escape(e["titulo"])}</h3><div class="meta">{escape(meta)}</div></div></a>')
 
@@ -247,7 +249,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
 <h1>{escape(e['titulo'])}</h1>
 <div class="datos">{datos}</div>
-<div class="video {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
+<div class="reproductor {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
   title="{escape(e['titulo'])}" loading="lazy" allowfullscreen
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
 <p style="margin-top:14px; text-align:center"><a href="https://www.youtube.com/watch?v={escape(e['youtube'])}">Ver en YouTube</a></p>
@@ -293,10 +295,14 @@ def privacidad(canal: dict) -> str:
 def generar() -> int:
     datos = json.loads(DATOS.read_text(encoding="utf-8-sig"))  # acepta archivos con o sin BOM
     canal = datos["canal"]
-    hoy = date.today().isoformat()
-    visibles = [e for e in datos["expedientes"] if e["fecha"][:10] <= hoy]
+    ahora = datetime.now()
+    visibles = [e for e in datos["expedientes"] if datetime.fromisoformat(e["fecha"]) <= ahora]
     visibles.sort(key=lambda e: e["fecha"], reverse=True)
 
+    dir_min = WEB / "miniaturas"
+    if dir_min.exists():
+        shutil.rmtree(dir_min)
+    dir_min.mkdir()
     usados: set[str] = set()
     for e in visibles:
         s = e.get("slug") or slug(e["titulo"])
@@ -304,6 +310,13 @@ def generar() -> int:
             s += "-" + e["youtube"][:4].lower()
         e["_slug"] = s
         usados.add(s)
+        # Miniatura propia si existe; si no, la de YouTube
+        origen = WEB.parent / e["miniatura"] if e.get("miniatura") else None
+        if origen and origen.exists():
+            shutil.copyfile(origen, dir_min / f"{s}{origen.suffix.lower()}")
+            e["_img"] = f"miniaturas/{s}{origen.suffix.lower()}"
+        else:
+            e["_img"] = f"https://i.ytimg.com/vi/{e['youtube']}/hqdefault.jpg"
 
     dir_exp = WEB / "expedientes"
     if dir_exp.exists():
@@ -342,7 +355,7 @@ def publicar() -> None:
     r = git("push")
     if r.returncode != 0:
         sys.exit(f"ERROR en git push (¿hay que volver a autorizar GitHub?):\n{r.stderr}")
-    print("Web publicada en https://albapascua.github.io (tarda 1-2 minutos en actualizarse).")
+    print("Web publicada en https://elarchivocurioso.github.io (tarda 1-2 minutos en actualizarse).")
 
 
 if __name__ == "__main__":

@@ -5,5 +5,28 @@
     "descripcion": "Abrimos los expedientes de la historia: sucesos reales tan extraños que parecen inventados, personajes olvidados, misterios del pasado y curiosidades que no te contaron en clase.",
     "youtube": "https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ"
   },
-  "expedientes": []
+  "expedientes": [
+    {
+      "youtube": "_4PaBdSZXuA",
+      "tipo": "video",
+      "titulo": "La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar",
+      "fecha": "2026-10-29T18:00",
+      "epoca": "1518",
+      "lugar": "Estrasburgo",
+      "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",
+      "resumen": "En julio de 1518 una mujer empezó a bailar en las calles de Estrasburgo y no podía parar. En pocas semanas decenas de personas la siguieron, y las autoridades probaron una cura sorprendente: más baile.",
+      "curiosidades": [
+        "Las fuentes hablan de entre 50 y 400 danzantes.",
+        "Los médicos lo atribuyeron a la «sangre caliente» y la ciudad llegó a contratar músicos y montar un escenario.",
+        "Después se prohibió la música y el baile en público, y muchos danzantes fueron llevados a un santuario de San Vito.",
+        "La cifra de «15 muertos al día» no aparece en las fuentes de la época.",
+        "La teoría más aceptada es la histeria colectiva (John Waller); el cornezuelo es la alternativa, hoy bastante descartada."
+      ],
+      "fuentes": [
+        {"titulo": "Dancing plague of 1518 (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"},
+        {"titulo": "John Waller, A Time to Dance, a Time to Die (2008)", "url": "https://publishersweekly.com/9781402219436"}
+      ],
+      "etiquetas": ["Edad Moderna", "Misterios", "Medicina"]
+    }
+  ]
 }
