@@ -265,7 +265,7 @@ def privacidad(canal: dict) -> str:
 <h1>Política de privacidad</h1>
 <div class="fecha">Última actualización: 28 de octubre de 2026</div>
 <h2>1. Qué es esta herramienta</h2>
-<p>"Atajo IA scripts" es una herramienta de uso privado que utiliza la persona responsable del canal de YouTube El Archivo Curioso para gestionar su propio canal: subir sus vídeos, completar títulos, descripciones, miniaturas, subtítulos y listas de reproducción, y consultar las estadísticas y los comentarios del canal. No es una aplicación pública ni está pensada para que la usen otras personas.</p>
+<p>"elarchivocurioso scripts" es una herramienta de uso privado que utiliza la persona responsable del canal de YouTube El Archivo Curioso para gestionar su propio canal: subir sus vídeos, completar títulos, descripciones, miniaturas, subtítulos y listas de reproducción, y consultar las estadísticas y los comentarios del canal. No es una aplicación pública ni está pensada para que la usen otras personas.</p>
 <h2>2. Qué datos se usan</h2>
 <p>Con el permiso que concede la persona titular de la cuenta, la herramienta accede a través de la API de YouTube a:</p>
 <ul>
