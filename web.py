@@ -364,7 +364,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     bloques = f'<div class="bloque"><h2>El caso</h2><p>{escape(e["resumen"])}</p></div>' if e.get("resumen") else ""
     # Artículo completo: lista de secciones {"titulo": "...", "parrafos": ["...", ...]}
     for seccion in e.get("articulo", []):
-        bloques += (f'<div class="bloque articulo"><h2>{escape(seccion["titulo"])}</h2>'
+        titulo = f'<h2>{escape(seccion["titulo"])}</h2>' if seccion.get("titulo") else ""   # la entradilla no lleva título
+        bloques += (f'<div class="bloque articulo">{titulo}'
                     + "".join(f"<p>{escape(p)}</p>" for p in seccion["parrafos"]) + "</div>")
     if e.get("curiosidades"):
         bloques += ('<div class="bloque"><h2>Curiosidades del expediente</h2><ul class="curiosidades">'

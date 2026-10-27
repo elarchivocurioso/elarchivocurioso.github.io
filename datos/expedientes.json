@@ -36,6 +36,18 @@
         {
           "titulo": "John Waller, A Time to Dance, a Time to Die (2008)",
           "url": "https://publishersweekly.com/9781402219436"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Dancing mania»",
+          "url": "https://en.wikipedia.org/wiki/Dancing_mania"
+        },
+        {
+          "titulo": "Ned Pennant-Rea, «The Dancing Plague of 1518», The Public Domain Review (2018)",
+          "url": "https://publicdomainreview.org/essay/the-dancing-plague-of-1518/"
+        },
+        {
+          "titulo": "Entrevista con Gregor Rohmann sobre la «Tanzwut» de Estrasburgo, web.de",
+          "url": "https://web.de/magazine/wissen/geschichte/tanzen-tod-unheimliche-phaenomen-strassburger-tanzwut-34881744"
         }
       ],
       "etiquetas": [
@@ -46,31 +58,57 @@
       "fecha": "2026-10-27T19:41",
       "articulo": [
         {
-          "titulo": "Julio de 1518: empieza el baile",
+          "titulo": "",
           "parrafos": [
-            "A mediados de julio de 1518, en Estrasburgo, una ciudad del Sacro Imperio Romano Germánico, una mujer a la que las crónicas llaman Frau Troffea salió a la calle y empezó a bailar. No había música ni fiesta. Siguió bailando durante horas, se desplomaba agotada y volvía a empezar, así durante días.",
-            "En una semana ya eran varias decenas de personas las que bailaban sin poder parar. Las cifras que dan las fuentes para las semanas siguientes varían mucho: desde unas cincuenta personas hasta cerca de cuatrocientas. Lo que sí coinciden en describir es el agotamiento, los pies ensangrentados y la imposibilidad de detenerse."
+            "En el verano de 1518, en Estrasburgo, entonces una ciudad del Sacro Imperio Romano Germánico y hoy francesa, una mujer salió a la calle y se puso a bailar sin música. Siguió durante días. Pronto la imitaron otros vecinos, y luego decenas más, hasta que el consejo de la ciudad tuvo que reunirse para decidir qué hacer con un problema que ningún médico sabía nombrar.",
+            "La llamada «epidemia de baile» de 1518 parece una leyenda, pero está documentada en notas de médicos, sermones de la catedral, crónicas locales y actas del consejo municipal. Lo que esos papeles no cuentan es por qué aquella gente bailaba. Cinco siglos después, los historiadores siguen sin ponerse de acuerdo."
           ]
         },
         {
-          "titulo": "La cura: todavía más música",
+          "titulo": "Una mujer baila sola",
           "parrafos": [
-            "Las autoridades consultaron a los médicos de la ciudad, que descartaron causas sobrenaturales y lo atribuyeron a la «sangre caliente», según la teoría de los humores que se aplicaba entonces. La conclusión fue sorprendente: si el mal hacía bailar, había que dejar que los afectados bailaran hasta sacarlo del cuerpo.",
-            "La ciudad habilitó salones gremiales, montó un escenario de madera y contrató músicos para acompañar a los danzantes. Lejos de calmarse, la situación empeoró: la música y el espectáculo parecían atraer a más personas.",
-            "Las autoridades cambiaron entonces de rumbo: prohibieron la música y el baile en público y llevaron a muchos de los afectados a un santuario dedicado a San Vito, en las montañas cercanas, para que rezaran por su curación. Con el tiempo, el brote se apagó."
+            "Según el relato más extendido, todo empezó el 14 de julio de 1518. Una mujer a la que las crónicas llaman Frau Troffea comenzó a bailar en una calle empedrada, delante de su casa, sin que sonara ninguna música. No hizo caso a su marido, bailó durante horas, cayó rendida y al día siguiente volvió a empezar. No es un dato del todo seguro: 4 de las 6 crónicas que tratan el episodio la señalan a ella como la primera, y las demás no.",
+            "Después de varios días, las autoridades la enviaron a un santuario dedicado a San Vito cerca de Saverne (Zabern, en alemán), al noroeste de la ciudad. Para entonces ya no estaba sola: en cuestión de días, más de 30 personas bailaban por las calles. Había de todo, desde vendedores ambulantes y mozos de carga hasta mendigos, peregrinos y religiosos."
           ]
         },
         {
-          "titulo": "¿Cuántas personas murieron?",
+          "titulo": "Una ciudad al límite",
           "parrafos": [
-            "Es habitual leer que llegaron a morir quince personas al día. Sin embargo, esa cifra no aparece en las fuentes de la época que se conservan, y los historiadores la consideran una exageración posterior. Es posible que hubiera víctimas por el agotamiento, pero no sabemos cuántas."
+            "Para entender lo que pasó hay que mirar cómo vivía Estrasburgo en aquellos años. Alsacia arrastraba una serie de malas cosechas, hambre, enfermedades e inestabilidad política. El historiador de la medicina John Waller, autor del estudio más conocido sobre el caso, describe una población sometida a una angustia extrema.",
+            "A eso se sumaba una creencia muy concreta. Mucha gente pensaba que San Vito, un santo mártir de la Antigüedad, podía castigar a los pecadores obligándolos a bailar. Por eso a Troffea la llevaron a su santuario: se creía que el santo la había maldecido.",
+            "Además, Estrasburgo no partía de cero. Desde 1374 se habían registrado más de 10 brotes de baile compulsivo en las orillas del Rin y del Mosela, y todos los episodios europeos conocidos entre 1374 y 1518 ocurrieron cerca de la ciudad. El de 1374 fue uno de los mayores: empezó en Aquisgrán el 24 de junio y se extendió a lugares como Colonia, Flandes y Metz. La gente de la región, en resumen, sabía lo que era una «danza de San Vito» y lo que significaba."
           ]
         },
         {
-          "titulo": "¿Qué pasó realmente?",
+          "titulo": "La receta de los médicos: más baile",
           "parrafos": [
-            "La explicación más aceptada es la del historiador John Waller: una histeria colectiva, hoy llamada enfermedad psicógena masiva. Estrasburgo venía de años de malas cosechas, hambre y epidemias, y en la región se creía que San Vito podía castigar a los pecadores haciéndoles bailar. En ese clima de angustia y de creencia compartida, el baile se contagió.",
-            "Otra hipótesis, hoy bastante descartada, culpa al cornezuelo, un hongo del centeno que puede provocar convulsiones y alucinaciones. El problema es que el ergotismo produce espasmos, no horas de baile coordinado. Además, el de 1518 no fue un caso único: en la Edad Media se registraron otros brotes de «manía del baile», como el que recorrió la región del Rin en 1374."
+            "Los clérigos culpaban a un San Vito vengativo, pero el consejo escuchó a los médicos de la ciudad, que dieron una explicación natural: se trataba de una enfermedad causada por la «sangre recalentada». Según la teoría de los humores, lo habitual habría sido recetar sangrías. En lugar de eso, propusieron algo más sorprendente: dejar que los enfermos bailaran hasta librarse del mal.",
+            "La crónica del arquitecto Daniel Specklin, escrita en el siglo XVI, recoge lo que vino después. Se ordenó a los gremios de carpinteros y curtidores que convirtieran sus salones en pistas de baile. Se montaron tarimas en el mercado de caballos y en el del grano, a la vista de todos. Se pagó a músicos para tocar tambores, violines, flautas y trompas, y se buscó a personas sanas que bailaran junto a los afectados para animarlos.",
+            "El remedio salió mal. Para muchos de los que miraban, aquel espectáculo confirmaba la cólera del santo, y la música y el gentío parecían atraer a más gente al baile."
+          ]
+        },
+        {
+          "titulo": "Marcha atrás: penitencia y zapatos rojos",
+          "parrafos": [
+            "El consejo cambió de estrategia. Mandó desmontar las tarimas y prohibió casi toda la música y el baile en la ciudad hasta septiembre. Sebastian Brant, canciller municipal y autor de la célebre sátira «La nave de los necios» (1494), dejó por escrito la única excepción: las personas honorables podían bailar en bodas o en la primera misa de un sacerdote, siempre con instrumentos de cuerda y nunca con tambores ni panderos.",
+            "Los casos más graves fueron llevados en carros al santuario de San Vito, cerca de Saverne. Allí los sacerdotes los colocaban bajo una talla de madera del santo, les ponían pequeñas cruces en las manos y unos zapatos rojos en los pies. Rociaban los zapatos con agua bendita y les pintaban cruces de óleo consagrado en la suela y en el empeine, entre incienso y oraciones en latín.",
+            "Corrió la voz de que los peregrinos regresaban «perdonados por San Vito». En septiembre, los últimos afectados fueron llevados a una capilla en lo alto de un monte para rezar por su absolución, y el brote se apagó. Había durado desde mediados de julio hasta finales de agosto o principios de septiembre."
+          ]
+        },
+        {
+          "titulo": "Cuántos bailaron y cuántos murieron",
+          "parrafos": [
+            "Las cifras son la parte más frágil de la historia. Las estimaciones van de unas 50 personas a cerca de 400. La cifra alta procede de una crónica familiar, la de los Imlin, que habla de 400 vecinos afectados en un mes; un poema manuscrito hoy perdido, citado en el siglo XVII por el jurista Johann Schilter, habla de «muchos cientos».",
+            "Con las muertes ocurre algo parecido. Es frecuente leer, también en algunos textos de Waller, que en el peor momento morían hasta 15 personas al día. Sin embargo, los documentos municipales de la época no mencionan muertos, y los relatos de víctimas proceden de crónicas posteriores, como una de 1636 que describe a hombres bailando día y noche hasta caer inconscientes. Es posible que el agotamiento costara vidas, pero no sabemos cuántas, y la imagen de una ciudad sembrada de cadáveres no se sostiene con las fuentes de 1518."
+          ]
+        },
+        {
+          "titulo": "Lo que todavía se discute",
+          "parrafos": [
+            "La explicación más aceptada es la de John Waller: una enfermedad psicógena masiva, lo que antes se llamaba histeria colectiva. Gente agotada por el hambre y el miedo, convencida de que un santo podía obligarla a bailar, habría entrado en una especie de trance que se contagiaba por sugestión. Waller lo compara con otros casos mejor documentados, como la epidemia de risa de Tanganica en los años sesenta.",
+            "La alternativa más popular en internet, el cornezuelo del centeno, un hongo que produce sustancias emparentadas con el LSD, tiene poco apoyo. Waller señala que el envenenamiento reduce el riego sanguíneo de las extremidades, así que nadie podría bailar durante días en ese estado, y que los brotes se dieron en zonas con cultivos distintos. Otros autores, como Robert Bartholomew, han propuesto que se trataba de rituales religiosos prohibidos que se hacían pasar por baile involuntario.",
+            "El historiador alemán Gregor Rohmann, autor de un estudio de 2013 sobre la *Tanzwut* (la «furia del baile»), va más allá: recuerda que las crónicas no son historias clínicas, sino lo que interesaba anotar a un cronista, y lee el fenómeno en clave religiosa, como la expresión de personas que se sentían abandonadas por Dios. También pone en duda episodios muy repetidos, como que la gente bailara hasta caer muerta o que las autoridades organizaran bailes como cura, que la crónica de Specklin sí recoge.",
+            "La primera interpretación psicológica llegó pronto. Paracelso visitó Estrasburgo unos 8 años después y escribió que Troffea había empezado a bailar para avergonzar a su marido y que otras mujeres la imitaron para fastidiar a los suyos. Hoy suena tan injusto como poco científico, pero ya situaba la causa en la mente y no en el cielo. Y una curiosidad final: siglos más tarde, la medicina llamó «baile de San Vito» a la corea de Sydenham, una enfermedad neurológica que no tiene nada que ver con lo ocurrido en 1518."
           ]
         }
       ],
@@ -78,7 +116,7 @@
         {
           "titulo": "A Time to Dance, a Time to Die: The Extraordinary Story of the Dancing Plague of 1518",
           "autor": "John Waller",
-          "nota": "el estudio de referencia sobre el caso (en inglés)"
+          "nota": "El estudio de referencia sobre el caso, escrito por un historiador de la medicina (Icon Books, 2008; en Estados Unidos se publicó en 2009 como «The Dancing Plague»)."
         }
       ]
     },
@@ -103,6 +141,22 @@
         {
           "titulo": "Linda Hall Library: Joseph Wilson Swan",
           "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/"
+        },
+        {
+          "titulo": "Incandescent light bulb (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+        },
+        {
+          "titulo": "Edison's Incandescent Lamp (Engineering and Technology History Wiki, IEEE)",
+          "url": "https://ethw.org/Edison%27s_Incandescent_Lamp"
+        },
+        {
+          "titulo": "Pearl Street Station (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Pearl_Street_Station"
+        },
+        {
+          "titulo": "I Have Gotten a Lot of Results! I Know Several Thousand Things That Won't Work (Quote Investigator)",
+          "url": "https://quoteinvestigator.com/2012/07/31/edison-lot-results/"
         }
       ],
       "etiquetas": [
@@ -113,43 +167,69 @@
       "fecha": "2026-10-27T19:52",
       "articulo": [
         {
-          "titulo": "Una carrera de casi ochenta años",
+          "titulo": "",
           "parrafos": [
-            "La bombilla no tiene un único inventor. A principios del siglo XIX, el químico británico Humphry Davy ya demostró que la electricidad podía producir luz, tanto con el arco eléctrico como poniendo al rojo un filamento metálico. Durante las décadas siguientes, muchos inventores intentaron fabricar una lámpara incandescente práctica.",
-            "El gran problema era que el filamento se quemaba enseguida. Para que durara había que encerrarlo en una ampolla casi sin aire, y las bombas de vacío de la época no eran lo bastante buenas. La mejora de esas bombas en la segunda mitad del siglo hizo posible el salto."
+            "Si se pregunta quién inventó la bombilla, casi todo el mundo responde lo mismo: Thomas Edison. Es una de esas respuestas que se aprenden en el colegio y nadie vuelve a revisar. Pero el 3 de febrero de 1879, meses antes del primer éxito que se suele atribuir a Edison, un químico inglés llamado Joseph Swan iluminó con sus lámparas una sala abarrotada en Newcastle. Y antes que él, decenas de inventores llevaban casi 80 años intentando lo mismo.",
+            "La respuesta corta es que la bombilla no tiene un único inventor. La larga es más interesante, porque explica por qué el nombre que ha quedado es el de Edison, y por qué eso no es del todo injusto."
           ]
         },
         {
-          "titulo": "Joseph Swan, en Newcastle",
+          "titulo": "Ochenta años de bombillas que no funcionaban",
           "parrafos": [
-            "El químico inglés Joseph Swan llevaba desde los años cincuenta experimentando con filamentos de carbono. A finales de 1878 presentó su lámpara en Newcastle y, el 3 de febrero de 1879, la usó para iluminar una sala de conferencias ante unas setecientas personas.",
-            "Poco después, sus lámparas iluminaron Cragside, la casa de campo del industrial William Armstrong, y en 1881 el Savoy Theatre de Londres, uno de los primeros edificios públicos iluminados por completo con electricidad."
+            "La idea de producir luz calentando un material con electricidad es muy antigua. En 1802, el químico británico Humphry Davy hizo pasar corriente por una fina tira de platino y consiguió que brillara, aunque la luz era débil y duraba poco. Davy desarrolló también la lámpara de arco, que daba una luz intensísima pero inservible para una casa.",
+            "A partir de ahí, la lista de pioneros es larga. En 1840, Warren de la Rue encerró un filamento de platino en un tubo al vacío, pero el platino era carísimo. En 1841, Frederick de Moleyns obtuvo la primera patente de una lámpara incandescente. En 1845, John W. Starr patentó una bombilla de filamento de carbono que nunca llegó a fabricarse. En 1872, el ruso Alexander Lodygin construyó la suya, patentada en 1874, y ese mismo año Henry Woodward y Mathew Evans registraron en Canadá otra con varillas de carbono, cuya patente acabaría comprando Edison en 1879. Los historiadores Robert Friedel y Paul Israel recopilaron una larga lista de inventores de lámparas incandescentes anteriores a Swan y a Edison."
+          ]
+        },
+        {
+          "titulo": "El enemigo era el aire",
+          "parrafos": [
+            "Todos chocaban con el mismo problema. Un filamento al rojo vivo en contacto con el oxígeno se quema enseguida. La solución era encerrarlo en una ampolla de vidrio sin aire, pero durante buena parte del siglo XIX las bombas de vacío no eran capaces de dejarla lo bastante vacía.",
+            "El cambio llegó con la bomba de mercurio que el químico alemán Hermann Sprengel desarrolló en Londres en 1865. Fue la herramienta que permitió, hacia 1879, extraer suficiente aire de una bombilla como para que el filamento durara horas en lugar de minutos. Tanto Swan como Edison la utilizaron. En otras palabras: la bombilla no fue una genialidad aislada, sino el resultado de que varias tecnologías maduraran a la vez."
+          ]
+        },
+        {
+          "titulo": "Joseph Swan, el químico de Newcastle",
+          "parrafos": [
+            "Joseph Wilson Swan nació en 1828 en Sunderland, en el noreste de Inglaterra, y se formó como boticario. Ya instalado en Newcastle upon Tyne, empezó a experimentar en 1850 con filamentos de papel carbonizado dentro de ampollas al vacío, y hacia 1860 tenía un aparato que funcionaba, aunque se fundía muy pronto: ni el vacío ni las fuentes de electricidad de la época daban para más. Swan dejó el asunto y se dedicó con éxito a la fotografía, donde patentó un procedimiento de impresión al carbón y, más tarde, el papel de bromuro.",
+            "Volvió a la lámpara a mediados de la década de 1870, con mejores bombas de vacío. El 18 de diciembre de 1878 hizo una demostración ante la Sociedad Química de Newcastle que acabó mal: la lámpara se quemó por exceso de corriente. El 17 de enero de 1879 lo repitió con éxito, y el 3 de febrero la presentó ante más de 700 personas en la Sociedad Literaria y Filosófica de la ciudad, en un acto presidido por el industrial William Armstrong. Aquella lámpara llegó a durar unas 40 horas.",
+            "Tenía, sin embargo, un defecto serio. Usaba una varilla de carbono gruesa, de baja resistencia, que exigía mucha corriente y cables muy gruesos para alimentarla. Funcionaba en una sala, pero no servía para iluminar una ciudad entera. Swan siguió mejorándola: en noviembre de 1880 obtuvo la patente británica 4933 por un filamento de hilo de algodón tratado, y ese año Mosley Street, en Newcastle, se convirtió en la primera calle iluminada con lámparas incandescentes. En diciembre, sus bombillas encendieron Cragside, la casa de Armstrong, la primera vivienda con esta luz, y en 1881 el Savoy Theatre de Londres pasó a la historia como el primer edificio público iluminado por completo con electricidad."
           ]
         },
         {
           "titulo": "Lo que sí hizo Edison",
           "parrafos": [
-            "En octubre de 1879, el equipo de Thomas Edison en Menlo Park (Nueva Jersey) consiguió que una lámpara con filamento de hilo de algodón carbonizado funcionara durante unas trece horas. Poco después, los filamentos de bambú carbonizado llegaron a superar las mil horas.",
-            "Su gran aportación no fue solo la bombilla, sino todo lo que la rodeaba: generadores, cables, contadores y portalámparas para llevar la electricidad a los hogares. En 1882 inauguró en Nueva York la central de Pearl Street, que daba luz a todo un barrio."
+            "Edison anunció en octubre de 1878 que iba a resolver el problema de la luz eléctrica, y durante meses probó con filamentos metálicos, sobre todo de platino. El gran salto llegó en octubre de 1879, cuando en su laboratorio de Menlo Park (Nueva Jersey) una lámpara con un filamento de hilo carbonizado se mantuvo encendida unas 13 horas y media, según la mayoría de las fuentes. El 4 de noviembre solicitó la patente, concedida el 27 de enero de 1880, y la Nochevieja de 1879 hizo una demostración pública en Menlo Park a la que acudieron miles de curiosos. Poco después, los filamentos de bambú japonés carbonizado superaron las 1.200 horas.",
+            "La clave de su bombilla no era solo que durara. El filamento de Edison era fino y de alta resistencia, así que necesitaba poca corriente y permitía repartir la electricidad desde una central a muchos clientes con cables razonables. Friedel e Israel señalan esa alta resistencia, junto con un vacío mejor que el de sus rivales, como lo que convirtió su lámpara en la primera verdaderamente práctica. Y Edison no se quedó en la bombilla: su equipo desarrolló generadores, cables, contadores y portalámparas. El 4 de septiembre de 1882 empezó a funcionar en Nueva York la central de Pearl Street, con unas 400 lámparas y 82 clientes; en 1884 ya daba luz a 508 clientes y más de 10.000 lámparas. El historiador Thomas Hughes atribuye su éxito precisamente a haber creado un sistema integrado de alumbrado eléctrico. Tampoco faltaron otras manos que perfeccionaron la lámpara, como el inventor Lewis Latimer, que en 1882 patentó un método mejor para fabricar los filamentos de carbono."
           ]
         },
         {
-          "titulo": "Rivales y socios",
+          "titulo": "Rivales, pleitos y «Ediswan»",
           "parrafos": [
-            "En Gran Bretaña, las patentes de los dos inventores chocaban. En lugar de enfrentarse en los tribunales, en 1883 unieron sus negocios en una sola empresa, la Edison and Swan United Electric Light Company, conocida como «Ediswan». La historia de la bombilla es, en realidad, la historia de muchos inventores."
+            "Con dos lámparas tan parecidas, el choque era inevitable. En Gran Bretaña, las patentes de Swan eran sólidas, y en lugar de una larga guerra en los tribunales las dos empresas se fusionaron en 1883 en la Edison and Swan United Electric Light Company, conocida como «Ediswan». La marca vendió bombillas durante décadas.",
+            "En Estados Unidos, la batalla legal fue más dura. En octubre de 1883, la Oficina de Patentes resolvió que las patentes de Edison se basaban en trabajos previos de William Sawyer y no eran válidas. Edison siguió litigando, y en octubre de 1889 un juez declaró válida su reivindicación de «un filamento de carbono de alta resistencia».",
+            "La rivalidad llegó hasta el centenario. En 1979, Estados Unidos celebró los 100 años de la bombilla de Edison, mientras que en Gran Bretaña se conmemoró el centenario de la lámpara eléctrica a partir del 3 de febrero, en honor a Swan."
+          ]
+        },
+        {
+          "titulo": "Lo que es mito y lo que todavía se discute",
+          "parrafos": [
+            "Decir que Edison inventó la bombilla es, por tanto, inexacto. Pero decir que la inventó Swan tampoco es del todo correcto: los dos trabajaron en líneas que se consideran independientes, partiendo de lo que habían hecho otros antes. Swan tuvo una lámpara funcional antes; Edison logró la primera pensada para un uso masivo y, sobre todo, el sistema que la hacía útil. La mejor respuesta es que la bombilla fue un invento colectivo con dos finalistas.",
+            "Algunas cifras bailan. La duración de la primera lámpara de éxito de Edison aparece como 13 horas y media en unas fuentes y como más de 14 en otras, e incluso la fecha oscila entre el 21 y el 22 de octubre de 1879. Y no faltan reclamaciones dudosas: en 1893, el alemán Heinrich Göbel aseguró haber inventado la bombilla en 1854, una afirmación que los historiadores han desmontado.",
+            "También hay que desconfiar de la famosa frase «No he fracasado, he encontrado 10.000 maneras que no funcionan». Según Quote Investigator, la versión más antigua de la anécdota aparece en una biografía de 1910 contada por un colaborador, Walter S. Mallory, y no trata de la bombilla, sino de las baterías de níquel-hierro. Además, Edison hablaba de «varios miles» de cosas que no funcionaban. La cifra exacta es un adorno posterior.",
+            "Por último, la bombilla de filamento de carbono tuvo una vida relativamente corta. A partir de 1904 llegaron los filamentos de tungsteno, que William Coolidge hizo prácticos hacia 1910, y en 1913 Irving Langmuir comprobó que rellenar la ampolla con gas inerte, en lugar de dejarla al vacío, la hacía más eficiente. La bombilla clásica que conocimos durante el siglo XX debe tanto a ellos como a Swan y a Edison."
           ]
         }
       ],
       "lecturas": [
         {
-          "titulo": "Edison: A Life of Invention",
-          "autor": "Paul Israel",
-          "nota": "biografía detallada (en inglés)"
+          "titulo": "Edison's Electric Light: Biography of an Invention",
+          "autor": "Robert Friedel y Paul Israel",
+          "nota": "Reconstruye paso a paso, a partir de los cuadernos del laboratorio, cómo se creó la bombilla de Edison (1986, en inglés)."
         },
         {
           "titulo": "Empires of Light",
           "autor": "Jill Jonnes",
-          "nota": "Edison, Tesla, Westinghouse y la carrera por electrificar el mundo (en inglés)"
+          "nota": "Cuenta cómo Edison, Tesla y Westinghouse se disputaron la electrificación del mundo (2003, en inglés)."
         }
       ]
     },
@@ -173,6 +253,26 @@
         {
           "titulo": "History.com: Was Napoleon short?",
           "url": "https://www.history.com/articles/napoleon-complex-short"
+        },
+        {
+          "titulo": "National Geographic: Was Napoleon even short?",
+          "url": "https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history"
+        },
+        {
+          "titulo": "John Komlos: An anthropometric history of early-modern France (European Review of Economic History, 2003)",
+          "url": "https://ideas.repec.org/a/cup/ereveh/v7y2003i02p159-189_00.html"
+        },
+        {
+          "titulo": "Wikipedia: Napoleon complex",
+          "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+        },
+        {
+          "titulo": "Wikipedia: James Gillray",
+          "url": "https://en.wikipedia.org/wiki/James_Gillray"
+        },
+        {
+          "titulo": "Wikipedia: Battle of Lodi",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Lodi"
         }
       ],
       "etiquetas": [
@@ -183,37 +283,63 @@
       "fecha": "2026-10-27T20:00",
       "articulo": [
         {
-          "titulo": "Las medidas que nos confundieron",
+          "titulo": "",
           "parrafos": [
-            "Tras la muerte de Napoleón en Santa Elena, en 1821, su médico registró que medía 5 pies y 2 pulgadas. El detalle clave es que eran pies y pulgadas franceses, más largos que los ingleses. Convertida bien, esa medida equivale a alrededor de 1,68 metros.",
-            "Leída como si fueran unidades inglesas, la misma cifra se convierte en unos 1,57 metros. Ese error de traducción es una de las raíces del mito."
+            "Pide a cualquiera que describa a Napoleón y casi seguro que saldrá un hombrecillo con bicornio, la mano metida en el chaleco y muy mal genio. La idea de que era bajito está tan asentada que hasta lleva su nombre una supuesta forma de ser: el «complejo de Napoleón». Sin embargo, las medidas que se tomaron de su cuerpo tras su muerte dan una estatura de alrededor de 1,68 metros, corriente para un francés de su tiempo.",
+            "¿Cómo acabó un hombre de talla media convertido en el símbolo universal de los bajitos? La respuesta mezcla tres ingredientes muy distintos: un problema de unidades de medida, una campaña de caricaturas británicas y un apodo cariñoso que hemos leído al pie de la letra."
           ]
         },
         {
-          "titulo": "Normal para su época",
+          "titulo": "Una medida tomada en Santa Elena",
           "parrafos": [
-            "A principios del siglo XIX, la estatura media de los hombres franceses rondaba el metro sesenta y pocos. Con cerca de 1,68 metros, Napoleón estaba en la media o incluso algo por encima. No era un gigante, pero tampoco bajo para su tiempo."
+            "Napoleón murió en 1821 en la isla de Santa Elena, en pleno Atlántico sur, donde los británicos lo tenían desterrado. Tras su muerte, su médico, Francesco Antommarchi, le practicó la autopsia con ayuda de Louis Marchand, el ayuda de cámara del emperador. En sus memorias, Marchand dejó anotada la estatura total: 5 pies, 2 pulgadas y 4 líneas.",
+            "La cifra parece minúscula, pero no son pies ingleses. Aunque Francia había adoptado el sistema métrico décadas antes, en la práctica se seguían usando las viejas medidas del Antiguo Régimen, y esas unidades eran más largas que las inglesas. Según la Fondation Napoléon, el pie francés medía 32,47 centímetros (frente a los 30,47 del inglés); la pulgada francesa, unos 2,7 centímetros (frente a 2,54), y la línea, 0,22 centímetros. Con esas equivalencias, la medida de Santa Elena da 1,686 metros.",
+            "Ahí está la trampa. Si alguien lee «5 pies y 2 pulgadas» pensando en unidades inglesas, obtiene unos 1,57 metros, casi 12 centímetros menos. Ese malentendido, repetido una y otra vez en el mundo anglosajón, alimentó la imagen de un Napoleón diminuto."
           ]
         },
         {
-          "titulo": "Caricaturas y apodos",
+          "titulo": "Las cifras no coinciden del todo",
           "parrafos": [
-            "La imagen del Napoleón diminuto y colérico debe mucho a la propaganda británica. El caricaturista James Gillray lo dibujaba como un hombrecillo con rabietas, el «Little Boney». Sus caricaturas circularon por toda Europa y fijaron una imagen que ha durado dos siglos.",
-            "El apodo de «le petit caporal» (el pequeño cabo), que le dieron sus soldados, era una muestra de cariño y no una referencia a su altura. Además, solía aparecer rodeado de los granaderos de su Guardia Imperial, a los que se exigía una estatura elevada, lo que lo hacía parecer más bajo."
+            "Conviene no sustituir un mito por una precisión falsa: la estatura exacta de Napoleón sigue discutiéndose. La propia Fondation Napoléon recoge otro testimonio de Santa Elena, el de Andrew Darling, un tapicero inglés presente en la isla, que anotó 5 pies y 7 pulgadas inglesas, es decir, unos 1,70 metros. El británico John Leslie Foster, en una carta de 1802, ya le había atribuido una talla parecida. Según qué fuente se use, las estimaciones serias se mueven entre 1,67 y 1,70 metros. Lo que ninguna sostiene es el metro cincuenta y pocos de la leyenda.",
+            "También es cierto que algunos contemporáneos lo vieron menudo. De joven se le describía a menudo como pequeño y delgado, y el pintor inglés Joseph Farington, que lo vio en 1802, escribió que estaba por debajo de la estatura media. Otros cambiaban de opinión al tratarlo: Hyde de Neuville, que al principio lo encontró bajo, contó tras una entrevista en 1799 que de pronto le había parecido muchísimo más alto. La impresión de estatura, como se ve, dependía mucho del observador y del momento."
           ]
         },
         {
-          "titulo": "Un mito con nombre propio",
+          "titulo": "¿Bajo para su época?",
           "parrafos": [
-            "Hoy se habla del «complejo de Napoleón» para describir a las personas bajas que compensarían su estatura con ambición o agresividad. Es una de esas expresiones que sobreviven al dato que las contradice: el hombre que le da nombre no era bajito."
+            "Para juzgar si alguien era alto o bajo hay que compararlo con sus contemporáneos, no con nosotros. El historiador económico John Komlos analizó registros militares franceses y calculó que los hombres del siglo XVII medían de media unos 162 centímetros. Hacia 1700, con la mejora del clima, la media subió casi 4 centímetros, siguió creciendo hasta los nacidos en la década de 1740 y luego volvió a bajar a finales del siglo XVIII. Napoleón nació en 1769, en plena fase de descenso.",
+            "Con 1,68 metros, por tanto, estaba en la media de los franceses de su generación o algo por encima. No era un gigante, pero tampoco el hombrecillo de las caricaturas.",
+            "Su entorno, en cambio, sí jugaba en su contra. A los granaderos de la Vieja Guardia, su escolta de élite, se les exigía según las cifras habituales una talla de al menos 1,78 metros, y además llevaban altos gorros de piel de oso. Mariscales como Murat se paseaban cargados de plumas y bordados, mientras que Napoleón solía vestir de forma sencilla, con su pequeño sombrero de escarapela lisa. Rodeado de gente así, cualquiera parecería poca cosa."
+          ]
+        },
+        {
+          "titulo": "La guerra de las caricaturas",
+          "parrafos": [
+            "La imagen del Napoleón enano nació en Gran Bretaña. Cuando se rompió la paz de Amiens y la guerra se reanudó en 1803, la prensa satírica británica se volcó en ridiculizar al enemigo. El más influyente fue James Gillray (1756-1815), un caricaturista que nunca vio a Napoleón en persona y que lo convirtió en «Little Boney», un hombrecillo infantil y rabioso.",
+            "En «The King of Brobdingnag and Gulliver» (1803), Gillray dibujó al rey Jorge III examinando con un catalejo a un Napoleón minúsculo que sostiene en la palma de la mano, como en los viajes de Gulliver. En «Maniac-raving's, or Little Boney in a strong fit», del mismo año, lo pintó como un niño en plena rabieta. Y en la célebre «The Plumb-pudding in danger» (1805), en la que el primer ministro William Pitt y Napoleón se reparten el mundo como si fuera un pudin, el francés aparece mucho más pequeño que su rival. Otros dibujantes siguieron la misma línea: George Cruikshank lo representó como un pajarillo posado en el dedo del gigantesco mariscal prusiano Blücher, y en agosto de 1815 una estampa lo mostraba saltando a la comba con una cuerda que sujetaban Wellington y Blücher.",
+            "La historiadora del arte Constance McPhee lo resumió así: los caricaturistas jugaban con el tamaño y la ropa para desinflar simbólicamente a un enemigo militar que daba miedo. Se atribuye a Napoleón la frase de que Gillray hizo más por derribarlo que todos los ejércitos de Europa; es una cita de la que no hay constancia segura, pero refleja bien el poder de aquellas estampas."
+          ]
+        },
+        {
+          "titulo": "Un apodo que no hablaba de centímetros",
+          "parrafos": [
+            "El otro gran malentendido es «le petit caporal», el pequeño cabo. Sus soldados empezaron a llamarlo así durante la campaña de Italia de 1796, que lo convirtió en un general famoso. Una explicación tradicional lo relaciona con la batalla de Lodi, el 10 de mayo de 1796, donde Bonaparte habría dirigido en persona algunos cañones como un simple suboficial, aunque no hay pruebas de la época que lo confirmen.",
+            "Sea cual sea su origen, el apodo era una muestra de cariño, no una burla sobre su altura. Sus hombres le dieron varios apelativos que empezaban por «le petit», y en francés ese adjetivo funciona a menudo como un diminutivo afectuoso, del mismo modo que en español decimos «chiquillo» sin pensar en el tamaño. Traducido como «little», sin embargo, encajaba a la perfección con el Napoleón de las caricaturas."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es mito que Napoleón midiera alrededor de 1,57 metros: esa cifra sale de leer en unidades inglesas una medida tomada en unidades francesas. Es cierto que no era alto y que, al lado de su guardia y sus mariscales, podía parecer menudo. Y sigue siendo discutible su estatura exacta, entre 1,67 y 1,70 metros según la fuente.",
+            "El «complejo de Napoleón» también merece una revisión. La idea viene del psicólogo austríaco Alfred Adler, que en los años 20 habló del «complejo de inferioridad» para describir a niños que, por ser pequeños o poco tenidos en cuenta, buscaban dominar su entorno. La expresión se aplicó después a hombres ambiciosos en general; un artículo de 1928 ya se quejaba del «complejo de Napoleón» de muchos empresarios. Los estudios modernos no dan un resultado claro: uno de la Universidad de Groningen encontró más celos en hombres bajos, mientras que un experimento de la Universidad de Central Lancashire en 2007 concluyó que los bajos no perdían los nervios más que los altos, sino al revés. El hombre que da nombre al complejo, en cualquier caso, no era bajito."
           ]
         }
       ],
       "lecturas": [
         {
-          "titulo": "Napoleón: una vida",
+          "titulo": "Napoleon: A Life",
           "autor": "Andrew Roberts",
-          "nota": "biografía completa y amena"
+          "nota": "Una biografía extensa y muy legible que se apoya en la correspondencia del propio Napoleón (publicada en español como «Napoleón: una vida»)."
         }
       ]
     },
@@ -237,6 +363,26 @@
         {
           "titulo": "History Hit: What types of helmets did Vikings wear?",
           "url": "https://www.historyhit.com/types-of-viking-helmets/"
+        },
+        {
+          "titulo": "Wikipedia: Gjermundbu helmet",
+          "url": "https://en.wikipedia.org/wiki/Gjermundbu_helmet"
+        },
+        {
+          "titulo": "Science Norway: Did this Viking helmet belong to a Norwegian warrior who served rulers in the East?",
+          "url": "https://sciencenorway.no/archaeology-viking-age-vikings/did-this-viking-helmet-belong-to-a-norwegian-warrior-who-served-rulers-in-the-east/1964783"
+        },
+        {
+          "titulo": "Science Norway: No, the Vikings didn't wear helmets with horns",
+          "url": "https://sciencenorway.no/bronze-age-viking-age/no-the-vikings-didnt-wear-helmets-with-horns/1995364"
+        },
+        {
+          "titulo": "Smithsonian Magazine: Iconic 'Viking' horned helmets are actually 3,000 years old",
+          "url": "https://www.smithsonianmag.com/smart-news/iconic-viking-horned-helmets-actually-3000-years-old-180979339/"
+        },
+        {
+          "titulo": "OUP Blog (Eleanor Barraclough): Ten myths about the Vikings",
+          "url": "https://blog.oup.com/2016/10/ten-myths-vikings/"
         }
       ],
       "etiquetas": [
@@ -246,29 +392,48 @@
       "fecha": "2026-10-27T20:00",
       "articulo": [
         {
-          "titulo": "Lo que dice la arqueología",
+          "titulo": "",
           "parrafos": [
-            "El casco vikingo más completo que se conoce se encontró en 1943 en Gjermundbu, en Noruega, y data del siglo X. Es un casquete redondeado de hierro con una protección para los ojos y la nariz. No tiene cuernos.",
-            "Los hallazgos de cascos de la época vikinga son muy escasos, y muchos historiadores creen que la mayoría de los guerreros luchaba con protecciones más sencillas o sin casco de metal. En ninguno de los que conocemos aparecen cuernos."
+            "Barba trenzada, hacha al hombro y un casco con dos cuernos curvos: así se disfraza de vikingo casi cualquiera, y así aparecen en cómics, anuncios y películas. Es una imagen tan reconocible que cuesta creer que no tenga ninguna base en la arqueología de la época vikinga. Ni uno solo de los cascos de aquellos siglos que han llegado hasta nosotros tiene cuernos, y los textos de la época mencionan cascos a menudo, pero nunca con cuernos.",
+            "La historia de cómo les salieron es más interesante que el propio mito. Pasa por un túmulo noruego excavado en plena Segunda Guerra Mundial, por el estreno de una ópera de Wagner en 1876 y por unos cascos daneses, estos sí con cuernos, que acabaron en el fondo de una ciénaga unos 1.700 años antes de que empezara la época vikinga."
           ]
         },
         {
-          "titulo": "La culpa es de una ópera",
+          "titulo": "El casco que salió de un túmulo en Ringerike",
           "parrafos": [
-            "En el siglo XIX, el Romanticismo y los nacionalismos escandinavos y alemanes recuperaron con entusiasmo el pasado nórdico, y los artistas empezaron a imaginar a sus guerreros con cascos alados o con cuernos.",
-            "La imagen se popularizó definitivamente en 1876, cuando el diseñador Carl Emil Doepler vistió a los personajes de «El anillo del nibelungo», de Richard Wagner, en el primer festival de Bayreuth. Desde entonces, el vikingo con cuernos pasó a ilustraciones, cómics, películas y disfraces."
+            "El 29 de marzo de 1943, en la granja de Gjermundbu, cerca de Haugsbygd, en la comarca noruega de Ringerike, Gunnar Gjermundbo estaba retirando tierra de un montículo para construir una casa para sus padres cuando dio con un tesoro. Noruega estaba ocupada por la Alemania nazi, y la familia escondió los objetos en un granero. Al día siguiente, el historiador local Jon Guldal avisó a la Universidad de Oslo, que envió a los arqueólogos Sverre Marstrander y Charlotte Blindheim.",
+            "Lo que había bajo el montículo era una tumba de cremación de finales del siglo X, una de las sepulturas de guerrero más ricas de Noruega: espadas, hachas, lanzas, cuatro escudos, espuelas, arreos para varios caballos y, sobre todo, restos de una cota de malla y un casco de hierro. El casco apareció en 9 fragmentos y pudo reconstruirse. Es un casquete redondeado formado por 4 placas, con una protección en forma de gafas que cubre los ojos y la nariz. No tiene cuernos ni nada que se le parezca.",
+            "El hallazgo guarda algún detalle inquietante: el casco había sido atravesado a propósito con las lanzas depositadas en la tumba. La cota de malla, por su parte, habría pesado entre 8 y 10 kilos y pudo requerir medio año de trabajo. Hoy el casco se expone en el Museo de Historia Cultural de la Universidad de Oslo, que lo presenta como «el único casco vikingo del mundo»."
           ]
         },
         {
-          "titulo": "Cuernos, sí, pero mucho antes",
+          "titulo": "¿Dónde están los demás cascos?",
           "parrafos": [
-            "En el norte de Europa sí se han encontrado cascos con cuernos, como los de Veksø, en Dinamarca. Pero son de la Edad del Bronce, unos 1.700 años anteriores a los vikingos, y probablemente se usaban en ceremonias, no en combate."
+            "Esa etiqueta de «único» es casi literal. Solo se conocen restos de 5 cascos de la época vikinga, y la mayoría son simples fragmentos: además del de Gjermundbu, piezas halladas en Tjele (Dinamarca), Lokrume (Suecia) y Kiev. El quinto, el de Yarm, en el norte de Inglaterra, lo encontraron unos obreros en la década de 1950, pero hasta 2020 un estudio de la Universidad de Durham no lo fechó en el siglo X. También lleva una máscara de gafas y tampoco tiene cuernos.",
+            "¿Por qué hay tan pocos, si los vikingos pasaron casi tres siglos guerreando? Un casco de hierro era caro, y muchos arqueólogos creen que solo los guerreros de alto rango podían permitírselo. El resto pudo luchar sin protección metálica en la cabeza o con gorros de cuero, que se descomponen y rara vez se conservan. La propia riqueza de la tumba de Gjermundbu apunta en esa dirección: el casco era un objeto de élite."
           ]
         },
         {
-          "titulo": "Poco práctico en la batalla",
+          "titulo": "Cómo le salieron los cuernos al vikingo",
           "parrafos": [
-            "Unos cuernos en el casco habrían sido un estorbo en la lucha: podían engancharse o servir de agarre al enemigo, y harían el casco más pesado y fácil de desequilibrar. Por eso, aunque el mito sea muy vistoso, la imagen del vikingo con cuernos dice más del siglo XIX que de la Edad Media."
+            "Los cuernos nacen en el siglo XIX, cuando el Romanticismo y los nacionalismos escandinavos y alemanes rescataron con entusiasmo el pasado nórdico. Según la medievalista Eleanor Barraclough, la primera ilustración de un vikingo con casco de cuernos aparece en una edición popular de la «Saga de Frithiof» de 1825. Los cascos con alas, otro clásico, son igual de decimonónicos.",
+            "Quien convirtió los cuernos en un uniforme fue Carl Emil Doepler, el diseñador de vestuario de «El anillo del nibelungo», el ciclo de cuatro óperas de Richard Wagner. La tetralogía se estrenó completa en 1876, en el primer festival de Bayreuth, el teatro que Wagner levantó para sus propias obras. Doepler vistió a los personajes con cascos de cuernos y el éxito de la producción hizo el resto: la imagen pasó a ilustraciones, libros infantiles, teatro, cómics y, ya en el siglo XX, al cine.",
+            "Hay un detalle irónico. Las óperas de Wagner no tratan de vikingos, sino de dioses y héroes de la mitología germánica y nórdica. Pero en la Alemania del siglo XIX el pasado nórdico se veía como una alternativa a los orígenes griegos y romanos, y en ese clima se mezclaron sin mucho rigor guerreros vikingos, pueblos germánicos de la época de las migraciones y leyendas medievales. El resultado fue un vikingo de fantasía que se nos ha quedado como si fuera real."
+          ]
+        },
+        {
+          "titulo": "Los cuernos verdaderos: Veksø, casi 3.000 años atrás",
+          "parrafos": [
+            "En el norte de Europa sí se fabricaron cascos con cuernos, solo que mucho antes. En 1942, unos trabajadores que extraían turba en una ciénaga cerca de Veksø, en la isla danesa de Selandia, dieron con dos cascos de bronce que hoy se conservan en el Museo Nacional de Dinamarca, en Copenhague.",
+            "Son piezas espectaculares: tienen cuernos curvos en forma de S, unos bultos que hacen de ojos, un pico de ave rapaz y soportes donde probablemente se sujetaban plumas y una cresta de crin de caballo. Uno descansaba sobre una bandeja de madera, lo que sugiere que fueron depositados como ofrenda. En 2019, al fotografiar uno de los cuernos, la investigadora Heide Wrobel Nørgaard descubrió restos de alquitrán de abedul; su datación por radiocarbono permitió al equipo de la arqueóloga Helle Vandkilde, de la Universidad de Aarhus, situar el depósito hacia el 900 a. C. La época vikinga suele empezar a contarse a finales del siglo VIII después de Cristo: entre unos y otros median unos 1.700 años.",
+            "Todo indica que eran objetos ceremoniales, no equipo de combate. Los grabados rupestres de la Edad del Bronce del oeste de Suecia y el sur de Noruega muestran a menudo figuras humanas con cuernos, y Vandkilde los ha relacionado con figuras parecidas de Cerdeña y de la península ibérica."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es mito que los guerreros vikingos combatieran con cascos de cuernos: no hay ni un solo hallazgo ni un solo texto de la época que lo respalde. Es cierto, en cambio, que en Escandinavia hubo cascos y tocados con cuernos, aunque en otros momentos. Además de los de la Edad del Bronce, en imágenes del periodo merovingio (hacia 550-800) aparecen figuras con tocados de cuernos o con formas parecidas; la arqueóloga Ingrid Ystgaard, de la Universidad Noruega de Ciencia y Tecnología, cree que eran cascos decorativos de las clases altas, no de guerra.",
+            "Siguen abiertas varias cuestiones. No sabemos cuántos vikingos llevaban casco ni de qué material. Los arqueólogos Frans-Arne Stylegar y Ragnar Løken Børsheim han propuesto que el guerrero de Gjermundbu pudo servir a un príncipe de la Rus de Kiev, donde sí son frecuentes las tumbas del siglo X con casco y cota de malla, aunque otros especialistas piden pruebas más sólidas. La conexión mediterránea de los cascos de Veksø también tiene escépticos, porque no han aparecido piezas similares en las costas atlánticas intermedias. Y hasta la fecha del primer vikingo con cuernos se discute: la filóloga Roberta Frank, de la Universidad de Yale, sitúa en su estudio «The Invention of the Viking Horned Helmet» (2000) el verdadero nacimiento del vikingo con cuernos a finales del siglo XIX, en torno al montaje de Wagner, más que en las ilustraciones de principios de siglo."
           ]
         }
       ],
@@ -276,7 +441,7 @@
         {
           "titulo": "Children of Ash and Elm: A History of the Vikings",
           "autor": "Neil Price",
-          "nota": "historia de los vikingos basada en la arqueología (en inglés)"
+          "nota": "La mejor síntesis reciente sobre cómo vivían y pensaban los vikingos, escrita por un arqueólogo de la Universidad de Uppsala (en inglés)."
         }
       ]
     },
@@ -300,6 +465,30 @@
         {
           "titulo": "Wikipedia: Cleopatra",
           "url": "https://es.wikipedia.org/wiki/Cleopatra"
+        },
+        {
+          "titulo": "Wikipedia: Great Pyramid of Giza",
+          "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+        },
+        {
+          "titulo": "Wikipedia: iPhone (1st generation)",
+          "url": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)"
+        },
+        {
+          "titulo": "Wikipedia: Cleopatra",
+          "url": "https://en.wikipedia.org/wiki/Cleopatra"
+        },
+        {
+          "titulo": "Wikipedia: Ptolemaic Kingdom",
+          "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+        },
+        {
+          "titulo": "Plutarco, Vida de Antonio (traducción inglesa en LacusCurtius, Universidad de Chicago)",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html"
+        },
+        {
+          "titulo": "Wikipedia: Wrangel Island",
+          "url": "https://en.wikipedia.org/wiki/Wrangel_Island"
         }
       ],
       "etiquetas": [
@@ -309,32 +498,65 @@
       "fecha": "2026-10-27T20:00",
       "articulo": [
         {
-          "titulo": "Haz la cuenta",
+          "titulo": "",
           "parrafos": [
-            "La Gran Pirámide de Guiza, construida para el faraón Keops, se terminó hacia el año 2560 antes de Cristo (las estimaciones varían algunas décadas). Cleopatra VII nació en el 69 a. C. y murió en el 30 a. C. Es decir, cuando ella vivió, la pirámide ya tenía unos 2.500 años.",
-            "El primer iPhone salió a la venta en 2007, unos 2.000 años después de la muerte de Cleopatra. Por eso se puede decir, sin trampa, que Cleopatra vivió más cerca de nuestra época que de la construcción de la Gran Pirámide."
+            "Solemos imaginar a Cleopatra entre pirámides, como si la reina y los monumentos de Guiza pertenecieran al mismo decorado del «antiguo Egipto». Pero ese decorado es engañoso. Cuando Cleopatra nació, la Gran Pirámide ya tenía unos 2.500 años, más o menos los que nos separan a nosotros de la Atenas de Pericles. Y desde su muerte hasta la presentación del primer iPhone pasaron unos 500 años menos que desde la construcción de la pirámide hasta ella.",
+            "Este expediente hace las cuentas con cuidado, explica por qué la última reina de Egipto era en realidad de una familia de origen macedonio que hablaba griego, y repasa otros saltos de tiempo que nuestra intuición se empeña en aplastar."
           ]
         },
         {
-          "titulo": "Una reina griega en Egipto",
+          "titulo": "La cuenta, bien hecha",
           "parrafos": [
-            "Cleopatra pertenecía a la dinastía ptolemaica, de origen macedonio, fundada por Ptolomeo, uno de los generales de Alejandro Magno. Esta familia gobernó Egipto durante unos tres siglos y hablaba griego.",
-            "Según el historiador Plutarco, Cleopatra fue la primera de su dinastía que aprendió la lengua egipcia, además de otros muchos idiomas. Para ella, las pirámides ya eran monumentos antiquísimos."
+            "La Gran Pirámide de Guiza se construyó para el faraón Keops (Jufu, en egipcio), de la IV dinastía. La fecha que más se repite para su terminación es hacia el 2560 a. C. Cleopatra VII nació a principios del 69 a. C. y murió el 10 o el 12 de agosto del 30 a. C. Entre la pirámide y la muerte de la reina median, por tanto, 2.530 años (2.560 menos 30).",
+            "El primer iPhone lo presentó Steve Jobs el 9 de enero de 2007 y salió a la venta en Estados Unidos el 29 de junio de ese año. Para contar los años entre el 30 a. C. y el 2007 d. C. hay que tener en cuenta un detalle: en nuestro calendario no existe el año cero, de modo que se pasa directamente del 1 a. C. al 1 d. C. El resultado es 30 + 2007 − 1 = 2.036 años.",
+            "Así que Cleopatra está unos 2.036 años antes del iPhone y unos 2.530 años después de la pirámide: casi 500 años más cerca de nuestro teléfono que del monumento. La frase seguirá siendo cierta durante bastante tiempo; para igualar esos 2.530 años habrá que esperar hasta el año 2501."
+          ]
+        },
+        {
+          "titulo": "¿Cuánto hay que fiarse de «2560 a. C.»?",
+          "parrafos": [
+            "Las fechas del Egipto faraónico no son tan exactas como las de un calendario moderno, y la de la Gran Pirámide se discute. Muchas obras de referencia la sitúan algo antes, hacia el 2600 a. C., en la primera mitad del siglo XXVI a. C. Las dataciones por radiocarbono tampoco resuelven del todo la cuestión: 46 muestras de mortero analizadas en 1984 y 1995 dieron fechas algo más antiguas de lo esperado, quizá porque los constructores quemaban madera vieja, y un reanálisis de las muestras más jóvenes situó la terminación entre el 2620 y el 2484 a. C.",
+            "Lo que sí está muy bien documentado es quién la construyó. En 2013 aparecieron en Wadi al-Jarf unos papiros, entre ellos el llamado diario de Merer, un funcionario que anotó cómo transportaba bloques de caliza blanca desde las canteras de Tura hasta la pirámide en el año 27 del reinado de Keops.",
+            "Para nuestra comparación, en todo caso, el margen de error no cambia nada. Si la pirámide se terminó hacia el 2600 a. C., Cleopatra queda todavía más lejos de ella: 2.570 años. Y aunque tomáramos su nacimiento en lugar de su muerte, la cuenta sigue funcionando: unos 2.490 años después de la pirámide y unos 2.075 antes del iPhone."
+          ]
+        },
+        {
+          "titulo": "Una reina griega en un país antiquísimo",
+          "parrafos": [
+            "Cleopatra fue la última gobernante de la dinastía ptolemaica, y esa familia no era egipcia. Su fundador, Ptolomeo I Sóter, fue un general macedonio y compañero de Alejandro Magno. Cuando Alejandro murió en Babilonia en el 323 a. C., sus generales se repartieron el imperio, y Ptolomeo se quedó con Egipto, primero como gobernador y, desde el 305 a. C., como rey y faraón. Sus descendientes reinaron hasta el 30 a. C.: 275 años.",
+            "La capital era Alejandría, una ciudad griega fundada por Alejandro, y el griego era la lengua de la administración y el comercio. Los Ptolomeos adoptaron la costumbre egipcia del matrimonio entre hermanos, que inauguró Ptolomeo II al casarse con su hermana Arsínoe II, y llevaban el título de faraón. Pero en palacio se hablaba griego. La lengua materna de Cleopatra era el griego koiné.",
+            "El historiador griego Plutarco, que vivió entre los siglos I y II d. C., cuenta en su «Vida de Antonio» que Cleopatra atendía a muchos embajadores extranjeros sin intérprete, porque hablaba la lengua de etíopes, hebreos, partos y medos, entre otros. Y añade un detalle revelador: los reyes anteriores ni siquiera se habían molestado en aprender egipcio, y algunos habían olvidado su dialecto macedonio. Cleopatra es la primera gobernante ptolemaica de la que consta que aprendió la lengua del país que gobernaba.",
+            "Tras su muerte, Egipto se convirtió en una provincia romana y terminó el periodo helenístico. Para una reina así, las pirámides de Guiza eran tan antiguas como lo son para nosotros los templos de la Grecia clásica: reliquias de un mundo remoto."
+          ]
+        },
+        {
+          "titulo": "Las pirámides ya eran antiguas para los antiguos",
+          "parrafos": [
+            "Mucho antes de Cleopatra, el historiador griego Heródoto escribió sobre la Gran Pirámide hacia el 450 a. C., cuando el monumento ya tenía más de 2.000 años. Su relato muestra lo difícil que era ya entonces orientarse en ese pasado: atribuyó correctamente la pirámide a Keops, pero situó su reinado después del de los faraones Ramsés, que en realidad vivieron más de mil años más tarde. También dejó cifras que han hecho fortuna, como los 100.000 obreros trabajando en turnos de tres meses durante 20 años.",
+            "La pirámide, con sus 146,6 metros de altura original, fue además la construcción más alta hecha por el ser humano durante más de 3.700 años. Cuando Cleopatra reinaba, aún le quedaban más de mil años de récord por delante."
           ]
         },
         {
           "titulo": "Otros saltos de tiempo que engañan",
           "parrafos": [
-            "No es el único dato que desafía nuestra intuición. Los estudios indican que en la isla de Wrangel, en el océano Ártico, sobrevivieron mamuts lanudos hasta hace unos 4.000 años, cuando las pirámides de Guiza ya estaban construidas.",
-            "Tendemos a juntar en una misma «Antigüedad» épocas separadas por miles de años. Este tipo de comparaciones ayuda a ver lo larga que es, en realidad, la historia."
+            "El caso de Cleopatra no es una rareza. Tendemos a meter en un mismo cajón llamado «Antigüedad» épocas separadas por milenios, y el efecto se repite en otros terrenos. Sin salir de Egipto: Heródoto y Cleopatra nos parecen casi vecinos, dos figuras más de la Antigüedad clásica, pero entre la obra del historiador y la muerte de la reina pasaron unos 420 años, más o menos los que nos separan hoy de la primera parte del «Quijote», publicada en 1605.",
+            "Los mamuts lanudos, por ejemplo, no desaparecieron todos al final de la última glaciación. En la isla de Wrangel, en el océano Ártico, sobrevivió una población hasta hacia el 2000 a. C., hace unos 4.000 años, según dataciones por radiocarbono de sus huesos publicadas en 1995. Es decir, cuando los obreros de Keops terminaban la Gran Pirámide, todavía quedaban mamuts vivos en el planeta, y siguió habiéndolos durante varios siglos más."
+          ]
+        },
+        {
+          "titulo": "Lo que todavía se discute",
+          "parrafos": [
+            "Además de la fecha exacta de la pirámide, hay otras cuestiones abiertas en esta historia. La primera, el origen de la propia Cleopatra. Su padre fue Ptolomeo XII, pero la identidad de su madre no es segura: se supone que fue Cleopatra V Trifena, que desaparece de los registros oficiales pocos meses después del nacimiento de la niña. Por eso no puede afirmarse con total certeza qué parte de sus antepasados era macedonia.",
+            "La segunda, su muerte. La versión popular dice que se dejó morder por un áspid, una cobra egipcia. Pero las fuentes antiguas no coinciden: Plutarco recoge la historia de la serpiente, pero también otras versiones; Estrabón habló de un ungüento venenoso y Casio Dion, de una aguja. Junto al cuerpo no se encontró ninguna serpiente, aunque sí unas pequeñas marcas en el brazo. La explicación más aceptada hoy es, simplemente, un veneno, sin que esté claro cuál ni cómo lo tomó.",
+            "Y la tercera, el final de los mamuts de Wrangel. Un estudio de 2017 atribuyó su extinción a un deterioro genético por la escasez de individuos; otro de 2024 lo discutió y apuntó a algún suceso catastrófico, siglos antes de que los humanos llegaran a la isla."
           ]
         }
       ],
       "lecturas": [
         {
-          "titulo": "Cleopatra",
+          "titulo": "Cleopatra: A Life",
           "autor": "Stacy Schiff",
-          "nota": "biografía premiada con el Pulitzer"
+          "nota": "Una biografía de 2010, muy bien escrita, que separa con cuidado lo que dicen las fuentes antiguas de la leyenda posterior; su autora ya había ganado el Pulitzer con una obra anterior."
         }
       ]
     },
@@ -362,6 +584,22 @@
         {
           "titulo": "Yankee Magazine: The Great Molasses Flood",
           "url": "https://newengland.com/article/history/great-molasses-flood"
+        },
+        {
+          "titulo": "100 years ago today: Molasses crashes through Boston's North End (Archivos de la Ciudad de Boston)",
+          "url": "https://www.boston.gov/node/54641"
+        },
+        {
+          "titulo": "January 15, 1919: Physics and the Boston Molasses Flood (APS News)",
+          "url": "https://www.aps.org/apsnews/2017/01/this-month-in-physics-history"
+        },
+        {
+          "titulo": "Scientists finally decode the Great Molasses Flood of 1919 (The Christian Science Monitor)",
+          "url": "https://www.csmonitor.com/Science/2016/1129/Scientists-finally-decode-the-Great-Molasses-Flood-of-1919"
+        },
+        {
+          "titulo": "A sticky tsunami: The Great Boston Molasses Flood of 1919 killed 21 (NBC News, vía Euronews)",
+          "url": "https://www.euronews.com/2019/01/15/great-boston-molasses-flood-1919-killed-21-after-2-million-n958326"
         }
       ],
       "etiquetas": [
@@ -372,30 +610,56 @@
       "fecha": "2026-10-27T21:50",
       "articulo": [
         {
-          "titulo": "Un tanque gigante en el North End",
+          "titulo": "",
           "parrafos": [
-            "A principios de 1919, junto al puerto de Boston, en el barrio del North End, se levantaba un tanque de acero de unos quince metros de alto. Dentro guardaba más de ocho millones de litros de melaza, un jarabe espeso que se usaba para fabricar alcohol industrial, muy demandado en aquellos años, entre otras cosas para fabricar municiones.",
-            "El tanque se había construido deprisa en 1915 y goteaba desde el principio. Los vecinos llegaban a recoger la melaza que se escapaba. La respuesta de la empresa no fue repararlo: lo pintó de marrón para que las fugas no se vieran."
+            "El 15 de enero de 1919, poco después del mediodía, un enorme tanque de acero reventó junto al puerto de Boston y soltó de golpe unos 8,7 millones de litros de melaza. La ola marrón barrió varias manzanas del North End, el barrio obrero e inmigrante de la ciudad, levantó casas de sus cimientos, golpeó las vigas del ferrocarril elevado y dejó 21 muertos y unos 150 heridos. Suena a leyenda urbana, y durante décadas se contó casi como una anécdota pintoresca. No lo era.",
+            "Detrás de aquella catástrofe hubo prisas, ahorro mal entendido y una empresa que prefirió disimular los problemas antes que arreglarlos. Y hubo también un misterio físico que no se explicó del todo hasta casi un siglo después: cómo un líquido tan lento como la melaza pudo convertirse en una trampa mortal."
+          ]
+        },
+        {
+          "titulo": "Un tanque construido con prisas",
+          "parrafos": [
+            "El tanque estaba en el número 529 de Commercial Street y pertenecía a la Purity Distilling Company, que en 1917 pasó a manos de la United States Industrial Alcohol (USIA). Medía unos 15 metros de alto y 27 de diámetro, y podía guardar 2,3 millones de galones estadounidenses. Su función era sencilla: recibir la melaza que llegaba en barco y enviarla por tubería a una planta de Cambridge, donde se fermentaba para obtener alcohol. Ese alcohol industrial tenía mucha salida en plena Primera Guerra Mundial, entre otras cosas para fabricar municiones.",
+            "La construcción, terminada en 1915, la supervisó Arthur Jell, tesorero de la empresa, que no tenía formación de ingeniero ni de arquitecto. Según el historiador Stephen Puleo, Jell ni siquiera hizo la prueba básica de llenar el depósito de agua para buscar fugas: solo puso unos 15 centímetros. Tampoco hacía falta permiso de obras, porque el tanque se consideraba un recipiente y no un edificio. El resultado se vio desde el primer llenado: el acero rezumaba melaza por las juntas. Los vecinos la recogían en cubos para llevársela a casa, y la respuesta de la empresa fue pintar el tanque de marrón para que las manchas no se notaran."
           ]
         },
         {
           "titulo": "El 15 de enero de 1919",
           "parrafos": [
-            "Poco después del mediodía, los testigos oyeron un ruido parecido a una ráfaga de ametralladora: eran los remaches del tanque saltando. Las paredes de acero se abrieron y toda la melaza salió de golpe.",
-            "La ola avanzó por las calles, según algunas estimaciones, a unos 56 km/h, aunque las cifras de velocidad y altura varían mucho según la fuente. Su fuerza dobló las vigas del tren elevado y arrancó edificios de sus cimientos. Murieron 21 personas y unas 150 resultaron heridas; los rescatadores tardaron días en sacar a todas las víctimas."
+            "Tras varios días de frío intenso, la temperatura había subido con rapidez, desde unos 17 grados bajo cero hasta rondar los 5 grados positivos. Además, poco antes había llegado un barco con melaza caliente, que se añadió a la que ya estaba fría dentro del tanque. Hacia las 12:30, según la mayoría de los relatos, los testigos oyeron un estruendo y un tableteo parecido al de una ametralladora: eran los remaches saltando. Las planchas de acero se abrieron y unas 12.000 toneladas de melaza salieron de una vez.",
+            "La ola avanzó por las calles a una velocidad que suele estimarse en unos 56 kilómetros por hora y con una altura máxima de unos 8 metros, aunque, como veremos, esas cifras están lejos de ser seguras. Lo que no admite discusión es su fuerza. Los restos del tanque golpearon los pilares del ferrocarril elevado, y un tren llegó a salirse momentáneamente de las vías. Un camión acabó en el agua del puerto. La estación de bomberos número 31 quedó destrozada y casi fue arrastrada al mar, y varias manzanas quedaron cubiertas por una capa de melaza de 60 a 90 centímetros.",
+            "Entre las 21 víctimas hubo trabajadores de un depósito municipal cercano, conductores de carros, un bombero y dos niños de 10 años. También murieron varios caballos."
+          ]
+        },
+        {
+          "titulo": "Rescate y limpieza: semanas pegados al suelo",
+          "parrafos": [
+            "Los primeros en llegar fueron 116 cadetes del buque escuela USS Nantucket, amarrado muy cerca, que se metieron en la melaza para sacar a quien pudieran. Después acudieron la policía, la Cruz Roja y personal del ejército y la marina, y se improvisó un hospital en un edificio próximo. La búsqueda de víctimas se prolongó durante 4 días.",
+            "Limpiar fue otra odisea, porque la melaza pegaba los escombros al suelo. Se descubrió que el agua salada del puerto, lanzada desde un barco bomba, ayudaba a disolver el jarabe, y se echó arena para absorber el resto. La zona más afectada tardó semanas en quedar despejada, y el agua del puerto siguió teñida de marrón hasta el verano."
           ]
         },
         {
           "titulo": "Por qué un jarabe fue tan mortal",
           "parrafos": [
-            "Durante décadas costó explicar cómo una ola de melaza podía matar a tanta gente. En 2016, un equipo de investigadores de Harvard estudió el desastre con modelos y experimentos y señaló al frío como clave: al enfriarse con el aire helado de enero, la melaza se volvió todavía más espesa. Quien quedaba atrapado apenas podía moverse, y rescatarlo era muy difícil."
+            "¿Cómo puede matar algo que se usa para endulzar? En 2016, la ingeniera Nicole Sharp y los investigadores Jordan Kennedy y Shmuel Rubinstein, vinculados a la Universidad de Harvard, presentaron un estudio en un congreso de la American Physical Society. Revisaron cientos de páginas de crónicas y periódicos de la época, mapas de los edificios y datos meteorológicos históricos, e hicieron experimentos con modelos a escala y jarabe frío.",
+            "Su conclusión fue que la velocidad que contaban los testigos era físicamente creíble: la gravedad bastaba para empujar una masa tan enorme a gran velocidad. Pero la clave estaba en lo que vino después. La melaza, que había salido relativamente templada, se enfrió deprisa en contacto con el aire de enero, que esa noche bajó de cero. Según Sharp, su viscosidad pudo multiplicarse por 4 o más. Quien quedaba atrapado no podía salir, y rescatarlo era dificilísimo. Rubinstein lo resumió con crudeza: con más calor, la melaza habría llegado más lejos pero en una capa más fina, y habría atrapado a menos gente.",
+            "Quedaba la otra mitad del misterio: por qué se rompió el tanque. Un análisis del ingeniero de estructuras Ronald Mayville, publicado a mediados de la década de 2010, concluyó que las paredes de acero tenían la mitad del grosor que habrían necesitado incluso con las normas de la época. El acero, además, era pobre en manganeso, lo que lo hacía más frágil, y los agujeros de los remaches no estaban reforzados. La rotura empezó probablemente en una grieta por fatiga cerca de una boca de inspección en la base. En sus 4 años de vida, el tanque solo se había llenado por completo 8 veces."
           ]
         },
         {
-          "titulo": "El juicio y lo que cambió",
+          "titulo": "El juicio que cambió las reglas",
           "parrafos": [
-            "La dueña del tanque, la United States Industrial Alcohol, culpó a un supuesto atentado anarquista. Pero 119 vecinos la demandaron, en una de las primeras demandas colectivas de Massachusetts, y tras unos tres años el experto nombrado por el tribunal concluyó que el tanque era inseguro y estaba mal construido. La empresa tuvo que indemnizar a las víctimas.",
-            "El desastre endureció las normas de construcción: desde entonces se exigió que arquitectos e ingenieros presentaran y firmaran los cálculos de sus estructuras. Y, según contaban los vecinos, en los días de calor el barrio siguió oliendo a melaza durante décadas."
+            "La USIA se defendió culpando a unos anarquistas que, según la empresa, habrían volado el tanque porque parte de su alcohol acababa en municiones. No había pruebas de nada de eso. 119 vecinos y afectados presentaron una demanda colectiva, una de las primeras de Massachusetts, y el tribunal nombró como auditor a Hugh W. Ogden. Tras unos 3 años de audiencias, Ogden concluyó que la empresa era responsable porque el tanque era inseguro. Según los Archivos de la Ciudad de Boston, su dictamen se conoció en 1925.",
+            "La compañía pagó unos 628.000 dólares de la época, y las familias de cada fallecido recibieron alrededor de 7.000. Pero la consecuencia más duradera fue normativa: el departamento de edificación de Boston empezó a exigir que los cálculos de ingenieros y arquitectos se presentaran junto a los planos y que estos fueran firmados y sellados, y la supervisión de profesionales titulados se extendió como práctica. Puleo llega a decir que buena parte de las normas de construcción que hoy damos por supuestas nacen de este desastre.",
+            "El tanque nunca se reconstruyó. Donde estaba hay hoy un parque con un campo de béisbol, Langone Park, y una placa recuerda lo sucedido. En el centenario, en 2019, un radar de penetración terrestre localizó los restos de la base de hormigón a unos 50 centímetros bajo el césped, y se leyeron en voz alta los nombres de las 21 víctimas."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Que la ola existió y fue mortal está fuera de duda. Lo que bailan son las cifras. La velocidad más repetida, 56 kilómetros por hora, convive con otras de unos 40, y la altura de la ola va, según la fuente, de unos 4,5 a 12 metros. Incluso la hora y la indemnización cambian: hay relatos que sitúan el estallido hacia la una de la tarde, y la revista Yankee habla de más de un millón de dólares pagados y 125 demandantes, frente a los 628.000 dólares y 119 demandantes que dan otras fuentes.",
+            "Tampoco está claro el famoso «aroma» posterior. Que el North End siguiera oliendo a melaza en los días de calor durante décadas es un testimonio de los vecinos que forma parte del folclore local, no un dato medido.",
+            "Por último, hay una coincidencia que alimenta especulaciones: el 16 de enero de 1919, un día después del desastre, se ratificó la Decimoctava Enmienda, la que abrió paso a la Ley Seca. Algunos autores sostienen que la empresa forzaba la producción para adelantarse a la prohibición, y que eso explicaría las prisas por llenar el tanque. Es una hipótesis, no un hecho probado. Lo que sí quedó demostrado en el juicio es que la culpa no fue de ningún anarquista, sino de un tanque mal construido, mal probado y peor vigilado."
           ]
         }
       ],
@@ -403,7 +667,7 @@
         {
           "titulo": "Dark Tide: The Great Boston Molasses Flood of 1919",
           "autor": "Stephen Puleo",
-          "nota": "El libro de referencia sobre el desastre, el juicio y el Boston de la época (en inglés)."
+          "nota": "El libro de referencia sobre el desastre, el juicio y el Boston de la época (2003, en inglés)."
         }
       ]
     },
@@ -435,6 +699,14 @@
         {
           "titulo": "Australian Geographic: Looking back, Australia's Emu Wars",
           "url": "https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/"
+        },
+        {
+          "titulo": "Emu (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Emu"
+        },
+        {
+          "titulo": "The Great Emu War: In which some large, flightless birds unwittingly foiled the Australian Army (Scientific American)",
+          "url": "https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/"
         }
       ],
       "etiquetas": [
@@ -445,24 +717,55 @@
       "fecha": "2026-10-27T21:51",
       "articulo": [
         {
-          "titulo": "Excombatientes, trigo y emús",
+          "titulo": "",
           "parrafos": [
-            "Después de la Primera Guerra Mundial, muchos excombatientes recibieron tierras en Australia Occidental para cultivar trigo. Con la Gran Depresión, el precio del trigo se hundió, y en 1932 llegó otro problema: tras la época de cría, miles de emús (unos 20.000, según algunas estimaciones de la época) se desplazaron hacia las granjas.",
-            "El emú es la segunda ave más grande del mundo: no vuela, pero corre a gran velocidad. Se comían el trigo y rompían las vallas, por donde después entraban los conejos. Los granjeros pidieron ayuda al gobierno, y pidieron algo muy concreto: ametralladoras."
+            "En noviembre de 1932, el ejército australiano envió a un mayor, dos artilleros, dos ametralladoras y 10.000 balas a los campos de trigo de Australia Occidental. El enemigo eran los emús, miles de ellos, que estaban arrasando las cosechas de unos granjeros que ya lo estaban pasando muy mal. Un mes después, la operación se dio por terminada con un balance tan pobre que la prensa, los políticos y hasta un ornitólogo se burlaron de ella.",
+            "La llamada «guerra del emú» se cuenta hoy casi como un chiste de internet, el día en que unas aves derrotaron a un ejército. La historia real es menos épica y más interesante: habla de veteranos de guerra abandonados a su suerte, de un gobierno que necesitaba parecer útil y de un problema agrícola que no se resolvió a tiros, sino con dinero y vallas."
           ]
         },
         {
-          "titulo": "Una operación militar contra aves",
+          "titulo": "Soldados convertidos en granjeros",
           "parrafos": [
-            "El ministro de Defensa aceptó. A finales de 1932, el mayor G. P. W. Meredith llegó al distrito de Campion con dos soldados, dos ametralladoras Lewis y 10.000 balas.",
-            "Los emús se dispersaban en cuanto empezaban los disparos. En una emboscada junto a un estanque, con cientos de aves a tiro, la ametralladora se atascó tras abatir solo a unas pocas. Montar un arma en un camión tampoco funcionó: el terreno era tan irregular que era imposible apuntar. El ornitólogo Dominic Serventy comentó con ironía que los emús parecían usar tácticas de guerrilla."
+            "Tras la Primera Guerra Mundial, Australia repartió tierras entre sus excombatientes para que se ganaran la vida como agricultores. Según Scientific American, el programa dio tierras a unos 5.030 antiguos soldados para cultivar trigo o criar ovejas. En Australia Occidental fueron a menudo terrenos marginales, poco fértiles, en lo que hoy se conoce como el Wheatbelt, el cinturón triguero que rodea Perth por el norte, el este y el sur.",
+            "Desde 1929, en plena Gran Depresión, el gobierno animó a esos granjeros a sembrar más trigo y les prometió subvenciones. Las ayudas no llegaron y el precio del trigo siguió cayendo. En octubre de 1932, cuando se preparaban para la cosecha, los agricultores amenazaban ya con no entregar el grano. Fue entonces cuando apareció el último problema que les faltaba."
           ]
         },
         {
-          "titulo": "Diez balas por emú",
+          "titulo": "Veinte mil emús en los trigales",
           "parrafos": [
-            "Tras una retirada y un segundo intento, el ejército abandonó la operación hacia el 10 de diciembre de 1932. Meredith informó de 986 emús abatidos con 9.860 balas, exactamente diez por ave, unas cifras que se pusieron en duda.",
-            "No hubo ninguna declaración oficial de derrota, así que decir que Australia «perdió una guerra» es una forma popular de contarlo; lo exacto es que la operación fracasó. A partir de 1934, el gobierno optó por pagar recompensas a los cazadores por cada emú, y eso resultó mucho más eficaz que las ametralladoras."
+            "El emú es una de las aves más grandes del mundo, solo superada en altura por los avestruces. Puede medir cerca de 1,9 metros, no vuela, pero corre a unos 48 kilómetros por hora. En Australia Occidental, sus poblaciones se desplazan según las estaciones en busca de agua y comida.",
+            "En 1932, tras la época de cría, unos 20.000 emús, según las estimaciones de la época, llegaron a las tierras de cultivo. Los atraían los campos desbrozados y los nuevos puntos de agua que habían creado los propios granjeros. Se concentraron en la zona de Campion, Chandler y Walgoolan, a medio camino entre Perth y Kalgoorlie. Pisoteaban y se comían el trigo, y además abrían agujeros en las vallas, por donde luego entraban los conejos, otra plaga temida."
+          ]
+        },
+        {
+          "titulo": "Ametralladoras contra aves",
+          "parrafos": [
+            "Una delegación de granjeros excombatientes fue a ver al ministro de Defensa, sir George Pearce, con una petición muy concreta: ametralladoras. Pearce aceptó con condiciones. Las armas las manejarían militares, el gobierno de Australia Occidental pagaría el transporte, y los granjeros darían comida y alojamiento a la tropa y pagarían la munición. Se dice que el ministro lo vio como una buena práctica de tiro, y algunos historiadores creen que al gobierno también le interesaba mostrarse cercano a unos veteranos descontentos, en una región donde crecía el movimiento independentista. Incluso se llevó a un cámara de Fox Movietone para filmarlo.",
+            "Al mando iba el mayor Gwynydd Purves Wynne-Aubrey Meredith, de la Artillería Real Australiana, con el sargento S. McMurray y el artillero J. O'Halloran, dos ametralladoras Lewis y 10.000 cartuchos. La lluvia retrasó el inicio hasta el 2 de noviembre. Ese día avistaron unos 50 emús fuera de alcance; las aves se dividieron en grupos pequeños y, al final de la jornada, habían abatido quizá una docena.",
+            "El 4 de noviembre, Meredith preparó una emboscada junto a un depósito de agua. Se acercaron más de 1.000 emús, abrieron fuego... y la ametralladora se atascó después de matar a 12. El resto huyó. Probaron también a montar un arma en un camión, pero el vehículo no podía seguir el ritmo de los emús y el traqueteo por el terreno irregular hacía imposible apuntar. Hacia el 8 de noviembre se habían disparado unos 2.500 cartuchos, y las estimaciones de aves muertas iban de 50 a 500; la más alta, la de los colonos. Tras las críticas de la prensa local y un debate en la Cámara de Representantes, Pearce ordenó retirar a los soldados ese mismo día."
+          ]
+        },
+        {
+          "titulo": "Segundo asalto: diez balas por emú",
+          "parrafos": [
+            "La retirada duró poco. La sequía y el calor empujaron todavía más aves hacia las granjas, el primer ministro de Australia Occidental, James Mitchell, respaldó una nueva intervención y el 13 de noviembre Meredith volvió al campo. Los dos primeros días cayeron unos 40 emús; a principios de diciembre, los soldados abatían alrededor de 100 por semana. El 10 de diciembre, el mayor fue llamado de vuelta.",
+            "Su informe habló de 986 emús abatidos con 9.860 cartuchos, exactamente 10 por ave, y de otros 2.500 heridos que habrían muerto después. Meredith terminó admirando a su rival: «Pueden enfrentarse a las ametralladoras con la invulnerabilidad de los tanques», dijo, y añadió que una división con la capacidad de estas aves para encajar balas podría plantar cara a cualquier ejército del mundo. El ornitólogo Dominic Serventy fue más irónico: escribió que los sueños de los artilleros de disparar a quemarropa contra masas compactas de emús se desvanecieron pronto, porque el «mando» de las aves había optado por tácticas de guerrilla y su ejército se dispersó en pequeñas unidades.",
+            "La política tampoco tuvo piedad. Pearce se ganó el apodo de «ministro de la Guerra del Emú», y el diputado laborista A. E. Green bromeó con que, si había que repartir medallas, deberían ir para los emús."
+          ]
+        },
+        {
+          "titulo": "Lo que de verdad funcionó",
+          "parrafos": [
+            "Los granjeros volvieron a pedir ayuda militar en 1934, 1943 y 1948, y el gobierno se negó cada vez. La solución llegó por otros caminos. Los emús habían estado protegidos hasta 1922, cuando se reclasificaron como plaga, y desde 1923 existía un sistema de recompensas que pagaba a los cazadores por cada emú, y resultó mucho más eficaz: en solo 6 meses de 1934 se reclamaron 57.034 recompensas. Según Australian Geographic, entre 1945 y 1960 se mataron así unos 284.700 emús en el estado. A ello se sumaron las vallas de exclusión contra plagas, cada vez más populares desde 1930, y, en 1950, la cesión a los granjeros de 500.000 cartuchos del calibre .303.",
+            "Hoy el emú está protegido por la ley federal australiana, figura en el escudo nacional junto al canguro rojo y la Unión Internacional para la Conservación de la Naturaleza lo clasifica como especie de preocupación menor. Algunas poblaciones locales, eso sí, están amenazadas."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Lo primero: Australia no «perdió una guerra». No hubo declaración de guerra, ni frente, ni rendición, y nadie del ejército resultó herido. Fue una operación de control de plagas con medios militares que fracasó y se convirtió en motivo de burla. Hasta hubo quien defendió lo contrario: en 1935, el periódico Coolgardie Miner aseguró que las ametralladoras habían resultado eficaces y salvado lo que quedaba del trigo.",
+            "Las cifras deben leerse con cautela. Los 20.000 emús son una estimación de la época, no un recuento. Los 986 abatidos son los que declaró el propio Meredith, con una cuenta sospechosamente redonda de 10 balas por ave, y el historiador Greg Beyer los considera muy discutidos y probablemente inflados. Los 2.500 heridos que habrían muerto más tarde son todavía más difíciles de comprobar.",
+            "Tampoco está del todo claro por qué se montó la operación. La versión oficial era ayudar a los granjeros. El historiador Murray Johnson ha sugerido que fue en parte un ejercicio de propaganda, para que el gobierno pareciera hacer algo por unos veteranos en apuros, y otros autores apuntan al deseo de calmar a una región molesta con el gobierno federal. Son interpretaciones razonables, pero no pueden darse por demostradas. Lo indiscutible es el desenlace: las aves siguieron ahí, y el problema se gestionó durante décadas con recompensas y vallas, no con ametralladoras."
           ]
         }
       ]
