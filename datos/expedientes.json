@@ -821,6 +821,42 @@
         "Animales",
         "Absurdos"
       ]
+    },
+    {
+      "youtube": "pnpMJ9tX8JI",
+      "tipo": "video",
+      "titulo": "PHINEAS GAGE: el hombre que sobrevivió a una barra de hierro en la cabeza",
+      "epoca": "1848-1860",
+      "lugar": "Cavendish, Vermont (Estados Unidos) y Chile",
+      "miniatura": "Identidad/Miniaturas/miniatura-A004-phineas-gage.png",
+      "resumen": "En 1848, una barra de hierro de más de un metro atravesó la cabeza de un joven trabajador del ferrocarril. Entró por su mejilla y salió por lo alto del cráneo. Y él no solo sobrevivió: a los pocos minutos estaba hablando.",
+      "curiosidades": [
+        "Accidente el 13 de septiembre de 1848 cerca de Cavendish (Vermont), mientras trabajaba en la construcción del ferrocarril",
+        "Barra de 3 pies y 7 pulgadas (~1,1 m) y 13¼ libras (~6 kg)",
+        "Trayectoria: bajo el pómulo izquierdo, detrás del ojo, salida por lo alto del cráneo; la barra cayó a unos 80 pies (~25 m)",
+        "Habló en minutos y fue llevado en un carro de bueyes; lo trató el doctor John Martyn Harlow",
+        "Informe de Harlow de 1868 y la frase «no longer Gage» atribuida a sus amigos"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Phineas Gage»",
+          "url": "https://en.wikipedia.org/wiki/Phineas_Gage"
+        },
+        {
+          "titulo": "The Psychologist (BPS), «Phineas Gage – Unravelling the myth» (Malcolm Macmillan)",
+          "url": "https://bps.org.uk/psychologist/phineas-gage-unravelling-myth"
+        },
+        {
+          "titulo": "Reseña de «An Odd Kind of Fame: Stories of Phineas Gage» (Macmillan, 2000) en Project MUSE",
+          "url": "https://muse.jhu.edu/article/4772"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Historia de la medicina",
+        "Cerebro"
+      ],
+      "fecha": "2026-10-27T23:29"
     }
   ]
 }
