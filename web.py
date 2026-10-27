@@ -28,17 +28,24 @@ from __future__ import annotations
 
 import json
 import re
+import secrets
 import shutil
 import subprocess
 import sys
+import time
 import unicodedata
+import urllib.request
 from datetime import date, datetime
 from html import escape
 from pathlib import Path
+from xml.sax.saxutils import escape as escape_xml
 
 WEB = Path(__file__).resolve().parent
 DATOS = WEB / "datos" / "expedientes.json"
+CLAVE_INDEXNOW = WEB / "datos" / "indexnow.txt"
 LOGO_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "foto-perfil.png"
+BANNER_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "banner.png"
+URL = "https://elarchivocurioso.github.io"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 
@@ -165,8 +172,35 @@ def slug(texto: str) -> str:
     return t[:70].rstrip("-") or "expediente"
 
 
-def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "") -> str:
+def url_absoluta(ruta: str) -> str:
+    return ruta if ruta.startswith("http") else f"{URL}/{ruta}"
+
+
+def fecha_iso(fecha: str) -> str:
+    """Fecha local del expediente con zona horaria, como piden los buscadores."""
+    return datetime.fromisoformat(fecha).astimezone().isoformat(timespec="seconds")
+
+
+def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "",
+           ruta: str = "", imagen: str = "compartir.png", tipo_og: str = "website", jsonld=None) -> str:
     desc = escape(descripcion or canal["lema"])
+    # Etiquetas para buscadores (Google, Bing) y para las vistas previas al compartir en redes
+    seo = (f'<link rel="canonical" href="{URL}/{ruta}">\n'
+           f'<meta property="og:site_name" content="{escape(canal["nombre"])}">\n'
+           '<meta property="og:locale" content="es_ES">\n'
+           f'<meta property="og:type" content="{tipo_og}">\n'
+           f'<meta property="og:title" content="{escape(titulo)}">\n'
+           f'<meta property="og:description" content="{desc}">\n'
+           f'<meta property="og:url" content="{URL}/{ruta}">\n'
+           f'<meta property="og:image" content="{escape(url_absoluta(imagen))}">\n'
+           '<meta name="twitter:card" content="summary_large_image">\n')
+    if canal.get("google_verificacion"):
+        seo += f'<meta name="google-site-verification" content="{escape(canal["google_verificacion"])}">\n'
+    if canal.get("bing_verificacion"):
+        seo += f'<meta name="msvalidate.01" content="{escape(canal["bing_verificacion"])}">\n'
+    if jsonld:
+        seo += ('<script type="application/ld+json">'
+                + json.dumps(jsonld, ensure_ascii=False).replace("</", "<\\/") + "</script>\n")
     return f"""<!doctype html>
 <html lang="es">
 <head>
@@ -174,7 +208,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(titulo)}</title>
 <meta name="description" content="{desc}">
-<link rel="icon" href="{raiz}logo.png">
+{seo}<link rel="icon" href="{raiz}logo.png">
 <style>{CSS}</style>
 </head>
 <body>
@@ -222,7 +256,14 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
   {lista}
 </section>
 </main>"""
-    return pagina(canal["nombre"], cuerpo, canal, extra=FILTRO_JS if expedientes else "")
+    jsonld = [
+        {"@context": "https://schema.org", "@type": "WebSite", "name": canal["nombre"], "url": f"{URL}/",
+         "inLanguage": "es", "description": canal["descripcion"]},
+        {"@context": "https://schema.org", "@type": "Organization", "name": canal["nombre"], "url": f"{URL}/",
+         "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]]},
+    ]
+    return pagina(f"{canal['nombre']} | {canal['lema']}", cuerpo, canal, descripcion=canal["descripcion"],
+                  extra=FILTRO_JS if expedientes else "", jsonld=jsonld)
 
 
 def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: dict) -> str:
@@ -256,7 +297,19 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 {bloques}
 {nav}
 </main>"""
-    return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""))
+    ruta = f"expedientes/{e['_slug']}.html"
+    jsonld = {
+        "@context": "https://schema.org", "@type": "VideoObject",
+        "name": e["titulo"], "description": e.get("resumen") or e["titulo"],
+        "thumbnailUrl": [url_absoluta(e["_img"])], "uploadDate": fecha_iso(e["fecha"]),
+        "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
+        "url": f"{URL}/{ruta}", "inLanguage": "es",
+        "publisher": {"@type": "Organization", "name": canal["nombre"], "logo": f"{URL}/logo.png"},
+    }
+    if e.get("etiquetas"):
+        jsonld["keywords"] = ", ".join(e["etiquetas"])
+    return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
+                  ruta=ruta, imagen=e["_img"], tipo_og="video.other", jsonld=jsonld)
 
 
 def privacidad(canal: dict) -> str:
@@ -289,7 +342,7 @@ def privacidad(canal: dict) -> str:
 <h2>7. Contacto</h2>
 <p>Para cualquier consulta sobre esta política, puedes escribir a través del <a href="CANAL">canal de YouTube</a>.</p>
 </main>""".replace("CANAL", escape(canal["youtube"]))
-    return pagina(f"Política de privacidad · {canal['nombre']}", cuerpo, canal)
+    return pagina(f"Política de privacidad · {canal['nombre']}", cuerpo, canal, ruta="privacidad.html")
 
 
 def generar() -> int:
@@ -332,6 +385,28 @@ def generar() -> int:
     (WEB / ".nojekyll").write_text("", encoding="utf-8")
     if LOGO_ORIGEN.exists():
         shutil.copyfile(LOGO_ORIGEN, WEB / "logo.png")
+    if BANNER_ORIGEN.exists():
+        shutil.copyfile(BANNER_ORIGEN, WEB / "compartir.png")
+
+    # Mapa del sitio y robots.txt: así los buscadores encuentran todas las páginas
+    hoy = date.today().isoformat()
+    entradas = [(f"{URL}/", visibles[0]["fecha"][:10] if visibles else hoy)]
+    entradas += [(f"{URL}/expedientes/{e['_slug']}.html", e["fecha"][:10]) for e in visibles]
+    entradas.append((f"{URL}/privacidad.html", hoy))
+    (WEB / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{escape_xml(u)}</loc><lastmod>{f}</lastmod></url>\n" for u, f in entradas)
+        + "</urlset>\n", encoding="utf-8")
+    (WEB / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {URL}/sitemap.xml\n", encoding="utf-8")
+
+    # Clave de IndexNow (Bing, Yandex...): un archivo con la clave en la raíz demuestra que la web es nuestra
+    if not CLAVE_INDEXNOW.exists():
+        CLAVE_INDEXNOW.write_text(secrets.token_hex(16), encoding="utf-8")
+    clave = CLAVE_INDEXNOW.read_text(encoding="utf-8").strip()
+    for viejo in WEB.glob("*.txt"):
+        if re.fullmatch(r"[0-9a-f]{32}\.txt", viejo.name) and viejo.stem != clave:
+            viejo.unlink()
+    (WEB / f"{clave}.txt").write_text(clave, encoding="utf-8")
     ocultos = len(datos["expedientes"]) - len(visibles)
     print(f"Web generada: {len(visibles)} expedientes publicados" + (f", {ocultos} programados para más adelante" if ocultos else ""))
     return len(visibles)
@@ -355,7 +430,36 @@ def publicar() -> None:
     r = git("push")
     if r.returncode != 0:
         sys.exit(f"ERROR en git push (¿hay que volver a autorizar GitHub?):\n{r.stderr}")
-    print("Web publicada en https://elarchivocurioso.github.io (tarda 1-2 minutos en actualizarse).")
+    print(f"Web publicada en {URL} (tarda 1-2 minutos en actualizarse).")
+    avisar_buscadores()
+
+
+def avisar_buscadores() -> None:
+    """Avisa a Bing y otros buscadores (IndexNow) de que la web ha cambiado.
+    Google no usa IndexNow: lee el sitemap desde Google Search Console."""
+    clave = CLAVE_INDEXNOW.read_text(encoding="utf-8").strip()
+    urls = re.findall(r"<loc>(.*?)</loc>", (WEB / "sitemap.xml").read_text(encoding="utf-8"))
+    # El buscador comprueba el archivo de la clave, así que hay que esperar a que GitHub publique la web
+    for _ in range(20):
+        try:
+            with urllib.request.urlopen(f"{URL}/{clave}.txt?t={time.time()}", timeout=15) as r:
+                if r.read().decode().strip() == clave:
+                    break
+        except Exception:
+            pass
+        time.sleep(15)
+    else:
+        print("AVISO: la web aún no está actualizada; no se ha avisado a los buscadores (se hará en la próxima publicación).")
+        return
+    cuerpo = json.dumps({"host": URL.removeprefix("https://"), "key": clave,
+                         "keyLocation": f"{URL}/{clave}.txt", "urlList": urls}).encode()
+    peticion = urllib.request.Request("https://api.indexnow.org/indexnow", data=cuerpo, method="POST",
+                                      headers={"Content-Type": "application/json; charset=utf-8"})
+    try:
+        with urllib.request.urlopen(peticion, timeout=30) as r:
+            print(f"Buscadores avisados (IndexNow, respuesta {r.status}): {len(urls)} páginas.")
+    except Exception as ex:
+        print(f"AVISO: no se pudo avisar a los buscadores: {ex}")
 
 
 if __name__ == "__main__":
