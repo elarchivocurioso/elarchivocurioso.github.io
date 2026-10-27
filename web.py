@@ -620,15 +620,26 @@ def git(*args: str) -> subprocess.CompletedProcess:
 def publicar() -> None:
     generar()
     git("add", "-A")
-    if not git("status", "--porcelain").stdout.strip():
+    if git("status", "--porcelain").stdout.strip():
+        r = git("commit", "-m", f"Actualizar web ({date.today().isoformat()})\n\n"
+                                  "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
+        if r.returncode != 0:
+            sys.exit(f"ERROR en git commit:\n{r.stderr}")
+    # Se sube también si un push anterior falló y quedaron commits sin subir (se reintenta en la siguiente ejecución)
+    git("fetch", "-q")
+    if git("rev-list", "--count", "@{u}..HEAD").stdout.strip() in ("", "0"):
         print("No hay cambios que subir.")
         return
-    r = git("commit", "-m", f"Actualizar web ({date.today().isoformat()})\n\n"
-                              "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
-    if r.returncode != 0:
-        sys.exit(f"ERROR en git commit:\n{r.stderr}")
-    r = git("push")
-    if r.returncode != 0:
+    # Otras tareas también publican: primero se trae lo suyo, y si el push choca, se reintenta una vez
+    for intento in range(2):
+        r = git("pull", "--rebase", "-q")
+        if r.returncode != 0:
+            git("rebase", "--abort")
+            sys.exit(f"ERROR en git pull --rebase (hay que revisarlo a mano):\n{r.stderr}")
+        r = git("push")
+        if r.returncode == 0:
+            break
+    else:
         sys.exit(f"ERROR en git push (¿hay que volver a autorizar GitHub?):\n{r.stderr}")
     print(f"Web publicada en {URL} (tarda 1-2 minutos en actualizarse).")
     avisar_buscadores()
