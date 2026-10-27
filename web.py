@@ -240,6 +240,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
   <nav><a href="{raiz}index.html#expedientes">Expedientes</a><a href="{raiz}acerca.html">El archivo</a><a href="{escape(canal['youtube'])}">YouTube</a></nav>
 </div></header>
 {cuerpo}
+{suscripcion(canal)}
 {apoyo(canal)}
 <footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {extra}
@@ -257,6 +258,16 @@ def apoyo(canal: dict) -> str:
             f'Si quieres ayudar a abrir el siguiente, puedes invitarnos a un café.</p></div>'
             f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener">'
             f'{escape(canal.get("donaciones_texto") or "INVÍTANOS A UN CAFÉ")}</a></section>')
+
+
+def suscripcion(canal: dict) -> str:
+    """Invitación a la newsletter; no aparece hasta que haya un enlace en "newsletter_url"."""
+    if not canal.get("newsletter_url"):
+        return ""
+    return (f'<section class="apoyo ancho"><div class="sello" style="--t:54px"><span>AC</span></div>'
+            f'<div><h2>Un expediente a la semana, en tu correo</h2><p>Historias reales que parecen inventadas, '
+            f'con fuentes. Gratis y sin spam: te das de baja con un clic.</p></div>'
+            f'<a class="boton" href="{escape(canal["newsletter_url"])}" rel="noopener">SUSCRIBIRME</a></section>')
 
 
 def aviso_afiliados(canal: dict) -> str:
