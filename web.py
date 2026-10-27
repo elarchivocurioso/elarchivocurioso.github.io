@@ -442,12 +442,14 @@ def avisar_buscadores() -> None:
     """Avisa a Bing y otros buscadores (IndexNow) de que la web ha cambiado.
     Google no usa IndexNow: lee el sitemap desde Google Search Console."""
     clave = CLAVE_INDEXNOW.read_text(encoding="utf-8").strip()
-    urls = re.findall(r"<loc>(.*?)</loc>", (WEB / "sitemap.xml").read_text(encoding="utf-8"))
-    # El buscador comprueba el archivo de la clave, así que hay que esperar a que GitHub publique la web
-    for _ in range(20):
+    sitemap = (WEB / "sitemap.xml").read_text(encoding="utf-8")
+    urls = re.findall(r"<loc>(.*?)</loc>", sitemap)
+    # Hay que esperar a que GitHub publique esta versión (el mapa del sitio en línea igual al nuevo)
+    # para que el buscador encuentre las páginas nuevas y el archivo de la clave
+    for _ in range(24):
         try:
-            with urllib.request.urlopen(f"{URL}/{clave}.txt?t={time.time()}", timeout=15) as r:
-                if r.read().decode().strip() == clave:
+            with urllib.request.urlopen(f"{URL}/sitemap.xml?t={time.time()}", timeout=15) as r:
+                if r.read().decode("utf-8") == sitemap:
                     break
         except Exception:
             pass

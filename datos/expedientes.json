@@ -13,7 +13,6 @@
       "youtube": "_4PaBdSZXuA",
       "tipo": "video",
       "titulo": "La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar",
-      "fecha": "2026-10-29T18:00",
       "epoca": "1518",
       "lugar": "Estrasburgo",
       "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",
@@ -26,30 +25,21 @@
         "La teoría más aceptada es la histeria colectiva (John Waller); el cornezuelo es la alternativa, hoy bastante descartada."
       ],
       "fuentes": [
-        {"titulo": "Dancing plague of 1518 (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"},
-        {"titulo": "John Waller, A Time to Dance, a Time to Die (2008)", "url": "https://publishersweekly.com/9781402219436"}
+        {
+          "titulo": "Dancing plague of 1518 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+        },
+        {
+          "titulo": "John Waller, A Time to Dance, a Time to Die (2008)",
+          "url": "https://publishersweekly.com/9781402219436"
+        }
       ],
-      "etiquetas": ["Edad Moderna", "Misterios", "Medicina"]
-    },
-    {
-      "youtube": "VzDGAwrxWM4",
-      "tipo": "short",
-      "titulo": "¿Edison inventó la bombilla? La verdad",
-      "fecha": "2026-10-27T19:52",
-      "epoca": "1879",
-      "lugar": "Newcastle y Menlo Park",
-      "resumen": "Edison no inventó la bombilla: Joseph Swan ya iluminó una sala en Newcastle meses antes. El mérito de Edison fue una bombilla práctica y duradera y el sistema para llevar la luz a las casas.",
-      "curiosidades": [
-        "Humphry Davy ya produjo luz con electricidad a principios del siglo XIX.",
-        "El 3 de febrero de 1879 Joseph Swan iluminó con sus bombillas una sala de unas 700 personas en Newcastle.",
-        "La bombilla que se suele citar como primer éxito de Edison es de octubre de 1879.",
-        "Swan y Edison acabaron uniendo sus empresas en Gran Bretaña (Ediswan)."
+      "etiquetas": [
+        "Edad Moderna",
+        "Misterios",
+        "Medicina"
       ],
-      "fuentes": [
-        {"titulo": "Joseph Swan (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Joseph_Swan"},
-        {"titulo": "Linda Hall Library: Joseph Wilson Swan", "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/"}
-      ],
-      "etiquetas": ["Siglo XIX", "Inventos", "Mitos"]
+      "fecha": "2026-10-27T19:41"
     }
   ]
 }
