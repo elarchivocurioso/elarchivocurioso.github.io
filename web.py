@@ -48,7 +48,16 @@ from xml.sax.saxutils import escape as escape_xml
 WEB = Path(__file__).resolve().parent
 DATOS = WEB / "datos" / "expedientes.json"
 CLAVE_INDEXNOW = WEB / "datos" / "indexnow.txt"
-LOGO_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "foto-perfil.png"
+LOGO_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "icono-512.png"
+# Logotipo (lupa con «AC»), copiado de Identidad/Archivo Curioso/logo.js. Va en línea para que use Playfair Display
+LUPA_SVG = """<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El Archivo Curioso">
+<line x1="131" y1="131" x2="182" y2="182" stroke="#C8A04A" stroke-width="17" stroke-linecap="round"/>
+<line x1="131" y1="131" x2="146" y2="146" stroke="#8C6E30" stroke-width="19"/>
+<circle cx="88" cy="88" r="63" fill="#1A1410" stroke="#C8A04A" stroke-width="9"/>
+<circle cx="88" cy="88" r="52" fill="none" stroke="#C8A04A" stroke-width="1.6"/>
+<text x="88" y="104" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="50" fill="#EBDDBF" letter-spacing="-1">AC</text>
+<line x1="66" y1="118" x2="110" y2="118" stroke="#C2443B" stroke-width="3"/>
+</svg>"""
 BANNER_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "banner.png"
 URL = "https://elarchivocurioso.github.io"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
@@ -66,14 +75,9 @@ a { color:var(--oro); }
 .ancho { max-width:1100px; margin:0 auto; padding:0 16px; }
 .etiqueta { font-family:'Special Elite','Courier New',monospace; letter-spacing:.16em; color:var(--oro); font-size:14px; text-transform:uppercase; }
 
-/* Sello de lacre */
-.sello { --t:64px; position:relative; flex:none; width:var(--t); height:var(--t); border-radius:50%;
-  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.25), transparent 35%),
-              radial-gradient(circle at 50% 50%, var(--lacre-claro) 0 55%, var(--lacre) 75%, #6E1C18 100%);
-  box-shadow:0 0 0 calc(var(--t)*.035) #7C211C, 0 calc(var(--t)*.06) calc(var(--t)*.12) rgba(0,0,0,.55);
-  display:flex; align-items:center; justify-content:center; text-decoration:none; }
-.sello::after { content:""; position:absolute; inset:calc(var(--t)*.1); border-radius:50%; border:calc(var(--t)*.025) solid rgba(60,10,8,.45); }
-.sello span { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-style:italic; font-size:calc(var(--t)*.4); color:#F3D9C2; letter-spacing:-.04em; }
+/* Logotipo: lupa con «AC» */
+.logo { --t:64px; flex:none; display:block; width:var(--t); height:var(--t); }
+.logo svg { display:block; width:100%; height:100%; filter:drop-shadow(0 calc(var(--t)*.04) calc(var(--t)*.08) rgba(0,0,0,.5)); }
 
 /* Cabecera */
 header { border-bottom:1px solid rgba(201,180,138,.15); }
@@ -86,7 +90,7 @@ header nav a:hover { color:var(--oro); }
 
 /* Portada */
 .portada { text-align:center; padding:72px 0 40px; display:flex; flex-direction:column; align-items:center; gap:18px; }
-.portada .sello { --t:120px; }
+.portada .logo { --t:150px; }
 .portada h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(40px,8vw,76px); line-height:1; }
 .portada h1 em { color:var(--lacre-claro); }
 .portada .lema { font-style:italic; font-size:clamp(18px,3vw,24px); color:rgba(235,221,191,.85); }
@@ -113,7 +117,7 @@ header nav a:hover { color:var(--oro); }
 .ficha h3 { font-family:'Playfair Display',Georgia,serif; font-size:19px; line-height:1.25; color:var(--pergamino); }
 .ficha .meta { font-size:13px; color:var(--pergamino-2); }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--pergamino-2); }
-.vacio .sello { --t:72px; margin:0 auto 18px; opacity:.85; }
+.vacio .logo { --t:80px; margin:0 auto 18px; opacity:.85; }
 
 /* Página de expediente */
 .expediente { padding:40px 0 72px; }
@@ -232,12 +236,13 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(titulo)}</title>
 <meta name="description" content="{desc}">
-{seo}<link rel="icon" href="{raiz}logo.png">
+{seo}<link rel="icon" type="image/png" sizes="32x32" href="{raiz}favicon-32.png">
+<link rel="apple-touch-icon" href="{raiz}apple-touch-icon.png">
 <style>{CSS}</style>
 </head>
 <body>
 <header><div class="ancho">
-  <a class="sello" style="--t:46px" href="{raiz}index.html" aria-label="Inicio"><span>AC</span></a>
+  <a class="logo" style="--t:52px" href="{raiz}index.html" aria-label="Inicio">{LUPA_SVG}</a>
   <a class="nombre" href="{raiz}index.html">El Archivo <em>Curioso</em></a>
   <nav><a href="{raiz}index.html#expedientes">Expedientes</a><a href="{raiz}acerca.html">El archivo</a><a href="{escape(canal['youtube'])}">YouTube</a></nav>
 </div></header>
@@ -255,7 +260,7 @@ def apoyo(canal: dict) -> str:
     """Bloque de donaciones; no aparece hasta que haya un enlace en "donaciones_url"."""
     if not canal.get("donaciones_url"):
         return ""
-    return (f'<section class="apoyo ancho"><div class="sello" style="--t:54px"><span>AC</span></div>'
+    return (f'<section class="apoyo ancho"><div class="logo" style="--t:60px">{LUPA_SVG}</div>'
             f'<div><h2>¿Te gusta El Archivo Curioso?</h2><p>Cada expediente lleva horas de investigación. '
             f'Si quieres ayudar a abrir el siguiente, puedes invitarnos a un café.</p></div>'
             f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener">'
@@ -266,7 +271,7 @@ def suscripcion(canal: dict) -> str:
     """Invitación a la newsletter; no aparece hasta que haya un enlace en "newsletter_url"."""
     if not canal.get("newsletter_url"):
         return ""
-    return (f'<section class="apoyo ancho"><div class="sello" style="--t:54px"><span>AC</span></div>'
+    return (f'<section class="apoyo ancho"><div class="logo" style="--t:60px">{LUPA_SVG}</div>'
             f'<div><h2>Un expediente a la semana, en tu correo</h2><p>Historias reales que parecen inventadas, '
             f'con fuentes. Gratis y sin spam: te das de baja con un clic.</p></div>'
             f'<a class="boton" href="{escape(canal["newsletter_url"])}" rel="noopener">SUSCRIBIRME</a></section>')
@@ -362,11 +367,11 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
                  '<button data-filtro="video">VÍDEOS</button><button data-filtro="short">SHORTS</button></div>'
                  f'<div class="rejilla">{"".join(ficha(e) for e in expedientes)}</div>')
     else:
-        lista = ('<div class="vacio"><div class="sello"><span>AC</span></div>'
+        lista = (f'<div class="vacio"><div class="logo">{LUPA_SVG}</div>'
                  '<p>Los primeros expedientes se están catalogando.<br>Muy pronto los encontrarás aquí.</p></div>')
     cuerpo = f"""<main class="ancho">
 <section class="portada">
-  <div class="sello"><span>AC</span></div>
+  <div class="logo">{LUPA_SVG}</div>
   <div class="etiqueta">Expedientes de historia y curiosidades</div>
   <h1>El Archivo <em>Curioso</em></h1>
   <div class="lema">{escape(canal['lema'])}</div>
