@@ -21,6 +21,9 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
     }
 Las entradas con fecha futura no se muestran hasta esa fecha y hora (vídeos programados);
 aparecen la siguiente vez que se ejecute "publicar".
+Un expediente que ya está en redes pero aún no en YouTube lleva "youtube": "" y "num": "A002": su página
+muestra la miniatura en lugar del reproductor. Cuando la sincronización añade su entrada de YouTube (mismo
+título), se usa esa y hereda el artículo y las lecturas de la provisional.
 Solo usa la biblioteca estándar de Python.
 """
 
@@ -333,30 +336,47 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     nav += f'<a href="{anterior["_slug"]}.html">← {escape(anterior["titulo"])}</a>' if anterior else "<span></span>"
     nav += f'<a href="{siguiente["_slug"]}.html" style="text-align:right">{escape(siguiente["titulo"])} →</a>' if siguiente else ""
     nav += "</div>"
+    if e.get("youtube"):
+        video = f"""<div class="reproductor {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
+  title="{escape(e['titulo'])}" loading="lazy" allowfullscreen
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+<p style="margin-top:14px; text-align:center"><a href="https://www.youtube.com/watch?v={escape(e['youtube'])}">Ver en YouTube</a></p>"""
+    else:
+        # Aún no está en YouTube: miniatura y aviso de dónde verlo
+        img = e["_img"] if e["_img"].startswith("http") else "../" + e["_img"]
+        video = (f'<img src="{escape(img)}" alt="{escape(e["titulo"])}" style="display:block; width:100%; border-radius:6px">'
+                 '<p style="margin-top:14px; text-align:center">El vídeo de este expediente ya está en '
+                 '<a href="https://www.tiktok.com/@elarchivocurioso7" rel="noopener">TikTok</a> y muy pronto llegará a '
+                 f'<a href="{escape(canal["youtube"])}">YouTube</a>.</p>')
     cuerpo = f"""<main class="ancho expediente">
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
 <h1>{escape(e['titulo'])}</h1>
 <div class="datos">{datos}</div>
-<div class="reproductor {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
-  title="{escape(e['titulo'])}" loading="lazy" allowfullscreen
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
-<p style="margin-top:14px; text-align:center"><a href="https://www.youtube.com/watch?v={escape(e['youtube'])}">Ver en YouTube</a></p>
+{video}
 {bloques}
 {nav}
 </main>"""
     ruta = f"expedientes/{e['_slug']}.html"
-    jsonld = {
-        "@context": "https://schema.org", "@type": "VideoObject",
-        "name": e["titulo"], "description": e.get("resumen") or e["titulo"],
-        "thumbnailUrl": [url_absoluta(e["_img"])], "uploadDate": fecha_iso(e["fecha"]),
-        "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
-        "url": f"{URL}/{ruta}", "inLanguage": "es",
-        "publisher": {"@type": "Organization", "name": canal["nombre"], "logo": f"{URL}/logo.png"},
-    }
+    publisher = {"@type": "Organization", "name": canal["nombre"], "logo": f"{URL}/logo.png"}
+    if e.get("youtube"):
+        jsonld = {
+            "@context": "https://schema.org", "@type": "VideoObject",
+            "name": e["titulo"], "description": e.get("resumen") or e["titulo"],
+            "thumbnailUrl": [url_absoluta(e["_img"])], "uploadDate": fecha_iso(e["fecha"]),
+            "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
+            "url": f"{URL}/{ruta}", "inLanguage": "es", "publisher": publisher,
+        }
+    else:
+        jsonld = {
+            "@context": "https://schema.org", "@type": "Article",
+            "headline": e["titulo"], "description": e.get("resumen") or e["titulo"],
+            "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
+            "url": f"{URL}/{ruta}", "inLanguage": "es", "author": publisher, "publisher": publisher,
+        }
     if e.get("etiquetas"):
         jsonld["keywords"] = ", ".join(e["etiquetas"])
     return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
-                  ruta=ruta, imagen=e["_img"], tipo_og="video.other", jsonld=jsonld)
+                  ruta=ruta, imagen=e["_img"], tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld)
 
 
 def acerca(canal: dict) -> str:
@@ -426,6 +446,14 @@ def generar() -> int:
     ahora = datetime.now()
     visibles = [e for e in datos["expedientes"] if datetime.fromisoformat(e["fecha"]) <= ahora]
     visibles.sort(key=lambda e: e["fecha"], reverse=True)
+    # Un provisional (sin YouTube) desaparece cuando llega su entrada de YouTube con el mismo título
+    con_video = {e["titulo"]: e for e in visibles if e.get("youtube")}
+    for e in [e for e in visibles if not e.get("youtube") and e["titulo"] in con_video]:
+        destino = con_video[e["titulo"]]
+        for campo in ("articulo", "lecturas", "slug"):
+            if e.get(campo) and not destino.get(campo):
+                destino[campo] = e[campo]
+        visibles.remove(e)
 
     dir_min = WEB / "miniaturas"
     if dir_min.exists():
@@ -435,7 +463,7 @@ def generar() -> int:
     for e in visibles:
         s = e.get("slug") or slug(e["titulo"])
         while s in usados:
-            s += "-" + e["youtube"][:4].lower()
+            s += "-" + (e.get("youtube") or e.get("num") or "x")[:4].lower()
         e["_slug"] = s
         usados.add(s)
         # Miniatura propia si existe; si no, la de YouTube
@@ -443,8 +471,10 @@ def generar() -> int:
         if origen and origen.exists():
             shutil.copyfile(origen, dir_min / f"{s}{origen.suffix.lower()}")
             e["_img"] = f"miniaturas/{s}{origen.suffix.lower()}"
-        else:
+        elif e.get("youtube"):
             e["_img"] = f"https://i.ytimg.com/vi/{e['youtube']}/hqdefault.jpg"
+        else:
+            e["_img"] = "compartir.png"
 
     dir_exp = WEB / "expedientes"
     if dir_exp.exists():

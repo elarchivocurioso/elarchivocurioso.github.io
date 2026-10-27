@@ -336,6 +336,135 @@
           "nota": "biografía premiada con el Pulitzer"
         }
       ]
+    },
+    {
+      "youtube": "",
+      "num": "A002",
+      "tipo": "video",
+      "titulo": "La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas",
+      "epoca": "1919",
+      "lugar": "Boston (Estados Unidos)",
+      "miniatura": "Identidad/Miniaturas/miniatura-A002-melaza-boston-1919.png",
+      "resumen": "El 15 de enero de 1919 reventó en Boston un tanque con más de ocho millones de litros de melaza. La ola mató a 21 personas, y en 2016 se explicó por qué un jarabe fue tan letal.",
+      "curiosidades": [
+        "El tanque goteaba desde 1915 y la empresa lo pintó de marrón para disimular las fugas.",
+        "Los testigos oyeron un ruido como de ametralladora: eran los remaches saltando.",
+        "La ola avanzó, según estimaciones, a unos 56 km/h (las cifras varían).",
+        "En 2016, investigadores de Harvard mostraron que el frío espesó la melaza y atrapó a las víctimas.",
+        "119 vecinos demandaron a la empresa en una de las primeras demandas colectivas de Massachusetts."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Great Molasses Flood (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+        },
+        {
+          "titulo": "Yankee Magazine: The Great Molasses Flood",
+          "url": "https://newengland.com/article/history/great-molasses-flood"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Desastres",
+        "Ciencia"
+      ],
+      "fecha": "2026-10-27T21:50",
+      "articulo": [
+        {
+          "titulo": "Un tanque gigante en el North End",
+          "parrafos": [
+            "A principios de 1919, junto al puerto de Boston, en el barrio del North End, se levantaba un tanque de acero de unos quince metros de alto. Dentro guardaba más de ocho millones de litros de melaza, un jarabe espeso que se usaba para fabricar alcohol industrial, muy demandado en aquellos años, entre otras cosas para fabricar municiones.",
+            "El tanque se había construido deprisa en 1915 y goteaba desde el principio. Los vecinos llegaban a recoger la melaza que se escapaba. La respuesta de la empresa no fue repararlo: lo pintó de marrón para que las fugas no se vieran."
+          ]
+        },
+        {
+          "titulo": "El 15 de enero de 1919",
+          "parrafos": [
+            "Poco después del mediodía, los testigos oyeron un ruido parecido a una ráfaga de ametralladora: eran los remaches del tanque saltando. Las paredes de acero se abrieron y toda la melaza salió de golpe.",
+            "La ola avanzó por las calles, según algunas estimaciones, a unos 56 km/h, aunque las cifras de velocidad y altura varían mucho según la fuente. Su fuerza dobló las vigas del tren elevado y arrancó edificios de sus cimientos. Murieron 21 personas y unas 150 resultaron heridas; los rescatadores tardaron días en sacar a todas las víctimas."
+          ]
+        },
+        {
+          "titulo": "Por qué un jarabe fue tan mortal",
+          "parrafos": [
+            "Durante décadas costó explicar cómo una ola de melaza podía matar a tanta gente. En 2016, un equipo de investigadores de Harvard estudió el desastre con modelos y experimentos y señaló al frío como clave: al enfriarse con el aire helado de enero, la melaza se volvió todavía más espesa. Quien quedaba atrapado apenas podía moverse, y rescatarlo era muy difícil."
+          ]
+        },
+        {
+          "titulo": "El juicio y lo que cambió",
+          "parrafos": [
+            "La dueña del tanque, la United States Industrial Alcohol, culpó a un supuesto atentado anarquista. Pero 119 vecinos la demandaron, en una de las primeras demandas colectivas de Massachusetts, y tras unos tres años el experto nombrado por el tribunal concluyó que el tanque era inseguro y estaba mal construido. La empresa tuvo que indemnizar a las víctimas.",
+            "El desastre endureció las normas de construcción: desde entonces se exigió que arquitectos e ingenieros presentaran y firmaran los cálculos de sus estructuras. Y, según contaban los vecinos, en los días de calor el barrio siguió oliendo a melaza durante décadas."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Dark Tide: The Great Boston Molasses Flood of 1919",
+          "autor": "Stephen Puleo",
+          "nota": "El libro de referencia sobre el desastre, el juicio y el Boston de la época (en inglés)."
+        }
+      ]
+    },
+    {
+      "youtube": "",
+      "num": "A003",
+      "tipo": "video",
+      "titulo": "La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)",
+      "epoca": "1932",
+      "lugar": "Australia Occidental",
+      "miniatura": "Identidad/Miniaturas/miniatura-A003-guerra-del-emu.png",
+      "resumen": "En 1932 el ejército australiano envió soldados con ametralladoras contra miles de emús que arrasaban los campos de trigo. La operación fracasó.",
+      "curiosidades": [
+        "Según algunas estimaciones, unos 20.000 emús llegaron a las granjas.",
+        "El mayor Meredith llegó con dos soldados, dos ametralladoras Lewis y 10.000 balas.",
+        "En una emboscada la ametralladora se atascó tras abatir solo a unas pocas aves.",
+        "Su informe habló de 986 emús abatidos con 9.860 balas, unas cifras discutidas.",
+        "A partir de 1934, las recompensas a los cazadores funcionaron mucho mejor."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Emu War (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Emu_War"
+        },
+        {
+          "titulo": "History Hit: The Great Emu War",
+          "url": "https://www.historyhit.com/the-great-emu-war/"
+        },
+        {
+          "titulo": "Australian Geographic: Looking back, Australia's Emu Wars",
+          "url": "https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Animales",
+        "Absurdos"
+      ],
+      "fecha": "2026-10-27T21:51",
+      "articulo": [
+        {
+          "titulo": "Excombatientes, trigo y emús",
+          "parrafos": [
+            "Después de la Primera Guerra Mundial, muchos excombatientes recibieron tierras en Australia Occidental para cultivar trigo. Con la Gran Depresión, el precio del trigo se hundió, y en 1932 llegó otro problema: tras la época de cría, miles de emús (unos 20.000, según algunas estimaciones de la época) se desplazaron hacia las granjas.",
+            "El emú es la segunda ave más grande del mundo: no vuela, pero corre a gran velocidad. Se comían el trigo y rompían las vallas, por donde después entraban los conejos. Los granjeros pidieron ayuda al gobierno, y pidieron algo muy concreto: ametralladoras."
+          ]
+        },
+        {
+          "titulo": "Una operación militar contra aves",
+          "parrafos": [
+            "El ministro de Defensa aceptó. A finales de 1932, el mayor G. P. W. Meredith llegó al distrito de Campion con dos soldados, dos ametralladoras Lewis y 10.000 balas.",
+            "Los emús se dispersaban en cuanto empezaban los disparos. En una emboscada junto a un estanque, con cientos de aves a tiro, la ametralladora se atascó tras abatir solo a unas pocas. Montar un arma en un camión tampoco funcionó: el terreno era tan irregular que era imposible apuntar. El ornitólogo Dominic Serventy comentó con ironía que los emús parecían usar tácticas de guerrilla."
+          ]
+        },
+        {
+          "titulo": "Diez balas por emú",
+          "parrafos": [
+            "Tras una retirada y un segundo intento, el ejército abandonó la operación hacia el 10 de diciembre de 1932. Meredith informó de 986 emús abatidos con 9.860 balas, exactamente diez por ave, unas cifras que se pusieron en duda.",
+            "No hubo ninguna declaración oficial de derrota, así que decir que Australia «perdió una guerra» es una forma popular de contarlo; lo exacto es que la operación fracasó. A partir de 1934, el gobierno optó por pagar recompensas a los cazadores por cada emú, y eso resultó mucho más eficaz que las ametralladoras."
+          ]
+        }
+      ]
     }
   ]
 }
