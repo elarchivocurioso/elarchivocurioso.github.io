@@ -146,6 +146,8 @@ header nav a:hover { color:var(--oro); }
 .legal ul { padding-left:22px; }
 
 .articulo p { margin-bottom:14px; }
+.relacionado { padding:14px 16px; border-left:3px solid var(--oro); background:var(--tinta-2); border-radius:4px; }
+.relacionado p { font-size:17px; }
 .compartir { margin-top:40px; padding:20px 16px; border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); text-align:center; }
 .compartir p { margin-bottom:12px; color:var(--pergamino-2); }
 .compartir div { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
@@ -396,6 +398,14 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                  '<p style="margin-top:14px; text-align:center">El vídeo de este expediente ya está en '
                  '<a href="https://www.tiktok.com/@elarchivocurioso7" rel="noopener">TikTok</a> y muy pronto llegará a '
                  f'<a href="{escape(canal["youtube"])}">YouTube</a>.</p>')
+    if e.get("_episodio"):
+        ep = e["_episodio"]
+        video += (f'<div class="bloque relacionado"><p>📜 Este Short es un adelanto. El expediente completo, con todo el '
+                  f'contexto y las fuentes: <a href="{ep["_slug"]}.html">{escape(ep["titulo"])}</a></p></div>')
+    if e.get("_shorts"):
+        video += ('<div class="bloque relacionado"><p>⚡ En 1 minuto: '
+                  + " · ".join(f'<a href="{s["_slug"]}.html">{escape(s["titulo"])}</a>' for s in e["_shorts"])
+                  + "</p></div>")
     cuerpo = f"""<main class="ancho expediente">
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
 <h1>{escape(e['titulo'])}</h1>
@@ -532,6 +542,14 @@ def generar() -> int:
             e["_img"] = f"https://i.ytimg.com/vi/{e['youtube']}/hqdefault.jpg"
         else:
             e["_img"] = "compartir.png"
+
+    # Enlaces entre cada episodio y sus Shorts ("de" = num del episodio)
+    por_num = {e["num"]: e for e in visibles if e.get("num")}
+    for e in visibles:
+        episodio = por_num.get(e.get("de"))
+        if episodio:
+            e["_episodio"] = episodio
+            episodio.setdefault("_shorts", []).append(e)
 
     dir_exp = WEB / "expedientes"
     if dir_exp.exists():

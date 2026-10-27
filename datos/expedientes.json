@@ -118,7 +118,8 @@
           "autor": "John Waller",
           "nota": "El estudio de referencia sobre el caso, escrito por un historiador de la medicina (Icon Books, 2008; en Estados Unidos se publicó en 2009 como «The Dancing Plague»)."
         }
-      ]
+      ],
+      "num": "A001"
     },
     {
       "youtube": "VzDGAwrxWM4",
@@ -231,7 +232,8 @@
           "autor": "Jill Jonnes",
           "nota": "Cuenta cómo Edison, Tesla y Westinghouse se disputaron la electrificación del mundo (2003, en inglés)."
         }
-      ]
+      ],
+      "num": "S101"
     },
     {
       "youtube": "QJhFpKyG5Bc",
@@ -341,7 +343,8 @@
           "autor": "Andrew Roberts",
           "nota": "Una biografía extensa y muy legible que se apoya en la correspondencia del propio Napoleón (publicada en español como «Napoleón: una vida»)."
         }
-      ]
+      ],
+      "num": "S102"
     },
     {
       "youtube": "n2VzGwBZtVs",
@@ -443,7 +446,8 @@
           "autor": "Neil Price",
           "nota": "La mejor síntesis reciente sobre cómo vivían y pensaban los vikingos, escrita por un arqueólogo de la Universidad de Uppsala (en inglés)."
         }
-      ]
+      ],
+      "num": "S103"
     },
     {
       "youtube": "UgproHL8drs",
@@ -558,7 +562,8 @@
           "autor": "Stacy Schiff",
           "nota": "Una biografía de 2010, muy bien escrita, que separa con cuidado lo que dicen las fuentes antiguas de la leyenda posterior; su autora ya había ganado el Pulitzer con una obra anterior."
         }
-      ]
+      ],
+      "num": "S104"
     },
     {
       "youtube": "6FOBq5w86vg",
@@ -851,6 +856,14 @@
         {
           "titulo": "Reseña de «An Odd Kind of Fame: Stories of Phineas Gage» (Macmillan, 2000) en Project MUSE",
           "url": "https://muse.jhu.edu/article/4772"
+        },
+        {
+          "titulo": "BPS Research Digest, «First ever photo of Phineas Gage discovered»",
+          "url": "https://www.bps.org.uk/research-digest/first-ever-photo-phineas-gage-discovered"
+        },
+        {
+          "titulo": "Van Horn et al. (2012), «Mapping Connectivity Damage in the Case of Phineas Gage», PLOS ONE",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037454"
         }
       ],
       "etiquetas": [
@@ -859,7 +872,71 @@
         "Cerebro"
       ],
       "fecha": "2026-10-27T23:29",
-      "num": "A004"
+      "num": "A004",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "El 13 de septiembre de 1848, hacia las cuatro y media de la tarde, una barra de hierro de más de un metro atravesó la cabeza de un capataz del ferrocarril en Vermont, en el noreste de Estados Unidos. Entró por debajo del pómulo izquierdo y salió por lo alto del cráneo. El herido no solo sobrevivió: a los pocos minutos estaba hablando. Se llamaba Phineas Gage, y su caso se convertiría en uno de los más citados de la historia de la neurología.",
+            "Lo curioso es que buena parte de lo que se cuenta sobre él no procede de los documentos de la época, sino de un siglo y medio de repeticiones, adornos y exageraciones."
+          ]
+        },
+        {
+          "titulo": "Una tarde de pólvora en Cavendish",
+          "parrafos": [
+            "Gage había nacido en 1823 en el condado de Grafton, en Nuevo Hampshire, aunque la fecha exacta no es segura. Con 25 años dirigía una cuadrilla que abría paso al ferrocarril de Rutland y Burlington cerca del pueblo de Cavendish. El trabajo consistía en perforar la roca, rellenar el agujero con pólvora y apretarla con una barra antes de hacerla estallar de forma controlada. Sus superiores lo consideraban un capataz eficaz y de fiar.",
+            "La herramienta que usaba no era una palanca cualquiera. Era una barra de hierro hecha por encargo: medía unos 1,1 metros, tenía 3,2 centímetros de diámetro, pesaba alrededor de 6 kilos y se estrechaba en uno de sus extremos hasta acabar en punta. Aquella tarde, la pólvora prendió antes de tiempo. La explosión lanzó la barra hacia arriba: pasó por detrás del ojo izquierdo, cruzó la parte frontal del cerebro y cayó a unos 25 metros de distancia."
+          ]
+        },
+        {
+          "titulo": "Contra todo pronóstico",
+          "parrafos": [
+            "Lo que siguió parece difícil de creer. Gage habló a los pocos minutos y fue llevado en un carro de bueyes hasta Cavendish, sentado. El primer médico en llegar, Edward H. Williams, contó después que Gage lo recibió con una frase casi bromista: le dijo que allí tenía trabajo de sobra.",
+            "Se hizo cargo del caso John Martyn Harlow, un médico rural de la zona. Las semanas siguientes fueron muy delicadas: Gage sufrió una infección grave y, en torno a las dos semanas del accidente, estuvo cerca de morir. Harlow drenó la infección y lo cuidó con paciencia, y el 25 de noviembre de 1848 el paciente pudo volver a casa de sus padres, en Lebanon (Nuevo Hampshire).",
+            "En noviembre de 1849, el cirujano Henry Jacob Bigelow, de Harvard, llevó a Gage a Boston para presentarlo ante sus colegas. Bigelow escribió que el rasgo principal del caso era precisamente su improbabilidad."
+          ]
+        },
+        {
+          "titulo": "«Ya no era Gage»",
+          "parrafos": [
+            "Si la historia hubiera terminado ahí, sería solo una supervivencia asombrosa. Lo que la convirtió en un clásico de la ciencia del cerebro fue un informe que Harlow presentó en 1868, casi veinte años después del accidente. En él describía a un hombre distinto del capataz equilibrado de antes: caprichoso, irreverente, impaciente ante cualquier freno a sus deseos y propenso a las palabrotas. Según Harlow, el equilibrio entre sus facultades intelectuales y sus impulsos parecía haberse roto, y sus amigos y conocidos decían que «ya no era Gage».",
+            "Con el tiempo, esa frase daría la vuelta al mundo. Llegó en un momento en que se discutía si las funciones mentales dependen de zonas concretas del cerebro, y el caso parecía ofrecer una prueba: una lesión en la parte frontal había alterado el carácter, no la inteligencia ni el movimiento. Al principio el informe pasó casi inadvertido, hasta que el neurólogo escocés David Ferrier lo puso en primer plano y desde entonces no ha dejado de aparecer en manuales de psicología y medicina.",
+            "El problema es lo escaso de la documentación. El psicólogo australiano Malcolm Macmillan, que dedicó décadas a reconstruir la vida de Gage, identificó solo cuatro fuentes primarias: los informes de Harlow de 1848 y 1868, el de Bigelow de 1850 y una descripción de 1870. La parte sobre el cambio de personalidad, en el informe de 1868, ocupa menos de doscientas palabras."
+          ]
+        },
+        {
+          "titulo": "Siete años en los caminos de Chile",
+          "parrafos": [
+            "Tras recuperarse, Gage no se quedó quieto. Conservó la barra que casi lo mata y, según Harlow, fue su compañera inseparable el resto de su vida. Hay constancia de un anuncio de 1852 en Vermont que invitaba a ver al hombre de la barra, y algunos historiadores sostienen que se exhibió durante un tiempo en el American Museum de P. T. Barnum, en Nueva York, aunque no hay un registro fechado claro de esa etapa.",
+            "Luego trabajó unos 18 meses en un servicio de caballerizas y coches de caballos en Hanover (Nuevo Hampshire). Y en agosto de 1852 se embarcó rumbo a Chile, contratado por alguien que quería montar una línea de diligencias en Valparaíso. Allí pasó unos siete años como conductor en la ruta entre Valparaíso y Santiago. La duración exacta varía según la fuente, pero la mayoría la sitúa aproximadamente entre 1852 y 1859.",
+            "Macmillan insiste en lo que exigía aquel oficio: levantarse antes del amanecer, preparar y enganchar los caballos, estar listo para salir hacia las cuatro de la mañana, atender a los pasajeros y su equipaje y completar un trayecto de unas trece horas y más de 160 kilómetros por caminos en mal estado, a veces en plena agitación política. A mediados de 1859 su salud empezó a fallar y se reunió con su familia en California. Trabajó en una granja en Santa Clara, en febrero de 1860 comenzó a sufrir crisis epilépticas y murió el 21 de mayo de 1860, con 36 años, cerca de San Francisco."
+          ]
+        },
+        {
+          "titulo": "El cráneo, la barra y un retrato inesperado",
+          "parrafos": [
+            "Cuando Harlow supo de su muerte, en 1866, la familia accedió a hacer exhumar el cráneo y se lo entregó junto con la barra. Harlow los depositó en el Museo Anatómico Warren, de la Facultad de Medicina de Harvard, donde siguen expuestos. Durante mucho tiempo nadie supo qué aspecto tenía. En 2009, los coleccionistas Jack y Beverly Wilgus identificaron un daguerrotipo que guardaban desde hacía más de treinta años: creían que mostraba a un ballenero con su arpón, hasta que varios comentaristas en Internet les señalaron que aquel objeto no era un arpón. Al compararlo con la máscara de Gage y con la barra conservada en Harvard, que lleva una inscripción visible en la foto, confirmaron que era él. Es el primer retrato conocido de Gage.",
+            "El cráneo también ha seguido trabajando para la ciencia. En 1994, el equipo de Hanna Damasio concluyó que la barra había dañado los dos lóbulos frontales, pero lo hizo a partir de un cráneo modelo, no del original. En 2004, Peter Ratiu y su equipo reconstruyeron la trayectoria con tomografías del cráneo real y concluyeron que la lesión afectó solo al lóbulo frontal izquierdo, como había deducido Harlow. En 2012, un equipo dirigido por John Darrell Van Horn calculó que la barra habría destruido en torno al 4 % de la corteza y alrededor del 11 % de la sustancia blanca, las conexiones que comunican unas regiones con otras. Su conclusión: aunque el daño en la corteza fue localizado, el efecto sobre la red de conexiones pudo ser mucho más amplio."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué sigue en discusión",
+          "parrafos": [
+            "**El «monstruo» es un invento posterior.** Muchos manuales y divulgaciones presentan a Gage como un hombre violento, borracho, incapaz de conservar un empleo, que acabó como atracción de feria y murió en la miseria. Las fuentes de la época no dicen nada de eso. Macmillan comprobó que el retrato se fue deformando a medida que los autores lo adaptaban a sus propias teorías, a menudo sin haber leído el informe de 1868. Otro estudioso del caso, Zbigniew Kotowicz, señaló además que Harlow no describe ni un solo acto del que Gage tuviera que avergonzarse.",
+            "**Lo que sí parece cierto** es que su comportamiento cambió tras el accidente, al menos durante un tiempo: es lo que describe el médico que mejor lo conoció.",
+            "**Lo que se discute** es si ese cambio fue permanente. Macmillan propone la hipótesis de una «recuperación social»: la rutina estricta del trabajo en las diligencias pudo funcionar como una especie de rehabilitación y ayudarle a recuperar buena parte de su capacidad para organizarse y tratar con la gente. Él mismo subraya que es una hipótesis, no un hecho demostrado. Si fuera cierta, indicaría que el cerebro adulto tiene más capacidad de adaptarse de lo que suele suponerse.",
+            "**Tampoco hay consenso total sobre la lesión.** No se hizo autopsia y solo se conserva el cráneo, así que ninguna reconstrucción puede ser definitiva. La más aceptada hoy apunta al lóbulo frontal izquierdo, con un daño importante en las conexiones.",
+            "Gage sigue siendo un caso de estudio y, a la vez, un recordatorio de cómo una historia real se convierte en leyenda cuando se cuenta mucho y se comprueba poco."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "An Odd Kind of Fame: Stories of Phineas Gage",
+          "autor": "Malcolm Macmillan",
+          "nota": "El estudio más completo sobre el caso, con los informes originales de Harlow y un repaso de cómo se fabricó el mito."
+        }
+      ]
     },
     {
       "youtube": "xmxdzH-pZSU",
@@ -920,6 +997,22 @@
         {
           "titulo": "Wikipedia, «Year Without a Summer»",
           "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer"
+        },
+        {
+          "titulo": "Wikipedia, «1815 eruption of Mount Tambora»",
+          "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+        },
+        {
+          "titulo": "CNN, sobre el estudio de 2019 acerca de la erupción y el frío de 1816",
+          "url": "https://edition.cnn.com/2019/09/17/world/tambora-eruption-year-without-summer-scn"
+        },
+        {
+          "titulo": "Scientific American, «The Year without a Summer» (Henry y Elizabeth Stommel, 1979)",
+          "url": "https://www.scientificamerican.com/article/the-year-without-a-summer/"
+        },
+        {
+          "titulo": "Wikipedia, «Villa Diodati»",
+          "url": "https://en.wikipedia.org/wiki/Villa_Diodati"
         }
       ],
       "etiquetas": [
@@ -928,7 +1021,71 @@
         "Frankenstein"
       ],
       "fecha": "2026-10-27T23:35",
-      "num": "A005"
+      "num": "A005",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En junio de 1816 nevó en el noreste de Estados Unidos. En buena parte de Europa llovió casi sin descanso durante el verano, las cosechas se pudrieron en los campos y el precio del pan se disparó. Hubo hambre, disturbios y migraciones masivas. Quienes lo vivieron buscaron explicaciones en el cielo, en las manchas del Sol o en la voluntad divina. Ninguno sospechó que la causa estaba al otro lado del mundo, en una isla de Indonesia, y se remontaba a más de un año atrás.",
+            "Aquel verano frío dejó huellas inesperadas: cambió el mapa de la población estadounidense, tiñó los atardeceres de los cuadros y, de forma indirecta, dio origen a uno de los monstruos más famosos de la literatura."
+          ]
+        },
+        {
+          "titulo": "La explosión de Tambora",
+          "parrafos": [
+            "El monte Tambora, en la isla de Sumbawa, llevaba retumbando desde 1812. El 5 de abril de 1815 entró en erupción con tanta fuerza que las detonaciones se oyeron en Makasar, a unos 380 kilómetros, y en Batavia (la actual Yakarta), a más de 1.200. Pero lo peor llegó la noche del 10 de abril, cuando la erupción alcanzó su punto álgido. Las explosiones se oyeron, como mínimo, a 2.600 kilómetros.",
+            "Ese sonido provocó una confusión famosa. En Java, entonces bajo administración británica, las autoridades pensaron que se trataba de cañonazos, quizá de un barco en apuros o de un ataque. El gobernador Thomas Stamford Raffles envió tropas y embarcaciones a averiguar qué pasaba. No encontraron ningún combate: lo que habían oído era un volcán a cientos de kilómetros.",
+            "La erupción está clasificada con un índice de explosividad volcánica de 7 y es la mayor de la historia registrada. Expulsó, según las estimaciones, al menos 37 kilómetros cúbicos de roca y lanzó una columna de material a más de 40 kilómetros de altura. La montaña, que medía unos 4.300 metros, quedó reducida a 2.851, casi un tercio menos. En su lugar dejó una caldera de 6 a 7 kilómetros de diámetro y unos 600 o 700 metros de profundidad. Un tsunami de hasta 4 metros golpeó las costas cercanas."
+          ]
+        },
+        {
+          "titulo": "Una catástrofe local de cifras inciertas",
+          "parrafos": [
+            "El número de víctimas es uno de los datos más discutidos. Las estimaciones de muertes directas, por las coladas piroclásticas y la caída de ceniza, rondan las 10.000 u 11.000 personas. Pero la ceniza arruinó los cultivos y contaminó el agua en Sumbawa y en las islas vecinas, y el hambre y las enfermedades hicieron el resto. Según el estudio que se consulte, el total oscila entre unas 71.000 y cerca de 100.000 muertes.",
+            "La erupción borró del mapa el pequeño reino de Tambora, y con él su lengua. Los lingüistas que han estudiado el vocabulario que se conserva creen que no pertenecía a la familia austronesia, la habitual en la región, sino que podría haber sido una lengua aislada. En 2004, un equipo dirigido por el vulcanólogo Haraldur Sigurðsson excavó en la zona y encontró los restos de una casa sepultada, con cerámica, cuencos de bronce y herramientas de hierro. Sigurðsson la llamó la «Pompeya del Este»."
+          ]
+        },
+        {
+          "titulo": "Por qué se enfrió el planeta",
+          "parrafos": [
+            "Las consecuencias globales no vinieron de la ceniza, que cayó en semanas, sino de los gases. El volcán inyectó en la estratosfera enormes cantidades de gases de azufre: las estimaciones de la cantidad de azufre van de 10 a 120 millones de toneladas, con una media de entre 25 y 30. Allí arriba, esos gases se transformaron en diminutas gotas de sulfato que se repartieron alrededor del planeta y formaron un velo que reflejaba parte de la luz solar.",
+            "El resultado fue un enfriamiento de entre 0,4 y 0,7 °C en la temperatura media mundial. Puede parecer poco, pero es un promedio mundial: en algunas regiones el descenso fue mucho mayor. En el este de Estados Unidos, una persistente «niebla seca» atenuaba tanto el Sol que las manchas solares podían verse a simple vista."
+          ]
+        },
+        {
+          "titulo": "Nieve en junio, hambre en Europa",
+          "parrafos": [
+            "En Nueva Inglaterra, las heladas de mayo ya habían arrasado los cultivos de las zonas altas. El 6 de junio nevó en Albany (Nueva York) y en Dennysville (Maine), y en julio y agosto volvieron las heladas. El precio de la avena pasó de 12 a 92 centavos el *bushel* entre 1815 y 1816.",
+            "Muchas familias decidieron marcharse. Vermont perdió entre 10.000 y 15.000 habitantes en 1816 y 1817, lo que anuló siete años de crecimiento. Miles de personas emigraron hacia el oeste de Nueva York y los nuevos territorios del Medio Oeste; Indiana se convirtió en estado en diciembre de 1816 e Illinois, en 1818. Entre los que se mudaron estaba la familia de Joseph Smith, el futuro fundador del mormonismo, que dejó Vermont por Palmyra, en el estado de Nueva York.",
+            "En Europa, el verano de 1816 fue el más frío registrado entre 1766 y 2000. En Irlanda, semanas de lluvia echaron a perder la cosecha de patata; entre 1816 y 1819, una epidemia de tifus que se extendió desde allí causó más de 65.000 muertes. En 1816 y 1817 hubo motines por el precio de los alimentos, los más violentos en el continente desde la Revolución francesa. El reparto fue desigual: Escandinavia y Rusia tuvieron cosechas casi normales, y el zar Alejandro I pudo enviar grano hacia el oeste.",
+            "Tampoco Asia se libró. En China, la alteración del monzón provocó inundaciones en el valle del Yangtsé y una gran hambruna en Yunnan. En la India, el retraso del monzón coincidió con la expansión del cólera desde Bengala."
+          ]
+        },
+        {
+          "titulo": "Encerrados en Villa Diodati",
+          "parrafos": [
+            "Mientras tanto, junto al lago de Ginebra, Lord Byron había alquilado desde el 10 de junio la Villa Diodati, donde vivía con su médico personal, John William Polidori. Muy cerca, en una casa más pequeña, se alojaban el poeta Percy Shelley, Mary Godwin, que tenía 18 años y pronto se casaría con él, y la hermanastra de esta, Claire Clairmont.",
+            "Mary Shelley recordaría aquel verano como húmedo y desapacible, con una lluvia incesante. Encerrados en casa, leyeron cuentos de fantasmas alemanes recogidos en la antología *Fantasmagoriana*, y Byron lanzó un reto: que cada uno escribiera su propia historia de miedo. Mary tardó varios días en encontrar la suya. Llegó, según contó años después, en una especie de «sueño en vigilia» tras una larga conversación nocturna sobre el galvanismo y el principio de la vida. El astrónomo Donald Olson, a partir de la posición de la Luna descrita en su relato, calculó que ese momento ocurrió de madrugada, el 16 de junio de 1816.",
+            "De aquel reto salieron dos obras fundacionales. *Frankenstein o el moderno Prometeo* se publicó de forma anónima en Londres el 1 de enero de 1818; el nombre de Mary Shelley no apareció en la portada hasta una traducción francesa de 1821. Y Polidori, a partir de un fragmento que Byron había abandonado, escribió *El vampiro*, publicado en abril de 1819 en una revista londinense que lo atribuyó, para disgusto de su autor, al propio Byron. Su protagonista, el aristocrático Lord Ruthven, inauguró el vampiro seductor de la literatura romántica. Ese mismo verano, Byron escribió además *Darkness* («Oscuridad»), un poema sobre un mundo en el que el Sol se ha apagado."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué sigue en discusión",
+          "parrafos": [
+            "**La relación con el volcán se descubrió mucho después.** Nadie en 1816 relacionó el frío con Tambora. La conexión se estableció en el siglo XX y se popularizó en 1979 con un artículo del oceanógrafo Henry Stommel y su esposa, Elizabeth, en *Scientific American*. Hoy está bien asentada: un estudio de 2019 concluyó que el frío extremo de 1816 no se habría producido sin la erupción.",
+            "**Tambora no fue el único factor.** Hacia 1808 hubo otra gran erupción, de origen todavía desconocido y detectada en los hielos de Groenlandia, y entre 1812 y 1814 entraron en erupción otros volcanes. Todas ellas pudieron sumar su efecto al de Tambora. Además, la época coincidió con el llamado mínimo de Dalton, un periodo de baja actividad solar, aunque no está demostrado que influyera de forma significativa.",
+            "**La bicicleta y los cuadros son hipótesis.** Se ha propuesto que la escasez de avena, que encarecía el mantenimiento de los caballos, animó al alemán Karl Drais a inventar en 1817 su draisiana, antecesora de la bicicleta. Es una idea atractiva, pero no hay pruebas directas. Algo parecido ocurre con la pintura: un estudio de 2007 dirigido por Christos Zerefos analizó cuadros pintados entre 1500 y 1900 y halló más tonos rojos en los cielos tras las grandes erupciones, y a menudo se citan los atardeceres dorados de Turner. Es una correlación estadística, no la explicación de un cuadro concreto.",
+            "**«Un volcán creó a Frankenstein» es una forma de hablar.** El mal tiempo mantuvo al grupo encerrado y propició el reto, pero el talento, las lecturas y las inquietudes de Mary Shelley son lo que explica la novela."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Tambora: The Eruption That Changed the World",
+          "autor": "Gillen D'Arcy Wood",
+          "nota": "Recorre las consecuencias de la erupción en todo el planeta, de las hambrunas en China al verano de Villa Diodati."
+        }
+      ]
     },
     {
       "youtube": "YbPF0QQVU0I",
@@ -983,6 +1140,22 @@
         {
           "titulo": "History.com, «A Perfect Solar Superstorm: The 1859 Carrington Event»",
           "url": "https://www.history.com/articles/a-perfect-solar-superstorm-the-1859-carrington-event"
+        },
+        {
+          "titulo": "Wikipedia, «Richard Christopher Carrington»",
+          "url": "https://en.wikipedia.org/wiki/Richard_Christopher_Carrington"
+        },
+        {
+          "titulo": "NASA Science, «Near Miss: The Solar Superstorm of July 2012»",
+          "url": "https://science.nasa.gov/science-news/science-at-nasa/2014/23jul_superstorm/"
+        },
+        {
+          "titulo": "Wikipedia, «March 1989 geomagnetic storm»",
+          "url": "https://en.wikipedia.org/wiki/March_1989_geomagnetic_storm"
+        },
+        {
+          "titulo": "Wikipedia, «May 2024 solar storms»",
+          "url": "https://en.wikipedia.org/wiki/May_2024_solar_storms"
         }
       ],
       "etiquetas": [
@@ -991,7 +1164,71 @@
         "Auroras"
       ],
       "fecha": "2026-10-27T23:48",
-      "num": "A006"
+      "num": "A006",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "A finales de agosto y principios de septiembre de 1859, el cielo nocturno se llenó de luces de colores en lugares donde casi nadie había visto nunca una aurora: Cuba, Hawái, el centro de México, Colombia. En las Montañas Rocosas, unos mineros se levantaron a preparar el desayuno convencidos de que ya amanecía. Mientras tanto, en las oficinas de telégrafo de Europa y Norteamérica saltaban chispas, los aparatos fallaban y algunos operadores recibían descargas.",
+            "Fue la tormenta geomagnética más intensa de la que hay registro. Hoy se la conoce como evento Carrington, por el astrónomo inglés que, horas antes, había visto en el Sol algo que nadie había descrito hasta entonces."
+          ]
+        },
+        {
+          "titulo": "Un astrónomo dibujando manchas",
+          "parrafos": [
+            "Richard Christopher Carrington tenía 33 años y era hijo de un cervecero acomodado de Brentford, cerca de Londres. Había montado su propio observatorio privado en Redhill, en el condado de Surrey, y se dedicaba con un rigor casi obsesivo a registrar las manchas solares. De ese trabajo saldrían aportaciones duraderas: demostró que el Sol no gira como un cuerpo rígido, sino más deprisa en el ecuador que cerca de los polos, y su sistema para contar las rotaciones solares, la «rotación de Carrington», se sigue usando.",
+            "El 1 de septiembre de 1859, poco antes del mediodía, estaba dibujando un gran grupo de manchas cuando surgieron de pronto dos puntos de luz blanca y deslumbrante. El fenómeno duró unos cinco minutos. Por suerte, otro astrónomo británico, Richard Hodgson, lo había visto desde su casa de forma independiente. Ambos presentaron sus observaciones en noviembre ante la Real Sociedad Astronómica. Era la primera descripción registrada de una fulguración solar."
+          ]
+        },
+        {
+          "titulo": "La aguja que tembló en Kew",
+          "parrafos": [
+            "A pocos kilómetros, en el observatorio de Kew, unos magnetómetros registraban de forma continua el campo magnético terrestre. Justo a la hora del destello, las agujas dieron un pequeño salto, que anotó el físico escocés Balfour Stewart. Hoy se sabe que la radiación de la fulguración alteró la parte alta de la atmósfera y produjo ese efecto casi instantáneo.",
+            "Al día siguiente estalló una gran tormenta magnética. Carrington sospechó que había relación entre ambos fenómenos, pero fue prudente: escribió que una golondrina no hace verano. Un solo caso no bastaba para demostrar que lo que sucedía en el Sol podía afectar a la Tierra.",
+            "Lo que Carrington no podía saber es que la fulguración había ido acompañada de una eyección de masa coronal, una gigantesca nube de partículas cargadas y campo magnético lanzada al espacio. Estas nubes suelen tardar varios días en recorrer los unos 150 millones de kilómetros que nos separan del Sol. Esta llegó en unas 17,6 horas. Una explicación probable es que otra eyección anterior, la responsable de las auroras del 29 de agosto, había «despejado el camino»."
+          ]
+        },
+        {
+          "titulo": "Noches de colores",
+          "parrafos": [
+            "Cuando la nube chocó con la magnetosfera terrestre, las auroras, que normalmente se limitan a las regiones cercanas a los polos, se desplazaron hacia latitudes tropicales. Hay testimonios de luces en el cielo en Cuba, el centro y sur de México, Hawái, el sur de Japón y de China, Queensland (Australia), Nueva Zelanda y Colombia. En el noreste de Estados Unidos, según crónicas de la época, había luz suficiente para leer el periódico en plena noche, y hubo quien pensó que se trataba de un gran incendio.",
+            "Buena parte de lo que se sabe se debe al científico estadounidense Elias Loomis, que se dedicó a recopilar testimonios de la tormenta llegados de todo el mundo."
+          ]
+        },
+        {
+          "titulo": "El día que el telégrafo funcionó sin pilas",
+          "parrafos": [
+            "En 1859, la gran red tecnológica era el telégrafo, que llevaba apenas un par de décadas extendiéndose. Sus largos cables actuaron como antenas: las variaciones bruscas del campo magnético inducían en ellos corrientes eléctricas imprevistas. En Europa y Norteamérica hubo líneas que dejaron de funcionar, aparatos que soltaban chispas, papel que se chamuscaba y operadores que recibieron descargas. Según algunas crónicas, llegaron a producirse pequeños incendios en oficinas de telégrafo.",
+            "El episodio más llamativo ocurrió en la línea entre Boston y Portland (Maine). Los operadores comprobaron que la corriente inducida por la tormenta era tan intensa que podían prescindir de sus baterías. Uno de ellos propuso a su colega desconectarlas por completo durante quince minutos, y siguieron intercambiando mensajes solo con la energía que la tormenta metía en el cable. Según el relato más citado, lo hicieron durante unas dos horas, aunque otras versiones hablan de bastante menos tiempo."
+          ]
+        },
+        {
+          "titulo": "¿Y si ocurriera hoy?",
+          "parrafos": [
+            "En 1859 no había redes eléctricas, satélites ni GPS. Hoy dependemos de todos ellos, y por eso el evento Carrington se ha convertido en el escenario de referencia para estudiar el peor caso posible del llamado clima espacial.",
+            "Ya ha habido avisos serios. El 13 de marzo de 1989, una tormenta mucho menos intensa que la de 1859 dejó fuera de servicio la red de Hydro-Québec, en Canadá, en menos de 90 segundos. El apagón duró nueve horas, varios satélites perdieron el control durante horas y hubo auroras hasta en Texas y Florida.",
+            "El 23 de julio de 2012, el Sol lanzó una eyección de masa coronal que, según el físico Daniel Baker, de la Universidad de Colorado, era al menos tan potente como la de 1859. Cruzó la órbita terrestre por el punto donde la Tierra había estado alrededor de una semana antes (unos nueve días, según otros cálculos). «La única diferencia es que no nos dio», resumió Baker. Por esas fechas, el investigador Pete Riley estimó en un 12 % la probabilidad de que una tormenta de la clase Carrington golpeara la Tierra en un plazo de diez años. Es una estimación estadística sobre sucesos muy raros, no una predicción.",
+            "Los cálculos de daños son muy variables. Un informe de la Academia Nacional de Ciencias de Estados Unidos citado por la NASA habla de un impacto económico que podría superar los 2 billones de dólares, y un estudio de 2013 de Lloyd's de Londres situaba el coste solo para Estados Unidos entre 0,6 y 2,6 billones. Lo que preocupa especialmente son los grandes transformadores eléctricos, que pueden dañarse por estas corrientes y tardar mucho en reponerse.",
+            "El último recordatorio llegó entre el 10 y el 13 de mayo de 2024, con la tormenta solar más fuerte desde 1989. Hubo auroras visibles en España, Portugal, Canarias, México y otros lugares poco habituados a verlas. No fue, ni de lejos, un evento Carrington, pero muchos descubrieron esas noches que el Sol también puede pintar el cielo de latitudes medias."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué sigue en discusión",
+          "parrafos": [
+            "**Su intensidad exacta se desconoce.** Los instrumentos de 1859 no permiten medirla con la precisión actual, y las estimaciones de la intensidad de la tormenta varían mucho de un estudio a otro: la más alta duplica a la más baja. Un análisis de 2024 de los registros de Kew y Greenwich calculó variaciones del campo magnético muy superiores a las que hoy se consideran propias de un fenómeno que se repite una vez por siglo.",
+            "**¿Fue la mayor de la historia?** Fue la mayor registrada con instrumentos, pero no necesariamente la mayor. Tormentas como la de febrero de 1872 o la de mayo de 1921 pudieron ser comparables según algunos indicadores. Y los anillos de los árboles conservan huellas de tormentas solares muy anteriores, como la de los años 774-775, que según algunas estimaciones pudo ser bastante más intensa.",
+            "**Las pruebas en el hielo, descartadas.** Durante años se citaron unos picos de nitrato en el hielo de Groenlandia como huella química del evento Carrington. Estudios posteriores los atribuyen más bien a incendios forestales, y los registros de Groenlandia y la Antártida no coinciden.",
+            "**Los detalles de las crónicas.** Lo de leer el periódico a medianoche o el tiempo que funcionó la línea Boston-Portland sin baterías procede de testimonios de la época recogidos en la prensa, no de mediciones. Son verosímiles, pero conviene leerlos como lo que son: relatos de testigos asombrados."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "The Sun Kings: The Unexpected Tragedy of Richard Carrington and the Tale of How Modern Astronomy Began",
+          "autor": "Stuart Clark",
+          "nota": "Cuenta la vida de Carrington y cómo se descubrió que el Sol influye directamente en la Tierra."
+        }
+      ]
     },
     {
       "youtube": "gCFYlkS09xo",
@@ -1050,6 +1287,18 @@
         {
           "titulo": "ISRI, «Selling the Eiffel Tower»",
           "url": "https://isri.org/scrap-articles/selling-the-eiffel-tower"
+        },
+        {
+          "titulo": "Wikipedia en español, «Victor Lustig»",
+          "url": "https://es.wikipedia.org/wiki/Victor_Lustig"
+        },
+        {
+          "titulo": "American Numismatic Society, «Kings of Counterfeiting»",
+          "url": "https://numismatics.org/kings-of-counterfeiting/"
+        },
+        {
+          "titulo": "Wikipedia, «Eiffel Tower»",
+          "url": "https://en.wikipedia.org/wiki/Eiffel_Tower"
         }
       ],
       "etiquetas": [
@@ -1058,7 +1307,72 @@
         "Estafas históricas"
       ],
       "fecha": "2026-10-27T23:54",
-      "num": "A007"
+      "num": "A007",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En la primavera de 1925, un pequeño grupo de chatarreros de París recibió una carta con membrete oficial. Los citaba en el Hôtel de Crillon, uno de los hoteles más lujosos de la ciudad, para tratar un asunto confidencial: el Estado quería deshacerse de la Torre Eiffel y buscaba a alguien que se quedara con sus miles de toneladas de hierro. Uno de aquellos empresarios pagó. Ni la carta, ni el cargo del funcionario que los recibió, ni la venta eran reales.",
+            "Detrás del montaje estaba Victor Lustig, un estafador nacido en Bohemia que se hacía llamar «conde» y que pasó la vida vendiendo cosas que no existían. Su historia es real, pero hay que leerla con lupa: Lustig mintió tanto que una parte de lo que se cuenta sobre él también es leyenda."
+          ]
+        },
+        {
+          "titulo": "Un «conde» de Bohemia",
+          "parrafos": [
+            "Lustig nació el 4 de enero de 1890 en Hostinné (Arnau, en alemán), una pequeña ciudad de Bohemia que entonces pertenecía al Imperio austrohúngaro y hoy está en la República Checa. Su padre vendía tabaco y llegó a ser alcalde de la localidad. Estudió en un internado de Dresde, donde aprendió varios idiomas; las fuentes no se ponen de acuerdo en cuántos, y las cifras van de cuatro a seis. En 1909 empezó un semestre en la Sorbona de París, pero pronto cambió los libros por el juego y por los primeros engaños.",
+            "Sus primeras víctimas viajaban en los transatlánticos que unían Francia con Nueva York. Lustig se presentaba como productor musical y buscaba inversores para un espectáculo de Broadway que nunca existió. Cuando la Primera Guerra Mundial interrumpió esas travesías, se instaló en Estados Unidos. Según The Mob Museum, llegó a usar al menos 45 nombres falsos, y una cicatriz en la mejilla izquierda era uno de los pocos rasgos que no podía disfrazar."
+          ]
+        },
+        {
+          "titulo": "La caja rumana",
+          "parrafos": [
+            "Antes de la torre, su truco más rentable fue la llamada «caja rumana»: una caja de caoba, del tamaño de un baúl de viaje, llena de palancas y ranuras que no servían para nada. Lustig aseguraba que copiaba billetes, aunque cada copia tardaba seis horas. En la demostración, la víctima metía un billete y, horas después, salían dos. El secreto era que Lustig había escondido dentro un billete auténtico. Para rematar la escena, acompañaba al comprador a un banco para comprobar que el «duplicado» era bueno. Después vendía la máquina por una cantidad desorbitada y desaparecía antes de que nadie notara que la caja no copiaba nada.",
+            "Uno de sus clientes fue un sheriff de Texas, que pagó miles de dólares. Cuando el sheriff lo localizó en Chicago, Lustig le convenció de que había usado mal la máquina y le devolvió el dinero… en billetes falsos."
+          ]
+        },
+        {
+          "titulo": "Una torre que no tenía por qué durar",
+          "parrafos": [
+            "La idea de vender la Torre Eiffel suena hoy absurda, pero en 1925 no lo era tanto. La torre se había levantado como gran reclamo de la Exposición Universal de 1889, y el contrato de Gustave Eiffel le permitía explotarla durante la exposición y los 20 años siguientes. Estaba previsto desmontarla en 1909, cuando la propiedad pasara a la ciudad de París. La salvó su utilidad científica: se convirtió en una enorme antena de radiotelegrafía, desde 1910 formó parte del servicio internacional de la hora y en 1914 sus transmisores sirvieron para interferir las comunicaciones alemanas. Aun así, seguía siendo una estructura de 7.300 toneladas de hierro forjado que había que mantener y pintar.",
+            "Según se cuenta, Lustig leyó en un periódico un artículo sobre lo caro que resultaba ese mantenimiento, y vio la oportunidad."
+          ]
+        },
+        {
+          "titulo": "La reunión del Crillon",
+          "parrafos": [
+            "Lustig encargó a un falsificador papel con membrete del gobierno y se presentó como subdirector general del Ministerio de Correos y Telégrafos. Escribió a varios chatarreros, seis según la mayoría de los relatos, aunque otros hablan de cinco, y los reunió en el Hôtel de Crillon. Allí les explicó que el Estado iba a vender la torre como chatarra, que la operación debía llevarse en secreto para evitar el escándalo público y que los había elegido por su fama de «hombres de negocios honrados».",
+            "Entre ellos se fijó en André Poisson, un empresario inseguro que quería hacerse un hueco en los círculos de negocios de París. En una reunión privada, Lustig se presentó como un funcionario mal pagado que necesitaba dinero para mantener su nivel de vida. Poisson entendió la indirecta y, además del pago por la torre, le entregó un soborno para asegurarse el contrato. La trampa tenía una lógica retorcida: un funcionario que pide una comisión bajo cuerda resultaba más creíble que uno impecable.",
+            "Cuánto pagó Poisson es una de las incógnitas del caso. Algunas fuentes hablan de unos 70.000 francos; otros relatos dan cifras en dólares que no coinciden. Las versiones coinciden en que Lustig huyó a Viena con el dinero y que estuvo pendiente de la prensa en busca de noticias del fraude. No apareció ninguna. Poisson, avergonzado, no lo había denunciado.",
+            "Así que Lustig volvió a París e intentó repetir la jugada con otro grupo de chatarreros. Esta vez la víctima sí acudió a la policía, y él tuvo que escapar a Estados Unidos."
+          ]
+        },
+        {
+          "titulo": "De Chicago a Alcatraz",
+          "parrafos": [
+            "En Estados Unidos se le atribuye el episodio más famoso de su leyenda: habría convencido a Al Capone de invertir 50.000 dólares en un negocio, habría guardado el dinero dos meses en una caja de seguridad y luego se lo habría devuelto entero, alegando que el trato había fracasado. Impresionado por su honradez, Capone le habría regalado 5.000 dólares (1.000, según otras versiones). The Mob Museum lo presenta como algo que «supuestamente» ocurrió. Lo que sí está documentado es que en 1929, al ser detenido en Chicago, Lustig dijo pertenecer a la banda de Capone, y que Jake Guzik, uno de los hombres del gánster, respondió que no había oído hablar de él.",
+            "Desde 1930, Lustig se dedicó a la falsificación de billetes con William Watts, un farmacéutico de Nebraska que grababa las planchas, y el químico Tom Shaw. Él organizaba la distribución. Durante unos cinco años, miles de dólares falsos salieron cada mes a la calle. El 10 de mayo de 1935 fue detenido en Nueva York, al parecer gracias a un chivatazo anónimo; las fuentes señalan a una amante, aunque no coinciden en su nombre. Lustig se negó a explicar para qué servía una llave que llevaba encima, y los agentes acabaron dando con una consigna del metro de Times Square que guardaba las planchas y unos 51.000 dólares falsos.",
+            "El 1 de septiembre de 1935, la víspera del juicio, se escapó del centro federal de detención de Nueva York descolgándose con una cuerda hecha de sábanas. Lo atraparon en Pittsburgh el 28 de septiembre. Se declaró culpable y el 9 de diciembre fue condenado a 15 años por falsificación y 5 más por la fuga. Watts, que declaró contra él, recibió 10. Lustig cumplió condena en Alcatraz, donde presentó más de mil quejas médicas, y murió en 1947 en el centro médico para presos federales de Springfield, en Misuri. Su muerte no se hizo pública hasta 1949. En el certificado de defunción, a nombre de Robert V. Miller, su profesión figura como «aprendiz de vendedor y falsificador»."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "«Vendió la torre dos veces». Es la frase que acompaña siempre a Lustig, pero es inexacta. La primera venta salió bien; la segunda se frustró cuando la víctima fue a la policía. Lo correcto es decir que la vendió una vez y lo intentó dos.",
+            "Las cifras. Ni el número de chatarreros ni el dinero que pagó Poisson están claros. La primera estafa nunca se denunció, y los relatos posteriores no coinciden en los detalles.",
+            "Al Capone. La anécdota circula desde hace décadas, pero no hay pruebas sólidas de que ocurriera, y el único contacto documentado con el entorno de Capone es un desmentido.",
+            "Los «diez mandamientos del estafador». Se atribuye a Lustig una lista de consejos para timadores: escuchar con paciencia, no parecer nunca aburrido, dar la razón al otro en política y religión, no presumir, no emborracharse. La fuente que suele citarse para esa atribución es un libro de Kathryn Lindskoog publicado en 1993, casi medio siglo después de su muerte, y no hay pruebas de que él la escribiera.",
+            "El título de conde. Nunca lo fue. Era parte del personaje, como sus decenas de nombres.",
+            "Su muerte. La fecha más citada es el 11 de marzo de 1947, aunque algunas fuentes dan el 9, el día en que enfermó. La causa también varía: neumonía, o neumonía asociada a un absceso cerebral."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "The Man Who Sold the Eiffel Tower",
+          "autor": "James F. Johnson y Floyd Miller",
+          "nota": "Biografía de 1961 escrita por un antiguo agente del Servicio Secreto que participó en la investigación de su red de billetes falsos, junto al escritor Floyd Miller; es el relato de uno de sus perseguidores."
+        }
+      ]
     },
     {
       "youtube": "fD5IBQsYNtY",
@@ -1117,6 +1431,18 @@
         {
           "titulo": "City A.M., «On this day in 1637: the tulip bubble bursts»",
           "url": "https://www.cityam.com/on-this-day-in-1637-the-tulip-bubble-bursts/"
+        },
+        {
+          "titulo": "Anne Goldgar, «Tulip mania: the classic story of a Dutch financial bubble is mostly wrong», The Conversation",
+          "url": "https://theconversation.com/tulip-mania-the-classic-story-of-a-dutch-financial-bubble-is-mostly-wrong-91413"
+        },
+        {
+          "titulo": "Wikipedia, «Extraordinary Popular Delusions and the Madness of Crowds»",
+          "url": "https://en.wikipedia.org/wiki/Extraordinary_Popular_Delusions_and_the_Madness_of_Crowds"
+        },
+        {
+          "titulo": "J. Leslie Price, reseña de «Tulipmania» en Reviews in History (Institute of Historical Research)",
+          "url": "https://reviews.history.ac.uk/review/666"
         }
       ],
       "etiquetas": [
@@ -1125,7 +1451,68 @@
         "Países Bajos"
       ],
       "fecha": "2026-10-27T23:59",
-      "num": "A008"
+      "num": "A008",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En el invierno de 1636 a 1637, en las tabernas de Haarlem y de otras ciudades holandesas, se firmaban contratos por bulbos de tulipán que seguían enterrados y que no florecerían hasta meses después. Algunos se pagaban a precio de casa. A principios de febrero de 1637, los compradores dejaron de aparecer y los precios se hundieron en cuestión de días. Es la famosa «tulipomanía», citada a menudo como la primera burbuja especulativa de la historia y comparada con cada nueva euforia financiera, de las puntocom al bitcoin.",
+            "La versión popular añade ruina general, fortunas evaporadas y especuladores arrojándose a los canales. El problema es que, cuando la historiadora Anne Goldgar fue a buscar esas tragedias en los archivos holandeses, apenas encontró rastro de ellas. Hubo burbuja, sí. Pero la historia que se ha contado durante casi dos siglos se parece más a una fábula moral que a lo que pasó."
+          ]
+        },
+        {
+          "titulo": "Una flor llegada del Imperio otomano",
+          "parrafos": [
+            "Los tulipanes llegaron a Europa en el siglo XVI desde el Imperio otomano, donde ya eran una flor muy apreciada. Se atribuye a Ogier Ghiselin de Busbecq, embajador de los Habsburgo ante Solimán el Magnífico, el envío de los primeros bulbos y semillas a Viena en 1554. Allí los cultivó el botánico flamenco Carolus Clusius a partir de 1573, y en 1592 publicó la primera gran obra dedicada a ellos.",
+            "En 1593 Clusius aceptó un puesto en la Universidad de Leiden y plantó sus bulbos en el jardín botánico de la universidad, recién creado. La floración de la primavera de 1594 se considera la primera de tulipanes en los Países Bajos. La flor despertó tanta curiosidad que en 1596 y 1598 le robaron más de 100 bulbos del jardín. Para la república holandesa, que vivía su Siglo de Oro gracias al comercio, el tulipán se convirtió en un objeto de lujo y de prestigio, algo que se coleccionaba igual que los cuadros o las conchas exóticas."
+          ]
+        },
+        {
+          "titulo": "El virus que pintaba llamas",
+          "parrafos": [
+            "Los tulipanes más cotizados no eran los de un color uniforme, sino los llamados «rotos»: flores con pétalos atravesados por llamas y vetas de otro color, como el célebre Semper Augustus, blanco con llamas de color carmín. Nadie en el siglo XVII lo sabía, pero aquel efecto lo causaba un virus, el virus del rayado del tulipán. Además de dibujar las llamas, la infección debilitaba la planta y reducía los bulbillos que producía, que son la forma de multiplicarla sin perder sus rasgos. Es decir, los tulipanes más bellos eran también los más difíciles de reproducir, y por eso escaseaban. La enfermedad de la flor era, en buena medida, la base de su precio."
+          ]
+        },
+        {
+          "titulo": "Comprar viento",
+          "parrafos": [
+            "Los bulbos solo se pueden sacar de la tierra entre junio y septiembre, así que durante esos meses se vendían al contado. El resto del año, compradores y vendedores firmaban ante notario contratos de compra para entregar el bulbo cuando se pudiera desenterrar. Con el tiempo, esos contratos empezaron a revenderse antes de la entrega, en reuniones que se celebraban en tabernas y que se conocían como «colegios», con sus propias reglas y comisiones.",
+            "Era un mercado sin dinero y sin flores a la vista: nadie pagaba hasta la entrega, y lo que cambiaba de manos era una promesa. Los propios holandeses lo llamaron windhandel, «comercio de viento». Además, un edicto de 1610, renovado varias veces hasta 1636, prohibía las ventas al descubierto, y los tribunales no consideraban exigibles estos contratos, de modo que quien perdía con un trato podía negarse a cumplirlo.",
+            "Según Goldgar, quienes participaban no eran deshollinadores ni tejedores arrastrados por la locura, sino sobre todo comerciantes y artesanos prósperos, a menudo unidos por lazos de familia, religión o vecindad. Los tulipanes más caros que documentó costaron unos 5.000 florines, más o menos el precio de una buena casa. Solo encontró a 37 personas que gastaran más de 300 florines, el sueldo anual aproximado de un maestro artesano. Las mayores subidas se concentraron en las primeras cinco semanas de 1637."
+          ]
+        },
+        {
+          "titulo": "Febrero de 1637: el desplome y el lío de los contratos",
+          "parrafos": [
+            "El final suele fecharse el 3 de febrero de 1637, cuando una subasta en Haarlem no encontró compradores. Ese episodio, sin embargo, lo cuenta una sátira de la época, y las circunstancias exactas se desconocen. Lo cierto es que en pocos días el mercado se paralizó. Goldgar apunta como causas más probables el temor a un exceso de oferta y una subida que ya no podía sostenerse.",
+            "El verdadero problema llegó después. Había compradores comprometidos a pagar en mayo o junio precios altísimos por flores que ya casi no valían nada. El 7 de febrero, los cultivadores de Utrecht eligieron representantes para una asamblea, y a finales de mes delegados de varias ciudades acordaron en Ámsterdam que los contratos anteriores a diciembre de 1636 seguían siendo válidos, mientras que los posteriores podían anularse pagando un 10 %. El asunto llegó al Tribunal de Holanda, que se negó a decidir y recomendó que las partes se arreglaran entre ellas y que las ciudades buscaran su propia solución. En mayo, Haarlem permitió cancelar los contratos pagando un 3,5 % del precio. Los pleitos siguieron hasta 1639, y la mayoría de los contratos nunca llegó a cumplirse.",
+            "Como el pago no vencía hasta la entrega, muchas pérdidas fueron solo sobre el papel. Quien había comprado y revendido contratos desde el verano de 1636 no perdió nada. Los más expuestos eran quienes esperaban cobrar, y según Goldgar en general pudieron asumir el golpe. El daño más serio fue de otro tipo: en una economía que vivía del crédito y de la palabra dada, ver a tanta gente negarse a pagar lo que había firmado supuso una sacudida moral."
+          ]
+        },
+        {
+          "titulo": "Lo que es mito y lo que todavía se discute",
+          "parrafos": [
+            "Lo que nadie discute es que hubo precios muy altos por algunos bulbos raros, un comercio especulativo de contratos y un desplome brusco en febrero de 1637.",
+            "Lo que no tiene respaldo documental son las consecuencias catastróficas. Goldgar revisó durante años escrituras notariales, listas de ventas y registros de pleitos de ciudades como Ámsterdam, Alkmaar, Utrecht y, sobre todo, Haarlem, el centro del comercio. No halló a nadie que se ahogara en un canal por culpa de los tulipanes ni a ningún arruinado por ellos, la economía holandesa siguió su curso y muchos de los comerciantes de 1637 continuaron vendiendo bulbos durante años. Tampoco encontró cadenas de reventa de más de cinco compradores, frente a la idea de que un mismo contrato cambiaba de manos diez veces al día. Y la peste que sufría Holanda esos años, a la que a veces se culpa de una especie de fatalismo especulador, estaba ya remitiendo cuando los precios tocaron techo.",
+            "¿De dónde salió entonces la leyenda? Tras el desplome circularon por los Países Bajos canciones y panfletos satíricos que se burlaban de los especuladores, con un fuerte tono moralizante y, en parte, religioso. Esos textos los recogió a finales del siglo XVIII el alemán Johann Beckmann en su historia de los inventos, y de él bebió el periodista escocés Charles Mackay en un libro de 1841 que se conoce hoy como Extraordinary Popular Delusions and the Madness of Crowds. Mackay los leyó como crónica, y su versión se repitió después en innumerables manuales de economía.",
+            "La anécdota más famosa de Mackay es la del bulbo Virrey, supuestamente cambiado por una lista de bienes valorada en 2.500 florines: trigo, centeno, bueyes, cerdos, ovejas, vino, cerveza, mantequilla, queso, una cama, ropa y una copa de plata. El historiador E. H. Krelage, en 1942, y el economista Peter Garber sostienen que el panfleto original solo enumeraba esos productos para que el lector se hiciera una idea de cuánto dinero era aquello. Según ellos, no hubo trueque.",
+            "Las cifras son otro punto delicado. La más repetida, 10.000 florines por un Semper Augustus, procede en buena parte de fuentes de la época poco fiables, y Goldgar sitúa los precios máximos documentados en torno a la mitad. El propio Garber, que reunió datos de 161 bulbos de 39 variedades, advirtió de que mezclaban «peras con manzanas».",
+            "Y queda abierto el debate de fondo: si aquello fue una burbuja irracional o algo más explicable. Garber defendió que es normal que una variedad rara y de moda alcance precios enormes y se abarate a medida que se multiplica, y el economista Earl Thompson propuso en 2007 que la clave estuvo en un cambio de reglas que convertía los contratos en algo parecido a opciones, con lo que comprometerse a pagar mucho apenas tenía riesgo. Ninguna de esas explicaciones ha cerrado la discusión, pero todas apuntan en la misma dirección: la Holanda de 1637 no se volvió loca por una flor."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Tulipmania: Money, Honor, and Knowledge in the Dutch Golden Age",
+          "autor": "Anne Goldgar",
+          "nota": "La investigación de archivo (2007) que desmontó la versión catastrófica y explica quién compraba tulipanes y por qué."
+        },
+        {
+          "titulo": "Tulipomania: The Story of the World's Most Coveted Flower and the Extraordinary Passions It Aroused",
+          "autor": "Mike Dash",
+          "nota": "Una narración amena (1999) del viaje del tulipán desde Asia central hasta Holanda; es anterior al trabajo de Goldgar, así que conviene leerla junto a él."
+        }
+      ]
     },
     {
       "youtube": "5CsaTHjV0tc",
@@ -1150,7 +1537,9 @@
         "Burbujas económicas",
         "Mitos de la historia"
       ],
-      "fecha": "2026-10-28T00:02"
+      "fecha": "2026-10-28T00:02",
+      "num": "S111",
+      "de": "A008"
     },
     {
       "youtube": "PAjZ8g7deHM",
@@ -1179,6 +1568,14 @@
         {
           "titulo": "The Arthur Conan Doyle Encyclopedia, «Mary Celeste»",
           "url": "https://www.arthur-conan-doyle.com/wiki/Mary_Celeste"
+        },
+        {
+          "titulo": "Wikipedia, «Mary Celeste»",
+          "url": "https://en.wikipedia.org/wiki/Mary_Celeste"
+        },
+        {
+          "titulo": "Chemistry World, «Chemists think they know what happened on board the Mary Celeste» (2026)",
+          "url": "https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article"
         }
       ],
       "etiquetas": [
@@ -1186,7 +1583,75 @@
         "Barco fantasma",
         "Misterios de la historia"
       ],
-      "fecha": "2026-10-28T00:09"
+      "fecha": "2026-10-28T00:09",
+      "num": "A009",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "El 4 de diciembre de 1872, los marineros del bergantín canadiense Dei Gratia vieron un barco que navegaba de forma extraña en mitad del Atlántico, entre las Azores y la costa de Portugal. Al subir a bordo comprobaron que el Mary Celeste flotaba, conservaba su carga y tenía provisiones para meses. Lo único que faltaba eran las personas: el capitán, su mujer, su hija de 2 años y siete tripulantes. Tampoco estaba el bote salvavidas.",
+            "Más de 150 años después, nadie sabe con certeza qué les ocurrió. El caso se ha convertido en el gran misterio del mar, en parte por lo que sucedió de verdad y en parte por lo que se le añadió después, empezando por un relato de ficción de un joven Arthur Conan Doyle."
+          ]
+        },
+        {
+          "titulo": "Un barco con historia",
+          "parrafos": [
+            "El Mary Celeste no se llamó así desde el principio. Su quilla se puso a finales de 1860 en un astillero de Spencers Island, en Nueva Escocia (Canadá), y el 18 de mayo de 1861 se botó con el nombre de Amazon. Su primer capitán, Robert McLellan, que era también uno de sus nueve copropietarios, enfermó durante el viaje inaugural y murió el 19 de junio de ese año.",
+            "En octubre de 1867, el Amazon encalló cerca de la isla de Cabo Bretón y se vendió como pecio. Un comprador estadounidense, Richard W. Haines, lo reparó y en diciembre de 1868 lo registró en Nueva York con su nuevo nombre. Poco después pasó a manos de un grupo de inversores encabezado por James H. Winchester. Para entonces, uno de los socios era su nuevo capitán: Benjamin Spooner Briggs, de Marion (Massachusetts), que tenía 4 de las 12 participaciones del barco."
+          ]
+        },
+        {
+          "titulo": "El último viaje",
+          "parrafos": [
+            "El 7 de noviembre de 1872, el Mary Celeste zarpó de Nueva York rumbo a Génova con 1.701 barriles de alcohol industrial. Iban a bordo diez personas: Briggs, su mujer, Sarah, su hija Sophia, de 2 años, y siete tripulantes. El hijo mayor del matrimonio, Arthur, de unos 7 años, se quedó en casa con su abuela.",
+            "Ocho días después salió del mismo puerto el Dei Gratia, al mando del capitán David Morehouse. La última anotación en el diario de a bordo del Mary Celeste está fechada el 25 de noviembre, cerca de la isla de Santa María, en las Azores, tras unas dos semanas de mal tiempo. A partir de ahí, nadie volvió a saber de sus diez ocupantes."
+          ]
+        },
+        {
+          "titulo": "Nadie a bordo",
+          "parrafos": [
+            "Nueve días más tarde, hacia la una de la tarde, el Dei Gratia encontró el Mary Celeste a la deriva, a unas 400 millas al este de las Azores. El primer oficial, Oliver Deveau, y el segundo, John Wright, subieron a bordo. Según su testimonio, las velas estaban parcialmente desplegadas y dañadas, y la jarcia, suelta. La caja de la bitácora, donde va la brújula, se había movido y tenía el cristal roto. En la bodega había casi un metro de agua (unos 3,5 pies), una cantidad importante pero no alarmante. En cubierta había una sonda improvisada, la vara con la que se mide el agua acumulada. Faltaban los instrumentos de navegación del capitán y casi todos los documentos del barco, salvo el diario. Y no estaba el bote.",
+            "Morehouse decidió llevar el barco abandonado a Gibraltar, con Deveau y una pequeña tripulación a bordo. Si lo conseguían, podían reclamar un premio de salvamento, que en el derecho marítimo es una parte del valor de lo rescatado. Llegaron el 13 de diciembre."
+          ]
+        },
+        {
+          "titulo": "Gibraltar: sospechas sin pruebas",
+          "parrafos": [
+            "Las vistas del caso de salvamento empezaron el 17 de diciembre, ante el juez Sir James Cochrane. El fiscal general de Gibraltar, Frederick Solly-Flood, estaba convencido de que había habido un crimen. Su teoría era que la tripulación se había emborrachado con el alcohol de la carga y había asesinado al capitán, a su familia y a los oficiales.",
+            "Los inspectores encontraron unos cortes en la proa que creyeron hechos a propósito, y unas manchas en la espada del capitán y en una barandilla que podían ser sangre. Pero el análisis posterior concluyó que no lo eran, y un capitán de la Marina estadounidense, Robert Shufeldt, atribuyó las marcas de la proa a la acción natural del mar. Además, el alcohol era desnaturalizado, no apto para beber, y al descargar en Génova solo había 9 barriles vacíos de 1.701, una pérdida considerada normal. No faltaban objetos de valor ni había huellas de saqueo. Nada sostenía la idea del motín.",
+            "Las sospechas rozaron también a los marineros del Dei Gratia, que se jugaban el premio. Tampoco se demostró nada. El barco se liberó el 25 de febrero de 1873 y, el 8 de abril, el tribunal concedió a sus rescatadores 1.700 libras, alrededor de una quinta parte del valor del barco y la carga. La cifra era baja, y el juez criticó la actuación de Morehouse."
+          ]
+        },
+        {
+          "titulo": "Qué pudo pasar: lo que todavía se discute",
+          "parrafos": [
+            "Como nadie sobrevivió para contarlo, todas las explicaciones son hipótesis. Las que más peso tienen hoy parten de una idea sencilla: Briggs ordenó abandonar el barco porque creyó, quizá equivocadamente, que corría peligro, y el bote se perdió en el mar con todos a bordo.",
+            "¿Qué pudo asustarle? Una posibilidad es que pensara que el barco se estaba hundiendo. La sonda improvisada encontrada en cubierta sugiere que alguien estaba midiendo el agua de la bodega. Un documental del canal Smithsonian de 2007 propuso que las bombas de achique estaban atascadas, posiblemente por polvo de carbón de un viaje anterior, y que un cronómetro defectuoso pudo hacer creer al capitán que estaba más cerca de tierra de lo que estaba. El propio Deveau planteó que una tromba marina pudo provocar una lectura falsa del nivel del agua.",
+            "La otra gran hipótesis es el alcohol. Los vapores de la carga pudieron acumularse en la bodega y provocar una pequeña explosión, o el temor a ella, suficiente para que la tripulación se refugiara en el bote. El problema es que en el barco no había rastro de fuego. En 2006, el químico Andrea Sella, del University College de Londres, recreó la bodega a escala para un documental y mostró que una explosión de ese tipo puede ser una onda de presión que no deja quemaduras. En 2026, dos químicos de la Universidad de Manchester, Jack Rowbotham y Frank Mair, repitieron la idea con una maqueta para otro documental y la consideraron una explicación «muy convincente». Son demostraciones televisivas, no pruebas, pero explican por qué la teoría sigue viva. Otras propuestas, como un maremoto submarino, un iceberg o un calamar gigante, tienen muchos más problemas."
+          ]
+        },
+        {
+          "titulo": "Conan Doyle, la «Marie Celeste» y un final de estafa",
+          "parrafos": [
+            "Buena parte de la fama del caso se debe a un relato publicado sin firma en enero de 1884 en The Cornhill Magazine: «J. Habakuk Jephson's Statement», obra de un Arthur Conan Doyle de 24 años que aún no había creado a Sherlock Holmes. En él, el barco se llamaba «Marie Celeste», y mucha gente leyó la historia como un testimonio real. Esa grafía sigue siendo hoy más común que la auténtica, y muchos detalles que se repiten como hechos, como el té todavía caliente en la mesa o la comida a medio servir, proceden de esta y de otras ficciones posteriores. Doyle volvió sobre el caso años después: en «La aventura del vampiro de Sussex», Holmes menciona un barco llamado «Matilda Briggs», y Sophia Matilda era el nombre completo de la hija del capitán.",
+            "También es dudosa la famosa cena en la que Briggs y Morehouse, que se conocían, habrían charlado antes de zarpar. Solo se apoya en un recuerdo de la viuda de Morehouse contado unos 50 años después. Y la fecha del hallazgo aparece como 4 o 5 de diciembre según la fuente, por la forma en que se contaban los días a bordo.",
+            "El barco siguió navegando más de una década con otros dueños. Su final fue de todo menos misterioso: en 1884, el capitán Gilman Parker y unos cargadores de Boston aseguraron por 30.000 dólares una carga casi sin valor, y el 3 de enero de 1885 Parker lo hizo encallar a propósito en el banco de Rochelois, cerca de la isla haitiana de La Gonâve. El fraude se descubrió. En el juicio de Boston, el jurado no llegó a un veredicto, pero los acusados acabaron devolviendo lo cobrado.",
+            "En 2001, una expedición del novelista Clive Cussler anunció que había encontrado los restos del Mary Celeste en ese arrecife. El análisis de los anillos de la madera, a cargo del investigador Scott St. George, mostró que procedía de árboles que seguían vivos hacia 1894, casi diez años después del naufragio. No era el Mary Celeste. Ni siquiera sus restos se han encontrado."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Ghost Ship: The Mysterious True Story of the Mary Celeste and Her Missing Crew",
+          "autor": "Brian Hicks",
+          "nota": "Una reconstrucción detallada (2004) de la historia del barco, de la familia Briggs y de la tripulación, que defiende una explicación basada en el error humano y la mala suerte."
+        },
+        {
+          "titulo": "Mary Celeste: The Greatest Mystery of the Sea",
+          "autor": "Paul Begg",
+          "nota": "Repasa las teorías con espíritu crítico (2005) e incluye la transcripción de las vistas de Gibraltar y el relato de Conan Doyle."
+        }
+      ]
     },
     {
       "youtube": "q-4LNa7J4F4",
@@ -1214,7 +1679,9 @@
         "Barco fantasma",
         "Arthur Conan Doyle"
       ],
-      "fecha": "2026-10-28T00:06"
+      "fecha": "2026-10-28T00:06",
+      "num": "S112",
+      "de": "A009"
     },
     {
       "youtube": "cGdxWX4mSQI",
@@ -1243,6 +1710,14 @@
         {
           "titulo": "Wikipedia, «Max Schreck»",
           "url": "https://en.wikipedia.org/wiki/Max_Schreck"
+        },
+        {
+          "titulo": "Wikipedia (alemán), «Nosferatu – Eine Symphonie des Grauens»",
+          "url": "https://de.wikipedia.org/wiki/Nosferatu_–_Eine_Symphonie_des_Grauens"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Florence Stoker»",
+          "url": "https://en.wikipedia.org/wiki/Florence_Stoker"
         }
       ],
       "etiquetas": [
@@ -1250,7 +1725,72 @@
         "Cine mudo",
         "Drácula"
       ],
-      "fecha": "2026-10-28T00:14"
+      "fecha": "2026-10-28T00:14",
+      "num": "A010",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En marzo de 1922, el público de Berlín vio por primera vez al conde Orlok: un vampiro calvo, de orejas puntiagudas y dedos interminables que salía de las sombras de un castillo de Transilvania. Un siglo después, «Nosferatu» es una de las películas más estudiadas y reconocibles de la historia del cine. Lo curioso es que, según la sentencia que dictó un tribunal alemán en 1925, hoy no debería existir ni una sola copia.",
+            "Esta es la historia de un estudio que solo hizo una película, de una viuda que defendió la obra de su marido hasta el final y de un vampiro que sobrevivió a la orden de destruirlo gracias a las copias que ya habían cruzado fronteras."
+          ]
+        },
+        {
+          "titulo": "Un estudio nacido para lo sobrenatural",
+          "parrafos": [
+            "«Nosferatu» fue la primera y única producción de Prana Film, una pequeña compañía fundada en 1921 por el empresario Enrico Dieckmann y el artista Albin Grau. El nombre venía de una revista teosófica, que a su vez lo había tomado del concepto hindú de *prana*, la energía vital. No era una elección casual: Grau se interesó toda su vida por el ocultismo y quería que el estudio se especializara en temas sobrenaturales.",
+            "Según una anécdota que el propio Grau contaba y que hoy se considera dudosa, la idea del vampiro le vino en el invierno de 1916, en el frente de Serbia, cuando un campesino le aseguró que su padre había sido un vampiro. Fuera cierto o no, Grau dejó su huella en toda la película: diseñó los decorados, el vestuario y el maquillaje, caligrafió los rótulos y dirigió la campaña publicitaria. Más tarde llegó a decir que la película reflejaba la experiencia de la Primera Guerra Mundial.",
+            "Para dirigirla, Prana contrató a Friedrich Wilhelm Murnau, que cobró 25.000 marcos. El dinero procedía de inversores de Silesia sin experiencia en el negocio del cine, y el rodaje se hizo con recursos limitados: el director de fotografía, Fritz Arno Wagner, trabajó con una sola cámara, de modo que existía un único negativo original."
+          ]
+        },
+        {
+          "titulo": "Drácula con otro nombre",
+          "parrafos": [
+            "La historia que querían contar ya estaba escrita. Era «Drácula», la novela que el irlandés Bram Stoker había publicado en 1897. El problema es que Prana no había comprado los derechos de adaptación.",
+            "El guionista Henrik Galeen recurrió a un disfraz bastante transparente. Trasladó la acción de Londres a Wisborg, una ciudad alemana imaginaria, y la situó en 1838. Cambió todos los nombres: Drácula pasó a ser Orlok; Jonathan Harker, Thomas Hutter; Mina, Ellen; Renfield, Knock; y Van Helsing se convirtió en el profesor Bulwer. También añadió algo que no está en la novela: el vampiro llega a Wisborg en un barco y trae consigo ratas y una epidemia de peste. Al final no lo derrota un cazador de vampiros, sino Ellen, que lo retiene a su lado hasta que amanece.",
+            "Buena parte de la película se rodó en exteriores reales, algo poco habitual en el cine alemán de la época. El rodaje empezó en julio de 1921 en Wismar, en la costa báltica. En Lübeck se filmaron la casa que Orlok compra en Wisborg, que en realidad era un viejo almacén de sal abandonado, y el cementerio de una iglesia. También hubo escenas en Lauenburg, Rostock y la isla de Sylt. Para Transilvania, el equipo viajó al norte de la actual Eslovaquia: los Altos Tatras y el castillo de Orava. Los interiores se rodaron en un estudio de Berlín-Johannisthal."
+          ]
+        },
+        {
+          "titulo": "Un vampiro que muere al amanecer",
+          "parrafos": [
+            "«Nosferatu» introdujo una regla que hoy parece eterna. En la novela de Stoker, la luz del día incomoda a Drácula, pero no lo mata. Esta fue la primera película en la que un vampiro muere al recibir los rayos del sol. Lotte Eisner, historiadora del cine alemán y gran estudiosa de Murnau, señaló que esa muerte no aparece ni en la novela ni en el guion de Galeen, por lo que la idea se atribuye al propio director. Murnau reescribió 12 páginas que faltaban en su guion de trabajo, precisamente las del final.",
+            "El vampiro lo interpretó Max Schreck, un actor de teatro nacido en Berlín en 1879 que había trabajado en la compañía de Max Reinhardt y en los Kammerspiele de Múnich. Su apellido parece una broma del destino: *Schreck* significa «susto» o «espanto» en alemán. El papel se había ofrecido antes a Conrad Veidt, que lo rechazó por problemas de agenda.",
+            "Aunque hoy la conocemos sobre todo en blanco y negro, Murnau la concibió con las imágenes teñidas por colores según el momento del día: azul para la noche, sepia para los interiores de día, amarillo anaranjado para los interiores nocturnos y rosa para el amanecer. Las restauraciones modernas han recuperado esos tintes."
+          ]
+        },
+        {
+          "titulo": "Una fiesta, una quiebra y una demanda",
+          "parrafos": [
+            "Prana lanzó la película a lo grande. Tras un estreno en los Países Bajos el 16 de febrero de 1922, la presentación alemana fue el 4 de marzo en el Marmorsaal, el salón de mármol del zoológico de Berlín. Se planteó como un acontecimiento social, «la fiesta de Nosferatu», con prólogo teatral, orquesta y un baile de disfraces al que se pidió a los invitados que acudieran con trajes de época Biedermeier. El estreno en cines llegó el 15 de marzo.",
+            "La crítica fue mayoritariamente favorable, aunque con reparos: un periódico opinó que el vampiro aparecía demasiado corpóreo y demasiado iluminado como para dar miedo. En taquilla, en cambio, fue un fracaso. La gran productora UFA se negó a programarla en sus salas principales, el dinero se había ido en la costosa campaña publicitaria y en los gastos de los socios, y en agosto de 1922 se abrió un procedimiento de quiebra contra Prana.",
+            "Mientras tanto, en Londres, Florence Stoker, viuda de Bram Stoker y heredera de sus derechos, recibió una carta anónima desde Berlín con el programa del estreno. El folleto describía la película como «adaptada libremente» de «Drácula». Ella no había dado permiso ni cobrado nada. Con el apoyo de la Sociedad de Autores británica, demandó al estudio. No hubo acuerdo, y en julio de 1925 un tribunal de Berlín dictó la sentencia definitiva: todos los negativos y todas las copias debían destruirse.",
+            "Florence Stoker vigiló el cumplimiento durante años. Cuando la London Film Society quiso proyectar una copia en Inglaterra, ella intervino; la copia se escondió y, cuando la sociedad volvió a intentarlo unos 4 años después, acabó destruida. La adaptación autorizada llegaría en 1931, cuando Universal, que había comprado los derechos por 40.000 dólares, estrenó su «Drácula»."
+          ]
+        },
+        {
+          "titulo": "Cómo sobrevivió el vampiro",
+          "parrafos": [
+            "La sentencia llegó tarde. La película ya se había vendido al extranjero y circulaban copias en varios países, con montajes y rótulos distintos: la versión francesa tenía 31 intertítulos frente a los 115 de la alemana. A finales de los años veinte volvieron a aparecer copias, y en 1930 se estrenó en Viena una versión sonorizada sin autorización, «Die zwölfte Stunde», con los personajes rebautizados y un final más amable.",
+            "La reconstrucción de la película original ha sido un trabajo de décadas. En 1981, el Filmmuseum de Múnich empezó a restaurarla combinando copias alemanas y francesas, con rótulos recuperados de una copia conservada en el archivo cinematográfico de la RDA. En 1984, el investigador Luciano Berriatúa encontró en la Cinémathèque française una copia de nitrato de primera generación, base de nuevas versiones teñidas. La restauración más completa, de 2005 y 2006, la hicieron Berriatúa y la Fundación Friedrich Wilhelm Murnau. Hoy la película es de dominio público."
+          ]
+        },
+        {
+          "titulo": "Mito y realidad",
+          "parrafos": [
+            "Durante muchos años circuló el rumor de que Max Schreck no existía y que el nombre era un seudónimo del actor Alfred Abel. Es falso: Schreck tuvo una larga carrera teatral y cinematográfica, y murió en Múnich en 1936. En el año 2000, la película «La sombra del vampiro» jugó con esa leyenda y presentó a un Schreck que era un vampiro de verdad. Es pura ficción, aunque le valió a Willem Dafoe una nominación al Óscar al mejor actor de reparto.",
+            "Hay otro punto que las fuentes no cuentan igual: por qué quebró Prana. Unas apuntan al fracaso comercial y al derroche en publicidad; otras sostienen que el estudio se declaró en quiebra para no tener que pagar a la viuda de Stoker. Lo seguro es que «Nosferatu» fue su única película.",
+            "Su influencia, en cambio, no se discute. Werner Herzog la rehízo en 1979 con Klaus Kinski, y Robert Eggers estrenó su propia versión en diciembre de 2024. El cine de vampiros todavía obedece a la regla que inventó Murnau: cuando sale el sol, el monstruo se desvanece."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Murnau",
+          "autor": "Lotte H. Eisner",
+          "nota": "El estudio clásico sobre el director y sus películas, escrito por la historiadora que más contribuyó a recuperar «Nosferatu» (original francés de 1964, edición inglesa ampliada de 1973)."
+        }
+      ]
     },
     {
       "youtube": "XtHCT32B-Fw",
@@ -1278,7 +1818,9 @@
         "Cine mudo",
         "Drácula"
       ],
-      "fecha": "2026-10-28T00:14"
+      "fecha": "2026-10-28T00:14",
+      "num": "S113",
+      "de": "A010"
     },
     {
       "youtube": "DujLCXw4XMk",
@@ -1307,6 +1849,14 @@
         {
           "titulo": "Wikipedia, «World's Columbian Exposition»",
           "url": "https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition"
+        },
+        {
+          "titulo": "Adam Selzer, «Is all that stuff about H.H. Holmes true?», Time Out Chicago (2015)",
+          "url": "https://www.timeout.com/chicago/blog/is-all-that-stuff-about-h-h-holmes-true-081115"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «The Devil in the White City»",
+          "url": "https://en.wikipedia.org/wiki/The_Devil_in_the_White_City"
         }
       ],
       "etiquetas": [
@@ -1314,7 +1864,70 @@
         "Crímenes históricos",
         "Chicago 1893"
       ],
-      "fecha": "2026-10-28T00:14"
+      "fecha": "2026-10-28T00:14",
+      "num": "A011",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Basta buscar su nombre en internet para encontrar la versión de leyenda: un hotel laberíntico levantado en Chicago para la Exposición Universal de 1893, lleno de trampillas, pasadizos y cámaras secretas, y un doctor que habría atraído allí a cientos de visitantes que nunca volvieron a salir. Herman Webster Mudgett, el hombre que se hacía llamar H. H. Holmes, existió y fue un criminal condenado. Pero casi todo lo que hace célebre esa versión se inventó después.",
+            "Si se vuelve a los documentos de la época, aparece otra figura, menos cinematográfica y más inquietante por lo cotidiana: un estafador profesional que vivió durante años de engañar a aseguradoras, proveedores, socios y esposas, y que llegó a matar cuando sus fraudes estaban a punto de descubrirse."
+          ]
+        },
+        {
+          "titulo": "Un estudiante de medicina con muchos nombres",
+          "parrafos": [
+            "Mudgett nació el 16 de mayo de 1861 en Gilmanton, un pueblo de New Hampshire. Estudió un año en la Universidad de Vermont y en 1882 pasó al departamento de medicina de la Universidad de Michigan, donde se licenció en junio de 1884 con notas mediocres. Él mismo admitió más tarde que, siendo estudiante, había usado cadáveres para estafar a compañías de seguros de vida: un anticipo del negocio al que dedicaría el resto de su vida.",
+            "En 1886 llegó a Chicago y empezó a usar el nombre de Henry Howard Holmes, uno de los muchos alias que manejó. Su vida sentimental seguía la misma lógica. Se había casado con Clara Lovering en 1878; a finales de 1886 se casó en Minneapolis con Myrta Belknap sin haberse divorciado, y en enero de 1894, en Denver, con Georgiana Yoke, cuando seguía legalmente casado con las dos anteriores."
+          ]
+        },
+        {
+          "titulo": "Englewood: una farmacia y un edificio sin pagar",
+          "parrafos": [
+            "En Chicago, Holmes encontró trabajo en una farmacia del barrio de Englewood, propiedad de Elizabeth Holton, y acabó quedándose con el negocio. En 1887 empezó a construir un edificio en la esquina de la calle 63 con Wallace. La planta baja estaba pensada para tiendas, incluida la farmacia, y la segunda para viviendas de alquiler. Pagar, pagaba poco: en 1888 los arquitectos y una empresa siderúrgica ya lo habían demandado por facturas pendientes.",
+            "En 1892 añadió una tercera planta y les contó a inversores y proveedores que sería un hotel para la gran cita que se avecinaba. Chicago iba a celebrar el cuarto centenario del viaje de Colón con la Exposición Mundial Colombina, abierta del 1 de mayo al 30 de octubre de 1893 y visitada por más de 27 millones de personas. Su recinto, con los edificios cubiertos de un estuco blanco, se ganó el apodo de «la Ciudad Blanca».",
+            "Según el historiador Adam Selzer, aquel edificio no fue un hotel en el sentido actual: no tenía recepción, vestíbulo ni botones, y no está claro que la tercera planta llegara a alquilarse. Era un inmueble de tamaño mediano, bastante corriente y sin terminar, por las disputas constantes con los constructores. Las habitaciones ocultas sí existían, pero la ciudad ya las conocía antes de que abriera la Exposición. En marzo de 1893, el *Chicago Tribune* publicó un amplio artículo sobre ellas después de que se descubriera para qué servían: Holmes escondía allí los muebles que compraba a crédito y nunca pagaba, para que los acreedores no los encontraran. Durante la feria intentó, además, quemar el edificio para cobrar el seguro."
+          ]
+        },
+        {
+          "titulo": "1894: el fraude que lo delató",
+          "parrafos": [
+            "En julio de 1894, Holmes pasó unos días en una cárcel de San Luis (Misuri) por vender bienes hipotecados. Allí conoció a Marion Hedgepeth, un forajido que cumplía una condena de 25 años, y le ofreció una comisión de 500 dólares a cambio del nombre de un abogado de confianza para un plan: fingir su propia muerte y cobrar un seguro de 10.000 dólares. La aseguradora sospechó y no pagó.",
+            "Holmes repitió la idea con su socio de fraudes, el carpintero Benjamin Pitezel. El plan consistía en simular su muerte para cobrar una póliza de 10.000 dólares de la Fidelity Mutual. Pero Pitezel apareció muerto de verdad en Filadelfia el 4 de septiembre de 1894: Holmes lo había matado, y el abogado presentó la reclamación. Hedgepeth acabó informando sobre Holmes a las autoridades, algo por lo que más tarde fue indultado.",
+            "Los detectives de la agencia privada Pinkerton siguieron el rastro de Holmes desde Filadelfia hasta Boston, donde lo detuvieron el 17 de noviembre de 1894. La primera acusación que se usó para retenerlo fue una orden pendiente por robo de caballos en Texas."
+          ]
+        },
+        {
+          "titulo": "Un detective tras una pista fría",
+          "parrafos": [
+            "Faltaba una pieza. Tres de los hijos de Pitezel habían viajado con Holmes, y nadie sabía dónde estaban. El detective Frank Geyer, de la policía de Filadelfia, reconstruyó su recorrido por Estados Unidos y Canadá, ciudad por ciudad. En julio de 1895 su búsqueda terminó con la peor noticia posible: los niños tampoco habían sobrevivido.",
+            "A raíz de aquello, la policía de Chicago y los periodistas registraron el edificio de Englewood. No encontraron pruebas que permitieran condenarlo en Chicago, así que el juicio se celebró en Filadelfia por el asesinato de Pitezel, el caso con más posibilidades de prosperar. Holmes fue declarado culpable en octubre de 1895 y ejecutado el 7 de mayo de 1896 en la prisión de Moyamensing. En 2017, un equipo dirigido por la antropóloga Janet Monge exhumó sus restos y confirmó su identidad por la dentadura."
+          ]
+        },
+        {
+          "titulo": "Cómo se fabricó el «castillo»",
+          "parrafos": [
+            "La leyenda empezó a formarse mientras se registraba el edificio. Durante aproximadamente una semana de 1895, la prensa atribuyó un uso siniestro a cualquier objeto que aparecía, desde una cuerda hasta una mesa vieja o unas cenizas en una estufa. La mayoría de esas afirmaciones se desmintieron enseguida, pero los desmentidos circularon mucho menos que los titulares. Fue la época dorada del periodismo amarillo, y el edificio pasó a ser «el castillo».",
+            "El propio Holmes alimentó el mito. Los periódicos de William Randolph Hearst le pagaron 7.500 dólares por una confesión en la que se atribuía 27 asesinatos. Algunas de las personas que mencionaba estaban vivas.",
+            "Las cifras de cientos de víctimas, según Selzer, aparecieron por primera vez en un par de revistas *pulp* de los años treinta y entonces nadie se las tomó en serio. Algunos relatos posteriores llegaron a hablar de hasta 133. El impulso definitivo llegó en 2003 con «The Devil in the White City» («El diablo en la Ciudad Blanca»), el superventas de Erik Larson. El propio Larson reconoce en sus notas que los capítulos sobre los crímenes de Holmes son en buena medida conjeturas construidas sobre unos pocos hechos, y los críticos de *Newsweek* y *The New York Times* ya señalaron que su imaginación iba más allá de las fuentes."
+          ]
+        },
+        {
+          "titulo": "Qué es mito y qué no",
+          "parrafos": [
+            "Es real que Holmes fue un estafador de larga trayectoria: fraudes a aseguradoras, deudas impagadas, bigamia y una cadena de negocios ficticios. Es real que mató a Benjamin Pitezel para cobrar un seguro y que fue condenado y ejecutado por ello. Y es real que el edificio tenía cuartos escondidos y un diseño irregular, aunque los registros apuntan a que servía para el fraude.",
+            "Es mito el hotel diseñado como una trampa para los visitantes de la Exposición, igual que las cámaras de tortura del sótano, que Selzer atribuye a un «teléfono escacharrado» de rumores repetidos. También lo son las 200 víctimas, una cifra sin base documental.",
+            "Lo que todavía se discute es el número exacto. Las fuentes que siguen la documentación confirman 8 víctimas y consideran probable una novena, y el recuento cambia según el criterio de cada historiador. Nueve vidas ya son una tragedia; la leyenda nunca necesitó inventar más. El edificio, por cierto, sufrió un incendio en agosto de 1895, siguió en uso durante décadas y fue derribado en 1938. En su solar hay hoy una oficina de correos."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "H. H. Holmes: The True History of the White City Devil",
+          "autor": "Adam Selzer",
+          "nota": "La biografía que volvió a los documentos originales y separó con paciencia los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
+        }
+      ]
     },
     {
       "youtube": "B5MRTu9xLBA",
@@ -1338,7 +1951,9 @@
         "Mitos de la historia",
         "Chicago 1893"
       ],
-      "fecha": "2026-10-28T00:14"
+      "fecha": "2026-10-28T00:14",
+      "num": "S114",
+      "de": "A011"
     }
   ]
 }
