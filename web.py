@@ -363,7 +363,7 @@ def acerca(canal: dict) -> str:
     redes = "".join(f'<li><a href="{escape(u)}" rel="noopener">{escape(n)}</a></li>' for n, u in (
         ("YouTube · El Archivo Curioso", canal["youtube"]),
         ("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
-        ("TikTok · @elarchivocurioso", "https://www.tiktok.com/@elarchivocurioso")))
+        ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7")))
     cuerpo = f"""<main class="ancho legal">
 <a class="volver" href="index.html">← Inicio</a>
 <h1>Acerca de El Archivo Curioso</h1>
