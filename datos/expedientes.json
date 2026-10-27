@@ -1954,6 +1954,71 @@
       "fecha": "2026-10-28T00:14",
       "num": "S114",
       "de": "A011"
+    },
+    {
+      "youtube": "vML9AgGkMfc",
+      "tipo": "video",
+      "titulo": "GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia",
+      "epoca": "1995-2026",
+      "lugar": "Escocia y Estados Unidos",
+      "miniatura": "Identidad/Miniaturas/miniatura-A012-gta-vi-historia.png",
+      "resumen": "El diecinueve de noviembre de 2026 sale GTA seis. Millones de personas llevan años esperándolo. Sus tráileres han batido todas las marcas, y su fecha se ha movido dos veces.",
+      "curiosidades": [
+        "GTA VI sale el 19 de noviembre de 2026 en PlayStation 5 y Xbox Series X/S; sin fecha oficial para PC",
+        "El primer GTA lo desarrolló DMA Design en Dundee desde abril de 1995; empezó como «Race'n'Chase», en el que el jugador era policía; se descartó por aburrido y se pasó a jugar como delincuente",
+        "Mike Dailly contó que un error hizo que la policía se volviera agresiva e intentara sacar al jugador de la calzada, y que al equipo le pareció divertido y lo mantuvo",
+        "Salida en Europa para PC el 28 de noviembre de 1997; la campaña del publicista Max Clifford usó la polémica por la violencia como promoción gratuita; 6 millones de copias en marzo de 2001",
+        "GTA Vice City (2002), inspirado en el Miami de los años ochenta"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Grand Theft Auto VI»",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+        },
+        {
+          "titulo": "Wikipedia, «Grand Theft Auto (video game)»",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)"
+        },
+        {
+          "titulo": "GameSpot, «Original Grand Theft Auto 'almost canned'»",
+          "url": "https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "GTA 6",
+        "Grand Theft Auto"
+      ],
+      "fecha": "2026-10-28T00:26"
+    },
+    {
+      "youtube": "G4ysC_DHmCw",
+      "tipo": "short",
+      "titulo": "GTA nació de un FALLO de programación: la policía se volvió LOCA",
+      "epoca": "1995-1997",
+      "lugar": "Dundee, Escocia",
+      "resumen": "¿Sabías que GTA nació gracias a un fallo de programación? Pasó en Escocia, en los años noventa.",
+      "curiosidades": [
+        "El primer GTA lo desarrolló DMA Design en Dundee desde 1995; empezó como un juego de policías («Race'n'Chase») que resultaba aburrido",
+        "Mike Dailly contó que un error hizo que la policía se volviera agresiva y que el equipo decidió mantenerlo",
+        "GTA VI sale el 19 de noviembre de 2026"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Grand Theft Auto (video game)»",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)"
+        },
+        {
+          "titulo": "GameSpot, «Original Grand Theft Auto 'almost canned'»",
+          "url": "https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "GTA VI",
+        "Grand Theft Auto"
+      ],
+      "fecha": "2026-10-28T00:26"
     }
   ]
 }
