@@ -40,6 +40,121 @@
         "Medicina"
       ],
       "fecha": "2026-10-27T19:41"
+    },
+    {
+      "youtube": "VzDGAwrxWM4",
+      "tipo": "short",
+      "titulo": "¿Edison inventó la bombilla? La verdad",
+      "epoca": "1879",
+      "lugar": "Newcastle y Menlo Park",
+      "resumen": "Edison no inventó la bombilla: Joseph Swan ya iluminó una sala en Newcastle meses antes. El mérito de Edison fue una bombilla práctica y duradera y el sistema para llevar la luz a las casas.",
+      "curiosidades": [
+        "Humphry Davy ya produjo luz con electricidad a principios del siglo XIX.",
+        "El 3 de febrero de 1879 Joseph Swan iluminó con sus bombillas una sala de unas 700 personas en Newcastle.",
+        "La bombilla que se suele citar como primer éxito de Edison es de octubre de 1879.",
+        "Swan y Edison acabaron uniendo sus empresas en Gran Bretaña (Ediswan)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Joseph Swan (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Joseph_Swan"
+        },
+        {
+          "titulo": "Linda Hall Library: Joseph Wilson Swan",
+          "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Inventos",
+        "Mitos"
+      ],
+      "fecha": "2026-10-27T19:52"
+    },
+    {
+      "youtube": "QJhFpKyG5Bc",
+      "tipo": "short",
+      "titulo": "¿Napoleón era bajito? El mito que nos creímos 200 años",
+      "epoca": "1769-1821",
+      "lugar": "Francia",
+      "resumen": "Napoleón medía alrededor de 1,68 m, una estatura normal para su época. El mito nace de confundir unidades francesas e inglesas y de las caricaturas británicas.",
+      "curiosidades": [
+        "Su altura se anotó como 5 pies y 2 pulgadas, pero en unidades francesas, más largas que las inglesas.",
+        "Equivale a unos 1,68 m, normal o algo por encima de la media francesa de la época.",
+        "El caricaturista británico James Gillray lo dibujaba diminuto y furioso («Little Boney», 1803)."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Fondation Napoléon: La taille de Napoléon",
+          "url": "https://www.napoleon.org/histoire-des-2-empires/articles/la-taille-de-napoleon"
+        },
+        {
+          "titulo": "History.com: Was Napoleon short?",
+          "url": "https://www.history.com/articles/napoleon-complex-short"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Mitos",
+        "Personajes"
+      ],
+      "fecha": "2026-10-27T20:00"
+    },
+    {
+      "youtube": "n2VzGwBZtVs",
+      "tipo": "short",
+      "titulo": "Los vikingos nunca llevaron cuernos (la culpa es de una ópera)",
+      "epoca": "Siglos VIII-XI",
+      "lugar": "Escandinavia",
+      "resumen": "El casco vikingo más completo que se conoce no tiene cuernos. La imagen popular nace del vestuario de una ópera de Wagner en 1876.",
+      "curiosidades": [
+        "El casco de Gjermundbu se encontró en Noruega en 1943 y no tiene cuernos.",
+        "Los cuernos se popularizaron con los diseños de Carl Emil Doepler para «El anillo del nibelungo» (1876).",
+        "Los cascos con cuernos del norte de Europa son de la Edad del Bronce, muy anteriores a los vikingos."
+      ],
+      "fuentes": [
+        {
+          "titulo": "History.com: Did Vikings really wear horned helmets?",
+          "url": "https://www.history.com/news/did-vikings-really-wear-horned-helmets"
+        },
+        {
+          "titulo": "History Hit: What types of helmets did Vikings wear?",
+          "url": "https://www.historyhit.com/types-of-viking-helmets/"
+        }
+      ],
+      "etiquetas": [
+        "Edad Media",
+        "Mitos"
+      ],
+      "fecha": "2026-10-27T20:00"
+    },
+    {
+      "youtube": "UgproHL8drs",
+      "tipo": "short",
+      "titulo": "Cleopatra vivió más cerca del iPhone que de las pirámides",
+      "epoca": "69-30 a. C.",
+      "lugar": "Egipto",
+      "resumen": "Cuando murió Cleopatra, la Gran Pirámide ya tenía unos 2.500 años. El primer iPhone llegó unos 2.000 años después de ella.",
+      "curiosidades": [
+        "La Gran Pirámide se terminó hacia el 2560 a. C. (las estimaciones varían).",
+        "Cleopatra VII murió en el 30 a. C.",
+        "El primer iPhone salió en 2007."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia: Gran Pirámide de Guiza",
+          "url": "https://es.wikipedia.org/wiki/Gran_Pir%C3%A1mide_de_Guiza"
+        },
+        {
+          "titulo": "Wikipedia: Cleopatra",
+          "url": "https://es.wikipedia.org/wiki/Cleopatra"
+        }
+      ],
+      "etiquetas": [
+        "Edad Antigua",
+        "Datos curiosos"
+      ],
+      "fecha": "2026-10-27T20:00"
     }
   ]
 }
