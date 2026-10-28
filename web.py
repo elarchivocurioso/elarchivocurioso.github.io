@@ -552,6 +552,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
   <nav aria-label="Principal">
     <a href="{raiz}index.html#expedientes">Expedientes</a>
     <a class="solo-ancho" href="{raiz}temas/index.html">Temas</a>
+    <a class="solo-ancho" href="{raiz}historias-de-miedo-reales.html">De miedo</a>
     <a href="{raiz}buscar.html">Buscar</a>
     <a class="sorprendeme" href="{raiz}buscar.html">Sorpréndeme</a>
   </nav>
@@ -757,6 +758,37 @@ def pagina_tema(tema: str, expedientes: list[dict], canal: dict) -> str:
                   descripcion=descripcion, ruta=ruta, jsonld=jsonld)
 
 
+# «Historias de miedo reales»: los expedientes más oscuros (por número o por sus etiquetas)
+CASOS_DE_MIEDO = {"A001", "A004", "A009", "A010", "A011"}
+PALABRAS_DE_MIEDO = ("miedo", "crimen", "crímenes", "misterio", "leyenda", "críptido", "drácula", "sin resolver",
+                     "fantasma", "halloween", "asesin", "terror", "vampir", "monstruo")
+
+
+def es_de_miedo(e: dict) -> bool:
+    texto = " ".join(e.get("etiquetas", []) + [e["titulo"]]).lower()
+    return e.get("num") in CASOS_DE_MIEDO or any(p in texto for p in PALABRAS_DE_MIEDO)
+
+
+def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
+    ruta = "historias-de-miedo-reales.html"
+    descripcion = ("Historias de miedo reales, documentadas y con fuentes: crímenes antiguos sin resolver, barcos fantasma, "
+                   "bestias que aterrorizaron regiones enteras y leyendas que nacieron de hechos reales.")
+    cuerpo = f"""<main class="ancho seccion">
+<div class="sello-rojo mono" style="margin-bottom:22px">Solo para valientes</div>
+<h1 style="font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:1.08; max-width:18ch">Historias de miedo <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">reales</span></h1>
+<div class="lectura" style="margin:22px 0 34px; max-width:720px">
+<p class="bloque" style="margin-top:0">No hace falta inventar nada para pasar miedo. La historia está llena de sucesos que darían para una película de terror: una granja donde alguien vivió escondido en el desván, un barco que apareció a la deriva sin nadie a bordo, una bestia que atacó durante tres años a los pastores de una región de Francia o un juicio en Galicia contra un hombre que decía convertirse en lobo.</p>
+<p class="bloque" style="margin-top:14px">En El Archivo Curioso los contamos como lo que son: casos reales, con sus fuentes, separando lo que se sabe de lo que se añadió después. Sin morbo, pero sin quitarles una pizca de inquietud.</p>
+</div>
+<div class="seccion-cab"><h2>Expedientes oscuros</h2><span class="cuenta">{len(expedientes)} casos. Léelos con la luz encendida.</span></div>
+<div class="rejilla">{"".join(ficha(e) for e in expedientes)}</div>
+</main>"""
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historias de miedo reales",
+              "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}
+    return pagina(f"Historias de miedo reales (y documentadas) · {canal['nombre']}", cuerpo, canal, ruta=ruta,
+                  descripcion=descripcion, jsonld=jsonld)
+
+
 def indice_temas(temas: dict[str, list[dict]], canal: dict) -> str:
     descripcion = "Todos los temas de El Archivo Curioso: estafas, desastres, mitos, cine, misterios y más."
     cuerpo = f"""<main class="ancho seccion">
@@ -832,7 +864,8 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
         {"@context": "https://schema.org", "@type": "Organization", "name": canal["nombre"], "url": f"{URL}/",
          "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]]},
     ]
-    return pagina(f"{canal['nombre']} | {canal['lema']}", cuerpo, canal, descripcion=canal["descripcion"],
+    return pagina(f"{canal['nombre']} | Historias de miedo reales y curiosidades de la historia", cuerpo, canal,
+                  descripcion=canal["descripcion"],
                   extra=FRASE_JS + (FILTRO_JS if expedientes else ""), jsonld=jsonld)
 
 
@@ -1128,6 +1161,8 @@ def generar() -> int:
     (SALIDA / "buscar.html").write_text(buscar(canal), encoding="utf-8")
     (SALIDA / "opiniones.html").write_text(pagina_opiniones(canal, opiniones), encoding="utf-8")
     (SALIDA / "apoya.html").write_text(pagina_apoya(canal, listados), encoding="utf-8")
+    de_miedo = [e for e in listados if es_de_miedo(e)]
+    (SALIDA / "historias-de-miedo-reales.html").write_text(pagina_miedo(de_miedo, canal), encoding="utf-8")
     (SALIDA / "privacidad.html").write_text(privacidad(canal), encoding="utf-8")
     (SALIDA / "acerca.html").write_text(acerca(canal), encoding="utf-8")
     (SALIDA / ".nojekyll").write_text("", encoding="utf-8")
@@ -1165,6 +1200,7 @@ def generar() -> int:
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))
     entradas.append((f"{URL}/apoya.html", hoy))
+    entradas.append((f"{URL}/historias-de-miedo-reales.html", hoy))
     if canal.get("opiniones_form"):   # la página de opiniones no se anuncia hasta que exista el formulario
         entradas.append((f"{URL}/opiniones.html", hoy))
     entradas.append((f"{URL}/acerca.html", hoy))
@@ -1181,9 +1217,11 @@ def generar() -> int:
                                        encoding="utf-8")
     # llms.txt: resumen del archivo para los asistentes de IA (propuesta llmstxt.org)
     lineas = [f"# {canal['nombre']}", "", f"> {canal['lema']}. {canal['descripcion']}", "",
-              "Archivo en español de historias reales que parecen inventadas: sucesos insólitos, mitos desmontados, "
-              "crímenes antiguos y curiosidades de cine e historia. Cada expediente tiene un artículo con fuentes, "
-              "una sección de qué es mito y qué no, y su vídeo en YouTube.", "", "## Expedientes", ""]
+              "Blog en español de historias de miedo reales y curiosidades de la historia: crímenes antiguos y sin "
+              "resolver, barcos fantasma, leyendas con base real, sucesos insólitos y mitos desmontados. Cada "
+              "expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.", "",
+              f"- [Historias de miedo reales]({URL}/historias-de-miedo-reales.html): selección de los casos más oscuros.",
+              "", "## Expedientes", ""]
     lineas += [f"- [{e['titulo']}]({URL}/expedientes/{e['_slug']}.html): {e.get('resumen', '')}" for e in listados]
     lineas += ["", "## Temas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
     lineas += ["", "## Más", "", f"- [Acerca del archivo y cómo trabajamos]({URL}/acerca.html)",

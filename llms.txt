@@ -1,8 +1,10 @@
 # El Archivo Curioso
 
-> Historias reales que parecen inventadas. Abrimos los expedientes de la historia: sucesos reales tan extraños que parecen inventados, personajes olvidados, misterios del pasado y curiosidades que no te contaron en clase.
+> Historias reales que parecen inventadas. Blog de historias de miedo reales y curiosidades de la historia: crímenes antiguos, casos sin resolver, barcos fantasma, leyendas con base real y sucesos tan extraños que parecen inventados. Todo documentado y con fuentes.
 
-Archivo en español de historias reales que parecen inventadas: sucesos insólitos, mitos desmontados, crímenes antiguos y curiosidades de cine e historia. Cada expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.
+Blog en español de historias de miedo reales y curiosidades de la historia: crímenes antiguos y sin resolver, barcos fantasma, leyendas con base real, sucesos insólitos y mitos desmontados. Cada expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.
+
+- [Historias de miedo reales](https://elarchivocurioso.github.io/historias-de-miedo-reales.html): selección de los casos más oscuros.
 
 ## Expedientes
 
