@@ -170,7 +170,6 @@ PARECIDAS = {"paranormal": "crimenes", "crimenes": "paranormal", "cine": "parano
 VERDAD = {"documentado": ("ok", "Documentado"), "discutido": ("disc", "Discutido"), "leyenda": ("ley", "Leyenda")}
 
 CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap');
 :root { --fondo:#0A0807; --tarjeta:#14100E; --tarjeta-2:#1D1714; --borde:rgba(235,221,191,.09); --borde-2:rgba(235,221,191,.2);
         --texto:#EBDDBF; --texto-2:#C9BA9B; --texto-3:#857A69; --oro:#C8A04A; --rojo:#D2463C; --sangre:#7A1610;
         --brillo:0 0 24px rgba(210,70,60,.45); --verde:#5E8C4A; --ambar:#D49A2A; --papel:#EBDDBF; --radio:14px; }
@@ -290,31 +289,45 @@ header nav a:hover { color:#fff; }
 .filtros button:hover { border-color:#fff; color:#fff; }
 .filtros button.activo { background:#fff; color:#000; border-color:#fff; }
 
-/* Tarjetas: la imagen manda, el texto encima */
-.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
-.ficha { --acento:var(--rojo); position:relative; display:flex; flex-direction:column; justify-content:flex-end; min-height:360px; border-radius:var(--radio);
-  overflow:hidden; text-decoration:none; color:#fff; background:var(--tarjeta); border:1px solid var(--borde); isolation:isolate;
+/* Tarjetas: la foto arriba (entera, sin cortar), el texto debajo */
+.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:18px; }
+.ficha { --acento:var(--rojo); position:relative; display:flex; flex-direction:column; border-radius:var(--radio); overflow:hidden;
+  text-decoration:none; color:var(--texto); background:linear-gradient(180deg,var(--tarjeta),#0E0B0A); border:1px solid var(--borde);
   transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .4s, box-shadow .4s; height:100%; }
-.ficha .img { position:absolute; inset:0; z-index:-2; background:var(--tarjeta-2) center/cover no-repeat;
-  filter:grayscale(.9) contrast(1.15) brightness(.55); transform:scale(1.02); transition:transform 1.2s cubic-bezier(.2,.7,.2,1), filter .6s; }
-.ficha::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg,rgba(10,8,7,.1) 0%,rgba(10,8,7,.55) 45%,rgba(10,8,7,.97) 100%); }
-.ficha::after { content:""; position:absolute; inset:0; z-index:-1; opacity:0; transition:opacity .5s;
-  background:radial-gradient(circle at 50% 120%, var(--acento), transparent 60%); mix-blend-mode:screen; }
-.ficha:hover, .ficha:focus-visible { transform:translateY(-6px); border-color:var(--acento); box-shadow:0 24px 60px -24px rgba(0,0,0,.95), 0 0 0 1px var(--acento); color:#fff; }
-.ficha:hover::after, .ficha:focus-visible::after { opacity:.35; }
-.ficha:hover .img, .ficha:focus-visible .img { transform:scale(1.09); filter:grayscale(.2) contrast(1.1) brightness(.7) sepia(.2); animation:parpadeo .9s steps(1) 1; }
-@keyframes parpadeo { 0% { filter:brightness(.2) grayscale(1); } 12% { filter:brightness(.8) grayscale(.2); } 18% { filter:brightness(.15) grayscale(1); } 30% { filter:none; } }
+.ficha .foto { position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--tarjeta-2); }
+.ficha .img { display:block; width:100%; height:100%; object-fit:cover; filter:grayscale(.85) contrast(1.1) brightness(.62) sepia(.15);
+  transition:transform 1.2s cubic-bezier(.2,.7,.2,1), filter .6s; }
+.ficha .foto::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(14,11,10,.85)),
+  radial-gradient(circle at 50% 120%, var(--acento), transparent 65%); opacity:.9; mix-blend-mode:normal; pointer-events:none; }
+.ficha:hover, .ficha:focus-visible { transform:translateY(-6px); border-color:var(--acento); box-shadow:0 24px 60px -24px rgba(0,0,0,.95), 0 0 30px -12px var(--acento); color:var(--texto); }
+.ficha:hover .img, .ficha:focus-visible .img { transform:scale(1.07); filter:grayscale(.15) contrast(1.05) brightness(.85) sepia(.15); animation:parpadeo .9s steps(1) 1; }
+@keyframes parpadeo { 0% { filter:brightness(.2) grayscale(1); } 12% { filter:brightness(.9) grayscale(.2); } 18% { filter:brightness(.15) grayscale(1); } 30% { filter:none; } }
 .ficha:focus-visible { outline:2px solid #fff; outline-offset:2px; }
-.ficha .tipo { position:absolute; right:12px; top:12px; padding:3px 9px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.14em;
-  background:rgba(0,0,0,.55); backdrop-filter:blur(6px); color:#fff; border-radius:999px; border:1px solid rgba(255,255,255,.18); }
-.ficha .leido-marca { position:absolute; left:12px; top:12px; padding:3px 9px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.14em;
+.ficha .tipo { position:absolute; right:10px; top:10px; z-index:1; padding:3px 9px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.14em;
+  background:rgba(0,0,0,.6); backdrop-filter:blur(6px); color:#fff; border-radius:999px; border:1px solid rgba(255,255,255,.18); }
+.ficha .leido-marca { position:absolute; left:10px; top:10px; z-index:1; padding:3px 9px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.14em;
   background:var(--oro); color:#000; border-radius:999px; display:none; }
 .ficha.leido .leido-marca { display:block; }
-.ficha .txt { padding:16px 16px 18px; display:flex; flex-direction:column; gap:7px; }
+.ficha .puesto { position:absolute; left:12px; bottom:4px; z-index:1; font-family:'Playfair Display',serif; font-weight:900; font-size:52px; line-height:1;
+  color:var(--rojo); text-shadow:0 0 24px rgba(0,0,0,.9), var(--brillo); }
+.ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
 .ficha .num { color:var(--acento); font-size:11px; }
-.ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:56px; line-height:.9; color:var(--rojo); text-shadow:var(--brillo); }
-.ficha h3 { font-weight:700; font-size:21px; line-height:1.18; text-shadow:0 2px 16px rgba(0,0,0,.9); }
-.ficha .meta { font-size:13px; color:rgba(235,221,191,.65); }
+.ficha h3 { font-weight:700; font-size:19px; line-height:1.22; }
+.ficha .meta { font-size:13px; color:var(--texto-3); margin-top:auto; }
+/* Filas que se deslizan en horizontal (lo último, cada temática, el Top 10) */
+.fila, .fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(250px,280px); gap:16px; overflow-x:auto; overflow-y:hidden;
+  padding:8px 2px 16px; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:var(--rojo) transparent; }
+.fila .ficha, .fila-top .ficha { scroll-snap-align:start; }
+.fila-mas { display:flex; align-items:center; justify-content:center; border:1px dashed var(--borde-2); border-radius:var(--radio); min-height:200px;
+  text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--texto-2); scroll-snap-align:start; }
+.fila-mas:hover { border-color:var(--rojo); color:#fff; }
+.cuenta a, .ver-todo { color:var(--rojo); text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+.ver-todo:hover { color:#fff; }
+.bloque-top { padding-bottom:24px; }
+.fila-tema { padding-top:26px; padding-bottom:10px; }
+.fila-tema .seccion-cab { margin-bottom:12px; }
+.fila-tema h2 { font-size:clamp(24px,3vw,32px) !important; }
+.fila-tema .kicker { color:var(--t-acento) !important; }
 .etiqueta-tema { align-self:flex-start; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.12em; text-transform:uppercase;
   color:var(--acento); background:rgba(0,0,0,.45); border:1px solid currentColor; border-radius:999px; padding:2px 9px; }
 .semaforo { display:inline-flex; gap:4px; flex-wrap:wrap; }
@@ -322,12 +335,6 @@ header nav a:hover { color:#fff; }
 .ok { background:rgba(94,140,74,.25); color:#b4dc9c; }
 .disc { background:rgba(212,154,42,.22); color:#f4c96e; }
 .ley { background:rgba(210,70,60,.25); color:#ff9f95; }
-/* Top 10 de Halloween: fila que se desliza en horizontal (cuenta atrás) */
-.fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(250px,280px); gap:16px; overflow-x:auto; overflow-y:hidden;
-  padding-top:8px; padding-bottom:14px; scroll-snap-type:x mandatory; scrollbar-color:var(--rojo) transparent; }
-.fila-top .ficha { scroll-snap-align:start; }
-.cuenta a { color:var(--rojo); text-decoration:none; margin-left:6px; }
-.bloque-top { padding-bottom:24px; }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
 .vacio .logo { --t:90px; margin:0 auto 18px; }
 .chips { display:flex; flex-wrap:wrap; gap:8px; }
@@ -530,6 +537,21 @@ footer a { color:var(--texto-2); }
 footer small { display:inline-block; margin-top:8px; font-size:12px; }
 footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--texto); }
 
+/* Misterio: con ratón, la página está en penumbra y una linterna alumbra donde miras (no en las historias, para leer bien) */
+.oscuridad { position:fixed; inset:0; z-index:48; pointer-events:none; opacity:0; transition:opacity 1.2s ease;
+  background:radial-gradient(circle 300px at var(--cx,50%) var(--cy,40%), transparent 0, rgba(0,0,0,.18) 45%, rgba(0,0,0,.42) 100%); }
+.con-linterna .oscuridad { opacity:1; }
+body:has(.hist) .oscuridad { display:none; }
+/* Ojos que se abren de vez en cuando en la oscuridad de la portada */
+.ojos { position:absolute; display:flex; gap:14px; opacity:0; animation:mirada 11s ease-in-out infinite; }
+.ojos i { width:12px; height:6px; border-radius:50%; background:#FF3B2E; box-shadow:0 0 12px 3px rgba(255,59,46,.7); animation:parpado 11s steps(1) infinite; }
+.ojos.uno { left:72%; top:22%; }
+.ojos.dos { left:86%; top:64%; gap:10px; transform:scale(.7); animation-delay:5.5s; }
+.ojos.dos i { animation-delay:5.5s; }
+@keyframes mirada { 0%,58%,100% { opacity:0; } 62%,80% { opacity:.85; } }
+@keyframes parpado { 0%,69% { transform:scaleY(1); } 70% { transform:scaleY(.1); } 72%,100% { transform:scaleY(1); } }
+@media (max-width:860px) { .ojos.uno { left:78%; top:8%; } .ojos.dos { display:none; } }
+
 /* Quien pide menos movimiento, lo tiene: sin grano, niebla, parpadeos ni linterna que se mueve */
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
@@ -538,6 +560,7 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
   .ficha, .ficha .img, .tema, .tema .fondo-img { transition:none; }
   .ficha:hover .img { animation:none; }
   .con-js .aparece { opacity:1; transform:none; transition:none; }
+  .ojos, .ojos i { animation:none; opacity:0; } .oscuridad { display:none; }
 }
 """
 
@@ -571,6 +594,15 @@ ARANA_SVG = """<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g st
 <circle cx="18.6" cy="14" r=".9" fill="#E0782F"/><circle cx="21.4" cy="14" r=".9" fill="#E0782F"/></svg>"""
 
 MURCIELAGO_SVG = """<svg viewBox="0 0 64 30" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M32 9c-1.6-2.6-3.6-3.8-5.6-3.8 1 1.8 1 3 .2 4C22.4 5 15 3.4 8 5.6c3.8 1.8 5.8 4.8 5.8 8.6 3-1.8 6.8-1.8 9 1 1.2-2.8 3.8-3.8 6-2.8.8-2 2-3 3.2-3s2.4 1 3.2 3c2.2-1 4.8 0 6 2.8 2.2-2.8 6-2.8 9-1 0-3.8 2-6.8 5.8-8.6-7-2.2-14.4-.6-18.6 3.6-.8-1-.8-2.2.2-4-2 0-4 1.2-5.6 3.8z"/></svg>"""
+
+# Calabaza con la cara encendida y fantasma, para la portada en Halloween
+CALABAZA_SVG = """<svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg"><path d="M58 14c-2-8 2-13 9-14l2 5c-5 1-6 5-5 9z" fill="#3E4A1E"/>
+<ellipse cx="34" cy="62" rx="30" ry="40" fill="#C2561A"/><ellipse cx="86" cy="62" rx="30" ry="40" fill="#C2561A"/><ellipse cx="60" cy="60" rx="34" ry="44" fill="#D9682A"/>
+<path d="M60 18v84M36 26c-10 20-10 52 0 74M84 26c10 20 10 52 0 74" stroke="#A9440F" stroke-width="2" fill="none" opacity=".6"/>
+<g class="cara"><path d="M34 48l14 4-12 9z M86 48l-14 4 12 9z" fill="#FFD27A"/><path d="M56 62l4-8 4 8z" fill="#FFD27A"/>
+<path d="M30 74q30 22 60 0l-6 2-4 7-6-5-6 6-6-6-6 5-4-7z" fill="#FFD27A"/></g></svg>"""
+FANTASMA_SVG = """<svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg"><path d="M30 2C14 2 6 14 6 30v36l8-6 8 6 8-6 8 6 8-6 8 6V30C54 14 46 2 30 2z" fill="#EBDDBF"/>
+<ellipse cx="22" cy="28" rx="4" ry="6" fill="#120E0B"/><ellipse cx="38" cy="28" rx="4" ry="6" fill="#120E0B"/><ellipse cx="30" cy="42" rx="5" ry="6" fill="#120E0B"/></svg>"""
 
 HALLOWEEN_CSS = """
 /* Halloween: solo con la clase .halloween en <html>, que pone el navegador en temporada */
@@ -616,12 +648,32 @@ HALLOWEEN_CSS = """
 @keyframes vuelo { 0% { transform:translate(0,0); } 25% { transform:translate(30vw,-28px); } 50% { transform:translate(60vw,18px); }
   75% { transform:translate(90vw,-22px); } 100% { transform:translate(calc(100vw + 160px),6px); } }
 @keyframes aleteo { from { transform:scaleY(1); } to { transform:scaleY(.35); } }
+/* Calabazas encendidas al pie de la portada y un fantasma que cruza de vez en cuando */
+.calabaza { position:absolute; bottom:-6px; width:clamp(64px,8vw,110px); z-index:1; pointer-events:none; filter:drop-shadow(0 0 22px rgba(224,120,47,.55)); }
+.calabaza svg { display:block; width:100%; height:auto; }
+.calabaza.izq { left:-10px; transform:rotate(-6deg); }
+.calabaza.der { right:4%; width:clamp(48px,6vw,80px); transform:rotate(5deg); }
+.calabaza .cara { animation:vela-calabaza 2.6s ease-in-out infinite alternate; }
+@keyframes vela-calabaza { 0% { opacity:1; } 30% { opacity:.7; } 55% { opacity:.95; } 80% { opacity:.6; } 100% { opacity:1; } }
+.fantasma { position:absolute; top:30%; left:-90px; width:54px; opacity:0; z-index:0; pointer-events:none; filter:blur(.5px) drop-shadow(0 0 18px rgba(235,221,191,.45));
+  animation:fantasma 26s ease-in-out infinite 4s; }
+.fantasma svg { display:block; width:100%; }
+@keyframes fantasma { 0% { transform:translate(0,0); opacity:0; } 6% { opacity:.22; } 22% { transform:translate(38vw,-40px); opacity:.18; }
+  34% { transform:translate(70vw,10px); opacity:0; } 100% { transform:translate(70vw,10px); opacity:0; } }
+/* En temporada, los rótulos de sección se vuelven color calabaza */
+.halloween .seccion-cab .kicker { color:var(--calabaza); }
+.halloween .seccion-cab .kicker::before { content:""; display:inline-block; width:7px; height:7px; margin-right:8px; border-radius:50%; vertical-align:1px;
+  background:var(--calabaza); box-shadow:0 0 10px 2px rgba(224,120,47,.6); animation:llama 1.4s ease-in-out infinite alternate; }
+.halloween .fila, .halloween .fila-top { scrollbar-color:var(--calabaza) transparent; }
+.halloween .etiqueta-caso { color:var(--calabaza); }
+.halloween .etiqueta-caso::before { background:var(--calabaza); box-shadow:0 0 16px rgba(224,120,47,.8); }
+.halloween .escena .foto-luz { filter:grayscale(.2) sepia(.6) contrast(1.15) brightness(.6) saturate(1.5) hue-rotate(-10deg); }
 @media (max-width:1192px) { .niebla { left:-16px; right:-16px; } }
 @media (max-width:720px) { .cinta-halloween { font-size:11px; letter-spacing:.08em; } .cinta-halloween .largo { display:none; }
   .telarana.der { width:34vw; top:104px; } .telarana.izq { display:none; } .arana { right:12%; }
   @keyframes hilo { 0%,15% { height:50px; } 60% { height:150px; } 100% { height:120px; } } }
 @media (prefers-reduced-motion:reduce) {
-  .vela, .arana, .arana svg, .niebla { animation:none; } .murcielagos { display:none; }
+  .vela, .arana, .arana svg, .niebla, .calabaza .cara, .halloween .seccion-cab .kicker::before { animation:none; } .murcielagos, .fantasma { display:none; }
 }
 """
 
@@ -648,7 +700,9 @@ def deco_portada() -> str:
     """Araña, niebla y murciélagos para la portada (solo se ven con la clase .halloween)."""
     murcielagos = "".join(f'<div class="murcielago">{MURCIELAGO_SVG}</div>' for _ in range(3))
     return (f'<div class="deco-halloween" aria-hidden="true"><div class="niebla"></div>'
-            f'<div class="murcielagos">{murcielagos}</div><div class="arana">{ARANA_SVG}</div></div>')
+            f'<div class="murcielagos">{murcielagos}</div><div class="arana">{ARANA_SVG}</div>'
+            f'<div class="fantasma">{FANTASMA_SVG}</div><div class="calabaza izq">{CALABAZA_SVG}</div>'
+            f'<div class="calabaza der">{CALABAZA_SVG}</div></div>')
 
 
 # Revelar lo tachado, la linterna, la barra de lectura, «Tu archivo» (folios leídos), el test y «Al azar»; en todas las páginas
@@ -702,6 +756,20 @@ BASE_JS = """
     } else {
       window.addEventListener('pointermove', function (ev) { mover(ev.clientX, ev.clientY); }, { passive: true });
     }
+  }
+
+  // Penumbra con linterna: solo con ratón (en táctil no tiene sentido) y si no se pide menos movimiento
+  if (!tactil && !quieto && document.querySelector('.oscuridad')) {
+    var pendiente = false, cx = 0, cy = 0;
+    window.addEventListener('pointermove', function (ev) {
+      cx = ev.clientX; cy = ev.clientY;
+      if (pendiente) return; pendiente = true;
+      requestAnimationFrame(function () {
+        var r = document.documentElement; r.style.setProperty('--cx', cx + 'px'); r.style.setProperty('--cy', cy + 'px');
+        r.classList.add('con-linterna'); pendiente = false;
+      });
+    }, { passive: true });
+    document.addEventListener('pointerleave', function () { document.documentElement.classList.remove('con-linterna'); });
   }
 
   // Folio: barra de lectura (cuánto has leído)
@@ -792,16 +860,28 @@ FRASE_JS = """
 
 FILTRO_JS = """
 <script>
-document.querySelectorAll('.filtros button').forEach(function (b) {
-  b.addEventListener('click', function () {
-    document.querySelectorAll('.filtros button').forEach(function (x) { x.classList.remove('activo'); x.setAttribute('aria-pressed', 'false'); });
-    b.classList.add('activo'); b.setAttribute('aria-pressed', 'true');
-    var f = b.dataset.filtro;
-    document.querySelectorAll('.rejilla .ficha').forEach(function (c) {
-      c.style.display = (f === 'todos' || c.dataset.tipo === f) ? '' : 'none';
+// Filtros de las rejillas: cada grupo («tipo»: vídeo o Short; «tema»: la temática) se combina con los demás
+(function () {
+  var elegido = {};
+  document.querySelectorAll('.filtros button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var grupo = b.dataset.grupo || 'tipo';
+      document.querySelectorAll('.filtros button[data-grupo="' + grupo + '"], .filtros button:not([data-grupo])').forEach(function (x) {
+        if ((x.dataset.grupo || 'tipo') === grupo) { x.classList.remove('activo'); x.setAttribute('aria-pressed', 'false'); }
+      });
+      b.classList.add('activo'); b.setAttribute('aria-pressed', 'true');
+      elegido[grupo] = b.dataset.filtro;
+      var n = 0;
+      document.querySelectorAll('.rejilla .ficha').forEach(function (c) {
+        var ve = (!elegido.tipo || elegido.tipo === 'todos' || c.dataset.tipo === elegido.tipo) &&
+                 (!elegido.tema || elegido.tema === 'todos' || c.dataset.tema === elegido.tema);
+        c.style.display = ve ? '' : 'none'; if (ve) n++;
+      });
+      var cuenta = document.getElementById('cuenta-folios');
+      if (cuenta) cuenta.textContent = n + (n === 1 ? ' folio' : ' folios');
     });
   });
-});
+})();
 </script>
 """
 
@@ -914,7 +994,10 @@ TOTAL_FOLIOS = 0   # lo fija generar(): cuántos folios hay, para el contador «
 def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "",
            ruta: str = "", imagen: str = "compartir.png", tipo_og: str = "website", jsonld=None,
            folio: str = "") -> str:
-    desc = escape(descripcion or canal["lema"])
+    texto = (descripcion or canal["lema"]).strip()
+    if len(texto) > 158:   # Google corta hacia los 155-160 caracteres: mejor cortar nosotros, en una palabra
+        texto = texto[:155].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+    desc = escape(texto)
     halloween = es_halloween()
     # Etiquetas para buscadores (Google, Bing) y para las vistas previas al compartir en redes
     seo = (f'<link rel="canonical" href="{URL}/{ruta}">\n'
@@ -946,18 +1029,20 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <meta name="description" content="{desc}">
 {seo}<link rel="icon" type="image/png" sizes="32x32" href="{raiz}favicon-32.png">
 <link rel="apple-touch-icon" href="{raiz}apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap">
 <style>{CSS}{HALLOWEEN_CSS if halloween else ""}</style>
 <script>document.documentElement.classList.add('con-js');</script>
 {HALLOWEEN_INICIO if halloween else ""}
 </head>
 <body data-raiz="{raiz}" data-total="{TOTAL_FOLIOS}"{f' data-folio="{folio}"' if folio else ""}>
-<div class="niebla-fondo" aria-hidden="true"></div>
+<div class="niebla-fondo" aria-hidden="true"></div><div class="oscuridad" aria-hidden="true"></div>
 <header><div class="ancho">
   <a class="logo" style="--t:40px" href="{raiz}index.html" aria-label="Inicio">{SELLO_MINI_SVG}</a>
   <a class="nombre" href="{raiz}index.html">Folio <em>13</em></a>
   <nav aria-label="Principal">
     <a href="{raiz}index.html#tematicas">Temáticas</a>
-    <a class="solo-ancho" href="{raiz}index.html#folios">Todos los folios</a>
+    <a class="solo-ancho" href="{raiz}folios.html">Todos los folios</a>
     <a class="solo-ancho" href="{raiz}mapa.html">Mapa</a>
     <a class="solo-ancho" href="{raiz}acerca.html">Cómo verificamos</a>
     <a class="solo-ancho" href="{raiz}apoya.html">Apoyar</a>
@@ -1141,25 +1226,29 @@ def semaforo_mini(e: dict) -> str:
             + "</div>") if estados else ""
 
 
+def titulo_corto(e: dict) -> str:
+    """Título para tarjetas y listas: sin «TOP N HALLOWEEN:» y sin la coletilla de serie («| Cine maldito nº 1»)."""
+    return re.sub(r"\s*\|\s*[^|]*$", "", titulo_limpio(e)["titulo"]).strip() or titulo_limpio(e)["titulo"]
+
+
 def ficha(e: dict, raiz: str = "", con_tema: bool = True) -> str:
-    """La ÚNICA forma de pintar una tarjeta (portada, temáticas, etiquetas, «De miedo»…). Los del Top 10 de Halloween
-    llevan el puesto en grande («Nº 7») y el título sin «TOP 7 HALLOWEEN:»."""
+    """La ÚNICA forma de pintar una tarjeta (portada, temáticas, etiquetas, «De miedo»…). La foto va entera arriba,
+    como <img> con texto alternativo (Google Imágenes) y carga perezosa; el título, limpio, sin tachar.
+    Los del Top 10 de Halloween llevan el puesto en grande («Nº 7»)."""
     tipo = "short" if e.get("tipo") == "short" else "video"
     meta = " · ".join(x for x in (e.get("lugar", ""), fecha_larga(e["fecha"])) if x)
     img = e["_img"] if e["_img"].startswith("http") else raiz + e["_img"]
     puesto = puesto_top(e)
-    cabeza = (f'<div class="puesto">Nº {puesto}</div>' if puesto
-              else f'<div class="num mono">{escape(num_ficha(e))}</div>')
-    visible = titulo_limpio(e)
+    titulo = titulo_corto(e)
     tema = (f'<span class="etiqueta-tema">{escape(tematica(e)["nombre"])}</span>' if con_tema and e["tematica"] else "")
     clase = f' t-{e["tematica"]}" style="--acento:var(--t-acento)' if e["tematica"] else ""
-    return (f'<a class="ficha{clase}" data-tipo="{tipo}" data-folio="{e["_n"]}" '
+    return (f'<a class="ficha{clase}" data-tipo="{tipo}" data-tema="{e["tematica"]}" data-folio="{e["_n"]}" '
             f'href="{raiz}expedientes/{e["_slug"]}.html">'
-            f'<div class="img" style="background-image:url({escape(img)})"></div>'
+            f'<div class="foto"><img class="img" src="{escape(img)}" alt="{escape(titulo)}" loading="lazy" decoding="async">'
             f'<span class="leido-marca">✓ LEÍDO</span><span class="tipo">{"SHORT" if tipo == "short" else "VÍDEO"}</span>'
-            f'<div class="txt">{cabeza}{tema}'
-            f'<h3 aria-label="{escape(visible["titulo"])}">{titulo_html(visible)}</h3><div class="meta">{escape(meta)}</div>'
-            f'{semaforo_mini(e)}</div></a>')
+            + (f'<span class="puesto">Nº {puesto}</span>' if puesto else "") + '</div>'
+            f'<div class="txt"><div class="num mono">{escape(num_ficha(e))}</div>{tema}'
+            f'<h3>{escape(titulo)}</h3><div class="meta">{escape(meta)}</div>{semaforo_mini(e)}</div></a>')
 
 
 def donde_cuando(e: dict) -> str:
@@ -1362,6 +1451,44 @@ def pagina_tematica(clave: str, i: int, todas: list[dict], listados: list[dict],
                   descripcion=descripcion, ruta=ruta, jsonld=jsonld, extra=FILTRO_JS)
 
 
+def pagina_folios(listados: list[dict], canal: dict) -> str:
+    """Todos los folios en una rejilla, con filtros por formato y por temática."""
+    tipos = ('<div class="filtros" role="group" aria-label="Formato">'
+             '<button class="activo" data-grupo="tipo" data-filtro="todos" aria-pressed="true">Todo</button>'
+             '<button data-grupo="tipo" data-filtro="video" aria-pressed="false">Vídeos</button>'
+             '<button data-grupo="tipo" data-filtro="short" aria-pressed="false">Shorts</button></div>')
+    temas = ('<div class="filtros" role="group" aria-label="Temática" style="margin-top:10px">'
+             '<button class="activo" data-grupo="tema" data-filtro="todos" aria-pressed="true">Todas las temáticas</button>'
+             + "".join(f'<button data-grupo="tema" data-filtro="{k}" aria-pressed="false">{escape(t["nombre"])}</button>'
+                       for k, t in TEMATICAS.items() if any(e["tematica"] == k for e in listados)) + "</div>")
+    descripcion = (f"Los {len(listados)} folios de Folio 13: historias reales de crímenes, leyendas, cine maldito, mitos, "
+                   "robos y desastres, todas con sus fuentes.")
+    cuerpo = f"""<main class="ancho seccion">
+<div class="seccion-cab"><div><span class="kicker">El archivo completo</span><h1 style="font-size:clamp(34px,5vw,54px); line-height:1.05">Todos los folios</h1>
+<span class="cuenta" id="cuenta-folios">{len(listados)} folios</span></div></div>
+{tipos}{temas}
+<div class="rejilla" style="margin-top:22px">{"".join(ficha(e) for e in listados)}</div>
+</main>"""
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Todos los folios", "url": f"{URL}/folios.html",
+              "inLanguage": "es", "description": descripcion}
+    return pagina(f"Todos los folios: historias reales con fuentes · {MARCA}", cuerpo, canal, ruta="folios.html",
+                  descripcion=descripcion, jsonld=jsonld, extra=FILTRO_JS)
+
+
+def pagina_404(listados: list[dict], canal: dict) -> str:
+    """Si alguien llega a una dirección que no existe: en vez de un error, le ofrecemos folios (y no se pierde la visita)."""
+    cuerpo = f"""<main class="ancho seccion" style="text-align:center">
+<div class="logo" style="--t:120px; margin:20px auto 18px">{sello_svg("-404")}</div>
+<h1 style="font-size:clamp(34px,6vw,64px); line-height:1.05">Este folio no existe.</h1>
+<p class="nota" style="margin:12px auto 26px; max-width:520px; font-size:18px">O alguien lo hizo desaparecer. Prueba con uno de estos, que sí están documentados.</p>
+<div class="botones" style="justify-content:center; margin-bottom:34px"><a class="boton" href="/index.html">Volver al inicio</a>
+<a class="boton secundario" href="/buscar.html">Buscar un folio</a></div>
+<div class="rejilla" style="text-align:left">{"".join(ficha(e, "/") for e in listados[:4])}</div>
+</main>"""
+    return pagina(f"Folio no encontrado · {MARCA}", cuerpo, canal, raiz="/", ruta="404.html",
+                  descripcion="Esta página no existe. Vuelve a Folio 13 para leer historias reales con fuentes.")
+
+
 def pagina_mapa(listados: list[dict], canal: dict) -> str:
     """Todos los folios en el mapa del mundo, con el color de su temática."""
     leyenda = "".join(f'<li class="t-{k}"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
@@ -1484,25 +1611,28 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
     abrir = (f'<a class="boton" href="expedientes/{expedientes[0]["_slug"]}.html">Abrir el último folio</a>'
              if expedientes else "")
     datos_frases = json.dumps(frases, ensure_ascii=False).replace("</", "<\\/")
-    if expedientes:
-        lista = ('<div class="filtros" role="group" aria-label="Filtrar">'
-                 '<button class="activo" data-filtro="todos" aria-pressed="true">Todos</button>'
-                 '<button data-filtro="video" aria-pressed="false">Vídeos</button>'
-                 '<button data-filtro="short" aria-pressed="false">Shorts</button></div>')
-        # La rejilla general: episodios y Shorts independientes. El Top 10 va en su propio bloque
-        generales = [e for e in expedientes if not puesto_top(e)]
-        rejilla = f'<div class="rejilla">{"".join(ficha(e) for e in generales)}</div>'
-    else:
-        lista = ""
-        rejilla = (f'<div class="vacio"><div class="logo">{sello_svg("-vacio")}</div>'
-                   '<p>Los primeros folios se están documentando.<br>Muy pronto los encontrarás aquí.</p></div>')
+    # Portada por filas, como una plataforma: lo último, y luego una fila por temática (cada una lleva a su página)
+    ultimos = expedientes[:10]
+    fila_ultimos = ('<div class="fila">' + "".join(ficha(e) for e in ultimos)
+                    + f'<a class="fila-mas" href="folios.html">Ver los {len(expedientes)} folios →</a></div>') if expedientes else ""
+    filas_tema = ""
+    for n, clave in enumerate(TEMATICAS, 1):
+        propios = [e for e in expedientes if e["tematica"] == clave]
+        if not propios:
+            continue
+        t = TEMATICAS[clave]
+        filas_tema += (f'<section class="fila-tema t-{clave}"><div class="seccion-cab"><div><span class="kicker">Temática {n:02d}</span>'
+                       f'<h2>{escape(t["nombre"])}</h2></div><a class="ver-todo" href="{clave}/">Ver los {len(propios)} →</a></div>'
+                       '<div class="fila">' + "".join(ficha(e, con_tema=False) for e in propios[:10])
+                       + (f'<a class="fila-mas" href="{clave}/">Ver todos →</a>' if len(propios) > 10 else "")
+                       + "</div></section>")
     tarjetas = "".join(tarjeta_tematica(k, i, [e for e in expedientes if e["tematica"] == k])
                        for i, k in enumerate(TEMATICAS, 1))
     top = bloque_top(expedientes, enlace=True) if es_halloween() else ""
     foto = escape(p.get("img") or imagen_de(expedientes))
     cuerpo = f"""<main class="ancho">
 <section class="portada">
-  <div class="escena" aria-hidden="true"><div class="foto" style="background-image:url({foto})"></div><div class="foto-luz" style="background-image:url({foto})"></div></div>
+  <div class="escena" aria-hidden="true"><div class="foto" style="background-image:url({foto})"></div><div class="foto-luz" style="background-image:url({foto})"></div><div class="ojos uno"><i></i><i></i></div><div class="ojos dos"><i></i><i></i></div></div>
   {deco_portada() if es_halloween() else ""}
   <div class="portada-grid">
   <div>
@@ -1525,14 +1655,18 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
   <a class="bajar mono" href="#tematicas">Abre el archivo</a>
   <script type="application/json" id="frases">{datos_frases}</script>
 </section>
-<section id="tematicas" class="seccion" style="padding-top:12px">
+<section class="seccion" style="padding-top:12px; padding-bottom:20px">
+  <div class="seccion-cab"><div><span class="kicker">Recién abiertos</span><h2>Lo último del archivo</h2></div><a class="ver-todo" href="folios.html">Ver todos →</a></div>
+  {fila_ultimos}
+</section>
+<section id="tematicas" class="seccion" style="padding-top:20px">
   <div class="seccion-cab"><div><span class="kicker">7 temáticas</span><h2>Elige por dónde empezar</h2></div><span class="cuenta"><a href="mapa.html">Ver todos en el mapa →</a></span></div>
   <div class="rejilla-temas">{tarjetas}</div>
 </section>
 {f'<section class="seccion bloque-top">{top}</section>' if top else ""}
-<section id="folios" class="seccion">
-  <div class="seccion-cab"><div><span class="kicker">El archivo completo</span><h2>Todos los folios</h2><span class="cuenta">{len([e for e in expedientes if not puesto_top(e)])} historias. Del más reciente al más antiguo.</span></div>{lista}</div>
-  {rejilla}
+<section id="folios" class="seccion" style="padding-top:20px">
+  <div class="seccion-cab"><div><span class="kicker">Por temática</span><h2>Abre un archivo</h2></div><a class="ver-todo" href="folios.html">Todos los folios →</a></div>
+  {filas_tema}
 </section>
 <section class="seccion" style="padding-top:0">
   <div class="seccion-cab"><div><span class="kicker">Atajos</span><h2>Por etiquetas</h2></div></div>
@@ -1548,7 +1682,7 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
     ]
     return pagina(f"{MARCA} | {canal['lema']} Historias reales con fuentes", cuerpo, canal,
                   descripcion=canal["descripcion"],
-                  extra=FRASE_JS + (FILTRO_JS if expedientes else ""), jsonld=jsonld)
+                  extra=FRASE_JS, jsonld=jsonld)
 
 
 NOTA_FUENTE = re.compile(r"\[(\d{1,2})\]")
@@ -1686,7 +1820,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         final = (f'<div class="sabes-demasiado"><p class="grande">Parecía inventado.</p>'
                  f'<p class="peque">Pero está documentado. Y quedan más folios por abrir.</p>'
                  f'<a class="boton" href="{otro["_slug"]}.html">Abrir el próximo folio</a></div>')
-    miga = (f'<div class="miga mono"><a href="../index.html#folios">{escape(num_ficha(e).split(" · ")[0])}</a>'
+    miga = (f'<div class="miga mono"><a href="../folios.html">{escape(num_ficha(e).split(" · ")[0])}</a>'
             + (f' · <a href="../{e["tematica"]}/">{escape(t["nombre"])}</a>' if e["tematica"] else "")
             + (f' · {escape(e["epoca"])}' if e.get("epoca") else "")
             + (f' · Top 10 de Halloween, nº {puesto_top(e)}' if puesto_top(e) else "") + "</div>")
@@ -1738,7 +1872,11 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         articulo["contentLocation"] = {"@type": "Place", "name": e["lugar"]}
     if e.get("epoca"):
         articulo["temporalCoverage"] = e["epoca"]
-    jsonld = [articulo]
+    migas = [{"@type": "ListItem", "position": 1, "name": MARCA, "item": f"{URL}/"}]
+    if e["tematica"]:
+        migas.append({"@type": "ListItem", "position": 2, "name": t["nombre"], "item": f"{URL}/{e['tematica']}/"})
+    migas.append({"@type": "ListItem", "position": len(migas) + 1, "name": titulo_corto(e)})
+    jsonld = [articulo, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": migas}]
     if e.get("youtube"):
         jsonld.append({
             "@context": "https://schema.org", "@type": "VideoObject",
@@ -1963,6 +2101,8 @@ def generar() -> int:
         carpeta.mkdir()
         (carpeta / "index.html").write_text(pagina_tematica(clave, i, visibles, listados, canal), encoding="utf-8")
     (SALIDA / "mapa.html").write_text(pagina_mapa(listados, canal), encoding="utf-8")
+    (SALIDA / "folios.html").write_text(pagina_folios(listados, canal), encoding="utf-8")
+    (SALIDA / "404.html").write_text(pagina_404(listados, canal), encoding="utf-8")
 
     # Enlace de cada vídeo de YouTube a su página (para ponerlo en las descripciones de YouTube).
     # La sincronización de albuuss depende de este formato: {ID: {num, titulo, url}}
@@ -2029,6 +2169,7 @@ def generar() -> int:
     entradas += [(f"{URL}/{k}/", max((e["fecha"][:10] for e in visibles if e["tematica"] == k), default=hoy))
                  for k in TEMATICAS]
     entradas.append((f"{URL}/mapa.html", hoy))
+    entradas.append((f"{URL}/folios.html", visibles[0]["fecha"][:10] if visibles else hoy))
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))
     entradas.append((f"{URL}/apoya.html", hoy))
