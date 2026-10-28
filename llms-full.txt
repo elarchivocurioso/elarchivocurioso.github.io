@@ -1,10 +1,10 @@
 # Folio 13: todos los folios
 
-> Parece inventado. Está documentado. Fuente: https://elarchivocurioso.github.io/ · Cada caso enlaza a su página, que es la que conviene citar.
+> Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
 ## TOP 10 «MONSTRUOS» reales de la historia… y el número 1 SIGUE SIN NOMBRE | Top 10 del archivo nº 2
 
-Página: https://elarchivocurioso.github.io/expedientes/top-10-monstruos-reales-de-la-historia-y-el-numero-1-sigue-sin-nombre.html
+Página: https://folio13.com/expedientes/top-10-monstruos-reales-de-la-historia-y-el-numero-1-sigue-sin-nombre.html
 Temática: Crímenes del pasado
 Lugar: India, Reino Unido, España, Francia, Alemania y Estados Unidos
 Época: 1790-1974
@@ -106,7 +106,7 @@ Ninguno contenía un nombre. Quedan otros dos sin resolver, entre ellos uno de t
 
 ## La «VAMPIRA» de Barcelona: lo que la prensa inventó sobre Enriqueta Martí (1912)
 
-Página: https://elarchivocurioso.github.io/expedientes/la-vampira-de-barcelona-lo-que-la-prensa-invento-sobre-enriqueta-marti.html
+Página: https://folio13.com/expedientes/la-vampira-de-barcelona-lo-que-la-prensa-invento-sobre-enriqueta-marti.html
 Temática: Crímenes del pasado
 Lugar: Barcelona (España)
 Época: 1912-1913
@@ -183,7 +183,7 @@ Lo que no está documentado es la «vampira». Ni los asesinatos, ni los ungüen
 
 ## La película PERDIDA más buscada del cine: London After Midnight (1927) | Cine maldito nº 1
 
-Página: https://elarchivocurioso.github.io/expedientes/la-pelicula-perdida-mas-buscada-del-cine-london-after-midnight-1927-ci.html
+Página: https://folio13.com/expedientes/la-pelicula-perdida-mas-buscada-del-cine-london-after-midnight-1927-ci.html
 Temática: Cine maldito y perdido
 Lugar: Estados Unidos e Inglaterra
 Época: 1927-2017
@@ -261,7 +261,7 @@ La película perdida ha generado su propio folclore. Muchas webs fechan el incen
 
 ## JACK el Destripador, el enigma que NADIE ha resuelto
 
-Página: https://elarchivocurioso.github.io/expedientes/top-1-halloween-jack-el-destripador-el-enigma-que-nadie-ha-resuelto.html
+Página: https://folio13.com/expedientes/top-1-halloween-jack-el-destripador-el-enigma-que-nadie-ha-resuelto.html
 Temática: Crímenes del pasado
 Lugar: Whitechapel, Londres, Reino Unido
 Época: 1888
@@ -328,7 +328,7 @@ La cultura popular ha convertido el caso en un género, la «ripperología», co
 
 ## CONDENADA siendo INOCENTE: el caso de Mijas y la prueba de ADN que lo cambió todo
 
-Página: https://elarchivocurioso.github.io/expedientes/condenada-siendo-inocente-el-caso-de-mijas-y-la-prueba-de-adn-que-lo-c.html
+Página: https://folio13.com/expedientes/condenada-siendo-inocente-el-caso-de-mijas-y-la-prueba-de-adn-que-lo-c.html
 Temática: Crímenes del pasado
 Lugar: Mijas y Coín (Málaga, España)
 Época: 1999-2026
@@ -415,7 +415,7 @@ Un jurado condenó a una inocente; la televisión lo había hecho antes. Un trib
 
 ## El caso de los marqueses de Urquijo: UNA sentencia y DEMASIADAS preguntas (1980)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-caso-de-los-marqueses-de-urquijo-una-sentencia-y-demasiadas-pregunt.html
+Página: https://folio13.com/expedientes/el-caso-de-los-marqueses-de-urquijo-una-sentencia-y-demasiadas-pregunt.html
 Temática: Crímenes del pasado
 Lugar: Somosaguas, Pozuelo de Alarcón (Madrid, España)
 Época: 1980-2010
@@ -486,7 +486,7 @@ La prescripción extingue la responsabilidad penal cuando transcurre el plazo qu
 
 ## El crimen de la calle Fuencarral: el PRIMER juicio paralelo de España (1888)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-crimen-de-la-calle-fuencarral-el-primer-juicio-paralelo-de-espana-1.html
+Página: https://folio13.com/expedientes/el-crimen-de-la-calle-fuencarral-el-primer-juicio-paralelo-de-espana-1.html
 Temática: Crímenes del pasado
 Lugar: Madrid (España)
 Época: 1888-1890
@@ -551,7 +551,7 @@ El caso se cerró con dos mujeres humildes condenadas y los hombres con influenc
 
 ## El GRAN HEDOR: el verano en que el Támesis casi echa al PARLAMENTO de Londres (1858)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-gran-hedor-el-verano-en-que-el-tamesis-casi-echa-al-parlamento-de-l.html
+Página: https://folio13.com/expedientes/el-gran-hedor-el-verano-en-que-el-tamesis-casi-echa-al-parlamento-de-l.html
 Temática: Desastres y epidemias
 Lugar: Londres, Reino Unido
 Época: 1854-1875
@@ -631,7 +631,7 @@ Es cierto que el Támesis era la gran cloaca de Londres, que el olor de 1858 par
 
 ## El golpe al EXPRESO de Andalucía: el caso que la policía cerró en menos de un mes (1924)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-golpe-al-expreso-de-andalucia-el-caso-que-la-policia-cerro-en-menos.html
+Página: https://folio13.com/expedientes/el-golpe-al-expreso-de-andalucia-el-caso-que-la-policia-cerro-en-menos.html
 Temática: Robos y golpes
 Lugar: Madrid, Aranjuez, Alcázar de San Juan y Córdoba (España)
 Época: 1924
@@ -708,7 +708,7 @@ El caso no se olvidó. Inspiró la película «El expreso de Andalucía» (1956)
 
 ## La película de miedo que se quedó SIN DUEÑO por un despiste: La noche de los muertos vivientes
 
-Página: https://elarchivocurioso.github.io/expedientes/la-pelicula-de-miedo-que-se-quedo-sin-dueno-por-un-despiste-la-noche-d.html
+Página: https://folio13.com/expedientes/la-pelicula-de-miedo-que-se-quedo-sin-dueno-por-un-despiste-la-noche-d.html
 Temática: Cine maldito y perdido
 Lugar: Pittsburgh y Evans City, Pensilvania (Estados Unidos)
 Época: 1967-1990
@@ -779,7 +779,7 @@ En toda la película nadie pronuncia la palabra «zombi». Romero llamaba a sus 
 
 ## ¿EXISTIÓ el fantasma de la ópera? El lago, la lámpara y la cara secreta de Lon Chaney (1925)
 
-Página: https://elarchivocurioso.github.io/expedientes/existio-el-fantasma-de-la-opera-el-lago-la-lampara-y-la-cara-secreta-d.html
+Página: https://folio13.com/expedientes/existio-el-fantasma-de-la-opera-el-lago-la-lampara-y-la-cara-secreta-d.html
 Temática: Cine maldito y perdido
 Lugar: París (Francia) y Hollywood (Estados Unidos)
 Época: 1861-2014
@@ -849,7 +849,7 @@ Se cuenta que en 1925 hubo gritos y desmayos en los cines durante el desenmascar
 
 ## El LADRÓN que hizo FAMOSA a la Mona Lisa: la verdad del hurto del Louvre (1911)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-ladron-que-hizo-famosa-a-la-mona-lisa-la-verdad-del-hurto-del-louvr.html
+Página: https://folio13.com/expedientes/el-ladron-que-hizo-famosa-a-la-mona-lisa-la-verdad-del-hurto-del-louvr.html
 Temática: Robos y golpes
 Lugar: Francia e Italia
 Época: 1911-1914
@@ -923,7 +923,7 @@ Es cierto que Peruggia era un antiguo empleado, que entró con bata un lunes de 
 
 ## HÄXAN: la película de brujas en la que el director hizo de DIABLO (1922) | Cine maldito nº 2
 
-Página: https://elarchivocurioso.github.io/expedientes/haxan-la-pelicula-de-brujas-en-la-que-el-director-hizo-de-diablo-1922.html
+Página: https://folio13.com/expedientes/haxan-la-pelicula-de-brujas-en-la-que-el-director-hizo-de-diablo-1922.html
 Temática: Cine maldito y perdido
 Lugar: Suecia, Dinamarca y Europa
 Época: 1486-1968
@@ -1001,7 +1001,7 @@ Christensen la reestrenó años después en Dinamarca con una introducción film
 
 ## El tren que hizo HUIR al público: la VERDAD detrás del mito de los Lumière (1895)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-tren-que-hizo-huir-al-publico-la-verdad-detras-del-mito-de-los-lumi.html
+Página: https://folio13.com/expedientes/el-tren-que-hizo-huir-al-publico-la-verdad-detras-del-mito-de-los-lumi.html
 Temática: Mitos desmontados
 Lugar: Francia
 Época: 1895-1896
@@ -1078,7 +1078,7 @@ Es cierto que *La llegada de un tren a la estación de La Ciotat* se rodó en 18
 
 ## El crimen que NUNCA existió: el pastor de Cuenca que volvió vivo (1910-1926)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-crimen-que-nunca-existio-el-pastor-de-cuenca-que-volvio-vivo-1910-1.html
+Página: https://folio13.com/expedientes/el-crimen-que-nunca-existio-el-pastor-de-cuenca-que-volvio-vivo-1910-1.html
 Temática: Crímenes del pasado
 Lugar: Tresjuncos, Belmonte, Cuenca y Mira (España)
 Época: 1910-1981
@@ -1157,7 +1157,7 @@ Conviene deshacer tres ideas muy repetidas. A Valero y a Sánchez no los condena
 
 ## Alguien estaba en el DESVÁN… el misterio de Hinterkaifeck
 
-Página: https://elarchivocurioso.github.io/expedientes/top-2-halloween-alguien-estaba-en-el-desvan-el-misterio-de-hinterkaife.html
+Página: https://folio13.com/expedientes/top-2-halloween-alguien-estaba-en-el-desvan-el-misterio-de-hinterkaife.html
 Temática: Paranormal y leyendas
 Lugar: Hinterkaifeck, cerca de Waidhofen, Baviera, Alemania
 Época: 1922
@@ -1220,7 +1220,7 @@ Hay que desconfiar de los relatos que dan el caso por cerrado con un culpable co
 
 ## El HOMBRE LOBO de Allariz existió… y fue juzgado en España
 
-Página: https://elarchivocurioso.github.io/expedientes/top-3-halloween-el-hombre-lobo-de-allariz-existio-y-fue-juzgado-en-esp.html
+Página: https://folio13.com/expedientes/top-3-halloween-el-hombre-lobo-de-allariz-existio-y-fue-juzgado-en-esp.html
 Temática: Paranormal y leyendas
 Lugar: Allariz, Ourense, Galicia, España
 Época: 1852-1863
@@ -1287,7 +1287,7 @@ Lo de «primer caso documentado de licantropía clínica en España» es una eti
 
 ## La CONDESA sangrienta, el caso de Erzsébet Báthory
 
-Página: https://elarchivocurioso.github.io/expedientes/top-4-halloween-la-condesa-sangrienta-el-caso-de-erzsebet-bathory.html
+Página: https://folio13.com/expedientes/top-4-halloween-la-condesa-sangrienta-el-caso-de-erzsebet-bathory.html
 Temática: Crímenes del pasado
 Lugar: Reino de Hungría, hoy Eslovaquia
 Época: hacia 1590-1614
@@ -1352,7 +1352,7 @@ La leyenda, mientras tanto, siguió creciendo: inspiró novelas, la película br
 
 ## Los LEONES de Tsavo, la leyenda que paralizó un ferrocarril
 
-Página: https://elarchivocurioso.github.io/expedientes/top-5-halloween-los-leones-de-tsavo-la-leyenda-que-paralizo-un-ferroca.html
+Página: https://folio13.com/expedientes/top-5-halloween-los-leones-de-tsavo-la-leyenda-que-paralizo-un-ferroca.html
 Temática: Paranormal y leyendas
 Lugar: Tsavo, Kenia
 Época: 1898
@@ -1417,7 +1417,7 @@ Lo que no se sostiene es la cifra de 135 víctimas. Los registros de la compañ�
 
 ## LIZZIE BORDEN: la mujer que una canción declaró culpable… y un jurado absolvió (1892)
 
-Página: https://elarchivocurioso.github.io/expedientes/lizzie-borden-la-mujer-que-una-cancion-declaro-culpable-y-un-jurado-ab.html
+Página: https://folio13.com/expedientes/lizzie-borden-la-mujer-que-una-cancion-declaro-culpable-y-un-jurado-ab.html
 Temática: Crímenes del pasado
 Lugar: Fall River y New Bedford, Massachusetts (EE. UU.)
 Época: 1892-1927
@@ -1497,7 +1497,7 @@ Lizzie y Emma heredaron la fortuna. La casa de Second Street es hoy un museo don
 
 ## La BESTIA de Gévaudan, el monstruo que aterrorizó a Francia
 
-Página: https://elarchivocurioso.github.io/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html
+Página: https://folio13.com/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html
 Temática: Paranormal y leyendas
 Lugar: Gévaudan, Francia
 Época: 1764-1767
@@ -1565,7 +1565,7 @@ En 1878, el escritor escocés Robert Louis Stevenson recorrió la región a pie 
 
 ## El caso LIZZIE BORDEN sigue abierto más de 130 años después
 
-Página: https://elarchivocurioso.github.io/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html
+Página: https://folio13.com/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html
 Temática: Crímenes del pasado
 Lugar: Fall River, Massachusetts (EE. UU.)
 Época: 1892-1893
@@ -1633,7 +1633,7 @@ La historia inspiró el ballet *Fall River Legend* (1948), de Agnes de Mille, un
 
 ## La semana en que el DIABLO de Jersey cerró los colegios
 
-Página: https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html
+Página: https://folio13.com/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html
 Temática: Paranormal y leyendas
 Lugar: Nueva Jersey y Pensilvania (EE. UU.)
 Época: 1735 (leyenda) y enero de 1909
@@ -1701,7 +1701,7 @@ El Diablo nunca se fue del todo: en 1982, una votación popular dio nombre al nu
 
 ## El «MONSTRUO» saltarín que tuvo en vilo a Londres
 
-Página: https://elarchivocurioso.github.io/expedientes/top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html
+Página: https://folio13.com/expedientes/top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html
 Temática: Paranormal y leyendas
 Lugar: Londres e Inglaterra
 Época: 1837-1904
@@ -1767,7 +1767,7 @@ No hay prueba alguna de los saltos sobrehumanos, de las llamas ni de la resisten
 
 ## 130 niños DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron
 
-Página: https://elarchivocurioso.github.io/expedientes/top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond.html
+Página: https://folio13.com/expedientes/top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond.html
 Temática: Paranormal y leyendas
 Lugar: Hamelín, Baja Sajonia (Alemania)
 Época: 1284
@@ -1830,7 +1830,7 @@ En la Bungelosenstraße, la «calle sin tambores», donde la tradición dice que
 
 ## GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia
 
-Página: https://elarchivocurioso.github.io/expedientes/gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html
+Página: https://folio13.com/expedientes/gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html
 Temática: Cine maldito y perdido
 Lugar: Escocia y Estados Unidos
 Época: 1995-2026
@@ -1918,7 +1918,7 @@ Y una advertencia final: la fecha del 19 de noviembre de 2026 es la vigente a fi
 
 ## H. H. HOLMES: el estafador de Chicago y la verdad sobre su famoso edificio (1893)
 
-Página: https://elarchivocurioso.github.io/expedientes/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.html
+Página: https://folio13.com/expedientes/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.html
 Temática: Crímenes del pasado
 Lugar: Chicago y Filadelfia (Estados Unidos)
 Época: 1886-1896
@@ -1991,7 +1991,7 @@ Lo que todavía se discute es el número exacto. Las fuentes que siguen la docum
 
 ## NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)
 
-Página: https://elarchivocurioso.github.io/expedientes/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.html
+Página: https://folio13.com/expedientes/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.html
 Temática: Cine maldito y perdido
 Lugar: Alemania
 Época: 1922-1925
@@ -2068,7 +2068,7 @@ Su influencia, en cambio, no se discute. Werner Herzog la rehízo en 1979 con Kl
 
 ## El MISTERIO del MARY CELESTE: el barco que apareció sin nadie a bordo (1872)
 
-Página: https://elarchivocurioso.github.io/expedientes/el-misterio-del-mary-celeste-el-barco-que-aparecio-sin-nadie-a-bordo-1.html
+Página: https://folio13.com/expedientes/el-misterio-del-mary-celeste-el-barco-que-aparecio-sin-nadie-a-bordo-1.html
 Temática: Paranormal y leyendas
 Lugar: Océano Atlántico (entre las Azores y Portugal)
 Época: 1872
@@ -2141,7 +2141,7 @@ En 2001, una expedición del novelista Clive Cussler anunció que había encontr
 
 ## La FIEBRE DE LOS TULIPANES: la primera burbuja de la historia… ¿o un mito?
 
-Página: https://elarchivocurioso.github.io/expedientes/la-fiebre-de-los-tulipanes-la-primera-burbuja-de-la-historia-o-un-mito.html
+Página: https://folio13.com/expedientes/la-fiebre-de-los-tulipanes-la-primera-burbuja-de-la-historia-o-un-mito.html
 Temática: Mitos desmontados
 Lugar: Países Bajos
 Época: 1634-1637
@@ -2211,7 +2211,7 @@ Y queda abierto el debate de fondo: si aquello fue una burbuja irracional o algo
 
 ## VICTOR LUSTIG: el estafador que «vendió» la Torre Eiffel
 
-Página: https://elarchivocurioso.github.io/expedientes/victor-lustig-el-estafador-que-vendio-la-torre-eiffel.html
+Página: https://folio13.com/expedientes/victor-lustig-el-estafador-que-vendio-la-torre-eiffel.html
 Temática: Robos y golpes
 Lugar: París y Estados Unidos
 Época: 1925-1947
@@ -2291,7 +2291,7 @@ Su muerte. La fecha más citada es el 11 de marzo de 1947, aunque algunas fuente
 
 ## El EVENTO CARRINGTON: la tormenta solar de 1859 que incendió los telégrafos
 
-Página: https://elarchivocurioso.github.io/expedientes/el-evento-carrington-la-tormenta-solar-de-1859-que-incendio-los-telegr.html
+Página: https://folio13.com/expedientes/el-evento-carrington-la-tormenta-solar-de-1859-que-incendio-los-telegr.html
 Temática: Desastres y epidemias
 Lugar: Inglaterra, Norteamérica y medio mundo
 Época: 1859
@@ -2369,7 +2369,7 @@ El último recordatorio llegó entre el 10 y el 13 de mayo de 2024, con la torme
 
 ## 1816, EL AÑO SIN VERANO: el volcán que trajo nieve en junio (y creó a Frankenstein)
 
-Página: https://elarchivocurioso.github.io/expedientes/1816-el-ano-sin-verano-el-volcan-que-trajo-nieve-en-junio-y-creo-a-fra.html
+Página: https://folio13.com/expedientes/1816-el-ano-sin-verano-el-volcan-que-trajo-nieve-en-junio-y-creo-a-fra.html
 Temática: Desastres y epidemias
 Lugar: Indonesia, Europa y Norteamérica
 Época: 1815-1816
@@ -2448,7 +2448,7 @@ De aquel reto salieron dos obras fundacionales. *Frankenstein o el moderno Prome
 
 ## PHINEAS GAGE: el hombre que sobrevivió a una barra de hierro en la cabeza
 
-Página: https://elarchivocurioso.github.io/expedientes/phineas-gage-el-hombre-que-sobrevivio-a-una-barra-de-hierro-en-la-cabe.html
+Página: https://folio13.com/expedientes/phineas-gage-el-hombre-que-sobrevivio-a-una-barra-de-hierro-en-la-cabe.html
 Temática: Mitos desmontados
 Lugar: Cavendish, Vermont (Estados Unidos) y Chile
 Época: 1848-1860
@@ -2525,7 +2525,7 @@ Gage sigue siendo un caso de estudio y, a la vez, un recordatorio de cómo una h
 
 ## La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)
 
-Página: https://elarchivocurioso.github.io/expedientes/la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html
+Página: https://folio13.com/expedientes/la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html
 Temática: Desastres y epidemias
 Lugar: Australia Occidental
 Época: 1932
@@ -2596,7 +2596,7 @@ Tampoco está del todo claro por qué se montó la operación. La versión ofici
 
 ## La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas
 
-Página: https://elarchivocurioso.github.io/expedientes/la-gran-inundacion-de-melaza-de-boston-la-ola-dulce-que-mato-a-21-pers.html
+Página: https://folio13.com/expedientes/la-gran-inundacion-de-melaza-de-boston-la-ola-dulce-que-mato-a-21-pers.html
 Temática: Desastres y epidemias
 Lugar: Boston (Estados Unidos)
 Época: 1919
@@ -2670,7 +2670,7 @@ Por último, hay una coincidencia que alimenta especulaciones: el 16 de enero de
 
 ## Cleopatra vivió más cerca del iPhone que de las pirámides
 
-Página: https://elarchivocurioso.github.io/expedientes/cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides.html
+Página: https://folio13.com/expedientes/cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides.html
 Temática: Mitos desmontados
 Lugar: Egipto
 Época: 69-30 a. C.
@@ -2746,7 +2746,7 @@ Y la tercera, el final de los mamuts de Wrangel. Un estudio de 2017 atribuyó su
 
 ## Los vikingos nunca llevaron cuernos (la culpa es de una ópera)
 
-Página: https://elarchivocurioso.github.io/expedientes/los-vikingos-nunca-llevaron-cuernos-la-culpa-es-de-una-opera.html
+Página: https://folio13.com/expedientes/los-vikingos-nunca-llevaron-cuernos-la-culpa-es-de-una-opera.html
 Temática: Mitos desmontados
 Lugar: Escandinavia
 Época: Siglos VIII-XI
@@ -2811,7 +2811,7 @@ Siguen abiertas varias cuestiones. No sabemos cuántos vikingos llevaban casco n
 
 ## ¿Napoleón era bajito? El mito que nos creímos 200 años
 
-Página: https://elarchivocurioso.github.io/expedientes/napoleon-era-bajito-el-mito-que-nos-creimos-200-anos.html
+Página: https://folio13.com/expedientes/napoleon-era-bajito-el-mito-que-nos-creimos-200-anos.html
 Temática: Mitos desmontados
 Lugar: Francia
 Época: 1769-1821
@@ -2882,7 +2882,7 @@ El «complejo de Napoleón» también merece una revisión. La idea viene del ps
 
 ## ¿Edison inventó la bombilla? La verdad
 
-Página: https://elarchivocurioso.github.io/expedientes/edison-invento-la-bombilla-la-verdad.html
+Página: https://folio13.com/expedientes/edison-invento-la-bombilla-la-verdad.html
 Temática: Mitos desmontados
 Lugar: Newcastle y Menlo Park
 Época: 1879
@@ -2955,7 +2955,7 @@ Por último, la bombilla de filamento de carbono tuvo una vida relativamente cor
 
 ## La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar
 
-Página: https://elarchivocurioso.github.io/expedientes/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.html
+Página: https://folio13.com/expedientes/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.html
 Temática: Desastres y epidemias
 Lugar: Estrasburgo
 Época: 1518

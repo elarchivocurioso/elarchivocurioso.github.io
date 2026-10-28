@@ -52,4 +52,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://elarchivocurioso.github.io/sitemap.xml
+Sitemap: https://folio13.com/sitemap.xml
