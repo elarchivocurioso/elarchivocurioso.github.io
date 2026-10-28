@@ -101,6 +101,8 @@ header nav a:hover { color:var(--texto); }
 .bajar { position:absolute; left:16px; bottom:22px; color:var(--texto-3); font-size:12px; text-decoration:none; }
 @media (max-width:720px) { .portada { min-height:auto; padding-top:48px; padding-bottom:56px; }
   .portada .sello-rojo { position:static; margin-bottom:20px; align-self:flex-start; } .vigilante { width:34vw; right:-8%; top:auto; bottom:30%; opacity:.22; } .bajar { display:none; } }
+/* Hasta que el contenedor llena la pantalla, la linterna solo sobresale el margen: si no, el móvil se aleja para enseñarla */
+@media (max-width:1192px) { .linterna { inset:0 -16px; } .vigilante { right:0; } }
 
 /* Secciones y tarjetas */
 .seccion { padding-top:40px; padding-bottom:72px; }
@@ -228,7 +230,59 @@ footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',
   .tachado { animation:none; transition:none; }
   .vigilante, .ficha, .ficha .img { transition:none; }
 }
+
+/* Halloween: solo con la clase .halloween en <html>, que pone el navegador en temporada */
+.cinta-halloween, .deco-halloween { display:none; }
+.halloween { --calabaza:#E0782F; }
+.halloween .cinta-halloween { display:block; position:relative; z-index:39; text-align:center; font-size:12.5px; line-height:1.5;
+  padding:7px 16px; color:#F1CFA6; background:linear-gradient(90deg,#120804,#2B1208 50%,#120804); border-bottom:1px solid rgba(224,120,47,.35); }
+.cinta-halloween a { color:var(--calabaza); font-weight:600; text-decoration:none; margin-left:6px; white-space:nowrap; }
+.cinta-halloween a:hover { color:#FFB066; }
+.vela { display:inline-block; width:6px; height:11px; margin-right:9px; vertical-align:-1px; border-radius:50% 50% 45% 45%;
+  background:radial-gradient(circle at 50% 70%,#FFE2A8,#E0782F 65%); box-shadow:0 0 10px 3px rgba(224,120,47,.55);
+  animation:llama 1.4s ease-in-out infinite alternate; }
+@keyframes llama { 0% { transform:scale(1,1); opacity:1; } 40% { transform:scale(.8,1.15) translateY(-1px); opacity:.8; }
+  70% { transform:scale(1.05,.92); opacity:.95; } 100% { transform:scale(.9,1.08); opacity:.85; } }
+.halloween header nav a.miedo { color:var(--calabaza); }
+.halloween .deco-halloween { display:block; }
+/* Telarañas en las esquinas de cada página */
+.telarana { position:absolute; z-index:2; pointer-events:none; color:#E8DCC6; opacity:.16; width:min(24vw,230px); }
+.telarana svg { display:block; width:100%; height:auto; }
+.telarana.der { right:0; top:96px; }
+.telarana.izq { left:0; top:96px; transform:scaleX(-1); width:min(15vw,150px); opacity:.11; }
+/* Portada: la linterna se vuelve vela, una araña baja por su hilo, niebla y murciélagos */
+.halloween .linterna { background:radial-gradient(circle 360px at var(--x,50%) var(--y,40%), rgba(224,120,47,.17), rgba(7,6,6,0) 60%),
+  radial-gradient(circle 900px at var(--x,50%) var(--y,40%), transparent 0, rgba(0,0,0,.55) 70%); }
+.arana { position:absolute; top:0; right:24%; width:30px; height:150px; z-index:1; pointer-events:none; animation:hilo 9s ease-in-out infinite alternate; }
+.arana::before { content:""; position:absolute; left:50%; top:0; bottom:22px; width:1px; background:linear-gradient(rgba(232,220,198,.05),rgba(232,220,198,.4)); }
+.arana svg { position:absolute; bottom:0; left:0; width:30px; color:#4A3328; filter:drop-shadow(0 0 2px rgba(255,190,120,.55)) drop-shadow(0 0 10px rgba(224,120,47,.6));
+  animation:balanceo 3.2s ease-in-out infinite alternate; transform-origin:50% -120px; }
+@keyframes hilo { 0%,15% { height:70px; } 60% { height:230px; } 100% { height:180px; } }
+@keyframes balanceo { from { transform:rotate(-4deg); } to { transform:rotate(4deg); } }
+.niebla { position:absolute; left:-50vw; right:-50vw; bottom:0; height:45%; z-index:-1; pointer-events:none;
+  background:radial-gradient(ellipse 30% 55% at 25% 100%,rgba(210,195,170,.10),transparent 70%),
+             radial-gradient(ellipse 28% 45% at 62% 100%,rgba(210,195,170,.08),transparent 70%),
+             radial-gradient(ellipse 25% 40% at 85% 100%,rgba(224,120,47,.06),transparent 70%);
+  animation:niebla 24s ease-in-out infinite alternate; }
+@keyframes niebla { from { transform:translateX(-4%); } to { transform:translateX(4%); } }
+.murcielagos { position:absolute; inset:0 -16px; overflow:hidden; z-index:-1; pointer-events:none; }
+.murcielago { position:absolute; left:-80px; top:18%; width:38px; color:#1E1410; filter:drop-shadow(0 0 7px rgba(224,120,47,.4));
+  animation:vuelo 17s linear infinite; }
+.murcielago svg { display:block; width:100%; animation:aleteo .2s ease-in-out infinite alternate; }
+.murcielago:nth-child(2) { top:34%; width:26px; animation-duration:21s; animation-delay:6s; }
+.murcielago:nth-child(3) { top:9%; width:20px; animation-duration:25s; animation-delay:12s; }
+@keyframes vuelo { 0% { transform:translate(0,0); } 25% { transform:translate(30vw,-28px); } 50% { transform:translate(60vw,18px); }
+  75% { transform:translate(90vw,-22px); } 100% { transform:translate(calc(100vw + 160px),6px); } }
+@keyframes aleteo { from { transform:scaleY(1); } to { transform:scaleY(.35); } }
+@media (max-width:1192px) { .niebla { left:-16px; right:-16px; } }
+@media (max-width:720px) { .cinta-halloween { font-size:11px; letter-spacing:.08em; } .cinta-halloween .largo { display:none; }
+  .telarana.der { width:34vw; top:104px; } .telarana.izq { display:none; } .arana { right:12%; }
+  @keyframes hilo { 0%,15% { height:50px; } 60% { height:150px; } 100% { height:120px; } } }
+@media (prefers-reduced-motion:reduce) {
+  .vela, .arana, .arana svg, .niebla { animation:none; } .murcielagos { display:none; }
+}
 </style>
+<script>(function(){var d=new Date(),y=d.getFullYear();if(d>=new Date(y,9,15)&&d<new Date(y,10,3))document.documentElement.classList.add('halloween');})();</script>
 </head>
 <body data-raiz="../">
 <header><div class="ancho">
@@ -244,11 +298,15 @@ footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',
   <nav aria-label="Principal">
     <a href="../index.html#expedientes">Expedientes</a>
     <a class="solo-ancho" href="../temas/index.html">Temas</a>
-    <a class="solo-ancho" href="../historias-de-miedo-reales.html">De miedo</a>
+    <a class="solo-ancho miedo" href="../historias-de-miedo-reales.html">De miedo</a>
     <a href="../buscar.html">Buscar</a>
     <a class="sorprendeme" href="../buscar.html">Sorpréndeme</a>
   </nav>
 </div></header>
+<div class="cinta-halloween mono" role="note"><span class="vela" aria-hidden="true"></span><span id="cinta-texto">Especial Halloween.</span><a href="../historias-de-miedo-reales.html">Abre el Top 10<span class="largo"> de historias de miedo reales</span> →</a></div><script>(function(){var c=document.getElementById('cinta-texto');if(!c)return;var d=new Date(),y=d.getFullYear();
+var hoy=new Date(y,d.getMonth(),d.getDate()),n=Math.round((new Date(y,9,31)-hoy)/864e5),t;
+if(n>1)t='Faltan '+n+' noches para Halloween.';else if(n===1)t='Mañana es Halloween. Esta noche, ensayo general.';
+else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difuntos. Los expedientes siguen abiertos.';c.textContent=t;})();</script><div class="deco-halloween" aria-hidden="true"><div class="telarana der"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width=".7"><line x1="200" y1="0" x2="200.0" y2="240.0"/><line x1="200" y1="0" x2="137.9" y2="231.8"/><line x1="200" y1="0" x2="80.0" y2="207.8"/><line x1="200" y1="0" x2="30.3" y2="169.7"/><line x1="200" y1="0" x2="-7.8" y2="120.0"/><line x1="200" y1="0" x2="-31.8" y2="62.1"/><line x1="200" y1="0" x2="-40.0" y2="0.0"/><path d="M200.0,28.0 Q196.8,23.9 192.8,27.0 Q190.8,22.3 186.0,24.2 Q185.3,19.2 180.2,19.8 Q180.8,14.7 175.8,14.0 Q177.7,9.2 173.0,7.2 Q176.1,3.2 172.0,0.0"/><path d="M200.0,58.0 Q193.5,49.6 185.0,56.0 Q180.9,46.2 171.0,50.2 Q169.5,39.7 159.0,41.0 Q160.3,30.5 149.8,29.0 Q153.8,19.1 144.0,15.0 Q150.4,6.5 142.0,0.0"/><path d="M200.0,92.0 Q189.6,78.7 176.2,88.9 Q169.6,73.3 154.0,79.7 Q151.7,63.0 134.9,65.1 Q137.0,48.3 120.3,46.0 Q126.7,30.4 111.1,23.8 Q121.3,10.4 108.0,0.0"/><path d="M200.0,130.0 Q185.4,111.2 166.4,125.6 Q157.1,103.6 135.0,112.6 Q131.7,89.0 108.1,91.9 Q111.0,68.3 87.4,65.0 Q96.4,42.9 74.4,33.6 Q88.8,14.6 70.0,0.0"/><path d="M200.0,172.0 Q180.6,147.1 155.5,166.1 Q143.2,137.1 114.0,149.0 Q109.7,117.7 78.4,121.6 Q82.3,90.3 51.0,86.0 Q62.9,56.8 33.9,44.5 Q52.9,19.4 28.0,0.0"/></svg></div><div class="telarana izq"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width=".7"><line x1="200" y1="0" x2="200.0" y2="240.0"/><line x1="200" y1="0" x2="137.9" y2="231.8"/><line x1="200" y1="0" x2="80.0" y2="207.8"/><line x1="200" y1="0" x2="30.3" y2="169.7"/><line x1="200" y1="0" x2="-7.8" y2="120.0"/><line x1="200" y1="0" x2="-31.8" y2="62.1"/><line x1="200" y1="0" x2="-40.0" y2="0.0"/><path d="M200.0,28.0 Q196.8,23.9 192.8,27.0 Q190.8,22.3 186.0,24.2 Q185.3,19.2 180.2,19.8 Q180.8,14.7 175.8,14.0 Q177.7,9.2 173.0,7.2 Q176.1,3.2 172.0,0.0"/><path d="M200.0,58.0 Q193.5,49.6 185.0,56.0 Q180.9,46.2 171.0,50.2 Q169.5,39.7 159.0,41.0 Q160.3,30.5 149.8,29.0 Q153.8,19.1 144.0,15.0 Q150.4,6.5 142.0,0.0"/><path d="M200.0,92.0 Q189.6,78.7 176.2,88.9 Q169.6,73.3 154.0,79.7 Q151.7,63.0 134.9,65.1 Q137.0,48.3 120.3,46.0 Q126.7,30.4 111.1,23.8 Q121.3,10.4 108.0,0.0"/><path d="M200.0,130.0 Q185.4,111.2 166.4,125.6 Q157.1,103.6 135.0,112.6 Q131.7,89.0 108.1,91.9 Q111.0,68.3 87.4,65.0 Q96.4,42.9 74.4,33.6 Q88.8,14.6 70.0,0.0"/><path d="M200.0,172.0 Q180.6,147.1 155.5,166.1 Q143.2,137.1 114.0,149.0 Q109.7,117.7 78.4,121.6 Q82.3,90.3 51.0,86.0 Q62.9,56.8 33.9,44.5 Q52.9,19.4 28.0,0.0"/></svg></div></div>
 <main class="ancho seccion">
 <a class="volver" href="index.html">← Todos los temas</a>
 <div class="seccion-cab"><h1 class="expediente-titulo" style="font-size:clamp(28px,5vw,42px); letter-spacing:-.02em">Desastres</h1>

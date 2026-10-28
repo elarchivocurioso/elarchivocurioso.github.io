@@ -36,6 +36,7 @@ Solo usa la biblioteca estándar de Python.
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import secrets
@@ -177,6 +178,8 @@ header nav a:hover { color:var(--texto); }
 .bajar { position:absolute; left:16px; bottom:22px; color:var(--texto-3); font-size:12px; text-decoration:none; }
 @media (max-width:720px) { .portada { min-height:auto; padding-top:48px; padding-bottom:56px; }
   .portada .sello-rojo { position:static; margin-bottom:20px; align-self:flex-start; } .vigilante { width:34vw; right:-8%; top:auto; bottom:30%; opacity:.22; } .bajar { display:none; } }
+/* Hasta que el contenedor llena la pantalla, la linterna solo sobresale el margen: si no, el móvil se aleja para enseñarla */
+@media (max-width:1192px) { .linterna { inset:0 -16px; } .vigilante { right:0; } }
 
 /* Secciones y tarjetas */
 .seccion { padding-top:40px; padding-bottom:72px; }
@@ -305,6 +308,116 @@ footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',
   .vigilante, .ficha, .ficha .img { transition:none; }
 }
 """
+
+# Temporada de Halloween (del 15 de octubre al 2 de noviembre). web.py solo mete la decoración si genera en esas fechas,
+# y el navegador la enciende solo en esas fechas: el 3 de noviembre desaparece sola aunque no se vuelva a publicar.
+def es_halloween(d: date | None = None) -> bool:
+    d = d or date.today()
+    return date(d.year, 10, 15) <= d <= date(d.year, 11, 2)
+
+
+def telarana_svg() -> str:
+    """Telaraña de esquina (la esquina es arriba a la derecha): radios y hilos que cuelgan un poco."""
+    cx, cy, angulos = 200, 0, [90 + 15 * i for i in range(7)]
+    radios = "".join(f'<line x1="{cx}" y1="{cy}" x2="{cx + 240 * math.cos(math.radians(a)):.1f}" '
+                     f'y2="{cy + 240 * math.sin(math.radians(a)):.1f}"/>' for a in angulos)
+    hilos = ""
+    for r in (28, 58, 92, 130, 172):
+        p = [(cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a))) for a in angulos]
+        d = f"M{p[0][0]:.1f},{p[0][1]:.1f}"
+        for (x0, y0), (x1, y1) in zip(p, p[1:]):
+            mx, my = (x0 + x1) / 2, (y0 + y1) / 2
+            d += f" Q{mx + (cx - mx) * .13:.1f},{my + (cy - my) * .13:.1f} {x1:.1f},{y1:.1f}"
+        hilos += f'<path d="{d}"/>'
+    return (f'<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" '
+            f'stroke-width=".7">{radios}{hilos}</svg>')
+
+
+ARANA_SVG = """<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round">
+<path d="M15 19Q7 12 3 15M14 21Q5 20 2 25M15 24Q8 27 6 33M16 26Q12 32 12 37"/><path d="M25 19Q33 12 37 15M26 21Q35 20 38 25M25 24Q32 27 34 33M24 26Q28 32 28 37"/></g>
+<ellipse cx="20" cy="23" rx="6" ry="7.5" fill="currentColor"/><circle cx="20" cy="14.5" r="4" fill="currentColor"/>
+<circle cx="18.6" cy="14" r=".9" fill="#E0782F"/><circle cx="21.4" cy="14" r=".9" fill="#E0782F"/></svg>"""
+
+MURCIELAGO_SVG = """<svg viewBox="0 0 64 30" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M32 9c-1.6-2.6-3.6-3.8-5.6-3.8 1 1.8 1 3 .2 4C22.4 5 15 3.4 8 5.6c3.8 1.8 5.8 4.8 5.8 8.6 3-1.8 6.8-1.8 9 1 1.2-2.8 3.8-3.8 6-2.8.8-2 2-3 3.2-3s2.4 1 3.2 3c2.2-1 4.8 0 6 2.8 2.2-2.8 6-2.8 9-1 0-3.8 2-6.8 5.8-8.6-7-2.2-14.4-.6-18.6 3.6-.8-1-.8-2.2.2-4-2 0-4 1.2-5.6 3.8z"/></svg>"""
+
+HALLOWEEN_CSS = """
+/* Halloween: solo con la clase .halloween en <html>, que pone el navegador en temporada */
+.cinta-halloween, .deco-halloween { display:none; }
+.halloween { --calabaza:#E0782F; }
+.halloween .cinta-halloween { display:block; position:relative; z-index:39; text-align:center; font-size:12.5px; line-height:1.5;
+  padding:7px 16px; color:#F1CFA6; background:linear-gradient(90deg,#120804,#2B1208 50%,#120804); border-bottom:1px solid rgba(224,120,47,.35); }
+.cinta-halloween a { color:var(--calabaza); font-weight:600; text-decoration:none; margin-left:6px; white-space:nowrap; }
+.cinta-halloween a:hover { color:#FFB066; }
+.vela { display:inline-block; width:6px; height:11px; margin-right:9px; vertical-align:-1px; border-radius:50% 50% 45% 45%;
+  background:radial-gradient(circle at 50% 70%,#FFE2A8,#E0782F 65%); box-shadow:0 0 10px 3px rgba(224,120,47,.55);
+  animation:llama 1.4s ease-in-out infinite alternate; }
+@keyframes llama { 0% { transform:scale(1,1); opacity:1; } 40% { transform:scale(.8,1.15) translateY(-1px); opacity:.8; }
+  70% { transform:scale(1.05,.92); opacity:.95; } 100% { transform:scale(.9,1.08); opacity:.85; } }
+.halloween header nav a.miedo { color:var(--calabaza); }
+.halloween .deco-halloween { display:block; }
+/* Telarañas en las esquinas de cada página */
+.telarana { position:absolute; z-index:2; pointer-events:none; color:#E8DCC6; opacity:.16; width:min(24vw,230px); }
+.telarana svg { display:block; width:100%; height:auto; }
+.telarana.der { right:0; top:96px; }
+.telarana.izq { left:0; top:96px; transform:scaleX(-1); width:min(15vw,150px); opacity:.11; }
+/* Portada: la linterna se vuelve vela, una araña baja por su hilo, niebla y murciélagos */
+.halloween .linterna { background:radial-gradient(circle 360px at var(--x,50%) var(--y,40%), rgba(224,120,47,.17), rgba(7,6,6,0) 60%),
+  radial-gradient(circle 900px at var(--x,50%) var(--y,40%), transparent 0, rgba(0,0,0,.55) 70%); }
+.arana { position:absolute; top:0; right:24%; width:30px; height:150px; z-index:1; pointer-events:none; animation:hilo 9s ease-in-out infinite alternate; }
+.arana::before { content:""; position:absolute; left:50%; top:0; bottom:22px; width:1px; background:linear-gradient(rgba(232,220,198,.05),rgba(232,220,198,.4)); }
+.arana svg { position:absolute; bottom:0; left:0; width:30px; color:#4A3328; filter:drop-shadow(0 0 2px rgba(255,190,120,.55)) drop-shadow(0 0 10px rgba(224,120,47,.6));
+  animation:balanceo 3.2s ease-in-out infinite alternate; transform-origin:50% -120px; }
+@keyframes hilo { 0%,15% { height:70px; } 60% { height:230px; } 100% { height:180px; } }
+@keyframes balanceo { from { transform:rotate(-4deg); } to { transform:rotate(4deg); } }
+.niebla { position:absolute; left:-50vw; right:-50vw; bottom:0; height:45%; z-index:-1; pointer-events:none;
+  background:radial-gradient(ellipse 30% 55% at 25% 100%,rgba(210,195,170,.10),transparent 70%),
+             radial-gradient(ellipse 28% 45% at 62% 100%,rgba(210,195,170,.08),transparent 70%),
+             radial-gradient(ellipse 25% 40% at 85% 100%,rgba(224,120,47,.06),transparent 70%);
+  animation:niebla 24s ease-in-out infinite alternate; }
+@keyframes niebla { from { transform:translateX(-4%); } to { transform:translateX(4%); } }
+.murcielagos { position:absolute; inset:0 -16px; overflow:hidden; z-index:-1; pointer-events:none; }
+.murcielago { position:absolute; left:-80px; top:18%; width:38px; color:#1E1410; filter:drop-shadow(0 0 7px rgba(224,120,47,.4));
+  animation:vuelo 17s linear infinite; }
+.murcielago svg { display:block; width:100%; animation:aleteo .2s ease-in-out infinite alternate; }
+.murcielago:nth-child(2) { top:34%; width:26px; animation-duration:21s; animation-delay:6s; }
+.murcielago:nth-child(3) { top:9%; width:20px; animation-duration:25s; animation-delay:12s; }
+@keyframes vuelo { 0% { transform:translate(0,0); } 25% { transform:translate(30vw,-28px); } 50% { transform:translate(60vw,18px); }
+  75% { transform:translate(90vw,-22px); } 100% { transform:translate(calc(100vw + 160px),6px); } }
+@keyframes aleteo { from { transform:scaleY(1); } to { transform:scaleY(.35); } }
+@media (max-width:1192px) { .niebla { left:-16px; right:-16px; } }
+@media (max-width:720px) { .cinta-halloween { font-size:11px; letter-spacing:.08em; } .cinta-halloween .largo { display:none; }
+  .telarana.der { width:34vw; top:104px; } .telarana.izq { display:none; } .arana { right:12%; }
+  @keyframes hilo { 0%,15% { height:50px; } 60% { height:150px; } 100% { height:120px; } } }
+@media (prefers-reduced-motion:reduce) {
+  .vela, .arana, .arana svg, .niebla { animation:none; } .murcielagos { display:none; }
+}
+"""
+
+# Va en <head> para que no haya parpadeo: enciende la temporada solo entre el 15 de octubre y el 2 de noviembre
+HALLOWEEN_INICIO = """<script>(function(){var d=new Date(),y=d.getFullYear();if(d>=new Date(y,9,15)&&d<new Date(y,10,3))document.documentElement.classList.add('halloween');})();</script>"""
+
+# Texto de la cinta según el día (cuenta atrás hasta el 31)
+HALLOWEEN_CINTA_JS = """<script>(function(){var c=document.getElementById('cinta-texto');if(!c)return;var d=new Date(),y=d.getFullYear();
+var hoy=new Date(y,d.getMonth(),d.getDate()),n=Math.round((new Date(y,9,31)-hoy)/864e5),t;
+if(n>1)t='Faltan '+n+' noches para Halloween.';else if(n===1)t='Mañana es Halloween. Esta noche, ensayo general.';
+else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difuntos. Los expedientes siguen abiertos.';c.textContent=t;})();</script>"""
+
+
+def cinta_halloween(raiz: str = "") -> str:
+    return (f'<div class="cinta-halloween mono" role="note"><span class="vela" aria-hidden="true"></span>'
+            f'<span id="cinta-texto">Especial Halloween.</span>'
+            f'<a href="{raiz}historias-de-miedo-reales.html">Abre el Top 10<span class="largo"> de historias de miedo reales</span> →</a></div>'
+            f'{HALLOWEEN_CINTA_JS}'
+            f'<div class="deco-halloween" aria-hidden="true"><div class="telarana der">{telarana_svg()}</div>'
+            f'<div class="telarana izq">{telarana_svg()}</div></div>')
+
+
+def deco_portada() -> str:
+    """Araña, niebla y murciélagos para la portada (solo se ven con la clase .halloween)."""
+    murcielagos = "".join(f'<div class="murcielago">{MURCIELAGO_SVG}</div>' for _ in range(3))
+    return (f'<div class="deco-halloween" aria-hidden="true"><div class="niebla"></div>'
+            f'<div class="murcielagos">{murcielagos}</div><div class="arana">{ARANA_SVG}</div></div>')
+
 
 # Revelar lo tachado, la linterna y la lupa que mira, el reloj del expediente y «Sorpréndeme»; en todas las páginas
 BASE_JS = """
@@ -521,6 +634,7 @@ def titulo_html(e: dict, enfocable: bool = False) -> str:
 def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "",
            ruta: str = "", imagen: str = "compartir.png", tipo_og: str = "website", jsonld=None) -> str:
     desc = escape(descripcion or canal["lema"])
+    halloween = es_halloween()
     # Etiquetas para buscadores (Google, Bing) y para las vistas previas al compartir en redes
     seo = (f'<link rel="canonical" href="{URL}/{ruta}">\n'
            f'<meta property="og:site_name" content="{escape(canal["nombre"])}">\n'
@@ -551,7 +665,8 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <meta name="description" content="{desc}">
 {seo}<link rel="icon" type="image/png" sizes="32x32" href="{raiz}favicon-32.png">
 <link rel="apple-touch-icon" href="{raiz}apple-touch-icon.png">
-<style>{CSS}</style>
+<style>{CSS}{HALLOWEEN_CSS if halloween else ""}</style>
+{HALLOWEEN_INICIO if halloween else ""}
 </head>
 <body data-raiz="{raiz}">
 <header><div class="ancho">
@@ -560,11 +675,12 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
   <nav aria-label="Principal">
     <a href="{raiz}index.html#expedientes">Expedientes</a>
     <a class="solo-ancho" href="{raiz}temas/index.html">Temas</a>
-    <a class="solo-ancho" href="{raiz}historias-de-miedo-reales.html">De miedo</a>
+    <a class="solo-ancho miedo" href="{raiz}historias-de-miedo-reales.html">De miedo</a>
     <a href="{raiz}buscar.html">Buscar</a>
     <a class="sorprendeme" href="{raiz}buscar.html">Sorpréndeme</a>
   </nav>
 </div></header>
+{cinta_halloween(raiz) if halloween else ""}
 {cuerpo}
 {suscripcion(canal)}
 <footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}temas/index.html">Temas</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya el archivo</a> · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
@@ -821,8 +937,13 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
     # Dos bloques: el Top 10 de Halloween en cuenta atrás (del 10 al 1) y el resto de casos oscuros
     casos = [e for e in expedientes if not puesto_top(e)]
     top = bloque_top(expedientes)
+    # En temporada, la página hace de portada de Halloween (título y descripción con la palabra que la gente busca)
+    halloween = es_halloween()
+    if halloween:
+        descripcion = ("Historias de miedo reales para Halloween: el Top 10 del archivo en cuenta atrás y más casos "
+                       "documentados con fuentes. Crímenes sin resolver, barcos fantasma y bestias que existieron.")
     cuerpo = f"""<main class="ancho seccion">
-<div class="sello-rojo mono" style="margin-bottom:22px">Solo para valientes</div>
+<div class="sello-rojo mono" style="margin-bottom:22px">{"Especial Halloween" if halloween else "Solo para valientes"}</div>
 <h1 style="font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:1.08; max-width:18ch">Historias de miedo <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">reales</span></h1>
 <div class="lectura" style="margin:22px 0 34px; max-width:720px">
 <p class="bloque" style="margin-top:0">No hace falta inventar nada para pasar miedo. La historia está llena de sucesos que darían para una película de terror: una granja donde alguien vivió escondido en el desván, un barco que apareció a la deriva sin nadie a bordo, una bestia que atacó durante tres años a los pastores de una región de Francia o un juicio en Galicia contra un hombre que decía convertirse en lobo.</p>
@@ -832,10 +953,17 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
 <div class="seccion-cab" style="margin-top:56px"><h2>Casos oscuros</h2><span class="cuenta">{len(casos)} {"caso" if len(casos) == 1 else "casos"}. Léelos con la luz encendida.</span></div>
 <div class="rejilla">{"".join(ficha(e) for e in casos)}</div>
 </main>"""
-    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historias de miedo reales",
-              "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}
-    return pagina(f"Historias de miedo reales (y documentadas) · {canal['nombre']}", cuerpo, canal, ruta=ruta,
-                  descripcion=descripcion, jsonld=jsonld)
+    jsonld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historias de miedo reales",
+               "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}]
+    lista_top = sorted((e for e in expedientes if puesto_top(e)), key=lambda e: -puesto_top(e))
+    if lista_top:   # el Top 10 como lista ordenada, para que los buscadores entiendan la cuenta atrás
+        jsonld.append({"@context": "https://schema.org", "@type": "ItemList", "name": "Top 10 de Halloween: historias de miedo reales",
+                       "itemListOrder": "https://schema.org/ItemListOrderDescending", "numberOfItems": len(lista_top),
+                       "itemListElement": [{"@type": "ListItem", "position": puesto_top(e), "name": titulo_limpio(e)["titulo"],
+                                            "url": f"{URL}/expedientes/{e['_slug']}.html"} for e in lista_top]})
+    titulo = ("Historias de miedo reales para Halloween: el Top 10 documentado" if halloween
+              else "Historias de miedo reales (y documentadas)")
+    return pagina(f"{titulo} · {canal['nombre']}", cuerpo, canal, ruta=ruta, descripcion=descripcion, jsonld=jsonld)
 
 
 def indice_temas(temas: dict[str, list[dict]], canal: dict) -> str:
@@ -890,6 +1018,7 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
 <section class="portada">
   <div class="linterna" aria-hidden="true"></div>
   <div class="vigilante" aria-hidden="true">{LUPA_SVG}</div>
+  {deco_portada() if es_halloween() else ""}
   <div class="sello-rojo mono">Clasificado</div>
   <p class="susurro mono">Abriste el archivo a las <b data-hora>esta hora</b>. Nadie más lo sabe.</p>
   <h1 id="frase" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</h1>
