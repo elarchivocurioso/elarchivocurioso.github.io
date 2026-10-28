@@ -936,7 +936,7 @@ Más que una película de terror, «Häxan» es un ensayo filmado con una tesis 
 
 ### Un libro en una librería de Berlín
 
-Christensen, que había estudiado medicina antes de dedicarse a la interpretación y al cine, encontró en una librería de Berlín un ejemplar del «Malleus Maleficarum», «El martillo de las brujas» [1]. Pasó los años siguientes, entre 1919 y 1921 según la mayoría de las fuentes, estudiando manuales, ilustraciones y tratados sobre brujería.
+Christensen, que había estudiado medicina antes de dedicarse a la interpretación y al cine [8], encontró en una librería de Berlín un ejemplar del «Malleus Maleficarum», «El martillo de las brujas» [1]. Pasó los años siguientes, entre 1919 y 1921 según la mayoría de las fuentes, estudiando manuales, ilustraciones y tratados sobre brujería.
 
 El «Malleus» lo publicó en 1486, en Espira (Alemania), el clérigo Heinrich Kramer [5]. Desde 1519 figura como coautor Jacob Sprenger, aunque su papel real se discute. El libro trataba la brujería como una herejía, recomendaba la tortura para obtener confesiones y sostenía que las mujeres eran más propensas a caer en la tentación del demonio. Según la Encyclopaedia Britannica, tuvo 28 ediciones entre 1486 y 1600 [5]. Hasta qué punto guió de verdad a los jueces es algo que los historiadores siguen debatiendo.
 
@@ -960,7 +960,7 @@ Para Christensen, las acusadas eran sobre todo mujeres pobres y mayores, mujeres
 
 Uno de los rótulos de «Häxan» afirma que más de ocho millones de personas murieron en la hoguera acusadas de brujería [1]. Esa cifra no tiene base. Procede de una tradición del siglo XVIII: en 1784, el alemán Gottfried Christian Voigt habló de nueve millones [3].
 
-Las estimaciones actuales son muy distintas. Entre los siglos XV y XVIII, en Europa y la América británica, se procesó a unas 100.000 personas por brujería, y las ejecuciones se calculan entre 40.000 y 60.000 [3]. Son cifras discutidas: el historiador del cine Casper Tybjerg habla de unas 50.000 [1] y la investigadora Chloé Germaine Buckley de unas 80.000. Lo que sí acierta la película es en el perfil: entre el 75 y el 85 % de los acusados, y en torno al 80 % de los condenados, eran mujeres [3].
+Las estimaciones actuales son muy distintas. Entre los siglos XV y XVIII, en Europa y la América británica, se procesó a unas 100.000 personas por brujería, y las ejecuciones se calculan entre 40.000 y 60.000 [3]. Son cifras discutidas: el historiador del cine Casper Tybjerg habla de unas 50.000 [1] y la investigadora Chloé Germaine Buckley de unas 80.000 [1]. Lo que sí acierta la película es en el perfil: entre el 75 y el 85 % de los acusados, y en torno al 80 % de los condenados, eran mujeres [3].
 
 La persecución fue especialmente dura en el Sacro Imperio, en lo que hoy es Alemania. En Bamberg, el príncipe obispo llegó a construir en 1627 una prisión dedicada solo a los acusados de brujería [6]. En España y Portugal, en cambio, hubo pocos procesos, y en Italia menos que en Francia o el Imperio.
 
@@ -970,7 +970,7 @@ En Suecia, donde se estrenó el 18 de septiembre de 1922 a la vez en Estocolmo, 
 
 ### La segunda vida
 
-Christensen la reestrenó años después en Dinamarca con una introducción filmada en la que hablaba al público como un científico; las fuentes dan 1931 o 1941. Pero la resurrección llegó en 1968, cuando Antony Balch distribuyó en Estados Unidos una versión de 74 minutos, «Witchcraft Through the Ages», narrada por el escritor William S. Burroughs y con música de jazz de Daniel Humair, interpretada por un quinteto con Jean-Luc Ponty al violín. Los surrealistas la habían convertido en película de culto, y con esta versión se ganó a la contracultura. El Instituto Sueco del Cine la ha restaurado tres veces, en 1976, 2007 y 2016, con tintes de color.
+Christensen la reestrenó años después en Dinamarca con una introducción filmada en la que hablaba al público como un científico; las fuentes dan 1931 o 1941. Pero la resurrección llegó en 1968, cuando se estrenó en Estados Unidos una versión de 74 minutos [1], «Witchcraft Through the Ages», narrada por el escritor William S. Burroughs y con música de jazz de Daniel Humair, interpretada por un quinteto con Jean-Luc Ponty al violín. Los surrealistas la habían convertido en película de culto, y con esta versión se ganó a la contracultura. El Instituto Sueco del Cine la ha restaurado tres veces, en 1976, 2007 y 2016, con tintes de color.
 
 ### Curiosidades
 
@@ -997,6 +997,7 @@ Christensen la reestrenó años después en Dinamarca con una introducción film
 - [5] Wikipedia (inglés), «Malleus Maleficarum»: https://en.wikipedia.org/wiki/Malleus_Maleficarum
 - [6] Wikipedia (inglés), «Bamberg witch trials»: https://en.wikipedia.org/wiki/Bamberg_witch_trials
 - [7] The Public Domain Review, «Häxan: Witchcraft Through the Ages (1922)»: https://publicdomainreview.org/collection/haxan-witchcraft-through-the-ages-1922/
+- [8] Wikipedia (en), «Benjamin Christensen»: https://en.wikipedia.org/wiki/Benjamin_Christensen
 
 ## El tren que hizo HUIR al público: la VERDAD detrás del mito de los Lumière (1895)
 
