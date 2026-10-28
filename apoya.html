@@ -108,12 +108,12 @@ header nav a:hover { color:#fff; }
   linear-gradient(0deg,var(--fondo) 0%,transparent 30%); }
 .portada-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:48px; align-items:end; width:100%; }
 .etiqueta-caso { display:inline-flex; align-items:center; gap:10px; font-family:'IBM Plex Mono',monospace; color:var(--rojo); letter-spacing:.25em;
-  font-size:12px; text-transform:uppercase; }
+  font-size:12px; text-transform:uppercase; font-weight:500; margin:0; }
 .etiqueta-caso::before { content:""; width:9px; height:9px; border-radius:50%; background:var(--rojo); box-shadow:var(--brillo); animation:latido 1.6s ease-in-out infinite; }
 @keyframes latido { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.35; transform:scale(.7); } }
-.portada h1 { font-weight:900; font-size:clamp(38px,6.2vw,86px); line-height:1.02; letter-spacing:-.025em; margin:18px 0 18px; max-width:15ch;
+.portada .frase-grande { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(38px,6.2vw,86px); line-height:1.02; letter-spacing:-.025em; margin:18px 0 18px; max-width:15ch;
   text-shadow:0 4px 40px rgba(0,0,0,.8); }
-.portada h1 a { color:inherit; text-decoration:none; }
+.portada .frase-grande a { color:inherit; text-decoration:none; }
 .portada .desc { color:var(--texto-2); font-size:19px; max-width:560px; }
 .portada .pista { color:var(--texto-3); font-size:12px; margin-top:12px; }
 .portada .lateral-portada { display:flex; flex-direction:column; gap:16px; align-items:stretch; }

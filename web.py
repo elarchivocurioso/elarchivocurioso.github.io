@@ -25,6 +25,9 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "test": [{"pregunta", "respuesta"}],  opcional: el test (si no, «¿Lo habrías creído?» con las curiosidades)
                                         Los tres últimos los rellena Promocion/importar_articulos.py desde los artículos.
       "censura": "parte del título",    opcional: lo que sale tachado (si no, se tacha el final del título)
+      "titulo_seo": "...",              opcional: el título para Google y las IA, con el nombre del caso (si no, el de
+                                        «# Título» del artículo, que importar_articulos.py guarda en "titulo_articulo";
+                                        si no, el de YouTube sin emojis ni mayúsculas). La página sigue mostrando "titulo".
       "fecha": "AAAA-MM-DDTHH:MM",      fecha (y hora local, opcional) de publicación en YouTube
       "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",   opcional, ruta desde "Canal YouTube"
       "epoca": "1518",                  opcional
@@ -255,12 +258,12 @@ header nav a:hover { color:#fff; }
   linear-gradient(0deg,var(--fondo) 0%,transparent 30%); }
 .portada-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:48px; align-items:end; width:100%; }
 .etiqueta-caso { display:inline-flex; align-items:center; gap:10px; font-family:'IBM Plex Mono',monospace; color:var(--rojo); letter-spacing:.25em;
-  font-size:12px; text-transform:uppercase; }
+  font-size:12px; text-transform:uppercase; font-weight:500; margin:0; }
 .etiqueta-caso::before { content:""; width:9px; height:9px; border-radius:50%; background:var(--rojo); box-shadow:var(--brillo); animation:latido 1.6s ease-in-out infinite; }
 @keyframes latido { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.35; transform:scale(.7); } }
-.portada h1 { font-weight:900; font-size:clamp(38px,6.2vw,86px); line-height:1.02; letter-spacing:-.025em; margin:18px 0 18px; max-width:15ch;
+.portada .frase-grande { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(38px,6.2vw,86px); line-height:1.02; letter-spacing:-.025em; margin:18px 0 18px; max-width:15ch;
   text-shadow:0 4px 40px rgba(0,0,0,.8); }
-.portada h1 a { color:inherit; text-decoration:none; }
+.portada .frase-grande a { color:inherit; text-decoration:none; }
 .portada .desc { color:var(--texto-2); font-size:19px; max-width:560px; }
 .portada .pista { color:var(--texto-3); font-size:12px; margin-top:12px; }
 .portada .lateral-portada { display:flex; flex-direction:column; gap:16px; align-items:stretch; }
@@ -1253,6 +1256,38 @@ def titulo_corto(e: dict) -> str:
     return re.sub(r"\s*\|\s*[^|]*$", "", titulo_limpio(e)["titulo"]).strip() or titulo_limpio(e)["titulo"]
 
 
+EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿️]")
+ROMANO = re.compile(r"M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})")
+
+
+def titulo_buscador(e: dict) -> str:
+    """Título para Google y los asistentes de IA (<title>, datos estructurados, llms.txt): "titulo_seo" si el folio lo
+    trae; si no, el «# Título» del artículo de GUIÓN ("titulo_articulo", si no es muy largo); si no, el título de
+    YouTube sin emojis ni MAYÚSCULAS de gancho. Cada palabra en mayúsculas se escribe como aparece en el artículo:
+    «BORDEN» → «Borden», «DESAPARECIDOS» → «desaparecidos», «ADN» y «GTA» se quedan."""
+    if e.get("titulo_seo"):
+        return e["titulo_seo"]
+    if e.get("titulo_articulo") and len(e["titulo_articulo"]) <= 100:
+        return e["titulo_articulo"]
+    texto = " ".join([e.get("resumen", "")] + [p for s in e.get("articulo", []) for p in s["parrafos"]])
+
+    def palabra(m: re.Match) -> str:
+        w = m.group(0)
+        if len(w) < 2 or not w.isupper() or ROMANO.fullmatch(w) or re.search(rf"\b{re.escape(w)}\b", texto):
+            return w
+        bajo, alto = w.lower(), w.capitalize()
+        minus = len(re.findall(rf"\b{re.escape(bajo)}\b", texto))
+        # Con mayúscula a mitad de frase (no al empezarla) es un nombre propio
+        propio = len(re.findall(rf"(?<=[a-záéíóúñü,] ){re.escape(alto)}\b", texto))
+        if len(w) <= 3:
+            return bajo
+        return alto if propio > minus or (not minus and alto in texto) else bajo
+
+    t = re.sub(r"\w+", palabra, EMOJI.sub("", titulo_corto(e))).strip()
+    t = re.sub(r"\s{2,}", " ", t)
+    return re.sub(r"^([¿¡«]*)(\w)", lambda m: m.group(1) + m.group(2).upper(), t)
+
+
 def ficha(e: dict, raiz: str = "", con_tema: bool = True) -> str:
     """La ÚNICA forma de pintar una tarjeta (portada, temáticas, etiquetas, «De miedo»…). La foto va entera arriba,
     como <img> con texto alternativo (Google Imágenes) y carga perezosa; el título, limpio, sin tachar.
@@ -1372,7 +1407,7 @@ def mapa_svg(expedientes: list[dict], raiz: str = "", recortar: bool = True) -> 
     else:
         caja, r = "0 0 720 360", 3.2
     marcas = "".join(
-        f'<a href="{raiz}expedientes/{e["_slug"]}.html"><title>{escape(titulo_limpio(e)["titulo"])} · '
+        f'<a href="{raiz}expedientes/{e["_slug"]}.html"><title>{escape(titulo_buscador(e))} · '
         f'{escape(e.get("lugar", ""))}</title><circle class="t-{e["tematica"]}" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}"/></a>'
         for e, x, y in zip(puntos, xs, ys))
     return (f'<svg class="mapa" viewBox="{caja}" role="img" aria-label="Mapa de los casos">'
@@ -1676,8 +1711,8 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
   {deco_portada() if es_halloween() else ""}
   <div class="portada-grid">
   <div>
-    <span class="etiqueta-caso">Caso verificado · con fuentes</span>
-    <h1 id="frase" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</h1>
+    <h1 class="etiqueta-caso">{MARCA} · Historias reales con fuentes</h1>
+    <p id="frase" class="frase-grande" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</p>
     <p class="desc">Historias reales que parecen inventadas: crímenes, leyendas, cine maldito y misterios. Cada dato lleva su fuente para que lo compruebes tú.</p>
     <p class="pista">Pasa la linterna por la foto. Toca lo tachado para leerlo.</p>
     <div class="botones" id="abrir">{abrir}<a class="boton secundario sorprendeme" href="buscar.html">Una historia al azar</a></div>
@@ -1718,9 +1753,13 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
          "inLanguage": "es", "description": canal["descripcion"],
          "potentialAction": {"@type": "SearchAction", "target": f"{URL}/buscar.html?q={{q}}", "query-input": "required name=q"}},
         {"@context": "https://schema.org", "@type": "Organization", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/",
-         "slogan": canal["lema"], "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
+         "slogan": canal["lema"], "description": canal["descripcion"], "logo": f"{URL}/logo.png",
+         # De qué sabe la web: ayuda a buscadores y asistentes de IA a saber cuándo recomendarla
+         "knowsAbout": ["historias reales", "crímenes históricos", "leyendas", "misterios sin resolver", "cine maldito",
+                        "películas perdidas", "mitos de la historia", "robos famosos", "desastres históricos"],
+         "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
     ]
-    return pagina(f"{MARCA} | {canal['lema']} Historias reales con fuentes", cuerpo, canal,
+    return pagina(f"{MARCA} · Historias reales que parecen inventadas, con fuentes", cuerpo, canal,
                   descripcion=canal["descripcion"],
                   extra=FRASE_JS, jsonld=jsonld)
 
@@ -1897,7 +1936,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     # El artículo va siempre (con sus fuentes como citas): es lo que leen y citan buscadores y asistentes de IA
     articulo = {
         "@context": "https://schema.org", "@type": "Article",
-        "headline": titulo_limpio(e)["titulo"][:110], "description": e.get("resumen") or e["titulo"],
+        "headline": titulo_buscador(e)[:110], "description": e.get("resumen") or e["titulo"],
         "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
         "url": f"{URL}/{ruta}", "mainEntityOfPage": f"{URL}/{ruta}", "inLanguage": "es",
         "author": publisher, "publisher": publisher,
@@ -1916,7 +1955,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     migas = [{"@type": "ListItem", "position": 1, "name": MARCA, "item": f"{URL}/"}]
     if e["tematica"]:
         migas.append({"@type": "ListItem", "position": 2, "name": t["nombre"], "item": f"{URL}/{e['tematica']}/"})
-    migas.append({"@type": "ListItem", "position": len(migas) + 1, "name": titulo_corto(e)})
+    migas.append({"@type": "ListItem", "position": len(migas) + 1, "name": titulo_buscador(e)})
     jsonld = [articulo, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": migas}]
     if e.get("youtube"):
         jsonld.append({
@@ -1926,7 +1965,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
             "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
             "url": f"{URL}/{ruta}", "inLanguage": "es", "publisher": publisher,
         })
-    return pagina(f"{titulo_limpio(e)['titulo']} · {MARCA}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
+    return pagina(f"{titulo_buscador(e)} · {MARCA}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
                   ruta=ruta, imagen=imagen_compartir(e), tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
                   extra=COPIAR_JS, folio=str(e["_n"]))
 
@@ -2199,7 +2238,7 @@ def generar() -> int:
 
     # Feed RSS: para lectores como Feedly o Inoreader y agregadores de noticias
     items = "".join(
-        f"<item><title>{escape_xml(e['titulo'])}</title>"
+        f"<item><title>{escape_xml(titulo_buscador(e))}</title>"
         f"<link>{URL}/expedientes/{e['_slug']}.html</link>"
         f"<guid>{URL}/expedientes/{e['_slug']}.html</guid>"
         f"<pubDate>{format_datetime(datetime.fromisoformat(e['fecha']).astimezone())}</pubDate>"
@@ -2249,7 +2288,7 @@ def generar() -> int:
               "", "## Temáticas", ""]
     lineas += [f"- [{t['nombre']}]({URL}/{k}/): {t['corto']}" for k, t in TEMATICAS.items()]
     lineas += ["", "## Folios", ""]
-    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)}"
+    lineas += [f"- [{titulo_buscador(e)}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)}"
                + (f" · {tematica(e)['nombre']}" if e["tematica"] else "") + f": {e.get('resumen', '')}" for e in listados]
     lineas += ["", "## Etiquetas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
     lineas += ["", "## Más", "", f"- [Todos los artículos completos, en texto]({URL}/llms-full.txt)",
@@ -2260,7 +2299,7 @@ def generar() -> int:
     completo = [f"# {MARCA}: todos los folios", "",
                 f"> {canal['lema']} Fuente: {URL}/ · Cada caso enlaza a su página, que es la que conviene citar.", ""]
     for e in listados:
-        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html"]
+        completo += [f"## {titulo_buscador(e)}", "", f"Página: {URL}/expedientes/{e['_slug']}.html"]
         completo += [f"Temática: {tematica(e)['nombre']}"] if e["tematica"] else []
         completo += [f"{k}: {e[c]}" for k, c in (("Lugar", "lugar"), ("Época", "epoca")) if e.get(c)]
         completo += ["", e.get("resumen", ""), ""]

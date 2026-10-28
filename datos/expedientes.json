@@ -151,7 +151,8 @@
           "estado": "leyenda",
           "texto": "Que morían hasta 15 personas al día, porque los documentos municipales de 1518 no mencionan ningún muerto [1]."
         }
-      ]
+      ],
+      "titulo_articulo": "1518: el verano en que Estrasburgo no podía dejar de bailar"
     },
     {
       "youtube": "VzDGAwrxWM4",
@@ -293,7 +294,8 @@
           "estado": "leyenda",
           "texto": "La frase de las «10.000 maneras que no funcionan»: la versión de 1910 habla de «varios miles» y trata de baterías [6]"
         }
-      ]
+      ],
+      "titulo_articulo": "¿Edison inventó la bombilla? La verdad sobre Joseph Swan y la carrera por la luz"
     },
     {
       "youtube": "QJhFpKyG5Bc",
@@ -431,7 +433,8 @@
           "estado": "leyenda",
           "texto": "Que midiera alrededor de 1,57 metros: sale de leer en pulgadas inglesas una medida tomada en pulgadas francesas [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "¿Napoleón era bajito? El mito que nos creímos 200 años"
     },
     {
       "youtube": "n2VzGwBZtVs",
@@ -561,7 +564,8 @@
           "estado": "leyenda",
           "texto": "Que los vikingos combatieran con cascos de cuernos; la imagen se popularizó con el vestuario de Doepler para Wagner en 1876 [7]."
         }
-      ]
+      ],
+      "titulo_articulo": "Los vikingos nunca llevaron cuernos (la culpa es de una ópera)"
     },
     {
       "youtube": "UgproHL8drs",
@@ -705,7 +709,8 @@
           "estado": "leyenda",
           "texto": "Que muriera, sin más, por la mordedura de un áspid; no se halló ninguna serpiente y el propio Plutarco admite que nadie sabe la verdad [7]."
         }
-      ]
+      ],
+      "titulo_articulo": "Cleopatra vivió más cerca del iPhone que de las pirámides"
     },
     {
       "youtube": "6FOBq5w86vg",
@@ -844,7 +849,8 @@
           "estado": "leyenda",
           "texto": "Que unos anarquistas volaron el tanque: lo alegó la empresa y el juicio lo descartó [3]."
         }
-      ]
+      ],
+      "titulo_articulo": "Una ola de melaza en Boston: el día que un jarabe mató a 21 personas"
     },
     {
       "youtube": "Q4L4l8-mS1M",
@@ -972,7 +978,8 @@
           "estado": "leyenda",
           "texto": "Que Australia «perdió una guerra» contra los emús: fue un control de plagas fallido y la tropa no sufrió ni una baja [3]."
         }
-      ]
+      ],
+      "titulo_articulo": "La guerra del emú: cuando Australia sacó las ametralladoras contra unas aves"
     },
     {
       "youtube": "c--zhvTm08U",
@@ -1079,7 +1086,8 @@
           "estado": "leyenda",
           "texto": "Que la melaza matara por ser lenta; la primera ola llegó a unos 56 kilómetros por hora [3]."
         }
-      ]
+      ],
+      "titulo_articulo": "Por qué el frío convirtió la melaza de Boston en una trampa mortal"
     },
     {
       "youtube": "uTWN9_BrErg",
@@ -1177,7 +1185,8 @@
           "estado": "leyenda",
           "texto": "Que el emú mida dos metros; los más grandes llegan a 1,9 [2]."
         }
-      ]
+      ],
+      "titulo_articulo": "Por qué las ametralladoras no pudieron con los emús"
     },
     {
       "youtube": "pnpMJ9tX8JI",
@@ -1315,7 +1324,8 @@
           "estado": "leyenda",
           "texto": "Que acabó como un borracho violento, exhibido en ferias y arruinado: las fuentes de la época no dicen nada de eso [2]."
         }
-      ]
+      ],
+      "titulo_articulo": "Phineas Gage: el hombre de la barra de hierro y la leyenda que lo persiguió"
     },
     {
       "youtube": "xmxdzH-pZSU",
@@ -1420,7 +1430,8 @@
           "estado": "leyenda",
           "texto": "Que enterraran a Gage con su barra; la familia se la entregó a Harlow [1]."
         }
-      ]
+      ],
+      "titulo_articulo": "La barra de Phineas Gage: qué era exactamente y dónde está hoy"
     },
     {
       "youtube": "9SYd1HiSA1M",
@@ -1565,7 +1576,8 @@
           "estado": "leyenda",
           "texto": "«Un volcán creó a Frankenstein»: la lluvia encerró al grupo y propició el reto, pero la novela salió del talento de Mary Shelley [2]."
         }
-      ]
+      ],
+      "titulo_articulo": "1816, el año sin verano: un volcán, nieve en junio y el nacimiento de Frankenstein"
     },
     {
       "youtube": "YbPF0QQVU0I",
@@ -1665,7 +1677,8 @@
           "estado": "discutido",
           "texto": "Cuánto pesó el tiempo en el nacimiento de la novela, porque también contaron las lecturas y las conversaciones del grupo [5]."
         }
-      ]
+      ],
+      "titulo_articulo": "Del Tambora a Villa Diodati: cómo las tormentas de 1816 entraron en Frankenstein"
     },
     {
       "youtube": "m8tW15aqnWo",
@@ -1806,7 +1819,8 @@
           "estado": "leyenda",
           "texto": "Que el hielo de Groenlandia guarde su huella química: esos picos de nitrato se atribuyen hoy a incendios forestales [1]."
         }
-      ]
+      ],
+      "titulo_articulo": "El evento Carrington: la tormenta solar que hizo arder los telégrafos en 1859"
     },
     {
       "youtube": "gCFYlkS09xo",
@@ -1910,7 +1924,9 @@
           "estado": "leyenda",
           "texto": "Que el Sol enviara electricidad por los cables: lo que hizo fue agitar el campo magnético terrestre, y esa variación indujo la corriente [3]"
         }
-      ]
+      ],
+      "titulo_seo": "El evento Carrington (1859): telegrafistas que enviaron mensajes sin baterías",
+      "titulo_articulo": "Telégrafos sin pilas: cómo una tormenta solar alimentó una línea en 1859"
     },
     {
       "youtube": "M3-R2WDHpKw",
@@ -2051,7 +2067,8 @@
           "estado": "leyenda",
           "texto": "«Vendió la torre dos veces»: la vendió una vez; el segundo intento fracasó porque la víctima fue a la policía [4]."
         }
-      ]
+      ],
+      "titulo_articulo": "Victor Lustig, el «conde» que vendió la Torre Eiffel a un chatarrero"
     },
     {
       "youtube": "fD5IBQsYNtY",
@@ -2158,7 +2175,8 @@
           "estado": "leyenda",
           "texto": "Que el Gobierno francés quisiera vender la torre como chatarra: era la historia que contó Lustig, que ni siquiera trabajaba para el Estado [4]"
         }
-      ]
+      ],
+      "titulo_articulo": "Las reglas del timo: la psicología con la que Lustig «vendió» la Torre Eiffel"
     },
     {
       "youtube": "JKUBZ1wBI5s",
@@ -2296,7 +2314,8 @@
           "estado": "leyenda",
           "texto": "Especuladores ahogados en los canales y una Holanda en la ruina: salen de canciones satíricas que Mackay leyó como crónica [4]."
         }
-      ]
+      ],
+      "titulo_articulo": "La fiebre de los tulipanes: la burbuja de 1637 que fue menos loca de lo que nos contaron"
     },
     {
       "youtube": "5CsaTHjV0tc",
@@ -2407,7 +2426,8 @@
           "estado": "leyenda",
           "texto": "El marinero encarcelado por comerse un bulbo con su arenque, una anécdota de panfletos moralizantes y no de los archivos [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El crac de los tulipanes: cómo un libro de 1841 convirtió una burbuja en leyenda"
     },
     {
       "youtube": "PAjZ8g7deHM",
@@ -2548,7 +2568,8 @@
           "estado": "leyenda",
           "texto": "Que en 2001 se hallaran sus restos en Haití: la madera era de árboles que seguían vivos hacia 1894 [4]."
         }
-      ]
+      ],
+      "titulo_articulo": "El Mary Celeste: el barco que apareció intacto y sin nadie a bordo"
     },
     {
       "youtube": "q-4LNa7J4F4",
@@ -2654,7 +2675,8 @@
           "estado": "leyenda",
           "texto": "Que el barco se llamara «Marie Celeste»: esa grafía nació del relato de 1884 [5]"
         }
-      ]
+      ],
+      "titulo_articulo": "«J. Habakuk Jephson's Statement»: el relato de Conan Doyle que se coló en el misterio del Mary Celeste"
     },
     {
       "youtube": "cGdxWX4mSQI",
@@ -2791,7 +2813,8 @@
           "estado": "leyenda",
           "texto": "Que Max Schreck no existía y era un seudónimo de Alfred Abel: fue un actor real que murió en 1936 [3]."
         }
-      ]
+      ],
+      "titulo_articulo": "Nosferatu: la película que un tribunal condenó a desaparecer"
     },
     {
       "youtube": "XtHCT32B-Fw",
@@ -2904,7 +2927,8 @@
           "estado": "leyenda",
           "texto": "Que solo sobreviviera una copia: quedaron varias en distintos países, y las restauraciones actuales combinan varias de ellas [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "La sentencia contra «Nosferatu»: Florence Stoker ganó el juicio, pero no pudo destruir la película"
     },
     {
       "youtube": "DujLCXw4XMk",
@@ -3040,7 +3064,8 @@
           "estado": "leyenda",
           "texto": "Las cifras de cientos de víctimas, que surgieron en revistas *pulp* de los años treinta sin base documental [4]."
         }
-      ]
+      ],
+      "titulo_articulo": "H. H. Holmes: el estafador de Chicago y la verdad detrás del mito"
     },
     {
       "youtube": "B5MRTu9xLBA",
@@ -3145,7 +3170,8 @@
           "estado": "leyenda",
           "texto": "Que despidiera a los obreros sin parar para que nadie conociera el plano: lo que consta son disputas e impagos con los constructores [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "H. H. Holmes, el estafador: muebles a plazos, proveedores sin cobrar y un edificio levantado a crédito"
     },
     {
       "youtube": "vML9AgGkMfc",
@@ -3299,7 +3325,8 @@
           "estado": "leyenda",
           "texto": "Que GTA VI haya costado 2.000 millones de dólares: Rockstar negó las cifras de más de 1.500 millones [1]."
         }
-      ]
+      ],
+      "titulo_articulo": "GTA VI: del fallo de programación en Escocia al juego más esperado de la historia"
     },
     {
       "youtube": "G4ysC_DHmCw",
@@ -3420,7 +3447,8 @@
           "estado": "leyenda",
           "texto": "Atribuir la anécdota de la policía a Mike Dailly, cuando el testimonio publicado es de Gary Penn [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "«Race'n'Chase»: el juego de policías que se convirtió en GTA"
     },
     {
       "youtube": "R5MAx2_PDNA",
@@ -3538,7 +3566,8 @@
           "estado": "leyenda",
           "texto": "La fecha de 1484 que dio William Manchester, que no citó ninguna prueba para sostenerla [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El flautista de Hamelín: lo que dicen los documentos sobre los niños de 1284"
     },
     {
       "youtube": "ytwYRXqx-2U",
@@ -3657,7 +3686,8 @@
           "estado": "leyenda",
           "texto": "Que el marqués de Waterford fuera Jack es un rumor que nunca tuvo pruebas [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "Spring-heeled Jack: el fantasma saltarín que inventó el Londres victoriano"
     },
     {
       "youtube": "UeY-Fi2i0O0",
@@ -3777,7 +3807,8 @@
           "estado": "leyenda",
           "texto": "El nacimiento del decimotercer hijo de la Madre Leeds en 1735 no tiene respaldo documental [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El Diablo de Jersey: la semana de 1909 en que una leyenda paralizó Nueva Jersey"
     },
     {
       "youtube": "mv6RTbWCgSg",
@@ -3897,7 +3928,8 @@
           "estado": "leyenda",
           "texto": "La cancioncilla de la comba llama «madre» a la madrastra, exagera los hechos y omite la absolución [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "Lizzie Borden: el juicio que fascinó a Estados Unidos y un caso que nunca se cerró"
     },
     {
       "youtube": "cQ2t3peNRJ4",
@@ -4017,7 +4049,8 @@
           "estado": "leyenda",
           "texto": "La bala de plata fundida con medallas de la Virgen, que es una invención literaria posterior [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "La Bestia de Gévaudan: tres años de miedo en la Francia de Luis XV"
     },
     {
       "youtube": "SNnqM8vvGHA",
@@ -4165,7 +4198,8 @@
           "estado": "leyenda",
           "texto": "La cancioncilla de los cuarenta golpes: el arma fue un hacha de mano, la cuenta es falsa y calla que Lizzie fue absuelta [4]."
         }
-      ]
+      ],
+      "titulo_articulo": "Lizzie Borden: la autopsia en el comedor, el hacha sin mango y los cráneos en la sala del tribunal"
     },
     {
       "youtube": "m2RJiGpE9Ic",
@@ -4273,7 +4307,8 @@
           "estado": "leyenda",
           "texto": "Que el vestido quemado probó su culpa: el jurado la absolvió en 1893 [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "El vestido que Lizzie Borden quemó en la estufa: la prueba que nunca se pudo examinar"
     },
     {
       "youtube": "VpQmXpkUrsA",
@@ -4395,7 +4430,8 @@
           "estado": "leyenda",
           "texto": "Las 135 víctimas del libro de Patterson; los registros de la compañía del ferrocarril hablaban de 28 [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "Los leones de Tsavo: la historia real detrás de la leyenda que detuvo un ferrocarril"
     },
     {
       "youtube": "V58tgJPn9ak",
@@ -4510,7 +4546,8 @@
           "estado": "leyenda",
           "texto": "Las 600 o 650 víctimas, una cifra que venía de un libro que nunca apareció [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "Erzsébet Báthory: la condesa de Čachtice entre el documento y la leyenda"
     },
     {
       "youtube": "TJ1VxXszcRE",
@@ -4619,7 +4656,8 @@
           "estado": "leyenda",
           "texto": "Que un guardia lo matara de un disparo es un relato sin pruebas que lo respalden [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "Romasanta: el juicio al «hombre lobo» de Allariz"
     },
     {
       "youtube": "b8l0v82Fx8I",
@@ -4733,7 +4771,8 @@
           "estado": "leyenda",
           "texto": "Que el marido de la hija siguiera vivo no se sostiene: quien dijo haberlo visto en 1951 admitió que mentía [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "Hinterkaifeck: el enigma de la granja bávara que nadie ha resuelto"
     },
     {
       "youtube": "3JNCHOwv0oI",
@@ -4855,7 +4894,8 @@
           "estado": "leyenda",
           "texto": "Que el ADN de un chal haya resuelto el caso no se sostiene: nada documenta su vínculo con el crimen y el ADN mitocondrial solo puede descartar sospechosos [4]"
         }
-      ]
+      ],
+      "titulo_articulo": "Jack el Destripador: Whitechapel, 1888, y el enigma que nadie ha resuelto"
     },
     {
       "youtube": "-97TNfGrCU8",
@@ -4988,7 +5028,8 @@
           "estado": "leyenda",
           "texto": "Las copias «reaparecidas»: ningún hallazgo anunciado se ha confirmado, y en 2009 circuló un vídeo hecho con un muñeco [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "London After Midnight: cómo se reconstruye una película de vampiros que nadie vivo ha visto"
     },
     {
       "youtube": "tm3C8EukAQ4",
@@ -5084,7 +5125,8 @@
           "estado": "leyenda",
           "texto": "La copia completa aparecida en 2017: solo había unos fotogramas sueltos en un archivo de Canarias [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "El incendio del almacén 7 y las copias fantasma de «London After Midnight»"
     },
     {
       "youtube": "Uwh6jVDBY3U",
@@ -5229,7 +5271,8 @@
           "estado": "leyenda",
           "texto": "Que la película la prohibió el franquismo: la secuestró la justicia militar entre 1979 y 1981 [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "El crimen de Cuenca: cómo se fabricó una condena por un muerto que seguía vivo"
     },
     {
       "youtube": "EDjQU4dBhwQ",
@@ -5332,7 +5375,8 @@
           "estado": "discutido",
           "texto": "Si el párroco de Tresjuncos ocultó la carta o simplemente no contestó [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "El pastor de Cuenca que volvió vivo: una carta, una boda y una sentencia que se vino abajo"
     },
     {
       "youtube": "_wamBwii4KI",
@@ -5477,7 +5521,8 @@
           "estado": "leyenda",
           "texto": "El público que huyó en masa de la sala, del que no hay ningún informe de la época [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El tren de los Lumière y el público que nunca huyó: cómo se fabricó el mito fundacional del cine"
     },
     {
       "youtube": "ejzbQkaZ3h4",
@@ -5582,7 +5627,8 @@
           "estado": "leyenda",
           "texto": "La estampida del público ante el tren, sin un solo informe de la época que la cuente [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El tren que no estaba: qué vio de verdad el público en la primera sesión de cine de pago"
     },
     {
       "youtube": "BWe6lZnCJ6M",
@@ -5723,7 +5769,8 @@
           "estado": "leyenda",
           "texto": "Los «más de ocho millones» de quemados del rótulo; hoy se calculan entre 40.000 y 60.000 ejecuciones [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "Häxan: la película muda que quiso explicar la caza de brujas (y lo que acertó y falló)"
     },
     {
       "youtube": "FWtaJ6XSqvA",
@@ -5819,7 +5866,8 @@
           "estado": "discutido",
           "texto": "El año de la introducción que grabó para el reestreno: 1931 según una fuente, 1941 según otra [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "Benjamin Christensen, el director que se reservó el papel de Satanás"
     },
     {
       "youtube": "Hf5jIfONaW8",
@@ -5967,7 +6015,8 @@
           "estado": "leyenda",
           "texto": "Que la mataron otras presas en el patio: no hay prueba, y la investigación de Plaza lo descarta [6]"
         }
-      ]
+      ],
+      "titulo_articulo": "Enriqueta Martí, la «vampira del Raval»: lo que dicen los documentos frente a un siglo de leyenda"
     },
     {
       "youtube": "MmnD0RQj_aw",
@@ -6081,7 +6130,9 @@
           "estado": "leyenda",
           "texto": "La lista de clientes poderosos, que nunca se demostró [5]"
         }
-      ]
+      ],
+      "titulo_articulo": "Cómo la prensa de 1912 inventó a la «vampira de Barcelona»: cuatro páginas al día y ninguna rectificación",
+      "titulo_seo": "Enriqueta Martí: así inventó la prensa de 1912 a la «vampira» de Barcelona"
     },
     {
       "youtube": "oWEFaGi-blo",
@@ -6228,7 +6279,8 @@
           "estado": "leyenda",
           "texto": "El marqués de Valfierno y sus seis copias, que solo cuenta un artículo de 1932 [5]"
         }
-      ]
+      ],
+      "titulo_articulo": "Vincenzo Peruggia y la Mona Lisa: la bata imposible, el patriota que quería vender el cuadro y las seis copias que nadie ha visto"
     },
     {
       "youtube": "VBYZQNwXxqU",
@@ -6328,7 +6380,9 @@
           "estado": "leyenda",
           "texto": "Que la Mona Lisa era una desconocida antes del robo: los críticos ya la elogiaban desde el siglo XIX [3]"
         }
-      ]
+      ],
+      "titulo_seo": "El robo de la Mona Lisa (1911): miles de personas hicieron cola para ver un hueco vacío",
+      "titulo_articulo": "Cola para ver una pared vacía: cómo la ausencia de la Mona Lisa la convirtió en el cuadro más famoso del mundo"
     },
     {
       "youtube": "wW2I-DUFIF0",
@@ -6469,7 +6523,8 @@
           "estado": "leyenda",
           "texto": "Los desmayos y las sales en los cines de 1925, de los que no hay pruebas de la época [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El fantasma de la ópera (1925): el rodaje caótico que casi hunde un clásico del terror"
     },
     {
       "youtube": "Yd8J_0SIhP0",
@@ -6577,7 +6632,8 @@
           "estado": "leyenda",
           "texto": "La gran cueva iluminada con antorchas de la ficción: es un depósito de hormigón cerrado al público [4]"
         }
-      ]
+      ],
+      "titulo_articulo": "El lago bajo la Ópera de París: el agua que Charles Garnier no pudo sacar"
     },
     {
       "youtube": "F9qhRymo0TA",
@@ -6714,7 +6770,8 @@
           "estado": "leyenda",
           "texto": "Que Romero inventó a los zombis del cine: ya salían en «White Zombie» (1932), aunque eran otra cosa [7]"
         }
-      ]
+      ],
+      "titulo_articulo": "La noche de los muertos vivientes: cómo unos publicistas de Pittsburgh reinventaron el cine de terror con 114.000 dólares"
     },
     {
       "youtube": "rvraclBTUIs",
@@ -6816,7 +6873,8 @@
           "estado": "leyenda",
           "texto": "Que sus creadores no cobraron nada: cobraron poco, y Romero decía que la película les dio sus carreras [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "La línea que desapareció: por qué «La noche de los muertos vivientes» no tiene dueño"
     },
     {
       "youtube": "T0BmhBiDDEA",
@@ -6950,7 +7008,8 @@
           "estado": "discutido",
           "texto": "Que uno de los funcionarios muertos fuera cómplice: lo dijo Navarrete y nunca se probó [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El asalto al expreso de Andalucía: 28 días entre un vagón a oscuras y el garrote"
     },
     {
       "youtube": "Dxc4PmB5DuY",
@@ -7060,7 +7119,8 @@
           "estado": "discutido",
           "texto": "El recorrido del taxi: desde Alcázar de San Juan según unas fuentes, entre Atocha y Aranjuez según otra [4]"
         }
-      ]
+      ],
+      "titulo_articulo": "Un taxi de madrugada y un sereno con memoria: la pista que delató a la banda del expreso de Andalucía"
     },
     {
       "youtube": "2_6bbAk3isc",
@@ -7214,7 +7274,8 @@
           "estado": "leyenda",
           "texto": "Que el mal olor contagiaba el cólera: la enfermedad viajaba por el agua [3]"
         }
-      ]
+      ],
+      "titulo_articulo": "El Gran Hedor de Londres: la teoría equivocada que construyó las cloacas que acabaron con el cólera"
     },
     {
       "youtube": "piCNwa171NA",
@@ -7315,7 +7376,9 @@
           "estado": "leyenda",
           "texto": "Que el mal olor transmitía enfermedades: el cólera viajaba por el agua [2]"
         }
-      ]
+      ],
+      "titulo_seo": "El Gran Hedor de Londres (1858): el Parlamento empapó sus cortinas para aguantar el Támesis",
+      "titulo_articulo": "Cortinas empapadas en cloruro de cal: el verano en que el Támesis puso contra las cuerdas al Parlamento británico"
     },
     {
       "youtube": "6J7zPugqBy8",
@@ -7445,7 +7508,8 @@
           "estado": "leyenda",
           "texto": "Que el director de la cárcel dejaba salir al hijo a su antojo: el juzgado no pudo probarlo [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "El crimen de la calle Fuencarral: la escena, los forenses y un juicio en el que la prensa acabó en el banquillo"
     },
     {
       "youtube": "-KfH25L32ug",
@@ -7546,7 +7610,8 @@
           "estado": "leyenda",
           "texto": "Que la prensa de la época descubrió a los «verdaderos culpables»: su tesis del hijo y el director de la cárcel no se probó [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "Galdós, cronista de sucesos: el novelista que siguió el crimen de la calle Fuencarral y acabó desconfiando de la prensa"
     },
     {
       "youtube": "kevRexK7XI0",
@@ -7672,7 +7737,8 @@
           "estado": "discutido",
           "texto": "El móvil: la teoría que lo relaciona con el futuro del Banco Urquijo nunca se ha probado ante un juez [2]"
         }
-      ]
+      ],
+      "titulo_articulo": "El caso de los marqueses de Urquijo: dos sentencias, pruebas que desaparecieron y una causa que prescribió en 2010"
     },
     {
       "youtube": "GcV6QKN6o5E",
@@ -7776,7 +7842,8 @@
           "estado": "discutido",
           "texto": "El móvil: las teorías sobre una trama financiera nunca se han probado ante un juez [4]"
         }
-      ]
+      ],
+      "titulo_articulo": "«Solo o en compañía de otros»: la frase de una sentencia de 1983 y las preguntas que el caso Urquijo nunca contestó"
     },
     {
       "youtube": "SF_ImYArQ_Y",
@@ -7936,7 +8003,9 @@
           "estado": "leyenda",
           "texto": "Que la anulación de 2002 fue una absolución: seguía acusada y pendiente de un segundo juicio [1]"
         }
-      ]
+      ],
+      "titulo_articulo": "Dolores Vázquez y el caso de Mijas: una condena anulada, una prueba de ADN y una reparación que sigue a medias",
+      "titulo_seo": "Dolores Vázquez y el caso de Mijas: condenada siendo inocente y la prueba de ADN"
     },
     {
       "youtube": "HPPyfHnTEZ0",
@@ -8034,7 +8103,9 @@
           "estado": "leyenda",
           "texto": "Que el ADN sacó a Dolores Vázquez de la cárcel: ya estaba libre desde 2002 [2]"
         }
-      ]
+      ],
+      "titulo_seo": "Dolores Vázquez y el caso de Mijas: la colilla que demostró que era inocente",
+      "titulo_articulo": "La colilla de 1999 que cambió el caso de Mijas: cuatro años de espera y una coincidencia de ADN"
     },
     {
       "youtube": "u8wD4A2XNA0",
@@ -8043,7 +8114,7 @@
       "epoca": "1790-1974",
       "lugar": "India, Reino Unido, España, Francia, Alemania y Estados Unidos",
       "miniatura": "Identidad/Miniaturas/miniatura-A027-top10-monstruos-reales.png",
-      "resumen": "Un mensaje en clave que nadie pudo leer durante cincuenta y un años… y que tres aficionados descifraron en dos mil veinte. Dentro esperaban encontrar un nombre.",
+      "resumen": "Diez asesinos reales y el detalle que los delató: Behram, Mary Ann Cotton, Burke y Hare, Garayo, Vacher, Landru, Kürten, Belle Gunness, Petiot… y el Zodiaco, que sigue sin nombre.",
       "curiosidades": [
         "Nº 10. Behram, jefe thug de Oudh (norte de la India); detenido hacia 1835-1836 tras la delación de un thug convertido en «aprobador». En su declaración de 1836 ante el capitán James Paton dijo que pudo haber matado a unas 125 personas y haber visto morir a otras 150. Un año después, Paton escribió que había estado presente en 931 muertes. El libro Guinness lo cita como el autor más prolífico, con 931 (1790-1840). El historiador Mike Dash considera la cifra improbable. Fue condenado a cadena perpetua",
         "Los thugs se unían a viajeros por los caminos, se ganaban su confianza y los mataban para robarles",
@@ -8208,7 +8279,9 @@
           "estado": "leyenda",
           "texto": "Petiot dijo que solo había matado a alemanes y colaboracionistas, pero la policía no encontró nada que lo respaldara [10]"
         }
-      ]
+      ],
+      "titulo_articulo": "Diez «monstruos» reales y el detalle que los delató: del arsénico de Mary Ann Cotton al cifrado sin nombre del Zodiaco",
+      "titulo_seo": "Top 10 monstruos reales de la historia: de Mary Ann Cotton al asesino del Zodiaco"
     },
     {
       "youtube": "HvlmXfz6OIo",
@@ -8308,7 +8381,9 @@
           "estado": "leyenda",
           "texto": "Que el Z340 escondía el nombre del autor: no dice quién era [2]"
         }
-      ]
+      ],
+      "titulo_seo": "El mensaje Z340 del asesino del Zodiaco: descifrado 51 años después… y no decía su nombre",
+      "titulo_articulo": "El cifrado Z340 del Zodiaco: cómo se resolvió en 2020 un mensaje que nadie pudo leer durante 51 años"
     }
   ]
 }
