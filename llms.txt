@@ -8,6 +8,8 @@ Blog en español de historias de miedo reales y curiosidades de la historia: cr�
 
 ## Expedientes
 
+- [TOP 4 HALLOWEEN: la CONDESA sangrienta, el caso de Erzsébet Báthory](https://elarchivocurioso.github.io/expedientes/top-4-halloween-la-condesa-sangrienta-el-caso-de-erzsebet-bathory.html): Número cuatro. La llamaron «la condesa sangrienta». Pero…
+- [TOP 5 HALLOWEEN: los LEONES de Tsavo, la leyenda que paralizó un ferrocarril](https://elarchivocurioso.github.io/expedientes/top-5-halloween-los-leones-de-tsavo-la-leyenda-que-paralizo-un-ferroca.html): Número cinco. Kenia, mil ochocientos noventa y ocho. Cae la noche en un campamento…
 - [LIZZIE BORDEN: la mujer que una canción declaró culpable… y un jurado absolvió (1892)](https://elarchivocurioso.github.io/expedientes/lizzie-borden-la-mujer-que-una-cancion-declaro-culpable-y-un-jurado-ab.html): Una mañana de verano. Una casa cerrada con llave. Dentro, dos personas pierden la vida…
 - [TOP 6 HALLOWEEN: la BESTIA de Gévaudan, el monstruo que aterrorizó a Francia](https://elarchivocurioso.github.io/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html): Número seis. Durante tres años, algo acechó los bosques del sur de Francia… y nadie sabía qué era.
 - [TOP 7 HALLOWEEN: el caso LIZZIE BORDEN sigue abierto más de 130 años después](https://elarchivocurioso.github.io/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html): Número siete. Hay una cancioncilla infantil sobre esta mujer… y exagera casi todo lo que cuenta.
@@ -41,6 +43,7 @@ Blog en español de historias de miedo reales y curiosidades de la historia: cr�
 - [Chicago 1893](https://elarchivocurioso.github.io/temas/chicago-1893.html)
 - [Ciencia](https://elarchivocurioso.github.io/temas/ciencia.html)
 - [Cine mudo](https://elarchivocurioso.github.io/temas/cine-mudo.html)
+- [Crónica negra](https://elarchivocurioso.github.io/temas/cronica-negra.html)
 - [Desastres](https://elarchivocurioso.github.io/temas/desastres.html)
 - [Drácula](https://elarchivocurioso.github.io/temas/dracula.html)
 - [Edad Media](https://elarchivocurioso.github.io/temas/edad-media.html)
@@ -48,12 +51,14 @@ Blog en español de historias de miedo reales y curiosidades de la historia: cr�
 - [Fall River](https://elarchivocurioso.github.io/temas/fall-river.html)
 - [Grand Theft Auto](https://elarchivocurioso.github.io/temas/grand-theft-auto.html)
 - [Historia de la medicina](https://elarchivocurioso.github.io/temas/historia-de-la-medicina.html)
+- [Historias de miedo](https://elarchivocurioso.github.io/temas/historias-de-miedo.html)
 - [Mitos](https://elarchivocurioso.github.io/temas/mitos.html)
 - [Mitos de la historia](https://elarchivocurioso.github.io/temas/mitos-de-la-historia.html)
 - [Siglo XIX](https://elarchivocurioso.github.io/temas/siglo-xix.html)
 - [Siglo XVII](https://elarchivocurioso.github.io/temas/siglo-xvii.html)
 - [Siglo XVIII](https://elarchivocurioso.github.io/temas/siglo-xviii.html)
 - [Siglo XX](https://elarchivocurioso.github.io/temas/siglo-xx.html)
+- [Top 10](https://elarchivocurioso.github.io/temas/top-10.html)
 - [Tormenta solar](https://elarchivocurioso.github.io/temas/tormenta-solar.html)
 - [Torre Eiffel](https://elarchivocurioso.github.io/temas/torre-eiffel.html)
 - [Volcán Tambora](https://elarchivocurioso.github.io/temas/volcan-tambora.html)

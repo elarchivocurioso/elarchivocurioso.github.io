@@ -1,5 +1,32 @@
 [
  {
+  "antes": "Lizzie Borden QUEMÓ un vestido tres ",
+  "tachado": "días después del crimen",
+  "despues": "",
+  "slug": "lizzie-borden-quemo-un-vestido-tres-dias-despues-del-crimen",
+  "num": "Nº 022 · 1892-1893",
+  "img": "portadas/S126.jpg",
+  "tipo": "short"
+ },
+ {
+  "antes": "TOP 4 HALLOWEEN: la CONDESA sangrienta, el ",
+  "tachado": "caso de Erzsébet Báthory",
+  "despues": "",
+  "slug": "top-4-halloween-la-condesa-sangrienta-el-caso-de-erzsebet-bathory",
+  "num": "Nº 024 · hacia 1590-1614",
+  "img": "portadas/S122.jpg",
+  "tipo": "short"
+ },
+ {
+  "antes": "TOP 5 HALLOWEEN: los LEONES de Tsavo, la ",
+  "tachado": "leyenda que paralizó un ferrocarril",
+  "despues": "",
+  "slug": "top-5-halloween-los-leones-de-tsavo-la-leyenda-que-paralizo-un-ferroca",
+  "num": "Nº 023 · 1898",
+  "img": "portadas/S121.jpg",
+  "tipo": "short"
+ },
+ {
   "antes": "LIZZIE BORDEN: la mujer que una canción declaró culpable… y un ",
   "tachado": "jurado absolvió",
   "despues": " (1892)",

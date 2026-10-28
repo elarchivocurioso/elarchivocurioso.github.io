@@ -595,9 +595,16 @@ def fecha_iso(fecha: str) -> str:
     return datetime.fromisoformat(fecha).astimezone().isoformat(timespec="seconds")
 
 
+# Casos recientes con condenas firmes (Urquijo, Mijas): nada tachado, para que ninguna parte del título se lea como
+# una acusación revelada. También vale "censura": false en cualquier expediente.
+SIN_TACHAR = {"A025", "A026", "S138", "S139"}
+
+
 def partes_titulo(e: dict) -> tuple[str, str, str]:
     """Divide el título en (antes, tachado, después). Usa "censura" si existe; si no, tacha el final."""
     titulo = e["titulo"]
+    if e.get("censura") is False or e.get("num") in SIN_TACHAR:
+        return titulo, "", ""
     censura = (e.get("censura") or "").strip()
     if censura:
         i = titulo.lower().find(censura.lower())
@@ -627,6 +634,8 @@ def partes_titulo(e: dict) -> tuple[str, str, str]:
 def titulo_html(e: dict, enfocable: bool = False) -> str:
     """Título con la parte tachada. El texto completo sigue en el HTML (lo lee Google y el lector de pantalla)."""
     antes, oculto, despues = partes_titulo(e)
+    if not oculto:
+        return escape(antes + despues)
     foco = ' tabindex="0" role="button" aria-pressed="false" title="Revelar"' if enfocable else ""
     return f'{escape(antes)}<span class="tachado"{foco}>{escape(oculto)}</span>{escape(despues)}'
 
