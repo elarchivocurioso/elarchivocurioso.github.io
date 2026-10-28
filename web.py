@@ -91,7 +91,8 @@ MARCA = "Folio 13"
 ANTES = "El Archivo Curioso"   # nombre anterior: sale en los datos para buscadores, para que sepan que es la misma web
 # Perfiles del archivo en redes: salen en «Acerca» y en sameAs, para que Google y las IAs sepan que son la misma marca
 REDES_SOCIALES = (("Instagram · @elfolio13", "https://www.instagram.com/elfolio13/"),
-                  ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7"))
+                  ("TikTok · @elfolio13", "https://www.tiktok.com/@elfolio13"),
+                  ("Facebook · Folio 13", "https://www.facebook.com/profile.php?id=61596062008062"))
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 # Frases de la portada: cada visita muestra una al azar (solo las de expedientes ya publicados).
@@ -374,6 +375,7 @@ header nav a:hover { color:#fff; }
 .tema .pie { font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:14px; color:var(--t-acento); letter-spacing:.08em; display:flex; justify-content:space-between; }
 .tema .pie::after { content:"→"; transition:transform .3s; }
 .tema:hover .pie::after { transform:translateX(6px); }
+.rejilla-redes { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
 @media (max-width:980px) { .rejilla-temas { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:560px) { .rejilla-temas { grid-template-columns:1fr; } .rejilla-temas .tema:nth-child(1) { grid-column:auto; } }
 
@@ -535,6 +537,8 @@ sup.nota-fuente a:hover { background:var(--rojo); color:#fff; }
 footer { border-top:1px solid var(--borde); padding:36px 16px 44px; text-align:center; font-size:14px; color:var(--texto-3); }
 footer a { color:var(--texto-2); }
 footer small { display:inline-block; margin-top:8px; font-size:12px; }
+footer .siguenos { display:block; margin-bottom:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.06em; }
+footer .siguenos a { color:var(--texto); }
 footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--texto); }
 
 /* Misterio: con ratón, la página está en penumbra y una linterna alumbra donde miras (no en las historias, para leer bien) */
@@ -1053,7 +1057,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cinta_halloween(raiz) if halloween else ""}
 {cuerpo}
 {suscripcion(canal)}
-<footer><span class="lema">{escape(canal['lema'])}</span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{extra}
 </body>
 </html>
@@ -1489,6 +1493,24 @@ def pagina_404(listados: list[dict], canal: dict) -> str:
                   descripcion="Esta página no existe. Vuelve a Folio 13 para leer historias reales con fuentes.")
 
 
+def pagina_redes(canal: dict) -> str:
+    """Todas las cuentas de Folio 13 en redes, en una página para enlazar desde las biografías."""
+    redes = (("Instagram", "@elfolio13", "https://www.instagram.com/elfolio13/", "Reels y carruseles de cada folio."),
+             ("TikTok", "@elfolio13", "https://www.tiktok.com/@elfolio13", "Los Shorts y los vídeos, cada día."),
+             ("YouTube", "Folio 13", canal["youtube"], "Los episodios completos."),
+             ("Facebook", "Folio 13", "https://www.facebook.com/profile.php?id=61596062008062", "Los folios y los Reels."))
+    tarjetas = "".join(f'<a class="tema t-{c}" href="{escape(u)}" rel="noopener"><div><div class="num">{escape(r).upper()}</div>'
+                       f'<h3>{escape(h)}</h3><p>{escape(d)}</p></div><div class="pie">Seguir</div></a>'
+                       for (r, h, u, d), c in zip(redes, ("crimenes", "paranormal", "cine", "robos")))
+    cuerpo = f"""<main class="ancho seccion">
+<div class="seccion-cab"><div><span class="kicker">Síguenos</span><h1 style="font-size:clamp(34px,5vw,54px); line-height:1.05">Folio 13 en redes</h1></div></div>
+<p class="nota" style="margin-bottom:22px; font-size:18px">Un folio nuevo cada día: historias reales que parecen inventadas, con sus fuentes. Elige dónde verlas.</p>
+<div class="rejilla-redes">{tarjetas}</div>
+</main>"""
+    return pagina(f"Folio 13 en redes: Instagram, TikTok, YouTube y Facebook", cuerpo, canal, ruta="redes.html",
+                  descripcion="Sigue a Folio 13 en Instagram, TikTok, YouTube y Facebook: historias reales que parecen inventadas, cada día.")
+
+
 def pagina_mapa(listados: list[dict], canal: dict) -> str:
     """Todos los folios en el mapa del mundo, con el color de su temática."""
     leyenda = "".join(f'<li class="t-{k}"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
@@ -1799,7 +1821,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         img = e["_img"] if e["_img"].startswith("http") else "../" + e["_img"]
         video = (f'<img src="{escape(img)}" alt="{escape(e["titulo"])}" style="display:block; width:100%; border-radius:8px">'
                  '<p class="ver-yt">El vídeo de este folio ya está en '
-                 '<a href="https://www.tiktok.com/@elarchivocurioso7" rel="noopener">TikTok</a> y muy pronto llegará a '
+                 '<a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> y muy pronto llegará a '
                  f'<a href="{escape(canal["youtube"])}">YouTube</a>.</p>')
     if e.get("_episodio"):
         ep = e["_episodio"]
@@ -1841,6 +1863,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 {texto}
 {en_un_minuto}
 {quiz}
+<div class="relacionado redes-folio"><p>📲 Más folios cada día en <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> y <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a>: @elfolio13</p></div>
 {lecturas}
 {apoyo(canal, "../")}
 {bloque_opiniones(e, canal, e.get("_opiniones", []))}
@@ -2103,6 +2126,7 @@ def generar() -> int:
     (SALIDA / "mapa.html").write_text(pagina_mapa(listados, canal), encoding="utf-8")
     (SALIDA / "folios.html").write_text(pagina_folios(listados, canal), encoding="utf-8")
     (SALIDA / "404.html").write_text(pagina_404(listados, canal), encoding="utf-8")
+    (SALIDA / "redes.html").write_text(pagina_redes(canal), encoding="utf-8")
 
     # Enlace de cada vídeo de YouTube a su página (para ponerlo en las descripciones de YouTube).
     # La sincronización de albuuss depende de este formato: {ID: {num, titulo, url}}
@@ -2169,6 +2193,7 @@ def generar() -> int:
     entradas += [(f"{URL}/{k}/", max((e["fecha"][:10] for e in visibles if e["tematica"] == k), default=hoy))
                  for k in TEMATICAS]
     entradas.append((f"{URL}/mapa.html", hoy))
+    entradas.append((f"{URL}/redes.html", hoy))
     entradas.append((f"{URL}/folios.html", visibles[0]["fecha"][:10] if visibles else hoy))
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))

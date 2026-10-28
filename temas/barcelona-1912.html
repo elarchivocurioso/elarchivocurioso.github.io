@@ -228,6 +228,7 @@ header nav a:hover { color:#fff; }
 .tema .pie { font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:14px; color:var(--t-acento); letter-spacing:.08em; display:flex; justify-content:space-between; }
 .tema .pie::after { content:"→"; transition:transform .3s; }
 .tema:hover .pie::after { transform:translateX(6px); }
+.rejilla-redes { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
 @media (max-width:980px) { .rejilla-temas { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:560px) { .rejilla-temas { grid-template-columns:1fr; } .rejilla-temas .tema:nth-child(1) { grid-column:auto; } }
 
@@ -389,6 +390,8 @@ sup.nota-fuente a:hover { background:var(--rojo); color:#fff; }
 footer { border-top:1px solid var(--borde); padding:36px 16px 44px; text-align:center; font-size:14px; color:var(--texto-3); }
 footer a { color:var(--texto-2); }
 footer small { display:inline-block; margin-top:8px; font-size:12px; }
+footer .siguenos { display:block; margin-bottom:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.06em; }
+footer .siguenos a { color:var(--texto); }
 footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--texto); }
 
 /* Misterio: con ratón, la página está en penumbra y una linterna alumbra donde miras (no en las historias, para leer bien) */
@@ -520,7 +523,7 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
 <div class="rejilla"><a class="ficha t-crimenes" style="--acento:var(--t-acento)" data-tipo="video" data-tema="crimenes" data-folio="40" href="../expedientes/la-vampira-de-barcelona-lo-que-la-prensa-invento-sobre-enriqueta-marti.html"><div class="foto"><img class="img" src="../miniaturas/la-vampira-de-barcelona-lo-que-la-prensa-invento-sobre-enriqueta-marti.png" alt="La «VAMPIRA» de Barcelona: lo que la prensa inventó sobre Enriqueta Martí (1912)" loading="lazy" decoding="async"><span class="leido-marca">✓ LEÍDO</span><span class="tipo">VÍDEO</span></div><div class="txt"><div class="num mono">Folio 040 · 1912-1913</div><span class="etiqueta-tema">Crímenes del pasado</span><h3>La «VAMPIRA» de Barcelona: lo que la prensa inventó sobre Enriqueta Martí (1912)</h3><div class="meta">Barcelona (España) · 28 de octubre de 2026</div></div></a></div>
 </main>
 
-<footer><span class="lema">Parece inventado. Está documentado.</span>© 2026 Folio 13 · <a href="../index.html#tematicas">Temáticas</a> · <a href="../mapa.html">Mapa</a> · <a href="../temas/index.html">Etiquetas</a> · <a href="../historias-de-miedo-reales.html">Historias de miedo</a> · <a href="../opiniones.html">Opiniones</a> · <a href="../apoya.html">Apoya Folio 13</a> · <a href="../acerca.html">Cómo verificamos</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://folio13.com/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
+<footer><span class="lema">Parece inventado. Está documentado.</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="../redes.html">Todas las redes</a></span>© 2026 Folio 13 · <a href="../index.html#tematicas">Temáticas</a> · <a href="../mapa.html">Mapa</a> · <a href="../temas/index.html">Etiquetas</a> · <a href="../historias-de-miedo-reales.html">Historias de miedo</a> · <a href="../opiniones.html">Opiniones</a> · <a href="../apoya.html">Apoya Folio 13</a> · <a href="../acerca.html">Cómo verificamos</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://folio13.com/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
 
 <script>
 (function () {
