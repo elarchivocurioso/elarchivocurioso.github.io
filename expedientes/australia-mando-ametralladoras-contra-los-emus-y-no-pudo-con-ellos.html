@@ -15,120 +15,208 @@
 <meta property="og:image" content="https://i.ytimg.com/vi/uTWN9_BrErg/hqdefault.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="max-image-preview:large">
+<meta name="theme-color" content="#0F0C0A">
 <link rel="alternate" type="application/rss+xml" title="El Archivo Curioso" href="https://elarchivocurioso.github.io/feed.xml">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "Australia mandó ametralladoras contra los emús… y no pudo con ellos", "description": "En 1932 un mayor, dos soldados y dos ametralladoras se enfrentaron a miles de emús. Según su propio informe, hicieron falta diez balas por ave.", "thumbnailUrl": ["https://i.ytimg.com/vi/uTWN9_BrErg/hqdefault.jpg"], "uploadDate": "2026-10-27T21:05:00+01:00", "embedUrl": "https://www.youtube.com/embed/uTWN9_BrErg", "url": "https://elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html", "inLanguage": "es", "publisher": {"@type": "Organization", "name": "El Archivo Curioso", "logo": "https://elarchivocurioso.github.io/logo.png"}, "keywords": "Siglo XX, Animales, Absurdos"}</script>
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Special+Elite&family=Lora:ital,wght@0,500;0,700;1,500&display=swap');
-:root { --tinta:#1A1410; --tinta-2:#2A211A; --tinta-3:#362B22; --pergamino:#EBDDBF; --pergamino-2:#C9B48A;
-        --sepia:#6B4F35; --lacre:#9E2B25; --lacre-claro:#C2443B; --oro:#C8A04A; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Special+Elite&display=swap');
+:root { --fondo:#070606; --tarjeta:#110D0B; --tarjeta-2:#1A1411; --borde:rgba(194,68,59,.14); --borde-2:rgba(232,220,198,.20);
+        --texto:#E8DCC6; --texto-2:#A99C86; --texto-3:#6F6558; --oro:#C8A04A; --rojo:#C2443B; --sangre:#8E1B14; }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Lora',Georgia,serif; color:var(--pergamino); line-height:1.6; min-height:100vh;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(200,160,74,.12), transparent 70%),
-              repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 2px, transparent 2px 6px), var(--tinta); }
-a { color:var(--oro); }
-.ancho { max-width:1100px; margin:0 auto; padding:0 16px; }
-.etiqueta { font-family:'Special Elite','Courier New',monospace; letter-spacing:.16em; color:var(--oro); font-size:14px; text-transform:uppercase; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; background:var(--fondo); color:var(--texto);
+  line-height:1.65; min-height:100vh; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+::selection { background:var(--sangre); color:#fff; }
+a { color:var(--texto); text-decoration-color:var(--rojo); text-decoration-thickness:1px; text-underline-offset:4px; }
+a:hover { color:#fff; }
+.ancho { max-width:1160px; margin:0 auto; padding-left:16px; padding-right:16px; }
+.mono { font-family:'Special Elite','Courier New',monospace; letter-spacing:.14em; text-transform:uppercase; }
+.serif { font-family:'Playfair Display',Georgia,serif; }
+
+/* Atmósfera: grano de película que tiembla y viñeta. No tapan clics. */
+body::before { content:""; position:fixed; inset:-50%; z-index:50; pointer-events:none; opacity:.09;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grano .9s steps(6) infinite; }
+body::after { content:""; position:fixed; inset:0; z-index:49; pointer-events:none;
+  background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.72) 100%); }
+@keyframes grano { 0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)} 40%{transform:translate(2%,-3%)}
+  60%{transform:translate(-2%,-1%)} 80%{transform:translate(3%,3%)} 100%{transform:translate(0,0)} }
 
 /* Logotipo: lupa con «AC» */
 .logo { --t:64px; flex:none; display:block; width:var(--t); height:var(--t); }
-.logo svg { display:block; width:100%; height:100%; filter:drop-shadow(0 calc(var(--t)*.04) calc(var(--t)*.08) rgba(0,0,0,.5)); }
+.logo svg { display:block; width:100%; height:100%; }
+
+/* Lo censurado: barra negra que se revela al pasar el ratón, al tocar o con el teclado (el texto sigue en el HTML) */
+.tachado { color:transparent; padding:0 .03em; cursor:pointer; -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  background:repeating-linear-gradient(-45deg,#000 0 6px,#221B17 6px 9px) center / 100% .92em no-repeat; position:relative;
+  transition:color .45s ease .1s, background-size .45s cubic-bezier(.6,0,.2,1), text-shadow .45s; animation:interferencia 7s infinite; }
+.tachado:hover, .tachado:focus-visible, .tachado.revelado, a:hover .tachado, a:focus-visible .tachado {
+  color:#E2503F; background-size:100% 0; text-shadow:0 0 22px rgba(194,68,59,.45); animation:none; }
+.tachado:focus-visible { outline:2px solid var(--rojo); outline-offset:3px; }
+@keyframes interferencia { 0%,91%,100% { opacity:1; } 92% { opacity:.35; } 93% { opacity:1; } 95% { opacity:.6; } 96% { opacity:1; } }
 
 /* Cabecera */
-header { border-bottom:1px solid rgba(201,180,138,.15); }
-header .ancho { display:flex; align-items:center; gap:14px; padding-top:18px; padding-bottom:18px; }
-header .nombre { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:24px; color:var(--pergamino); text-decoration:none; line-height:1.1; }
-header .nombre em { color:var(--lacre-claro); }
-header nav { margin-left:auto; display:flex; gap:18px; flex-wrap:wrap; }
-header nav a { color:var(--pergamino-2); text-decoration:none; font-weight:700; font-size:15px; }
-header nav a:hover { color:var(--oro); }
+header { position:sticky; top:0; z-index:40; background:linear-gradient(180deg,rgba(7,6,6,.96),rgba(7,6,6,.75));
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--borde); }
+header .ancho { display:flex; align-items:center; gap:12px; height:62px; }
+header .nombre { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:21px; color:var(--texto); text-decoration:none; line-height:1; white-space:nowrap; }
+header .nombre em { color:var(--rojo); }
+header nav { margin-left:auto; display:flex; align-items:center; gap:22px; }
+header nav a { color:var(--texto-2); text-decoration:none; font-weight:500; font-size:14px; letter-spacing:.02em; }
+header nav a:hover { color:var(--texto); }
+.sorprendeme { font:600 13px 'Inter',sans-serif; letter-spacing:.04em; color:var(--texto); background:transparent; border:1px solid var(--rojo);
+  border-radius:2px; padding:7px 13px; cursor:pointer; text-decoration:none; white-space:nowrap; }
+.sorprendeme:hover { background:var(--sangre); color:#fff; }
+@media (max-width:720px) { header .ancho { height:56px; } header .nombre { font-size:18px; } header nav { gap:14px; } header nav .solo-ancho { display:none; } }
+@media (max-width:420px) { header .nombre { display:none; } }
 
-/* Portada */
-.portada { text-align:center; padding:72px 0 40px; display:flex; flex-direction:column; align-items:center; gap:18px; }
-.portada .logo { --t:150px; }
-.portada h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(40px,8vw,76px); line-height:1; }
-.portada h1 em { color:var(--lacre-claro); }
-.portada .lema { font-style:italic; font-size:clamp(18px,3vw,24px); color:rgba(235,221,191,.85); }
-.portada p.desc { max-width:640px; color:var(--pergamino-2); font-size:17px; }
-.boton { display:inline-block; padding:12px 26px; border-radius:6px; background:var(--lacre); color:#F3D9C2;
-  font-family:'Special Elite','Courier New',monospace; letter-spacing:.08em; text-decoration:none; font-size:16px;
-  box-shadow:0 0 0 1px #7C211C, 0 8px 20px rgba(0,0,0,.4); }
-.boton:hover { background:var(--lacre-claro); }
+/* Portada: oscuridad, una linterna que sigue al ratón y una lupa que te mira */
+.portada { position:relative; min-height:calc(100svh - 62px); display:flex; flex-direction:column; justify-content:center;
+  padding-top:64px; padding-bottom:64px; isolation:isolate; }
+.linterna { position:absolute; inset:0 -50vw; z-index:-1; pointer-events:none;
+  background:radial-gradient(circle 340px at var(--x,50%) var(--y,40%), rgba(194,68,59,.16), rgba(7,6,6,.0) 60%),
+             radial-gradient(circle 900px at var(--x,50%) var(--y,40%), transparent 0, rgba(0,0,0,.55) 70%); }
+.portada .susurro { color:var(--texto-3); font-size:13px; margin-bottom:26px; min-height:1.5em; }
+.portada .susurro b { color:var(--rojo); font-weight:400; }
+.portada h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(32px,5.4vw,70px); line-height:1.14;
+  letter-spacing:-.015em; max-width:21ch; }
+.portada h1 a { color:inherit; text-decoration:none; }
+.sello-rojo { display:inline-block; transform:rotate(-11deg); border:3px double var(--rojo); color:var(--rojo); border-radius:3px;
+  padding:4px 14px; font-size:clamp(14px,2vw,19px); letter-spacing:.3em; opacity:.85; mix-blend-mode:screen; }
+.portada .sello-rojo { position:absolute; right:4%; top:18%; }
+.portada .pista { color:var(--texto-3); font-size:13px; margin-top:18px; }
+.portada .desc { color:var(--texto-2); font-size:17px; max-width:560px; margin-top:22px; }
+.vigilante { position:absolute; right:6%; bottom:14%; width:min(26vw,240px); opacity:.9; z-index:-1;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1); filter:drop-shadow(0 20px 40px rgba(0,0,0,.8)); }
+.vigilante svg { width:100%; height:auto; display:block; }
+.botones { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+.boton { display:inline-block; font:600 14px 'Inter',sans-serif; letter-spacing:.04em; text-decoration:none; padding:13px 22px; border-radius:2px;
+  background:var(--texto); color:#000; border:1px solid var(--texto); cursor:pointer; }
+.boton:hover { background:var(--rojo); border-color:var(--rojo); color:#fff; }
+.boton.secundario { background:transparent; color:var(--texto); border-color:var(--borde-2); }
+.boton.secundario:hover { border-color:var(--rojo); background:var(--sangre); }
+.bajar { position:absolute; left:16px; bottom:22px; color:var(--texto-3); font-size:12px; text-decoration:none; }
+@media (max-width:720px) { .portada { min-height:auto; padding-top:48px; padding-bottom:56px; }
+  .portada .sello-rojo { position:static; margin-bottom:20px; align-self:flex-start; } .vigilante { width:34vw; right:-8%; top:auto; bottom:30%; opacity:.22; } .bajar { display:none; } }
 
-/* Filtros y fichas */
-.filtros { display:flex; gap:10px; justify-content:center; margin:8px 0 28px; flex-wrap:wrap; }
-.filtros button { font-family:'Special Elite','Courier New',monospace; letter-spacing:.08em; font-size:14px; cursor:pointer;
-  padding:8px 16px; border-radius:4px; border:1px solid rgba(201,180,138,.35); background:transparent; color:var(--pergamino-2); }
-.filtros button.activo { background:var(--pergamino); color:var(--tinta); border-color:var(--pergamino); }
-.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:22px; padding-bottom:64px; }
-.ficha { display:flex; flex-direction:column; background:var(--tinta-2); border:1px solid rgba(201,180,138,.18); border-radius:8px;
-  overflow:hidden; text-decoration:none; color:inherit; transition:transform .15s, border-color .15s; }
-.ficha:hover { transform:translateY(-3px); border-color:var(--oro); }
-.ficha .img { position:relative; aspect-ratio:16/9; background:var(--tinta-3) center/cover no-repeat; }
-.ficha .tipo { position:absolute; right:10px; top:10px; padding:3px 9px; border-radius:3px; font-family:'Special Elite',monospace;
-  font-size:12px; letter-spacing:.1em; background:var(--lacre); color:#F3D9C2; }
-.ficha .tipo.short { background:var(--oro); color:var(--tinta); }
-.ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:6px; }
-.ficha h3 { font-family:'Playfair Display',Georgia,serif; font-size:19px; line-height:1.25; color:var(--pergamino); }
-.ficha .meta { font-size:13px; color:var(--pergamino-2); }
-.vacio { text-align:center; padding:40px 16px 80px; color:var(--pergamino-2); }
+/* Secciones y tarjetas */
+.seccion { padding-top:40px; padding-bottom:72px; }
+.seccion-cab { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:26px;
+  padding-bottom:14px; border-bottom:1px solid var(--borde); }
+.seccion-cab h2 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:30px; }
+.seccion-cab .cuenta { color:var(--texto-3); font-size:13px; }
+.filtros { display:flex; gap:6px; flex-wrap:wrap; }
+.filtros button { font:500 13px 'Inter',sans-serif; cursor:pointer; padding:6px 13px; border-radius:2px;
+  border:1px solid var(--borde-2); background:transparent; color:var(--texto-2); }
+.filtros button.activo { background:var(--texto); color:#000; border-color:var(--texto); }
+.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:20px; }
+.ficha { position:relative; display:flex; flex-direction:column; background:var(--tarjeta); border:1px solid var(--borde); border-radius:3px;
+  overflow:hidden; text-decoration:none; color:inherit; transition:transform .3s, border-color .3s, box-shadow .3s; }
+.ficha:hover, .ficha:focus-visible { transform:translateY(-4px); border-color:rgba(194,68,59,.5); box-shadow:0 20px 50px -20px rgba(142,27,20,.6); }
+.ficha:focus-visible { outline:2px solid var(--rojo); outline-offset:2px; }
+.ficha .img { position:relative; aspect-ratio:16/9; background:var(--tarjeta-2) center/cover no-repeat;
+  filter:grayscale(1) contrast(1.15) brightness(.6); transition:filter .5s; }
+.ficha:hover .img, .ficha:focus-visible .img { filter:grayscale(.2) contrast(1.05) brightness(.95) sepia(.25); }
+.ficha .img::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 40%,rgba(17,13,11,.95)); }
+.ficha .tipo { position:absolute; z-index:1; right:10px; top:10px; padding:2px 8px; font:600 10px 'Inter',sans-serif; letter-spacing:.14em;
+  background:rgba(0,0,0,.7); color:var(--texto-2); border:1px solid var(--borde-2); }
+.ficha .tipo.short { color:var(--rojo); border-color:rgba(194,68,59,.5); }
+.ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:8px; }
+.ficha .num { color:var(--rojo); font-size:11px; }
+.ficha h3 { font-weight:600; font-size:17px; line-height:1.4; }
+.ficha .meta { font-size:12px; color:var(--texto-3); }
+.vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
 .vacio .logo { --t:80px; margin:0 auto 18px; opacity:.85; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; }
+.chips a { font-size:13px; color:var(--texto-2); text-decoration:none; padding:6px 12px; border:1px solid var(--borde-2); border-radius:2px; }
+.chips a:hover { color:#fff; border-color:var(--rojo); background:var(--sangre); }
+.chips a small { color:var(--texto-3); }
+.chips a:hover small { color:#fff; }
 
 /* Página de expediente */
-.expediente { padding:40px 0 72px; }
-.volver { text-decoration:none; font-weight:700; font-size:15px; }
-.expediente h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(30px,5.5vw,48px); line-height:1.1; margin:16px 0 14px; }
-.datos { display:flex; flex-wrap:wrap; gap:8px 22px; margin-bottom:26px; font-family:'Special Elite',monospace; font-size:14px; color:var(--pergamino-2); letter-spacing:.04em; }
-.datos b { color:var(--oro); font-weight:400; }
-.reproductor { position:relative; width:100%; aspect-ratio:16/9; border-radius:8px; overflow:hidden; background:#000; box-shadow:0 20px 50px rgba(0,0,0,.5); }
+.exposicion { position:fixed; left:0; top:0; height:2px; width:0; z-index:60; background:var(--rojo); box-shadow:0 0 12px var(--rojo); }
+.reloj { position:fixed; left:16px; bottom:14px; z-index:45; color:var(--texto-3); font-size:11px; pointer-events:none; }
+.expediente { padding-top:40px; padding-bottom:80px; }
+.lectura { max-width:720px; margin:0 auto; }
+.volver { display:inline-block; text-decoration:none; color:var(--texto-3); font-size:13px; margin-bottom:26px; }
+.volver:hover { color:var(--texto); }
+.expediente .ficha-num { color:var(--rojo); font-size:12px; margin-bottom:14px; }
+.expediente h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(32px,5.4vw,52px); line-height:1.08;
+  letter-spacing:-.015em; margin-bottom:18px; }
+.datos { display:flex; flex-wrap:wrap; gap:6px 18px; margin-bottom:30px; font-size:13px; color:var(--texto-3); }
+.datos b { color:var(--texto-2); font-weight:500; }
+.reproductor { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; background:#000; border:1px solid var(--borde); }
 .reproductor.short { max-width:360px; aspect-ratio:9/16; margin:0 auto; }
 .reproductor iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
-.bloque { margin-top:36px; }
-.bloque h2 { font-family:'Playfair Display',Georgia,serif; font-size:26px; margin-bottom:12px; color:var(--pergamino); }
-.bloque p { font-size:18px; }
-.curiosidades { list-style:none; display:flex; flex-direction:column; gap:12px; }
-.curiosidades li { position:relative; padding:14px 16px 14px 52px; background:var(--tinta-2); border-left:3px solid var(--lacre); border-radius:4px; font-size:17px; }
-.curiosidades li::before { content:counter(c); counter-increment:c; position:absolute; left:14px; top:12px; font-family:'Playfair Display',serif; font-weight:900; font-size:22px; color:var(--oro); }
-.curiosidades { counter-reset:c; }
-.fuentes li { margin:6px 0 6px 20px; }
-.etiquetas { display:flex; flex-wrap:wrap; gap:8px; }
-.etiquetas span { font-family:'Special Elite',monospace; font-size:13px; padding:4px 10px; border:1px solid rgba(201,180,138,.3); border-radius:3px; color:var(--pergamino-2); }
-.navegacion { display:flex; justify-content:space-between; gap:16px; margin-top:48px; flex-wrap:wrap; }
-.navegacion a { text-decoration:none; font-weight:700; max-width:48%; }
+.ver-yt { margin-top:12px; text-align:center; font-size:13px; }
+.bloque { margin-top:44px; }
+.bloque h2 { font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:26px; margin-bottom:14px; }
+.bloque p { font-size:18px; color:#DDD1BA; }
+.articulo p { margin-bottom:18px; }
+.articulo p:last-child { margin-bottom:0; }
+.bloque.caso p:first-of-type::first-letter { float:left; font-family:'Playfair Display',serif; font-weight:900; font-size:64px; line-height:.9;
+  padding:6px 10px 0 0; color:var(--rojo); }
+.curiosidades { list-style:none; display:flex; flex-direction:column; gap:10px; counter-reset:c; }
+.curiosidades li { position:relative; padding:14px 16px 14px 54px; background:var(--tarjeta); border:1px solid var(--borde); border-radius:2px; font-size:17px; }
+.curiosidades li::before { content:counter(c,decimal-leading-zero); counter-increment:c; position:absolute; left:16px; top:15px;
+  font-family:'Special Elite',monospace; color:var(--rojo); font-size:15px; }
+.fuentes li { margin:6px 0 6px 20px; color:var(--texto-2); }
+.nota { color:var(--texto-2); font-size:15px; }
+.relacionado { padding:14px 16px; border:1px solid var(--borde); border-left:3px solid var(--rojo); background:var(--tarjeta); }
+.relacionado p { font-size:16px; }
+.sabes-demasiado { margin-top:64px; padding:40px 20px; text-align:center; border-top:1px solid var(--borde); border-bottom:1px solid var(--borde); }
+.sabes-demasiado p.grande { font-family:'Playfair Display',serif; font-style:italic; font-weight:900; font-size:clamp(28px,5vw,40px); color:var(--texto); }
+.sabes-demasiado p.peque { color:var(--texto-3); font-size:14px; margin:8px 0 22px; }
+.compartir { margin-top:44px; padding:20px 16px; border:1px solid var(--borde); background:var(--tarjeta); text-align:center; }
+.compartir p { margin-bottom:12px; color:var(--texto-2); }
+.compartir div { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.compartir a, .compartir button { font:500 13px 'Inter',sans-serif; cursor:pointer; padding:7px 13px; border-radius:2px;
+  border:1px solid var(--borde-2); background:transparent; color:var(--texto); text-decoration:none; }
+.compartir a:hover, .compartir button:hover { border-color:var(--rojo); background:var(--sangre); }
+.navegacion { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:44px; }
+.navegacion a { display:block; padding:14px 16px; border:1px solid var(--borde); text-decoration:none; color:var(--texto); font-size:15px; }
+.navegacion a small { display:block; color:var(--texto-3); font-size:12px; margin-bottom:4px; }
+.navegacion a:hover { border-color:var(--rojo); }
+.navegacion .sig { text-align:right; grid-column:2; }
+@media (max-width:600px) { .navegacion { grid-template-columns:1fr; } .navegacion .sig { grid-column:auto; } .reloj { display:none; } }
 
-/* Texto legal */
-.legal { padding:40px 0 72px; max-width:760px; }
-.legal h1 { font-family:'Playfair Display',Georgia,serif; font-size:clamp(30px,6vw,44px); margin:16px 0 6px; }
-.legal .fecha { font-size:14px; color:var(--pergamino-2); margin-bottom:24px; }
-.legal h2 { color:var(--oro); font-family:'Playfair Display',Georgia,serif; font-size:21px; margin:28px 0 8px; }
-.legal p, .legal li { font-size:16px; }
+/* Buscar */
+.buscador { width:100%; font:500 18px 'Inter',sans-serif; padding:14px 18px; border-radius:2px; border:1px solid var(--borde-2);
+  background:var(--tarjeta); color:var(--texto); margin:8px 0 22px; }
+.buscador:focus { outline:2px solid var(--rojo); outline-offset:1px; }
+
+/* Texto legal y genérico */
+.legal { padding-top:40px; padding-bottom:72px; max-width:760px; }
+.legal h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(30px,6vw,44px); margin-bottom:6px; }
+.legal .fecha { font-size:14px; color:var(--texto-3); margin-bottom:24px; }
+.legal h2 { color:var(--rojo); font-weight:600; font-size:19px; margin:28px 0 8px; }
+.legal p, .legal li { font-size:16px; color:#DDD1BA; }
 .legal ul { padding-left:22px; }
 
-.articulo p { margin-bottom:14px; }
-.relacionado { padding:14px 16px; border-left:3px solid var(--oro); background:var(--tinta-2); border-radius:4px; }
-.relacionado p { font-size:17px; }
-.compartir { margin-top:40px; padding:20px 16px; border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); text-align:center; }
-.compartir p { margin-bottom:12px; color:var(--pergamino-2); }
-.compartir div { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
-.compartir a, .compartir button { font-family:'Special Elite','Courier New',monospace; font-size:14px; letter-spacing:.06em; cursor:pointer;
-  padding:8px 14px; border-radius:4px; border:1px solid rgba(201,180,138,.35); background:transparent; color:var(--pergamino); text-decoration:none; }
-.compartir a:hover, .compartir button:hover { border-color:var(--oro); color:var(--oro); }
-.nota { color:var(--pergamino-2); font-size:15px; }
-.apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 16px;
-  border:1px solid rgba(201,180,138,.25); border-radius:8px; background:var(--tinta-2); }
+.apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 20px;
+  border:1px solid var(--borde); background:var(--tarjeta); }
 .apoyo div:nth-child(2) { flex:1; min-width:220px; }
-.apoyo h2 { font-family:'Playfair Display',Georgia,serif; font-size:22px; }
-.apoyo p { color:var(--pergamino-2); font-size:16px; }
-footer small { display:inline-block; margin-top:6px; font-size:12px; }
-footer { border-top:1px solid rgba(201,180,138,.15); padding:24px 16px; text-align:center; font-size:14px; color:rgba(235,221,191,.6); }
-footer a { color:rgba(235,221,191,.8); }
-@media (max-width:600px) { header nav { display:none; } }
+.apoyo h2 { font-family:'Playfair Display',serif; font-weight:900; font-size:22px; }
+.apoyo p { color:var(--texto-2); font-size:15px; }
+footer { border-top:1px solid var(--borde); padding:28px 16px 40px; text-align:center; font-size:13px; color:var(--texto-3); }
+footer a { color:var(--texto-2); }
+footer small { display:inline-block; margin-top:8px; font-size:12px; }
+footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',monospace; letter-spacing:.14em; text-transform:uppercase; font-size:11px; color:var(--texto-3); }
+
+/* Quien pide menos movimiento, lo tiene: sin grano animado, sin interferencias ni linterna que se mueve */
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  body::before { animation:none; }
+  .tachado { animation:none; transition:none; }
+  .vigilante, .ficha, .ficha .img { transition:none; }
+}
 </style>
 </head>
-<body>
+<body data-raiz="../">
 <header><div class="ancho">
-  <a class="logo" style="--t:52px" href="../index.html" aria-label="Inicio"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El Archivo Curioso">
+  <a class="logo" style="--t:40px" href="../index.html" aria-label="Inicio"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El Archivo Curioso">
 <line x1="131" y1="131" x2="182" y2="182" stroke="#C8A04A" stroke-width="17" stroke-linecap="round"/>
 <line x1="131" y1="131" x2="146" y2="146" stroke="#8C6E30" stroke-width="19"/>
 <circle cx="88" cy="88" r="63" fill="#1A1410" stroke="#C8A04A" stroke-width="9"/>
@@ -137,28 +225,119 @@ footer a { color:rgba(235,221,191,.8); }
 <line x1="66" y1="118" x2="110" y2="118" stroke="#C2443B" stroke-width="3"/>
 </svg></a>
   <a class="nombre" href="../index.html">El Archivo <em>Curioso</em></a>
-  <nav><a href="../index.html#expedientes">Expedientes</a><a href="../acerca.html">El archivo</a><a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a></nav>
+  <nav aria-label="Principal">
+    <a href="../index.html#expedientes">Expedientes</a>
+    <a class="solo-ancho" href="../temas/index.html">Temas</a>
+    <a href="../buscar.html">Buscar</a>
+    <a class="sorprendeme" href="../buscar.html">Sorpréndeme</a>
+  </nav>
 </div></header>
-<main class="ancho expediente">
+<div class="exposicion" aria-hidden="true"></div><div class="reloj mono" aria-hidden="true"></div>
+<main class="ancho expediente"><div class="lectura">
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
-<h1>Australia mandó ametralladoras contra los emús… y no pudo con ellos</h1>
-<div class="datos"><span><b>Época:</b> 1932</span><span><b>Lugar:</b> Australia Occidental</span><span><b>Publicado:</b> 27 de octubre de 2026</span><span><b>Formato:</b> Short</span></div>
+<div class="ficha-num mono">Expediente Nº 007 · 1932</div>
+<h1 aria-label="Australia mandó ametralladoras contra los emús… y no pudo con ellos">Australia mandó ametralladoras contra los emús… y <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">no pudo con ellos</span></h1>
+<div class="datos"><span><b>Lugar:</b> Australia Occidental</span><span><b>Publicado:</b> 27 de octubre de 2026</span><span><b>Formato:</b> Short</span></div>
 <div class="reproductor short"><iframe src="https://www.youtube-nocookie.com/embed/uTWN9_BrErg"
   title="Australia mandó ametralladoras contra los emús… y no pudo con ellos" loading="lazy" allowfullscreen
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
-<p style="margin-top:14px; text-align:center"><a href="https://www.youtube.com/watch?v=uTWN9_BrErg">Ver en YouTube</a></p><div class="bloque relacionado"><p>📜 Este Short es un adelanto. El expediente completo, con todo el contexto y las fuentes: <a href="la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html">La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)</a></p></div>
-<div class="bloque"><h2>El caso</h2><p>En 1932 un mayor, dos soldados y dos ametralladoras se enfrentaron a miles de emús. Según su propio informe, hicieron falta diez balas por ave.</p></div><div class="bloque articulo"><p>Según el informe del propio mayor Meredith, en 1932 sus hombres necesitaron unas diez balas por cada emú abatido. Visto desde fuera parece un chiste, pero tiene una explicación bastante lógica. Una ametralladora es un arma pensada para barrer grupos compactos de soldados que avanzan o se atrincheran. Los emús no hacían ninguna de las dos cosas: corrían, se dispersaban y vigilaban.</p></div><div class="bloque articulo"><h2>Un corredor de casi dos metros</h2><p>El emú es un ave enorme. Los ejemplares más grandes miden entre 1,5 y 1,9 metros de altura y pesan entre 18 y 60 kilos. No vuela, pero sus patas son una máquina de correr: puede alcanzar unos 48 kilómetros por hora, y a toda velocidad cada zancada llega a medir unos 2,75 metros. Tiene un rasgo único entre las aves: el gemelo, el gran músculo de la parte trasera de la pata, tiene cuatro vientres musculares en lugar de los tres habituales.</p><p>Además, ve y oye muy bien, de modo que detecta las amenazas a bastante distancia. Cuando van en grupo, unos comen mientras otros vigilan. Y frente a un ataque desde el aire, como el del águila audaz, su defensa es correr de forma caótica, cambiando de dirección sin parar. Justo lo que más desespera a un tirador.</p></div><div class="bloque articulo"><h2>La «guerrilla» de los emús</h2><p>Lo normal es que los emús vayan en parejas. Las grandes bandadas son poco habituales y se forman sobre todo cuando se desplazan hacia una nueva fuente de comida. Eso es lo que ocurrió en Australia Occidental, donde se mueven hacia el norte en verano y hacia el sur en invierno.</p><p>Lo que vieron los soldados encaja con esa biología. En cuanto sonaban los primeros disparos, las aves se dividían en grupos pequeños y huían en direcciones distintas. Un relato publicado en prensa en 1953 añadía que cada grupo parecía tener su propio «jefe»: un ave alta de plumaje negro que vigilaba mientras las demás comían. La imagen es muy militar, pero describe algo conocido: la vigilancia compartida del grupo.</p></div><div class="bloque articulo"><h2>Un arma pensada para otra guerra</h2><p>Las dos ametralladoras eran Lewis, un arma ligera de la Primera Guerra Mundial que pesaba unos 13 kilos. Disparaba entre 500 y 600 balas por minuto y se alimentaba con cargadores circulares de 47 o 97 cartuchos. Con 47 balas a ese ritmo, el disparo continuo se agota en unos cinco segundos. Su alcance eficaz rondaba los 800 metros, y unas notas militares de la Primera Guerra Mundial ya le reprochaban ser «delicada».</p><p>Con esos datos se entiende el problema. Si los emús se dispersaban al primer disparo, cada ráfaga se perdía en el aire y había que recargar enseguida. A larga distancia, un ave que corre en zigzag es un blanco pequeño y móvil, y es más fácil herirla que matarla. La emboscada en la que se atascó un arma y el intento de disparar desde un camión que no podía seguirles el ritmo hicieron el resto.</p></div><div class="bloque articulo"><h2>Qué es mito y qué no</h2><p>La cifra de diez balas por ave es la del propio Meredith, sospechosamente redonda: 986 emús con 9.860 cartuchos. El historiador Greg Beyer la considera muy discutida y probablemente inflada. Tampoco está demostrado que los emús «aguanten balas» mejor que otros animales. Cuando Meredith los comparó con tanques, hablaba desde la frustración, no a partir de ninguna medición. Y aunque a menudo se dice que miden «dos metros», los más grandes se quedan algo por debajo.</p></div><div class="bloque"><h2>Curiosidades del expediente</h2><ul class="curiosidades"><li>Los emús se dispersaban al primer disparo.</li><li>Una ametralladora se atascó en plena emboscada.</li><li>El informe del mayor habló de 9.860 balas para 986 emús.</li></ul></div><div class="bloque"><h2>Fuentes</h2><ul class="fuentes"><li><a href="https://en.wikipedia.org/wiki/Emu_War" rel="noopener">Emu War (Wikipedia)</a></li><li><a href="https://en.wikipedia.org/wiki/Emu" rel="noopener">Wikipedia, «Emu»</a></li><li><a href="https://en.wikipedia.org/wiki/Lewis_gun" rel="noopener">Wikipedia, «Lewis gun»</a></li></ul></div><div class="bloque etiquetas"><a href="../temas/siglo-xx.html"><span>#Siglo XX</span></a><a href="../temas/animales.html"><span>#Animales</span></a><a href="../temas/absurdos.html"><span>#Absurdos</span></a></div>
-<div class="compartir"><p>¿Conoces a alguien a quien le encantaría este expediente? Pásaselo.</p><div><a href="https://wa.me/?text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso%20https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html" rel="noopener" target="_blank">WHATSAPP</a><a href="https://t.me/share/url?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">TELEGRAM</a><a href="https://twitter.com/intent/tweet?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">X</a><a href="https://www.meneame.net/submit?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html" rel="noopener" target="_blank">MENÉAME</a><a href="https://www.reddit.com/submit?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;title=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos" rel="noopener" target="_blank">REDDIT</a><button class="copiar" data-url="https://elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html">COPIAR ENLACE</button></div></div>
-<div class="navegacion"><a href="la-ola-de-melaza-que-mato-a-21-personas-el-culpable-fue-el-frio.html">← La ola de melaza que mató a 21 personas: el culpable fue el frío</a><a href="la-gran-inundacion-de-melaza-de-boston-la-ola-dulce-que-mato-a-21-pers.html" style="text-align:right">La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas →</a></div>
-</main>
+<p class="ver-yt"><a href="https://www.youtube.com/watch?v=uTWN9_BrErg">Ver en YouTube</a></p><div class="bloque relacionado"><p>📜 Este Short es un adelanto. El expediente completo, con todo el contexto y las fuentes: <a href="la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html">La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)</a></p></div>
+<div class="bloque caso"><h2>El caso</h2><p>En 1932 un mayor, dos soldados y dos ametralladoras se enfrentaron a miles de emús. Según su propio informe, hicieron falta diez balas por ave.</p></div><div class="bloque articulo"><p>Según el informe del propio mayor Meredith, en 1932 sus hombres necesitaron unas diez balas por cada emú abatido. Visto desde fuera parece un chiste, pero tiene una explicación bastante lógica. Una ametralladora es un arma pensada para barrer grupos compactos de soldados que avanzan o se atrincheran. Los emús no hacían ninguna de las dos cosas: corrían, se dispersaban y vigilaban.</p></div><div class="bloque articulo"><h2>Un corredor de casi dos metros</h2><p>El emú es un ave enorme. Los ejemplares más grandes miden entre 1,5 y 1,9 metros de altura y pesan entre 18 y 60 kilos. No vuela, pero sus patas son una máquina de correr: puede alcanzar unos 48 kilómetros por hora, y a toda velocidad cada zancada llega a medir unos 2,75 metros. Tiene un rasgo único entre las aves: el gemelo, el gran músculo de la parte trasera de la pata, tiene cuatro vientres musculares en lugar de los tres habituales.</p><p>Además, ve y oye muy bien, de modo que detecta las amenazas a bastante distancia. Cuando van en grupo, unos comen mientras otros vigilan. Y frente a un ataque desde el aire, como el del águila audaz, su defensa es correr de forma caótica, cambiando de dirección sin parar. Justo lo que más desespera a un tirador.</p></div><div class="bloque articulo"><h2>La «guerrilla» de los emús</h2><p>Lo normal es que los emús vayan en parejas. Las grandes bandadas son poco habituales y se forman sobre todo cuando se desplazan hacia una nueva fuente de comida. Eso es lo que ocurrió en Australia Occidental, donde se mueven hacia el norte en verano y hacia el sur en invierno.</p><p>Lo que vieron los soldados encaja con esa biología. En cuanto sonaban los primeros disparos, las aves se dividían en grupos pequeños y huían en direcciones distintas. Un relato publicado en prensa en 1953 añadía que cada grupo parecía tener su propio «jefe»: un ave alta de plumaje negro que vigilaba mientras las demás comían. La imagen es muy militar, pero describe algo conocido: la vigilancia compartida del grupo.</p></div><div class="bloque articulo"><h2>Un arma pensada para otra guerra</h2><p>Las dos ametralladoras eran Lewis, un arma ligera de la Primera Guerra Mundial que pesaba unos 13 kilos. Disparaba entre 500 y 600 balas por minuto y se alimentaba con cargadores circulares de 47 o 97 cartuchos. Con 47 balas a ese ritmo, el disparo continuo se agota en unos cinco segundos. Su alcance eficaz rondaba los 800 metros, y unas notas militares de la Primera Guerra Mundial ya le reprochaban ser «delicada».</p><p>Con esos datos se entiende el problema. Si los emús se dispersaban al primer disparo, cada ráfaga se perdía en el aire y había que recargar enseguida. A larga distancia, un ave que corre en zigzag es un blanco pequeño y móvil, y es más fácil herirla que matarla. La emboscada en la que se atascó un arma y el intento de disparar desde un camión que no podía seguirles el ritmo hicieron el resto.</p></div><div class="bloque articulo"><h2>Qué es mito y qué no</h2><p>La cifra de diez balas por ave es la del propio Meredith, sospechosamente redonda: 986 emús con 9.860 cartuchos. El historiador Greg Beyer la considera muy discutida y probablemente inflada. Tampoco está demostrado que los emús «aguanten balas» mejor que otros animales. Cuando Meredith los comparó con tanques, hablaba desde la frustración, no a partir de ninguna medición. Y aunque a menudo se dice que miden «dos metros», los más grandes se quedan algo por debajo.</p></div><div class="bloque"><h2>Curiosidades del expediente</h2><ul class="curiosidades"><li>Los emús se dispersaban al primer disparo.</li><li>Una ametralladora se atascó en plena emboscada.</li><li>El informe del mayor habló de 9.860 balas para 986 emús.</li></ul></div><div class="bloque"><h2>Fuentes</h2><ul class="fuentes"><li><a href="https://en.wikipedia.org/wiki/Emu_War" rel="noopener">Emu War (Wikipedia)</a></li><li><a href="https://en.wikipedia.org/wiki/Emu" rel="noopener">Wikipedia, «Emu»</a></li><li><a href="https://en.wikipedia.org/wiki/Lewis_gun" rel="noopener">Wikipedia, «Lewis gun»</a></li></ul></div><div class="bloque chips"><a href="../temas/siglo-xx.html">Siglo XX</a><a href="../temas/animales.html">Animales</a><a href="../temas/absurdos.html">Absurdos</a></div>
+
+<div class="sabes-demasiado"><p class="grande">Ya sabes demasiado.</p><p class="peque">Pero el archivo no se acaba aquí.</p><a class="boton" href="la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html">Abrir el siguiente expediente</a></div>
+<div class="compartir"><p>¿Conoces a alguien a quien le encantaría este expediente? Pásaselo.</p><div><a href="https://wa.me/?text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso%20https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html" rel="noopener" target="_blank">WhatsApp</a><a href="https://t.me/share/url?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">Telegram</a><a href="https://twitter.com/intent/tweet?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;text=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">X</a><a href="https://www.meneame.net/submit?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html" rel="noopener" target="_blank">Menéame</a><a href="https://www.reddit.com/submit?url=https%3A//elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html&amp;title=Australia%20mand%C3%B3%20ametralladoras%20contra%20los%20em%C3%BAs%E2%80%A6%20y%20no%20pudo%20con%20ellos" rel="noopener" target="_blank">Reddit</a><button class="copiar" data-url="https://elarchivocurioso.github.io/expedientes/australia-mando-ametralladoras-contra-los-emus-y-no-pudo-con-ellos.html">Copiar enlace</button></div></div>
+<nav class="navegacion" aria-label="Otros expedientes"><a class="sig" href="la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html"><small>Siguiente →</small>La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)</a></nav>
+</div></main>
 
 
-<footer>© 2026 El Archivo Curioso · <a href="../acerca.html">Acerca del archivo</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://elarchivocurioso.github.io/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
+<footer>© 2026 El Archivo Curioso · <a href="../temas/index.html">Temas</a> · <a href="../acerca.html">Acerca del archivo</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://elarchivocurioso.github.io/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
+
+<script>
+(function () {
+  var raiz = document.body.dataset.raiz || '';
+  var tactil = window.matchMedia('(hover: none)').matches;
+  var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Lo tachado: en móvil, el primer toque revela y el segundo abre el enlace
+  document.addEventListener('click', function (ev) {
+    var t = ev.target.closest('.tachado');
+    var enlace = ev.target.closest('a');
+    if (tactil && enlace) {
+      var oculto = enlace.querySelector('.tachado:not(.revelado)');
+      if (oculto) { ev.preventDefault(); enlace.querySelectorAll('.tachado').forEach(function (x) { x.classList.add('revelado'); }); return; }
+    }
+    if (t && !enlace) { t.classList.toggle('revelado'); t.setAttribute('aria-pressed', t.classList.contains('revelado')); }
+  });
+  document.addEventListener('keydown', function (ev) {
+    if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList && ev.target.classList.contains('tachado')) {
+      ev.preventDefault(); ev.target.classList.toggle('revelado'); ev.target.setAttribute('aria-pressed', ev.target.classList.contains('revelado'));
+    }
+  });
+
+  // Portada: la linterna sigue al ratón (en móvil deambula sola) y la lupa se gira hacia ti
+  var portada = document.querySelector('.portada'), vigilante = document.querySelector('.vigilante');
+  if (portada && !quieto) {
+    var mover = function (x, y) {
+      var r = portada.getBoundingClientRect();
+      portada.style.setProperty('--x', (x - r.left) + 'px'); portada.style.setProperty('--y', (y - r.top) + 'px');
+      if (vigilante) {
+        var v = vigilante.getBoundingClientRect(), cx = v.left + v.width / 2, cy = v.top + v.height / 2;
+        var dx = Math.max(-30, Math.min(30, (x - cx) / 18)), dy = Math.max(-30, Math.min(30, (y - cy) / 18));
+        vigilante.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (dx / 3) + 'deg)';
+      }
+    };
+    if (tactil) {
+      var t0 = Date.now();
+      (function deambular() {
+        var s = (Date.now() - t0) / 4000, r = portada.getBoundingClientRect();
+        mover(r.left + r.width * (.5 + .35 * Math.sin(s)), r.top + r.height * (.45 + .25 * Math.sin(s * 1.7)));
+        requestAnimationFrame(deambular);
+      })();
+    } else {
+      window.addEventListener('pointermove', function (ev) { mover(ev.clientX, ev.clientY); }, { passive: true });
+    }
+  }
+
+  // Hora a la que abriste el archivo (solo se muestra aquí; no se guarda ni se envía a ningún sitio)
+  var hora = document.querySelector('[data-hora]');
+  if (hora) { var d = new Date(); hora.textContent = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }); }
+
+  // Expediente: barra de exposición (cuánto has leído) y tiempo que llevas dentro
+  var barra = document.querySelector('.exposicion'), reloj = document.querySelector('.reloj');
+  if (barra) {
+    var actualizar = function () {
+      var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+      barra.style.width = (max > 0 ? Math.min(100, h.scrollTop / max * 100) : 100) + '%';
+    };
+    window.addEventListener('scroll', actualizar, { passive: true }); actualizar();
+  }
+  if (reloj) {
+    var inicio = Date.now();
+    setInterval(function () {
+      var s = Math.floor((Date.now() - inicio) / 1000);
+      reloj.textContent = 'Llevas ' + String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0') + ' dentro de este expediente';
+    }, 1000);
+  }
+
+  // «Sorpréndeme»: un expediente al azar
+  document.querySelectorAll('.sorprendeme').forEach(function (b) {
+    b.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      fetch(raiz + 'indice.json').then(function (r) { return r.json(); }).then(function (lista) {
+        var actual = location.pathname.split('/').pop();
+        var otros = lista.filter(function (x) { return x.u.split('/').pop() !== actual; });
+        var e = otros[Math.floor(Math.random() * otros.length)];
+        if (e) location.href = raiz + e.u;
+      }).catch(function () { location.href = raiz + 'buscar.html'; });
+    });
+  });
+})();
+</script>
 
 <script>
 document.querySelectorAll('.copiar').forEach(function (b) {
   b.addEventListener('click', function () {
-    navigator.clipboard.writeText(b.dataset.url).then(function () { b.textContent = '¡ENLACE COPIADO!'; });
+    navigator.clipboard.writeText(b.dataset.url).then(function () { b.textContent = '¡Enlace copiado!'; });
   });
 });
 </script>

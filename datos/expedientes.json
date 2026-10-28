@@ -233,7 +233,8 @@
           "nota": "Cuenta cómo Edison, Tesla y Westinghouse se disputaron la electrificación del mundo (2003, en inglés)."
         }
       ],
-      "num": "S101"
+      "num": "S101",
+      "censura": "inventó la bombilla"
     },
     {
       "youtube": "QJhFpKyG5Bc",
@@ -563,7 +564,8 @@
           "nota": "Una biografía de 2010, muy bien escrita, que separa con cuidado lo que dicen las fuentes antiguas de la leyenda posterior; su autora ya había ganado el Pulitzer con una obra anterior."
         }
       ],
-      "num": "S104"
+      "num": "S104",
+      "censura": "del iPhone"
     },
     {
       "youtube": "6FOBq5w86vg",
@@ -674,7 +676,8 @@
           "autor": "Stephen Puleo",
           "nota": "El libro de referencia sobre el desastre, el juicio y el Boston de la época (2003, en inglés)."
         }
-      ]
+      ],
+      "censura": "mató a 21 personas"
     },
     {
       "youtube": "Q4L4l8-mS1M",
@@ -852,7 +855,8 @@
             "Las cifras son estimaciones. Ni la diferencia de temperatura ni el «cuatro veces más viscosa» se midieron en 1919: salen de reconstrucciones hechas casi un siglo después. Lo sólido es el mecanismo: un jarabe azucarado que se enfría se espesa muy deprisa, y aquel día eso separó a quienes pudieron escapar de quienes no."
           ]
         }
-      ]
+      ],
+      "censura": "el frío"
     },
     {
       "youtube": "uTWN9_BrErg",
@@ -1107,7 +1111,8 @@
             "No era una palanca, sino una herramienta hecha por encargo. Algunos relatos dicen que enterraron a Gage con ella, pero no hay pruebas: la familia se la dio a Harlow. Y aunque es probable que viajara a Chile, ese trayecto no está documentado."
           ]
         }
-      ]
+      ],
+      "censura": "estaba HABLANDO"
     },
     {
       "youtube": "9SYd1HiSA1M",
@@ -1300,7 +1305,8 @@
             "Es real que el verano de 1816 fue anormalmente frío y lluvioso, y que la ciencia lo atribuye sobre todo al Tambora. También lo es el parecido entre la carta y la novela. Pero ninguna tormenta concreta puede achacarse al volcán, porque los Alpes tienen tormentas casi todos los veranos. Lo que pesó fue una estación entera de mal tiempo que encerró al grupo en casa. El resto lo pusieron las lecturas, las conversaciones y el talento de una escritora de 18 años."
           ]
         }
-      ]
+      ],
+      "censura": "FRANKENSTEIN"
     },
     {
       "youtube": "m8tW15aqnWo",
@@ -1413,7 +1419,8 @@
           "autor": "Stuart Clark",
           "nota": "Cuenta la vida de Carrington y cómo se descubrió que el Sol influye directamente en la Tierra."
         }
-      ]
+      ],
+      "censura": "incendió los telégrafos"
     },
     {
       "youtube": "gCFYlkS09xo",
@@ -1794,7 +1801,8 @@
           "autor": "Mike Dash",
           "nota": "Una narración amena (1999) del viaje del tulipán desde Asia central hasta Holanda; es anterior al trabajo de Goldgar, así que conviene leerla junto a él."
         }
-      ]
+      ],
+      "censura": "¿o un mito?"
     },
     {
       "youtube": "5CsaTHjV0tc",
@@ -1877,7 +1885,8 @@
             "Es cierto que hubo precios muy altos por algunos bulbos y un desplome brusco en 1637. Es mito la ruina general, y las anécdotas más citadas, como la del marinero, proceden de sátiras y relatos de segunda mano, no de documentos de archivo."
           ]
         }
-      ]
+      ],
+      "censura": "no arruinó Holanda"
     },
     {
       "youtube": "PAjZ8g7deHM",
@@ -2066,7 +2075,8 @@
             "Es real que el Mary Celeste apareció a la deriva en 1872 sin nadie a bordo y sin su bote. Es ficción todo lo que cuenta Jephson: el motín, Goring, el viaje a África y el propio narrador. Y es un error, nacido de este relato, llamar al barco «Marie Celeste»."
           ]
         }
-      ]
+      ],
+      "censura": "inventó parte del misterio"
     },
     {
       "youtube": "cGdxWX4mSQI",
@@ -2175,7 +2185,8 @@
           "autor": "Lotte H. Eisner",
           "nota": "El estudio clásico sobre el director y sus películas, escrito por la historiadora que más contribuyó a recuperar «Nosferatu» (original francés de 1964, edición inglesa ampliada de 1973)."
         }
-      ]
+      ],
+      "censura": "ordenó destruir"
     },
     {
       "youtube": "XtHCT32B-Fw",
@@ -2260,7 +2271,8 @@
           "autor": "David J. Skal",
           "nota": "Reconstruye el viaje de «Drácula» de la novela al cine, incluida la batalla de Florence Stoker contra «Nosferatu» (1990; en inglés)."
         }
-      ]
+      ],
+      "censura": "ordenó DESTRUIR"
     },
     {
       "youtube": "DujLCXw4XMk",
@@ -2443,7 +2455,8 @@
           "autor": "Adam Selzer",
           "nota": "La biografía que volvió a los documentos originales para separar los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
         }
-      ]
+      ],
+      "censura": "habitaciones secretas"
     },
     {
       "youtube": "vML9AgGkMfc",
@@ -2568,7 +2581,9 @@
           "autor": "David Kushner",
           "nota": "La crónica periodística de cómo nació la saga y de las polémicas que la acompañaron (Wiley, 2012; en inglés)."
         }
-      ]
+      ],
+      "num": "A012",
+      "censura": "el FALLO que creó GTA"
     },
     {
       "youtube": "G4ysC_DHmCw",
@@ -2651,7 +2666,10 @@
           "autor": "Tristan Donovan",
           "nota": "La historia del videojuego para la que se hizo la entrevista con Gary Penn (2010; en inglés)."
         }
-      ]
+      ],
+      "num": "S115",
+      "de": "A012",
+      "censura": "la policía se volvió LOCA"
     }
   ]
 }
