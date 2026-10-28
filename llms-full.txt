@@ -53,7 +53,7 @@ Lo detuvieron el 12 de abril de 1919, el día en que cumplía 50 años, después
 
 ### 4. Peter Kürten y la carta mal dirigida (Düsseldorf, 1930)
 
-En mayo de 1930, una joven que había escapado de un desconocido se lo contó por carta a una amiga, pero escribió mal la dirección [8]. La abrió otra mujer, que la entregó a la policía. Con la joven como guía, los agentes llegaron al número 71 de Mettmanner Straße.
+En mayo de 1930, una joven que había escapado de un desconocido se lo contó por carta a una amiga, pero escribió mal la dirección [8]. La abrió un empleado de correos, que la remitió a la policía [8]. Con la joven como guía, los agentes llegaron al número 71 de Mettmanner Straße.
 
 Kürten se dio cuenta y se lo confesó todo a su esposa, a la que pidió que lo denunciara para cobrar la recompensa. Fue detenido el 24 de mayo de 1930, condenado por nueve asesinatos y guillotinado en Colonia el 2 de julio de 1931 [8].
 
@@ -67,11 +67,11 @@ El 28 de abril de 1908, la granja ardió. Entre los restos apareció el cuerpo d
 
 Bajo la ocupación alemana, un médico que se hacía llamar «doctor Eugène» ofrecía a quienes huían de los nazis una salida secreta a Argentina por 25.000 francos, con una supuesta vacuna previa. Nadie llegó a Argentina.
 
-El 11 de marzo de 1944, los vecinos del número 21 de la calle Le Sueur se quejaron del humo y el olor de una chimenea. Los bomberos encontraron en el sótano restos humanos de numerosas personas. Petiot desapareció y se escondió en la Resistencia como «capitán Valéry»; lo delató su letra en una carta a la prensa y fue detenido el 31 de octubre de 1944. En el juicio sostuvo que solo había matado a alemanes y colaboracionistas; la policía no halló nada que lo respaldara. Fue condenado por más de veinte asesinatos y guillotinado el 25 de mayo de 1946.
+El 11 de marzo de 1944, los vecinos del número 21 de la calle Le Sueur se quejaron del humo y el olor de una chimenea. Los bomberos encontraron en el sótano restos humanos de numerosas personas [10]. Petiot desapareció y se escondió en la Resistencia como «capitán Valéry»; lo delató su letra en una carta a la prensa y fue detenido el 31 de octubre de 1944. En el juicio sostuvo que solo había matado a alemanes y colaboracionistas; la policía no halló nada que lo respaldara. Fue condenado por más de veinte asesinatos y guillotinado el 25 de mayo de 1946.
 
 ### 1. El Zodiaco y el nombre que no aparece (California, 1968-1969)
 
-Cuatro ataques confirmados en el norte de California entre 1968 y 1969: cinco muertos y dos supervivientes. El autor escribió a los periódicos de la bahía de San Francisco y firmó como «Zodiaco». Envió cuatro mensajes cifrados. El de 408 símbolos lo resolvió en agosto de 1969 un matrimonio, Donald y Bettye Harden; el de 340 resistió 51 años, hasta que tres aficionados lo descifraron en diciembre de 2020 y el FBI confirmó la solución.
+Cuatro ataques confirmados en el norte de California entre 1968 y 1969: cinco muertos y dos supervivientes. El autor escribió a los periódicos de la bahía de San Francisco y firmó como «Zodiaco». Envió cuatro mensajes cifrados. El de 408 símbolos lo resolvió en agosto de 1969 un matrimonio, Donald y Bettye Harden; el de 340 resistió 51 años, hasta que tres aficionados lo descifraron en diciembre de 2020 y el FBI confirmó la solución [2].
 
 Ninguno contenía un nombre. Quedan otros dos sin resolver, entre ellos uno de trece símbolos que empieza «My name is…» («Mi nombre es…»). El caso sigue abierto: es el único de la lista en el que el detalle que delata al autor no ha aparecido.
 
@@ -82,6 +82,14 @@ Ninguno contenía un nombre. Quedan otros dos sin resolver, entre ellos uno de t
 - Nº 9. Mary Ann Cotton (1832-1873), del condado de Durham. Se le atribuyen unas 21 muertes sospechosas: maridos, hijos e hijastros, muchas registradas como «fiebre gástrica». En 1872 le dijo al funcionario parroquial Thomas Riley que su hijastro Charles Edward, de 7 años, «se irá como todos los demás Cotton». El niño murió cinco días después. El médico conservó muestras en las que apareció arsénico. Fue ahorcada el 24 de marzo de 1873 en la cárcel de Durham
 - La canción infantil del noreste de Inglaterra con su nombre
 - Nº 8. Burke y Hare, Edimburgo, 1828: 16 víctimas en unos 10 meses, vendidas al anatomista Robert Knox. El primer cuerpo se pagó a 7 libras y 10 chelines. No eran ladrones de tumbas. Los descubrieron los huéspedes Ann y James Gray, que fueron a la policía. Hare obtuvo inmunidad a cambio de declarar. Burke fue ahorcado el 28 de enero de 1829 ante unas 25.000 personas y disecado en público. Su esqueleto está en el Museo Anatómico de la Universidad de Edimburgo. Del caso viene el verbo inglés «to burke», y después llegó la Anatomy Act de 1832
+
+### Semáforo de la verdad
+
+- documentado: A Mary Ann Cotton la delató su frase al funcionario parroquial Thomas Riley, y el análisis posterior encontró arsénico [4]
+- documentado: Burke y Hare mataron a dieciséis personas en unos diez meses y vendieron los cuerpos al anatomista Robert Knox [5]
+- discutido: Las 931 muertes de Behram figuran en el récord Guinness, pero el historiador Mike Dash considera la cifra improbable [1]
+- discutido: Si Belle Gunness murió en el incendio de 1908: el cuerpo hallado no encajaba con ella y el ADN no dio un resultado concluyente [9]
+- leyenda: Petiot dijo que solo había matado a alemanes y colaboracionistas, pero la policía no encontró nada que lo respaldara [10]
 
 ### Fuentes
 
@@ -188,7 +196,7 @@ El 3 de diciembre de 1927 [5], la Metro-Goldwyn-Mayer estrenó una película de 
 
 ### Una historia de Browning con un truco final
 
-La idea era del propio Browning, que la había escrito como relato con el título de «The Hypnotist» (El hipnotizador), que fue también el título de trabajo del rodaje [5]. El guion lo adaptó Waldemar Young, colaborador habitual del director en «The Unholy Three» y «The Unknown», y antiguo periodista de San Francisco que había cubierto investigaciones de asesinatos reales. Además de Chaney, el reparto incluía a Marceline Day, Conrad Nagel, Henry B. Walthall y Polly Moran. Los decorados eran de Cedric Gibbons, el gran director artístico de la MGM.
+La idea era del propio Browning, que la había escrito como relato con el título de «The Hypnotist» (El hipnotizador), que fue también el título de trabajo del rodaje [5]. El guion lo adaptó Waldemar Young, colaborador habitual del director en «The Unholy Three» y «The Unknown». Además de Chaney, el reparto incluía a Marceline Day, Conrad Nagel, Henry B. Walthall y Polly Moran. Los decorados eran de Cedric Gibbons, el gran director artístico de la MGM.
 
 El argumento se conoce bien. Roger Balfour aparece muerto en su casa de Londres y el inspector Burke, de Scotland Yard, concluye que se ha suicidado, pese a las dudas de un amigo de la familia, sir James Hamlin. Cinco años después, en la mansión abandonada de los Balfour se ven luces y dos inquilinos inquietantes: un hombre con sombrero de copa de piel de castor y una mujer pálida y silenciosa vestida con túnicas. Burke vuelve al caso, descubre que el contrato de alquiler lleva la firma del difunto y encuentra su tumba vacía [5].
 
@@ -274,7 +282,7 @@ Las cinco víctimas canónicas compartían esa vida precaria. En los archivos po
 
 Al principio llevó el caso la división H de la Policía Metropolitana; después llegaron detectives de Scotland Yard, entre ellos el inspector Frederick Abberline, con el inspector jefe Donald Swanson coordinando la investigación. Cuando uno de los crímenes se produjo dentro de la City, entró también su policía, que era independiente.
 
-La escala fue enorme para la época: más de 2.000 personas interrogadas, más de 300 investigadas y unas 80 detenidas [1]. Los vecinos crearon en septiembre de 1888 el Comité de Vigilancia de Whitechapel, que patrullaba las calles y ofrecía su propia recompensa. El médico Thomas Bond redactó a finales de octubre una valoración del autor que se considera el perfil criminal más antiguo conservado [1]. Aun así, sin huellas dactilares ni análisis forenses modernos, la policía trabajaba casi a ciegas. El comisario Charles Warren dimitió en noviembre de 1888, enfrentado al Ministerio del Interior y bajo duras críticas.
+La escala fue enorme para la época: más de 2.000 personas interrogadas, más de 300 investigadas y unas 80 detenidas [1]. Los vecinos crearon en septiembre de 1888 el Comité de Vigilancia de Whitechapel, que patrullaba las calles y ofrecía su propia recompensa. El médico Thomas Bond redactó a finales de octubre una valoración del autor que se considera el perfil criminal más antiguo conservado [1]. Aun así, sin huellas dactilares ni análisis forenses modernos, la policía trabajaba casi a ciegas. El comisario Charles Warren dimitió en noviembre de 1888, enfrentado al Ministerio del Interior y bajo duras críticas [5].
 
 ### La prensa y las cartas
 
@@ -316,6 +324,7 @@ La cultura popular ha convertido el caso en un género, la «ripperología», co
 - [2] Wikipedia (en), «Dear Boss letter»: https://en.wikipedia.org/wiki/Dear_Boss_letter
 - [3] Wikipedia (en), «From Hell letter»: https://en.wikipedia.org/wiki/From_Hell_letter
 - [4] Smithsonian Magazine, «No, We Still Cannot Confirm the Identity of Jack the Ripper» (2019): https://www.smithsonianmag.com/smart-news/no-we-still-cannot-confirm-identity-jack-rippers-180971726/
+- [5] Wikipedia (en), «Charles Warren»: https://en.wikipedia.org/wiki/Charles_Warren
 
 ## CONDENADA siendo INOCENTE: el caso de Mijas y la prueba de ADN que lo cambió todo
 
@@ -1568,7 +1577,7 @@ El caso ocupa el puesto 7 del Top 10 Halloween de El Archivo Curioso. Aquí no h
 
 ### Una familia acomodada en una ciudad textil
 
-Fall River era entonces una gran ciudad algodonera de Nueva Inglaterra. Lizzie Andrew Borden nació allí el 19 de julio de 1860 [1]. Su madre murió en 1863 y su padre, un empresario rico y conocido por su tacañería, volvió a casarse en 1865. Lizzie y su hermana mayor, Emma, nunca se llevaron bien con su madrastra; Lizzie se negaba a llamarla «madre» [3].
+Fall River era entonces una gran ciudad algodonera de Nueva Inglaterra. Lizzie Andrew Borden nació allí el 19 de julio de 1860 [1]. Su madre murió en 1863 y su padre, un empresario rico y conocido por su tacañería, volvió a casarse unos tres años después [1]. Lizzie y su hermana mayor, Emma, nunca se llevaron bien con su madrastra; Lizzie se negaba a llamarla «madre» [3].
 
 Había tensiones de dinero por propiedades que el padre había traspasado a familiares de su segunda esposa. Días antes de los hechos, varios miembros de la familia enfermaron, y un tío materno de las hermanas se alojaba en la casa.
 
@@ -1644,7 +1653,7 @@ No hay ningún documento de 1735 que hable de ese nacimiento. La primera referen
 
 Los historiadores Brian Regal y Frank J. Esposito propusieron en 2018 una respuesta sorprendente: el «diablo» nació de las disputas políticas y religiosas de la época colonial en torno a una familia real, los Leeds.
 
-Daniel Leeds se instaló en Burlington, en la colonia de West Jersey, en 1677. Era cuáquero, pero publicó almanaques con contenido astrológico, algo que su comunidad veía con muy malos ojos: lo trataron de pagano, lo marginaron y llegaron a decir que trabajaba para el diablo. Su hijo Titan heredó el negocio y tuvo como rival a Benjamin Franklin, que en su *Almanaque del pobre Richard* llegó a «predecir» en broma la muerte de Titan y luego insistió en que quien seguía publicando era su fantasma [1]. Además, el escudo de la familia llevaba un guiverno, una especie de dragón alado. Para estos autores, el recuerdo de aquella familia «diabólica» acabó transformándose en un monstruo.
+Daniel Leeds se instaló en Burlington, en la colonia de West Jersey, a finales de la década de 1670. Era cuáquero, pero publicó almanaques con contenido astrológico, algo que su comunidad veía con muy malos ojos: lo trataron de pagano, lo marginaron y llegaron a decir que trabajaba para el diablo. Su hijo Titan heredó el negocio y tuvo como rival a Benjamin Franklin, que en su *Almanaque del pobre Richard* llegó a «predecir» en broma la muerte de Titan y luego insistió en que quien seguía publicando era su fantasma [1]. Además, el escudo de la familia llevaba un guiverno, una especie de dragón alado. Para estos autores, el recuerdo de aquella familia «diabólica» acabó transformándose en un monstruo.
 
 ### La semana del pánico: 16-23 de enero de 1909
 
@@ -1722,7 +1731,7 @@ La policía detuvo a un tal Thomas Millbank, que presumía de ser Jack, pero no 
 
 ### Del periódico al folletín
 
-Jack no desapareció. Hubo nuevas oleadas en 1843; en 1847 un hombre fue condenado en Teignmouth por asaltos cometidos con una máscara con cuernos [1]; y en la década de 1870 la prensa volvió a hablar de él en Sheffield, Lincoln y el campamento militar de Aldershot, donde en 1877 unos centinelas dijeron haber visto una figura que saltaba y desaparecía. Los últimos avistamientos se sitúan en el barrio de Everton, en Liverpool, hacia 1888 y en 1904 [1].
+Jack no desapareció. Hubo nuevas oleadas en 1843; en 1847 un hombre fue condenado en Teignmouth por asaltos cometidos con una máscara con cuernos [1]; y en la década de 1870 la prensa volvió a hablar de él en Sheffield, Lincoln y el campamento militar de Aldershot, donde en agosto de 1877 unos centinelas dijeron haber visto una figura que saltaba y desaparecía [1]. Los últimos avistamientos se sitúan en el barrio de Everton, en Liverpool, hacia 1888 y en 1904 [1].
 
 Mientras tanto, el personaje protagonizó *penny dreadfuls*, las novelas baratas por entregas, obras de teatro populares y funciones de títeres [1]. Con los años pasó de villano a justiciero enmascarado, un antepasado de los superhéroes del cómic. El historiador Karl Bell, de la Universidad de Portsmouth, ha estudiado ese recorrido completo: del rumor oral al periódico, del periódico al escenario y del escenario al «coco» con el que se asustaba a los niños.
 
