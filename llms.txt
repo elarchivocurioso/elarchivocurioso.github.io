@@ -6,6 +6,9 @@ Archivo en español de historias reales que parecen inventadas: sucesos insólit
 
 ## Expedientes
 
+- [TOP 10 HALLOWEEN: 130 niños DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron](https://elarchivocurioso.github.io/expedientes/top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond.html): Número diez. Todos conocemos el cuento del flautista… Pero ¿y si hubiera algo de cierto?
+- [TOP 9 HALLOWEEN: el «MONSTRUO» saltarín que tuvo en vilo a Londres](https://elarchivocurioso.github.io/expedientes/top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html): Número nueve. Londres, mil ochocientos treinta y siete. Una figura con capa salta por encima de los muros…
+- [TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios](https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html): Número ocho. El Diablo de Jersey. Una leyenda con alas…
 - [GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia](https://elarchivocurioso.github.io/expedientes/gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html): El diecinueve de noviembre de 2026 sale GTA seis. Millones de personas llevan años esperándolo. Sus tráileres han batido todas las marcas, y su fecha se ha movido dos veces.
 - [NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)](https://elarchivocurioso.github.io/expedientes/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.html): En 1922 se estrenó en Berlín una película de miedo. Un vampiro calvo, de orejas puntiagudas y dedos larguísimos. Hoy es una de las películas más famosas de la historia del cine.
 - [H. H. HOLMES: el estafador de Chicago y la verdad sobre su famoso edificio (1893)](https://elarchivocurioso.github.io/expedientes/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.html): Seguro que has oído hablar de él. Un edificio en Chicago lleno de pasadizos secretos, trampillas y habitaciones sin salida. Y un asesino que, según la leyenda, mató allí a doscientas personas.
@@ -35,6 +38,7 @@ Archivo en español de historias reales que parecen inventadas: sucesos insólit
 - [Cine mudo](https://elarchivocurioso.github.io/temas/cine-mudo.html)
 - [Desastres](https://elarchivocurioso.github.io/temas/desastres.html)
 - [Drácula](https://elarchivocurioso.github.io/temas/dracula.html)
+- [Edad Media](https://elarchivocurioso.github.io/temas/edad-media.html)
 - [Estafas históricas](https://elarchivocurioso.github.io/temas/estafas-historicas.html)
 - [Grand Theft Auto](https://elarchivocurioso.github.io/temas/grand-theft-auto.html)
 - [Historia de la medicina](https://elarchivocurioso.github.io/temas/historia-de-la-medicina.html)
