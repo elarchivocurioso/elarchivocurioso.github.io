@@ -119,7 +119,8 @@
           "nota": "El estudio de referencia sobre el caso, escrito por un historiador de la medicina (Icon Books, 2008; en Estados Unidos se publicó en 2009 como «The Dancing Plague»)."
         }
       ],
-      "num": "A001"
+      "num": "A001",
+      "censura": "dejar de bailar"
     },
     {
       "youtube": "VzDGAwrxWM4",
@@ -776,7 +777,8 @@
             "Tampoco está del todo claro por qué se montó la operación. La versión oficial era ayudar a los granjeros. El historiador Murray Johnson ha sugerido que fue en parte un ejercicio de propaganda, para que el gobierno pareciera hacer algo por unos veteranos en apuros, y otros autores apuntan al deseo de calmar a una región molesta con el gobierno federal. Son interpretaciones razonables, pero no pueden darse por demostradas. Lo indiscutible es el desenlace: las aves siguieron ahí, y el problema se gestionó durante décadas con recompensas y vallas, no con ametralladoras."
           ]
         }
-      ]
+      ],
+      "censura": "20.000 aves"
     },
     {
       "youtube": "c--zhvTm08U",
@@ -1035,7 +1037,8 @@
           "autor": "Malcolm Macmillan",
           "nota": "El estudio más completo sobre el caso, con los informes originales de Harlow y un repaso de cómo se fabricó el mito."
         }
-      ]
+      ],
+      "censura": "barra de hierro"
     },
     {
       "youtube": "xmxdzH-pZSU",
@@ -1229,7 +1232,8 @@
           "autor": "Gillen D'Arcy Wood",
           "nota": "Recorre las consecuencias de la erupción en todo el planeta, de las hambrunas en China al verano de Villa Diodati."
         }
-      ]
+      ],
+      "censura": "nieve en junio"
     },
     {
       "youtube": "YbPF0QQVU0I",
@@ -1998,7 +2002,8 @@
           "autor": "Paul Begg",
           "nota": "Repasa las teorías con espíritu crítico (2005) e incluye la transcripción de las vistas de Gibraltar y el relato de Conan Doyle."
         }
-      ]
+      ],
+      "censura": "sin nadie a bordo"
     },
     {
       "youtube": "q-4LNa7J4F4",
@@ -2379,7 +2384,8 @@
           "autor": "Adam Selzer",
           "nota": "La biografía que volvió a los documentos originales y separó con paciencia los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
         }
-      ]
+      ],
+      "censura": "su famoso edificio"
     },
     {
       "youtube": "B5MRTu9xLBA",
@@ -2759,7 +2765,8 @@
             "En la Bungelosenstraße, la «calle sin tambores», donde la tradición dice que se vio a los niños por última vez, no suena música en los desfiles. Y desde hace unos setenta años los vecinos representan la historia los domingos de verano."
           ]
         }
-      ]
+      ],
+      "censura": "130 niños"
     },
     {
       "youtube": "ytwYRXqx-2U",
@@ -2850,7 +2857,8 @@
           "autor": "Karl Bell",
           "nota": "El estudio académico de referencia sobre cómo nació y se transformó la leyenda entre 1837 y 1904 (Boydell Press, 2012; en inglés)."
         }
-      ]
+      ],
+      "censura": "«MONSTRUO» saltarín"
     },
     {
       "youtube": "UeY-Fi2i0O0",
@@ -2942,7 +2950,8 @@
           "autor": "Brian Regal y Frank J. Esposito",
           "nota": "La investigación que conecta la leyenda con la familia Leeds y la política colonial (Johns Hopkins University Press, 2018; en inglés)."
         }
-      ]
+      ],
+      "censura": "cerró los colegios"
     },
     {
       "youtube": "mv6RTbWCgSg",
@@ -3034,7 +3043,8 @@
           "autor": "Cara Robertson",
           "nota": "Una reconstrucción minuciosa del proceso, basada en las transcripciones, la prensa de la época y cartas inéditas de Lizzie (Simon & Schuster, 2019; en inglés)."
         }
-      ]
+      ],
+      "censura": "sigue abierto"
     },
     {
       "youtube": "cQ2t3peNRJ4",
@@ -3126,7 +3136,8 @@
           "autor": "Jay M. Smith",
           "nota": "Cómo la prensa, la corte y la opinión pública fabricaron un monstruo a partir de los ataques (Harvard University Press, 2011; en inglés)."
         }
-      ]
+      ],
+      "censura": "aterrorizó a Francia"
     }
   ]
 }

@@ -202,6 +202,8 @@ header nav a:hover { color:var(--texto); }
 .ficha .tipo.short { color:var(--rojo); border-color:rgba(194,68,59,.5); }
 .ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:8px; }
 .ficha .num { color:var(--rojo); font-size:11px; }
+.ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:44px; line-height:1; color:var(--rojo); margin-bottom:2px; }
+.rejilla .ficha { height:100%; }
 .ficha h3 { font-weight:600; font-size:17px; line-height:1.4; }
 .ficha .meta { font-size:12px; color:var(--texto-3); }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
@@ -769,10 +771,38 @@ def es_de_miedo(e: dict) -> bool:
     return e.get("num") in CASOS_DE_MIEDO or any(p in texto for p in PALABRAS_DE_MIEDO)
 
 
+TOP_HALLOWEEN = re.compile(r"^\s*TOP\s*(\d+)\s*HALLOWEEN\s*:\s*", re.I)
+
+
+def puesto_top(e: dict) -> int | None:
+    """Puesto en el Top 10 de Halloween (del título «TOP 7 HALLOWEEN: …»), o None."""
+    m = TOP_HALLOWEEN.match(e["titulo"])
+    return int(m.group(1)) if m else None
+
+
+def ficha_top(e: dict) -> str:
+    """Tarjeta del Top 10: número grande y título sin el «TOP N HALLOWEEN:» del principio."""
+    n = puesto_top(e)
+    corto = dict(e, titulo=TOP_HALLOWEEN.sub("", e["titulo"]))
+    if corto.get("censura") and corto["censura"].lower() not in corto["titulo"].lower():
+        corto.pop("censura")
+    html = ficha(corto)
+    return html.replace('<div class="txt">', f'<div class="txt"><div class="puesto">Nº {n}</div>', 1)
+
+
 def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
     ruta = "historias-de-miedo-reales.html"
     descripcion = ("Historias de miedo reales, documentadas y con fuentes: crímenes antiguos sin resolver, barcos fantasma, "
                    "bestias que aterrorizaron regiones enteras y leyendas que nacieron de hechos reales.")
+    # Dos bloques: el Top 10 de Halloween en cuenta atrás (del 10 al 1) y el resto de casos oscuros
+    top = sorted((e for e in expedientes if puesto_top(e)), key=lambda e: -puesto_top(e))
+    casos = [e for e in expedientes if not puesto_top(e)]
+    bloque_top = ""
+    if top:
+        quedan = 10 - len(top)
+        bloque_top = (f'<div class="seccion-cab"><h2>Top 10 de Halloween</h2><span class="cuenta">Cuenta atrás: '
+                      f'{len(top)} de 10 abiertos{f". Los {quedan} restantes, muy pronto" if quedan > 0 else ""}.</span></div>'
+                      f'<div class="rejilla">{"".join(ficha_top(e) for e in top)}</div>')
     cuerpo = f"""<main class="ancho seccion">
 <div class="sello-rojo mono" style="margin-bottom:22px">Solo para valientes</div>
 <h1 style="font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:1.08; max-width:18ch">Historias de miedo <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">reales</span></h1>
@@ -780,8 +810,9 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
 <p class="bloque" style="margin-top:0">No hace falta inventar nada para pasar miedo. La historia está llena de sucesos que darían para una película de terror: una granja donde alguien vivió escondido en el desván, un barco que apareció a la deriva sin nadie a bordo, una bestia que atacó durante tres años a los pastores de una región de Francia o un juicio en Galicia contra un hombre que decía convertirse en lobo.</p>
 <p class="bloque" style="margin-top:14px">En El Archivo Curioso los contamos como lo que son: casos reales, con sus fuentes, separando lo que se sabe de lo que se añadió después. Sin morbo, pero sin quitarles una pizca de inquietud.</p>
 </div>
-<div class="seccion-cab"><h2>Expedientes oscuros</h2><span class="cuenta">{len(expedientes)} casos. Léelos con la luz encendida.</span></div>
-<div class="rejilla">{"".join(ficha(e) for e in expedientes)}</div>
+{bloque_top}
+<div class="seccion-cab" style="margin-top:56px"><h2>Casos oscuros</h2><span class="cuenta">{len(casos)} {"caso" if len(casos) == 1 else "casos"}. Léelos con la luz encendida.</span></div>
+<div class="rejilla">{"".join(ficha(e) for e in casos)}</div>
 </main>"""
     jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historias de miedo reales",
               "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}
@@ -1075,6 +1106,12 @@ def generar() -> int:
         if origen and origen.exists():
             shutil.copyfile(origen, dir_min / f"{s}{origen.suffix.lower()}")
             e["_img"] = f"miniaturas/{s}{origen.suffix.lower()}"
+        elif e.get("num") and (WEB / "portadas" / f"{e['num']}.jpg").exists():
+            # Portada horizontal limpia de un Short (la hace Promocion/portadas_shorts.py)
+            e["_img"] = f"portadas/{e['num']}.jpg"
+            if SALIDA != WEB:
+                (SALIDA / "portadas").mkdir(exist_ok=True)
+                shutil.copyfile(WEB / e["_img"], SALIDA / e["_img"])
         elif e.get("youtube"):
             e["_img"] = f"https://i.ytimg.com/vi/{e['youtube']}/hqdefault.jpg"
         else:
