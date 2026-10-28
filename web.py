@@ -1012,7 +1012,7 @@ def generar() -> int:
     (SALIDA / "indice.json").write_text(json.dumps(
         [{"t": e["titulo"], "u": f"expedientes/{e['_slug']}.html", "r": e.get("resumen", ""),
           "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""), "n": num_ficha(e)}
-         for e in visibles], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+         for e in listados], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     (SALIDA / "index.html").write_text(inicio(canal, listados), encoding="utf-8")
     (SALIDA / "buscar.html").write_text(buscar(canal), encoding="utf-8")
