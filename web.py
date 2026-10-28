@@ -786,7 +786,7 @@ def ficha_top(e: dict) -> str:
     corto = dict(e, titulo=TOP_HALLOWEEN.sub("", e["titulo"]))
     if corto.get("censura") and corto["censura"].lower() not in corto["titulo"].lower():
         corto.pop("censura")
-    html = ficha(corto)
+    html = re.sub(r'<div class="num mono">[^<]*</div>', "", ficha(corto), count=1)   # el puesto sustituye al nº de archivo
     return html.replace('<div class="txt">', f'<div class="txt"><div class="puesto">Nº {n}</div>', 1)
 
 
