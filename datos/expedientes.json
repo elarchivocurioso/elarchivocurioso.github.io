@@ -1,8 +1,8 @@
 {
   "canal": {
-    "nombre": "El Archivo Curioso",
-    "lema": "Historias reales que parecen inventadas",
-    "descripcion": "Blog de historias de miedo reales y curiosidades de la historia: crímenes antiguos, casos sin resolver, barcos fantasma, leyendas con base real y sucesos tan extraños que parecen inventados. Todo documentado y con fuentes.",
+    "nombre": "Folio 13",
+    "lema": "Parece inventado. Está documentado.",
+    "descripcion": "Historias reales que cuesta creer, con todas sus fuentes para que las compruebes: crímenes del pasado, leyendas, cine maldito, mitos desmontados, robos y desastres. Da escalofrío, pero sin morbo.",
     "youtube": "https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ",
     "google_verificacion": "",
     "google_archivo": "googlefc2f29286514b152.html",
@@ -11,7 +11,8 @@
     "donaciones_url": "https://ko-fi.com/elarchivocurioso",
     "donaciones_texto": "Invítanos a un café",
     "newsletter_url": "",
-    "opiniones_form": "ArrjlN"
+    "opiniones_form": "ArrjlN",
+    "dominio": ""
   },
   "expedientes": [
     {
@@ -121,7 +122,13 @@
         }
       ],
       "num": "A001",
-      "censura": "dejar de bailar"
+      "censura": "dejar de bailar",
+      "tematica": "desastres",
+      "tematica_alt": "mitos",
+      "mapa": [
+        48.58,
+        7.75
+      ]
     },
     {
       "youtube": "VzDGAwrxWM4",
@@ -236,7 +243,12 @@
         }
       ],
       "num": "S101",
-      "censura": "inventó la bombilla"
+      "censura": "inventó la bombilla",
+      "tematica": "mitos",
+      "mapa": [
+        54.97,
+        -1.61
+      ]
     },
     {
       "youtube": "QJhFpKyG5Bc",
@@ -347,7 +359,12 @@
           "nota": "Una biografía extensa y muy legible que se apoya en la correspondencia del propio Napoleón (publicada en español como «Napoleón: una vida»)."
         }
       ],
-      "num": "S102"
+      "num": "S102",
+      "tematica": "mitos",
+      "mapa": [
+        48.86,
+        2.35
+      ]
     },
     {
       "youtube": "n2VzGwBZtVs",
@@ -450,7 +467,12 @@
           "nota": "La mejor síntesis reciente sobre cómo vivían y pensaban los vikingos, escrita por un arqueólogo de la Universidad de Uppsala (en inglés)."
         }
       ],
-      "num": "S103"
+      "num": "S103",
+      "tematica": "mitos",
+      "mapa": [
+        59.91,
+        10.75
+      ]
     },
     {
       "youtube": "UgproHL8drs",
@@ -567,7 +589,12 @@
         }
       ],
       "num": "S104",
-      "censura": "del iPhone"
+      "censura": "del iPhone",
+      "tematica": "mitos",
+      "mapa": [
+        31.2,
+        29.92
+      ]
     },
     {
       "youtube": "6FOBq5w86vg",
@@ -679,7 +706,12 @@
           "nota": "El libro de referencia sobre el desastre, el juicio y el Boston de la época (2003, en inglés)."
         }
       ],
-      "censura": "mató a 21 personas"
+      "censura": "mató a 21 personas",
+      "tematica": "desastres",
+      "mapa": [
+        42.36,
+        -71.06
+      ]
     },
     {
       "youtube": "Q4L4l8-mS1M",
@@ -779,7 +811,13 @@
           ]
         }
       ],
-      "censura": "20.000 aves"
+      "censura": "20.000 aves",
+      "tematica": "desastres",
+      "tematica_alt": "mitos",
+      "mapa": [
+        -31.0,
+        118.7
+      ]
     },
     {
       "youtube": "c--zhvTm08U",
@@ -859,7 +897,12 @@
           ]
         }
       ],
-      "censura": "el frío"
+      "censura": "el frío",
+      "tematica": "desastres",
+      "mapa": [
+        42.36,
+        -71.06
+      ]
     },
     {
       "youtube": "uTWN9_BrErg",
@@ -929,6 +972,12 @@
             "La cifra de diez balas por ave es la del propio Meredith, sospechosamente redonda: 986 emús con 9.860 cartuchos. El historiador Greg Beyer la considera muy discutida y probablemente inflada. Tampoco está demostrado que los emús «aguanten balas» mejor que otros animales. Cuando Meredith los comparó con tanques, hablaba desde la frustración, no a partir de ninguna medición. Y aunque a menudo se dice que miden «dos metros», los más grandes se quedan algo por debajo."
           ]
         }
+      ],
+      "tematica": "desastres",
+      "tematica_alt": "mitos",
+      "mapa": [
+        -31.0,
+        118.7
       ]
     },
     {
@@ -1039,7 +1088,13 @@
           "nota": "El estudio más completo sobre el caso, con los informes originales de Harlow y un repaso de cómo se fabricó el mito."
         }
       ],
-      "censura": "barra de hierro"
+      "censura": "barra de hierro",
+      "tematica": "mitos",
+      "tematica_alt": "desastres",
+      "mapa": [
+        43.38,
+        -72.61
+      ]
     },
     {
       "youtube": "xmxdzH-pZSU",
@@ -1116,7 +1171,13 @@
           ]
         }
       ],
-      "censura": "estaba HABLANDO"
+      "censura": "estaba HABLANDO",
+      "tematica": "mitos",
+      "tematica_alt": "desastres",
+      "mapa": [
+        43.38,
+        -72.61
+      ]
     },
     {
       "youtube": "9SYd1HiSA1M",
@@ -1234,7 +1295,12 @@
           "nota": "Recorre las consecuencias de la erupción en todo el planeta, de las hambrunas en China al verano de Villa Diodati."
         }
       ],
-      "censura": "nieve en junio"
+      "censura": "nieve en junio",
+      "tematica": "desastres",
+      "mapa": [
+        -8.25,
+        118.0
+      ]
     },
     {
       "youtube": "YbPF0QQVU0I",
@@ -1311,7 +1377,12 @@
           ]
         }
       ],
-      "censura": "FRANKENSTEIN"
+      "censura": "FRANKENSTEIN",
+      "tematica": "desastres",
+      "mapa": [
+        46.45,
+        6.55
+      ]
     },
     {
       "youtube": "m8tW15aqnWo",
@@ -1425,7 +1496,12 @@
           "nota": "Cuenta la vida de Carrington y cómo se descubrió que el Sol influye directamente en la Tierra."
         }
       ],
-      "censura": "incendió los telégrafos"
+      "censura": "incendió los telégrafos",
+      "tematica": "desastres",
+      "mapa": [
+        51.24,
+        -0.17
+      ]
     },
     {
       "youtube": "gCFYlkS09xo",
@@ -1502,6 +1578,11 @@
             "El Sol no envió electricidad por el cable: sacudió el campo magnético terrestre, y esa sacudida indujo la corriente. Tampoco era una fuente estable, pero bastaba porque el telégrafo solo necesitaba pulsos. La duración, unas dos horas según el relato más citado, procede de testimonios, no de mediciones. Lo que sí está bien documentado es el fenómeno, que hoy preocupa a las compañías eléctricas."
           ]
         }
+      ],
+      "tematica": "desastres",
+      "mapa": [
+        42.36,
+        -71.06
       ]
     },
     {
@@ -1616,6 +1697,11 @@
           "autor": "James F. Johnson y Floyd Miller",
           "nota": "Biografía de 1961 escrita por un antiguo agente del Servicio Secreto que participó en la investigación de su red de billetes falsos, junto al escritor Floyd Miller; es el relato de uno de sus perseguidores."
         }
+      ],
+      "tematica": "robos",
+      "mapa": [
+        48.858,
+        2.294
       ]
     },
     {
@@ -1696,6 +1782,11 @@
           "autor": "David W. Maurer",
           "nota": "El estudio clásico de 1940 sobre los grandes timos y la jerga de los estafadores, que sirvió de material para la película *El golpe* (en inglés)."
         }
+      ],
+      "tematica": "robos",
+      "mapa": [
+        48.858,
+        2.294
       ]
     },
     {
@@ -1807,7 +1898,12 @@
           "nota": "Una narración amena (1999) del viaje del tulipán desde Asia central hasta Holanda; es anterior al trabajo de Goldgar, así que conviene leerla junto a él."
         }
       ],
-      "censura": "¿o un mito?"
+      "censura": "¿o un mito?",
+      "tematica": "mitos",
+      "mapa": [
+        52.38,
+        4.64
+      ]
     },
     {
       "youtube": "5CsaTHjV0tc",
@@ -1891,7 +1987,12 @@
           ]
         }
       ],
-      "censura": "no arruinó Holanda"
+      "censura": "no arruinó Holanda",
+      "tematica": "mitos",
+      "mapa": [
+        52.38,
+        4.64
+      ]
     },
     {
       "youtube": "PAjZ8g7deHM",
@@ -2004,7 +2105,13 @@
           "nota": "Repasa las teorías con espíritu crítico (2005) e incluye la transcripción de las vistas de Gibraltar y el relato de Conan Doyle."
         }
       ],
-      "censura": "sin nadie a bordo"
+      "censura": "sin nadie a bordo",
+      "tematica": "paranormal",
+      "tematica_alt": "mitos",
+      "mapa": [
+        38.3,
+        -17.25
+      ]
     },
     {
       "youtube": "q-4LNa7J4F4",
@@ -2082,7 +2189,13 @@
           ]
         }
       ],
-      "censura": "inventó parte del misterio"
+      "censura": "inventó parte del misterio",
+      "tematica": "paranormal",
+      "tematica_alt": "mitos",
+      "mapa": [
+        38.3,
+        -17.25
+      ]
     },
     {
       "youtube": "cGdxWX4mSQI",
@@ -2192,7 +2305,12 @@
           "nota": "El estudio clásico sobre el director y sus películas, escrito por la historiadora que más contribuyó a recuperar «Nosferatu» (original francés de 1964, edición inglesa ampliada de 1973)."
         }
       ],
-      "censura": "ordenó destruir"
+      "censura": "ordenó destruir",
+      "tematica": "cine",
+      "mapa": [
+        52.52,
+        13.4
+      ]
     },
     {
       "youtube": "XtHCT32B-Fw",
@@ -2278,7 +2396,12 @@
           "nota": "Reconstruye el viaje de «Drácula» de la novela al cine, incluida la batalla de Florence Stoker contra «Nosferatu» (1990; en inglés)."
         }
       ],
-      "censura": "ordenó DESTRUIR"
+      "censura": "ordenó DESTRUIR",
+      "tematica": "cine",
+      "mapa": [
+        52.52,
+        13.4
+      ]
     },
     {
       "youtube": "DujLCXw4XMk",
@@ -2386,7 +2509,13 @@
           "nota": "La biografía que volvió a los documentos originales y separó con paciencia los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
         }
       ],
-      "censura": "su famoso edificio"
+      "censura": "su famoso edificio",
+      "tematica": "crimenes",
+      "tematica_alt": "mitos",
+      "mapa": [
+        41.88,
+        -87.63
+      ]
     },
     {
       "youtube": "B5MRTu9xLBA",
@@ -2463,7 +2592,13 @@
           "nota": "La biografía que volvió a los documentos originales para separar los hechos de las exageraciones (Skyhorse, 2017; en inglés)."
         }
       ],
-      "censura": "habitaciones secretas"
+      "censura": "habitaciones secretas",
+      "tematica": "crimenes",
+      "tematica_alt": "mitos",
+      "mapa": [
+        41.88,
+        -87.63
+      ]
     },
     {
       "youtube": "vML9AgGkMfc",
@@ -2590,7 +2725,12 @@
         }
       ],
       "num": "A012",
-      "censura": "el FALLO que creó GTA"
+      "censura": "el FALLO que creó GTA",
+      "tematica": "cine",
+      "mapa": [
+        56.46,
+        -2.97
+      ]
     },
     {
       "youtube": "G4ysC_DHmCw",
@@ -2676,7 +2816,12 @@
       ],
       "num": "S115",
       "de": "A012",
-      "censura": "la policía se volvió LOCA"
+      "censura": "la policía se volvió LOCA",
+      "tematica": "cine",
+      "mapa": [
+        56.46,
+        -2.97
+      ]
     },
     {
       "youtube": "R5MAx2_PDNA",
@@ -2767,7 +2912,12 @@
           ]
         }
       ],
-      "censura": "130 niños"
+      "censura": "130 niños",
+      "tematica": "paranormal",
+      "mapa": [
+        52.1,
+        9.36
+      ]
     },
     {
       "youtube": "ytwYRXqx-2U",
@@ -2859,7 +3009,12 @@
           "nota": "El estudio académico de referencia sobre cómo nació y se transformó la leyenda entre 1837 y 1904 (Boydell Press, 2012; en inglés)."
         }
       ],
-      "censura": "«MONSTRUO» saltarín"
+      "censura": "«MONSTRUO» saltarín",
+      "tematica": "paranormal",
+      "mapa": [
+        51.51,
+        -0.13
+      ]
     },
     {
       "youtube": "UeY-Fi2i0O0",
@@ -2952,7 +3107,12 @@
           "nota": "La investigación que conecta la leyenda con la familia Leeds y la política colonial (Johns Hopkins University Press, 2018; en inglés)."
         }
       ],
-      "censura": "cerró los colegios"
+      "censura": "cerró los colegios",
+      "tematica": "paranormal",
+      "mapa": [
+        39.8,
+        -74.6
+      ]
     },
     {
       "youtube": "mv6RTbWCgSg",
@@ -3045,7 +3205,12 @@
           "nota": "Una reconstrucción minuciosa del proceso, basada en las transcripciones, la prensa de la época y cartas inéditas de Lizzie (Simon & Schuster, 2019; en inglés)."
         }
       ],
-      "censura": "sigue abierto"
+      "censura": "sigue abierto",
+      "tematica": "crimenes",
+      "mapa": [
+        41.7,
+        -71.15
+      ]
     },
     {
       "youtube": "cQ2t3peNRJ4",
@@ -3138,7 +3303,12 @@
           "nota": "Cómo la prensa, la corte y la opinión pública fabricaron un monstruo a partir de los ataques (Harvard University Press, 2011; en inglés)."
         }
       ],
-      "censura": "aterrorizó a Francia"
+      "censura": "aterrorizó a Francia",
+      "tematica": "paranormal",
+      "mapa": [
+        44.6,
+        3.4
+      ]
     },
     {
       "youtube": "SNnqM8vvGHA",
@@ -3259,6 +3429,11 @@
           "autor": "Victoria Lincoln",
           "nota": "La autora, nacida en Fall River, propone su propia teoría sobre lo que pasó aquella mañana (G. P. Putnam's Sons, 1967; en inglés)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        41.7,
+        -71.15
       ]
     },
     {
@@ -3344,6 +3519,11 @@
             "El jurado la absolvió el 20 de junio de 1893. Nadie pudo demostrar que aquel vestido fuera el que Lizzie llevaba la mañana del 4 de agosto, ni tampoco que no lo fuera. Las cenizas de la estufa se llevaron la única prenda que habría podido responder a la pregunta del fiscal. Más de un siglo después, sigue siendo la gran duda del caso: o fue la prueba más clara del crimen, o la coincidencia más desafortunada de la historia judicial de Massachusetts."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        41.7,
+        -71.15
       ]
     },
     {
@@ -3438,6 +3618,12 @@
           "autor": "Bruce D. Patterson",
           "nota": "El conservador del Field Museum separa la leyenda de las pruebas y explica la biología de estos leones (McGraw-Hill, 2004; en inglés)."
         }
+      ],
+      "tematica": "paranormal",
+      "tematica_alt": "desastres",
+      "mapa": [
+        -2.98,
+        38.47
       ]
     },
     {
@@ -3525,6 +3711,12 @@
           "autor": "Tony Thorne",
           "nota": "Una biografía basada en archivos de Europa central que separa el expediente de la leyenda y analiza los motivos políticos y económicos del proceso (Bloomsbury, 1997; en inglés)."
         }
+      ],
+      "tematica": "crimenes",
+      "tematica_alt": "paranormal",
+      "mapa": [
+        48.72,
+        17.78
       ]
     },
     {
@@ -3606,6 +3798,12 @@
             "Lo de «primer caso documentado de licantropía clínica en España» es una etiqueta posterior, no un diagnóstico. La historia ha inspirado la película *El bosque del lobo* (1970), de Pedro Olea; *Romasanta*, de Paco Plaza, y la novela de Alfredo Conde *Romasanta. Memorias incertas do home lobo* (2004)."
           ]
         }
+      ],
+      "tematica": "paranormal",
+      "tematica_alt": "crimenes",
+      "mapa": [
+        42.19,
+        -7.8
       ]
     },
     {
@@ -3692,6 +3890,12 @@
           "autor": "Peter Leuschner",
           "nota": "La obra de referencia sobre el caso, citada por los propios archivos bávaros (Hofstetten, 2.ª edición revisada de 1997; en alemán)."
         }
+      ],
+      "tematica": "paranormal",
+      "tematica_alt": "crimenes",
+      "mapa": [
+        48.58,
+        11.33
       ]
     },
     {
@@ -3783,6 +3987,11 @@
           "autor": "Hallie Rubenhold",
           "nota": "Reconstruye con documentos de archivo la vida de las cinco mujeres y desmonta prejuicios repetidos durante un siglo; ganó el premio Baillie Gifford (Doubleday, 2019; en inglés)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        51.517,
+        -0.06
       ]
     },
     {
@@ -3889,6 +4098,11 @@
             "La película perdida ha generado su propio folclore. Muchas webs fechan el incendio en 1967, pero fue en 1965. Se ha anunciado varias veces que había aparecido una copia, y siempre ha resultado falso; en 2009 circuló incluso un vídeo que era una animación hecha con un muñeco de coleccionista. Lo que sí se ha revalorizado es lo que queda: en 2014, el único cartel original conocido de la película se vendió en una subasta por 478.000 dólares, el más caro pagado hasta entonces por un cartel de cine. Hay historiadores, como Jon Mirsalis, que sospechan que la película decepcionaría si apareciera. Pero, mientras no aparezca, seguirá siendo la más deseada."
           ]
         }
+      ],
+      "tematica": "cine",
+      "mapa": [
+        34.09,
+        -118.33
       ]
     },
     {
@@ -3958,6 +4172,11 @@
             "Se conservan el guion, cientos de fotografías del rodaje y esos fotogramas sueltos. Con las fotos, el canal Turner Classic Movies estrenó en 2002 una reconstrucción de Rick Schmidlin que dura entre 45 y 48 minutos según la fuente. Es lo más cerca que se puede estar de la película. Y una aclaración: muchas webs fechan el incendio en 1967, pero fue en 1965."
           ]
         }
+      ],
+      "tematica": "cine",
+      "mapa": [
+        34.09,
+        -118.33
       ]
     },
     {
@@ -4076,6 +4295,11 @@
           "autor": "Ramón J. Sender",
           "nota": "La novela que nació de sus reportajes de 1926 sobre el caso, en la edición de Donatella Pini (Contraseña, 2024)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        39.7,
+        -2.83
       ]
     },
     {
@@ -4156,6 +4380,11 @@
             "La mayoría de las fuentes fechan la reaparición a principios de 1926, a partir de la carta del 8 de febrero, pero alguna la sitúa en 1925 o incluso en 1924. Circulan también rumores sobre lo que sabía o calló el párroco de Tresjuncos, que no están bien documentados. Lo que no admite discusión es el resultado: dos hombres inocentes pasaron más de once años en prisión por la muerte de alguien que vivía, trabajaba y pensaba casarse en un pueblo de su misma provincia."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        39.7,
+        -2.83
       ]
     },
     {
@@ -4277,6 +4506,12 @@
             "Es cierto que *La llegada de un tren a la estación de La Ciotat* se rodó en 1895, que dura unos cincuenta segundos y que está compuesta para que el tren parezca venirse encima. Es cierto que no se proyectó el 28 de diciembre de 1895, que Gorki escribió una crónica impresionada y que las primeras películas sobresaltaron a muchos espectadores. No hay ninguna prueba de época de que alguien huyera de la sala, y la frase del «invento sin futuro» es, como mucho, una atribución dudosa."
           ]
         }
+      ],
+      "tematica": "mitos",
+      "tematica_alt": "cine",
+      "mapa": [
+        48.87,
+        2.33
       ]
     },
     {
@@ -4358,6 +4593,12 @@
             "Que el tren faltara la primera noche no prueba que nadie huyera después. Pero el historiador Martin Loiperdinger, en un estudio de 2004, no encontró ni un solo informe de la época sobre pánico en el público, y Stephen Bottomore halló espectadores sobresaltados, nunca convencidos de que el tren fuera real."
           ]
         }
+      ],
+      "tematica": "mitos",
+      "tematica_alt": "cine",
+      "mapa": [
+        48.87,
+        2.33
       ]
     },
     {
@@ -4467,6 +4708,12 @@
             "Christensen la reestrenó años después en Dinamarca con una introducción filmada en la que hablaba al público como un científico; las fuentes dan 1931 o 1941. Pero la resurrección llegó en 1968, cuando Antony Balch distribuyó en Estados Unidos una versión de 74 minutos, «Witchcraft Through the Ages», narrada por el escritor William S. Burroughs y con música de jazz de Daniel Humair, interpretada por un quinteto con Jean-Luc Ponty al violín. Los surrealistas la habían convertido en película de culto, y con esta versión se ganó a la contracultura. El Instituto Sueco del Cine la ha restaurado tres veces, en 1976, 2007 y 2016, con tintes de color."
           ]
         }
+      ],
+      "tematica": "cine",
+      "tematica_alt": "paranormal",
+      "mapa": [
+        55.68,
+        12.57
       ]
     },
     {
@@ -4539,6 +4786,12 @@
             "Cansado de Hollywood, volvió a Dinamarca. Dirigió algunas películas más hasta 1942 y acabó gestionando un cine en un barrio de las afueras de Copenhague, lejos de la fama. Murió el 2 de abril de 1959, a los 79 años. Su diablo, en cambio, sigue siendo una de las imágenes más reconocibles del cine mudo."
           ]
         }
+      ],
+      "tematica": "cine",
+      "tematica_alt": "paranormal",
+      "mapa": [
+        55.68,
+        12.57
       ]
     },
     {
@@ -4659,6 +4912,12 @@
           "autor": "Elsa Plaza",
           "nota": "El estudio que volvió a las actas y a la prensa para separar los hechos de la leyenda (Icaria, 2014)."
         }
+      ],
+      "tematica": "crimenes",
+      "tematica_alt": "mitos",
+      "mapa": [
+        41.38,
+        2.17
       ]
     },
     {
@@ -4745,6 +5004,12 @@
           "autor": "Jordi Corominas",
           "nota": "La reconstrucción del caso a partir de la prensa de la época, la misma que fabricó la leyenda (Sílex, 2014)."
         }
+      ],
+      "tematica": "crimenes",
+      "tematica_alt": "mitos",
+      "mapa": [
+        41.38,
+        2.17
       ]
     },
     {
@@ -4865,6 +5130,11 @@
           "autor": "Martín Caparrós",
           "nota": "Novela, no ensayo: imagina la vida del supuesto marqués a partir de la leyenda de las copias (Planeta, 2004)."
         }
+      ],
+      "tematica": "robos",
+      "mapa": [
+        48.861,
+        2.336
       ]
     },
     {
@@ -4942,6 +5212,11 @@
             "Es la gran paradoja del caso: la Mona Lisa se hizo famosa de verdad no por estar, sino por faltar."
           ]
         }
+      ],
+      "tematica": "robos",
+      "mapa": [
+        48.861,
+        2.336
       ]
     },
     {
@@ -5055,6 +5330,12 @@
           "autor": "Gaston Leroux",
           "nota": "La novela original, que se lee como un falso reportaje sobre la Ópera Garnier (Pierre Lafitte, 1910; hay numerosas traducciones al español)."
         }
+      ],
+      "tematica": "cine",
+      "tematica_alt": "paranormal",
+      "mapa": [
+        48.872,
+        2.332
       ]
     },
     {
@@ -5135,6 +5416,12 @@
             "Lo que no hay bajo la Ópera es una gran cueva iluminada con antorchas, como la que imagina la ficción. Es un depósito de hormigón. Su arquitecto no consiguió sacar el agua, así que la dejó dentro, y acabó regalándole a la literatura uno de sus escondites más famosos."
           ]
         }
+      ],
+      "tematica": "cine",
+      "tematica_alt": "paranormal",
+      "mapa": [
+        48.872,
+        2.332
       ]
     },
     {
@@ -5245,6 +5532,11 @@
             "En toda la película nadie pronuncia la palabra «zombi». Romero llamaba a sus criaturas «ghouls», algo así como necrófagos; lo de zombis se lo pusieron después la crítica y los aficionados. Tampoco inventó a los zombis del cine: ya aparecían en «White Zombie» (1932), pero eran personas hechizadas por un brujo vudú. Lo que creó Romero fue otra cosa, los muertos que se levantan solos, en masa, y devoran a los vivos. Ese es el modelo que ha heredado casi todo el género. En 1999, la película entró en el National Film Registry de Estados Unidos."
           ]
         }
+      ],
+      "tematica": "cine",
+      "mapa": [
+        40.77,
+        -80.06
       ]
     },
     {
@@ -5324,6 +5616,11 @@
             "¿No cobraron nada, entonces? Sería exagerado decirlo así: cobraron muy poco de lo que la película generó. Y Romero no lo vivió como una tragedia. Según recoge IPOsgoode, llegó a decir que aquella película les dio sus carreras y que no tenía quejas."
           ]
         }
+      ],
+      "tematica": "cine",
+      "mapa": [
+        40.44,
+        -79.99
       ]
     },
     {
@@ -5430,6 +5727,12 @@
             "El caso no se olvidó. Inspiró la película «El expreso de Andalucía» (1956), de Francisco Rovira Beleta, y en 1991 Imanol Uribe le dedicó un capítulo de la serie «La huella del crimen», en Televisión Española."
           ]
         }
+      ],
+      "tematica": "robos",
+      "tematica_alt": "crimenes",
+      "mapa": [
+        39.39,
+        -3.21
       ]
     },
     {
@@ -5516,6 +5819,12 @@
             "Las fuentes no cuentan igual el papel del taxi. El estudio de Mora de Fuentes y el blog «Erudición y Crítica» sitúan la huida en taxi desde Alcázar de San Juan, que es la versión seguida aquí. La Wikipedia en inglés recoge otra: un taxista habría llevado a un hombre desde Atocha hasta Aranjuez y habría vuelto a Madrid con otros tres, y después habría identificado a Teruel y a Donday. En ambas, lo que delató a la banda fue un trayecto de madrugada que alguien recordó."
           ]
         }
+      ],
+      "tematica": "robos",
+      "tematica_alt": "crimenes",
+      "mapa": [
+        39.39,
+        -3.21
       ]
     },
     {
@@ -5643,6 +5952,11 @@
           "autor": "Steven Johnson",
           "nota": "Relato del brote de Broad Street de 1854 y de cómo John Snow y el reverendo Henry Whitehead persiguieron su origen (Capitán Swing, 2020; original en inglés de 2006)."
         }
+      ],
+      "tematica": "desastres",
+      "mapa": [
+        51.4995,
+        -0.1248
       ]
     },
     {
@@ -5717,6 +6031,11 @@
             "Lo indiscutible es el resultado. El olor no contagiaba nada, pero las cloacas que pagaron alejaron el agua sucia que de verdad transmitía el cólera."
           ]
         }
+      ],
+      "tematica": "desastres",
+      "mapa": [
+        51.4995,
+        -0.1248
       ]
     },
     {
@@ -5820,6 +6139,11 @@
           "autor": "Benito Pérez Galdós",
           "nota": "Las crónicas que el novelista envió a «La Prensa» de Buenos Aires, en edición de Rafael Reig (Lengua de Trapo, 2011)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        40.428,
+        -3.702
       ]
     },
     {
@@ -5898,6 +6222,11 @@
           "autor": "Benito Pérez Galdós",
           "nota": "Las cartas a «La Prensa» en su edición restaurada, con prólogo de Lorenzo Silva (Siruela, 2024)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        40.428,
+        -3.702
       ]
     },
     {
@@ -5997,6 +6326,11 @@
             "La prescripción extingue la responsabilidad penal cuando transcurre el plazo que marca la ley: los hechos ya no pueden llevarse a juicio. Desde entonces, ninguna otra persona puede ser juzgada por lo ocurrido en Somosaguas. Para la justicia española, el caso de los marqueses de Urquijo tiene un autor condenado, Rafael Escobedo, y un encubridor condenado, Mauricio López-Roberts. La puerta que abría la frase de 1983 la cerró el calendario."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        40.43,
+        -3.8
       ]
     },
     {
@@ -6078,6 +6412,11 @@
             "Para la ley hay un autor y un encubridor, los dos fallecidos. Y en el expediente sigue escrita una frase que admite otra posibilidad sin poder demostrarla: solo, o en compañía de otros."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        40.43,
+        -3.8
       ]
     },
     {
@@ -6211,6 +6550,11 @@
           "autor": "Beatriz Gimeno",
           "nota": "Ensayo que analiza el caso de Dolores Vázquez y el papel de los estereotipos sobre las lesbianas en su condena social (Gedisa, 2008)."
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        36.6,
+        -4.64
       ]
     },
     {
@@ -6286,6 +6630,11 @@
             "El ADN no sacó a Dolores Vázquez de la cárcel, porque ya estaba libre desde 2002. Lo que hizo fue algo que ningún recurso había conseguido: identificar al verdadero responsable y dejarla, para siempre, fuera de toda sospecha judicial."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        36.6,
+        -4.64
       ]
     },
     {
@@ -6437,7 +6786,8 @@
           "autor": "Mike Dash",
           "nota": "Reconstruye el mundo de los thugs a partir de los archivos británicos y explica por qué la cifra de Behram es dudosa (Granta Books, 2005; en inglés)."
         }
-      ]
+      ],
+      "tematica": "crimenes"
     },
     {
       "youtube": "HvlmXfz6OIo",
@@ -6514,6 +6864,11 @@
             "El Zodiaco envió otros dos cifrados que siguen sin solución: uno de 13 símbolos, en abril de 1970, que empieza con «My name is…» («Mi nombre es…»), y otro de 32, en junio de 1970, que acompañaba a un mapa de la bahía. Para Oranchak, son tan cortos que es prácticamente imposible comprobar ninguna solución propuesta, porque casi cualquier texto encaja. El caso sigue abierto."
           ]
         }
+      ],
+      "tematica": "crimenes",
+      "mapa": [
+        37.77,
+        -122.42
       ]
     }
   ]

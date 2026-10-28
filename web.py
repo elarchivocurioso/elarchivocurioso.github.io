@@ -1,5 +1,5 @@
 """
-web.py - Genera y publica la web de El Archivo Curioso (elarchivocurioso.github.io).
+web.py - Genera y publica la web de Folio 13 (antes El Archivo Curioso; elarchivocurioso.github.io).
 
 Uso:
     python web.py generar     Rehace la web a partir de datos/expedientes.json
@@ -13,6 +13,13 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "youtube": "ID del vídeo",
       "tipo": "video" | "short",
       "titulo": "...",
+      "tematica": "crimenes",           OBLIGATORIO: paranormal, crimenes, cine, fantasia, mitos, robos o desastres
+                                        (un Short con "de" la hereda de su episodio). Sin ella, la web no se genera.
+      "tematica_alt": "mitos",          opcional: segunda temática, si dudamos entre dos (sale en «Si te gusta esto»)
+      "mapa": [lat, lon],               opcional: dónde pasó, para el mapa de la temática
+      "verdad": [{"estado": "documentado" | "discutido" | "leyenda", "texto": "..."}],
+                                        opcional: el semáforo de la verdad. Solo con lo que digan las fuentes; lo dudoso,
+                                        «discutido». Si no existe, no se muestra.
       "censura": "parte del título",    opcional: lo que sale tachado (si no, se tacha el final del título)
       "fecha": "AAAA-MM-DDTHH:MM",      fecha (y hora local, opcional) de publicación en YouTube
       "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",   opcional, ruta desde "Canal YouTube"
@@ -30,6 +37,10 @@ muestra la miniatura en lugar del reproductor. Cuando la sincronización añade 
 título), se usa esa y hereda el artículo y las lecturas de la provisional.
 La frase grande de la portada sale de "canal" → "portada" ({"antes", "tachado", "despues", "num"}); si no
 existe, se usa la de Victor Lustig.
+En los párrafos del artículo, «[2]» se convierte en una nota que lleva a la fuente nº 2 de "fuentes".
+Dominio propio: pon "dominio": "folio13.es" en "canal" y la web se genera para ese dominio, con su archivo CNAME
+(pasos completos en Canal YouTube/Posicionamiento/Dominio propio.md). Vacío = elarchivocurioso.github.io.
+Las URL de las historias (expedientes/<slug>.html) no cambian nunca: las enlazan las descripciones de YouTube.
 Solo usa la biblioteca estándar de Python.
 """
 
@@ -57,10 +68,23 @@ WEB = Path(os.environ.get("WEB_DIR") or Path(__file__).resolve().parent)
 SALIDA = Path(os.environ.get("WEB_SALIDA") or WEB)   # dónde se escribe la web (vista previa: otra carpeta)
 DATOS = WEB / "datos" / "expedientes.json"
 CLAVE_INDEXNOW = WEB / "datos" / "indexnow.txt"
-LOGO_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "icono-512.png"
-BANNER_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "banner.png"
-ICONOS = ("favicon-32.png", "apple-touch-icon.png")   # hechos una vez a partir de icono-512.png
-URL = "https://elarchivocurioso.github.io"
+LOGO_ORIGEN = WEB.parent / "Identidad" / "Folio 13" / "icono.png"
+BANNER_ORIGEN = WEB.parent / "Identidad" / "Folio 13" / "compartir-web.png"   # banner.png reducido a 1200×675
+ICONOS = ("favicon-32.png", "apple-touch-icon.png")   # hechos una vez a partir de Identidad/Folio 13/icono.png
+
+
+def _dominio() -> str:
+    """Dominio propio ("canal" → "dominio"), si la usuaria lo compra; si no, el de GitHub Pages."""
+    try:
+        return json.loads(DATOS.read_text(encoding="utf-8-sig"))["canal"].get("dominio", "").strip()
+    except (OSError, ValueError, KeyError):
+        return ""
+
+
+DOMINIO = _dominio()
+URL = f"https://{DOMINIO}" if DOMINIO else "https://elarchivocurioso.github.io"
+MARCA = "Folio 13"
+ANTES = "El Archivo Curioso"   # nombre anterior: sale en los datos para buscadores, para que sepan que es la misma web
 # Perfiles del archivo en redes: salen en «Acerca» y en sameAs, para que Google y las IAs sepan que son la misma marca
 REDES_SOCIALES = (("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
                   ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7"))
@@ -91,224 +115,362 @@ PORTADAS = [
      "despues": ". Y su víctima no lo denunció."},
 ]
 
-# Logotipo (lupa con «AC»), copiado de Identidad/Archivo Curioso/logo.js. Va en línea para que use Playfair Display
-LUPA_SVG = """<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El Archivo Curioso">
-<line x1="131" y1="131" x2="182" y2="182" stroke="#C8A04A" stroke-width="17" stroke-linecap="round"/>
-<line x1="131" y1="131" x2="146" y2="146" stroke="#8C6E30" stroke-width="19"/>
-<circle cx="88" cy="88" r="63" fill="#1A1410" stroke="#C8A04A" stroke-width="9"/>
-<circle cx="88" cy="88" r="52" fill="none" stroke="#C8A04A" stroke-width="1.6"/>
-<text x="88" y="104" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="50" fill="#EBDDBF" letter-spacing="-1">AC</text>
-<line x1="66" y1="118" x2="110" y2="118" stroke="#C2443B" stroke-width="3"/>
-</svg>"""
+# Logotipo: el sello rojo, copiado de Identidad/Folio 13/logo.js (opción A). Va en línea para que use las fuentes de la web.
+# Los id de los arcos llevan sufijo para poder poner dos sellos en la misma página.
+def sello_svg(sufijo: str = "") -> str:
+    return f"""<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Folio 13">
+<defs><path id="arco-arriba{sufijo}" d="M 100,100 m -64,0 a 64,64 0 1,1 128,0"/><path id="arco-abajo{sufijo}" d="M 100,100 m -66,0 a 66,66 0 0,0 132,0"/></defs>
+<g transform="rotate(-8 100 100)">
+<circle cx="100" cy="100" r="88" fill="none" stroke="#C2443B" stroke-width="5"/>
+<circle cx="100" cy="100" r="76" fill="none" stroke="#C2443B" stroke-width="1.5"/>
+<text font-family="IBM Plex Mono, monospace" font-weight="600" font-size="14" letter-spacing="4" fill="#C2443B"><textPath href="#arco-arriba{sufijo}" startOffset="50%" text-anchor="middle">PARECE INVENTADO</textPath></text>
+<text font-family="IBM Plex Mono, monospace" font-weight="600" font-size="14" letter-spacing="4" fill="#C2443B"><textPath href="#arco-abajo{sufijo}" startOffset="50%" text-anchor="middle">ESTÁ DOCUMENTADO</textPath></text>
+<text x="100" y="92" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="900" font-size="30" fill="#EBDDBF">FOLIO</text>
+<line x1="58" y1="100" x2="142" y2="100" stroke="#EBDDBF" stroke-width="1.5"/>
+<text x="100" y="138" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="900" font-size="50" fill="#C2443B">13</text>
+</g></svg>"""
+
+
+# Versión pequeña (menos de 100 px): solo el aro y el 13
+SELLO_MINI_SVG = """<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Folio 13">
+<g transform="rotate(-8 100 100)"><circle cx="100" cy="100" r="86" fill="#12100D" fill-opacity=".55" stroke="#C2443B" stroke-width="12"/>
+<text x="100" y="130" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="900" font-size="92" fill="#EBDDBF">13</text></g></svg>"""
+
+# Las 7 temáticas de Folio 13 (Identidad/Folio 13/MARCA.md), en su orden. Cada historia lleva una en "tematica".
+TEMATICAS = {
+    "paranormal": {"nombre": "Paranormal y leyendas", "corto": "Lo que la gente juró haber visto, y lo que dicen los papeles.",
+                   "intro": "Pueblos que vieron al diablo, bestias que nadie pudo cazar y un hombre que decía convertirse en "
+                            "lobo. Lo que la gente juró haber visto, comparado con lo que dejaron escrito los documentos."},
+    "crimenes": {"nombre": "Crímenes del pasado", "corto": "Investigaciones, juicios y errores. Sin morbo.",
+                 "intro": "Casos reales contados con los datos de las investigaciones y los juicios: cómo se descubrieron, "
+                          "qué se probó, qué se equivocó y qué sigue sin respuesta. Sin morbo."},
+    "cine": {"nombre": "Cine maldito y perdido", "corto": "Películas que ardieron, se prohibieron o nunca debieron rodarse.",
+             "intro": "Películas que un juez mandó destruir, copias que ardieron, rodajes imposibles y la historia real "
+                      "detrás de los clásicos que dieron miedo a varias generaciones."},
+    "fantasia": {"nombre": "Detrás de la fantasía", "corto": "La historia real detrás de dragones, alquimistas y espadas.",
+                 "intro": "La historia real detrás de dragones, alquimistas, espadas y castillos: lo que de verdad hubo "
+                          "detrás de los mundos de fantasía."},
+    "mitos": {"nombre": "Mitos desmontados", "corto": "Lo que todos repiten y nunca pasó así.",
+              "intro": "Frases que todo el mundo repite, datos que salen en clase y anécdotas que nunca pasaron así. "
+                       "Cada mito, contra lo que dicen las fuentes de la época."},
+    "robos": {"nombre": "Robos y golpes", "corto": "Los golpes más audaces y cómo se resolvieron.",
+              "intro": "Estafas, robos imposibles y golpes que parecían perfectos, y el detalle que acabó delatando a "
+                       "quienes los planearon."},
+    "desastres": {"nombre": "Desastres y epidemias", "corto": "Cuando una ciudad entera se quedó sin respuesta.",
+                  "intro": "Olas de melaza, volcanes que borraron un verano, tormentas solares y epidemias extrañas: "
+                           "catástrofes reales y lo que la ciencia tardó años en explicar."},
+}
+# «Si te gusta esto»: la temática que más se le parece, cuando no hay historias con "tematica_alt"
+PARECIDAS = {"paranormal": "crimenes", "crimenes": "paranormal", "cine": "paranormal", "fantasia": "mitos",
+             "mitos": "desastres", "robos": "crimenes", "desastres": "mitos"}
+VERDAD = {"documentado": ("ok", "Documentado"), "discutido": ("disc", "Discutido"), "leyenda": ("ley", "Leyenda")}
 
 CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Special+Elite&display=swap');
-:root { --fondo:#070606; --tarjeta:#110D0B; --tarjeta-2:#1A1411; --borde:rgba(194,68,59,.14); --borde-2:rgba(232,220,198,.20);
-        --texto:#E8DCC6; --texto-2:#A99C86; --texto-3:#6F6558; --oro:#C8A04A; --rojo:#C2443B; --sangre:#8E1B14; }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap');
+:root { --fondo:#12100D; --tarjeta:#1C1813; --tarjeta-2:#24201A; --borde:#2C261F; --borde-2:#4A4034;
+        --texto:#EBDDBF; --texto-2:#D9C8A3; --texto-3:#8C8170; --oro:#C8A04A; --rojo:#C2443B; --sangre:#8E1B14;
+        --verde:#5E8C4A; --ambar:#D49A2A; --papel:#EBDDBF; }
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; background:var(--fondo); color:var(--texto);
-  line-height:1.65; min-height:100vh; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
-::selection { background:var(--sangre); color:#fff; }
+body { font-family:'Source Serif 4',Georgia,serif; background:var(--fondo); color:var(--texto);
+  line-height:1.6; min-height:100vh; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+::selection { background:var(--rojo); color:#fff; }
 a { color:var(--texto); text-decoration-color:var(--rojo); text-decoration-thickness:1px; text-underline-offset:4px; }
-a:hover { color:#fff; }
-.ancho { max-width:1160px; margin:0 auto; padding-left:16px; padding-right:16px; }
-.mono { font-family:'Special Elite','Courier New',monospace; letter-spacing:.14em; text-transform:uppercase; }
+a:hover { color:var(--oro); }
+.ancho { max-width:1180px; margin:0 auto; padding-left:16px; padding-right:16px; }
+.mono { font-family:'IBM Plex Mono',monospace; letter-spacing:.14em; text-transform:uppercase; }
+.maquina { font-family:'Special Elite','Courier New',monospace; }
 .serif { font-family:'Playfair Display',Georgia,serif; }
+h1, h2, h3, h4 { font-family:'Playfair Display',Georgia,serif; }
 
-/* Atmósfera: grano de película que tiembla y viñeta. No tapan clics. */
-body::before { content:""; position:fixed; inset:-50%; z-index:50; pointer-events:none; opacity:.09;
+/* Atmósfera: grano de papel viejo y viñeta. No tapan clics. */
+body::before { content:""; position:fixed; inset:-50%; z-index:50; pointer-events:none; opacity:.06;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation:grano .9s steps(6) infinite; }
 body::after { content:""; position:fixed; inset:0; z-index:49; pointer-events:none;
-  background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.72) 100%); }
+  background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.5) 100%); }
+body:has(.hist)::after { background:radial-gradient(ellipse at center, transparent 70%, rgba(60,40,20,.18) 100%); }
 @keyframes grano { 0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)} 40%{transform:translate(2%,-3%)}
   60%{transform:translate(-2%,-1%)} 80%{transform:translate(3%,3%)} 100%{transform:translate(0,0)} }
 
-/* Logotipo: lupa con «AC» */
+/* Logotipo: el sello de Folio 13 */
 .logo { --t:64px; flex:none; display:block; width:var(--t); height:var(--t); }
-.logo svg { display:block; width:100%; height:100%; }
+.logo svg { display:block; width:100%; height:100%; overflow:visible; }
 
 /* Lo censurado: barra negra que se revela al pasar el ratón, al tocar o con el teclado (el texto sigue en el HTML) */
 .tachado { color:transparent; padding:0 .03em; cursor:pointer; -webkit-box-decoration-break:clone; box-decoration-break:clone;
   background:repeating-linear-gradient(-45deg,#000 0 6px,#221B17 6px 9px) center / 100% .92em no-repeat; position:relative;
   transition:color .45s ease .1s, background-size .45s cubic-bezier(.6,0,.2,1), text-shadow .45s; animation:interferencia 7s infinite; }
 .tachado:hover, .tachado:focus-visible, .tachado.revelado, a:hover .tachado, a:focus-visible .tachado {
-  color:#E2503F; background-size:100% 0; text-shadow:0 0 22px rgba(194,68,59,.45); animation:none; }
+  color:#E2503F; background-size:100% 0; text-shadow:0 0 22px rgba(194,68,59,.35); animation:none; }
 .tachado:focus-visible { outline:2px solid var(--rojo); outline-offset:3px; }
 @keyframes interferencia { 0%,91%,100% { opacity:1; } 92% { opacity:.35; } 93% { opacity:1; } 95% { opacity:.6; } 96% { opacity:1; } }
 
 /* Cabecera */
-header { position:sticky; top:0; z-index:40; background:linear-gradient(180deg,rgba(7,6,6,.96),rgba(7,6,6,.75));
+header { position:sticky; top:0; z-index:40; background:rgba(18,16,13,.94);
   backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--borde); }
-header .ancho { display:flex; align-items:center; gap:12px; height:62px; }
+header .ancho { display:flex; align-items:center; gap:10px; height:62px; }
 header .nombre { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:21px; color:var(--texto); text-decoration:none; line-height:1; white-space:nowrap; }
-header .nombre em { color:var(--rojo); }
-header nav { margin-left:auto; display:flex; align-items:center; gap:22px; }
-header nav a { color:var(--texto-2); text-decoration:none; font-weight:500; font-size:14px; letter-spacing:.02em; }
-header nav a:hover { color:var(--texto); }
-.sorprendeme { font:600 13px 'Inter',sans-serif; letter-spacing:.04em; color:var(--texto); background:transparent; border:1px solid var(--rojo);
-  border-radius:2px; padding:7px 13px; cursor:pointer; text-decoration:none; white-space:nowrap; }
-.sorprendeme:hover { background:var(--sangre); color:#fff; }
-@media (max-width:720px) { header .ancho { height:56px; } header .nombre { font-size:18px; } header nav { gap:14px; } header nav .solo-ancho { display:none; } }
-@media (max-width:420px) { header .nombre { display:none; } }
+header .nombre em { color:var(--rojo); font-style:normal; }
+header nav { margin-left:auto; display:flex; align-items:center; gap:20px; }
+header nav a { font-family:'IBM Plex Mono',monospace; color:var(--texto-2); text-decoration:none; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+header nav a:hover { color:var(--oro); }
+.sorprendeme { font:600 12px 'IBM Plex Mono',monospace; letter-spacing:.06em; color:var(--texto); background:transparent; border:1px solid var(--rojo);
+  border-radius:6px; padding:7px 12px; cursor:pointer; text-decoration:none; white-space:nowrap; text-transform:uppercase; }
+.sorprendeme:hover { background:var(--rojo); color:#fff; }
+@media (max-width:900px) { header nav .solo-ancho { display:none; } }
+@media (max-width:720px) { header .ancho { height:56px; } header .nombre { font-size:18px; } header nav { gap:14px; } }
+@media (max-width:400px) { header .nombre { display:none; } }
 
-/* Portada: oscuridad, una linterna que sigue al ratón y una lupa que te mira */
-.portada { position:relative; min-height:calc(100svh - 62px); display:flex; flex-direction:column; justify-content:center;
-  padding-top:64px; padding-bottom:64px; isolation:isolate; }
-.linterna { position:absolute; inset:0 -50vw; z-index:-1; pointer-events:none;
-  background:radial-gradient(circle 340px at var(--x,50%) var(--y,40%), rgba(194,68,59,.16), rgba(7,6,6,.0) 60%),
-             radial-gradient(circle 900px at var(--x,50%) var(--y,40%), transparent 0, rgba(0,0,0,.55) 70%); }
-.portada .susurro { color:var(--texto-3); font-size:13px; margin-bottom:26px; min-height:1.5em; }
-.portada .susurro b { color:var(--rojo); font-weight:400; }
-.portada h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(32px,5.4vw,70px); line-height:1.14;
-  letter-spacing:-.015em; max-width:21ch; }
-.portada h1 a { color:inherit; text-decoration:none; }
-.sello-rojo { display:inline-block; transform:rotate(-11deg); border:3px double var(--rojo); color:var(--rojo); border-radius:3px;
-  padding:4px 14px; font-size:clamp(14px,2vw,19px); letter-spacing:.3em; opacity:.85; mix-blend-mode:screen; }
-.portada .sello-rojo { position:absolute; right:4%; top:18%; }
-.portada .pista { color:var(--texto-3); font-size:13px; margin-top:18px; }
-.portada .desc { color:var(--texto-2); font-size:17px; max-width:560px; margin-top:22px; }
-.vigilante { position:absolute; right:6%; bottom:14%; width:min(26vw,240px); opacity:.9; z-index:-1;
-  transition:transform .9s cubic-bezier(.2,.7,.2,1); filter:drop-shadow(0 20px 40px rgba(0,0,0,.8)); }
-.vigilante svg { width:100%; height:auto; display:block; }
-.botones { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
-.boton { display:inline-block; font:600 14px 'Inter',sans-serif; letter-spacing:.04em; text-decoration:none; padding:13px 22px; border-radius:2px;
-  background:var(--texto); color:#000; border:1px solid var(--texto); cursor:pointer; }
+/* Botones */
+.botones { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+.boton { display:inline-block; font:600 13px 'IBM Plex Mono',monospace; letter-spacing:.04em; text-decoration:none; padding:12px 18px; border-radius:6px;
+  background:var(--oro); color:var(--fondo); border:1px solid var(--oro); cursor:pointer; }
 .boton:hover { background:var(--rojo); border-color:var(--rojo); color:#fff; }
 .boton.secundario { background:transparent; color:var(--texto); border-color:var(--borde-2); }
-.boton.secundario:hover { border-color:var(--rojo); background:var(--sangre); }
-.bajar { position:absolute; left:16px; bottom:22px; color:var(--texto-3); font-size:12px; text-decoration:none; }
-@media (max-width:720px) { .portada { min-height:auto; padding-top:48px; padding-bottom:56px; }
-  .portada .sello-rojo { position:static; margin-bottom:20px; align-self:flex-start; } .vigilante { width:34vw; right:-8%; top:auto; bottom:30%; opacity:.22; } .bajar { display:none; } }
-/* Hasta que el contenedor llena la pantalla, la linterna solo sobresale el margen: si no, el móvil se aleja para enseñarla */
-@media (max-width:1192px) { .linterna { inset:0 -16px; } .vigilante { right:0; } }
+.boton.secundario:hover { border-color:var(--rojo); background:var(--rojo); color:#fff; }
+
+/* Portada */
+.portada { position:relative; padding-top:64px; padding-bottom:56px; isolation:isolate; }
+.portada-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:40px; align-items:center; }
+.linterna { position:absolute; inset:0 -50vw; z-index:-1; pointer-events:none;
+  background:radial-gradient(circle 340px at var(--x,30%) var(--y,40%), rgba(194,68,59,.12), rgba(18,16,13,0) 60%); }
+.sello-txt { font-family:'IBM Plex Mono',monospace; color:var(--rojo); letter-spacing:.25em; font-size:12px; border:1.5px solid var(--rojo);
+  display:inline-block; padding:4px 10px; transform:rotate(-2deg); text-transform:uppercase; }
+.portada h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(32px,4.6vw,54px); line-height:1.1;
+  letter-spacing:-.01em; margin:18px 0 14px; }
+.portada h1 a { color:inherit; text-decoration:none; }
+.portada .desc { color:var(--texto-2); font-size:18px; max-width:600px; }
+.portada .pista { color:var(--texto-3); font-size:12px; margin-top:10px; }
+.portada .lateral-portada { display:flex; flex-direction:column; gap:14px; align-items:stretch; }
+.portada .sello-grande { --t:150px; margin:0 auto 6px; opacity:.95; }
+.contador { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.contador div { background:var(--tarjeta); border:1px solid var(--borde); border-radius:8px; padding:14px 8px; text-align:center; }
+.contador b { display:block; font-family:'Playfair Display',serif; font-size:32px; line-height:1.1; color:var(--oro); }
+.contador span { font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--texto-3); letter-spacing:.1em; }
+.leidos { font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--texto-3); text-align:center; }
+@media (max-width:820px) { .portada { padding-top:36px; } .portada-grid { grid-template-columns:1fr; gap:28px; } .portada .sello-grande { --t:110px; } }
+@media (max-width:1212px) { .linterna { inset:0 -16px; } }
 
 /* Secciones y tarjetas */
-.seccion { padding-top:40px; padding-bottom:72px; }
-.seccion-cab { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:26px;
-  padding-bottom:14px; border-bottom:1px solid var(--borde); }
+.seccion { padding-top:36px; padding-bottom:64px; }
+.seccion-cab { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:22px;
+  padding-bottom:12px; border-bottom:1px solid var(--borde); }
 .seccion-cab h2 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:30px; }
-.seccion-cab .cuenta { color:var(--texto-3); font-size:13px; }
+.seccion-cab .cuenta { color:var(--texto-3); font-size:14px; }
 .filtros { display:flex; gap:6px; flex-wrap:wrap; }
-.filtros button { font:500 13px 'Inter',sans-serif; cursor:pointer; padding:6px 13px; border-radius:2px;
+.filtros button { font:500 12px 'IBM Plex Mono',monospace; cursor:pointer; padding:6px 12px; border-radius:6px; text-transform:uppercase; letter-spacing:.06em;
   border:1px solid var(--borde-2); background:transparent; color:var(--texto-2); }
-.filtros button.activo { background:var(--texto); color:#000; border-color:var(--texto); }
-.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:20px; }
-.ficha { position:relative; display:flex; flex-direction:column; background:var(--tarjeta); border:1px solid var(--borde); border-radius:3px;
-  overflow:hidden; text-decoration:none; color:inherit; transition:transform .3s, border-color .3s, box-shadow .3s; }
-.ficha:hover, .ficha:focus-visible { transform:translateY(-4px); border-color:rgba(194,68,59,.5); box-shadow:0 20px 50px -20px rgba(142,27,20,.6); }
-.ficha:focus-visible { outline:2px solid var(--rojo); outline-offset:2px; }
+.filtros button.activo { background:var(--oro); color:var(--fondo); border-color:var(--oro); }
+.rejilla { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:16px; }
+.ficha { --acento:var(--rojo); position:relative; display:flex; flex-direction:column; background:var(--tarjeta); border:1px solid var(--borde); border-radius:10px;
+  overflow:hidden; text-decoration:none; color:inherit; transition:transform .3s, border-color .3s, box-shadow .3s; height:100%; }
+.ficha:hover, .ficha:focus-visible { transform:translateY(-3px); border-color:var(--acento); box-shadow:0 18px 40px -22px rgba(0,0,0,.9); color:inherit; }
+.ficha:focus-visible { outline:2px solid var(--oro); outline-offset:2px; }
 .ficha .img { position:relative; aspect-ratio:16/9; background:var(--tarjeta-2) center/cover no-repeat;
-  filter:grayscale(1) contrast(1.15) brightness(.6); transition:filter .5s; }
-.ficha:hover .img, .ficha:focus-visible .img { filter:grayscale(.2) contrast(1.05) brightness(.95) sepia(.25); }
-.ficha .img::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 40%,rgba(17,13,11,.95)); }
-.ficha .tipo { position:absolute; z-index:1; right:10px; top:10px; padding:2px 8px; font:600 10px 'Inter',sans-serif; letter-spacing:.14em;
-  background:rgba(0,0,0,.7); color:var(--texto-2); border:1px solid var(--borde-2); }
-.ficha .tipo.short { color:var(--rojo); border-color:rgba(194,68,59,.5); }
-.ficha .txt { padding:14px 16px 18px; display:flex; flex-direction:column; gap:8px; }
-.ficha .num { color:var(--rojo); font-size:11px; }
-.ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:44px; line-height:1; color:var(--rojo); margin-bottom:2px; }
-.rejilla .ficha { height:100%; }
+  filter:grayscale(.85) contrast(1.1) brightness(.7) sepia(.2); transition:filter .5s; }
+.ficha:hover .img, .ficha:focus-visible .img { filter:grayscale(.1) contrast(1.05) brightness(.95) sepia(.15); }
+.ficha .tipo { position:absolute; z-index:1; right:8px; bottom:8px; padding:1px 7px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.1em;
+  background:rgba(0,0,0,.72); color:#fff; border-radius:4px; }
+.ficha .leido-marca { position:absolute; z-index:1; left:8px; top:8px; padding:1px 7px; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.1em;
+  background:var(--oro); color:var(--fondo); border-radius:4px; display:none; }
+.ficha.leido .leido-marca { display:block; }
+.ficha .txt { padding:12px 14px 14px; display:flex; flex-direction:column; gap:6px; }
+.ficha .num { color:var(--acento); font-size:11px; }
+.ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:40px; line-height:1; color:var(--rojo); }
+.ficha h3 { font-weight:700; font-size:18px; line-height:1.25; }
+.ficha .meta { font-size:13px; color:var(--texto-3); }
+.etiqueta-tema { align-self:flex-start; font:600 10px 'IBM Plex Mono',monospace; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--acento); border:1px solid currentColor; border-radius:4px; padding:1px 6px; }
+.semaforo { display:inline-flex; gap:4px; flex-wrap:wrap; }
+.semaforo em, .verdad em { font-style:normal; font-family:'IBM Plex Mono',monospace; font-size:10px; padding:2px 6px; border-radius:4px; white-space:nowrap; }
+.ok { background:rgba(94,140,74,.22); color:#a8d18f; }
+.disc { background:rgba(212,154,42,.2); color:#f0c26a; }
+.ley { background:rgba(194,68,59,.22); color:#f19a92; }
 /* Top 10 de Halloween: fila que se desliza en horizontal (cuenta atrás) */
-.fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(250px,280px); gap:18px; overflow-x:auto;
+.fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(240px,270px); gap:16px; overflow-x:auto;
   padding-bottom:12px; scroll-snap-type:x mandatory; scrollbar-color:var(--rojo) transparent; }
-.fila-top .ficha { scroll-snap-align:start; height:100%; }
+.fila-top .ficha { scroll-snap-align:start; }
 .cuenta a { color:var(--rojo); text-decoration:none; margin-left:6px; }
-.bloque-top { margin-bottom:56px; }
-.ficha h3 { font-weight:600; font-size:17px; line-height:1.4; }
-.ficha .meta { font-size:12px; color:var(--texto-3); }
+.bloque-top { padding-bottom:24px; }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
-.vacio .logo { --t:80px; margin:0 auto 18px; opacity:.85; }
+.vacio .logo { --t:90px; margin:0 auto 18px; }
 .chips { display:flex; flex-wrap:wrap; gap:8px; }
-.chips a { font-size:13px; color:var(--texto-2); text-decoration:none; padding:6px 12px; border:1px solid var(--borde-2); border-radius:2px; }
-.chips a:hover { color:#fff; border-color:var(--rojo); background:var(--sangre); }
+.chips a { font-size:14px; color:var(--texto-2); text-decoration:none; padding:5px 11px; border:1px solid var(--borde-2); border-radius:6px; }
+.chips a:hover { color:#fff; border-color:var(--rojo); background:var(--rojo); }
 .chips a small { color:var(--texto-3); }
 .chips a:hover small { color:#fff; }
 
-/* Página de expediente */
-.exposicion { position:fixed; left:0; top:0; height:2px; width:0; z-index:60; background:var(--rojo); box-shadow:0 0 12px var(--rojo); }
-.reloj { position:fixed; left:16px; bottom:14px; z-index:45; color:var(--texto-3); font-size:11px; pointer-events:none; }
-.expediente { padding-top:40px; padding-bottom:80px; }
-.lectura { max-width:720px; margin:0 auto; }
-.volver { display:inline-block; text-decoration:none; color:var(--texto-3); font-size:13px; margin-bottom:26px; }
-.volver:hover { color:var(--texto); }
-.expediente .ficha-num { color:var(--rojo); font-size:12px; margin-bottom:14px; }
-.expediente h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(32px,5.4vw,52px); line-height:1.08;
-  letter-spacing:-.015em; margin-bottom:18px; }
-.datos { display:flex; flex-wrap:wrap; gap:6px 18px; margin-bottom:30px; font-size:13px; color:var(--texto-3); }
-.datos b { color:var(--texto-2); font-weight:500; }
-.reproductor { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; background:#000; border:1px solid var(--borde); }
-.reproductor.short { max-width:360px; aspect-ratio:9/16; margin:0 auto; }
+/* Temáticas: cada una con su ambiente */
+.t-paranormal { --t-fondo:#16201F; --t-cab:#101A19; --t-cuerpo:#0C1312; --t-texto:#CFE3DC; --t-texto-2:#A9C4BC; --t-acento:#7FD1BD; --t-borde:#22302E;
+  --t-textura:radial-gradient(ellipse at 80% 20%,rgba(150,200,190,.13),transparent 60%),radial-gradient(ellipse at 10% 90%,rgba(150,200,190,.08),transparent 50%); }
+.t-crimenes { --t-fondo:#2A1513; --t-cab:#1E0F0D; --t-cuerpo:#140A09; --t-texto:#F1D2CC; --t-texto-2:#D4ADA6; --t-acento:#E0786C; --t-borde:#3A201C;
+  --t-textura:repeating-linear-gradient(-35deg,transparent 0 26px,rgba(224,120,108,.05) 26px 28px); }
+.t-cine { --t-fondo:#1B1B1B; --t-cab:#141414; --t-cuerpo:#0E0E0E; --t-texto:#E9E4D8; --t-texto-2:#BDB7A9; --t-acento:#D9C8A3; --t-borde:#2E2E2E;
+  --t-textura:repeating-linear-gradient(90deg,transparent 0 22px,rgba(255,255,255,.045) 22px 24px); }
+.t-fantasia { --t-fondo:#1E1830; --t-cab:#161124; --t-cuerpo:#0F0B19; --t-texto:#DDD5F5; --t-texto-2:#B3A9D6; --t-acento:#B7A6F0; --t-borde:#2D2546;
+  --t-textura:radial-gradient(circle at 20% 30%,rgba(183,166,240,.18) 0 1px,transparent 2px),radial-gradient(circle at 70% 60%,rgba(183,166,240,.14) 0 1px,transparent 2px); }
+.t-mitos { --t-fondo:#2B2312; --t-cab:#211A0C; --t-cuerpo:#161108; --t-texto:#F2E2B8; --t-texto-2:#D2C18F; --t-acento:#E0B85A; --t-borde:#3B311B;
+  --t-textura:repeating-linear-gradient(0deg,transparent 0 30px,rgba(224,184,90,.06) 30px 31px); }
+.t-robos { --t-fondo:#14202B; --t-cab:#0F1821; --t-cuerpo:#0A1118; --t-texto:#CFE0EF; --t-texto-2:#A2B9CE; --t-acento:#79B4E6; --t-borde:#20303F;
+  --t-textura:linear-gradient(rgba(121,180,230,.06) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,rgba(121,180,230,.06) 1px,transparent 1px) 0 0/24px 24px; }
+.t-desastres { --t-fondo:#262A14; --t-cab:#1C1F0E; --t-cuerpo:#121409; --t-texto:#E3E8C4; --t-texto-2:#BFC69A; --t-acento:#C9D46A; --t-borde:#363B1E;
+  --t-textura:radial-gradient(ellipse at 70% 0%,rgba(201,212,106,.12),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(0,0,0,.35),transparent 60%); }
+.tema { border-radius:10px; padding:16px; min-height:160px; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden;
+  border:1px solid var(--t-borde); background:var(--t-textura), var(--t-fondo); color:var(--t-texto); text-decoration:none; transition:transform .3s, border-color .3s; }
+.tema:hover { transform:translateY(-3px); border-color:var(--t-acento); color:var(--t-texto); }
+.tema .num { font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.75; letter-spacing:.1em; }
+.tema h3 { font-size:22px; margin:6px 0 4px; line-height:1.15; }
+.tema p { font-size:14px; opacity:.88; }
+.tema .pie { font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:12px; color:var(--t-acento); letter-spacing:.06em; }
+.rejilla-temas { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; }
+
+/* Página de una temática */
+.pagina-tema { background:var(--t-cuerpo); color:var(--t-texto); }
+.pagina-tema .ficha { --acento:var(--t-acento); background:var(--t-fondo); border-color:var(--t-borde); }
+.pagina-tema .ficha .meta { color:var(--t-texto-2); }
+.tema-cab { background:var(--t-textura), var(--t-cab); border-bottom:1px solid var(--t-borde); }
+.tema-cab .ancho { padding-top:44px; padding-bottom:32px; }
+.tema-cab .mono { font-size:12px; color:var(--t-acento); }
+.tema-cab h1 { font-size:clamp(32px,5vw,48px); margin:6px 0 8px; }
+.tema-cab p { max-width:680px; color:var(--t-texto-2); font-size:18px; }
+.tema-cuerpo { display:grid; grid-template-columns:1fr 310px; gap:26px; padding-top:28px; padding-bottom:64px; }
+.lateral { display:flex; flex-direction:column; gap:12px; }
+.caja { background:var(--t-fondo, var(--tarjeta)); border:1px solid var(--t-borde, var(--borde)); border-radius:10px; padding:14px; }
+.caja h2 { margin:0 0 10px; font-family:'IBM Plex Mono',monospace; font-weight:400; font-size:11px; letter-spacing:.15em; color:var(--t-texto-2, var(--texto-3)); text-transform:uppercase; }
+.mapa { display:block; width:100%; height:auto; border-radius:6px; background:rgba(0,0,0,.25); }
+.mapa .tierra { fill:rgba(255,255,255,.13); stroke:rgba(255,255,255,.2); stroke-width:.3; }
+.mapa a circle { fill:var(--t-acento, var(--oro)); stroke:rgba(0,0,0,.6); stroke-width:.6; }
+.mapa a:hover circle, .mapa a:focus circle { fill:#fff; }
+.linea { list-style:none; display:flex; flex-direction:column; gap:6px; font-size:14px; }
+.linea li { display:flex; gap:10px; }
+.linea b { font-family:'IBM Plex Mono',monospace; color:var(--t-acento, var(--oro)); font-weight:400; min-width:64px; font-size:12px; padding-top:2px; }
+.linea a { text-decoration:none; }
+.linea a:hover { text-decoration:underline; }
+.parecidos { list-style:none; display:flex; flex-direction:column; gap:8px; font-size:14px; }
+.parecidos small { display:block; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.1em; color:var(--t-texto-2, var(--texto-3)); text-transform:uppercase; }
+.proximamente { padding:30px 20px; border:1px dashed var(--t-borde); border-radius:10px; text-align:center; color:var(--t-texto-2); }
+@media (max-width:860px) { .tema-cuerpo { grid-template-columns:1fr; } }
+
+/* Página de una historia: el folio, en papel */
+.exposicion { position:fixed; left:0; top:0; height:3px; width:0; z-index:60; background:var(--rojo); }
+.hist { --fondo:#EBDDBF; --tarjeta:#F6ECD5; --tarjeta-2:#E9DCBC; --borde:#D6C39B; --borde-2:#B49C6C;
+  --texto:#221C14; --texto-2:#4A3F30; --texto-3:#7A6C55; --oro:#8C6E30;
+  background:var(--fondo); color:var(--texto); }
+.hist a { color:var(--texto); }
+.hist a:hover { color:var(--rojo); }
+.hist .ancho { padding-top:36px; padding-bottom:64px; }
+.miga { font-size:12px; color:var(--texto-3); }
+.miga a { color:inherit; text-decoration:none; }
+.miga a:hover { color:var(--rojo); }
+.hist h1 { font-weight:900; font-size:clamp(30px,4.6vw,46px); line-height:1.1; margin:10px 0 8px; max-width:24ch; }
+.hist .sub { font-style:italic; color:var(--texto-2); font-size:19px; margin:0 0 14px; max-width:760px; }
+.datos { display:flex; flex-wrap:wrap; gap:4px 18px; margin-bottom:26px; font-size:14px; color:var(--texto-3); }
+.datos b { color:var(--texto-2); font-weight:600; }
+.hist-grid { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:34px; align-items:start; }
+.hist-lado { position:sticky; top:80px; display:flex; flex-direction:column; gap:12px; }
+.aprender { background:var(--tarjeta); border:1.5px dashed var(--borde-2); border-radius:10px; padding:16px 18px; margin-bottom:24px; }
+.aprender h2, .verdad h2, .fuentes-caja h2 { margin:0 0 8px; font-family:'IBM Plex Mono',monospace; font-weight:400; font-size:12px; letter-spacing:.15em; color:#8C6E30; text-transform:uppercase; }
+.aprender ol { padding-left:22px; }
+.aprender li { margin:3px 0; font-size:17px; }
+.aprender li a { text-decoration:none; }
+.aprender li a:hover { text-decoration:underline; }
+.aprender .meta { font-size:11px; color:var(--texto-3); margin-top:10px; }
+.reproductor { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; background:#000; border-radius:8px; }
+.reproductor.short { max-width:340px; aspect-ratio:9/16; margin:0 auto; }
 .reproductor iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
-.ver-yt { margin-top:12px; text-align:center; font-size:13px; }
-.bloque { margin-top:44px; }
-.bloque h2 { font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:26px; margin-bottom:14px; }
-.bloque p { font-size:18px; color:#DDD1BA; }
-.articulo p { margin-bottom:18px; }
+.ver-yt { margin-top:10px; text-align:center; font-size:14px; }
+.bloque { margin-top:36px; }
+.bloque h2 { font-weight:700; font-size:27px; margin-bottom:12px; line-height:1.2; }
+.bloque p { font-size:18px; }
+.texto p, .articulo p { margin-bottom:16px; font-size:18px; }
 .articulo p:last-child { margin-bottom:0; }
-.bloque.caso p:first-of-type::first-letter { float:left; font-family:'Playfair Display',serif; font-weight:900; font-size:64px; line-height:.9;
-  padding:6px 10px 0 0; color:var(--rojo); }
+sup.nota-fuente a { font-family:'IBM Plex Mono',monospace; font-size:11px; background:#221C14; color:var(--papel); padding:1px 5px; border-radius:3px; text-decoration:none; margin-left:1px; }
 .curiosidades { list-style:none; display:flex; flex-direction:column; gap:10px; counter-reset:c; }
-.curiosidades li { position:relative; padding:14px 16px 14px 54px; background:var(--tarjeta); border:1px solid var(--borde); border-radius:2px; font-size:17px; }
-.curiosidades li::before { content:counter(c,decimal-leading-zero); counter-increment:c; position:absolute; left:16px; top:15px;
-  font-family:'Special Elite',monospace; color:var(--rojo); font-size:15px; }
+.curiosidades li { position:relative; padding:12px 14px 12px 50px; background:var(--tarjeta); border:1px solid var(--borde); border-radius:8px; font-size:17px; }
+.curiosidades li::before { content:counter(c,decimal-leading-zero); counter-increment:c; position:absolute; left:14px; top:13px;
+  font-family:'IBM Plex Mono',monospace; color:var(--rojo); font-size:13px; }
+.verdad { background:#221C14; color:var(--papel); border-radius:10px; padding:16px; }
+.verdad h2 { color:#C8A04A; }
+.verdad li { display:flex; gap:10px; align-items:flex-start; font-size:15px; margin:8px 0; list-style:none; }
+.fuentes-caja { background:var(--tarjeta); border:1px solid var(--borde); border-radius:10px; padding:14px; font-size:14px; }
+.fuentes-caja ol { padding-left:20px; }
+.fuentes-caja li { margin:5px 0; word-break:break-word; }
+.fuentes-caja li:target { background:rgba(194,68,59,.18); }
 .fuentes li { margin:6px 0 6px 20px; color:var(--texto-2); }
-.nota { color:var(--texto-2); font-size:15px; }
-.relacionado { padding:14px 16px; border:1px solid var(--borde); border-left:3px solid var(--rojo); background:var(--tarjeta); }
+.quiz { margin-top:40px; border-top:1px solid var(--borde-2); padding-top:22px; }
+.quiz h2 { font-size:27px; margin-bottom:6px; }
+.quiz .pregunta { margin:16px 0 8px; font-size:18px; }
+.opciones { display:flex; gap:10px; flex-wrap:wrap; }
+.opciones button { font:500 15px 'Source Serif 4',Georgia,serif; border:1px solid var(--borde-2); border-radius:6px; padding:8px 14px; background:var(--tarjeta); color:var(--texto); cursor:pointer; }
+.opciones button:hover { border-color:var(--rojo); }
+.opciones button[disabled] { cursor:default; opacity:.65; }
+.opciones button.elegida { opacity:1; border-color:var(--texto); background:#fff8e6; }
+.quiz .respuesta { margin-top:8px; font-size:15px; color:#3E5F2F; display:none; }
+.quiz .respuesta.vista { display:block; }
+.quiz .marcador { margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--texto-2); }
+.progreso { font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--texto-3); margin-top:18px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.progreso .barra { display:inline-block; height:6px; width:160px; background:var(--borde); border-radius:3px; position:relative; overflow:hidden; }
+.progreso .barra i { position:absolute; left:0; top:0; bottom:0; width:0; background:var(--rojo); }
+.relacionado { padding:12px 14px; border:1px solid var(--borde); border-left:3px solid var(--rojo); background:var(--tarjeta); border-radius:6px; margin-top:14px; }
 .relacionado p { font-size:16px; }
-.sabes-demasiado { margin-top:64px; padding:40px 20px; text-align:center; border-top:1px solid var(--borde); border-bottom:1px solid var(--borde); }
-.sabes-demasiado p.grande { font-family:'Playfair Display',serif; font-style:italic; font-weight:900; font-size:clamp(28px,5vw,40px); color:var(--texto); }
-.sabes-demasiado p.peque { color:var(--texto-3); font-size:14px; margin:8px 0 22px; }
-.compartir { margin-top:44px; padding:20px 16px; border:1px solid var(--borde); background:var(--tarjeta); text-align:center; }
+.sabes-demasiado { margin-top:52px; padding:34px 20px; text-align:center; border-top:1px solid var(--borde-2); border-bottom:1px solid var(--borde-2); }
+.sabes-demasiado p.grande { font-family:'Playfair Display',serif; font-style:italic; font-weight:900; font-size:clamp(26px,4.5vw,38px); }
+.sabes-demasiado p.peque { color:var(--texto-3); font-size:15px; margin:8px 0 18px; }
+.compartir { margin-top:36px; padding:18px 16px; border:1px solid var(--borde); background:var(--tarjeta); text-align:center; border-radius:10px; }
 .compartir p { margin-bottom:12px; color:var(--texto-2); }
 .compartir div { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
-.compartir a, .compartir button { font:500 13px 'Inter',sans-serif; cursor:pointer; padding:7px 13px; border-radius:2px;
+.compartir a, .compartir button { font:500 13px 'IBM Plex Mono',monospace; cursor:pointer; padding:7px 12px; border-radius:6px;
   border:1px solid var(--borde-2); background:transparent; color:var(--texto); text-decoration:none; }
-.compartir a:hover, .compartir button:hover { border-color:var(--rojo); background:var(--sangre); }
-.navegacion { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:44px; }
-.navegacion a { display:block; padding:14px 16px; border:1px solid var(--borde); text-decoration:none; color:var(--texto); font-size:15px; }
-.navegacion a small { display:block; color:var(--texto-3); font-size:12px; margin-bottom:4px; }
+.compartir a:hover, .compartir button:hover { border-color:var(--rojo); background:var(--rojo); color:#fff; }
+.navegacion { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:36px; }
+.navegacion a { display:block; padding:14px 16px; border:1px solid var(--borde); border-radius:8px; text-decoration:none; color:var(--texto); font-size:16px; }
+.navegacion a small { display:block; color:var(--texto-3); font-size:12px; margin-bottom:4px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.08em; }
 .navegacion a:hover { border-color:var(--rojo); }
 .navegacion .sig { text-align:right; grid-column:2; }
-@media (max-width:600px) { .navegacion { grid-template-columns:1fr; } .navegacion .sig { grid-column:auto; } .reloj { display:none; } }
+@media (max-width:900px) { .hist-grid { grid-template-columns:1fr; } .hist-lado { position:static; } }
+@media (max-width:600px) { .navegacion { grid-template-columns:1fr; } .navegacion .sig { grid-column:auto; } }
 
 /* Buscar */
-.buscador { width:100%; font:500 18px 'Inter',sans-serif; padding:14px 18px; border-radius:2px; border:1px solid var(--borde-2);
+.buscador { width:100%; font:500 18px 'Source Serif 4',Georgia,serif; padding:14px 18px; border-radius:8px; border:1px solid var(--borde-2);
   background:var(--tarjeta); color:var(--texto); margin:8px 0 22px; }
-.buscador:focus { outline:2px solid var(--rojo); outline-offset:1px; }
+.buscador:focus { outline:2px solid var(--oro); outline-offset:1px; }
 
 /* Texto legal y genérico */
 .legal { padding-top:40px; padding-bottom:72px; max-width:760px; }
-.legal h1 { font-family:'Playfair Display',Georgia,serif; font-weight:900; font-size:clamp(30px,6vw,44px); margin-bottom:6px; }
-.legal .fecha { font-size:14px; color:var(--texto-3); margin-bottom:24px; }
-.legal h2 { color:var(--rojo); font-weight:600; font-size:19px; margin:28px 0 8px; }
-.legal p, .legal li { font-size:16px; color:#DDD1BA; }
+.legal h1 { font-weight:900; font-size:clamp(30px,6vw,44px); margin-bottom:6px; }
+.legal .fecha { font-size:15px; color:var(--texto-3); margin-bottom:24px; font-style:italic; }
+.legal h2 { color:var(--rojo); font-weight:700; font-size:21px; margin:28px 0 8px; }
+.legal p, .legal li { font-size:17px; color:var(--texto-2); }
 .legal ul { padding-left:22px; }
+.lectura { max-width:760px; margin:0 auto; }
+.volver { display:inline-block; text-decoration:none; color:var(--texto-3); font-size:14px; margin-bottom:22px; }
+.volver:hover { color:var(--texto); }
+.nota { color:var(--texto-2); font-size:15px; }
 
-.apoyo { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:24px 20px;
-  border:1px solid var(--borde); background:var(--tarjeta); }
+.apoyo { display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-top:8px; margin-bottom:48px; padding:22px 20px;
+  border:1px solid var(--borde); background:var(--tarjeta); border-radius:10px; }
 .apoyo div:nth-child(2) { flex:1; min-width:220px; }
-.apoyo h2 { font-family:'Playfair Display',serif; font-weight:900; font-size:22px; }
-.expediente .apoyo { margin-top:48px; margin-bottom:0; border-left:3px solid var(--oro); }
+.apoyo h2 { font-weight:900; font-size:22px; }
+.hist .apoyo { margin-top:44px; margin-bottom:0; border-left:3px solid var(--rojo); }
+.apoyo p { color:var(--texto-2); font-size:16px; }
 .opiniones { list-style:none; display:flex; flex-direction:column; gap:12px; }
-.opiniones li { padding:14px 16px; background:var(--tarjeta); border:1px solid var(--borde); }
+.opiniones li { padding:14px 16px; background:var(--tarjeta); border:1px solid var(--borde); border-radius:8px; }
 .opiniones p { font-size:16px; margin:6px 0; }
 .opiniones small { color:var(--texto-3); font-size:13px; }
 .estrellas { color:var(--oro); letter-spacing:.12em; font-size:16px; }
 .formulario { display:block; border:0; min-height:280px; }
-.apoyo p { color:var(--texto-2); font-size:15px; }
-footer { border-top:1px solid var(--borde); padding:28px 16px 40px; text-align:center; font-size:13px; color:var(--texto-3); }
+footer { border-top:1px solid var(--borde); padding:28px 16px 40px; text-align:center; font-size:14px; color:var(--texto-3); }
 footer a { color:var(--texto-2); }
 footer small { display:inline-block; margin-top:8px; font-size:12px; }
-footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',monospace; letter-spacing:.14em; text-transform:uppercase; font-size:11px; color:var(--texto-3); }
+footer .lema { display:block; margin-bottom:10px; font-family:'Playfair Display',serif; font-style:italic; font-size:16px; color:var(--texto-2); }
 
 /* Quien pide menos movimiento, lo tiene: sin grano animado, sin interferencias ni linterna que se mueve */
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
   body::before { animation:none; }
   .tachado { animation:none; transition:none; }
-  .vigilante, .ficha, .ficha .img { transition:none; }
+  .ficha, .ficha .img, .tema { transition:none; }
 }
 """
 
@@ -403,7 +565,7 @@ HALLOWEEN_INICIO = """<script>(function(){var d=new Date(),y=d.getFullYear();if(
 HALLOWEEN_CINTA_JS = """<script>(function(){var c=document.getElementById('cinta-texto');if(!c)return;var d=new Date(),y=d.getFullYear();
 var hoy=new Date(y,d.getMonth(),d.getDate()),n=Math.round((new Date(y,9,31)-hoy)/864e5),t;
 if(n>1)t='Faltan '+n+' noches para Halloween.';else if(n===1)t='Mañana es Halloween. Esta noche, ensayo general.';
-else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difuntos. Los expedientes siguen abiertos.';c.textContent=t;})();</script>"""
+else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difuntos. Los folios siguen abiertos.';c.textContent=t;})();</script>"""
 
 
 def cinta_halloween(raiz: str = "") -> str:
@@ -422,7 +584,7 @@ def deco_portada() -> str:
             f'<div class="murcielagos">{murcielagos}</div><div class="arana">{ARANA_SVG}</div></div>')
 
 
-# Revelar lo tachado, la linterna y la lupa que mira, el reloj del expediente y «Sorpréndeme»; en todas las páginas
+# Revelar lo tachado, la linterna, la barra de lectura, «Tu archivo» (folios leídos), el test y «Al azar»; en todas las páginas
 BASE_JS = """
 <script>
 (function () {
@@ -446,23 +608,18 @@ BASE_JS = """
     }
   });
 
-  // Portada: la linterna sigue al ratón (en móvil deambula sola) y la lupa se gira hacia ti
-  var portada = document.querySelector('.portada'), vigilante = document.querySelector('.vigilante');
+  // Portada: la linterna sigue al ratón (en móvil deambula sola)
+  var portada = document.querySelector('.portada');
   if (portada && !quieto) {
     var mover = function (x, y) {
       var r = portada.getBoundingClientRect();
       portada.style.setProperty('--x', (x - r.left) + 'px'); portada.style.setProperty('--y', (y - r.top) + 'px');
-      if (vigilante) {
-        var v = vigilante.getBoundingClientRect(), cx = v.left + v.width / 2, cy = v.top + v.height / 2;
-        var dx = Math.max(-30, Math.min(30, (x - cx) / 18)), dy = Math.max(-30, Math.min(30, (y - cy) / 18));
-        vigilante.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (dx / 3) + 'deg)';
-      }
     };
     if (tactil) {
       var t0 = Date.now();
       (function deambular() {
         var s = (Date.now() - t0) / 4000, r = portada.getBoundingClientRect();
-        mover(r.left + r.width * (.5 + .35 * Math.sin(s)), r.top + r.height * (.45 + .25 * Math.sin(s * 1.7)));
+        mover(r.left + r.width * (.4 + .3 * Math.sin(s)), r.top + r.height * (.45 + .25 * Math.sin(s * 1.7)));
         requestAnimationFrame(deambular);
       })();
     } else {
@@ -470,12 +627,8 @@ BASE_JS = """
     }
   }
 
-  // Hora a la que abriste el archivo (solo se muestra aquí; no se guarda ni se envía a ningún sitio)
-  var hora = document.querySelector('[data-hora]');
-  if (hora) { var d = new Date(); hora.textContent = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }); }
-
-  // Expediente: barra de exposición (cuánto has leído) y tiempo que llevas dentro
-  var barra = document.querySelector('.exposicion'), reloj = document.querySelector('.reloj');
+  // Folio: barra de lectura (cuánto has leído)
+  var barra = document.querySelector('.exposicion');
   if (barra) {
     var actualizar = function () {
       var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
@@ -483,15 +636,49 @@ BASE_JS = """
     };
     window.addEventListener('scroll', actualizar, { passive: true }); actualizar();
   }
-  if (reloj) {
-    var inicio = Date.now();
-    setInterval(function () {
-      var s = Math.floor((Date.now() - inicio) / 1000);
-      reloj.textContent = 'Llevas ' + String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0') + ' dentro de este expediente';
-    }, 1000);
+
+  // Tu archivo: los folios que has abierto se guardan SOLO en este navegador (localStorage), nunca se envían.
+  // Si el navegador no deja guardar (modo privado, bloqueo), la web funciona igual, sin contador.
+  var leidos = [];
+  try { leidos = JSON.parse(localStorage.getItem('folio13-leidos') || '[]'); if (!Array.isArray(leidos)) leidos = []; } catch (e) { leidos = []; }
+  var este = document.body.dataset.folio;
+  if (este && leidos.indexOf(este) < 0) {
+    leidos.push(este);
+    try { localStorage.setItem('folio13-leidos', JSON.stringify(leidos)); } catch (e) {}
+  }
+  var total = parseInt(document.body.dataset.total || '0', 10);
+  var n = leidos.length;
+  document.querySelectorAll('[data-leidos]').forEach(function (el) {
+    if (!total) return;
+    var falta = Math.max(0, total - n);
+    el.textContent = el.dataset.leidos === 'corto' ? n + ' de ' + total + ' folios leídos'
+      : 'Has leído ' + n + ' de ' + total + ' folios' + (falta ? ' · te faltan ' + falta + ' historias por descubrir' : ' · los has leído todos');
+  });
+  document.querySelectorAll('.progreso .barra i').forEach(function (b) { if (total) b.style.width = Math.min(100, n / total * 100) + '%'; });
+  document.querySelectorAll('.ficha[data-folio]').forEach(function (f) { if (leidos.indexOf(f.dataset.folio) >= 0) f.classList.add('leido'); });
+
+  // «¿Lo habrías creído?»: cada dato es verdad (sale del propio folio); se cuenta cuántos te habrías creído
+  var quiz = document.querySelector('.quiz');
+  if (quiz) {
+    var creidos = 0, contestadas = 0, preguntas = quiz.querySelectorAll('.pregunta-bloque');
+    preguntas.forEach(function (p) {
+      p.querySelectorAll('button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          p.querySelectorAll('button').forEach(function (x) { x.disabled = true; });
+          b.classList.add('elegida');
+          if (b.dataset.cree === 'si') creidos++;
+          contestadas++;
+          p.querySelector('.respuesta').classList.add('vista');
+          if (contestadas === preguntas.length) {
+            var m = quiz.querySelector('.marcador');
+            m.textContent = 'Te habrías creído ' + creidos + ' de ' + preguntas.length + '. Y todas son verdad: por eso están en el folio.';
+          }
+        });
+      });
+    });
   }
 
-  // «Sorpréndeme»: un expediente al azar
+  // «Al azar»: un folio al azar
   document.querySelectorAll('.sorprendeme').forEach(function (b) {
     b.addEventListener('click', function (ev) {
       ev.preventDefault();
@@ -519,8 +706,6 @@ FRASE_JS = """
   function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
   h1.setAttribute('aria-label', p.antes + p.tachado + p.despues);
   h1.innerHTML = '<a href="' + p.u + '">' + esc(p.antes) + '<span class="tachado">' + esc(p.tachado) + '</span>' + esc(p.despues) + '</a>';
-  var abrir = document.querySelector('#abrir .boton:not(.sorprendeme)');
-  if (abrir) abrir.href = p.u;
 })();
 </script>
 """
@@ -560,10 +745,10 @@ BUSCAR_JS = """
   function pintar() {
     var q = norm(caja.value).split(/\\s+/).filter(Boolean);
     var res = lista.filter(function (e) {
-      var texto = norm([e.t, e.r, (e.e || []).join(' '), e.y, e.l].join(' '));
+      var texto = norm([e.t, e.r, (e.e || []).join(' '), e.y, e.l, e.m].join(' '));
       return q.every(function (p) { return texto.indexOf(p) >= 0; });
     });
-    cuenta.textContent = q.length ? res.length + (res.length === 1 ? ' expediente' : ' expedientes') : '';
+    cuenta.textContent = q.length ? res.length + (res.length === 1 ? ' folio' : ' folios') : '';
     sal.innerHTML = res.map(function (e) {
       return '<a class="ficha" href="' + e.u + '"><div class="txt"><div class="num mono">' + esc(e.n) + '</div><h3>' + esc(e.t) +
         '</h3><div class="meta">' + esc(e.r) + '</div></div></a>';
@@ -643,8 +828,12 @@ def titulo_html(e: dict, enfocable: bool = False) -> str:
     return f'{escape(antes)}<span class="tachado"{foco}>{escape(oculto)}</span>{escape(despues)}'
 
 
+TOTAL_FOLIOS = 0   # lo fija generar(): cuántos folios hay, para el contador «Has leído X de N»
+
+
 def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "",
-           ruta: str = "", imagen: str = "compartir.png", tipo_og: str = "website", jsonld=None) -> str:
+           ruta: str = "", imagen: str = "compartir.png", tipo_og: str = "website", jsonld=None,
+           folio: str = "") -> str:
     desc = escape(descripcion or canal["lema"])
     halloween = es_halloween()
     # Etiquetas para buscadores (Google, Bing) y para las vistas previas al compartir en redes
@@ -659,7 +848,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
            '<meta name="twitter:card" content="summary_large_image">\n'
            # Imágenes grandes en Google Discover y en los resultados
            '<meta name="robots" content="max-image-preview:large">\n'
-           '<meta name="theme-color" content="#0F0C0A">\n'
+           '<meta name="theme-color" content="#12100D">\n'
            f'<link rel="alternate" type="application/rss+xml" title="{escape(canal["nombre"])}" href="{URL}/feed.xml">\n')
     if canal.get("google_verificacion"):
         seo += f'<meta name="google-site-verification" content="{escape(canal["google_verificacion"])}">\n'
@@ -680,22 +869,24 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <style>{CSS}{HALLOWEEN_CSS if halloween else ""}</style>
 {HALLOWEEN_INICIO if halloween else ""}
 </head>
-<body data-raiz="{raiz}">
+<body data-raiz="{raiz}" data-total="{TOTAL_FOLIOS}"{f' data-folio="{folio}"' if folio else ""}>
 <header><div class="ancho">
-  <a class="logo" style="--t:40px" href="{raiz}index.html" aria-label="Inicio">{LUPA_SVG}</a>
-  <a class="nombre" href="{raiz}index.html">El Archivo <em>Curioso</em></a>
+  <a class="logo" style="--t:40px" href="{raiz}index.html" aria-label="Inicio">{SELLO_MINI_SVG}</a>
+  <a class="nombre" href="{raiz}index.html">Folio <em>13</em></a>
   <nav aria-label="Principal">
-    <a href="{raiz}index.html#expedientes">Expedientes</a>
-    <a class="solo-ancho" href="{raiz}temas/index.html">Temas</a>
-    <a class="solo-ancho miedo" href="{raiz}historias-de-miedo-reales.html">De miedo</a>
+    <a href="{raiz}index.html#tematicas">Temáticas</a>
+    <a class="solo-ancho" href="{raiz}index.html#folios">Todos los folios</a>
+    <a class="solo-ancho" href="{raiz}mapa.html">Mapa</a>
+    <a class="solo-ancho" href="{raiz}acerca.html">Cómo verificamos</a>
+    <a class="solo-ancho" href="{raiz}apoya.html">Apoyar</a>
     <a href="{raiz}buscar.html">Buscar</a>
-    <a class="sorprendeme" href="{raiz}buscar.html">Sorpréndeme</a>
+    <a class="sorprendeme" href="{raiz}buscar.html">Al azar</a>
   </nav>
 </div></header>
 {cinta_halloween(raiz) if halloween else ""}
 {cuerpo}
 {suscripcion(canal)}
-<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}temas/index.html">Temas</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya el archivo</a> · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer><span class="lema">{escape(canal['lema'])}</span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{extra}
 </body>
 </html>
@@ -708,9 +899,9 @@ def apoyo(canal: dict, raiz: str = "") -> str:
     donar = (f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener" target="_blank">'
              f'{escape((canal.get("donaciones_texto") or "Invítanos a un café").capitalize())} ☕</a>'
              if canal.get("donaciones_url") else "")
-    return (f'<section class="apoyo"><div class="logo" style="--t:56px">{LUPA_SVG}</div>'
-            f'<div><h2>¿Quieres que abramos el siguiente expediente?</h2><p>Cada caso lleva horas de archivo y fuentes. '
-            f'El Archivo Curioso es gratis y sin muros de pago: si te ha gustado, puedes ayudarnos a seguir.</p></div>'
+    return (f'<section class="apoyo"><div class="logo" style="--t:64px">{sello_svg("-apoyo")}</div>'
+            f'<div><h2>¿Abrimos el próximo folio?</h2><p>Cada folio lleva horas de archivo y fuentes. '
+            f'Folio 13 es gratis y sin muros de pago: si te ha gustado, puedes ayudarnos a seguir.</p></div>'
             f'<div class="botones" style="margin-top:0">{donar}'
             f'<a class="boton secundario" href="{raiz}apoya.html">Otras formas de apoyar</a></div></section>')
 
@@ -753,7 +944,7 @@ def bloque_opiniones(e: dict, canal: dict, ops: list[dict]) -> str:
     formulario = formulario_opinion(canal, e)
     if not formulario and not ops:
         return ""
-    return (f'<div class="bloque"><h2>¿Qué te ha parecido este expediente?</h2>{formulario}'
+    return (f'<div class="bloque"><h2>¿Qué te ha parecido este folio?</h2>{formulario}'
             + (f'<h3 style="margin-top:22px">Lo que dicen otros lectores</h3>{lista_opiniones(ops)}' if ops else "")
             + "</div>")
 
@@ -764,12 +955,12 @@ def pagina_opiniones(canal: dict, ops: list[dict]) -> str:
     lista = lista_opiniones(ops, con_expediente=True) or f'<p class="nota">{vacio}</p>'
     cuerpo = f"""<main class="ancho seccion lectura">
 <h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Opiniones de los lectores</h1>
-<p class="nota" style="margin:10px 0 28px">Lo que opinan quienes han abierto el archivo. Todas se revisan antes de publicarse.</p>
+<p class="nota" style="margin:10px 0 28px">Lo que opinan quienes han abierto los folios. Todas se revisan antes de publicarse.</p>
 {lista}
-<div class="bloque"><h2>Deja tu opinión sobre el archivo</h2>{formulario_opinion(canal)}</div>
+<div class="bloque"><h2>Deja tu opinión sobre Folio 13</h2>{formulario_opinion(canal)}</div>
 </main>"""
     return pagina(f"Opiniones · {canal['nombre']}", cuerpo, canal, ruta="opiniones.html",
-                  descripcion="Opiniones de los lectores de El Archivo Curioso.")
+                  descripcion="Opiniones de los lectores de Folio 13.")
 
 
 def pagina_apoya(canal: dict, expedientes: list[dict]) -> str:
@@ -782,32 +973,32 @@ def pagina_apoya(canal: dict, expedientes: list[dict]) -> str:
     libros = ""
     for e in expedientes:
         for l in e.get("lecturas", []):
-            libros += enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del expediente '
+            libros += enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del folio '
                                                       f'<a href="expedientes/{e["_slug"]}.html">{escape(e["titulo"])}</a></span></li>')
-    bloque_libros = (f'<div class="bloque"><h2>Lee los libros de los expedientes</h2><p>Si compras alguno de estos '
+    bloque_libros = (f'<div class="bloque"><h2>Lee los libros de los folios</h2><p>Si compras alguno de estos '
                      f'libros desde aquí, Amazon nos da una pequeña comisión y a ti no te cuesta nada más.</p>'
                      f'<ul class="fuentes">{libros}</ul></div>') if libros else ""
     cuerpo = f"""<main class="ancho seccion lectura">
-<h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Apoya el archivo</h1>
-<p class="bloque" style="margin-top:14px">El Archivo Curioso es gratis, sin muros de pago y sin anuncios invasivos. Detrás de cada expediente hay horas buscando fuentes, contrastando cifras y separando el mito de lo que pasó de verdad.</p>
+<h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Apoya Folio 13</h1>
+<p class="bloque" style="margin-top:14px">Folio 13 es gratis, sin muros de pago y sin anuncios invasivos. Detrás de cada folio hay horas buscando fuentes, contrastando cifras y separando el mito de lo que pasó de verdad.</p>
 <div class="bloque"><h2>En qué se usa tu ayuda</h2><ul class="curiosidades">
-<li>Abrir más expedientes, con más investigación y mejores fuentes.</li>
+<li>Abrir más folios, con más investigación y mejores fuentes.</li>
 <li>Una voz más natural para los vídeos.</li>
 <li>Un dominio propio para la web, para que sea más fácil de encontrar y recordar.</li></ul></div>
 {donar}
 {bloque_libros}
-<div class="bloque"><h2>Y gratis</h2><p>Compartir un expediente con alguien a quien le vaya a encantar{', <a href="opiniones.html">dejar tu opinión</a>' if canal.get("opiniones_form") else ""} o suscribirte al <a href="{escape(canal['youtube'])}">canal de YouTube</a> también ayuda muchísimo.</p></div>
+<div class="bloque"><h2>Y gratis</h2><p>Compartir un folio con alguien a quien le vaya a encantar{', <a href="opiniones.html">dejar tu opinión</a>' if canal.get("opiniones_form") else ""} o suscribirte al <a href="{escape(canal['youtube'])}">canal de YouTube</a> también ayuda muchísimo.</p></div>
 </main>"""
-    return pagina(f"Apoya el archivo · {canal['nombre']}", cuerpo, canal, ruta="apoya.html",
-                  descripcion="Cómo apoyar a El Archivo Curioso: donativos, libros recomendados y formas gratuitas.")
+    return pagina("Apoya Folio 13", cuerpo, canal, ruta="apoya.html",
+                  descripcion="Cómo apoyar a Folio 13: donativos, libros recomendados y formas gratuitas.")
 
 
 def suscripcion(canal: dict) -> str:
     """Invitación a la newsletter; no aparece hasta que haya un enlace en "newsletter_url"."""
     if not canal.get("newsletter_url"):
         return ""
-    return (f'<section class="apoyo ancho"><div class="logo" style="--t:56px">{LUPA_SVG}</div>'
-            f'<div><h2>Un expediente a la semana, en tu correo</h2><p>Historias reales que parecen inventadas, '
+    return (f'<section class="apoyo ancho"><div class="logo" style="--t:56px">{SELLO_MINI_SVG}</div>'
+            f'<div><h2>Un folio a la semana, en tu correo</h2><p>Historias reales que parecen inventadas, '
             f'con fuentes. Gratis y sin spam: te das de baja con un clic.</p></div>'
             f'<a class="boton" href="{escape(canal["newsletter_url"])}" rel="noopener">Suscribirme</a></section>')
 
@@ -832,9 +1023,9 @@ def enlace_libro(libro: dict, canal: dict) -> str:
 
 
 def compartir(e: dict, ruta: str) -> str:
-    """Botones para compartir el expediente (enlaces normales, sin scripts de terceros)."""
+    """Botones para compartir el folio (enlaces normales, sin scripts de terceros)."""
     url = f"{URL}/{ruta}"
-    texto = f"{e['titulo']} · El Archivo Curioso"
+    texto = f"{e['titulo']} · {MARCA}"
     q = urllib.parse.quote
     redes = (("WhatsApp", f"https://wa.me/?text={q(texto + ' ' + url)}"),
              ("Telegram", f"https://t.me/share/url?url={q(url)}&text={q(texto)}"),
@@ -842,18 +1033,32 @@ def compartir(e: dict, ruta: str) -> str:
              ("Menéame", f"https://www.meneame.net/submit?url={q(url)}"),
              ("Reddit", f"https://www.reddit.com/submit?url={q(url)}&title={q(e['titulo'])}"))
     botones = "".join(f'<a href="{escape(u)}" rel="noopener" target="_blank">{n}</a>' for n, u in redes)
-    return (f'<div class="compartir"><p>¿Conoces a alguien a quien le encantaría este expediente? Pásaselo.</p>'
+    return (f'<div class="compartir"><p>¿Conoces a alguien que no se lo creería? Pásale este folio.</p>'
             f'<div>{botones}<button class="copiar" data-url="{escape(url)}">Copiar enlace</button></div></div>')
 
 
 def num_ficha(e: dict) -> str:
-    """«Nº 007 · 1925»: número del expediente en el archivo y época."""
-    return " · ".join(x for x in (f"Nº {e['_n']:03d}", e.get("epoca", "")) if x)
+    """«Folio 007 · 1925»: número del folio (por orden de publicación) y época."""
+    return " · ".join(x for x in (f"Folio {e['_n']:03d}", e.get("epoca", "")) if x)
 
 
-def ficha(e: dict, raiz: str = "") -> str:
-    """La ÚNICA forma de pintar una tarjeta (portada, temas, «De miedo»…). Los del Top 10 de Halloween llevan
-    el puesto en grande («Nº 7») y el título sin «TOP 7 HALLOWEEN:»."""
+def tematica(e: dict) -> dict:
+    return TEMATICAS[e["tematica"]]
+
+
+def semaforo_mini(e: dict) -> str:
+    """Las etiquetas del semáforo de la verdad que tenga el folio (sin repetir), para su tarjeta."""
+    estados = []
+    for v in e.get("verdad", []):
+        if v.get("estado") in VERDAD and v["estado"] not in estados:
+            estados.append(v["estado"])
+    return ('<div class="semaforo">' + "".join(f'<em class="{VERDAD[s][0]}">{VERDAD[s][1].upper()}</em>' for s in estados)
+            + "</div>") if estados else ""
+
+
+def ficha(e: dict, raiz: str = "", con_tema: bool = True) -> str:
+    """La ÚNICA forma de pintar una tarjeta (portada, temáticas, etiquetas, «De miedo»…). Los del Top 10 de Halloween
+    llevan el puesto en grande («Nº 7») y el título sin «TOP 7 HALLOWEEN:»."""
     tipo = "short" if e.get("tipo") == "short" else "video"
     meta = " · ".join(x for x in (e.get("lugar", ""), fecha_larga(e["fecha"])) if x)
     img = e["_img"] if e["_img"].startswith("http") else raiz + e["_img"]
@@ -861,11 +1066,14 @@ def ficha(e: dict, raiz: str = "") -> str:
     cabeza = (f'<div class="puesto">Nº {puesto}</div>' if puesto
               else f'<div class="num mono">{escape(num_ficha(e))}</div>')
     visible = titulo_limpio(e)
-    return (f'<a class="ficha" data-tipo="{tipo}" href="{raiz}expedientes/{e["_slug"]}.html">'
+    tema = (f'<span class="etiqueta-tema">{escape(tematica(e)["nombre"])}</span>' if con_tema else "")
+    return (f'<a class="ficha t-{e["tematica"]}" style="--acento:var(--t-acento)" data-tipo="{tipo}" data-folio="{e["_n"]}" '
+            f'href="{raiz}expedientes/{e["_slug"]}.html">'
             f'<div class="img" style="background-image:url({escape(img)})">'
-            f'<span class="tipo {tipo}">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
-            f'<div class="txt">{cabeza}'
-            f'<h3 aria-label="{escape(visible["titulo"])}">{titulo_html(visible)}</h3><div class="meta">{escape(meta)}</div></div></a>')
+            f'<span class="leido-marca">✓ LEÍDO</span><span class="tipo">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
+            f'<div class="txt">{cabeza}{tema}'
+            f'<h3 aria-label="{escape(visible["titulo"])}">{titulo_html(visible)}</h3><div class="meta">{escape(meta)}</div>'
+            f'{semaforo_mini(e)}</div></a>')
 
 
 def donde_cuando(e: dict) -> str:
@@ -875,17 +1083,40 @@ def donde_cuando(e: dict) -> str:
 
 
 def titulo_limpio(e: dict) -> dict:
-    """El expediente con el título visible: sin el «TOP N HALLOWEEN:» del principio (la censura se conserva)."""
+    """El folio con el título visible: sin el «TOP N HALLOWEEN:» del principio (la censura se conserva)."""
     if not puesto_top(e):
         return e
-    limpio = dict(e, titulo=TOP_HALLOWEEN.sub("", e["titulo"]))
+    resto = TOP_HALLOWEEN.sub("", e["titulo"])
+    limpio = dict(e, titulo=resto[:1].upper() + resto[1:])
     if limpio.get("censura") and limpio["censura"].lower() not in limpio["titulo"].lower():
         limpio.pop("censura")
     return limpio
 
 
+def anio(e: dict) -> float | None:
+    """Año (aproximado) en que pasó, sacado de "epoca": «1888», «hacia 1590-1614», «69-30 a. C.», «Siglos VIII-XI»."""
+    epoca = e.get("epoca", "")
+    m = re.search(r"\d{1,4}", epoca)
+    if m:
+        n = int(m.group(0))
+        return -n if re.search(r"a\.\s*C", epoca) else n
+    romanos = re.search(r"\b([IVXL]+)\b", epoca)
+    if romanos:
+        valor = {"I": 1, "V": 5, "X": 10, "L": 50}
+        r, total = romanos.group(1), 0
+        for i, c in enumerate(r):
+            total += -valor[c] if i + 1 < len(r) and valor[r[i + 1]] > valor[c] else valor[c]
+        return (total - 1) * 100 + 1
+    return None
+
+
+def fuentes_de(expedientes: list[dict]) -> int:
+    """Fuentes distintas (por dirección) de una lista de folios."""
+    return len({f["url"] for e in expedientes for f in e.get("fuentes", [])})
+
+
 def temas_de(expedientes: list[dict]) -> dict[str, list[dict]]:
-    """Etiqueta → expedientes, solo las que tienen al menos 2 (una página con 1 aporta poco)."""
+    """Etiqueta → folios, solo las que tienen al menos 2 (una página con 1 aporta poco)."""
     temas: dict[str, list[dict]] = {}
     for e in expedientes:
         for t in e.get("etiquetas", []):
@@ -900,23 +1131,155 @@ def chips_temas(temas: dict[str, list[dict]], raiz: str = "") -> str:
 
 
 def pagina_tema(tema: str, expedientes: list[dict], canal: dict) -> str:
+    """Página de una etiqueta (las de antes, que Google ya conoce). Las temáticas tienen su propia página."""
     ruta = f"temas/{slug(tema)}.html"
-    descripcion = (f"{len(expedientes)} expedientes de El Archivo Curioso sobre {tema.lower()}: "
+    descripcion = (f"{len(expedientes)} folios de Folio 13 sobre {tema.lower()}: "
                    "historias reales que parecen inventadas, con fuentes.")
     cuerpo = f"""<main class="ancho seccion">
-<a class="volver" href="index.html">← Todos los temas</a>
-<div class="seccion-cab"><h1 class="expediente-titulo" style="font-size:clamp(28px,5vw,42px); letter-spacing:-.02em">{escape(tema)}</h1>
-<span class="cuenta">{len(expedientes)} expedientes</span></div>
+<a class="volver" href="index.html">← Todas las etiquetas</a>
+<div class="seccion-cab"><h1 style="font-size:clamp(28px,5vw,42px)">{escape(tema)}</h1>
+<span class="cuenta">{len(expedientes)} folios</span></div>
 <p class="nota" style="margin-bottom:24px">{escape(descripcion)}</p>
 <div class="rejilla">{"".join(ficha(e, "../") for e in expedientes)}</div>
 </main>"""
-    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": f"Expedientes: {tema}",
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": f"Folios: {tema}",
               "url": f"{URL}/{ruta}", "inLanguage": "es", "description": descripcion}
-    return pagina(f"{tema}: historias y curiosidades · {canal['nombre']}", cuerpo, canal, raiz="../",
+    return pagina(f"{tema}: historias reales con fuentes · {canal['nombre']}", cuerpo, canal, raiz="../",
                   descripcion=descripcion, ruta=ruta, jsonld=jsonld)
 
 
-# «Historias de miedo reales»: los expedientes más oscuros (por número o por sus etiquetas)
+# ---------- Temáticas: mapa, línea de tiempo y «si te gusta esto» ----------
+
+TIERRA = WEB / "datos" / "mapa-tierra.txt"   # contorno de los continentes (Natural Earth, dominio público), en 720×360
+
+
+def mapa_svg(expedientes: list[dict], raiz: str = "", recortar: bool = True) -> str:
+    """Mapa con un punto por folio. Se acerca a la zona donde están los casos (sin cortar ninguno)."""
+    puntos = [e for e in expedientes if e.get("mapa")]
+    if not puntos or not TIERRA.exists():
+        return ""
+    xs = [(e["mapa"][1] + 180) * 2 for e in puntos]
+    ys = [(90 - e["mapa"][0]) * 2 for e in puntos]
+    if recortar:
+        x0, x1, y0, y1 = min(xs) - 40, max(xs) + 40, min(ys) - 30, max(ys) + 30
+        # Proporción 2:1 como mínimo, para que no salga una franja estrecha
+        ancho, alto = max(x1 - x0, 120), max(y1 - y0, 60)
+        if ancho < alto * 2:
+            ancho = alto * 2
+        else:
+            alto = ancho / 2
+        cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+        x0, y0 = max(0, min(720 - ancho, cx - ancho / 2)), max(0, min(360 - alto, cy - alto / 2))
+        caja = f"{x0:.0f} {y0:.0f} {min(ancho, 720):.0f} {min(alto, 360):.0f}"
+        r = max(2.2, min(ancho, 720) / 110)
+    else:
+        caja, r = "0 0 720 360", 3.2
+    marcas = "".join(
+        f'<a href="{raiz}expedientes/{e["_slug"]}.html"><title>{escape(titulo_limpio(e)["titulo"])} · '
+        f'{escape(e.get("lugar", ""))}</title><circle class="t-{e["tematica"]}" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}"/></a>'
+        for e, x, y in zip(puntos, xs, ys))
+    return (f'<svg class="mapa" viewBox="{caja}" role="img" aria-label="Mapa de los casos">'
+            f'<path class="tierra" d="{TIERRA.read_text(encoding="ascii")}"/>{marcas}</svg>')
+
+
+def linea_tiempo(expedientes: list[dict], raiz: str = "") -> str:
+    con_anio = sorted((e for e in expedientes if anio(e) is not None), key=anio)
+    if not con_anio:
+        return ""
+    return ('<ol class="linea">' + "".join(
+        f'<li><b>{escape(e.get("epoca", ""))[:14]}</b><a href="{raiz}expedientes/{e["_slug"]}.html">'
+        f'{escape(titulo_limpio(e)["titulo"])}</a></li>' for e in con_anio) + "</ol>")
+
+
+def parecidos(clave: str, todos: list[dict], raiz: str = "") -> str:
+    """«Si te gusta esto»: folios de otras temáticas que también tocan esta, o de la temática más parecida."""
+    otros = [e for e in todos if e["tematica"] != clave and e.get("tematica_alt") == clave]
+    hermana = PARECIDAS[clave]
+    otros += [e for e in todos if e["tematica"] == hermana and e not in otros]
+    if not otros:
+        return ""
+    return ('<ul class="parecidos">' + "".join(
+        f'<li><small>{escape(tematica(e)["nombre"])}</small><a href="{raiz}expedientes/{e["_slug"]}.html">'
+        f'{escape(titulo_limpio(e)["titulo"])}</a></li>' for e in otros[:4]) + "</ul>"
+        f'<p style="margin-top:10px; font-size:14px"><a href="{raiz}{hermana}/">Ver {escape(TEMATICAS[hermana]["nombre"].lower())} →</a></p>')
+
+
+def tarjeta_tematica(clave: str, i: int, folios: list[dict], raiz: str = "") -> str:
+    t = TEMATICAS[clave]
+    pie = (f"{len(folios)} {'folio' if len(folios) == 1 else 'folios'} · {fuentes_de(folios)} fuentes" if folios
+           else "Próximamente · nueva serie")
+    return (f'<a class="tema t-{clave}" href="{raiz}{clave}/"><div><div class="num">TEMÁTICA {i:02d}</div>'
+            f'<h3>{escape(t["nombre"])}</h3><p>{escape(t["corto"])}</p></div><div class="pie">{pie}</div></a>')
+
+
+def pagina_tematica(clave: str, i: int, todas: list[dict], listados: list[dict], canal: dict) -> str:
+    """Una temática con su ambiente: todos sus episodios y Shorts, el mapa, la línea de tiempo y «si te gusta esto»."""
+    t = TEMATICAS[clave]
+    propias = [e for e in todas if e["tematica"] == clave]
+    principales = [e for e in propias if not e.get("_episodio")]
+    ruta = f"{clave}/"
+    descripcion = f"{t['nombre']}: {t['corto']} Historias reales con fuentes, en Folio 13."
+    if propias:
+        filtros = ('<div class="filtros" role="group" aria-label="Filtrar">'
+                   '<button class="activo" data-filtro="todos" aria-pressed="true">Todos</button>'
+                   '<button data-filtro="video" aria-pressed="false">Vídeos</button>'
+                   '<button data-filtro="short" aria-pressed="false">Shorts</button></div>')
+        fichas = (f'<div class="seccion-cab"><h2 style="font-size:24px">{len(principales)} folios'
+                  f'{f" y {len(propias) - len(principales)} Shorts de adelanto" if len(propias) > len(principales) else ""}'
+                  f'</h2>{filtros}</div><div class="rejilla">{"".join(ficha(e, "../", con_tema=False) for e in propias)}</div>')
+        lado = ""
+        mapa = mapa_svg(principales, "../")
+        if mapa:
+            lado += f'<div class="caja"><h2>Mapa de los casos</h2>{mapa}</div>'
+        linea = linea_tiempo(principales, "../")
+        if linea:
+            lado += f'<div class="caja"><h2>Línea de tiempo</h2>{linea}</div>'
+    else:
+        fichas = (f'<div class="proximamente"><p class="mono" style="font-size:12px">Próximamente</p>'
+                  f'<p style="font-size:18px; margin-top:8px">La primera serie de esta temática se está documentando. '
+                  f'Mientras tanto, abre otro folio.</p><div class="botones" style="justify-content:center">'
+                  f'<a class="boton" href="../index.html#tematicas">Ver todas las temáticas</a></div></div>')
+        lado = ""
+    mas = parecidos(clave, listados, "../")
+    if mas:
+        lado += f'<div class="caja"><h2>Si te gusta esto</h2>{mas}</div>'
+    cuerpo = f"""<main class="pagina-tema t-{clave}">
+<div class="tema-cab"><div class="ancho">
+<div class="mono">Temática {i:02d} · {len(principales)} {"folio" if len(principales) == 1 else "folios"}</div>
+<h1>{escape(t["nombre"])}</h1>
+<p>{escape(t["intro"])}</p>
+</div></div>
+<div class="ancho tema-cuerpo"><div>{fichas}</div><aside class="lateral">{lado}</aside></div>
+</main>"""
+    jsonld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": t["nombre"], "url": f"{URL}/{ruta}",
+               "inLanguage": "es", "description": descripcion, "isPartOf": {"@type": "WebSite", "name": MARCA, "url": f"{URL}/"}}]
+    if principales:
+        jsonld.append({"@context": "https://schema.org", "@type": "ItemList", "name": t["nombre"],
+                       "numberOfItems": len(principales),
+                       "itemListElement": [{"@type": "ListItem", "position": n, "name": titulo_limpio(e)["titulo"],
+                                            "url": f"{URL}/expedientes/{e['_slug']}.html"}
+                                           for n, e in enumerate(principales, 1)]})
+    return pagina(f"{t['nombre']}: historias reales documentadas · {MARCA}", cuerpo, canal, raiz="../",
+                  descripcion=descripcion, ruta=ruta, jsonld=jsonld, extra=FILTRO_JS)
+
+
+def pagina_mapa(listados: list[dict], canal: dict) -> str:
+    """Todos los folios en el mapa del mundo, con el color de su temática."""
+    leyenda = "".join(f'<li class="t-{k}"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
+                      f'background:var(--t-acento);margin-right:6px"></span><a href="{k}/">{escape(t["nombre"])}</a></li>'
+                      for k, t in TEMATICAS.items() if any(e["tematica"] == k for e in listados))
+    cuerpo = f"""<main class="ancho seccion">
+<div class="seccion-cab"><h1 style="font-size:clamp(28px,5vw,42px)">El mapa de los folios</h1>
+<span class="cuenta">{len([e for e in listados if e.get("mapa")])} casos en el mapa</span></div>
+<p class="nota" style="margin-bottom:18px">Dónde pasó cada historia. Toca un punto para abrir su folio.</p>
+<div class="caja" style="padding:10px">{mapa_svg(listados, recortar=False)}</div>
+<ul class="chips" style="list-style:none; margin-top:16px">{leyenda}</ul>
+</main>"""
+    return pagina(f"Mapa de los folios · {MARCA}", cuerpo, canal, ruta="mapa.html",
+                  descripcion="Mapa de todas las historias reales de Folio 13: dónde pasó cada caso.")
+
+
+# «Historias de miedo reales»: los folios más oscuros (por número o por sus etiquetas)
 CASOS_DE_MIEDO = {"A001", "A004", "A009", "A010", "A011"}
 PALABRAS_DE_MIEDO = ("miedo", "crimen", "crímenes", "misterio", "leyenda", "críptido", "drácula", "sin resolver",
                      "fantasma", "halloween", "asesin", "terror", "vampir", "monstruo")
@@ -924,7 +1287,8 @@ PALABRAS_DE_MIEDO = ("miedo", "crimen", "crímenes", "misterio", "leyenda", "cr�
 
 def es_de_miedo(e: dict) -> bool:
     texto = " ".join(e.get("etiquetas", []) + [e["titulo"]]).lower()
-    return e.get("num") in CASOS_DE_MIEDO or any(p in texto for p in PALABRAS_DE_MIEDO)
+    return (e.get("num") in CASOS_DE_MIEDO or e.get("tematica") in ("paranormal", "crimenes")
+            or any(p in texto for p in PALABRAS_DE_MIEDO))
 
 
 TOP_HALLOWEEN = re.compile(r"^\s*TOP\s*(\d+)\s*HALLOWEEN\s*:\s*", re.I)
@@ -958,14 +1322,14 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
     # En temporada, la página hace de portada de Halloween (título y descripción con la palabra que la gente busca)
     halloween = es_halloween()
     if halloween:
-        descripcion = ("Historias de miedo reales para Halloween: el Top 10 del archivo en cuenta atrás y más casos "
+        descripcion = ("Historias de miedo reales para Halloween: el Top 10 en cuenta atrás y más casos "
                        "documentados con fuentes. Crímenes sin resolver, barcos fantasma y bestias que existieron.")
     cuerpo = f"""<main class="ancho seccion">
-<div class="sello-rojo mono" style="margin-bottom:22px">{"Especial Halloween" if halloween else "Solo para valientes"}</div>
+<div class="sello-txt" style="margin-bottom:22px">{"Especial Halloween" if halloween else "Solo para valientes"}</div>
 <h1 style="font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:1.08; max-width:18ch">Historias de miedo <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">reales</span></h1>
 <div class="lectura" style="margin:22px 0 34px; max-width:720px">
 <p class="bloque" style="margin-top:0">No hace falta inventar nada para pasar miedo. La historia está llena de sucesos que darían para una película de terror: una granja donde alguien vivió escondido en el desván, un barco que apareció a la deriva sin nadie a bordo, una bestia que atacó durante tres años a los pastores de una región de Francia o un juicio en Galicia contra un hombre que decía convertirse en lobo.</p>
-<p class="bloque" style="margin-top:14px">En El Archivo Curioso los contamos como lo que son: casos reales, con sus fuentes, separando lo que se sabe de lo que se añadió después. Sin morbo, pero sin quitarles una pizca de inquietud.</p>
+<p class="bloque" style="margin-top:14px">En Folio 13 los contamos como lo que son: casos reales, con sus fuentes, separando lo que se sabe de lo que se añadió después. Sin morbo, pero sin quitarles una pizca de inquietud.</p>
 </div>
 {top}
 <div class="seccion-cab" style="margin-top:56px"><h2>Casos oscuros</h2><span class="cuenta">{len(casos)} {"caso" if len(casos) == 1 else "casos"}. Léelos con la luz encendida.</span></div>
@@ -985,40 +1349,41 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
 
 
 def indice_temas(temas: dict[str, list[dict]], canal: dict) -> str:
-    descripcion = "Todos los temas de El Archivo Curioso: estafas, desastres, mitos, cine, misterios y más."
+    descripcion = "Todas las etiquetas de Folio 13: estafas, desastres, mitos, cine, misterios y más."
     cuerpo = f"""<main class="ancho seccion">
-<div class="seccion-cab"><h1 style="font-size:clamp(28px,5vw,42px); letter-spacing:-.02em">Temas</h1>
-<span class="cuenta">{len(temas)} temas</span></div>
+<div class="seccion-cab"><h1 style="font-size:clamp(28px,5vw,42px)">Etiquetas</h1>
+<span class="cuenta">{len(temas)} etiquetas · <a href="../index.html#tematicas">ver las 7 temáticas</a></span></div>
 {chips_temas(temas, "../")}
 </main>"""
-    return pagina(f"Temas · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=descripcion,
+    return pagina(f"Etiquetas · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=descripcion,
                   ruta="temas/index.html")
 
 
 def buscar(canal: dict) -> str:
     cuerpo = """<main class="ancho seccion lectura">
-<h1 style="font-size:clamp(28px,5vw,42px); letter-spacing:-.02em">Buscar en el archivo</h1>
+<h1 style="font-size:clamp(28px,5vw,42px)">Buscar un folio</h1>
 <label for="q" class="nota" style="display:block; margin-top:14px">Escribe un nombre, un lugar, un año o un tema</label>
 <input id="q" class="buscador" type="search" autocomplete="off" placeholder="Ej.: Torre Eiffel, 1919, vampiros…">
 <div id="cuenta" class="nota" aria-live="polite" style="margin-bottom:14px"></div>
 <div id="resultados" class="rejilla"></div>
 </main>"""
     return pagina(f"Buscar · {canal['nombre']}", cuerpo, canal, ruta="buscar.html",
-                  descripcion="Busca entre todos los expedientes de El Archivo Curioso.", extra=BUSCAR_JS)
+                  descripcion="Busca entre todos los folios de Folio 13.", extra=BUSCAR_JS)
 
 
 def inicio(canal: dict, expedientes: list[dict]) -> str:
     temas = temas_de(expedientes)
-    # Solo las frases cuyo expediente ya está publicado; la primera va en el HTML y el navegador elige otra al azar
+    # Solo las frases cuyo folio ya está publicado; la primera va en el HTML y el navegador elige otra al azar
     por_num = {e["num"]: e for e in expedientes if e.get("num")}
     frases = [dict(p, u=f'expedientes/{por_num[p["num"]]["_slug"]}.html')
               for p in (canal.get("portadas") or PORTADAS) if p.get("num") in por_num]
     if not frases:
-        frases = [{"antes": "Hay cosas que ", "tachado": "no deberías saber", "despues": ".", "u": "buscar.html"}]
+        frases = [{"antes": "Hay cosas que ", "tachado": "parecen inventadas", "despues": ".", "u": "buscar.html"}]
     p = frases[0]
     frase = (f'<a href="{p["u"]}">{escape(p["antes"])}<span class="tachado">{escape(p["tachado"])}</span>'
              f'{escape(p["despues"])}</a>')
-    abrir = f'<a class="boton" href="{p["u"]}">Abrir el expediente</a>'
+    abrir = (f'<a class="boton" href="expedientes/{expedientes[0]["_slug"]}.html">Abrir el último folio</a>'
+             if expedientes else "")
     datos_frases = json.dumps(frases, ensure_ascii=False).replace("</", "<\\/")
     if expedientes:
         lista = ('<div class="filtros" role="group" aria-label="Filtrar">'
@@ -1030,74 +1395,153 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
         rejilla = f'<div class="rejilla">{"".join(ficha(e) for e in generales)}</div>'
     else:
         lista = ""
-        rejilla = (f'<div class="vacio"><div class="logo">{LUPA_SVG}</div>'
-                   '<p>Los primeros expedientes se están catalogando.<br>Muy pronto los encontrarás aquí.</p></div>')
+        rejilla = (f'<div class="vacio"><div class="logo">{sello_svg("-vacio")}</div>'
+                   '<p>Los primeros folios se están documentando.<br>Muy pronto los encontrarás aquí.</p></div>')
+    tarjetas = "".join(tarjeta_tematica(k, i, [e for e in expedientes if e["tematica"] == k])
+                       for i, k in enumerate(TEMATICAS, 1))
+    top = bloque_top(expedientes, enlace=True) if es_halloween() else ""
     cuerpo = f"""<main class="ancho">
 <section class="portada">
   <div class="linterna" aria-hidden="true"></div>
-  <div class="vigilante" aria-hidden="true">{LUPA_SVG}</div>
   {deco_portada() if es_halloween() else ""}
-  <div class="sello-rojo mono">Clasificado</div>
-  <p class="susurro mono">Abriste el archivo a las <b data-hora>esta hora</b>. Nadie más lo sabe.</p>
-  <h1 id="frase" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</h1>
-  <p class="pista">Pasa el ratón por lo tachado. O tócalo. Si te atreves.</p>
-  <p class="desc">{escape(canal['lema'])}. Expedientes reales, con fuentes, de los que no se hablan en clase.</p>
-  <div class="botones" id="abrir">{abrir}<a class="boton secundario sorprendeme" href="buscar.html">Sorpréndeme</a></div>
-  <a class="bajar mono" href="#expedientes">↓ {len(expedientes)} expedientes abiertos</a>
+  <div class="portada-grid">
+  <div>
+    <span class="sello-txt">Caso verificado</span>
+    <h1 id="frase" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</h1>
+    <p class="desc">Historias que parecen inventadas: crímenes, leyendas, cine maldito y misterios. Cada dato lleva su fuente para que lo compruebes tú.</p>
+    <p class="pista">Pasa el ratón por lo tachado, o tócalo, para leerlo.</p>
+    <div class="botones" id="abrir">{abrir}<a class="boton secundario sorprendeme" href="buscar.html">Una historia al azar</a></div>
+  </div>
+  <div class="lateral-portada">
+    <div class="logo sello-grande">{sello_svg("-portada")}</div>
+    <div class="contador">
+      <div><b>{len(expedientes)}</b><span>FOLIOS</span></div>
+      <div><b>{fuentes_de(expedientes)}</b><span>FUENTES</span></div>
+      <div><b>{len(TEMATICAS)}</b><span>TEMÁTICAS</span></div>
+    </div>
+    <p class="leidos" data-leidos>{len(expedientes)} historias reales, todas con sus fuentes.</p>
+  </div>
+  </div>
   <script type="application/json" id="frases">{datos_frases}</script>
 </section>
-<section class="seccion bloque-top">{bloque_top(expedientes, enlace=True)}</section>
-<section id="expedientes" class="seccion">
-  <div class="seccion-cab"><div><h2>Expedientes abiertos</h2><span class="cuenta">{len([e for e in expedientes if not puesto_top(e)])} casos. Ninguno debería haber pasado.</span></div>{lista}</div>
+<section id="tematicas" class="seccion" style="padding-top:12px">
+  <div class="seccion-cab"><h2>Elige por dónde empezar</h2><span class="cuenta"><a href="mapa.html">Ver todos en el mapa →</a></span></div>
+  <div class="rejilla-temas">{tarjetas}</div>
+</section>
+{f'<section class="seccion bloque-top">{top}</section>' if top else ""}
+<section id="folios" class="seccion">
+  <div class="seccion-cab"><div><h2>Todos los folios</h2><span class="cuenta">{len([e for e in expedientes if not puesto_top(e)])} historias. Del más reciente al más antiguo.</span></div>{lista}</div>
   {rejilla}
 </section>
 <section class="seccion" style="padding-top:0">
-  <div class="seccion-cab"><h2>Explora por temas</h2></div>
+  <div class="seccion-cab"><h2>Por etiquetas</h2></div>
   {chips_temas(temas)}
 </section>
 </main>"""
     jsonld = [
-        {"@context": "https://schema.org", "@type": "WebSite", "name": canal["nombre"], "url": f"{URL}/",
+        {"@context": "https://schema.org", "@type": "WebSite", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/",
          "inLanguage": "es", "description": canal["descripcion"],
          "potentialAction": {"@type": "SearchAction", "target": f"{URL}/buscar.html?q={{q}}", "query-input": "required name=q"}},
-        {"@context": "https://schema.org", "@type": "Organization", "name": canal["nombre"], "url": f"{URL}/",
-         "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
+        {"@context": "https://schema.org", "@type": "Organization", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/",
+         "slogan": canal["lema"], "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
     ]
-    return pagina(f"{canal['nombre']} | Historias de miedo reales y curiosidades de la historia", cuerpo, canal,
+    return pagina(f"{MARCA} | {canal['lema']} Historias reales con fuentes", cuerpo, canal,
                   descripcion=canal["descripcion"],
                   extra=FRASE_JS + (FILTRO_JS if expedientes else ""), jsonld=jsonld)
 
 
+NOTA_FUENTE = re.compile(r"\[(\d{1,2})\]")
+
+
+def parrafo(texto: str, fuentes: list[dict]) -> str:
+    """Un párrafo del artículo; «[2]» se vuelve una nota que lleva a la fuente nº 2 (si existe)."""
+    partes, ultimo = [], 0
+    for m in NOTA_FUENTE.finditer(texto):
+        n = int(m.group(1))
+        if not 1 <= n <= len(fuentes):
+            continue
+        partes.append(escape(texto[ultimo:m.start()]).rstrip())
+        partes.append(f'<sup class="nota-fuente"><a href="#fuente-{n}" title="{escape(fuentes[n - 1]["titulo"])}">{n}</a></sup>')
+        ultimo = m.end()
+    partes.append(escape(texto[ultimo:]))
+    # Algunos artículos traen negritas de Markdown («**Lo que se discute**»)
+    return "<p>" + re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", "".join(partes)) + "</p>"
+
+
+def lo_que_aprenderas(e: dict) -> list[tuple[str, str]]:
+    """3-5 puntos para «Lo que vas a aprender»: los apartados del artículo (con su ancla) o, si hay pocos,
+    las curiosidades del folio. Todo sale del propio folio."""
+    apartados = [(s["titulo"], f"#s{i}") for i, s in enumerate(e.get("articulo", [])) if s.get("titulo")]
+    if len(apartados) >= 3:
+        return apartados[:5]
+    return [(c, "") for c in e.get("curiosidades", [])[:5]] if len(e.get("curiosidades", [])) >= 3 else apartados
+
+
+def minutos_lectura(e: dict) -> int:
+    palabras = len(" ".join([e.get("resumen", "")] + [p for s in e.get("articulo", []) for p in s["parrafos"]]
+                            + e.get("curiosidades", [])).split())
+    return max(1, round(palabras / 200))
+
+
 def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: dict) -> str:
     tipo = "short" if e.get("tipo") == "short" else "video"
+    t = tematica(e)
+    fuentes = e.get("fuentes", [])
     datos = "".join(f"<span><b>{k}:</b> {escape(v)}</span>" for k, v in (
         ("Lugar", e.get("lugar", "")), ("Época", e.get("epoca", "")), ("Publicado", fecha_larga(e["fecha"])),
         ("Formato", "Short" if tipo == "short" else "Vídeo")) if v)
-    bloques = f'<div class="bloque caso"><h2>El caso</h2><p>{escape(e["resumen"])}</p></div>' if e.get("resumen") else ""
+    # Lo que vas a aprender
+    puntos = lo_que_aprenderas(e)
+    aprender = ""
+    if puntos:
+        items = "".join(f'<li><a href="{a}">{escape(x)}</a></li>' if a else f"<li>{escape(x)}</li>" for x, a in puntos)
+        meta = " · ".join([f"{minutos_lectura(e)} min de lectura", "Short" if tipo == "short" else "Vídeo",
+                           f"{len(fuentes)} {'fuente' if len(fuentes) == 1 else 'fuentes'}"])
+        aprender = (f'<div class="aprender"><h2>Lo que vas a aprender</h2><ol>{items}</ol>'
+                    f'<div class="meta mono">{escape(meta)}</div></div>')
     # Artículo completo: lista de secciones {"titulo": "...", "parrafos": ["...", ...]}
-    for seccion in e.get("articulo", []):
+    texto = ""
+    for i, seccion in enumerate(e.get("articulo", [])):
         titulo = f'<h2>{escape(seccion["titulo"])}</h2>' if seccion.get("titulo") else ""   # la entradilla no lleva título
-        bloques += (f'<div class="bloque articulo">{titulo}'
-                    + "".join(f"<p>{escape(p)}</p>" for p in seccion["parrafos"]) + "</div>")
-    if e.get("curiosidades"):
-        bloques += ('<div class="bloque"><h2>Curiosidades del expediente</h2><ul class="curiosidades">'
-                    + "".join(f"<li>{escape(c)}</li>" for c in e["curiosidades"]) + "</ul></div>")
+        texto += (f'<div class="bloque articulo" id="s{i}">{titulo}'
+                  + "".join(parrafo(p, fuentes) for p in seccion["parrafos"]) + "</div>")
+    # «¿Lo habrías creído?»: las tres primeras curiosidades; las demás, en la lista
+    curiosidades = e.get("curiosidades", [])
+    quiz = ""
+    if curiosidades:
+        preguntas = "".join(
+            f'<div class="pregunta-bloque"><p class="pregunta">{escape(c)}</p><div class="opciones">'
+            f'<button type="button" data-cree="si">Me lo creo</button><button type="button" data-cree="no">No me lo creo</button></div>'
+            f'<p class="respuesta">✓ Es verdad. Está en este folio y en sus fuentes.</p></div>' for c in curiosidades[:3])
+        quiz = (f'<div class="quiz"><h2>¿Lo habrías creído?</h2><p class="nota">Tres datos de este folio. '
+                f'¿Te los habrías creído si te los cuentan sin fuentes?</p>{preguntas}<p class="marcador" aria-live="polite"></p>'
+                f'<div class="progreso">TU ARCHIVO <span class="barra"><i></i></span><span data-leidos="corto"></span></div></div>')
+    resto = curiosidades[3:]
+    if resto:
+        texto += ('<div class="bloque"><h2>Más datos del folio</h2><ul class="curiosidades">'
+                  + "".join(f"<li>{escape(c)}</li>" for c in resto) + "</ul></div>")
+    lecturas = ""
     if e.get("lecturas"):
-        bloques += ('<div class="bloque"><h2>Para saber más</h2><ul class="fuentes">'
+        lecturas = ('<div class="bloque"><h2>Para saber más</h2><ul class="fuentes">'
                     + "".join(enlace_libro(l, canal) for l in e["lecturas"]) + "</ul></div>")
-    if e.get("fuentes"):
-        bloques += ('<div class="bloque"><h2>Fuentes</h2><ul class="fuentes">'
-                    + "".join(f'<li><a href="{escape(f["url"])}" rel="noopener">{escape(f["titulo"])}</a></li>'
-                              for f in e["fuentes"]) + "</ul></div>")
+    # Columna lateral: semáforo (solo si el folio lo trae), fuentes numeradas y etiquetas
+    lado = ""
+    if e.get("verdad"):
+        filas = "".join(f'<li><em class="{VERDAD[v["estado"]][0]}">{VERDAD[v["estado"]][1].upper()}</em>'
+                        f'<span>{escape(v["texto"])}</span></li>' for v in e["verdad"] if v.get("estado") in VERDAD)
+        lado += f'<div class="verdad"><h2>Semáforo de la verdad</h2><ul>{filas}</ul></div>'
+    if fuentes:
+        lado += ('<div class="fuentes-caja"><h2>Fuentes</h2><ol>'
+                 + "".join(f'<li id="fuente-{n}"><a href="{escape(f["url"])}" rel="noopener">{escape(f["titulo"])}</a></li>'
+                           for n, f in enumerate(fuentes, 1)) + "</ol></div>")
     if e.get("etiquetas"):
-        bloques += ('<div class="bloque chips">'
-                    + "".join(f'<a href="../temas/{slug(t)}.html">{escape(t)}</a>' for t in e["etiquetas"])
-                    + "</div>")
-    nav = '<nav class="navegacion" aria-label="Otros expedientes">'
+        lado += ('<div class="chips">'
+                 + "".join(f'<a href="../temas/{slug(x)}.html">{escape(x)}</a>' for x in e["etiquetas"]) + "</div>")
+    nav = '<nav class="navegacion" aria-label="Otros folios">'
     if anterior:
-        nav += f'<a href="{anterior["_slug"]}.html"><small>← Anterior</small>{escape(anterior["titulo"])}</a>'
+        nav += f'<a href="{anterior["_slug"]}.html"><small>← Folio anterior</small>{escape(anterior["titulo"])}</a>'
     if siguiente:
-        nav += f'<a class="sig" href="{siguiente["_slug"]}.html"><small>Siguiente →</small>{escape(siguiente["titulo"])}</a>'
+        nav += f'<a class="sig" href="{siguiente["_slug"]}.html"><small>Folio siguiente →</small>{escape(siguiente["titulo"])}</a>'
     nav += "</nav>"
     if e.get("youtube"):
         video = f"""<div class="reproductor {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
@@ -1107,13 +1551,13 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     else:
         # Aún no está en YouTube: miniatura y aviso de dónde verlo
         img = e["_img"] if e["_img"].startswith("http") else "../" + e["_img"]
-        video = (f'<img src="{escape(img)}" alt="{escape(e["titulo"])}" style="display:block; width:100%; border-radius:14px">'
-                 '<p class="ver-yt">El vídeo de este expediente ya está en '
+        video = (f'<img src="{escape(img)}" alt="{escape(e["titulo"])}" style="display:block; width:100%; border-radius:8px">'
+                 '<p class="ver-yt">El vídeo de este folio ya está en '
                  '<a href="https://www.tiktok.com/@elarchivocurioso7" rel="noopener">TikTok</a> y muy pronto llegará a '
                  f'<a href="{escape(canal["youtube"])}">YouTube</a>.</p>')
     if e.get("_episodio"):
         ep = e["_episodio"]
-        video += (f'<div class="bloque relacionado"><p>📜 Este Short es un adelanto. El expediente completo, con todo el '
+        video += (f'<div class="relacionado"><p>📂 Este Short es un adelanto. El folio completo, con todo el '
                   f'contexto y las fuentes: <a href="{ep["_slug"]}.html">{escape(ep["titulo"])}</a></p></div>')
     # Los Shorts sacados de este episodio no tienen tarjeta propia: van aquí, en «En 1 minuto»
     en_un_minuto = ""
@@ -1127,39 +1571,51 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     final = ""
     if siguiente or anterior:
         otro = siguiente or anterior
-        final = (f'<div class="sabes-demasiado"><p class="grande">Ya sabes demasiado.</p>'
-                 f'<p class="peque">Pero el archivo no se acaba aquí.</p>'
-                 f'<a class="boton" href="{otro["_slug"]}.html">Abrir el siguiente expediente</a></div>')
-    cuerpo = f"""<div class="exposicion" aria-hidden="true"></div><div class="reloj mono" aria-hidden="true"></div>
-<main class="ancho expediente"><div class="lectura">
-<a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
-<div class="ficha-num mono">{f"Top 10 de Halloween · Nº {puesto_top(e)}" if puesto_top(e) else "Expediente " + escape(num_ficha(e))}</div>
+        final = (f'<div class="sabes-demasiado"><p class="grande">Parecía inventado.</p>'
+                 f'<p class="peque">Pero está documentado. Y quedan más folios por abrir.</p>'
+                 f'<a class="boton" href="{otro["_slug"]}.html">Abrir el próximo folio</a></div>')
+    miga = (f'<div class="miga mono"><a href="../index.html#folios">{escape(num_ficha(e).split(" · ")[0])}</a> · '
+            f'<a href="../{e["tematica"]}/">{escape(t["nombre"])}</a>'
+            + (f' · {escape(e["epoca"])}' if e.get("epoca") else "")
+            + (f' · Top 10 de Halloween, nº {puesto_top(e)}' if puesto_top(e) else "") + "</div>")
+    cuerpo = f"""<div class="exposicion" aria-hidden="true"></div>
+<main class="hist"><div class="ancho">
+{miga}
 <h1 aria-label="{escape(titulo_limpio(e)['titulo'])}">{titulo_html(titulo_limpio(e), enfocable=True)}</h1>
+{f'<p class="sub">{escape(e["resumen"])}</p>' if e.get("resumen") else ""}
 <div class="datos">{datos}</div>
+<div class="hist-grid">
+<div class="hist-texto">
+{aprender}
 {video}
-{bloques}
+{texto}
 {en_un_minuto}
+{quiz}
+{lecturas}
 {apoyo(canal, "../")}
 {bloque_opiniones(e, canal, e.get("_opiniones", []))}
 {final}
 {compartir(e, f"expedientes/{e['_slug']}.html")}
 {nav}
+</div>
+<aside class="hist-lado">{lado}</aside>
+</div>
 </div></main>"""
     ruta = f"expedientes/{e['_slug']}.html"
-    publisher = {"@type": "Organization", "name": canal["nombre"], "url": f"{URL}/", "logo": f"{URL}/logo.png"}
+    publisher = {"@type": "Organization", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/", "logo": f"{URL}/logo.png"}
     # El artículo va siempre (con sus fuentes como citas): es lo que leen y citan buscadores y asistentes de IA
     articulo = {
         "@context": "https://schema.org", "@type": "Article",
         "headline": titulo_limpio(e)["titulo"][:110], "description": e.get("resumen") or e["titulo"],
         "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
         "url": f"{URL}/{ruta}", "mainEntityOfPage": f"{URL}/{ruta}", "inLanguage": "es",
-        "author": publisher, "publisher": publisher,
-        "isPartOf": {"@type": "WebSite", "name": canal["nombre"], "url": f"{URL}/"},
+        "author": publisher, "publisher": publisher, "articleSection": t["nombre"],
+        "isPartOf": {"@type": "WebSite", "name": MARCA, "url": f"{URL}/"},
     }
     if e.get("etiquetas"):
         articulo["keywords"] = ", ".join(e["etiquetas"])
-    if e.get("fuentes"):
-        articulo["citation"] = [{"@type": "CreativeWork", "name": f["titulo"], "url": f["url"]} for f in e["fuentes"]]
+    if fuentes:
+        articulo["citation"] = [{"@type": "CreativeWork", "name": f["titulo"], "url": f["url"]} for f in fuentes]
     if e.get("lugar"):
         articulo["contentLocation"] = {"@type": "Place", "name": e["lugar"]}
     if e.get("epoca"):
@@ -1173,9 +1629,9 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
             "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
             "url": f"{URL}/{ruta}", "inLanguage": "es", "publisher": publisher,
         })
-    return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
+    return pagina(f"{titulo_limpio(e)['titulo']} · {MARCA}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
                   ruta=ruta, imagen=imagen_compartir(e), tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
-                  extra=COPIAR_JS)
+                  extra=COPIAR_JS, folio=str(e["_n"]))
 
 
 def imagen_compartir(e: dict) -> str:
@@ -1186,28 +1642,32 @@ def imagen_compartir(e: dict) -> str:
 
 def acerca(canal: dict) -> str:
     redes = "".join(f'<li><a href="{escape(u)}" rel="noopener">{escape(n)}</a></li>' for n, u in (
-        ("YouTube · El Archivo Curioso", canal["youtube"]), *REDES_SOCIALES))
+        ("YouTube · Folio 13", canal["youtube"]), *REDES_SOCIALES))
     cuerpo = f"""<main class="ancho legal">
 <a class="volver" href="index.html">← Inicio</a>
-<h1>Acerca de El Archivo Curioso</h1>
+<h1>Cómo verificamos</h1>
 <div class="fecha">{escape(canal['lema'])}</div>
-<h2>Qué es este archivo</h2>
-<p>El Archivo Curioso es un proyecto de divulgación en español que abre «expedientes» sobre la historia: sucesos reales tan extraños que parecen inventados, mitos que se repiten desde hace siglos, personajes olvidados y curiosidades que no suelen contarse en clase. Cada expediente se publica como vídeo o Short en YouTube y aquí, en la web, con más contexto, curiosidades y fuentes.</p>
+<h2>Qué es Folio 13</h2>
+<p>Folio 13 (antes El Archivo Curioso) es un proyecto de divulgación en español sobre historias reales que cuesta creer: crímenes del pasado, leyendas, cine maldito, mitos, robos y desastres. Cada historia es un «folio»: se publica como vídeo o Short en YouTube y aquí, en la web, con el artículo completo y todas sus fuentes para que puedas comprobarlo. Da escalofrío, pero sin morbo.</p>
 <h2>Cómo trabajamos</h2>
 <ul>
-  <li><b>Fuentes primero.</b> Cada expediente se basa en fuentes que citamos al final de su página: estudios, enciclopedias de referencia, museos y obras de historiadores.</li>
+  <li><b>Fuentes primero.</b> Cada folio se basa en fuentes que citamos en su página: estudios, sentencias, prensa de la época, enciclopedias de referencia, museos y obras de historiadores.</li>
   <li><b>Lo dudoso se dice.</b> Cuando una cifra o una explicación está discutida, lo indicamos en lugar de presentarla como un hecho.</li>
+  <li><b>El semáforo de la verdad.</b> Cuando un folio lo incluye, cada dato importante lleva su etiqueta: <i>documentado</i> (lo dicen las fuentes), <i>discutido</i> (las fuentes no se ponen de acuerdo) o <i>leyenda</i> (se cuenta, pero no hay pruebas). Ante la duda, «discutido».</li>
   <li><b>Mitos, desmontados con datos.</b> Si un dato muy repetido no aparece en las fuentes de la época, lo señalamos.</li>
+  <li><b>Casos recientes, con cuidado.</b> Solo casos con sentencia firme o cerrados, contando lo que establecen las sentencias y la prensa seria, sin nombres de las víctimas.</li>
   <li><b>Imágenes libres.</b> Usamos obras de dominio público o con licencias libres (sobre todo de Wikimedia Commons) y citamos su origen.</li>
   <li><b>Transparencia.</b> La narración de los vídeos usa una voz sintética, y para preparar los guiones nos ayudamos de herramientas de inteligencia artificial; los datos se contrastan con las fuentes citadas.</li>
 </ul>
 <h2>¿Has encontrado un error?</h2>
-<p>La historia se revisa constantemente. Si crees que un expediente contiene un error, escríbenos en los comentarios del vídeo en YouTube o por mensaje privado en redes, con la fuente si la tienes, y lo revisaremos.</p>
+<p>La historia se revisa constantemente. Si crees que un folio contiene un error, escríbenos en los comentarios del vídeo en YouTube o por mensaje privado en redes, con la fuente si la tienes, y lo revisaremos.</p>
+<h2>Tu archivo</h2>
+<p>La web recuerda qué folios has abierto para enseñarte cuántos te quedan. Esa lista se guarda solo en tu navegador (no se envía a ningún sitio) y se borra al borrar los datos del sitio.</p>
 <h2>Dónde encontrarnos</h2>
 <ul>{redes}</ul>
 </main>"""
-    return pagina(f"Acerca de · {canal['nombre']}", cuerpo, canal, ruta="acerca.html",
-                  descripcion="Qué es El Archivo Curioso, cómo elegimos y comprobamos cada expediente y cómo contactar.")
+    return pagina(f"Cómo verificamos · {MARCA}", cuerpo, canal, ruta="acerca.html",
+                  descripcion="Qué es Folio 13, cómo comprobamos cada folio y sus fuentes, y cómo contactar.")
 
 
 def privacidad(canal: dict) -> str:
@@ -1216,7 +1676,7 @@ def privacidad(canal: dict) -> str:
 <h1>Política de privacidad</h1>
 <div class="fecha">Última actualización: 28 de octubre de 2026</div>
 <h2>1. Qué es esta herramienta</h2>
-<p>"elarchivocurioso scripts" es una herramienta de uso privado que utiliza la persona responsable del canal de YouTube El Archivo Curioso para gestionar su propio canal: subir sus vídeos, completar títulos, descripciones, miniaturas, subtítulos y listas de reproducción, y consultar las estadísticas y los comentarios del canal. No es una aplicación pública ni está pensada para que la usen otras personas.</p>
+<p>"elarchivocurioso scripts" es una herramienta de uso privado que utiliza la persona responsable del canal de YouTube Folio 13 (antes El Archivo Curioso) para gestionar su propio canal: subir sus vídeos, completar títulos, descripciones, miniaturas, subtítulos y listas de reproducción, y consultar las estadísticas y los comentarios del canal. No es una aplicación pública ni está pensada para que la usen otras personas.</p>
 <h2>2. Qué datos se usan</h2>
 <p>Con el permiso que concede la persona titular de la cuenta, la herramienta accede a través de la API de YouTube a:</p>
 <ul>
@@ -1261,7 +1721,7 @@ def generar() -> int:
         for e in repetidas:
             if e is destino:
                 continue
-            for campo in ("articulo", "lecturas", "slug", "censura"):
+            for campo in ("articulo", "lecturas", "slug", "censura", "tematica", "tematica_alt", "mapa", "verdad"):
                 if e.get(campo) and not destino.get(campo):
                     destino[campo] = e[campo]
             visibles.remove(e)
@@ -1300,6 +1760,17 @@ def generar() -> int:
         if episodio:
             e["_episodio"] = episodio
             episodio.setdefault("_shorts", []).append(e)
+    # Cada historia tiene que llevar su temática (un Short de un episodio la hereda). Sin ella no se genera nada:
+    # así ninguna historia nueva se queda fuera de su temática sin que nadie se entere.
+    sin_tema = []
+    for e in visibles:
+        if not e.get("tematica") and e.get("_episodio", {}).get("tematica"):
+            e["tematica"] = e["_episodio"]["tematica"]
+        if e.get("tematica") not in TEMATICAS:
+            sin_tema.append(f"  {e.get('num', '?')} · {e['titulo']} → {e.get('tematica') or 'sin «tematica»'}")
+    if sin_tema:
+        sys.exit("ERROR: estas historias no tienen una «tematica» válida (" + ", ".join(TEMATICAS) + "):\n"
+                 + "\n".join(sin_tema) + "\nAñádela en Web/datos/expedientes.json y vuelve a generar.")
     # Los Shorts que salen de un episodio cuentan lo mismo: tienen página (para YouTube y Google), pero no tarjeta;
     # se ven dentro de su episodio. En las listas solo salen los episodios y los Shorts independientes.
     listados = [e for e in visibles if not e.get("_episodio")]
@@ -1309,6 +1780,8 @@ def generar() -> int:
     for e in visibles:
         if e.get("_episodio"):
             e["_n"] = e["_episodio"]["_n"]
+    global TOTAL_FOLIOS
+    TOTAL_FOLIOS = len(listados)
 
     # Opiniones aprobadas: Web/datos/opiniones.json, lista de {"expediente": num o slug (o "general"),
     # "estrellas": 1-5, "texto", "nombre", "fecha": "AAAA-MM-DD"}. Lo que no está aquí no se publica.
@@ -1353,6 +1826,14 @@ def generar() -> int:
     for tema, es in temas.items():
         (dir_temas / f"{slug(tema)}.html").write_text(pagina_tema(tema, es, canal), encoding="utf-8")
     (dir_temas / "index.html").write_text(indice_temas(temas, canal), encoding="utf-8")
+    # Las 7 temáticas, cada una en su carpeta (/paranormal/, /crimenes/…), y el mapa de todos los folios
+    for i, clave in enumerate(TEMATICAS, 1):
+        carpeta = SALIDA / clave
+        if carpeta.exists():
+            shutil.rmtree(carpeta)
+        carpeta.mkdir()
+        (carpeta / "index.html").write_text(pagina_tematica(clave, i, visibles, listados, canal), encoding="utf-8")
+    (SALIDA / "mapa.html").write_text(pagina_mapa(listados, canal), encoding="utf-8")
 
     # Enlace de cada vídeo de YouTube a su página (para ponerlo en las descripciones de YouTube).
     # La sincronización de albuuss depende de este formato: {ID: {num, titulo, url}}
@@ -1363,11 +1844,11 @@ def generar() -> int:
     # Datos para las imágenes de compartir (las dibuja Promocion/compartir.py; aquí solo el texto)
     (WEB / "datos" / "compartir.json").write_text(json.dumps(
         [dict(zip(("antes", "tachado", "despues"), partes_titulo(e)), slug=e["_slug"], num=num_ficha(e),
-              img=e["_img"], tipo=e.get("tipo", "video")) for e in visibles],
+              img=e["_img"], tipo=e.get("tipo", "video"), tematica=tematica(e)["nombre"]) for e in visibles],
         ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (SALIDA / "indice.json").write_text(json.dumps(
         [{"t": titulo_limpio(e)["titulo"], "u": f"expedientes/{e['_slug']}.html", "r": e.get("resumen", ""),
-          "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""),
+          "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""), "m": tematica(e)["nombre"],
           "n": f"Top 10 de Halloween · Nº {puesto_top(e)}" if puesto_top(e) else num_ficha(e)}
          for e in listados], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
@@ -1388,6 +1869,11 @@ def generar() -> int:
         for icono in ICONOS:
             if (WEB / icono).exists():
                 shutil.copyfile(WEB / icono, SALIDA / icono)
+    # Dominio propio (GitHub Pages lo lee del archivo CNAME). Sin dominio, no debe existir el archivo
+    if DOMINIO:
+        (SALIDA / "CNAME").write_text(DOMINIO + "\n", encoding="utf-8")
+    elif (SALIDA / "CNAME").exists():
+        (SALIDA / "CNAME").unlink()
     # Archivo de verificación de Google Search Console (no se debe borrar nunca)
     if canal.get("google_archivo"):
         (SALIDA / canal["google_archivo"]).write_text(f"google-site-verification: {canal['google_archivo']}",
@@ -1411,6 +1897,9 @@ def generar() -> int:
     hoy = date.today().isoformat()
     entradas = [(f"{URL}/", visibles[0]["fecha"][:10] if visibles else hoy)]
     entradas += [(f"{URL}/expedientes/{e['_slug']}.html", e["fecha"][:10]) for e in visibles]
+    entradas += [(f"{URL}/{k}/", max((e["fecha"][:10] for e in visibles if e["tematica"] == k), default=hoy))
+                 for k in TEMATICAS]
+    entradas.append((f"{URL}/mapa.html", hoy))
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))
     entradas.append((f"{URL}/apoya.html", hoy))
@@ -1431,24 +1920,28 @@ def generar() -> int:
     (SALIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\n{robots_ia}Sitemap: {URL}/sitemap.xml\n",
                                        encoding="utf-8")
     # llms.txt: resumen del archivo para los asistentes de IA (propuesta llmstxt.org)
-    lineas = [f"# {canal['nombre']}", "", f"> {canal['lema']}. {canal['descripcion']}", "",
-              "Blog en español de historias de miedo reales y curiosidades de la historia: crímenes antiguos y sin "
-              "resolver, barcos fantasma, leyendas con base real, sucesos insólitos y mitos desmontados. Cada "
-              "expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.", "",
+    lineas = [f"# {MARCA}", "", f"> {canal['lema']} {canal['descripcion']}", "",
+              f"{MARCA} (antes {ANTES}) es una web en español de historias reales que cuesta creer: crímenes del pasado, "
+              "leyendas, cine maldito y perdido, mitos desmontados, robos y desastres. Cada historia es un «folio» con "
+              "su artículo, sus fuentes enlazadas y su vídeo en YouTube.", "",
               f"- [Historias de miedo reales]({URL}/historias-de-miedo-reales.html): selección de los casos más oscuros.",
-              "", "## Expedientes", ""]
-    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)}: "
-               f"{e.get('resumen', '')}" for e in listados]
-    lineas += ["", "## Temas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
+              f"- [Mapa de los folios]({URL}/mapa.html): dónde pasó cada historia.",
+              "", "## Temáticas", ""]
+    lineas += [f"- [{t['nombre']}]({URL}/{k}/): {t['corto']}" for k, t in TEMATICAS.items()]
+    lineas += ["", "## Folios", ""]
+    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)} · "
+               f"{tematica(e)['nombre']}: {e.get('resumen', '')}" for e in listados]
+    lineas += ["", "## Etiquetas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
     lineas += ["", "## Más", "", f"- [Todos los artículos completos, en texto]({URL}/llms-full.txt)",
-               f"- [Acerca del archivo y cómo trabajamos]({URL}/acerca.html)",
+               f"- [Cómo verificamos cada folio]({URL}/acerca.html)",
                f"- [Canal de YouTube]({canal['youtube']})", ""]
     (SALIDA / "llms.txt").write_text("\n".join(lineas), encoding="utf-8")
     # llms-full.txt: los artículos enteros en texto plano, con sus fuentes, para que una IA pueda leerlos y citarlos
-    completo = [f"# {canal['nombre']}: todos los expedientes", "",
-                f"> {canal['lema']}. Fuente: {URL}/ · Cada caso enlaza a su página, que es la que conviene citar.", ""]
+    completo = [f"# {MARCA}: todos los folios", "",
+                f"> {canal['lema']} Fuente: {URL}/ · Cada caso enlaza a su página, que es la que conviene citar.", ""]
     for e in listados:
-        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html"]
+        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html",
+                     f"Temática: {tematica(e)['nombre']}"]
         completo += [f"{k}: {e[c]}" for k, c in (("Lugar", "lugar"), ("Época", "epoca")) if e.get(c)]
         completo += ["", e.get("resumen", ""), ""]
         for seccion in e.get("articulo", []):
@@ -1457,8 +1950,10 @@ def generar() -> int:
             completo += [p + "\n" for p in seccion["parrafos"]]
         if e.get("curiosidades"):
             completo += ["### Curiosidades", ""] + [f"- {c}" for c in e["curiosidades"]] + [""]
+        if e.get("verdad"):
+            completo += ["### Semáforo de la verdad", ""] + [f"- {v['estado']}: {v['texto']}" for v in e["verdad"]] + [""]
         if e.get("fuentes"):
-            completo += ["### Fuentes", ""] + [f"- {f['titulo']}: {f['url']}" for f in e["fuentes"]] + [""]
+            completo += ["### Fuentes", ""] + [f"- [{n}] {f['titulo']}: {f['url']}" for n, f in enumerate(e["fuentes"], 1)] + [""]
     (SALIDA / "llms-full.txt").write_text("\n".join(completo), encoding="utf-8")
 
     # Clave de IndexNow (Bing, Yandex...): un archivo con la clave en la raíz demuestra que la web es nuestra

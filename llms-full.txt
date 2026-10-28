@@ -1,10 +1,11 @@
-# El Archivo Curioso: todos los expedientes
+# Folio 13: todos los folios
 
-> Historias reales que parecen inventadas. Fuente: https://elarchivocurioso.github.io/ · Cada caso enlaza a su página, que es la que conviene citar.
+> Parece inventado. Está documentado. Fuente: https://elarchivocurioso.github.io/ · Cada caso enlaza a su página, que es la que conviene citar.
 
 ## TOP 10 «MONSTRUOS» reales de la historia… y el número 1 SIGUE SIN NOMBRE | Top 10 del archivo nº 2
 
 Página: https://elarchivocurioso.github.io/expedientes/top-10-monstruos-reales-de-la-historia-y-el-numero-1-sigue-sin-nombre.html
+Temática: Crímenes del pasado
 Lugar: India, Reino Unido, España, Francia, Alemania y Estados Unidos
 Época: 1790-1974
 
@@ -84,20 +85,21 @@ Ninguno contenía un nombre. Quedan otros dos sin resolver, entre ellos uno de t
 
 ### Fuentes
 
-- Wikipedia en inglés, artículos de cada caso (enlazados arriba): https://en.wikipedia.org/wiki/Thug_Behram
-- The Register, «Zodiac Killer's 340 cipher solved» (2020): https://www.theregister.com/2020/12/12/zodiac_killers_cipher_solved/
-- Wikipedia en español, «Juan Díaz de Garayo»: https://es.wikipedia.org/wiki/Juan_D%C3%ADaz_de_Garayo
-- Wikipedia (inglés), «Mary Ann Cotton»: https://en.wikipedia.org/wiki/Mary_Ann_Cotton
-- Wikipedia (inglés), «Burke and Hare murders»: https://en.wikipedia.org/wiki/Burke_and_Hare_murders
-- Wikipedia (inglés), «Joseph Vacher»: https://en.wikipedia.org/wiki/Joseph_Vacher
-- Wikipedia (inglés), «Henri Désiré Landru»: https://en.wikipedia.org/wiki/Henri_D%C3%A9sir%C3%A9_Landru
-- Wikipedia (inglés), «Peter Kürten»: https://en.wikipedia.org/wiki/Peter_K%C3%BCrten
-- Wikipedia (inglés), «Belle Gunness»: https://en.wikipedia.org/wiki/Belle_Gunness
-- Wikipedia (inglés), «Marcel Petiot»: https://en.wikipedia.org/wiki/Marcel_Petiot
+- [1] Wikipedia en inglés, artículos de cada caso (enlazados arriba): https://en.wikipedia.org/wiki/Thug_Behram
+- [2] The Register, «Zodiac Killer's 340 cipher solved» (2020): https://www.theregister.com/2020/12/12/zodiac_killers_cipher_solved/
+- [3] Wikipedia en español, «Juan Díaz de Garayo»: https://es.wikipedia.org/wiki/Juan_D%C3%ADaz_de_Garayo
+- [4] Wikipedia (inglés), «Mary Ann Cotton»: https://en.wikipedia.org/wiki/Mary_Ann_Cotton
+- [5] Wikipedia (inglés), «Burke and Hare murders»: https://en.wikipedia.org/wiki/Burke_and_Hare_murders
+- [6] Wikipedia (inglés), «Joseph Vacher»: https://en.wikipedia.org/wiki/Joseph_Vacher
+- [7] Wikipedia (inglés), «Henri Désiré Landru»: https://en.wikipedia.org/wiki/Henri_D%C3%A9sir%C3%A9_Landru
+- [8] Wikipedia (inglés), «Peter Kürten»: https://en.wikipedia.org/wiki/Peter_K%C3%BCrten
+- [9] Wikipedia (inglés), «Belle Gunness»: https://en.wikipedia.org/wiki/Belle_Gunness
+- [10] Wikipedia (inglés), «Marcel Petiot»: https://en.wikipedia.org/wiki/Marcel_Petiot
 
 ## La «VAMPIRA» de Barcelona: lo que la prensa inventó sobre Enriqueta Martí (1912)
 
 Página: https://elarchivocurioso.github.io/expedientes/la-vampira-de-barcelona-lo-que-la-prensa-invento-sobre-enriqueta-marti.html
+Temática: Crímenes del pasado
 Lugar: Barcelona (España)
 Época: 1912-1913
 
@@ -163,17 +165,18 @@ Lo que no está documentado es la «vampira». Ni los asesinatos, ni los ungüen
 
 ### Fuentes
 
-- Wikipedia en español, «Enriqueta Martí»: https://es.wikipedia.org/wiki/Enriqueta_Mart%C3%AD
-- Viquipèdia, «Enriqueta Martí i Ripollés»: https://ca.wikipedia.org/wiki/Enriqueta_Mart%C3%AD_i_Ripoll%C3%A9s
-- Wikipedia en inglés, «Enriqueta Martí»: https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD
-- J. J. Caballero, «Jordi Corominas viaja a 1912, cuando Barcelona creó su Jack el Destripador», elDiario.es (2015): https://www.eldiario.es/catalunya/jordi-corominas-barcelona-jack-destripador_1_4430855.html
-- 3Cat, «La vampira del Raval va ser una de les primeres "fake news" de la història» (2020): https://www.3cat.cat/3catinfo/la-vampira-del-raval-va-ser-una-de-les-primeres-fake-news-de-la-historia/noticia-amp/2981000/
-- Reseña de «Desmontando el caso de la vampira del Raval», revista HSE (2015): https://dialnet.unirioja.es/descarga/articulo/4991484.pdf
-- Muy Interesante, «La macabra leyenda de la Vampira de Barcelona»: https://muyinteresante.okdiario.com/historia/36371.html
+- [1] Wikipedia en español, «Enriqueta Martí»: https://es.wikipedia.org/wiki/Enriqueta_Mart%C3%AD
+- [2] Viquipèdia, «Enriqueta Martí i Ripollés»: https://ca.wikipedia.org/wiki/Enriqueta_Mart%C3%AD_i_Ripoll%C3%A9s
+- [3] Wikipedia en inglés, «Enriqueta Martí»: https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD
+- [4] J. J. Caballero, «Jordi Corominas viaja a 1912, cuando Barcelona creó su Jack el Destripador», elDiario.es (2015): https://www.eldiario.es/catalunya/jordi-corominas-barcelona-jack-destripador_1_4430855.html
+- [5] 3Cat, «La vampira del Raval va ser una de les primeres "fake news" de la història» (2020): https://www.3cat.cat/3catinfo/la-vampira-del-raval-va-ser-una-de-les-primeres-fake-news-de-la-historia/noticia-amp/2981000/
+- [6] Reseña de «Desmontando el caso de la vampira del Raval», revista HSE (2015): https://dialnet.unirioja.es/descarga/articulo/4991484.pdf
+- [7] Muy Interesante, «La macabra leyenda de la Vampira de Barcelona»: https://muyinteresante.okdiario.com/historia/36371.html
 
 ## La película PERDIDA más buscada del cine: London After Midnight (1927) | Cine maldito nº 1
 
 Página: https://elarchivocurioso.github.io/expedientes/la-pelicula-perdida-mas-buscada-del-cine-london-after-midnight-1927-ci.html
+Temática: Cine maldito y perdido
 Lugar: Estados Unidos e Inglaterra
 Época: 1927-2017
 
@@ -233,16 +236,17 @@ La película perdida ha generado su propio folclore. Muchas webs fechan el incen
 
 ### Fuentes
 
-- Wikipedia, «London After Midnight (film)»: https://en.wikipedia.org/wiki/London_After_Midnight_(film)
-- Gary D. Rhodes, «Lost, but Not Dead: London After Midnight», Film International: https://filmint.nu/london-after-midnight-gary-d-rhodes/
-- JSTOR Daily, «Lon Chaney's Movie Monsters»: https://daily.jstor.org/lon-chaneys-movie-monsters/
-- Wikipedia (inglés), «1965 MGM vault fire»: https://en.wikipedia.org/wiki/1965_MGM_vault_fire
-- AFI Catalog, «London After Midnight (1927)»: https://catalog.afi.com/Catalog/moviedetails/10334
-- CLIR, estudio de la Biblioteca del Congreso sobre el cine mudo estadounidense (2013): https://www.clir.org/?p=394
+- [1] Wikipedia, «London After Midnight (film)»: https://en.wikipedia.org/wiki/London_After_Midnight_(film)
+- [2] Gary D. Rhodes, «Lost, but Not Dead: London After Midnight», Film International: https://filmint.nu/london-after-midnight-gary-d-rhodes/
+- [3] JSTOR Daily, «Lon Chaney's Movie Monsters»: https://daily.jstor.org/lon-chaneys-movie-monsters/
+- [4] Wikipedia (inglés), «1965 MGM vault fire»: https://en.wikipedia.org/wiki/1965_MGM_vault_fire
+- [5] AFI Catalog, «London After Midnight (1927)»: https://catalog.afi.com/Catalog/moviedetails/10334
+- [6] CLIR, estudio de la Biblioteca del Congreso sobre el cine mudo estadounidense (2013): https://www.clir.org/?p=394
 
 ## JACK el Destripador, el enigma que NADIE ha resuelto
 
 Página: https://elarchivocurioso.github.io/expedientes/top-1-halloween-jack-el-destripador-el-enigma-que-nadie-ha-resuelto.html
+Temática: Crímenes del pasado
 Lugar: Whitechapel, Londres, Reino Unido
 Época: 1888
 
@@ -292,14 +296,15 @@ La cultura popular ha convertido el caso en un género, la «ripperología», co
 
 ### Fuentes
 
-- Wikipedia (en), «Jack the Ripper»: https://en.wikipedia.org/wiki/Jack_the_Ripper
-- Wikipedia (en), «Dear Boss letter»: https://en.wikipedia.org/wiki/Dear_Boss_letter
-- Wikipedia (en), «From Hell letter»: https://en.wikipedia.org/wiki/From_Hell_letter
-- Smithsonian Magazine, «No, We Still Cannot Confirm the Identity of Jack the Ripper» (2019): https://www.smithsonianmag.com/smart-news/no-we-still-cannot-confirm-identity-jack-rippers-180971726/
+- [1] Wikipedia (en), «Jack the Ripper»: https://en.wikipedia.org/wiki/Jack_the_Ripper
+- [2] Wikipedia (en), «Dear Boss letter»: https://en.wikipedia.org/wiki/Dear_Boss_letter
+- [3] Wikipedia (en), «From Hell letter»: https://en.wikipedia.org/wiki/From_Hell_letter
+- [4] Smithsonian Magazine, «No, We Still Cannot Confirm the Identity of Jack the Ripper» (2019): https://www.smithsonianmag.com/smart-news/no-we-still-cannot-confirm-identity-jack-rippers-180971726/
 
 ## CONDENADA siendo INOCENTE: el caso de Mijas y la prueba de ADN que lo cambió todo
 
 Página: https://elarchivocurioso.github.io/expedientes/condenada-siendo-inocente-el-caso-de-mijas-y-la-prueba-de-adn-que-lo-c.html
+Temática: Crímenes del pasado
 Lugar: Mijas y Coín (Málaga, España)
 Época: 1999-2026
 
@@ -375,17 +380,18 @@ Un jurado condenó a una inocente; la televisión lo había hecho antes. Un trib
 
 ### Fuentes
 
-- Wikipedia en español, artículo sobre el caso de Mijas: https://es.wikipedia.org/?curid=1161970
-- elDiario.es, homenaje del Ministerio de Igualdad (27 de abril de 2026): https://www.eldiario.es/sociedad/dolores-vazquez-homenajeada-gobierno-pase-calvario-he-perdonado-recordare-dia_1_13174766.html
-- elDiario.es / EFE, el Supremo deniega la indemnización (2015): https://www.eldiario.es/andalucia/supremo-indemnizacion-millones-dolores-vazquez_1_2558956.html
-- Periódico de Ibiza / EFE, «El ADN confirma la relación de King con los crímenes de Mijas y Coín» (20 de septiembre de 2003): https://www.periodicodeibiza.es/sucesos/ultimas/2003/09/20/703547/el-adn-confirma-la-relacion-de-king-con-los-crimenes-de-mijas-y-coin.html
-- Wikipedia (inglés), artículo sobre el caso de Mijas: https://en.wikipedia.org/?curid=13212737
-- Consejo General del Poder Judicial, «La Audiencia Nacional niega la indemnización a Dolores Vázquez por el tiempo que estuvo en prisión» (2012): https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Documentos-de-Interes/La-Audiencia-Nacional-niega-la-indemnizacion-a-Dolores-Vazquez-por-el-tiempo-que-estuvo-en-prision
-- The Olive Press, «Dolores Vázquez in the clear» (23 de marzo de 2009): https://theolivepress.es/spain-news/2009/03/23/dolores-vazquez-in-the-clear
+- [1] Wikipedia en español, artículo sobre el caso de Mijas: https://es.wikipedia.org/?curid=1161970
+- [2] elDiario.es, homenaje del Ministerio de Igualdad (27 de abril de 2026): https://www.eldiario.es/sociedad/dolores-vazquez-homenajeada-gobierno-pase-calvario-he-perdonado-recordare-dia_1_13174766.html
+- [3] elDiario.es / EFE, el Supremo deniega la indemnización (2015): https://www.eldiario.es/andalucia/supremo-indemnizacion-millones-dolores-vazquez_1_2558956.html
+- [4] Periódico de Ibiza / EFE, «El ADN confirma la relación de King con los crímenes de Mijas y Coín» (20 de septiembre de 2003): https://www.periodicodeibiza.es/sucesos/ultimas/2003/09/20/703547/el-adn-confirma-la-relacion-de-king-con-los-crimenes-de-mijas-y-coin.html
+- [5] Wikipedia (inglés), artículo sobre el caso de Mijas: https://en.wikipedia.org/?curid=13212737
+- [6] Consejo General del Poder Judicial, «La Audiencia Nacional niega la indemnización a Dolores Vázquez por el tiempo que estuvo en prisión» (2012): https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Documentos-de-Interes/La-Audiencia-Nacional-niega-la-indemnizacion-a-Dolores-Vazquez-por-el-tiempo-que-estuvo-en-prision
+- [7] The Olive Press, «Dolores Vázquez in the clear» (23 de marzo de 2009): https://theolivepress.es/spain-news/2009/03/23/dolores-vazquez-in-the-clear
 
 ## El caso de los marqueses de Urquijo: UNA sentencia y DEMASIADAS preguntas (1980)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-caso-de-los-marqueses-de-urquijo-una-sentencia-y-demasiadas-pregunt.html
+Temática: Crímenes del pasado
 Lugar: Somosaguas, Pozuelo de Alarcón (Madrid, España)
 Época: 1980-2010
 
@@ -447,15 +453,16 @@ La prescripción extingue la responsabilidad penal cuando transcurre el plazo qu
 
 ### Fuentes
 
-- Wikipedia, «Crimen de los marqueses de Urquijo»: https://es.wikipedia.org/wiki/Crimen_de_los_marqueses_de_Urquijo
-- Economist & Jurist, «1980: Asesinato de los marqueses de Urquijo»: https://www.economistjurist.es/articulos-juridicos-destacados/1980-asesinato-de-los-marqueses-de-urquijo
-- EFE en Periódico de Ibiza, «Muere López-Roberts, encubridor del crimen de los marqueses de Urquijo» (2014): https://www.periodicodeibiza.es/sucesos/ultimas/2014/06/09/126088/muere-lopez-roberts-encubridor-del-crimen-marqueses-urquijo.html
-- Wikipedia (español), artículo sobre el caso de los marqueses de Urquijo: https://es.wikipedia.org/?curid=4015725
-- esdiario, «45 años del asesinato de los marqueses de Urquijo (I): las claves del crimen más famoso de España» (2025): https://www.esdiario.com/nacional/250730/164275/45-anos-asesinato-marqueses-urquijo-todas-claves-crimen-famoso-espana.html
+- [1] Wikipedia, «Crimen de los marqueses de Urquijo»: https://es.wikipedia.org/wiki/Crimen_de_los_marqueses_de_Urquijo
+- [2] Economist & Jurist, «1980: Asesinato de los marqueses de Urquijo»: https://www.economistjurist.es/articulos-juridicos-destacados/1980-asesinato-de-los-marqueses-de-urquijo
+- [3] EFE en Periódico de Ibiza, «Muere López-Roberts, encubridor del crimen de los marqueses de Urquijo» (2014): https://www.periodicodeibiza.es/sucesos/ultimas/2014/06/09/126088/muere-lopez-roberts-encubridor-del-crimen-marqueses-urquijo.html
+- [4] Wikipedia (español), artículo sobre el caso de los marqueses de Urquijo: https://es.wikipedia.org/?curid=4015725
+- [5] esdiario, «45 años del asesinato de los marqueses de Urquijo (I): las claves del crimen más famoso de España» (2025): https://www.esdiario.com/nacional/250730/164275/45-anos-asesinato-marqueses-urquijo-todas-claves-crimen-famoso-espana.html
 
 ## El crimen de la calle Fuencarral: el PRIMER juicio paralelo de España (1888)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-crimen-de-la-calle-fuencarral-el-primer-juicio-paralelo-de-espana-1.html
+Temática: Crímenes del pasado
 Lugar: Madrid (España)
 Época: 1888-1890
 
@@ -511,15 +518,16 @@ El caso se cerró con dos mujeres humildes condenadas y los hombres con influenc
 
 ### Fuentes
 
-- Wikipedia, «Crimen de la calle Fuencarral»: https://es.wikipedia.org/wiki/Crimen_de_la_calle_Fuencarral
-- Adolfo Carratalá, «De la redacción al juicio: la primera acción popular como explotación periodística del suceso criminal», Revista internacional de Historia de la Comunicación, nº 5 (2015): https://dialnet.unirioja.es/descarga/articulo/5454344.pdf
-- Libertad Digital, «El crimen de la calle Fuencarral»: https://www.libertaddigital.com/opinion/fin-de-semana/el-crimen-de-la-calle-fuencarral-1276229893.html
-- Wikipedia (inglés), «Crime of Fuencarral street»: https://en.wikipedia.org/wiki/Crime_of_Fuencarral_street
-- Ediciones Siruela, fragmento de «El crimen de la calle de Fuencarral», de Benito Pérez Galdós (2024): https://www.siruela.com/archivos/fragmentos/El_crimen_de_la_calle_Fuencarral.pdf
+- [1] Wikipedia, «Crimen de la calle Fuencarral»: https://es.wikipedia.org/wiki/Crimen_de_la_calle_Fuencarral
+- [2] Adolfo Carratalá, «De la redacción al juicio: la primera acción popular como explotación periodística del suceso criminal», Revista internacional de Historia de la Comunicación, nº 5 (2015): https://dialnet.unirioja.es/descarga/articulo/5454344.pdf
+- [3] Libertad Digital, «El crimen de la calle Fuencarral»: https://www.libertaddigital.com/opinion/fin-de-semana/el-crimen-de-la-calle-fuencarral-1276229893.html
+- [4] Wikipedia (inglés), «Crime of Fuencarral street»: https://en.wikipedia.org/wiki/Crime_of_Fuencarral_street
+- [5] Ediciones Siruela, fragmento de «El crimen de la calle de Fuencarral», de Benito Pérez Galdós (2024): https://www.siruela.com/archivos/fragmentos/El_crimen_de_la_calle_Fuencarral.pdf
 
 ## El GRAN HEDOR: el verano en que el Támesis casi echa al PARLAMENTO de Londres (1858)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-gran-hedor-el-verano-en-que-el-tamesis-casi-echa-al-parlamento-de-l.html
+Temática: Desastres y epidemias
 Lugar: Londres, Reino Unido
 Época: 1854-1875
 
@@ -589,16 +597,17 @@ Es cierto que el Támesis era la gran cloaca de Londres, que el olor de 1858 par
 
 ### Fuentes
 
-- Wikipedia, «Great Stink»: https://en.wikipedia.org/wiki/Great_Stink
-- Science Museum, «Cholera in Victorian London»: https://www.sciencemuseum.org.uk/objects-and-stories/medicine/cholera-victorian-london
-- London Museum, «John Snow: Cholera & the Broad Street pump»: https://www.londonmuseum.org.uk/collections/london-stories/john-snow-cholera-broad-street-pump/
-- Science Museum Blog, «Joseph Bazalgette: London's sewer king»: https://blog.sciencemuseum.org.uk/joseph-bazalgette-londons-sewer-king/
-- Thames Water, «History of London's sewer system»: https://www.thameswater.co.uk/about-us/community/days-out/riverside-spaces/history-of-london-sewer-system
-- Wikipedia (inglés), «Thames Tideway Tunnel»: https://en.wikipedia.org/wiki/Thames_Tideway_Tunnel
+- [1] Wikipedia, «Great Stink»: https://en.wikipedia.org/wiki/Great_Stink
+- [2] Science Museum, «Cholera in Victorian London»: https://www.sciencemuseum.org.uk/objects-and-stories/medicine/cholera-victorian-london
+- [3] London Museum, «John Snow: Cholera & the Broad Street pump»: https://www.londonmuseum.org.uk/collections/london-stories/john-snow-cholera-broad-street-pump/
+- [4] Science Museum Blog, «Joseph Bazalgette: London's sewer king»: https://blog.sciencemuseum.org.uk/joseph-bazalgette-londons-sewer-king/
+- [5] Thames Water, «History of London's sewer system»: https://www.thameswater.co.uk/about-us/community/days-out/riverside-spaces/history-of-london-sewer-system
+- [6] Wikipedia (inglés), «Thames Tideway Tunnel»: https://en.wikipedia.org/wiki/Thames_Tideway_Tunnel
 
 ## El golpe al EXPRESO de Andalucía: el caso que la policía cerró en menos de un mes (1924)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-golpe-al-expreso-de-andalucia-el-caso-que-la-policia-cerro-en-menos.html
+Temática: Robos y golpes
 Lugar: Madrid, Aranjuez, Alcázar de San Juan y Córdoba (España)
 Época: 1924
 
@@ -666,15 +675,16 @@ El caso no se olvidó. Inspiró la película «El expreso de Andalucía» (1956)
 
 ### Fuentes
 
-- Pablo de Mora de Fuentes, «Prensa, sensacionalismo y cultura de masas: el crimen del Expreso de Andalucía», Rubrica Contemporanea, vol. XIII, n.º 26 (2024): https://ddd.uab.cat/pub/rubrica/rubrica_a2024v13n26/rubrica_a2024v13n26p105.pdf
-- Wikipedia, «Crimen del expreso de Andalucía»: https://es.wikipedia.org/wiki/Crimen_del_expreso_de_Andalucía
-- Wikipedia, «Andalusian Mail Train Robbery»: https://en.wikipedia.org/wiki/Andalusian_Mail_Train_Robbery
-- Wikipedia (español), «Crimen del expreso de Andalucía»: https://es.wikipedia.org/wiki/Crimen_del_expreso_de_Andaluc%C3%ADa
-- Erudición y Crítica, «Ejecución de los asaltantes del expreso de Andalucía»: http://erudicion.blogspot.com/2013/06/ejecucion-de-los-asaltantes-del-expreso.html
+- [1] Pablo de Mora de Fuentes, «Prensa, sensacionalismo y cultura de masas: el crimen del Expreso de Andalucía», Rubrica Contemporanea, vol. XIII, n.º 26 (2024): https://ddd.uab.cat/pub/rubrica/rubrica_a2024v13n26/rubrica_a2024v13n26p105.pdf
+- [2] Wikipedia, «Crimen del expreso de Andalucía»: https://es.wikipedia.org/wiki/Crimen_del_expreso_de_Andalucía
+- [3] Wikipedia, «Andalusian Mail Train Robbery»: https://en.wikipedia.org/wiki/Andalusian_Mail_Train_Robbery
+- [4] Wikipedia (español), «Crimen del expreso de Andalucía»: https://es.wikipedia.org/wiki/Crimen_del_expreso_de_Andaluc%C3%ADa
+- [5] Erudición y Crítica, «Ejecución de los asaltantes del expreso de Andalucía»: http://erudicion.blogspot.com/2013/06/ejecucion-de-los-asaltantes-del-expreso.html
 
 ## La película de miedo que se quedó SIN DUEÑO por un despiste: La noche de los muertos vivientes
 
 Página: https://elarchivocurioso.github.io/expedientes/la-pelicula-de-miedo-que-se-quedo-sin-dueno-por-un-despiste-la-noche-d.html
+Temática: Cine maldito y perdido
 Lugar: Pittsburgh y Evans City, Pensilvania (Estados Unidos)
 Época: 1967-1990
 
@@ -734,17 +744,18 @@ En toda la película nadie pronuncia la palabra «zombi». Romero llamaba a sus 
 
 ### Fuentes
 
-- Wikipedia, «Night of the Living Dead»: https://en.wikipedia.org/wiki/Night_of_the_Living_Dead
-- Heinz History Center (Pittsburgh), «They're Coming to Get You: Night of the Living Dead»: https://www.heinzhistorycenter.org/?p=1099
-- AFI Catalog, «Night of the Living Dead (1968)»: https://catalog.afi.com/Catalog/moviedetails/19843
-- Wikipedia (inglés), «Duane Jones»: https://en.wikipedia.org/wiki/Duane_Jones
-- WUNC/NPR, sobre la muerte de George A. Romero y la entrevista de 2014: https://www.wunc.org/post/george-romero-creator-night-living-dead-dies-77
-- Wikipedia (inglés), «George A. Romero»: https://en.wikipedia.org/wiki/George_A._Romero
-- Wikipedia (inglés), «White Zombie (film)»: https://en.wikipedia.org/wiki/White_Zombie_(film)
+- [1] Wikipedia, «Night of the Living Dead»: https://en.wikipedia.org/wiki/Night_of_the_Living_Dead
+- [2] Heinz History Center (Pittsburgh), «They're Coming to Get You: Night of the Living Dead»: https://www.heinzhistorycenter.org/?p=1099
+- [3] AFI Catalog, «Night of the Living Dead (1968)»: https://catalog.afi.com/Catalog/moviedetails/19843
+- [4] Wikipedia (inglés), «Duane Jones»: https://en.wikipedia.org/wiki/Duane_Jones
+- [5] WUNC/NPR, sobre la muerte de George A. Romero y la entrevista de 2014: https://www.wunc.org/post/george-romero-creator-night-living-dead-dies-77
+- [6] Wikipedia (inglés), «George A. Romero»: https://en.wikipedia.org/wiki/George_A._Romero
+- [7] Wikipedia (inglés), «White Zombie (film)»: https://en.wikipedia.org/wiki/White_Zombie_(film)
 
 ## ¿EXISTIÓ el fantasma de la ópera? El lago, la lámpara y la cara secreta de Lon Chaney (1925)
 
 Página: https://elarchivocurioso.github.io/expedientes/existio-el-fantasma-de-la-opera-el-lago-la-lampara-y-la-cara-secreta-d.html
+Temática: Cine maldito y perdido
 Lugar: París (Francia) y Hollywood (Estados Unidos)
 Época: 1861-2014
 
@@ -804,16 +815,17 @@ Se cuenta que en 1925 hubo gritos y desmayos en los cines durante el desenmascar
 
 ### Fuentes
 
-- Wikipedia, «The Phantom of the Opera (1925 film)»: https://en.wikipedia.org/wiki/The_Phantom_of_the_Opera_(1925_film)
-- Wikipedia, «Palais Garnier» (francés): https://fr.wikipedia.org/wiki/Palais_Garnier
-- Wikipedia, «The Phantom of the Opera (novel)»: https://en.wikipedia.org/wiki/The_Phantom_of_the_Opera_(novel)
-- Wikisource (francés), «Le Fantôme de l'Opéra», prólogo: https://fr.wikisource.org/wiki/Le_Fant%C3%B4me_de_l%E2%80%99Op%C3%A9ra/Avant-propos
-- Dread Central, «This Day in Horror History: The Phantom of the Opera Was Released in 1925»: https://dreadcentral.com/news/357894/this-day-in-horror-history-the-phantom-of-the-opera-was-released-in-1925
-- Inside Universal, sobre la demolición del plató 28: https://insideuniversal.net/2014/08/historic-soundstage-28-has-been-demolished
+- [1] Wikipedia, «The Phantom of the Opera (1925 film)»: https://en.wikipedia.org/wiki/The_Phantom_of_the_Opera_(1925_film)
+- [2] Wikipedia, «Palais Garnier» (francés): https://fr.wikipedia.org/wiki/Palais_Garnier
+- [3] Wikipedia, «The Phantom of the Opera (novel)»: https://en.wikipedia.org/wiki/The_Phantom_of_the_Opera_(novel)
+- [4] Wikisource (francés), «Le Fantôme de l'Opéra», prólogo: https://fr.wikisource.org/wiki/Le_Fant%C3%B4me_de_l%E2%80%99Op%C3%A9ra/Avant-propos
+- [5] Dread Central, «This Day in Horror History: The Phantom of the Opera Was Released in 1925»: https://dreadcentral.com/news/357894/this-day-in-horror-history-the-phantom-of-the-opera-was-released-in-1925
+- [6] Inside Universal, sobre la demolición del plató 28: https://insideuniversal.net/2014/08/historic-soundstage-28-has-been-demolished
 
 ## El LADRÓN que hizo FAMOSA a la Mona Lisa: la verdad del hurto del Louvre (1911)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-ladron-que-hizo-famosa-a-la-mona-lisa-la-verdad-del-hurto-del-louvr.html
+Temática: Robos y golpes
 Lugar: Francia e Italia
 Época: 1911-1914
 
@@ -877,16 +889,17 @@ Es cierto que Peruggia era un antiguo empleado, que entró con bata un lunes de 
 
 ### Fuentes
 
-- Wikipedia, «Vincenzo Peruggia»: https://en.wikipedia.org/wiki/Vincenzo_Peruggia
-- National Geographic, sobre los robos del Louvre: https://www.nationalgeographic.com/history/article/louvre-museum-robbery-mona-lisa
-- Wikipedia, «Guillaume Apollinaire»: https://en.wikipedia.org/wiki/Guillaume_Apollinaire
-- Wikipedia (inglés), «Mona Lisa»: https://en.wikipedia.org/wiki/Mona_Lisa
-- Wikipedia (inglés), «Eduardo de Valfierno»: https://en.wikipedia.org/wiki/Eduardo_de_Valfierno
-- La Nación, «Martín Caparrós obtuvo anoche el premio Planeta»: https://www.lanacion.com.ar/cultura/martin-caparros-obtuvo-anoche-el-premio-planeta-nid654692/
+- [1] Wikipedia, «Vincenzo Peruggia»: https://en.wikipedia.org/wiki/Vincenzo_Peruggia
+- [2] National Geographic, sobre los robos del Louvre: https://www.nationalgeographic.com/history/article/louvre-museum-robbery-mona-lisa
+- [3] Wikipedia, «Guillaume Apollinaire»: https://en.wikipedia.org/wiki/Guillaume_Apollinaire
+- [4] Wikipedia (inglés), «Mona Lisa»: https://en.wikipedia.org/wiki/Mona_Lisa
+- [5] Wikipedia (inglés), «Eduardo de Valfierno»: https://en.wikipedia.org/wiki/Eduardo_de_Valfierno
+- [6] La Nación, «Martín Caparrós obtuvo anoche el premio Planeta»: https://www.lanacion.com.ar/cultura/martin-caparros-obtuvo-anoche-el-premio-planeta-nid654692/
 
 ## HÄXAN: la película de brujas en la que el director hizo de DIABLO (1922) | Cine maldito nº 2
 
 Página: https://elarchivocurioso.github.io/expedientes/haxan-la-pelicula-de-brujas-en-la-que-el-director-hizo-de-diablo-1922.html
+Temática: Cine maldito y perdido
 Lugar: Suecia, Dinamarca y Europa
 Época: 1486-1968
 
@@ -944,17 +957,18 @@ Christensen la reestrenó años después en Dinamarca con una introducción film
 
 ### Fuentes
 
-- Wikipedia, «Häxan»: https://en.wikipedia.org/wiki/H%C3%A4xan
-- JSTOR Daily, Kristin Hunt, «The Satanic Foreign Film That Was Banned in the U.S.» (2020): https://daily.jstor.org/the-satanic-foreign-film-that-was-banned-in-the-u-s
-- Wikipedia, «Witch trials in the early modern period»: https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period
-- Wikipedia (danés), «Häxan»: https://da.wikipedia.org/wiki/H%C3%A4xan
-- Wikipedia (inglés), «Malleus Maleficarum»: https://en.wikipedia.org/wiki/Malleus_Maleficarum
-- Wikipedia (inglés), «Bamberg witch trials»: https://en.wikipedia.org/wiki/Bamberg_witch_trials
-- The Public Domain Review, «Häxan: Witchcraft Through the Ages (1922)»: https://publicdomainreview.org/collection/haxan-witchcraft-through-the-ages-1922/
+- [1] Wikipedia, «Häxan»: https://en.wikipedia.org/wiki/H%C3%A4xan
+- [2] JSTOR Daily, Kristin Hunt, «The Satanic Foreign Film That Was Banned in the U.S.» (2020): https://daily.jstor.org/the-satanic-foreign-film-that-was-banned-in-the-u-s
+- [3] Wikipedia, «Witch trials in the early modern period»: https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period
+- [4] Wikipedia (danés), «Häxan»: https://da.wikipedia.org/wiki/H%C3%A4xan
+- [5] Wikipedia (inglés), «Malleus Maleficarum»: https://en.wikipedia.org/wiki/Malleus_Maleficarum
+- [6] Wikipedia (inglés), «Bamberg witch trials»: https://en.wikipedia.org/wiki/Bamberg_witch_trials
+- [7] The Public Domain Review, «Häxan: Witchcraft Through the Ages (1922)»: https://publicdomainreview.org/collection/haxan-witchcraft-through-the-ages-1922/
 
 ## El tren que hizo HUIR al público: la VERDAD detrás del mito de los Lumière (1895)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-tren-que-hizo-huir-al-publico-la-verdad-detras-del-mito-de-los-lumi.html
+Temática: Mitos desmontados
 Lugar: Francia
 Época: 1895-1896
 
@@ -1020,17 +1034,18 @@ Es cierto que *La llegada de un tren a la estación de La Ciotat* se rodó en 18
 
 ### Fuentes
 
-- Wikipedia, «L'Arrivée d'un train en gare de La Ciotat» (inglés y francés): https://en.wikipedia.org/wiki/L%27Arriv%C3%A9e_d%27un_train_en_gare_de_La_Ciotat
-- Wikipedia, «Salon indien du Grand Café»: https://fr.wikipedia.org/wiki/Salon_indien_du_Grand_Caf%C3%A9
-- Martin Loiperdinger, «Lumière's Arrival of the Train: Cinema's Founding Myth», The Moving Image 4(1), 2004: https://muse.jhu.edu/article/171125/summary
-- Wikipedia (francés), «L'Arrivée d'un train en gare de La Ciotat»: https://fr.wikipedia.org/wiki/L%27Arriv%C3%A9e_d%27un_train_en_gare_de_La_Ciotat
-- Who's Who of Victorian Cinema, «Maxim Gorky»: https://www.victorian-cinema.net/gorky
-- Institut Lumière, «Le Cinématographe»: https://www.institut-lumiere.org/musee/les-freres-lumiere-et-leurs-inventions/cinematographe.html
-- Wikipedia (inglés), «Georges Méliès»: https://en.wikipedia.org/wiki/Georges_M%C3%A9li%C3%A8s
+- [1] Wikipedia, «L'Arrivée d'un train en gare de La Ciotat» (inglés y francés): https://en.wikipedia.org/wiki/L%27Arriv%C3%A9e_d%27un_train_en_gare_de_La_Ciotat
+- [2] Wikipedia, «Salon indien du Grand Café»: https://fr.wikipedia.org/wiki/Salon_indien_du_Grand_Caf%C3%A9
+- [3] Martin Loiperdinger, «Lumière's Arrival of the Train: Cinema's Founding Myth», The Moving Image 4(1), 2004: https://muse.jhu.edu/article/171125/summary
+- [4] Wikipedia (francés), «L'Arrivée d'un train en gare de La Ciotat»: https://fr.wikipedia.org/wiki/L%27Arriv%C3%A9e_d%27un_train_en_gare_de_La_Ciotat
+- [5] Who's Who of Victorian Cinema, «Maxim Gorky»: https://www.victorian-cinema.net/gorky
+- [6] Institut Lumière, «Le Cinématographe»: https://www.institut-lumiere.org/musee/les-freres-lumiere-et-leurs-inventions/cinematographe.html
+- [7] Wikipedia (inglés), «Georges Méliès»: https://en.wikipedia.org/wiki/Georges_M%C3%A9li%C3%A8s
 
 ## El crimen que NUNCA existió: el pastor de Cuenca que volvió vivo (1910-1926)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-crimen-que-nunca-existio-el-pastor-de-cuenca-que-volvio-vivo-1910-1.html
+Temática: Crímenes del pasado
 Lugar: Tresjuncos, Belmonte, Cuenca y Mira (España)
 Época: 1910-1981
 
@@ -1100,15 +1115,16 @@ Conviene deshacer tres ideas muy repetidas. A Valero y a Sánchez no los condena
 
 ### Fuentes
 
-- Wikipedia, «Crimen de Cuenca»: https://es.wikipedia.org/wiki/Crimen_de_Cuenca
-- Wikipedia, «Crime of Cuenca»: https://en.wikipedia.org/wiki/Crime_of_Cuenca
-- eldiario.es, «"El crimen de Cuenca", vigente cuarenta años después de su secuestro»: https://www.eldiario.es/cultura/cine/cuenca-vigente-cuarenta-despues-secuestro_1_2728929.html
-- José Calvo González, «Verdad y Proceso. "Hábilmente interrogados, declararon…", y el tema del muerto resucitado», Empório do Direito (2017): https://emporiododireito.com.br/leitura/verdad-y-proceso-habilmente-interrogados-declararon-y-el-tema-del-muerto-resucitado
-- Instituto de Estudios Albacetenses, «El lugar de un hombre»: https://www.iea.es/publicaciones-recomendadas/-/asset_publisher/ltoTiysL9QNK/content/el-lugar-de-un-hombre
+- [1] Wikipedia, «Crimen de Cuenca»: https://es.wikipedia.org/wiki/Crimen_de_Cuenca
+- [2] Wikipedia, «Crime of Cuenca»: https://en.wikipedia.org/wiki/Crime_of_Cuenca
+- [3] eldiario.es, «"El crimen de Cuenca", vigente cuarenta años después de su secuestro»: https://www.eldiario.es/cultura/cine/cuenca-vigente-cuarenta-despues-secuestro_1_2728929.html
+- [4] José Calvo González, «Verdad y Proceso. "Hábilmente interrogados, declararon…", y el tema del muerto resucitado», Empório do Direito (2017): https://emporiododireito.com.br/leitura/verdad-y-proceso-habilmente-interrogados-declararon-y-el-tema-del-muerto-resucitado
+- [5] Instituto de Estudios Albacetenses, «El lugar de un hombre»: https://www.iea.es/publicaciones-recomendadas/-/asset_publisher/ltoTiysL9QNK/content/el-lugar-de-un-hombre
 
-## alguien estaba en el DESVÁN… el misterio de Hinterkaifeck
+## Alguien estaba en el DESVÁN… el misterio de Hinterkaifeck
 
 Página: https://elarchivocurioso.github.io/expedientes/top-2-halloween-alguien-estaba-en-el-desvan-el-misterio-de-hinterkaife.html
+Temática: Paranormal y leyendas
 Lugar: Hinterkaifeck, cerca de Waidhofen, Baviera, Alemania
 Época: 1922
 
@@ -1156,13 +1172,14 @@ Hay que desconfiar de los relatos que dan el caso por cerrado con un culpable co
 
 ### Fuentes
 
-- Wikipedia (de), «Mordfall Hinterkaifeck»: https://de.wikipedia.org/wiki/Mordfall_Hinterkaifeck
-- Wikipedia (en), «Hinterkaifeck murders»: https://en.wikipedia.org/wiki/Hinterkaifeck_murders
-- Bayerisches Hauptstaatsarchiv, catálogo de la exposición «Der sechsfache Mord in Hinterkaifeck» (2026): https://www.gda.bayern.de/mam/aktuelles/ausstellungskatalog_hinterkaifeck.pdf
+- [1] Wikipedia (de), «Mordfall Hinterkaifeck»: https://de.wikipedia.org/wiki/Mordfall_Hinterkaifeck
+- [2] Wikipedia (en), «Hinterkaifeck murders»: https://en.wikipedia.org/wiki/Hinterkaifeck_murders
+- [3] Bayerisches Hauptstaatsarchiv, catálogo de la exposición «Der sechsfache Mord in Hinterkaifeck» (2026): https://www.gda.bayern.de/mam/aktuelles/ausstellungskatalog_hinterkaifeck.pdf
 
-## el HOMBRE LOBO de Allariz existió… y fue juzgado en España
+## El HOMBRE LOBO de Allariz existió… y fue juzgado en España
 
 Página: https://elarchivocurioso.github.io/expedientes/top-3-halloween-el-hombre-lobo-de-allariz-existio-y-fue-juzgado-en-esp.html
+Temática: Paranormal y leyendas
 Lugar: Allariz, Ourense, Galicia, España
 Época: 1852-1863
 
@@ -1214,13 +1231,14 @@ Lo de «primer caso documentado de licantropía clínica en España» es una eti
 
 ### Fuentes
 
-- Wikipedia (es), «Manuel Blanco Romasanta»: https://es.wikipedia.org/wiki/Manuel_Blanco_Romasanta
-- Wikipedia (en), «Manuel Blanco Romasanta»: https://en.wikipedia.org/wiki/Manuel_Blanco_Romasanta
-- El Faro de Ceuta, «¿Dónde descansa el Hombre Lobo de Allariz?» (2011): https://elfarodeceuta.es/idonde-descansa-el-hombre-lobo-de-allariz/amp/
+- [1] Wikipedia (es), «Manuel Blanco Romasanta»: https://es.wikipedia.org/wiki/Manuel_Blanco_Romasanta
+- [2] Wikipedia (en), «Manuel Blanco Romasanta»: https://en.wikipedia.org/wiki/Manuel_Blanco_Romasanta
+- [3] El Faro de Ceuta, «¿Dónde descansa el Hombre Lobo de Allariz?» (2011): https://elfarodeceuta.es/idonde-descansa-el-hombre-lobo-de-allariz/amp/
 
-## la CONDESA sangrienta, el caso de Erzsébet Báthory
+## La CONDESA sangrienta, el caso de Erzsébet Báthory
 
 Página: https://elarchivocurioso.github.io/expedientes/top-4-halloween-la-condesa-sangrienta-el-caso-de-erzsebet-bathory.html
+Temática: Crímenes del pasado
 Lugar: Reino de Hungría, hoy Eslovaquia
 Época: hacia 1590-1614
 
@@ -1270,13 +1288,14 @@ La leyenda, mientras tanto, siguió creciendo: inspiró novelas, la película br
 
 ### Fuentes
 
-- Wikipedia, «Elizabeth Báthory»: https://en.wikipedia.org/wiki/Elizabeth_B%C3%A1thory
-- National Geographic, «The bloody legend of Hungary's serial killer countess»: https://www.nationalgeographic.com/history/article/the-bloody-legend-of-hungarys-serial-killer-countess
-- Guinness World Records, «Was Elizabeth Báthory truly the most prolific female serial killer ever?» (2023): https://www.guinnessworldrecords.com/news/2023/6/was-elizabeth-bathory-truly-the-most-prolific-female-serial-killer-ever-751852
+- [1] Wikipedia, «Elizabeth Báthory»: https://en.wikipedia.org/wiki/Elizabeth_B%C3%A1thory
+- [2] National Geographic, «The bloody legend of Hungary's serial killer countess»: https://www.nationalgeographic.com/history/article/the-bloody-legend-of-hungarys-serial-killer-countess
+- [3] Guinness World Records, «Was Elizabeth Báthory truly the most prolific female serial killer ever?» (2023): https://www.guinnessworldrecords.com/news/2023/6/was-elizabeth-bathory-truly-the-most-prolific-female-serial-killer-ever-751852
 
-## los LEONES de Tsavo, la leyenda que paralizó un ferrocarril
+## Los LEONES de Tsavo, la leyenda que paralizó un ferrocarril
 
 Página: https://elarchivocurioso.github.io/expedientes/top-5-halloween-los-leones-de-tsavo-la-leyenda-que-paralizo-un-ferroca.html
+Temática: Paranormal y leyendas
 Lugar: Tsavo, Kenia
 Época: 1898
 
@@ -1324,15 +1343,16 @@ Lo que no se sostiene es la cifra de 135 víctimas. Los registros de la compañ�
 
 ### Fuentes
 
-- Wikipedia, «Tsavo Man-Eaters»: https://en.wikipedia.org/wiki/Tsavo_Man-Eaters
-- Field Museum, «Man-eating Lions Ate Fewer People Than Believed»: https://www.fieldmuseum.org/blog/man-eating-lions-ate-fewer-people-believed
-- National Geographic, «How many people did the man-eating lions of Tsavo actually eat?»: https://www.nationalgeographic.com/science/article/how-many-people-did-the-man-eating-lions-of-tsavo-actually-eat
-- Wikipedia (inglés), «Uganda Railway»: https://en.wikipedia.org/wiki/Uganda_Railway
-- Popular Science, «These lions devoured 28 humans, wildebeest, and more in 1898» (2024): https://www.popsci.com/environment/lion-man-eaters/
+- [1] Wikipedia, «Tsavo Man-Eaters»: https://en.wikipedia.org/wiki/Tsavo_Man-Eaters
+- [2] Field Museum, «Man-eating Lions Ate Fewer People Than Believed»: https://www.fieldmuseum.org/blog/man-eating-lions-ate-fewer-people-believed
+- [3] National Geographic, «How many people did the man-eating lions of Tsavo actually eat?»: https://www.nationalgeographic.com/science/article/how-many-people-did-the-man-eating-lions-of-tsavo-actually-eat
+- [4] Wikipedia (inglés), «Uganda Railway»: https://en.wikipedia.org/wiki/Uganda_Railway
+- [5] Popular Science, «These lions devoured 28 humans, wildebeest, and more in 1898» (2024): https://www.popsci.com/environment/lion-man-eaters/
 
 ## LIZZIE BORDEN: la mujer que una canción declaró culpable… y un jurado absolvió (1892)
 
 Página: https://elarchivocurioso.github.io/expedientes/lizzie-borden-la-mujer-que-una-cancion-declaro-culpable-y-un-jurado-ab.html
+Temática: Crímenes del pasado
 Lugar: Fall River y New Bedford, Massachusetts (EE. UU.)
 Época: 1892-1927
 
@@ -1400,18 +1420,19 @@ Lizzie y Emma heredaron la fortuna. La casa de Second Street es hoy un museo don
 
 ### Fuentes
 
-- Wikipedia, «Lizzie Borden»: https://en.wikipedia.org/wiki/Lizzie_Borden
-- Encyclopedia.com, «Lizzie Borden Trial: 1893»: https://www.encyclopedia.com/law/law-magazines/lizzie-borden-trial-1893
-- History.com, «Lizzie Borden acquitted»: https://www.history.com/this-day-in-history/june-20/lizzie-borden-acquitted
-- Mental Floss, sobre lo que la canción se inventa: https://www.mentalfloss.com/history/lizzie-borden-nursery-rhyme-gets-wrong
-- Famous Trials (Douglas O. Linder, UMKC), cronología del caso Borden: https://www.famous-trials.com/lizzieborden/1441-chronology
-- Famous Trials, informe de las autopsias, 11 de agosto de 1892: https://famous-trials.com/lizzieborden/1439-autopsies
-- Historic Mysteries, «Lizzie Borden: Most Famous Alleged Axe Murderer»: https://www.historicmysteries.com/major-crimes/lizzie-borden/1306/
-- Lizzie Andrew Borden Virtual Museum & Library, informes de las autopsias: https://lizzieandrewborden.com/?p=637
+- [1] Wikipedia, «Lizzie Borden»: https://en.wikipedia.org/wiki/Lizzie_Borden
+- [2] Encyclopedia.com, «Lizzie Borden Trial: 1893»: https://www.encyclopedia.com/law/law-magazines/lizzie-borden-trial-1893
+- [3] History.com, «Lizzie Borden acquitted»: https://www.history.com/this-day-in-history/june-20/lizzie-borden-acquitted
+- [4] Mental Floss, sobre lo que la canción se inventa: https://www.mentalfloss.com/history/lizzie-borden-nursery-rhyme-gets-wrong
+- [5] Famous Trials (Douglas O. Linder, UMKC), cronología del caso Borden: https://www.famous-trials.com/lizzieborden/1441-chronology
+- [6] Famous Trials, informe de las autopsias, 11 de agosto de 1892: https://famous-trials.com/lizzieborden/1439-autopsies
+- [7] Historic Mysteries, «Lizzie Borden: Most Famous Alleged Axe Murderer»: https://www.historicmysteries.com/major-crimes/lizzie-borden/1306/
+- [8] Lizzie Andrew Borden Virtual Museum & Library, informes de las autopsias: https://lizzieandrewborden.com/?p=637
 
-## la BESTIA de Gévaudan, el monstruo que aterrorizó a Francia
+## La BESTIA de Gévaudan, el monstruo que aterrorizó a Francia
 
 Página: https://elarchivocurioso.github.io/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html
+Temática: Paranormal y leyendas
 Lugar: Gévaudan, Francia
 Época: 1764-1767
 
@@ -1463,14 +1484,15 @@ En 1878, el escritor escocés Robert Louis Stevenson recorrió la región a pie 
 
 ### Fuentes
 
-- Wikipedia, «Beast of Gévaudan»: https://en.wikipedia.org/wiki/Beast_of_G%C3%A9vaudan
-- Wikipedia en español, «Bestia de Gévaudan»: https://es.wikipedia.org/wiki/Bestia_de_G%C3%A9vaudan
-- National Geographic, «Did a 'werewolf' really terrorize France in the 1700s?»: https://www.nationalgeographic.com/history/history-magazine/article/did-a-werewolf-really-terrorize-france-in-the-1700s
-- Graham Robb, reseña de «Monsters of the Gévaudan», London Review of Books: https://www.lrb.co.uk/v33/n10/graham-robb/and-what-did-she-see
+- [1] Wikipedia, «Beast of Gévaudan»: https://en.wikipedia.org/wiki/Beast_of_G%C3%A9vaudan
+- [2] Wikipedia en español, «Bestia de Gévaudan»: https://es.wikipedia.org/wiki/Bestia_de_G%C3%A9vaudan
+- [3] National Geographic, «Did a 'werewolf' really terrorize France in the 1700s?»: https://www.nationalgeographic.com/history/history-magazine/article/did-a-werewolf-really-terrorize-france-in-the-1700s
+- [4] Graham Robb, reseña de «Monsters of the Gévaudan», London Review of Books: https://www.lrb.co.uk/v33/n10/graham-robb/and-what-did-she-see
 
-## el caso LIZZIE BORDEN sigue abierto más de 130 años después
+## El caso LIZZIE BORDEN sigue abierto más de 130 años después
 
 Página: https://elarchivocurioso.github.io/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html
+Temática: Crímenes del pasado
 Lugar: Fall River, Massachusetts (EE. UU.)
 Época: 1892-1893
 
@@ -1522,14 +1544,15 @@ La historia inspiró el ballet *Fall River Legend* (1948), de Agnes de Mille, un
 
 ### Fuentes
 
-- Wikipedia, «Lizzie Borden»: https://en.wikipedia.org/wiki/Lizzie_Borden
-- Britannica (enciclopedia para estudiantes), «Lizzie Borden»: https://kids.britannica.com/students/article/Lizzie-Borden/317822
-- Mental Floss, sobre lo que la canción se inventa: https://www.mentalfloss.com/history/lizzie-borden-nursery-rhyme-gets-wrong
-- Encyclopedia.com, «Lizzie Borden Trial: 1893»: https://www.encyclopedia.com/law/law-magazines/lizzie-borden-trial-1893
+- [1] Wikipedia, «Lizzie Borden»: https://en.wikipedia.org/wiki/Lizzie_Borden
+- [2] Britannica (enciclopedia para estudiantes), «Lizzie Borden»: https://kids.britannica.com/students/article/Lizzie-Borden/317822
+- [3] Mental Floss, sobre lo que la canción se inventa: https://www.mentalfloss.com/history/lizzie-borden-nursery-rhyme-gets-wrong
+- [4] Encyclopedia.com, «Lizzie Borden Trial: 1893»: https://www.encyclopedia.com/law/law-magazines/lizzie-borden-trial-1893
 
-## la semana en que el DIABLO de Jersey cerró los colegios
+## La semana en que el DIABLO de Jersey cerró los colegios
 
 Página: https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html
+Temática: Paranormal y leyendas
 Lugar: Nueva Jersey y Pensilvania (EE. UU.)
 Época: 1735 (leyenda) y enero de 1909
 
@@ -1581,14 +1604,15 @@ El Diablo nunca se fue del todo: en 1982, una votación popular dio nombre al nu
 
 ### Fuentes
 
-- Wikipedia, «Jersey Devil»: https://en.wikipedia.org/wiki/Jersey_Devil
-- The Philadelphia Inquirer, sobre el pánico de 1909 y Norman Jeffries: https://www.inquirer.com/history/jersey-devil-philadelphia-norman-jeffries-20261018.html
-- Mental Floss, «What Was the Jersey Devil?»: https://www.mentalfloss.com/culture/folklore-mythology/what-was-jersey-devil
-- Vice, «Why the Urban Legend of the Jersey Devil Won't Die»: https://www.vice.com/en/article/why-the-urban-legend-of-the-jersey-devil-wont-die-666/
+- [1] Wikipedia, «Jersey Devil»: https://en.wikipedia.org/wiki/Jersey_Devil
+- [2] The Philadelphia Inquirer, sobre el pánico de 1909 y Norman Jeffries: https://www.inquirer.com/history/jersey-devil-philadelphia-norman-jeffries-20261018.html
+- [3] Mental Floss, «What Was the Jersey Devil?»: https://www.mentalfloss.com/culture/folklore-mythology/what-was-jersey-devil
+- [4] Vice, «Why the Urban Legend of the Jersey Devil Won't Die»: https://www.vice.com/en/article/why-the-urban-legend-of-the-jersey-devil-wont-die-666/
 
-## el «MONSTRUO» saltarín que tuvo en vilo a Londres
+## El «MONSTRUO» saltarín que tuvo en vilo a Londres
 
 Página: https://elarchivocurioso.github.io/expedientes/top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html
+Temática: Paranormal y leyendas
 Lugar: Londres e Inglaterra
 Época: 1837-1904
 
@@ -1638,14 +1662,15 @@ No hay prueba alguna de los saltos sobrehumanos, de las llamas ni de la resisten
 
 ### Fuentes
 
-- Wikipedia, «Spring-heeled Jack»: https://en.wikipedia.org/wiki/Spring-heeled_Jack
-- Historic UK, «Spring Heeled Jack»: https://www.historic-uk.com/CultureUK/Spring-Heeled-Jack/
-- TheCollector, «How Spring Heeled Jack Terrified Victorian England»: https://www.thecollector.com/spring-heeled-jack-victorian-england/
-- Boydell & Brewer, ficha de «The Legend of Spring-Heeled Jack»: https://boydellandbrewer.com/9781843837879
+- [1] Wikipedia, «Spring-heeled Jack»: https://en.wikipedia.org/wiki/Spring-heeled_Jack
+- [2] Historic UK, «Spring Heeled Jack»: https://www.historic-uk.com/CultureUK/Spring-Heeled-Jack/
+- [3] TheCollector, «How Spring Heeled Jack Terrified Victorian England»: https://www.thecollector.com/spring-heeled-jack-victorian-england/
+- [4] Boydell & Brewer, ficha de «The Legend of Spring-Heeled Jack»: https://boydellandbrewer.com/9781843837879
 
 ## 130 niños DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron
 
 Página: https://elarchivocurioso.github.io/expedientes/top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond.html
+Temática: Paranormal y leyendas
 Lugar: Hamelín, Baja Sajonia (Alemania)
 Época: 1284
 
@@ -1699,15 +1724,16 @@ En la Bungelosenstraße, la «calle sin tambores», donde la tradición dice que
 
 ### Fuentes
 
-- Wikipedia, «Pied Piper of Hamelin»: https://en.wikipedia.org/wiki/Pied_Piper_of_Hamelin
-- Britannica, «Pied Piper of Hamelin»: https://www.britannica.com/topic/Pied-Piper-of-Hamelin
-- Planet Wissen (WDR), «Der Rattenfänger von Hameln»: https://www.planet-wissen.de/natur/haustiere/ratten/pwiederrattenfaengervonhameln100.html
-- World Book, «Mythic Monday: Pay the Piper»: https://www.worldbook.com/behind-the-headlines/Mythic-Monday-Pay-the-Piper
-- Wikipedia (inglés), «Children's Crusade»: https://en.wikipedia.org/wiki/Children%27s_Crusade
+- [1] Wikipedia, «Pied Piper of Hamelin»: https://en.wikipedia.org/wiki/Pied_Piper_of_Hamelin
+- [2] Britannica, «Pied Piper of Hamelin»: https://www.britannica.com/topic/Pied-Piper-of-Hamelin
+- [3] Planet Wissen (WDR), «Der Rattenfänger von Hameln»: https://www.planet-wissen.de/natur/haustiere/ratten/pwiederrattenfaengervonhameln100.html
+- [4] World Book, «Mythic Monday: Pay the Piper»: https://www.worldbook.com/behind-the-headlines/Mythic-Monday-Pay-the-Piper
+- [5] Wikipedia (inglés), «Children's Crusade»: https://en.wikipedia.org/wiki/Children%27s_Crusade
 
 ## GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia
 
 Página: https://elarchivocurioso.github.io/expedientes/gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html
+Temática: Cine maldito y perdido
 Lugar: Escocia y Estados Unidos
 Época: 1995-2026
 
@@ -1785,16 +1811,17 @@ Y una advertencia final: la fecha del 19 de noviembre de 2026 es la vigente a fi
 
 ### Fuentes
 
-- Wikipedia, «Grand Theft Auto VI»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI
-- Wikipedia, «Grand Theft Auto (video game)»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)
-- GameSpot, «Original Grand Theft Auto 'almost canned'»: https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/
-- Wikipedia (inglés), «Grand Theft Auto V»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_V
-- Wikipedia (inglés), «Grand Theft Auto: Vice City»: https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
-- Game Developer (antes Gamasutra), «Penn: First Grand Theft Auto Was 'Almost Canned'» (2011): https://www.gamedeveloper.com/game-platforms/penn-first-i-grand-theft-auto-i-was-almost-canned-
+- [1] Wikipedia, «Grand Theft Auto VI»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI
+- [2] Wikipedia, «Grand Theft Auto (video game)»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)
+- [3] GameSpot, «Original Grand Theft Auto 'almost canned'»: https://www.gamespot.com/articles/original-grand-theft-auto-almost-canned/1100-6297078/
+- [4] Wikipedia (inglés), «Grand Theft Auto V»: https://en.wikipedia.org/wiki/Grand_Theft_Auto_V
+- [5] Wikipedia (inglés), «Grand Theft Auto: Vice City»: https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+- [6] Game Developer (antes Gamasutra), «Penn: First Grand Theft Auto Was 'Almost Canned'» (2011): https://www.gamedeveloper.com/game-platforms/penn-first-i-grand-theft-auto-i-was-almost-canned-
 
 ## H. H. HOLMES: el estafador de Chicago y la verdad sobre su famoso edificio (1893)
 
 Página: https://elarchivocurioso.github.io/expedientes/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.html
+Temática: Crímenes del pasado
 Lugar: Chicago y Filadelfia (Estados Unidos)
 Época: 1886-1896
 
@@ -1858,15 +1885,16 @@ Lo que todavía se discute es el número exacto. Las fuentes que siguen la docum
 
 ### Fuentes
 
-- Wikipedia, «H. H. Holmes»: https://en.wikipedia.org/wiki/H._H._Holmes
-- Adam Selzer, «H. H. Holmes: The True History of the White City Devil» (2017): https://en.wikipedia.org/wiki/H._H._Holmes#Further_reading
-- Wikipedia, «World's Columbian Exposition»: https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition
-- Adam Selzer, «Is all that stuff about H.H. Holmes true?», Time Out Chicago (2015): https://www.timeout.com/chicago/blog/is-all-that-stuff-about-h-h-holmes-true-081115
-- Wikipedia (inglés), «The Devil in the White City»: https://en.wikipedia.org/wiki/The_Devil_in_the_White_City
+- [1] Wikipedia, «H. H. Holmes»: https://en.wikipedia.org/wiki/H._H._Holmes
+- [2] Adam Selzer, «H. H. Holmes: The True History of the White City Devil» (2017): https://en.wikipedia.org/wiki/H._H._Holmes#Further_reading
+- [3] Wikipedia, «World's Columbian Exposition»: https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition
+- [4] Adam Selzer, «Is all that stuff about H.H. Holmes true?», Time Out Chicago (2015): https://www.timeout.com/chicago/blog/is-all-that-stuff-about-h-h-holmes-true-081115
+- [5] Wikipedia (inglés), «The Devil in the White City»: https://en.wikipedia.org/wiki/The_Devil_in_the_White_City
 
 ## NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)
 
 Página: https://elarchivocurioso.github.io/expedientes/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.html
+Temática: Cine maldito y perdido
 Lugar: Alemania
 Época: 1922-1925
 
@@ -1934,15 +1962,16 @@ Su influencia, en cambio, no se discute. Werner Herzog la rehízo en 1979 con Kl
 
 ### Fuentes
 
-- Wikipedia, «Nosferatu»: https://en.wikipedia.org/wiki/Nosferatu
-- NPR, sobre el centenario de Nosferatu y la orden de destrucción: https://www.npr.org/transcripts/1086605684
-- Wikipedia, «Max Schreck»: https://en.wikipedia.org/wiki/Max_Schreck
-- Wikipedia (alemán), «Nosferatu – Eine Symphonie des Grauens»: https://de.wikipedia.org/wiki/Nosferatu_–_Eine_Symphonie_des_Grauens
-- Wikipedia (inglés), «Florence Stoker»: https://en.wikipedia.org/wiki/Florence_Stoker
+- [1] Wikipedia, «Nosferatu»: https://en.wikipedia.org/wiki/Nosferatu
+- [2] NPR, sobre el centenario de Nosferatu y la orden de destrucción: https://www.npr.org/transcripts/1086605684
+- [3] Wikipedia, «Max Schreck»: https://en.wikipedia.org/wiki/Max_Schreck
+- [4] Wikipedia (alemán), «Nosferatu – Eine Symphonie des Grauens»: https://de.wikipedia.org/wiki/Nosferatu_–_Eine_Symphonie_des_Grauens
+- [5] Wikipedia (inglés), «Florence Stoker»: https://en.wikipedia.org/wiki/Florence_Stoker
 
 ## El MISTERIO del MARY CELESTE: el barco que apareció sin nadie a bordo (1872)
 
 Página: https://elarchivocurioso.github.io/expedientes/el-misterio-del-mary-celeste-el-barco-que-aparecio-sin-nadie-a-bordo-1.html
+Temática: Paranormal y leyendas
 Lugar: Océano Atlántico (entre las Azores y Portugal)
 Época: 1872
 
@@ -2006,15 +2035,16 @@ En 2001, una expedición del novelista Clive Cussler anunció que había encontr
 
 ### Fuentes
 
-- Britannica, «Mary Celeste»: https://www.britannica.com/topic/Mary-Celeste
-- Smithsonian Magazine, «An abandoned merchant ship was discovered floating in the Atlantic in 1872»: https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/
-- The Arthur Conan Doyle Encyclopedia, «Mary Celeste»: https://www.arthur-conan-doyle.com/wiki/Mary_Celeste
-- Wikipedia, «Mary Celeste»: https://en.wikipedia.org/wiki/Mary_Celeste
-- Chemistry World, «Chemists think they know what happened on board the Mary Celeste» (2026): https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article
+- [1] Britannica, «Mary Celeste»: https://www.britannica.com/topic/Mary-Celeste
+- [2] Smithsonian Magazine, «An abandoned merchant ship was discovered floating in the Atlantic in 1872»: https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/
+- [3] The Arthur Conan Doyle Encyclopedia, «Mary Celeste»: https://www.arthur-conan-doyle.com/wiki/Mary_Celeste
+- [4] Wikipedia, «Mary Celeste»: https://en.wikipedia.org/wiki/Mary_Celeste
+- [5] Chemistry World, «Chemists think they know what happened on board the Mary Celeste» (2026): https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article
 
 ## La FIEBRE DE LOS TULIPANES: la primera burbuja de la historia… ¿o un mito?
 
 Página: https://elarchivocurioso.github.io/expedientes/la-fiebre-de-los-tulipanes-la-primera-burbuja-de-la-historia-o-un-mito.html
+Temática: Mitos desmontados
 Lugar: Países Bajos
 Época: 1634-1637
 
@@ -2074,16 +2104,17 @@ Y queda abierto el debate de fondo: si aquello fue una burbuja irracional o algo
 
 ### Fuentes
 
-- Smithsonian Magazine, «There Never Was a Real Tulip Fever»: https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/
-- Wikipedia, «Tulip mania»: https://en.wikipedia.org/wiki/Tulip_mania
-- City A.M., «On this day in 1637: the tulip bubble bursts»: https://www.cityam.com/on-this-day-in-1637-the-tulip-bubble-bursts/
-- Anne Goldgar, «Tulip mania: the classic story of a Dutch financial bubble is mostly wrong», The Conversation: https://theconversation.com/tulip-mania-the-classic-story-of-a-dutch-financial-bubble-is-mostly-wrong-91413
-- Wikipedia, «Extraordinary Popular Delusions and the Madness of Crowds»: https://en.wikipedia.org/wiki/Extraordinary_Popular_Delusions_and_the_Madness_of_Crowds
-- J. Leslie Price, reseña de «Tulipmania» en Reviews in History (Institute of Historical Research): https://reviews.history.ac.uk/review/666
+- [1] Smithsonian Magazine, «There Never Was a Real Tulip Fever»: https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/
+- [2] Wikipedia, «Tulip mania»: https://en.wikipedia.org/wiki/Tulip_mania
+- [3] City A.M., «On this day in 1637: the tulip bubble bursts»: https://www.cityam.com/on-this-day-in-1637-the-tulip-bubble-bursts/
+- [4] Anne Goldgar, «Tulip mania: the classic story of a Dutch financial bubble is mostly wrong», The Conversation: https://theconversation.com/tulip-mania-the-classic-story-of-a-dutch-financial-bubble-is-mostly-wrong-91413
+- [5] Wikipedia, «Extraordinary Popular Delusions and the Madness of Crowds»: https://en.wikipedia.org/wiki/Extraordinary_Popular_Delusions_and_the_Madness_of_Crowds
+- [6] J. Leslie Price, reseña de «Tulipmania» en Reviews in History (Institute of Historical Research): https://reviews.history.ac.uk/review/666
 
 ## VICTOR LUSTIG: el estafador que «vendió» la Torre Eiffel
 
 Página: https://elarchivocurioso.github.io/expedientes/victor-lustig-el-estafador-que-vendio-la-torre-eiffel.html
+Temática: Robos y golpes
 Lugar: París y Estados Unidos
 Época: 1925-1947
 
@@ -2153,16 +2184,17 @@ Su muerte. La fecha más citada es el 11 de marzo de 1947, aunque algunas fuente
 
 ### Fuentes
 
-- Wikipedia, «Victor Lustig»: https://en.wikipedia.org/wiki/Victor_Lustig
-- The Mob Museum, «The long con of underworld grifter 'Count' Victor Lustig»: https://themobmuseum.org/blog/the-long-con-of-underworld-grifter-count-victor-lustig/
-- ISRI, «Selling the Eiffel Tower»: https://isri.org/scrap-articles/selling-the-eiffel-tower
-- Wikipedia en español, «Victor Lustig»: https://es.wikipedia.org/wiki/Victor_Lustig
-- American Numismatic Society, «Kings of Counterfeiting»: https://numismatics.org/kings-of-counterfeiting/
-- Wikipedia, «Eiffel Tower»: https://en.wikipedia.org/wiki/Eiffel_Tower
+- [1] Wikipedia, «Victor Lustig»: https://en.wikipedia.org/wiki/Victor_Lustig
+- [2] The Mob Museum, «The long con of underworld grifter 'Count' Victor Lustig»: https://themobmuseum.org/blog/the-long-con-of-underworld-grifter-count-victor-lustig/
+- [3] ISRI, «Selling the Eiffel Tower»: https://isri.org/scrap-articles/selling-the-eiffel-tower
+- [4] Wikipedia en español, «Victor Lustig»: https://es.wikipedia.org/wiki/Victor_Lustig
+- [5] American Numismatic Society, «Kings of Counterfeiting»: https://numismatics.org/kings-of-counterfeiting/
+- [6] Wikipedia, «Eiffel Tower»: https://en.wikipedia.org/wiki/Eiffel_Tower
 
 ## El EVENTO CARRINGTON: la tormenta solar de 1859 que incendió los telégrafos
 
 Página: https://elarchivocurioso.github.io/expedientes/el-evento-carrington-la-tormenta-solar-de-1859-que-incendio-los-telegr.html
+Temática: Desastres y epidemias
 Lugar: Inglaterra, Norteamérica y medio mundo
 Época: 1859
 
@@ -2230,16 +2262,17 @@ El último recordatorio llegó entre el 10 y el 13 de mayo de 2024, con la torme
 
 ### Fuentes
 
-- Wikipedia, «Carrington Event»: https://en.wikipedia.org/wiki/Carrington_Event
-- History.com, «A Perfect Solar Superstorm: The 1859 Carrington Event»: https://www.history.com/articles/a-perfect-solar-superstorm-the-1859-carrington-event
-- Wikipedia, «Richard Christopher Carrington»: https://en.wikipedia.org/wiki/Richard_Christopher_Carrington
-- NASA Science, «Near Miss: The Solar Superstorm of July 2012»: https://science.nasa.gov/science-news/science-at-nasa/2014/23jul_superstorm/
-- Wikipedia, «March 1989 geomagnetic storm»: https://en.wikipedia.org/wiki/March_1989_geomagnetic_storm
-- Wikipedia, «May 2024 solar storms»: https://en.wikipedia.org/wiki/May_2024_solar_storms
+- [1] Wikipedia, «Carrington Event»: https://en.wikipedia.org/wiki/Carrington_Event
+- [2] History.com, «A Perfect Solar Superstorm: The 1859 Carrington Event»: https://www.history.com/articles/a-perfect-solar-superstorm-the-1859-carrington-event
+- [3] Wikipedia, «Richard Christopher Carrington»: https://en.wikipedia.org/wiki/Richard_Christopher_Carrington
+- [4] NASA Science, «Near Miss: The Solar Superstorm of July 2012»: https://science.nasa.gov/science-news/science-at-nasa/2014/23jul_superstorm/
+- [5] Wikipedia, «March 1989 geomagnetic storm»: https://en.wikipedia.org/wiki/March_1989_geomagnetic_storm
+- [6] Wikipedia, «May 2024 solar storms»: https://en.wikipedia.org/wiki/May_2024_solar_storms
 
 ## 1816, EL AÑO SIN VERANO: el volcán que trajo nieve en junio (y creó a Frankenstein)
 
 Página: https://elarchivocurioso.github.io/expedientes/1816-el-ano-sin-verano-el-volcan-que-trajo-nieve-en-junio-y-creo-a-fra.html
+Temática: Desastres y epidemias
 Lugar: Indonesia, Europa y Norteamérica
 Época: 1815-1816
 
@@ -2307,17 +2340,18 @@ De aquel reto salieron dos obras fundacionales. *Frankenstein o el moderno Prome
 
 ### Fuentes
 
-- UCAR Center for Science Education, «Mount Tambora and the Year Without a Summer»: https://scied.ucar.edu/learning-zone/how-climate-works/mount-tambora-and-year-without-summer
-- The Paris Review, «The Year Without Summer»: https://www.theparisreview.org/blog/2016/10/25/year-without-summer/
-- Wikipedia, «Year Without a Summer»: https://en.wikipedia.org/wiki/Year_Without_a_Summer
-- Wikipedia, «1815 eruption of Mount Tambora»: https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora
-- CNN, sobre el estudio de 2019 acerca de la erupción y el frío de 1816: https://edition.cnn.com/2019/09/17/world/tambora-eruption-year-without-summer-scn
-- Scientific American, «The Year without a Summer» (Henry y Elizabeth Stommel, 1979): https://www.scientificamerican.com/article/the-year-without-a-summer/
-- Wikipedia, «Villa Diodati»: https://en.wikipedia.org/wiki/Villa_Diodati
+- [1] UCAR Center for Science Education, «Mount Tambora and the Year Without a Summer»: https://scied.ucar.edu/learning-zone/how-climate-works/mount-tambora-and-year-without-summer
+- [2] The Paris Review, «The Year Without Summer»: https://www.theparisreview.org/blog/2016/10/25/year-without-summer/
+- [3] Wikipedia, «Year Without a Summer»: https://en.wikipedia.org/wiki/Year_Without_a_Summer
+- [4] Wikipedia, «1815 eruption of Mount Tambora»: https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora
+- [5] CNN, sobre el estudio de 2019 acerca de la erupción y el frío de 1816: https://edition.cnn.com/2019/09/17/world/tambora-eruption-year-without-summer-scn
+- [6] Scientific American, «The Year without a Summer» (Henry y Elizabeth Stommel, 1979): https://www.scientificamerican.com/article/the-year-without-a-summer/
+- [7] Wikipedia, «Villa Diodati»: https://en.wikipedia.org/wiki/Villa_Diodati
 
 ## PHINEAS GAGE: el hombre que sobrevivió a una barra de hierro en la cabeza
 
 Página: https://elarchivocurioso.github.io/expedientes/phineas-gage-el-hombre-que-sobrevivio-a-una-barra-de-hierro-en-la-cabe.html
+Temática: Mitos desmontados
 Lugar: Cavendish, Vermont (Estados Unidos) y Chile
 Época: 1848-1860
 
@@ -2385,15 +2419,16 @@ Gage sigue siendo un caso de estudio y, a la vez, un recordatorio de cómo una h
 
 ### Fuentes
 
-- Wikipedia, «Phineas Gage»: https://en.wikipedia.org/wiki/Phineas_Gage
-- The Psychologist (BPS), «Phineas Gage – Unravelling the myth» (Malcolm Macmillan): https://bps.org.uk/psychologist/phineas-gage-unravelling-myth
-- Reseña de «An Odd Kind of Fame: Stories of Phineas Gage» (Macmillan, 2000) en Project MUSE: https://muse.jhu.edu/article/4772
-- BPS Research Digest, «First ever photo of Phineas Gage discovered»: https://www.bps.org.uk/research-digest/first-ever-photo-phineas-gage-discovered
-- Van Horn et al. (2012), «Mapping Connectivity Damage in the Case of Phineas Gage», PLOS ONE: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037454
+- [1] Wikipedia, «Phineas Gage»: https://en.wikipedia.org/wiki/Phineas_Gage
+- [2] The Psychologist (BPS), «Phineas Gage – Unravelling the myth» (Malcolm Macmillan): https://bps.org.uk/psychologist/phineas-gage-unravelling-myth
+- [3] Reseña de «An Odd Kind of Fame: Stories of Phineas Gage» (Macmillan, 2000) en Project MUSE: https://muse.jhu.edu/article/4772
+- [4] BPS Research Digest, «First ever photo of Phineas Gage discovered»: https://www.bps.org.uk/research-digest/first-ever-photo-phineas-gage-discovered
+- [5] Van Horn et al. (2012), «Mapping Connectivity Damage in the Case of Phineas Gage», PLOS ONE: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037454
 
 ## La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)
 
 Página: https://elarchivocurioso.github.io/expedientes/la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html
+Temática: Desastres y epidemias
 Lugar: Australia Occidental
 Época: 1932
 
@@ -2455,15 +2490,16 @@ Tampoco está del todo claro por qué se montó la operación. La versión ofici
 
 ### Fuentes
 
-- Emu War (Wikipedia): https://en.wikipedia.org/wiki/Emu_War
-- History Hit: The Great Emu War: https://www.historyhit.com/the-great-emu-war/
-- Australian Geographic: Looking back, Australia's Emu Wars: https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/
-- Emu (Wikipedia): https://en.wikipedia.org/wiki/Emu
-- The Great Emu War: In which some large, flightless birds unwittingly foiled the Australian Army (Scientific American): https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/
+- [1] Emu War (Wikipedia): https://en.wikipedia.org/wiki/Emu_War
+- [2] History Hit: The Great Emu War: https://www.historyhit.com/the-great-emu-war/
+- [3] Australian Geographic: Looking back, Australia's Emu Wars: https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/
+- [4] Emu (Wikipedia): https://en.wikipedia.org/wiki/Emu
+- [5] The Great Emu War: In which some large, flightless birds unwittingly foiled the Australian Army (Scientific American): https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/
 
 ## La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas
 
 Página: https://elarchivocurioso.github.io/expedientes/la-gran-inundacion-de-melaza-de-boston-la-ola-dulce-que-mato-a-21-pers.html
+Temática: Desastres y epidemias
 Lugar: Boston (Estados Unidos)
 Época: 1919
 
@@ -2527,16 +2563,17 @@ Por último, hay una coincidencia que alimenta especulaciones: el 16 de enero de
 
 ### Fuentes
 
-- Great Molasses Flood (Wikipedia): https://en.wikipedia.org/wiki/Great_Molasses_Flood
-- Yankee Magazine: The Great Molasses Flood: https://newengland.com/article/history/great-molasses-flood
-- 100 years ago today: Molasses crashes through Boston's North End (Archivos de la Ciudad de Boston): https://www.boston.gov/node/54641
-- January 15, 1919: Physics and the Boston Molasses Flood (APS News): https://www.aps.org/apsnews/2017/01/this-month-in-physics-history
-- Scientists finally decode the Great Molasses Flood of 1919 (The Christian Science Monitor): https://www.csmonitor.com/Science/2016/1129/Scientists-finally-decode-the-Great-Molasses-Flood-of-1919
-- A sticky tsunami: The Great Boston Molasses Flood of 1919 killed 21 (NBC News, vía Euronews): https://www.euronews.com/2019/01/15/great-boston-molasses-flood-1919-killed-21-after-2-million-n958326
+- [1] Great Molasses Flood (Wikipedia): https://en.wikipedia.org/wiki/Great_Molasses_Flood
+- [2] Yankee Magazine: The Great Molasses Flood: https://newengland.com/article/history/great-molasses-flood
+- [3] 100 years ago today: Molasses crashes through Boston's North End (Archivos de la Ciudad de Boston): https://www.boston.gov/node/54641
+- [4] January 15, 1919: Physics and the Boston Molasses Flood (APS News): https://www.aps.org/apsnews/2017/01/this-month-in-physics-history
+- [5] Scientists finally decode the Great Molasses Flood of 1919 (The Christian Science Monitor): https://www.csmonitor.com/Science/2016/1129/Scientists-finally-decode-the-Great-Molasses-Flood-of-1919
+- [6] A sticky tsunami: The Great Boston Molasses Flood of 1919 killed 21 (NBC News, vía Euronews): https://www.euronews.com/2019/01/15/great-boston-molasses-flood-1919-killed-21-after-2-million-n958326
 
 ## Cleopatra vivió más cerca del iPhone que de las pirámides
 
 Página: https://elarchivocurioso.github.io/expedientes/cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides.html
+Temática: Mitos desmontados
 Lugar: Egipto
 Época: 69-30 a. C.
 
@@ -2600,18 +2637,19 @@ Y la tercera, el final de los mamuts de Wrangel. Un estudio de 2017 atribuyó su
 
 ### Fuentes
 
-- Wikipedia: Gran Pirámide de Guiza: https://es.wikipedia.org/wiki/Gran_Pir%C3%A1mide_de_Guiza
-- Wikipedia: Cleopatra: https://es.wikipedia.org/wiki/Cleopatra
-- Wikipedia: Great Pyramid of Giza: https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza
-- Wikipedia: iPhone (1st generation): https://en.wikipedia.org/wiki/IPhone_(1st_generation)
-- Wikipedia: Cleopatra: https://en.wikipedia.org/wiki/Cleopatra
-- Wikipedia: Ptolemaic Kingdom: https://en.wikipedia.org/wiki/Ptolemaic_Kingdom
-- Plutarco, Vida de Antonio (traducción inglesa en LacusCurtius, Universidad de Chicago): https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html
-- Wikipedia: Wrangel Island: https://en.wikipedia.org/wiki/Wrangel_Island
+- [1] Wikipedia: Gran Pirámide de Guiza: https://es.wikipedia.org/wiki/Gran_Pir%C3%A1mide_de_Guiza
+- [2] Wikipedia: Cleopatra: https://es.wikipedia.org/wiki/Cleopatra
+- [3] Wikipedia: Great Pyramid of Giza: https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza
+- [4] Wikipedia: iPhone (1st generation): https://en.wikipedia.org/wiki/IPhone_(1st_generation)
+- [5] Wikipedia: Cleopatra: https://en.wikipedia.org/wiki/Cleopatra
+- [6] Wikipedia: Ptolemaic Kingdom: https://en.wikipedia.org/wiki/Ptolemaic_Kingdom
+- [7] Plutarco, Vida de Antonio (traducción inglesa en LacusCurtius, Universidad de Chicago): https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html
+- [8] Wikipedia: Wrangel Island: https://en.wikipedia.org/wiki/Wrangel_Island
 
 ## Los vikingos nunca llevaron cuernos (la culpa es de una ópera)
 
 Página: https://elarchivocurioso.github.io/expedientes/los-vikingos-nunca-llevaron-cuernos-la-culpa-es-de-una-opera.html
+Temática: Mitos desmontados
 Lugar: Escandinavia
 Época: Siglos VIII-XI
 
@@ -2665,17 +2703,18 @@ Siguen abiertas varias cuestiones. No sabemos cuántos vikingos llevaban casco n
 
 ### Fuentes
 
-- History.com: Did Vikings really wear horned helmets?: https://www.history.com/news/did-vikings-really-wear-horned-helmets
-- History Hit: What types of helmets did Vikings wear?: https://www.historyhit.com/types-of-viking-helmets/
-- Wikipedia: Gjermundbu helmet: https://en.wikipedia.org/wiki/Gjermundbu_helmet
-- Science Norway: Did this Viking helmet belong to a Norwegian warrior who served rulers in the East?: https://sciencenorway.no/archaeology-viking-age-vikings/did-this-viking-helmet-belong-to-a-norwegian-warrior-who-served-rulers-in-the-east/1964783
-- Science Norway: No, the Vikings didn't wear helmets with horns: https://sciencenorway.no/bronze-age-viking-age/no-the-vikings-didnt-wear-helmets-with-horns/1995364
-- Smithsonian Magazine: Iconic 'Viking' horned helmets are actually 3,000 years old: https://www.smithsonianmag.com/smart-news/iconic-viking-horned-helmets-actually-3000-years-old-180979339/
-- OUP Blog (Eleanor Barraclough): Ten myths about the Vikings: https://blog.oup.com/2016/10/ten-myths-vikings/
+- [1] History.com: Did Vikings really wear horned helmets?: https://www.history.com/news/did-vikings-really-wear-horned-helmets
+- [2] History Hit: What types of helmets did Vikings wear?: https://www.historyhit.com/types-of-viking-helmets/
+- [3] Wikipedia: Gjermundbu helmet: https://en.wikipedia.org/wiki/Gjermundbu_helmet
+- [4] Science Norway: Did this Viking helmet belong to a Norwegian warrior who served rulers in the East?: https://sciencenorway.no/archaeology-viking-age-vikings/did-this-viking-helmet-belong-to-a-norwegian-warrior-who-served-rulers-in-the-east/1964783
+- [5] Science Norway: No, the Vikings didn't wear helmets with horns: https://sciencenorway.no/bronze-age-viking-age/no-the-vikings-didnt-wear-helmets-with-horns/1995364
+- [6] Smithsonian Magazine: Iconic 'Viking' horned helmets are actually 3,000 years old: https://www.smithsonianmag.com/smart-news/iconic-viking-horned-helmets-actually-3000-years-old-180979339/
+- [7] OUP Blog (Eleanor Barraclough): Ten myths about the Vikings: https://blog.oup.com/2016/10/ten-myths-vikings/
 
 ## ¿Napoleón era bajito? El mito que nos creímos 200 años
 
 Página: https://elarchivocurioso.github.io/expedientes/napoleon-era-bajito-el-mito-que-nos-creimos-200-anos.html
+Temática: Mitos desmontados
 Lugar: Francia
 Época: 1769-1821
 
@@ -2735,17 +2774,18 @@ El «complejo de Napoleón» también merece una revisión. La idea viene del ps
 
 ### Fuentes
 
-- Fondation Napoléon: La taille de Napoléon: https://www.napoleon.org/histoire-des-2-empires/articles/la-taille-de-napoleon
-- History.com: Was Napoleon short?: https://www.history.com/articles/napoleon-complex-short
-- National Geographic: Was Napoleon even short?: https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history
-- John Komlos: An anthropometric history of early-modern France (European Review of Economic History, 2003): https://ideas.repec.org/a/cup/ereveh/v7y2003i02p159-189_00.html
-- Wikipedia: Napoleon complex: https://en.wikipedia.org/wiki/Napoleon_complex
-- Wikipedia: James Gillray: https://en.wikipedia.org/wiki/James_Gillray
-- Wikipedia: Battle of Lodi: https://en.wikipedia.org/wiki/Battle_of_Lodi
+- [1] Fondation Napoléon: La taille de Napoléon: https://www.napoleon.org/histoire-des-2-empires/articles/la-taille-de-napoleon
+- [2] History.com: Was Napoleon short?: https://www.history.com/articles/napoleon-complex-short
+- [3] National Geographic: Was Napoleon even short?: https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history
+- [4] John Komlos: An anthropometric history of early-modern France (European Review of Economic History, 2003): https://ideas.repec.org/a/cup/ereveh/v7y2003i02p159-189_00.html
+- [5] Wikipedia: Napoleon complex: https://en.wikipedia.org/wiki/Napoleon_complex
+- [6] Wikipedia: James Gillray: https://en.wikipedia.org/wiki/James_Gillray
+- [7] Wikipedia: Battle of Lodi: https://en.wikipedia.org/wiki/Battle_of_Lodi
 
 ## ¿Edison inventó la bombilla? La verdad
 
 Página: https://elarchivocurioso.github.io/expedientes/edison-invento-la-bombilla-la-verdad.html
+Temática: Mitos desmontados
 Lugar: Newcastle y Menlo Park
 Época: 1879
 
@@ -2808,16 +2848,17 @@ Por último, la bombilla de filamento de carbono tuvo una vida relativamente cor
 
 ### Fuentes
 
-- Joseph Swan (Wikipedia): https://en.wikipedia.org/wiki/Joseph_Swan
-- Linda Hall Library: Joseph Wilson Swan: https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/
-- Incandescent light bulb (Wikipedia): https://en.wikipedia.org/wiki/Incandescent_light_bulb
-- Edison's Incandescent Lamp (Engineering and Technology History Wiki, IEEE): https://ethw.org/Edison%27s_Incandescent_Lamp
-- Pearl Street Station (Wikipedia): https://en.wikipedia.org/wiki/Pearl_Street_Station
-- I Have Gotten a Lot of Results! I Know Several Thousand Things That Won't Work (Quote Investigator): https://quoteinvestigator.com/2012/07/31/edison-lot-results/
+- [1] Joseph Swan (Wikipedia): https://en.wikipedia.org/wiki/Joseph_Swan
+- [2] Linda Hall Library: Joseph Wilson Swan: https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/
+- [3] Incandescent light bulb (Wikipedia): https://en.wikipedia.org/wiki/Incandescent_light_bulb
+- [4] Edison's Incandescent Lamp (Engineering and Technology History Wiki, IEEE): https://ethw.org/Edison%27s_Incandescent_Lamp
+- [5] Pearl Street Station (Wikipedia): https://en.wikipedia.org/wiki/Pearl_Street_Station
+- [6] I Have Gotten a Lot of Results! I Know Several Thousand Things That Won't Work (Quote Investigator): https://quoteinvestigator.com/2012/07/31/edison-lot-results/
 
 ## La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar
 
 Página: https://elarchivocurioso.github.io/expedientes/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.html
+Temática: Desastres y epidemias
 Lugar: Estrasburgo
 Época: 1518
 
@@ -2883,8 +2924,8 @@ La primera interpretación psicológica llegó pronto. Paracelso visitó Estrasb
 
 ### Fuentes
 
-- Dancing plague of 1518 (Wikipedia): https://en.wikipedia.org/wiki/Dancing_plague_of_1518
-- John Waller, A Time to Dance, a Time to Die (2008): https://publishersweekly.com/9781402219436
-- Wikipedia (inglés), «Dancing mania»: https://en.wikipedia.org/wiki/Dancing_mania
-- Ned Pennant-Rea, «The Dancing Plague of 1518», The Public Domain Review (2018): https://publicdomainreview.org/essay/the-dancing-plague-of-1518/
-- Entrevista con Gregor Rohmann sobre la «Tanzwut» de Estrasburgo, web.de: https://web.de/magazine/wissen/geschichte/tanzen-tod-unheimliche-phaenomen-strassburger-tanzwut-34881744
+- [1] Dancing plague of 1518 (Wikipedia): https://en.wikipedia.org/wiki/Dancing_plague_of_1518
+- [2] John Waller, A Time to Dance, a Time to Die (2008): https://publishersweekly.com/9781402219436
+- [3] Wikipedia (inglés), «Dancing mania»: https://en.wikipedia.org/wiki/Dancing_mania
+- [4] Ned Pennant-Rea, «The Dancing Plague of 1518», The Public Domain Review (2018): https://publicdomainreview.org/essay/the-dancing-plague-of-1518/
+- [5] Entrevista con Gregor Rohmann sobre la «Tanzwut» de Estrasburgo, web.de: https://web.de/magazine/wissen/geschichte/tanzen-tod-unheimliche-phaenomen-strassburger-tanzwut-34881744
