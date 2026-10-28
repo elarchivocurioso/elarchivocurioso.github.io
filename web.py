@@ -1019,6 +1019,9 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
            f'<link rel="alternate" type="application/rss+xml" title="{escape(canal["nombre"])}" href="{URL}/feed.xml">\n')
     if canal.get("google_verificacion"):
         seo += f'<meta name="google-site-verification" content="{escape(canal["google_verificacion"])}">\n'
+    if canal.get("adsense"):   # Google AdSense: el código va en el <head> de todas las páginas
+        seo += (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={escape(canal["adsense"])}" '
+                'crossorigin="anonymous"></script>\n')
     if canal.get("bing_verificacion"):
         seo += f'<meta name="msvalidate.01" content="{escape(canal["bing_verificacion"])}">\n'
     if jsonld:
@@ -1953,7 +1956,7 @@ def privacidad(canal: dict) -> str:
     cuerpo = """<main class="ancho legal">
 <a class="volver" href="index.html">← Inicio</a>
 <h1>Política de privacidad</h1>
-<div class="fecha">Última actualización: 28 de octubre de 2026</div>
+<div class="fecha">Última actualización: 28 de octubre de 2026 (publicidad de Google AdSense)</div>
 <h2>1. Qué es esta herramienta</h2>
 <p>"elarchivocurioso scripts" es una herramienta de uso privado que utiliza la persona responsable del canal de YouTube Folio 13 (antes El Archivo Curioso) para gestionar su propio canal: subir sus vídeos, completar títulos, descripciones, miniaturas, subtítulos y listas de reproducción, y consultar las estadísticas y los comentarios del canal. No es una aplicación pública ni está pensada para que la usen otras personas.</p>
 <h2>2. Qué datos se usan</h2>
@@ -1970,7 +1973,10 @@ def privacidad(canal: dict) -> str:
   <li>La herramienta no recopila datos de los espectadores del canal.</li>
 </ul>
 <h2>4. Esta web</h2>
-<p>Esta web no usa cookies propias ni formularios. Los vídeos se muestran con el reproductor de YouTube en modo de privacidad mejorada (youtube-nocookie.com); al reproducirlos se aplica la política de privacidad de Google.</p>
+<p>Esta web no usa cookies propias. Los vídeos se muestran con el reproductor de YouTube en modo de privacidad mejorada (youtube-nocookie.com); al reproducirlos se aplica la política de privacidad de Google.</p>
+<p><b>Publicidad.</b> Esta web muestra anuncios de Google AdSense. Google y sus socios pueden usar cookies para mostrar anuncios según tus visitas a esta y otras webs. En la Unión Europea, te pedimos tu consentimiento antes, con el aviso de privacidad de Google. Puedes desactivar la publicidad personalizada en <a href="https://adssettings.google.com">la configuración de anuncios de Google</a>, y ver cómo usa Google los datos en <a href="https://policies.google.com/technologies/partner-sites">esta página</a>.</p>
+<p><b>Tu archivo.</b> La web recuerda en tu propio navegador (localStorage) qué folios has abierto, para el contador «Has leído X de N». No se envía a ningún sitio.</p>
+<p><b>Opiniones.</b> El formulario de opiniones es de Tally. Solo se publican las opiniones aprobadas, sin correo.</p>
 <h2>5. Servicios de Google</h2>
 <p>La herramienta usa los Servicios de la API de YouTube. Al ver el canal también se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
 <p>El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</p>
@@ -2167,6 +2173,10 @@ def generar() -> int:
         (SALIDA / "CNAME").write_text(DOMINIO + "\n", encoding="utf-8")
     elif (SALIDA / "CNAME").exists():
         (SALIDA / "CNAME").unlink()
+    # ads.txt de AdSense: dice qué vendedores de anuncios están autorizados a vender en esta web
+    if canal.get("adsense"):
+        (SALIDA / "ads.txt").write_text(f"google.com, {canal['adsense'].removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n",
+                                        encoding="utf-8")
     # Archivo de verificación de Google Search Console (no se debe borrar nunca)
     if canal.get("google_archivo"):
         (SALIDA / canal["google_archivo"]).write_text(f"google-site-verification: {canal['google_archivo']}",

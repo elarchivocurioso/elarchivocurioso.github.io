@@ -12,7 +12,8 @@
     "donaciones_texto": "Invítanos a un café",
     "newsletter_url": "",
     "opiniones_form": "ArrjlN",
-    "dominio": "folio13.com"
+    "dominio": "folio13.com",
+    "adsense": "ca-pub-5734279445519979"
   },
   "expedientes": [
     {
@@ -1852,34 +1853,34 @@
         {
           "titulo": "",
           "parrafos": [
-            "En la noche del 2 de septiembre de 1859, dos telegrafistas de Boston y Portland (Maine) desconectaron sus baterías y siguieron enviándose mensajes. Suena a magia, pero tiene una explicación física precisa. Para entenderla hay que saber cómo funcionaba un telégrafo de la época y qué le hace una tormenta solar a un cable de muchos kilómetros."
+            "En la noche del 2 de septiembre de 1859, dos telegrafistas de Boston y Portland (Maine) desconectaron sus baterías y siguieron enviándose mensajes [1]. Suena a magia, pero tiene una explicación física precisa. Para entenderla hay que saber cómo funcionaba un telégrafo de la época y qué le hace una tormenta solar a un cable de muchos kilómetros."
           ]
         },
         {
           "titulo": "Un cable, una pila y la tierra",
           "parrafos": [
-            "El telégrafo Morse usaba un único cable entre dos oficinas. Para cerrar el circuito se aprovechaba la propia tierra: cada extremo de la línea se conectaba al suelo, que hacía de cable de vuelta. Este retorno por tierra se había estrenado en Alemania en 1838 y ahorraba la mitad del cable.",
+            "El telégrafo Morse usaba un único cable entre dos oficinas [4]. Para cerrar el circuito se aprovechaba la propia tierra: cada extremo de la línea se conectaba al suelo, que hacía de cable de vuelta. Este retorno por tierra se había estrenado en Alemania en 1838 y ahorraba la mitad del cable [4].",
             "La energía la ponían las baterías, pilas químicas que empujaban la corriente por la línea. El operador abría y cerraba el circuito con el manipulador para formar los puntos y rayas del código Morse. Al otro extremo, la corriente activaba un electroimán, el relé, que hacía funcionar el aparato receptor. Solo importaba una cosa: que hubiera corriente o no."
           ]
         },
         {
           "titulo": "Cuando el campo magnético se agita",
           "parrafos": [
-            "Durante una tormenta geomagnética, las corrientes eléctricas de la alta atmósfera cambian deprisa, y con ellas el campo magnético que se mide en el suelo. Por la ley de inducción de Faraday, un campo magnético que varía crea un campo eléctrico, en este caso en la superficie terrestre, que se mide en voltios por kilómetro.",
-            "Un cable de decenas o cientos de kilómetros conectado a tierra por los dos extremos recoge la diferencia de voltaje entre ambos puntos, y por él circula una corriente que nadie ha generado. Cuanto más larga es la línea, mayor es ese voltaje. Son las corrientes inducidas geomagnéticamente. El telégrafo las sufrió por primera vez en 1847 y 1848, pero en 1859 fueron tan intensas que llegaron a sustituir a las pilas."
+            "Durante una tormenta geomagnética, las corrientes eléctricas de la alta atmósfera cambian deprisa, y con ellas el campo magnético que se mide en el suelo. Por la ley de inducción de Faraday, un campo magnético que varía crea un campo eléctrico, en este caso en la superficie terrestre, que se mide en voltios por kilómetro [3].",
+            "Un cable de decenas o cientos de kilómetros conectado a tierra por los dos extremos recoge la diferencia de voltaje entre ambos puntos, y por él circula una corriente que nadie ha generado. Cuanto más larga es la línea, mayor es ese voltaje. Son las corrientes inducidas geomagnéticamente. El telégrafo las sufrió por primera vez en 1847 y 1848 [3], pero en 1859 fueron tan intensas que llegaron a sustituir a las pilas [1]."
           ]
         },
         {
           "titulo": "La conversación entre Boston y Portland",
           "parrafos": [
-            "El diálogo lo publicó el periódico *Boston Evening Traveller*. El operador de Boston pidió a su colega que cortara la batería durante quince minutos. Ambos la desconectaron y siguieron trabajando, según Boston, con «la corriente auroral». Portland respondió que recibía mejor que con las baterías, aunque la corriente iba y venía poco a poco.",
-            "Boston explicó el motivo: la aurora parecía anular y reforzar sus baterías alternativamente, y a veces la corriente era demasiado fuerte para los relés. Tiene lógica. La corriente inducida cambiaba de sentido: cuando coincidía con la de la pila, se sumaba y saturaba los aparatos; cuando iba en contra, la anulaba. Sin baterías, bastaba con abrir y cerrar el circuito, y la tormenta ponía la energía. No fue un caso único: una recopilación publicada ese año en el *American Journal of Science* afirma que el 3 de septiembre varias líneas funcionaron solo gracias a la «influencia atmosférica»."
+            "El diálogo lo publicó el periódico *Boston Evening Traveller* [1]. El operador de Boston pidió a su colega que cortara la batería durante quince minutos. Ambos la desconectaron y siguieron trabajando, según Boston, con «la corriente auroral». Portland respondió que recibía mejor que con las baterías, aunque la corriente iba y venía poco a poco [1].",
+            "Boston explicó el motivo: la aurora parecía anular y reforzar sus baterías alternativamente, y a veces la corriente era demasiado fuerte para los relés. Tiene lógica. La corriente inducida cambiaba de sentido: cuando coincidía con la de la pila, se sumaba y saturaba los aparatos; cuando iba en contra, la anulaba. Sin baterías, bastaba con abrir y cerrar el circuito, y la tormenta ponía la energía. No fue un caso único: una recopilación publicada ese año en el *American Journal of Science* afirma que el 3 de septiembre varias líneas funcionaron solo gracias a la «influencia atmosférica» [1]."
           ]
         },
         {
           "titulo": "Qué es mito y qué no",
           "parrafos": [
-            "El Sol no envió electricidad por el cable: sacudió el campo magnético terrestre, y esa sacudida indujo la corriente. Tampoco era una fuente estable, pero bastaba porque el telégrafo solo necesitaba pulsos. La duración, unas dos horas según el relato más citado, procede de testimonios, no de mediciones. Lo que sí está bien documentado es el fenómeno, que hoy preocupa a las compañías eléctricas."
+            "El Sol no envió electricidad por el cable: sacudió el campo magnético terrestre, y esa sacudida indujo la corriente. Tampoco era una fuente estable, pero bastaba porque el telégrafo solo necesitaba pulsos. La duración, unas dos horas según el relato más citado, procede de testimonios, no de mediciones [1]. Lo que sí está bien documentado es el fenómeno, que hoy preocupa a las compañías eléctricas [3]."
           ]
         }
       ],
@@ -1887,6 +1888,28 @@
       "mapa": [
         42.36,
         -71.06
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "La noche del 2 de septiembre de 1859, los operadores de la línea Boston-Portland desconectaron las baterías y trabajaron con la corriente inducida por la aurora [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Al día siguiente, según el *American Journal of Science*, varias líneas funcionaron solo con la «influencia atmosférica» [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Estas corrientes ya habían alterado el telégrafo en 1847 y 1848, más de diez años antes de Carrington [3]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que la conversación sin pilas durara unas dos horas, porque la cifra sale de un relato de la época y no de una medición [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que el Sol enviara electricidad por los cables: lo que hizo fue agitar el campo magnético terrestre, y esa variación indujo la corriente [3]"
+        }
       ]
     },
     {
@@ -2077,28 +2100,28 @@
         {
           "titulo": "Responder a las preguntas antes de que se hagan",
           "parrafos": [
-            "Cada detalle del montaje de 1925 desactivaba una duda. ¿Era auténtico el funcionario? Tenía un cargo en el Ministerio de Correos y Telégrafos, papel con membrete oficial y citaba a los chatarreros en un hotel de lujo. ¿Era absurda la venta? La prensa había hablado de lo cara que salía la torre. ¿Por qué no había concurso público? Porque el asunto debía llevarse en secreto para evitar el escándalo.",
+            "Cada detalle del montaje de 1925 desactivaba una duda. ¿Era auténtico el funcionario? Tenía un cargo en el Ministerio de Correos y Telégrafos, papel con membrete oficial y citaba a los chatarreros en un hotel de lujo. ¿Era absurda la venta? La prensa había hablado de lo cara que salía la torre [1]. ¿Por qué no había concurso público? Porque el asunto debía llevarse en secreto para evitar el escándalo [1].",
             "Ese secreto servía para algo más: impedía comprobar nada con nadie. Una víctima que no puede consultar a un amigo, a un abogado o a un ministerio está sola frente al estafador. A eso se sumaban dos empujones clásicos: el halago, al decirles que los habían elegido por su fama de hombres de negocios honrados, y la competencia, porque debían pujar unos contra otros."
           ]
         },
         {
           "titulo": "Elegir a la víctima adecuada",
           "parrafos": [
-            "Lustig se fijó en André Poisson, el más interesado y el más inseguro del grupo, que ansiaba hacerse un sitio entre los grandes empresarios de París. Su deseo de prestigio pesaba más que su prudencia.",
-            "En la jerga que recogió el lingüista David W. Maurer en *The Big Con* (1940), tras entrevistar a cientos de estafadores, esa persona es la *mark*, la víctima señalada. Maurer partía de una idea incómoda: el timador prospera gracias a la falta de honradez de su propia víctima, a la que tienta con un negocio turbio que parece seguro."
+            "Lustig se fijó en André Poisson, el más interesado y el más inseguro del grupo, que ansiaba hacerse un sitio entre los grandes empresarios de París [1]. Su deseo de prestigio pesaba más que su prudencia.",
+            "En la jerga que recogió el lingüista David W. Maurer en *The Big Con* (1940), tras entrevistar a cientos de estafadores, esa persona es la *mark*, la víctima señalada. Maurer partía de una idea incómoda: el timador prospera gracias a la falta de honradez de su propia víctima, a la que tienta con un negocio turbio que parece seguro [3]."
           ]
         },
         {
           "titulo": "El soborno, la pieza maestra",
           "parrafos": [
-            "Según los relatos más difundidos, Poisson, o su mujer en algunas versiones, desconfiaba de tanto secreto y tanta prisa. Lustig se presentó entonces como un funcionario mal pagado y dejó entrever que aceptaría una compensación. Poisson pagó el soborno además del precio.",
-            "Ese gesto lo convirtió en cómplice. Denunciar el engaño suponía confesar un soborno y ser el hazmerreír de París. Es lo que describía Maurer: el estafador no solo explota la codicia ajena, también la usa como candado. Cuando Lustig repitió la jugada con otro grupo, el candado falló y alguien avisó a la policía."
+            "Según los relatos más difundidos, Poisson, o su mujer en algunas versiones, desconfiaba de tanto secreto y tanta prisa [4]. Lustig se presentó entonces como un funcionario mal pagado y dejó entrever que aceptaría una compensación. Poisson pagó el soborno además del precio [1].",
+            "Ese gesto lo convirtió en cómplice. Denunciar el engaño suponía confesar un soborno y ser el hazmerreír de París [4]. Es lo que describía Maurer: el estafador no solo explota la codicia ajena, también la usa como candado. Cuando Lustig repitió la jugada con otro grupo, el candado falló y alguien avisó a la policía [1]."
           ]
         },
         {
           "titulo": "Qué es mito y qué no",
           "parrafos": [
-            "A Lustig se le atribuyen unos «diez mandamientos del estafador»: escuchar con paciencia, no parecer nunca aburrido, dar la razón al otro en política y en religión, insinuar conversaciones picantes sin insistir, no hablar de enfermedades, no curiosear en la vida ajena, no presumir, no ir desaliñado y no emborracharse. Casi ninguno habla de mentir, sino de escuchar y reflejar lo que el otro quiere oír. Pero la lista aparece en un libro de 1993, medio siglo después de su muerte, y no hay pruebas de que él la escribiera. Tampoco son seguros las dudas de la esposa de Poisson ni las cifras pagadas, que cambian según el relato."
+            "A Lustig se le atribuyen unos «diez mandamientos del estafador»: escuchar con paciencia, no parecer nunca aburrido, dar la razón al otro en política y en religión, insinuar conversaciones picantes sin insistir, no hablar de enfermedades, no curiosear en la vida ajena, no presumir, no ir desaliñado y no emborracharse. Casi ninguno habla de mentir, sino de escuchar y reflejar lo que el otro quiere oír. Pero la lista aparece en un libro de 1993, medio siglo después de su muerte, y no hay pruebas de que él la escribiera [1]. Tampoco son seguros las dudas de la esposa de Poisson ni las cifras pagadas, que cambian según el relato [1][4]."
           ]
         }
       ],
@@ -2113,6 +2136,28 @@
       "mapa": [
         48.858,
         2.294
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "En 1925, Lustig se presentó ante un grupo de chatarreros de París como alto cargo del Ministerio de Correos y Telégrafos [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Poisson pagó un soborno además del precio, y cuando Lustig repitió el timo con otro grupo, alguien avisó a la policía [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Los «diez mandamientos del estafador», porque la fuente que se los atribuye es un libro de 1993, publicado décadas después de su muerte [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Cuánto se pagó, porque unas versiones hablan de unos 70.000 francos y otras dan la cifra en dólares [1][4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que el Gobierno francés quisiera vender la torre como chatarra: era la historia que contó Lustig, que ni siquiera trabajaba para el Estado [4]"
+        }
       ]
     },
     {
@@ -2299,39 +2344,39 @@
         {
           "titulo": "",
           "parrafos": [
-            "Casi todo lo que se repite sobre la «tulipomanía» tiene un origen muy concreto: un capítulo de un libro publicado en Londres en 1841. En él aparecen deshollinadores que apuestan sus ahorros, ricos comerciantes reducidos a la mendicidad y un país en crisis. Su autor, el periodista escocés Charles Mackay, trabajó con fuentes de segunda mano. Más de siglo y medio después, la historiadora Anne Goldgar fue a los archivos holandeses, y lo que encontró explica por qué esa versión se considera hoy, en buena parte, un mito."
+            "Casi todo lo que se repite sobre la «tulipomanía» tiene un origen muy concreto: un capítulo de un libro publicado en Londres en 1841 [3]. En él aparecen deshollinadores que apuestan sus ahorros, ricos comerciantes reducidos a la mendicidad y un país en crisis. Su autor, el periodista escocés Charles Mackay, trabajó con fuentes de segunda mano. Más de siglo y medio después, la historiadora Anne Goldgar fue a los archivos holandeses, y lo que encontró explica por qué esa versión se considera hoy, en buena parte, un mito."
           ]
         },
         {
           "titulo": "Un éxito editorial sobre la locura de las masas",
           "parrafos": [
             "El libro se tituló primero *Memoirs of Extraordinary Popular Delusions* y, más tarde, *Extraordinary Popular Delusions and the Madness of Crowds*. Era un catálogo de manías colectivas, de la alquimia a las cazas de brujas, con tres burbujas financieras entre ellas. Mackay escribía con gancho, pero con un estilo que buscaba más el asombro que la precisión.",
-            "Su capítulo sobre los tulipanes asegura que hasta los deshollinadores y las ropavejeras especulaban con bulbos, y que tras el desplome hubo comerciantes acomodados que quedaron casi en la miseria. Su anécdota más famosa es la de un marinero que confundió un valiosísimo bulbo de Semper Augustus con una cebolla, se lo comió con un arenque y acabó varios meses en prisión. Es una historia redonda, pero difícil de creer: el bulbo de tulipán sabe mal y puede resultar tóxico."
+            "Su capítulo sobre los tulipanes asegura que hasta los deshollinadores y las ropavejeras especulaban con bulbos, y que tras el desplome hubo comerciantes acomodados que quedaron casi en la miseria. Su anécdota más famosa es la de un marinero que confundió un valiosísimo bulbo de Semper Augustus con una cebolla, se lo comió con un arenque y acabó varios meses en prisión [5]. Es una historia redonda, pero difícil de creer: el bulbo de tulipán sabe mal y puede resultar tóxico [4]."
           ]
         },
         {
           "titulo": "De dónde sacó Mackay sus historias",
           "parrafos": [
-            "Mackay tomó buena parte de su relato de la historia de los inventos del alemán Johann Beckmann. Y la fuente última era casi siempre la misma: los panfletos satíricos que circularon tras el desplome de febrero de 1637, sobre todo unos diálogos entre dos personajes llamados Waermondt y Gaergoedt, impresos en Haarlem ese mismo año.",
-            "Aquellos panfletos no eran crónicas, sino sátiras morales de tono religioso, escritas para ridiculizar la codicia y no por quienes habían perdido dinero. Según Goldgar, mucho de lo que contó Mackay sale directamente de esas canciones y sátiras de 1637."
+            "Mackay tomó buena parte de su relato de la historia de los inventos del alemán Johann Beckmann [4]. Y la fuente última era casi siempre la misma: los panfletos satíricos que circularon tras el desplome de febrero de 1637, sobre todo unos diálogos entre dos personajes llamados Waermondt y Gaergoedt, impresos en Haarlem ese mismo año.",
+            "Aquellos panfletos no eran crónicas, sino sátiras morales de tono religioso, escritas para ridiculizar la codicia y no por quienes habían perdido dinero. Según Goldgar, mucho de lo que contó Mackay sale directamente de esas canciones y sátiras de 1637 [2]."
           ]
         },
         {
           "titulo": "Lo que encontró Goldgar",
           "parrafos": [
-            "Tras años revisando documentos notariales y judiciales, Goldgar identificó a menos de media docena de participantes con problemas financieros, y ni siquiera estaba claro que los tulipanes fueran la causa. Como el dinero casi nunca llegó a cambiar de manos, la mayoría de las pérdidas fueron sobre el papel. Aun así, Goldgar sostiene que el golpe fue real en otro sentido: puso en duda la confianza en los contratos y en la palabra dada."
+            "Tras años revisando documentos notariales y judiciales, Goldgar identificó a menos de media docena de participantes con problemas financieros, y ni siquiera estaba claro que los tulipanes fueran la causa [4]. Como el dinero casi nunca llegó a cambiar de manos, la mayoría de las pérdidas fueron sobre el papel. Aun así, Goldgar sostiene que el golpe fue real en otro sentido: puso en duda la confianza en los contratos y en la palabra dada [1]."
           ]
         },
         {
           "titulo": "La ironía final",
           "parrafos": [
-            "Según el matemático Andrew Odlyzko, en octubre de 1845, en plena fiebre especulativa de los ferrocarriles británicos, Mackay escribió como editorialista de *The Glasgow Argus* que no había motivo alguno para temer un crac. Aquella burbuja estalló poco después, y en ediciones posteriores de su libro él mismo la calificó de delirio colectivo."
+            "Según el matemático Andrew Odlyzko, en octubre de 1845, en plena fiebre especulativa de los ferrocarriles británicos, Mackay escribió como editorialista de *The Glasgow Argus* que no había motivo alguno para temer un crac [3]. Aquella burbuja estalló poco después, y en ediciones posteriores de su libro él mismo la calificó de delirio colectivo."
           ]
         },
         {
           "titulo": "Qué es mito y qué no",
           "parrafos": [
-            "Es cierto que hubo precios muy altos por algunos bulbos y un desplome brusco en 1637. Es mito la ruina general, y las anécdotas más citadas, como la del marinero, proceden de sátiras y relatos de segunda mano, no de documentos de archivo."
+            "Es cierto que hubo precios muy altos por algunos bulbos y un desplome brusco en 1637 [1]. Es mito la ruina general, y las anécdotas más citadas, como la del marinero, proceden de sátiras y relatos de segunda mano, no de documentos de archivo [1]."
           ]
         }
       ],
@@ -2340,6 +2385,28 @@
       "mapa": [
         52.38,
         4.64
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Algunos bulbos alcanzaron precios altísimos y el mercado se desplomó en febrero de 1637 [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En octubre de 1845, en plena fiebre del ferrocarril, Mackay escribió que no había motivo para temer un crac [3]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "El alcance del daño, porque Goldgar solo halló menos de media docena de afectados y ni siquiera está claro que los tulipanes tuvieran la culpa [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La ruina general, con deshollinadores y ropavejeras especulando: sale de las sátiras de 1637 que Mackay repitió [2]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "El marinero encarcelado por comerse un bulbo con su arenque, una anécdota de panfletos moralizantes y no de los archivos [1]"
+        }
       ]
     },
     {
@@ -2390,28 +2457,28 @@
         {
           "titulo": "",
           "parrafos": [
-            "El 4 de diciembre de 1872, los marineros del bergantín canadiense Dei Gratia vieron un barco que navegaba de forma extraña en mitad del Atlántico, entre las Azores y la costa de Portugal. Al subir a bordo comprobaron que el Mary Celeste flotaba, conservaba su carga y tenía provisiones para meses. Lo único que faltaba eran las personas: el capitán, su mujer, su hija de 2 años y siete tripulantes. Tampoco estaba el bote salvavidas.",
+            "El 4 de diciembre de 1872, los marineros del bergantín canadiense Dei Gratia vieron un barco que navegaba de forma extraña en mitad del Atlántico, entre las Azores y la costa de Portugal. Al subir a bordo comprobaron que el Mary Celeste flotaba, conservaba su carga y tenía provisiones para meses. Lo único que faltaba eran las personas: el capitán, su mujer, su hija de 2 años y siete tripulantes. Tampoco estaba el bote salvavidas [3].",
             "Más de 150 años después, nadie sabe con certeza qué les ocurrió. El caso se ha convertido en el gran misterio del mar, en parte por lo que sucedió de verdad y en parte por lo que se le añadió después, empezando por un relato de ficción de un joven Arthur Conan Doyle."
           ]
         },
         {
           "titulo": "Un barco con historia",
           "parrafos": [
-            "El Mary Celeste no se llamó así desde el principio. Su quilla se puso a finales de 1860 en un astillero de Spencers Island, en Nueva Escocia (Canadá), y el 18 de mayo de 1861 se botó con el nombre de Amazon. Su primer capitán, Robert McLellan, que era también uno de sus nueve copropietarios, enfermó durante el viaje inaugural y murió el 19 de junio de ese año.",
+            "El Mary Celeste no se llamó así desde el principio. Su quilla se puso a finales de 1860 en un astillero de Spencers Island, en Nueva Escocia (Canadá), y el 18 de mayo de 1861 se botó con el nombre de Amazon. Su primer capitán, Robert McLellan, que era también uno de sus nueve copropietarios, enfermó durante el viaje inaugural y murió el 19 de junio de ese año [4].",
             "En octubre de 1867, el Amazon encalló cerca de la isla de Cabo Bretón y se vendió como pecio. Un comprador estadounidense, Richard W. Haines, lo reparó y en diciembre de 1868 lo registró en Nueva York con su nuevo nombre. Poco después pasó a manos de un grupo de inversores encabezado por James H. Winchester. Para entonces, uno de los socios era su nuevo capitán: Benjamin Spooner Briggs, de Marion (Massachusetts), que tenía 4 de las 12 participaciones del barco."
           ]
         },
         {
           "titulo": "El último viaje",
           "parrafos": [
-            "El 7 de noviembre de 1872, el Mary Celeste zarpó de Nueva York rumbo a Génova con 1.701 barriles de alcohol industrial. Iban a bordo diez personas: Briggs, su mujer, Sarah, su hija Sophia, de 2 años, y siete tripulantes. El hijo mayor del matrimonio, Arthur, de unos 7 años, se quedó en casa con su abuela.",
-            "Ocho días después salió del mismo puerto el Dei Gratia, al mando del capitán David Morehouse. La última anotación en el diario de a bordo del Mary Celeste está fechada el 25 de noviembre, cerca de la isla de Santa María, en las Azores, tras unas dos semanas de mal tiempo. A partir de ahí, nadie volvió a saber de sus diez ocupantes."
+            "El 7 de noviembre de 1872, el Mary Celeste zarpó de Nueva York rumbo a Génova con 1.701 barriles de alcohol industrial [2]. Iban a bordo diez personas: Briggs, su mujer, Sarah, su hija Sophia, de 2 años, y siete tripulantes. El hijo mayor del matrimonio, Arthur, de unos 7 años, se quedó en casa con su abuela.",
+            "Ocho días después salió del mismo puerto el Dei Gratia, al mando del capitán David Morehouse. La última anotación en el diario de a bordo del Mary Celeste está fechada el 25 de noviembre, cerca de la isla de Santa María, en las Azores, tras unas dos semanas de mal tiempo [1]. A partir de ahí, nadie volvió a saber de sus diez ocupantes."
           ]
         },
         {
           "titulo": "Nadie a bordo",
           "parrafos": [
-            "Nueve días más tarde, hacia la una de la tarde, el Dei Gratia encontró el Mary Celeste a la deriva, a unas 400 millas al este de las Azores. El primer oficial, Oliver Deveau, y el segundo, John Wright, subieron a bordo. Según su testimonio, las velas estaban parcialmente desplegadas y dañadas, y la jarcia, suelta. La caja de la bitácora, donde va la brújula, se había movido y tenía el cristal roto. En la bodega había casi un metro de agua (unos 3,5 pies), una cantidad importante pero no alarmante. En cubierta había una sonda improvisada, la vara con la que se mide el agua acumulada. Faltaban los instrumentos de navegación del capitán y casi todos los documentos del barco, salvo el diario. Y no estaba el bote.",
+            "Nueve días más tarde, hacia la una de la tarde, el Dei Gratia encontró el Mary Celeste a la deriva, a unas 400 millas al este de las Azores. El primer oficial, Oliver Deveau, y el segundo, John Wright, subieron a bordo. Según su testimonio, las velas estaban parcialmente desplegadas y dañadas, y la jarcia, suelta. La caja de la bitácora, donde va la brújula, se había movido y tenía el cristal roto. En la bodega había algo más de un metro de agua (unos 3,5 pies), una cantidad importante pero no alarmante [4]. En cubierta había una sonda improvisada, la vara con la que se mide el agua acumulada. Faltaban los instrumentos de navegación del capitán y casi todos los documentos del barco, salvo el diario. Y no estaba el bote.",
             "Morehouse decidió llevar el barco abandonado a Gibraltar, con Deveau y una pequeña tripulación a bordo. Si lo conseguían, podían reclamar un premio de salvamento, que en el derecho marítimo es una parte del valor de lo rescatado. Llegaron el 13 de diciembre."
           ]
         },
@@ -2419,25 +2486,25 @@
           "titulo": "Gibraltar: sospechas sin pruebas",
           "parrafos": [
             "Las vistas del caso de salvamento empezaron el 17 de diciembre, ante el juez Sir James Cochrane. El fiscal general de Gibraltar, Frederick Solly-Flood, estaba convencido de que había habido un crimen. Su teoría era que la tripulación se había emborrachado con el alcohol de la carga y había asesinado al capitán, a su familia y a los oficiales.",
-            "Los inspectores encontraron unos cortes en la proa que creyeron hechos a propósito, y unas manchas en la espada del capitán y en una barandilla que podían ser sangre. Pero el análisis posterior concluyó que no lo eran, y un capitán de la Marina estadounidense, Robert Shufeldt, atribuyó las marcas de la proa a la acción natural del mar. Además, el alcohol era desnaturalizado, no apto para beber, y al descargar en Génova solo había 9 barriles vacíos de 1.701, una pérdida considerada normal. No faltaban objetos de valor ni había huellas de saqueo. Nada sostenía la idea del motín.",
-            "Las sospechas rozaron también a los marineros del Dei Gratia, que se jugaban el premio. Tampoco se demostró nada. El barco se liberó el 25 de febrero de 1873 y, el 8 de abril, el tribunal concedió a sus rescatadores 1.700 libras, alrededor de una quinta parte del valor del barco y la carga. La cifra era baja, y el juez criticó la actuación de Morehouse."
+            "Los inspectores encontraron unos cortes en la proa que creyeron hechos a propósito, y unas manchas en la espada del capitán y en una barandilla que podían ser sangre. Pero el análisis posterior concluyó que no lo eran, y un capitán de la Marina estadounidense, Robert Shufeldt, atribuyó las marcas de la proa a la acción natural del mar [4]. Además, el alcohol era desnaturalizado, no apto para beber, y al descargar en Génova solo había 9 barriles vacíos de 1.701, una pérdida considerada normal. No faltaban objetos de valor ni había huellas de saqueo. Nada sostenía la idea del motín.",
+            "Las sospechas rozaron también a los marineros del Dei Gratia, que se jugaban el premio. Tampoco se demostró nada. El barco se liberó el 25 de febrero de 1873 y, el 8 de abril, el tribunal concedió a sus rescatadores 1.700 libras, alrededor de una quinta parte del valor del barco y la carga [4]. La cifra era baja, y el juez criticó la actuación de Morehouse."
           ]
         },
         {
           "titulo": "Qué pudo pasar: lo que todavía se discute",
           "parrafos": [
             "Como nadie sobrevivió para contarlo, todas las explicaciones son hipótesis. Las que más peso tienen hoy parten de una idea sencilla: Briggs ordenó abandonar el barco porque creyó, quizá equivocadamente, que corría peligro, y el bote se perdió en el mar con todos a bordo.",
-            "¿Qué pudo asustarle? Una posibilidad es que pensara que el barco se estaba hundiendo. La sonda improvisada encontrada en cubierta sugiere que alguien estaba midiendo el agua de la bodega. Un documental del canal Smithsonian de 2007 propuso que las bombas de achique estaban atascadas, posiblemente por polvo de carbón de un viaje anterior, y que un cronómetro defectuoso pudo hacer creer al capitán que estaba más cerca de tierra de lo que estaba. El propio Deveau planteó que una tromba marina pudo provocar una lectura falsa del nivel del agua.",
-            "La otra gran hipótesis es el alcohol. Los vapores de la carga pudieron acumularse en la bodega y provocar una pequeña explosión, o el temor a ella, suficiente para que la tripulación se refugiara en el bote. El problema es que en el barco no había rastro de fuego. En 2006, el químico Andrea Sella, del University College de Londres, recreó la bodega a escala para un documental y mostró que una explosión de ese tipo puede ser una onda de presión que no deja quemaduras. En 2026, dos químicos de la Universidad de Manchester, Jack Rowbotham y Frank Mair, repitieron la idea con una maqueta para otro documental y la consideraron una explicación «muy convincente». Son demostraciones televisivas, no pruebas, pero explican por qué la teoría sigue viva. Otras propuestas, como un maremoto submarino, un iceberg o un calamar gigante, tienen muchos más problemas."
+            "¿Qué pudo asustarle? Una posibilidad es que pensara que el barco se estaba hundiendo. La sonda improvisada encontrada en cubierta sugiere que alguien estaba midiendo el agua de la bodega. Un documental del canal Smithsonian de 2007 propuso que las bombas de achique estaban atascadas, posiblemente por polvo de carbón de un viaje anterior, y que un cronómetro defectuoso pudo hacer creer al capitán que estaba más cerca de tierra de lo que estaba [4]. El propio Deveau planteó que una tromba marina pudo provocar una lectura falsa del nivel del agua.",
+            "La otra gran hipótesis es el alcohol. Los vapores de la carga pudieron acumularse en la bodega y provocar una pequeña explosión, o el temor a ella, suficiente para que la tripulación se refugiara en el bote. El problema es que en el barco no había rastro de fuego. En 2006, el químico Andrea Sella, del University College de Londres, recreó la bodega a escala para un documental y mostró que una explosión de ese tipo puede ser una onda de presión que no deja quemaduras. En 2026, dos químicos de la Universidad de Manchester, Jack Rowbotham y Frank Mair, repitieron la idea con una maqueta para otro documental y la consideraron una explicación «muy convincente» [5]. Son demostraciones televisivas, no pruebas, pero explican por qué la teoría sigue viva. Otras propuestas, como un maremoto submarino, un iceberg o un calamar gigante, tienen muchos más problemas."
           ]
         },
         {
           "titulo": "Conan Doyle, la «Marie Celeste» y un final de estafa",
           "parrafos": [
-            "Buena parte de la fama del caso se debe a un relato publicado sin firma en enero de 1884 en The Cornhill Magazine: «J. Habakuk Jephson's Statement», obra de un Arthur Conan Doyle de 24 años que aún no había creado a Sherlock Holmes. En él, el barco se llamaba «Marie Celeste», y mucha gente leyó la historia como un testimonio real. Esa grafía sigue siendo hoy más común que la auténtica, y muchos detalles que se repiten como hechos, como el té todavía caliente en la mesa o la comida a medio servir, proceden de esta y de otras ficciones posteriores. Doyle volvió sobre el caso años después: en «La aventura del vampiro de Sussex», Holmes menciona un barco llamado «Matilda Briggs», y Sophia Matilda era el nombre completo de la hija del capitán.",
-            "También es dudosa la famosa cena en la que Briggs y Morehouse, que se conocían, habrían charlado antes de zarpar. Solo se apoya en un recuerdo de la viuda de Morehouse contado unos 50 años después. Y la fecha del hallazgo aparece como 4 o 5 de diciembre según la fuente, por la forma en que se contaban los días a bordo.",
+            "Buena parte de la fama del caso se debe a un relato publicado sin firma en enero de 1884 en The Cornhill Magazine: «J. Habakuk Jephson's Statement», obra de un Arthur Conan Doyle de 24 años que aún no había creado a Sherlock Holmes. En él, el barco se llamaba «Marie Celeste», y mucha gente leyó la historia como un testimonio real [3]. Esa grafía sigue siendo hoy más común que la auténtica, y muchos detalles que se repiten como hechos, como el té todavía caliente en la mesa o la comida a medio servir, proceden de esta y de otras recreaciones inventadas, como una de Los Angeles Times de 1883, anterior incluso al relato de Doyle [4]. Doyle volvió sobre el caso años después: en «La aventura del vampiro de Sussex», Holmes menciona un barco llamado «Matilda Briggs», y Sophia Matilda era el nombre completo de la hija del capitán.",
+            "También es dudosa la famosa cena en la que Briggs y Morehouse, que se conocían, habrían charlado antes de zarpar. Solo se apoya en un recuerdo de la viuda de Morehouse contado unos 50 años después [4]. Y la fecha del hallazgo aparece como 4 o 5 de diciembre según la fuente, por la forma en que se contaban los días a bordo.",
             "El barco siguió navegando más de una década con otros dueños. Su final fue de todo menos misterioso: en 1884, el capitán Gilman Parker y unos cargadores de Boston aseguraron por 30.000 dólares una carga casi sin valor, y el 3 de enero de 1885 Parker lo hizo encallar a propósito en el banco de Rochelois, cerca de la isla haitiana de La Gonâve. El fraude se descubrió. En el juicio de Boston, el jurado no llegó a un veredicto, pero los acusados acabaron devolviendo lo cobrado.",
-            "En 2001, una expedición del novelista Clive Cussler anunció que había encontrado los restos del Mary Celeste en ese arrecife. El análisis de los anillos de la madera, a cargo del investigador Scott St. George, mostró que procedía de árboles que seguían vivos hacia 1894, casi diez años después del naufragio. No era el Mary Celeste. Ni siquiera sus restos se han encontrado."
+            "En 2001, una expedición del novelista Clive Cussler anunció que había encontrado los restos del Mary Celeste en ese arrecife. El análisis de los anillos de la madera, a cargo del investigador Scott St. George, mostró que procedía de árboles que seguían vivos hacia 1894, casi diez años después del naufragio [4]. No era el Mary Celeste. Ni siquiera sus restos se han encontrado."
           ]
         }
       ],
@@ -2459,6 +2526,28 @@
       "mapa": [
         38.3,
         -17.25
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El Dei Gratia encontró el Mary Celeste navegable y con la carga casi intacta, pero sin el bote ni sus diez ocupantes [1]."
+        },
+        {
+          "estado": "documentado",
+          "texto": "Las vistas de Gibraltar no hallaron pruebas de crimen: las manchas no eran sangre y apenas faltaba alcohol [4]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que Briggs abandonara el barco por creer que se hundía o por miedo a una explosión del alcohol; son hipótesis sin testigos que las confirmen [4]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La mesa servida con la comida aún caliente: es un detalle inventado por la prensa y la ficción de la época [4]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que en 2001 se hallaran sus restos en Haití: la madera era de árboles que seguían vivos hacia 1894 [4]."
+        }
       ]
     },
     {
@@ -2506,28 +2595,28 @@
         {
           "titulo": "",
           "parrafos": [
-            "En enero de 1884, *The Cornhill Magazine*, una prestigiosa revista literaria londinense, publicó sin firma la declaración de un médico estadounidense que decía ser el único superviviente del «Marie Celeste». Contaba con todo detalle qué había pasado a bordo. Nada era cierto. El autor era un médico de 24 años llamado Arthur Conan Doyle, que aún no había creado a Sherlock Holmes, y su relato acabó mezclándose con la historia real del barco hasta hoy."
+            "En enero de 1884, *The Cornhill Magazine*, una prestigiosa revista literaria londinense, publicó sin firma la declaración de un médico estadounidense que decía ser el único superviviente del «Marie Celeste» [4]. Contaba con todo detalle qué había pasado a bordo. Nada era cierto. El autor era un médico de 24 años llamado Arthur Conan Doyle, que aún no había creado a Sherlock Holmes, y su relato acabó mezclándose con la historia real del barco hasta hoy."
           ]
         },
         {
           "titulo": "Un médico joven con tiempo para escribir",
           "parrafos": [
             "En 1882, Doyle había abierto una consulta en Southsea, junto a Portsmouth, y los pacientes llegaban despacio. Conocía bien el mar: había sido médico de a bordo en un ballenero y en un vapor que viajó a la costa de África occidental. Con esos ingredientes escribió «J. Habakuk Jephson's Statement», «La declaración de J. Habakuk Jephson».",
-            "El texto salió sin el nombre del autor. Algunos críticos lo atribuyeron a Robert Louis Stevenson y otros lo compararon con Edgar Allan Poe, un elogio enorme para un principiante."
+            "El texto salió sin el nombre del autor. Un crítico lo atribuyó a Robert Louis Stevenson y otros lo compararon con Edgar Allan Poe, un elogio enorme para un principiante [4]."
           ]
         },
         {
           "titulo": "Una ficción con apariencia de documento",
           "parrafos": [
-            "El narrador es Jephson, un médico de Brooklyn que viaja enfermo de los pulmones. A bordo coincide con Septimius Goring, un pasajero siniestro que manipula los instrumentos, provoca un motín y desvía el barco hacia África. Es un argumento de aventuras, con un componente racial muy propio de su época, que no tiene nada que ver con lo que se sabe del caso.",
-            "Lo que hizo creíble la historia fue su envoltorio. Doyle abrió el relato con un supuesto recorte de la *Gibraltar Gazette* y un telegrama de Boston, que imitaban el lenguaje de la prensa. Y cambió casi todos los datos. El barco es el «Marie Celeste»; el capitán, un tal J. W. Tibbs, con su mujer y un hijo de 5 años, y no Benjamin Briggs con su mujer y su hija de 2. La travesía es de 1873, de Boston a Lisboa, con sebo y relojes americanos, cuando la real fue en 1872, de Nueva York a Génova y con alcohol. Y los botes salvavidas siguen en su sitio, cuando lo esencial del caso real es que faltaba el único bote."
+            "El narrador es Jephson, un médico de Brooklyn que viaja enfermo de los pulmones [3]. A bordo coincide con Septimius Goring, un pasajero siniestro que manipula los instrumentos, provoca un motín y desvía el barco hacia África. Es un argumento de aventuras, con un componente racial muy propio de su época, que no tiene nada que ver con lo que se sabe del caso.",
+            "Lo que hizo creíble la historia fue su envoltorio. Doyle abrió el relato con un supuesto recorte de la *Gibraltar Gazette* y un telegrama de Boston, que imitaban el lenguaje de la prensa [3]. Y cambió casi todos los datos. El barco es el «Marie Celeste»; el capitán, un tal J. W. Tibbs, con su mujer y un hijo de 5 años, y no Benjamin Briggs con su mujer y su hija de 2. La travesía es de 1873, de Boston a Lisboa, con sebo y relojes americanos, cuando la real fue en 1872, de Nueva York a Génova y con alcohol [5]. Y los botes salvavidas siguen en su sitio, cuando lo esencial del caso real es que faltaba el único bote [4]."
           ]
         },
         {
           "titulo": "Cuando la ficción se leyó como noticia",
           "parrafos": [
-            "Para sorpresa de Doyle, hubo quien se lo tomó en serio. El *Boston Herald* lo reprodujo el 3 de abril de 1885 como «Strange Tale of the Sea», con un subtítulo que prometía un misterio por fin explicado. Horatio Sprague, cónsul de Estados Unidos en Gibraltar, llegó a preguntar si había algo de verdad en él.",
-            "La consecuencia más duradera fue el nombre. El relato llegó a mucho más público que las actas del juicio de Gibraltar, y la grafía «Marie Celeste» se volvió más habitual que la auténtica. Décadas después, en los años veinte, un falso testimonio de un supuesto superviviente todavía usaba ese nombre equivocado, señal de que bebía de Doyle y no de los documentos."
+            "Para sorpresa de Doyle, hubo quien se lo tomó en serio. El *Boston Herald* lo reprodujo el 3 de abril de 1885 como «Strange Tale of the Sea», con un subtítulo que prometía un misterio por fin explicado [3]. Horatio Sprague, cónsul de Estados Unidos en Gibraltar, llegó a preguntar si había algo de verdad en él [5].",
+            "La consecuencia más duradera fue el nombre. El relato llegó a mucho más público que las actas del juicio de Gibraltar, y la grafía «Marie Celeste» se volvió más habitual que la auténtica [5]. Décadas después, en los años veinte, un falso testimonio de un supuesto superviviente todavía usaba ese nombre equivocado, señal de que bebía de Doyle y no de los documentos [5]."
           ]
         },
         {
@@ -2543,6 +2632,28 @@
       "mapa": [
         38.3,
         -17.25
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El Mary Celeste apareció a la deriva en diciembre de 1872, sin nadie a bordo y sin su único bote [5]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El *Boston Herald* reprodujo en 1885 el relato de Doyle como si contara un caso real [4]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Qué le pasó de verdad a la tripulación, porque las audiencias de Gibraltar no lo aclararon y siguen circulando hipótesis [5]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "El motín de Goring, el viaje a África y el superviviente Jephson, que son pura ficción de Doyle [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que el barco se llamara «Marie Celeste»: esa grafía nació del relato de 1884 [5]"
+        }
       ]
     },
     {
@@ -2600,9 +2711,9 @@
         {
           "titulo": "Un estudio nacido para lo sobrenatural",
           "parrafos": [
-            "«Nosferatu» fue la primera y única producción de Prana Film, una pequeña compañía fundada en 1921 por el empresario Enrico Dieckmann y el artista Albin Grau. El nombre venía de una revista teosófica, que a su vez lo había tomado del concepto hindú de *prana*, la energía vital. No era una elección casual: Grau se interesó toda su vida por el ocultismo y quería que el estudio se especializara en temas sobrenaturales.",
-            "Según una anécdota que el propio Grau contaba y que hoy se considera dudosa, la idea del vampiro le vino en el invierno de 1916, en el frente de Serbia, cuando un campesino le aseguró que su padre había sido un vampiro. Fuera cierto o no, Grau dejó su huella en toda la película: diseñó los decorados, el vestuario y el maquillaje, caligrafió los rótulos y dirigió la campaña publicitaria. Más tarde llegó a decir que la película reflejaba la experiencia de la Primera Guerra Mundial.",
-            "Para dirigirla, Prana contrató a Friedrich Wilhelm Murnau, que cobró 25.000 marcos. El dinero procedía de inversores de Silesia sin experiencia en el negocio del cine, y el rodaje se hizo con recursos limitados: el director de fotografía, Fritz Arno Wagner, trabajó con una sola cámara, de modo que existía un único negativo original."
+            "«Nosferatu» fue la primera y única producción de Prana Film, una pequeña compañía fundada en 1921 por el empresario Enrico Dieckmann y el artista Albin Grau [1]. El nombre venía de una revista teosófica, que a su vez lo había tomado del concepto hindú de *prana*, la energía vital. No era una elección casual: Grau se interesó toda su vida por el ocultismo y quería que el estudio se especializara en temas sobrenaturales.",
+            "Según una anécdota que el propio Grau contaba y que hoy se considera dudosa, la idea del vampiro le vino en el invierno de 1916, en el frente de Serbia, cuando un campesino le aseguró que su padre había sido un vampiro [1]. Fuera cierto o no, Grau dejó su huella en toda la película: diseñó los decorados, el vestuario y el maquillaje, caligrafió los rótulos y dirigió la campaña publicitaria. Más tarde llegó a decir que la película reflejaba la experiencia de la Primera Guerra Mundial.",
+            "Para dirigirla, Prana contrató a Friedrich Wilhelm Murnau, que cobró 25.000 marcos [4]. El dinero procedía de inversores de Silesia sin experiencia en el negocio del cine, y el rodaje se hizo con recursos limitados: el director de fotografía, Fritz Arno Wagner, trabajó con una sola cámara, de modo que existía un único negativo original [1]."
           ]
         },
         {
@@ -2616,7 +2727,7 @@
         {
           "titulo": "Un vampiro que muere al amanecer",
           "parrafos": [
-            "«Nosferatu» introdujo una regla que hoy parece eterna. En la novela de Stoker, la luz del día incomoda a Drácula, pero no lo mata. Esta fue la primera película en la que un vampiro muere al recibir los rayos del sol. Lotte Eisner, historiadora del cine alemán y gran estudiosa de Murnau, señaló que esa muerte no aparece ni en la novela ni en el guion de Galeen, por lo que la idea se atribuye al propio director. Murnau reescribió 12 páginas que faltaban en su guion de trabajo, precisamente las del final.",
+            "«Nosferatu» introdujo una regla que hoy parece eterna. En la novela de Stoker, la luz del día incomoda a Drácula, pero no lo mata. Esta fue la primera película en la que un vampiro muere al recibir los rayos del sol [2]. Lotte Eisner, historiadora del cine alemán y gran estudiosa de Murnau, señaló que esa muerte no aparece ni en la novela ni en el guion de Galeen, por lo que la idea se atribuye al propio director. Murnau reescribió 12 páginas que faltaban en su guion de trabajo, precisamente las del final [4].",
             "El vampiro lo interpretó Max Schreck, un actor de teatro nacido en Berlín en 1879 que había trabajado en la compañía de Max Reinhardt y en los Kammerspiele de Múnich. Su apellido parece una broma del destino: *Schreck* significa «susto» o «espanto» en alemán. El papel se había ofrecido antes a Conrad Veidt, que lo rechazó por problemas de agenda.",
             "Aunque hoy la conocemos sobre todo en blanco y negro, Murnau la concibió con las imágenes teñidas por colores según el momento del día: azul para la noche, sepia para los interiores de día, amarillo anaranjado para los interiores nocturnos y rosa para el amanecer. Las restauraciones modernas han recuperado esos tintes."
           ]
@@ -2624,23 +2735,23 @@
         {
           "titulo": "Una fiesta, una quiebra y una demanda",
           "parrafos": [
-            "Prana lanzó la película a lo grande. Tras un estreno en los Países Bajos el 16 de febrero de 1922, la presentación alemana fue el 4 de marzo en el Marmorsaal, el salón de mármol del zoológico de Berlín. Se planteó como un acontecimiento social, «la fiesta de Nosferatu», con prólogo teatral, orquesta y un baile de disfraces al que se pidió a los invitados que acudieran con trajes de época Biedermeier. El estreno en cines llegó el 15 de marzo.",
-            "La crítica fue mayoritariamente favorable, aunque con reparos: un periódico opinó que el vampiro aparecía demasiado corpóreo y demasiado iluminado como para dar miedo. En taquilla, en cambio, fue un fracaso. La gran productora UFA se negó a programarla en sus salas principales, el dinero se había ido en la costosa campaña publicitaria y en los gastos de los socios, y en agosto de 1922 se abrió un procedimiento de quiebra contra Prana.",
-            "Mientras tanto, en Londres, Florence Stoker, viuda de Bram Stoker y heredera de sus derechos, recibió una carta anónima desde Berlín con el programa del estreno. El folleto describía la película como «adaptada libremente» de «Drácula». Ella no había dado permiso ni cobrado nada. Con el apoyo de la Sociedad de Autores británica, demandó al estudio. No hubo acuerdo, y en julio de 1925 un tribunal de Berlín dictó la sentencia definitiva: todos los negativos y todas las copias debían destruirse.",
+            "Prana lanzó la película a lo grande. Tras un estreno en los Países Bajos el 16 de febrero de 1922, la presentación alemana fue el 4 de marzo en el Marmorsaal, el salón de mármol del zoológico de Berlín. Se planteó como un acontecimiento social, «la fiesta de Nosferatu», con prólogo teatral, orquesta y un baile de disfraces al que se pidió a los invitados que acudieran con trajes de época Biedermeier. El estreno en cines llegó el 15 de marzo [1].",
+            "La crítica fue mayoritariamente favorable, aunque con reparos: un periódico opinó que el vampiro aparecía demasiado corpóreo y demasiado iluminado como para dar miedo. En taquilla, en cambio, fue un fracaso. La gran productora UFA se negó a programarla en sus salas principales, el dinero se había ido en la costosa campaña publicitaria y en los gastos de los socios, y en agosto de 1922 se abrió un procedimiento de quiebra contra Prana [4].",
+            "Mientras tanto, en Londres, Florence Stoker, viuda de Bram Stoker y heredera de sus derechos, recibió una carta anónima desde Berlín con el programa del estreno. El folleto describía la película como «adaptada libremente» de «Drácula» [5]. Ella no había dado permiso ni cobrado nada. Con el apoyo de la Sociedad de Autores británica, demandó al estudio. No hubo acuerdo, y en julio de 1925 un tribunal de Berlín dictó la sentencia definitiva: todos los negativos y todas las copias debían destruirse [5].",
             "Florence Stoker vigiló el cumplimiento durante años. Cuando la London Film Society quiso proyectar una copia en Inglaterra, ella intervino; la copia se escondió y, cuando la sociedad volvió a intentarlo unos 4 años después, acabó destruida. La adaptación autorizada llegaría en 1931, cuando Universal, que había comprado los derechos por 40.000 dólares, estrenó su «Drácula»."
           ]
         },
         {
           "titulo": "Cómo sobrevivió el vampiro",
           "parrafos": [
-            "La sentencia llegó tarde. La película ya se había vendido al extranjero y circulaban copias en varios países, con montajes y rótulos distintos: la versión francesa tenía 31 intertítulos frente a los 115 de la alemana. A finales de los años veinte volvieron a aparecer copias, y en 1930 se estrenó en Viena una versión sonorizada sin autorización, «Die zwölfte Stunde», con los personajes rebautizados y un final más amable.",
+            "La sentencia llegó tarde. La película ya se había vendido al extranjero y circulaban copias en varios países, con montajes y rótulos distintos: la versión francesa tenía 31 intertítulos frente a los 115 de la alemana [4]. A finales de los años veinte volvieron a aparecer copias, y en 1930 se estrenó en Viena una versión sonorizada sin autorización, «Die zwölfte Stunde», con los personajes rebautizados y un final más amable.",
             "La reconstrucción de la película original ha sido un trabajo de décadas. En 1981, el Filmmuseum de Múnich empezó a restaurarla combinando copias alemanas y francesas, con rótulos recuperados de una copia conservada en el archivo cinematográfico de la RDA. En 1984, el investigador Luciano Berriatúa encontró en la Cinémathèque française una copia de nitrato de primera generación, base de nuevas versiones teñidas. La restauración más completa, de 2005 y 2006, la hicieron Berriatúa y la Fundación Friedrich Wilhelm Murnau. Hoy la película es de dominio público."
           ]
         },
         {
           "titulo": "Mito y realidad",
           "parrafos": [
-            "Durante muchos años circuló el rumor de que Max Schreck no existía y que el nombre era un seudónimo del actor Alfred Abel. Es falso: Schreck tuvo una larga carrera teatral y cinematográfica, y murió en Múnich en 1936. En el año 2000, la película «La sombra del vampiro» jugó con esa leyenda y presentó a un Schreck que era un vampiro de verdad. Es pura ficción, aunque le valió a Willem Dafoe una nominación al Óscar al mejor actor de reparto.",
+            "Durante muchos años circuló el rumor de que Max Schreck no existía y que el nombre era un seudónimo del actor Alfred Abel. Es falso: Schreck tuvo una larga carrera teatral y cinematográfica, y murió en Múnich en 1936 [3]. En el año 2000, la película «La sombra del vampiro» jugó con esa leyenda y presentó a un Schreck que era un vampiro de verdad. Es pura ficción, aunque le valió a Willem Dafoe una nominación al Óscar al mejor actor de reparto.",
             "Hay otro punto que las fuentes no cuentan igual: por qué quebró Prana. Unas apuntan al fracaso comercial y al derroche en publicidad; otras sostienen que el estudio se declaró en quiebra para no tener que pagar a la viuda de Stoker. Lo seguro es que «Nosferatu» fue su única película.",
             "Su influencia, en cambio, no se discute. Werner Herzog la rehízo en 1979 con Klaus Kinski, y Robert Eggers estrenó su propia versión en diciembre de 2024. El cine de vampiros todavía obedece a la regla que inventó Murnau: cuando sale el sol, el monstruo se desvanece."
           ]
@@ -2658,6 +2769,28 @@
       "mapa": [
         52.52,
         13.4
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "En julio de 1925, un tribunal de Berlín ordenó destruir todos los negativos y copias de la película [5]."
+        },
+        {
+          "estado": "documentado",
+          "texto": "«Nosferatu» fue la primera película en la que un vampiro muere por la luz del sol [2]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Por qué quebró Prana: unas fuentes culpan al fracaso y al derroche en publicidad; otras, a una maniobra para no pagar a Florence Stoker [5]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que la idea naciera de un campesino serbio que en 1916 dijo que su padre era un vampiro: solo lo contaba Grau y se considera apócrifo [1]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que Max Schreck no existía y era un seudónimo de Alfred Abel: fue un actor real que murió en 1936 [3]."
+        }
       ]
     },
     {
@@ -2705,35 +2838,35 @@
         {
           "titulo": "",
           "parrafos": [
-            "En julio de 1925, la justicia alemana dio la razón a Florence Stoker, viuda del autor de «Drácula»: todos los negativos y todas las copias de «Nosferatu» debían entregarse para ser destruidos. Sobre el papel, la película estaba condenada. En la práctica, Florence Stoker pasó años persiguiendo copias por Europa y nunca cobró un céntimo."
+            "En julio de 1925, la justicia alemana dio la razón a Florence Stoker, viuda del autor de «Drácula»: todos los negativos y todas las copias de «Nosferatu» debían entregarse para ser destruidos [3]. Sobre el papel, la película estaba condenada. En la práctica, Florence Stoker pasó años persiguiendo copias por Europa y nunca cobró un céntimo."
           ]
         },
         {
           "titulo": "Una viuda frente a un estudio en quiebra",
           "parrafos": [
-            "Bram Stoker murió en 1912 y su viuda, Florence, heredó los derechos de «Drácula» en una situación económica apurada. Cuando supo que en Berlín se había estrenado en 1922 una adaptación sin su permiso, se unió a la Sociedad de Autores británica, que contrató en Berlín al abogado Manfred Wronker-Flatow. Pedía dos cosas: una compensación económica y la destrucción del negativo y de todas las copias.",
-            "El problema era que el demandado se hundía. La productora, Prana Film, entró en quiebra en 1922, y el caso pasó a manos de los administradores de la quiebra. Según el relato más detallado del pleito, estos le ofrecieron a Florence una parte de los beneficios si permitía exhibir la película en los países de habla inglesa con el título de «Drácula». Ella, aconsejada por la Sociedad, lo rechazó."
+            "Bram Stoker murió en 1912 y su viuda, Florence, heredó los derechos de «Drácula» en una situación económica apurada. Cuando supo que en Berlín se había estrenado en 1922 una adaptación sin su permiso, se unió a la Sociedad de Autores británica, que contrató en Berlín al abogado Manfred Wronker-Flatow. Pedía dos cosas: una compensación económica y la destrucción del negativo y de todas las copias [3].",
+            "El problema era que el demandado se hundía. La productora, Prana Film, entró en quiebra en 1922 [2], y el caso pasó a manos de los administradores de la quiebra. Según el relato más detallado del pleito, estos le ofrecieron a Florence una parte de los beneficios si permitía exhibir la película en los países de habla inglesa con el título de «Drácula». Ella, aconsejada por la Sociedad, lo rechazó [4]."
           ]
         },
         {
           "titulo": "Del primer fallo a la orden de destrucción",
           "parrafos": [
-            "En 1924, un primer fallo le dio la razón. Florence se ofreció entonces a vender los derechos por 5.000 libras, pero los administradores recurrieron. Perdieron, y en julio de 1925 llegó la orden definitiva de destruir la película. Fue una victoria sin dinero: Prana, en quiebra, no pagó indemnización alguna.",
+            "En 1924, un primer fallo le dio la razón. Florence se ofreció entonces a vender los derechos por 5.000 libras, pero los administradores recurrieron. Perdieron, y en julio de 1925 llegó la orden definitiva de destruir la película. Fue una victoria sin dinero: Prana, en quiebra, no pagó indemnización alguna [4].",
             "Hay una duda que las fuentes no resuelven: si la quiebra de Prana se debió solo al fracaso de la película y a sus gastos, o si el estudio la usó también para no tener que pagar a la viuda."
           ]
         },
         {
           "titulo": "Copias que ya habían cruzado fronteras",
           "parrafos": [
-            "La sentencia llegaba tarde. Ya en 1922, Florence Stoker había tenido noticia de proyecciones en Budapest y en París. En el Reino Unido, en cambio, la junta de censura negó ese año el certificado a quien quería estrenarla.",
-            "En octubre de 1925, recién dictada la sentencia, la London Film Society anunció una sesión con una copia comprada en Alemania. Tras sus protestas, se canceló. Pero la sociedad volvió a programarla en diciembre de 1928 y esta vez ella no pudo impedirlo. El historiador David J. Skal escribe que aquella copia probablemente se destruyó en 1929, aunque no consta con certeza.",
-            "Lo que no pudo controlar fue lo que pasaba fuera de Europa. En 1929, «Nosferatu» se estrenó en Estados Unidos, en el Film Guild Cinema de Greenwich Village, en Nueva York, y luego en otras ciudades. Algunos historiadores creen que allí se vio una versión remontada y con otros nombres."
+            "La sentencia llegaba tarde. Ya en 1922, Florence Stoker había tenido noticia de proyecciones en Budapest y en París. En el Reino Unido, en cambio, la junta de censura negó ese año el certificado a quien quería estrenarla [4].",
+            "En octubre de 1925, recién dictada la sentencia, la London Film Society anunció una sesión con una copia comprada en Alemania. Tras sus protestas, se canceló. Pero la sociedad volvió a programarla en diciembre de 1928 y esta vez ella no pudo impedirlo. El historiador David J. Skal escribe que aquella copia probablemente se destruyó en 1929, aunque no consta con certeza [5].",
+            "Lo que no pudo controlar fue lo que pasaba fuera de Europa. En 1929, «Nosferatu» se estrenó en Estados Unidos, en el Film Guild Cinema de Greenwich Village, en Nueva York, y luego en otras ciudades [4]. Algunos historiadores creen que allí se vio una versión remontada y con otros nombres [5]."
           ]
         },
         {
           "titulo": "Qué es mito y qué no",
           "parrafos": [
-            "Es cierto que una sentencia de 1925 ordenó destruir todas las copias. Es mito que «sobreviviera una sola copia»: había varias en distintos países, con montajes diferentes, y de ellas salen las restauraciones actuales. No está claro cuántas escaparon exactamente."
+            "Es cierto que una sentencia de 1925 ordenó destruir todas las copias. Es mito que «sobreviviera una sola copia»: había varias en distintos países, con montajes diferentes, y de ellas salen las restauraciones actuales [2]. No está claro cuántas escaparon exactamente."
           ]
         }
       ],
@@ -2749,6 +2882,28 @@
       "mapa": [
         52.52,
         13.4
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "En julio de 1925, la justicia alemana ordenó destruir el negativo y todas las copias de «Nosferatu» [4]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Prana Film estaba en quiebra y no pagó indemnización alguna a Florence Stoker [4]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que Prana se declarara en quiebra para no pagar a la viuda, porque alguna fuente lo afirma y otras solo hablan de una quiebra poco después del estreno [3]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "El destino de la copia de la London Film Society, que Skal da por quemada en 1929 aunque los documentos no lo confirman [5]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que solo sobreviviera una copia: quedaron varias en distintos países, y las restauraciones actuales combinan varias de ellas [2]"
+        }
       ]
     },
     {
@@ -2806,16 +2961,16 @@
         {
           "titulo": "Un estudiante de medicina con muchos nombres",
           "parrafos": [
-            "Mudgett nació el 16 de mayo de 1861 en Gilmanton, un pueblo de New Hampshire. Estudió un año en la Universidad de Vermont y en 1882 pasó al departamento de medicina de la Universidad de Michigan, donde se licenció en junio de 1884 con notas mediocres. Él mismo admitió más tarde que, siendo estudiante, había usado cadáveres para estafar a compañías de seguros de vida: un anticipo del negocio al que dedicaría el resto de su vida.",
-            "En 1886 llegó a Chicago y empezó a usar el nombre de Henry Howard Holmes, uno de los muchos alias que manejó. Su vida sentimental seguía la misma lógica. Se había casado con Clara Lovering en 1878; a finales de 1886 se casó en Minneapolis con Myrta Belknap sin haberse divorciado, y en enero de 1894, en Denver, con Georgiana Yoke, cuando seguía legalmente casado con las dos anteriores."
+            "Mudgett nació el 16 de mayo de 1861 en Gilmanton, un pueblo de New Hampshire. Estudió un año en la Universidad de Vermont y en 1882 pasó al departamento de medicina de la Universidad de Michigan, donde se licenció en junio de 1884 con notas mediocres [1]. Él mismo admitió más tarde que, siendo estudiante, había usado cadáveres para estafar a compañías de seguros de vida: un anticipo del negocio al que dedicaría el resto de su vida.",
+            "En 1886 llegó a Chicago y empezó a usar el nombre de Henry Howard Holmes, uno de los muchos alias que manejó. Su vida sentimental seguía la misma lógica. Se había casado con Clara Lovering en 1878; a finales de 1886 se casó en Minneapolis con Myrta Belknap sin haberse divorciado, y en enero de 1894, en Denver, con Georgiana Yoke, cuando seguía legalmente casado con las dos anteriores [1]."
           ]
         },
         {
           "titulo": "Englewood: una farmacia y un edificio sin pagar",
           "parrafos": [
-            "En Chicago, Holmes encontró trabajo en una farmacia del barrio de Englewood, propiedad de Elizabeth Holton, y acabó quedándose con el negocio. En 1887 empezó a construir un edificio en la esquina de la calle 63 con Wallace. La planta baja estaba pensada para tiendas, incluida la farmacia, y la segunda para viviendas de alquiler. Pagar, pagaba poco: en 1888 los arquitectos y una empresa siderúrgica ya lo habían demandado por facturas pendientes.",
-            "En 1892 añadió una tercera planta y les contó a inversores y proveedores que sería un hotel para la gran cita que se avecinaba. Chicago iba a celebrar el cuarto centenario del viaje de Colón con la Exposición Mundial Colombina, abierta del 1 de mayo al 30 de octubre de 1893 y visitada por más de 27 millones de personas. Su recinto, con los edificios cubiertos de un estuco blanco, se ganó el apodo de «la Ciudad Blanca».",
-            "Según el historiador Adam Selzer, aquel edificio no fue un hotel en el sentido actual: no tenía recepción, vestíbulo ni botones, y no está claro que la tercera planta llegara a alquilarse. Era un inmueble de tamaño mediano, bastante corriente y sin terminar, por las disputas constantes con los constructores. Las habitaciones ocultas sí existían, pero la ciudad ya las conocía antes de que abriera la Exposición. En marzo de 1893, el *Chicago Tribune* publicó un amplio artículo sobre ellas después de que se descubriera para qué servían: Holmes escondía allí los muebles que compraba a crédito y nunca pagaba, para que los acreedores no los encontraran. Durante la feria intentó, además, quemar el edificio para cobrar el seguro."
+            "En Chicago, Holmes encontró trabajo en una farmacia del barrio de Englewood, propiedad de Elizabeth Holton, y acabó quedándose con el negocio. En 1887 empezó a construir un edificio en la esquina de la calle 63 con Wallace. La planta baja estaba pensada para tiendas, incluida la farmacia, y la segunda para viviendas de alquiler. Pagar, pagaba poco: en 1888 los arquitectos y una empresa siderúrgica ya lo habían demandado por facturas pendientes [1].",
+            "En 1892 añadió una tercera planta y les contó a inversores y proveedores que sería un hotel para la gran cita que se avecinaba. Chicago iba a celebrar el cuarto centenario del viaje de Colón con la Exposición Mundial Colombina, abierta del 1 de mayo al 30 de octubre de 1893 y visitada por más de 27 millones de personas [3]. Su recinto, con los edificios cubiertos de un estuco blanco, se ganó el apodo de «la Ciudad Blanca».",
+            "Según el historiador Adam Selzer, aquel edificio no fue un hotel en el sentido actual: no tenía recepción, vestíbulo ni botones, y no está claro que la tercera planta llegara a alquilarse [4]. Era un inmueble de tamaño mediano, bastante corriente y sin terminar, por las disputas constantes con los constructores. Las habitaciones ocultas sí existían, pero la ciudad ya las conocía antes de que abriera la Exposición. En marzo de 1893, el *Chicago Tribune* publicó un amplio artículo sobre ellas después de que se descubriera para qué servían: Holmes escondía allí los muebles que compraba a crédito y nunca pagaba, para que los acreedores no los encontraran [4]. Durante la feria intentó, además, quemar el edificio para cobrar el seguro."
           ]
         },
         {
@@ -2823,7 +2978,7 @@
           "parrafos": [
             "En julio de 1894, Holmes pasó unos días en una cárcel de San Luis (Misuri) por vender bienes hipotecados. Allí conoció a Marion Hedgepeth, un forajido que cumplía una condena de 25 años, y le ofreció una comisión de 500 dólares a cambio del nombre de un abogado de confianza para un plan: fingir su propia muerte y cobrar un seguro de 10.000 dólares. La aseguradora sospechó y no pagó.",
             "Holmes repitió la idea con su socio de fraudes, el carpintero Benjamin Pitezel. El plan consistía en simular su muerte para cobrar una póliza de 10.000 dólares de la Fidelity Mutual. Pero Pitezel apareció muerto de verdad en Filadelfia el 4 de septiembre de 1894: Holmes lo había matado, y el abogado presentó la reclamación. Hedgepeth acabó informando sobre Holmes a las autoridades, algo por lo que más tarde fue indultado.",
-            "Los detectives de la agencia privada Pinkerton siguieron el rastro de Holmes desde Filadelfia hasta Boston, donde lo detuvieron el 17 de noviembre de 1894. La primera acusación que se usó para retenerlo fue una orden pendiente por robo de caballos en Texas."
+            "Los detectives de la agencia privada Pinkerton siguieron el rastro de Holmes desde Filadelfia hasta Boston, donde lo detuvieron el 17 de noviembre de 1894 [1]. La primera acusación que se usó para retenerlo fue una orden pendiente por robo de caballos en Texas."
           ]
         },
         {
@@ -2836,9 +2991,9 @@
         {
           "titulo": "Cómo se fabricó el «castillo»",
           "parrafos": [
-            "La leyenda empezó a formarse mientras se registraba el edificio. Durante aproximadamente una semana de 1895, la prensa atribuyó un uso siniestro a cualquier objeto que aparecía, desde una cuerda hasta una mesa vieja o unas cenizas en una estufa. La mayoría de esas afirmaciones se desmintieron enseguida, pero los desmentidos circularon mucho menos que los titulares. Fue la época dorada del periodismo amarillo, y el edificio pasó a ser «el castillo».",
-            "El propio Holmes alimentó el mito. Los periódicos de William Randolph Hearst le pagaron 7.500 dólares por una confesión en la que se atribuía 27 asesinatos. Algunas de las personas que mencionaba estaban vivas.",
-            "Las cifras de cientos de víctimas, según Selzer, aparecieron por primera vez en un par de revistas *pulp* de los años treinta y entonces nadie se las tomó en serio. Algunos relatos posteriores llegaron a hablar de hasta 133. El impulso definitivo llegó en 2003 con «The Devil in the White City» («El diablo en la Ciudad Blanca»), el superventas de Erik Larson. El propio Larson reconoce en sus notas que los capítulos sobre los crímenes de Holmes son en buena medida conjeturas construidas sobre unos pocos hechos, y los críticos de *Newsweek* y *The New York Times* ya señalaron que su imaginación iba más allá de las fuentes."
+            "La leyenda empezó a formarse mientras se registraba el edificio. Durante aproximadamente una semana de 1895, la prensa atribuyó un uso siniestro a cualquier objeto que aparecía, desde una cuerda hasta una mesa vieja o unas cenizas en una estufa [4]. La mayoría de esas afirmaciones se desmintieron enseguida, pero los desmentidos circularon mucho menos que los titulares. Fue la época dorada del periodismo amarillo, y el edificio pasó a ser «el castillo».",
+            "El propio Holmes alimentó el mito. Los periódicos de William Randolph Hearst le pagaron 7.500 dólares por una confesión en la que se atribuía 27 asesinatos [1]. Algunas de las personas que mencionaba estaban vivas.",
+            "Las cifras de cientos de víctimas, según Selzer, aparecieron por primera vez en un par de revistas *pulp* de los años treinta y entonces nadie se las tomó en serio [4]. Algunos relatos posteriores llegaron a hablar de hasta 133. El impulso definitivo llegó en 2003 con «The Devil in the White City» («El diablo en la Ciudad Blanca»), el superventas de Erik Larson. El propio Larson reconoce en sus notas que los capítulos sobre los crímenes de Holmes son en buena medida conjeturas construidas sobre unos pocos hechos, y los críticos de *Newsweek* y *The New York Times* ya señalaron que su imaginación iba más allá de las fuentes [5]."
           ]
         },
         {
@@ -2846,7 +3001,7 @@
           "parrafos": [
             "Es real que Holmes fue un estafador de larga trayectoria: fraudes a aseguradoras, deudas impagadas, bigamia y una cadena de negocios ficticios. Es real que mató a Benjamin Pitezel para cobrar un seguro y que fue condenado y ejecutado por ello. Y es real que el edificio tenía cuartos escondidos y un diseño irregular, aunque los registros apuntan a que servía para el fraude.",
             "Es mito el hotel diseñado como una trampa para los visitantes de la Exposición, igual que las cámaras de tortura del sótano, que Selzer atribuye a un «teléfono escacharrado» de rumores repetidos. También lo son las 200 víctimas, una cifra sin base documental.",
-            "Lo que todavía se discute es el número exacto. Las fuentes que siguen la documentación confirman 8 víctimas y consideran probable una novena, y el recuento cambia según el criterio de cada historiador. Nueve vidas ya son una tragedia; la leyenda nunca necesitó inventar más. El edificio, por cierto, sufrió un incendio en agosto de 1895, siguió en uso durante décadas y fue derribado en 1938. En su solar hay hoy una oficina de correos."
+            "Lo que todavía se discute es el número exacto. Las fuentes que siguen la documentación confirman 8 víctimas y consideran probable una novena, y el recuento cambia según el criterio de cada historiador [1]. Nueve vidas ya son una tragedia; la leyenda nunca necesitó inventar más. El edificio, por cierto, sufrió un incendio en agosto de 1895, siguió en uso durante décadas y fue derribado en 1938. En su solar hay hoy una oficina de correos."
           ]
         }
       ],
@@ -2863,6 +3018,28 @@
       "mapa": [
         41.88,
         -87.63
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Holmes mató a su socio Benjamin Pitezel para cobrar un seguro y fue ahorcado por ello en 1896 [1]."
+        },
+        {
+          "estado": "documentado",
+          "texto": "El edificio tenía cuartos ocultos, pero servían para esconder muebles comprados a crédito y nunca pagados [4]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "El número de víctimas: la documentación confirma 8 y considera probable una novena, pero el recuento varía según el historiador [1]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "El «castillo» como hotel trampa para los visitantes de la Exposición, con cámaras de tortura en el sótano [1]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Las cifras de cientos de víctimas, que surgieron en revistas *pulp* de los años treinta sin base documental [4]."
+        }
       ]
     },
     {
@@ -2902,28 +3079,28 @@
         {
           "titulo": "",
           "parrafos": [
-            "Las «habitaciones secretas» del edificio de H. H. Holmes en Chicago se han convertido en un tópico del terror. Pero cuando la prensa de Chicago habló de ellas por primera vez, en marzo de 1893, la noticia no era de crímenes, sino de deudas: aquellos cuartos escondidos servían para ocultar muebles que Holmes había comprado a plazos y no pensaba pagar. Antes que nada, el edificio fue una máquina de estafar."
+            "Las «habitaciones secretas» del edificio de H. H. Holmes en Chicago se han convertido en un tópico del terror. Pero cuando la prensa de Chicago habló de ellas por primera vez, en marzo de 1893, la noticia no era de crímenes, sino de deudas: aquellos cuartos escondidos servían para ocultar muebles que Holmes había comprado a plazos y no pensaba pagar [3]. Antes que nada, el edificio fue una máquina de estafar."
           ]
         },
         {
           "titulo": "Un edificio que nadie terminaba de cobrar",
           "parrafos": [
-            "Holmes empezó a construir en 1887 en Englewood, en la esquina de la calle 63 con Wallace. Tiendas abajo, viviendas arriba. Lo difícil era cobrarle. En 1888, los arquitectos y la empresa que suministraba el acero, Aetna Iron and Steel, ya lo habían llevado a los tribunales por facturas impagadas.",
-            "En 1892 añadió una tercera planta y les explicó a inversores y proveedores que sería un hotel para la Exposición Mundial de 1893. Con la ciudad esperando millones de visitantes, era un buen argumento para conseguir crédito. Según el historiador Adam Selzer, esa planta nunca se terminó, nunca se amuebló y nunca se abrió al público. Para Selzer, todo el proyecto fue sobre todo un vehículo para estafar a quienes ponían el dinero o el material."
+            "Holmes empezó a construir en 1887 en Englewood, en la esquina de la calle 63 con Wallace. Tiendas abajo, viviendas arriba [1]. Lo difícil era cobrarle. En 1888, los arquitectos y la empresa que suministraba el acero, Aetna Iron and Steel, ya lo habían llevado a los tribunales por facturas impagadas [1].",
+            "En 1892 añadió una tercera planta y les explicó a inversores y proveedores que sería un hotel para la Exposición Mundial de 1893 [1]. Con la ciudad esperando millones de visitantes, era un buen argumento para conseguir crédito. Según el historiador Adam Selzer, esa planta nunca se terminó, nunca se amuebló y nunca se abrió al público [2]. Para Selzer, todo el proyecto fue sobre todo un vehículo para estafar a quienes ponían el dinero o el material."
           ]
         },
         {
           "titulo": "El truco de los muebles",
           "parrafos": [
-            "Holmes compraba muebles y enseres a crédito, y cuando los acreedores venían a reclamarlos, desaparecían. Según la versión que recoge la revista *Smithsonian* a partir de la prensa de la época, una empresa de muebles envió a sus operarios a recuperar lo que no había cobrado y encontró el edificio vacío. Más tarde, un conserje sobornado por la propia empresa reveló el secreto: Holmes había metido todo en una sola habitación y había tapiado la puerta.",
-            "Ese es el origen mejor documentado de las habitaciones ocultas. En marzo de 1893, antes de que abriera la Exposición, el *Chicago Tribune* publicó un amplio artículo sobre ellas. La ciudad conocía, pues, los escondites, y los asociaba a un fraude comercial."
+            "Holmes compraba muebles y enseres a crédito, y cuando los acreedores venían a reclamarlos, desaparecían. Según la versión que recoge la revista *Smithsonian* a partir de un reportaje de *Harper's* de 1943, una empresa de muebles envió a sus operarios a recuperar lo que no había cobrado y encontró el edificio vacío. Más tarde, un conserje sobornado por la propia empresa reveló el secreto: Holmes había metido todo en una sola habitación y había tapiado la puerta [2].",
+            "Ese es el origen mejor documentado de las habitaciones ocultas. En marzo de 1893, antes de que abriera la Exposición, el *Chicago Tribune* publicó un amplio artículo sobre ellas [3]. La ciudad conocía, pues, los escondites, y los asociaba a un fraude comercial."
           ]
         },
         {
           "titulo": "Albañiles, alias y seguros",
           "parrafos": [
-            "Una idea muy repetida es que Holmes contrataba y despedía cuadrillas de obreros constantemente para que nadie conociera el plano completo del edificio. No hay pruebas de esa intención, y hay una explicación más prosaica: cambiaba de constructores porque no les pagaba.",
-            "El fraude no se limitaba a los muebles. Holmes usaba varios alias e intentó quemar el edificio para cobrar el seguro, y las aseguradoras presionaron para que lo procesaran por ello. En julio de 1894 pasó unos días en una cárcel de San Luis (Misuri) por vender bienes hipotecados."
+            "Una idea muy repetida es que Holmes contrataba y despedía cuadrillas de obreros constantemente para que nadie conociera el plano completo del edificio. No hay pruebas de esa intención, y hay una explicación más prosaica: cambiaba de constructores porque no les pagaba [1].",
+            "El fraude no se limitaba a los muebles. Holmes usaba varios alias e intentó quemar el edificio para cobrar el seguro, y las aseguradoras presionaron para que lo procesaran por ello [1]. En julio de 1894 pasó unos días en una cárcel de San Luis (Misuri) por vender bienes hipotecados [1]."
           ]
         },
         {
@@ -2946,6 +3123,28 @@
       "mapa": [
         41.88,
         -87.63
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El edificio tenía cuartos ocultos, y al menos parte de ellos servía para esconder muebles comprados a crédito que Holmes no pagaba [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En julio de 1894, Holmes pasó por la cárcel de San Luis acusado de vender bienes hipotecados [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que la tercera planta funcionara alguna vez como hotel, porque pudo ser solo una excusa para sacar dinero a inversores y aseguradoras [3]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que el laberinto se diseñara como una trampa con cámaras de tortura, cuando su trazado irregular fue fruto del fraude [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que despidiera a los obreros sin parar para que nadie conociera el plano: lo que consta son disputas e impagos con los constructores [1]"
+        }
       ]
     },
     {
@@ -2999,29 +3198,29 @@
         {
           "titulo": "",
           "parrafos": [
-            "El 19 de noviembre de 2026 está previsto que salga Grand Theft Auto VI, el sexto título principal de una saga que lleva casi tres décadas en las tiendas. Pocos lanzamientos culturales han generado tanta expectación: sus tráileres han batido récords de audiencia, su fecha se ha movido dos veces y los analistas calculan sus reservas por millones.",
+            "El 19 de noviembre de 2026 está previsto que salga Grand Theft Auto VI, el octavo título principal de una saga que lleva casi tres décadas en las tiendas [1]. Pocos lanzamientos culturales han generado tanta expectación: sus tráileres han batido récords de audiencia, su fecha se ha movido dos veces y los analistas calculan sus reservas por millones.",
             "Detrás de ese fenómeno hay una historia menos conocida, que no empieza en Miami ni en Los Ángeles, sino en una ciudad portuaria del este de Escocia, con un equipo pequeño, un proyecto que no funcionaba y unos coches de policía que hicieron algo que nadie había previsto."
           ]
         },
         {
           "titulo": "Dundee, 1995: un juego de policías que aburría",
           "parrafos": [
-            "En abril de 1995, el estudio escocés DMA Design, con sede en Dundee, empezó a desarrollar un juego llamado «Race'n'Chase», algo así como «carrera y persecución». La idea original era que el jugador hiciera de policía y persiguiera a los delincuentes por una ciudad vista desde arriba.",
+            "En abril de 1995, el estudio escocés DMA Design, con sede en Dundee, empezó a desarrollar un juego llamado «Race'n'Chase», algo así como «carrera y persecución» [2]. La idea original era que el jugador hiciera de policía y persiguiera a los delincuentes por una ciudad vista desde arriba.",
             "El planteamiento tenía un problema serio: no era divertido. Perseguir a otros respetando las normas resultaba monótono, y el equipo decidió darle la vuelta a la idea. ¿Y si el jugador fuera el delincuente y la policía, el obstáculo?"
           ]
         },
         {
           "titulo": "El fallo que cambió el proyecto",
           "parrafos": [
-            "En ese proceso ocurrió el episodio que hoy forma parte de la leyenda de la saga. Gary Penn, entonces director creativo de DMA Design, contó en una entrevista de 2011 que durante las pruebas, por lo que parecía un error del programa, los coches de policía se volvieron extremadamente agresivos: en vez de detener al jugador, intentaban sacarlo de la calzada a golpes.",
+            "En ese proceso ocurrió el episodio que hoy forma parte de la leyenda de la saga. Gary Penn, entonces director creativo de DMA Design, contó en una entrevista de 2011 que durante las pruebas, por lo que parecía un error del programa, los coches de policía se volvieron extremadamente agresivos: en vez de detener al jugador, intentaban sacarlo de la calzada a golpes [3].",
             "Lo lógico habría sido corregirlo. Pero al equipo le pareció tan divertido que lo conservó, y esa persecución caótica se convirtió en el corazón del juego. Conviene matizarlo: la historia procede del testimonio de Penn, que la recuerda como un fallo aparente, y no hay otra documentación técnica que la confirme. Aun así, ilustra bien cómo se trabajaba entonces, probando y corrigiendo sobre la marcha."
           ]
         },
         {
           "titulo": "1997: un nombre legal y una polémica rentable",
           "parrafos": [
-            "El juego terminó llamándose Grand Theft Auto, la denominación que usa el derecho de varios estados de Estados Unidos para el robo de vehículos. Salió en Europa para ordenador el 28 de noviembre de 1997.",
-            "Su lanzamiento estuvo rodeado de polémica por la violencia, y la campaña de promoción, dirigida por el publicista británico Max Clifford, supo aprovecharla: cada crítica en la prensa funcionaba como publicidad gratuita. El resultado fue un éxito considerable para la época. En marzo de 2001, el primer GTA ya había vendido unos seis millones de copias.",
+            "El juego terminó llamándose Grand Theft Auto, la denominación que usa el derecho de varios estados de Estados Unidos para el robo de vehículos. Salió en Europa para ordenador el 28 de noviembre de 1997 [2].",
+            "Su lanzamiento estuvo rodeado de polémica por la violencia, y la campaña de promoción, dirigida por el publicista británico Max Clifford, supo aprovecharla: cada crítica en la prensa funcionaba como publicidad gratuita. El resultado fue un éxito considerable para la época. En marzo de 2001, el primer GTA ya había vendido unos seis millones de copias [2].",
             "Mientras tanto, el estudio cambió de manos y de nombre. Aquel pequeño equipo de Dundee acabó integrado en Rockstar Games y convertido en Rockstar North, con sede en Edimburgo, el estudio que ha liderado el desarrollo de los grandes títulos de la serie."
           ]
         },
@@ -3029,13 +3228,13 @@
           "titulo": "De Vice City a los mil millones de GTA V",
           "parrafos": [
             "La saga dio el salto definitivo con el paso a las tres dimensiones. En 2002 llegó Vice City, una ciudad inspirada en el Miami de los años ochenta, con su estética de neón, música de la época y guiños al cine de gánsteres. Ese escenario es clave para entender el nuevo juego, porque GTA VI vuelve a él.",
-            "En septiembre de 2013 llegó GTA V, y sus cifras siguen siendo difíciles de igualar: unos 800 millones de dólares en su primer día y 1.000 millones en tres, lo que lo convirtió en el producto de entretenimiento que más deprisa había alcanzado esa cifra. Con el tiempo ha superado los 230 millones de copias, lo que lo sitúa como el segundo videojuego más vendido de la historia. Su longevidad, impulsada por el modo en línea y por sucesivas reediciones en nuevas consolas, explica en parte por qué la espera de su sucesor ha sido tan larga."
+            "En septiembre de 2013 llegó GTA V, y sus cifras siguen siendo difíciles de igualar: unos 800 millones de dólares en su primer día y 1.000 millones en tres, lo que lo convirtió en el producto de entretenimiento que más deprisa había alcanzado esa cifra [4]. Con el tiempo ha superado los 230 millones de copias, lo que lo sitúa como el segundo videojuego más vendido de la historia [4]. Su longevidad, impulsada por el modo en línea y por sucesivas reediciones en nuevas consolas, explica en parte por qué la espera de su sucesor ha sido tan larga."
           ]
         },
         {
           "titulo": "La filtración de 2022",
           "parrafos": [
-            "Rockstar es conocida por controlar al detalle lo que muestra de sus juegos. Por eso fue un golpe tan duro lo que pasó el 18 de septiembre de 2022: alguien publicó en un foro 90 vídeos de GTA VI en pleno desarrollo, unos 50 minutos de material que no estaba pensado para el público.",
+            "Rockstar es conocida por controlar al detalle lo que muestra de sus juegos. Por eso fue un golpe tan duro lo que pasó el 18 de septiembre de 2022: alguien publicó en un foro 90 vídeos de GTA VI en pleno desarrollo, unos 50 minutos de material que no estaba pensado para el público [1].",
             "El responsable resultó ser un joven británico de 17 años, que fue detenido días después. Un tribunal británico concluyó que había cometido los hechos. Rockstar estimó que la filtración le costó unos cinco millones de dólares, además de miles de horas de trabajo de su plantilla. Aquí no damos su nombre: era menor cuando ocurrió."
           ]
         },
@@ -3043,15 +3242,15 @@
           "titulo": "Los tráileres más vistos",
           "parrafos": [
             "La mala suerte con las filtraciones continuó. El primer tráiler oficial, previsto para diciembre de 2023, apareció en internet antes de tiempo y Rockstar tuvo que publicarlo por adelantado. Aun así, alcanzó 46 millones de visitas en YouTube en sus primeras 12 horas, un récord para un vídeo no musical en la plataforma, y superó los 100 millones en dos días.",
-            "El segundo tráiler, publicado el 6 de mayo de 2025, fue todavía más lejos: 475 millones de visualizaciones en 24 horas sumando todas las plataformas.",
+            "El segundo tráiler, publicado el 6 de mayo de 2025, fue todavía más lejos: 475 millones de visualizaciones en 24 horas sumando todas las plataformas [1].",
             "Esos tráileres revelaron el escenario y los protagonistas. El juego transcurre en Leonida, un estado ficticio inspirado en Florida, cuya gran ciudad es de nuevo Vice City. El protagonismo lo comparte una pareja, Jason Duval y Lucia Caminos, inspirados en Bonnie y Clyde, la famosa pareja de delincuentes estadounidenses de los años treinta."
           ]
         },
         {
           "titulo": "Dos aplazamientos y reservas millonarias",
           "parrafos": [
-            "El primer tráiler prometía el juego para 2025. En mayo de ese año, Rockstar lo aplazó al 26 de mayo de 2026, y en noviembre de 2025 anunció un segundo retraso, hasta el 19 de noviembre de 2026, para pulir los últimos detalles.",
-            "Las reservas se abrieron el 25 de junio de 2026. La consultora Newzoo estimó que en siete días habían sumado unos 260 millones de dólares, y en octubre de 2026 se calculaban alrededor de 6,45 millones de reservas. Son estimaciones de analistas: Rockstar no publica estas cifras.",
+            "El primer tráiler prometía el juego para 2025. En mayo de ese año, Rockstar lo aplazó al 26 de mayo de 2026, y en noviembre de 2025 anunció un segundo retraso, hasta el 19 de noviembre de 2026, para pulir los últimos detalles [1].",
+            "Las reservas se abrieron el 25 de junio de 2026. La consultora Newzoo estimó que en siete días habían sumado unos 260 millones de dólares, y en octubre de 2026 se calculaban alrededor de 6,45 millones de reservas [1]. Son estimaciones de analistas: Rockstar no publica estas cifras.",
             "Lo que sí ha confirmado la compañía es que el juego saldrá solo en PlayStation 5 y Xbox Series X/S, y que en ambas consolas funcionará a 30 imágenes por segundo. De la versión para ordenador no hay fecha oficial."
           ]
         },
@@ -3059,7 +3258,7 @@
           "titulo": "Qué es mito y qué no",
           "parrafos": [
             "**Que el juego nació de un fallo** es, en parte, verdad: lo cuenta uno de sus creadores, que lo recuerda como un error aparente. Es un testimonio personal, no un documento técnico, pero es la versión aceptada.",
-            "**Que GTA VI ha costado 2.000 millones de dólares** es un rumor. Se han publicado cifras de entre 1.000 y 2.000 millones, pero Rockstar negó las que superaban los 1.500 millones sin dar una cifra propia. El presupuesto real sigue siendo un secreto.",
+            "**Que GTA VI ha costado 2.000 millones de dólares** es un rumor. Se han publicado cifras de entre 1.000 y 2.000 millones, pero Rockstar negó las que superaban los 1.500 millones sin dar una cifra propia [1]. El presupuesto real sigue siendo un secreto.",
             "**Que ya ha vendido millones de copias** hay que matizarlo: lo que existen son estimaciones de reservas, no ventas oficiales.",
             "Y una advertencia final: la fecha del 19 de noviembre de 2026 es la vigente a finales de octubre de 2026. Rockstar ya la ha cambiado dos veces, así que conviene confirmarla en sus canales oficiales."
           ]
@@ -3078,6 +3277,28 @@
       "mapa": [
         56.46,
         -2.97
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El juego nació en 1995 en DMA Design, en Dundee, como «Race'n'Chase», un proyecto en el que se jugaba como policía [2]."
+        },
+        {
+          "estado": "documentado",
+          "texto": "El segundo tráiler sumó 475 millones de visualizaciones en 24 horas entre todas las plataformas [1]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que GTA naciera de un fallo de programación: solo lo cuenta Gary Penn, que lo recuerda como un error aparente, sin documentación técnica [3]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Las reservas millonarias: son estimaciones de analistas, porque la compañía no publica esas cifras [1]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que GTA VI haya costado 2.000 millones de dólares: Rockstar negó las cifras de más de 1.500 millones [1]."
+        }
       ]
     },
     {
@@ -3112,6 +3333,14 @@
         {
           "titulo": "GTA Wiki, «Wanted Level in GTA (1997 game)»",
           "url": "https://gta.wiki/w/Wanted_Level_in_GTA_(1997_game)"
+        },
+        {
+          "titulo": "Rock Paper Shotgun, «Dailly News: GTA's Original Design Document»",
+          "url": "https://www.rockpapershotgun.com/dailly-news-gtas-original-design-document"
+        },
+        {
+          "titulo": "GTA Wiki, «Wanted Level in GTA 2»",
+          "url": "https://gta.wiki/w/Wanted_Level_in_GTA_2"
         }
       ],
       "etiquetas": [
@@ -3130,22 +3359,22 @@
         {
           "titulo": "Un proyecto con plan, pero sin rumbo",
           "parrafos": [
-            "DMA Design ya era conocido por «Lemmings» cuando, en marzo de 1995, empezó a dar forma a un nuevo juego para ordenador. El documento de diseño original, firmado por Keith R. Hamilton y fechado el 22 de marzo de 1995, lo describía como un juego de carreras y choques multijugador con un sistema gráfico novedoso. El motor de vista cenital lo había programado Mike Dailly, que en 2011 publicó aquel documento en internet.",
-            "La propuesta incluía tres ciudades y varias modalidades: una carrera, un derbi de demolición y atracos a bancos en los que se podía jugar como ladrón o como policía. El desarrollo empezó el 4 de abril de 1995 con un calendario que preveía acabar en julio de 1996; el juego no salió hasta finales de 1997."
+            "DMA Design ya era conocido por «Lemmings» cuando, a principios de 1995, empezó a dar forma a un nuevo juego para ordenador [1]. El documento de diseño original, firmado por Keith R. Hamilton y fechado el 22 de marzo de 1995, lo describía como un juego de carreras y choques multijugador con un sistema gráfico novedoso [1]. El motor de vista cenital lo había programado Mike Dailly, que en 2011 publicó aquel documento en internet.",
+            "La propuesta incluía tres ciudades y varias modalidades: una carrera, un derbi de demolición y atracos a bancos en los que se podía jugar como ladrón o como policía [6]. El desarrollo empezó el 4 de abril de 1995 con un calendario que preveía acabar en julio de 1996; el juego no salió hasta finales de 1997 [1]."
           ]
         },
         {
           "titulo": "La policía que quería atravesarte",
           "parrafos": [
-            "El relato más citado lo dio el diseñador Gary Penn, director creativo del estudio en aquella época, en una entrevista con el periodista Tristan Donovan publicada en 2011. Según Penn, el juego se colgaba constantemente, el manejo de los coches era pésimo y la editora, BMG Interactive, quería cancelarlo.",
-            "Entonces, durante las pruebas, la policía empezó a comportarse de forma agresiva. Penn cree que fue un fallo: el sistema que calculaba la ruta de los coches patrulla funcionaba mal y estos intentaban pasar a través del coche del jugador y lo embestían una y otra vez. Resultaba tan emocionante que el equipo lo mantuvo. Y añadió otra clave: nadie quería ser el policía, era más divertido ser el malo."
+            "El relato más citado lo dio el diseñador Gary Penn, director creativo del estudio en aquella época, en una entrevista con el periodista Tristan Donovan publicada en 2011. Según Penn, el juego se colgaba constantemente, el manejo de los coches era pésimo y la editora, BMG Interactive, quería cancelarlo [3].",
+            "Entonces, durante las pruebas, la policía empezó a comportarse de forma agresiva. Penn cree que fue un fallo: el sistema que calculaba la ruta de los coches patrulla funcionaba mal y estos intentaban pasar a través del coche del jugador y lo embestían una y otra vez [4]. Resultaba tan emocionante que el equipo lo mantuvo. Y añadió otra clave: nadie quería ser el policía, era más divertido ser el malo [3]."
           ]
         },
         {
           "titulo": "De cabezas de policía a estrellas",
           "parrafos": [
-            "En el primer GTA, cada delito aumentaba el nivel de búsqueda, representado en pantalla con cuatro cabezas de policía. Con tres llegaban los controles de carretera y los agentes intentaban sacar al jugador de la calzada, y con cuatro las calles se vaciaban. Esconderse no servía: había que repintar el coche en un taller o encontrar un soborno escondido en una caja.",
-            "«GTA 2» amplió el sistema a seis niveles, y «GTA III», en 2001, sustituyó las cabezas por estrellas. Desde entonces, la «estrella de búsqueda» es uno de los símbolos más reconocibles de la saga."
+            "En el primer GTA, cada delito aumentaba el nivel de búsqueda, representado en pantalla con cuatro cabezas de policía [5]. Con tres llegaban los controles de carretera y los agentes intentaban sacar al jugador de la calzada, y con cuatro las calles se vaciaban. Esconderse no servía: había que repintar el coche en un taller o encontrar un soborno escondido en una caja [5].",
+            "«GTA 2» amplió el sistema a seis niveles, y «GTA III», en 2001, sustituyó las cabezas por estrellas [7]. Desde entonces, la «estrella de búsqueda» es uno de los símbolos más reconocibles de la saga."
           ]
         },
         {
@@ -3169,6 +3398,28 @@
       "mapa": [
         56.46,
         -2.97
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El juego nació en DMA Design como «Race'n'Chase» y no salió, ya como GTA, hasta finales de 1997 [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En el primer GTA, el nivel de búsqueda se mostraba con hasta cuatro cabezas de policía, no con estrellas [5]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Durante el desarrollo hubo varios intentos de pararlo, y la editora, BMG Interactive, llegó a querer cancelarlo [1][3]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que la policía agresiva naciera de un fallo, porque Penn lo cuenta de memoria y con un «creo», sin documentación técnica [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Atribuir la anécdota de la policía a Mike Dailly, cuando el testimonio publicado es de Gary Penn [3]"
+        }
       ]
     },
     {
@@ -3226,37 +3477,37 @@
           "titulo": "Una ciudad junto al Weser",
           "parrafos": [
             "Hamelín (Hameln en alemán), en la actual Baja Sajonia, era a finales del siglo XIII un núcleo comercial de tamaño medio a orillas del río Weser. Era también la época de la colonización alemana del este: señores, obispos y órdenes religiosas buscaban campesinos y artesanos para poblar tierras en Brandeburgo, Pomerania o Moravia.",
-            "En ese mundo, según las fuentes de la ciudad, el 26 de junio de 1284, día de los santos Juan y Pablo, 130 niños nacidos en Hamelín siguieron a un flautista vestido de muchos colores y desaparecieron."
+            "En ese mundo, según las fuentes de la ciudad, el 26 de junio de 1284, día de los santos Juan y Pablo, 130 niños nacidos en Hamelín siguieron a un flautista vestido de muchos colores y desaparecieron [1]."
           ]
         },
         {
           "titulo": "Las pruebas: una vidriera, una crónica y varias inscripciones",
           "parrafos": [
-            "La mención más antigua conocida era una vidriera de la iglesia del mercado, fechada hacia 1300. Se destruyó en 1660, pero varios visitantes la describieron, y se conserva una acuarela de 1592, atribuida a Augustin von Moersperg, que la copia.",
-            "Varios autores citan además una anotación de los registros de la ciudad de 1384 que diría «hace cien años que se fueron nuestros niños»; se conoce por fuentes secundarias y no se ha podido consultar el original. El relato escrito más completo es el manuscrito de Lüneburg, de hacia 1440-1450, localizado en 1936 en el archivo de esa ciudad. Da la fecha, la cifra de 130 niños y un destino misterioso: un «Calvario» cerca de las colinas del Koppen.",
+            "La mención más antigua conocida era una vidriera de la iglesia del mercado, fechada hacia 1300. Se destruyó en 1660, pero varios visitantes la describieron, y se conserva una acuarela de 1592, atribuida a Augustin von Moersperg, que la copia [1].",
+            "Varios autores citan además una anotación de los registros de la ciudad de 1384 que diría «hace cien años que se fueron nuestros niños»; se conoce por fuentes secundarias y no se ha podido consultar el original [1]. El relato escrito más completo es el manuscrito de Lüneburg, de hacia 1440-1450, localizado en 1936 en el archivo de esa ciudad [1]. Da la fecha, la cifra de 130 niños y un destino misterioso: un «Calvario» cerca de las colinas del Koppen.",
             "Una inscripción latina de 1556 en una puerta de la muralla afirma que 272 años antes «un mago» se había llevado a 130 niños, y la llamada Casa del Cazador de Ratas, construida en 1602-1603, repite fecha y cifra."
           ]
         },
         {
           "titulo": "Las ratas llegaron tres siglos tarde",
           "parrafos": [
-            "En ninguna fuente medieval aparecen roedores. La plaga y el músico estafado se documentan por primera vez a mediados del siglo XVI, en la *Crónica de Zimmern* (redactada entre 1559 y 1565) y en la obra del médico Johann Weyer (1563). Dos relatos distintos se fundieron casi trescientos años después: el del cazador de ratas aportó la venganza, y el de Hamelín, la desaparición.",
+            "En ninguna fuente medieval aparecen roedores. La plaga y el músico estafado se documentan por primera vez a mediados del siglo XVI, en la *Crónica de Zimmern* (redactada entre 1559 y 1565) y en la obra del médico Johann Weyer (1563) [1]. Dos relatos distintos se fundieron casi trescientos años después: el del cazador de ratas aportó la venganza, y el de Hamelín, la desaparición.",
             "Desde entonces el relato no ha dejado de reescribirse. Goethe le dedicó un poema en 1803, los hermanos Grimm lo recogieron en sus *Leyendas alemanas* de 1816 y el poema de Robert Browning (1842) lo hizo famoso en inglés, aunque con una fecha equivocada, 1376."
           ]
         },
         {
           "titulo": "Las hipótesis de los historiadores",
           "parrafos": [
-            "La hipótesis más citada es la **emigración al este**. El lingüista Jürgen Udolph comparó los apellidos de Hamelín de la época con los de otras regiones y encontró coincidencias en Prignitz y Uckermark, al norte de Berlín, y en la antigua Pomerania, hoy en Polonia. Según esta lectura, el flautista sería un *lokator*, un reclutador de colonos para nuevas aldeas. Otros autores apuntan a Moravia y a un obispo de Olomouc que promovía la colonización de sus tierras. Los «niños» serían entonces jóvenes, los hijos de la ciudad que se marcharon y no volvieron.",
-            "Otras propuestas hablan de una epidemia, de un ahogamiento en el Weser o de un corrimiento de tierras en el Koppen, con el flautista como imagen de la Muerte de las danzas macabras. También se ha pensado en un episodio de manía del baile, como el de 1237, cuando un grupo de niños fue bailando de Erfurt a Arnstadt. Y está la **Cruzada de los Niños** de 1212, que según los cronistas arrastró a miles de jóvenes del Rin hacia Italia. El problema es la cronología, porque ocurrió setenta años antes. Además, historiadores como Peter Raedts sostienen que aquellos *pueri* eran sobre todo pobres errantes, no niños."
+            "La hipótesis más citada es la **emigración al este**. El lingüista Jürgen Udolph comparó los apellidos de Hamelín de la época con los de otras regiones y encontró coincidencias en Prignitz y Uckermark, al norte de Berlín, y en la antigua Pomerania, hoy en Polonia [1]. Según esta lectura, el flautista sería un *lokator*, un reclutador de colonos para nuevas aldeas. Otros autores apuntan a Moravia y a un obispo de Olomouc que promovía la colonización de sus tierras [4]. Los «niños» serían entonces jóvenes, los hijos de la ciudad que se marcharon y no volvieron.",
+            "Otras propuestas hablan de una epidemia, de un ahogamiento en el Weser o de un corrimiento de tierras en el Koppen, con el flautista como imagen de la Muerte de las danzas macabras. También se ha pensado en un episodio de manía del baile, como el de 1237, cuando un grupo de niños fue bailando de Erfurt a Arnstadt. Y está la **Cruzada de los Niños** de 1212, que según los cronistas arrastró a miles de jóvenes del Rin hacia Italia. El problema es la cronología, porque ocurrió setenta años antes. Además, historiadores como Peter Raedts sostienen que aquellos *pueri* eran sobre todo pobres errantes, no niños [5]."
           ]
         },
         {
           "titulo": "Qué es mito y qué no",
           "parrafos": [
             "Es real que Hamelín conmemoró durante siglos una pérdida colectiva fechada el 26 de junio de 1284, en una vidriera, en crónicas y en inscripciones. La cifra de 130 aparece desde las fuentes más antiguas, aunque no se puede comprobar.",
-            "Son mito la plaga de ratas y el pago incumplido, añadidos en el siglo XVI, y también la flauta hechizada y la cueva que se cierra tras los niños. Sigue discutido qué pasó y quiénes eran esos «niños»: la emigración al este es la hipótesis con más apoyo, pero no está demostrada. Tampoco tiene base la fecha de 1484 que propuso el escritor William Manchester.",
-            "En la Bungelosenstraße, la «calle sin tambores», donde la tradición dice que se vio a los niños por última vez, no suena música en los desfiles. Y desde hace unos setenta años los vecinos representan la historia los domingos de verano."
+            "Son mito la plaga de ratas y el pago incumplido, añadidos en el siglo XVI, y también la flauta hechizada y la cueva que se cierra tras los niños. Sigue discutido qué pasó y quiénes eran esos «niños»: la emigración al este es la hipótesis con más apoyo, pero no está demostrada. Tampoco tiene base la fecha de 1484 que propuso el escritor William Manchester [1].",
+            "En la Bungelosenstraße, la «calle sin tambores», donde la tradición dice que se vio a los niños por última vez, no suena música en los desfiles [1]. Y desde hace unos setenta años los vecinos representan la historia los domingos de verano."
           ]
         }
       ],
@@ -3265,6 +3516,28 @@
       "mapa": [
         52.1,
         9.36
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Hamelín recordó durante siglos la pérdida de 130 «niños» el 26 de junio de 1284, en una vidriera, en crónicas y en inscripciones [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Quiénes eran y adónde fueron, porque la emigración al este es la hipótesis más aceptada, pero ninguna explicación se ha demostrado [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "La anotación de 1384 sobre los cien años, que se conoce solo por fuentes secundarias [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La plaga de ratas y el pago incumplido, que no aparecen hasta hacia 1559, casi tres siglos después [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La fecha de 1484 que dio William Manchester, que no citó ninguna prueba para sostenerla [1]"
+        }
       ]
     },
     {
@@ -3806,7 +4079,7 @@
         {
           "titulo": "",
           "parrafos": [
-            "La mañana del 4 de agosto de 1892, en una casa estrecha del 92 de Second Street, en Fall River (Massachusetts), dos personas murieron a hachazos con unos noventa minutos de diferencia. Las puertas estaban cerradas, había gente en la casa y nadie vio entrar ni salir a ningún desconocido. Esa misma tarde, los médicos abrieron los cuerpos sobre la mesa del comedor.",
+            "La mañana del 4 de agosto de 1892, en una casa estrecha del 92 de Second Street, en Fall River (Massachusetts), dos personas murieron a hachazos con unos noventa minutos de diferencia [4]. Las puertas estaban cerradas, había gente en la casa y nadie vio entrar ni salir a ningún desconocido. Esa misma tarde, los médicos abrieron los cuerpos sobre la mesa del comedor [5].",
             "La historia del juicio, la absolución y la cancioncilla infantil ya la contamos en otro folio. Este va por otro camino: lo que se encontró dentro de aquella casa, lo que la policía no llegó a buscar y las pruebas que el jurado nunca vio. Es la parte del caso Borden que no cabe en una canción de comba."
           ]
         },
@@ -3814,9 +4087,9 @@
           "titulo": "Noventa minutos dentro de una casa cerrada",
           "parrafos": [
             "Aquella mañana durmieron en la casa cinco personas: Andrew Borden, rico hombre de negocios de casi setenta años; su segunda esposa, Abby, de 64; su hija menor, Lizzie, de 32; la criada irlandesa Bridget Sullivan, y John Morse, tío materno de Lizzie, que había llegado de visita la víspera. Emma, la hija mayor, estaba fuera de la ciudad.",
-            "Morse salió temprano. Andrew se marchó a sus negocios. Entre las nueve y las diez y media, Abby subió al cuarto de invitados para hacer la cama. Allí la alcanzó el primer golpe, de lado, en la cabeza. Según el análisis forense, estaba de cara a quien la atacó. Cayó boca abajo junto a la cama, y recibió el resto de los golpes en la parte posterior de la cabeza: dieciocho o diecinueve en total.",
+            "Morse salió temprano. Andrew se marchó a sus negocios. Entre las nueve y las diez y media, Abby subió al cuarto de invitados para hacer la cama. Allí la alcanzó el primer golpe, de lado, en la cabeza. Según el análisis forense, estaba de cara a quien la atacó. Cayó boca abajo junto a la cama, y recibió el resto de los golpes en la parte posterior de la cabeza: dieciocho o diecinueve en total [4].",
             "Nadie oyó nada. Bridget limpiaba las ventanas por fuera. Lizzie dijo después que su madrastra había recibido una nota para ir a ver a una amiga enferma y que creía que había salido. Esa nota no apareció jamás, ni nadie reconoció haberla enviado.",
-            "Hacia las diez y media volvió Andrew. La puerta principal estaba atrancada por dentro, y mientras Bridget forcejeaba con la cerradura oyó reír a Lizzie en lo alto de la escalera, a pocos metros del cuarto donde yacía Abby. Andrew se tumbó en el sofá del salón. Hacia las once, alguien le golpeó diez u once veces con un arma del tipo de un hacha de mano mientras, a juzgar por las heridas, dormía. Cuando llegaron los primeros testigos, sus heridas aún sangraban."
+            "Hacia las diez y media volvió Andrew. La puerta principal estaba atrancada por dentro, y mientras Bridget forcejeaba con la cerradura oyó reír a Lizzie en lo alto de la escalera, a pocos metros del cuarto donde yacía Abby [1]. Andrew se tumbó en el sofá del salón. Hacia las once, alguien le golpeó diez u once veces con un arma del tipo de un hacha de mano mientras, a juzgar por las heridas, dormía. Cuando llegaron los primeros testigos, sus heridas aún sangraban."
           ]
         },
         {
@@ -3824,30 +4097,30 @@
           "parrafos": [
             "El médico de la familia, Seabury Bowen, vivía enfrente. Cruzó la calle y certificó la muerte de Andrew. Poco después, una vecina y la criada subieron al piso de arriba y encontraron a Abby. Bowen certificó también su muerte.",
             "La primera exploración se hizo esa misma tarde dentro de la casa: los médicos examinaron los cuerpos sobre la mesa del comedor mientras decenas de policías entraban y salían. Los estómagos se enviaron a analizar porque la familia había estado enferma los días anteriores y Abby temía un envenenamiento. No se encontró veneno.",
-            "El 11 de agosto, el día en que detuvieron a Lizzie, el forense del condado, William Dolan, hizo la autopsia completa en una dependencia del cementerio de Oak Grove. En ella se separaron las cabezas de los cuerpos para estudiar las heridas en el hueso. Diez meses más tarde, esos dos cráneos llegarían a la sala del tribunal."
+            "El 11 de agosto, el día en que detuvieron a Lizzie, el forense del condado, William Dolan, hizo la autopsia completa en una dependencia del cementerio de Oak Grove [6]. En ella se separaron las cabezas de los cuerpos para estudiar las heridas en el hueso. Diez meses más tarde, esos dos cráneos llegarían a la sala del tribunal."
           ]
         },
         {
           "titulo": "El hacha sin mango y el vestido en la estufa",
           "parrafos": [
-            "En el sótano, la policía encontró dos hachas de mano, dos hachas grandes y una cabeza de hacha con el mango partido, como si alguien lo hubiera roto a propósito. La acusación sostuvo que esa era el arma y que el mango se eliminó porque estaba manchado. Nunca lo demostró de forma convincente. Hoy esa cabeza de hacha se conserva en la Sociedad Histórica de Fall River.",
-            "La investigación tuvo agujeros graves. Nadie examinó con detalle el pelo ni la ropa de Lizzie aquella mañana, aunque quien golpeó a dos personas de esa manera difícilmente podía quedar limpio. Y las fotografías policiales dejaron una contradicción: en ellas Andrew aparece con las botas puestas, cuando Lizzie había dicho que se las había quitado para echarse en el sofá.",
-            "Unos días después, una amiga de la familia, Alice Russell, vio a Lizzie meter un vestido en la estufa de la cocina. Lizzie le explicó que iba a quemar «esta cosa vieja» porque estaba manchada de pintura. Nunca se aclaró si era el vestido que llevaba la mañana del 4 de agosto. La defensa ni siquiera intentó rebatir ese testimonio."
+            "En el sótano, la policía encontró dos hachas de mano, dos hachas grandes y una cabeza de hacha con el mango partido, como si alguien lo hubiera roto a propósito. La acusación sostuvo que esa era el arma y que el mango se eliminó porque estaba manchado. Nunca lo demostró de forma convincente. Hoy esa cabeza de hacha se conserva en la Sociedad Histórica de Fall River [1].",
+            "La investigación tuvo agujeros graves. Nadie examinó con detalle el pelo ni la ropa de Lizzie aquella mañana, aunque quien golpeó a dos personas de esa manera difícilmente podía quedar limpio. Y las fotografías policiales dejaron una contradicción: en ellas Andrew aparece con las botas puestas, cuando Lizzie había dicho que se las había quitado para echarse en el sofá [1].",
+            "Unos días después, una amiga de la familia, Alice Russell, vio a Lizzie meter un vestido en la estufa de la cocina. Lizzie le explicó que iba a quemar «esta cosa vieja» porque estaba manchada de pintura. Nunca se aclaró si era el vestido que llevaba la mañana del 4 de agosto [1]. La defensa no negó que lo hubiera quemado: hizo declarar a Emma que era un vestido viejo, descolorido y manchado [2]."
           ]
         },
         {
           "titulo": "La coartada del granero",
           "parrafos": [
-            "¿Dónde estaba Lizzie mientras mataban a su padre? Según ella, en el piso de arriba del granero, buscando plomo para hacer pesos de pesca. Quince o veinte minutos. Más tarde añadió que había estado comiendo peras. La policía consideró absurdo que alguien pasara ese tiempo en un desván sofocante en pleno agosto, y algunos agentes declararon que en el polvo del suelo no había huellas. Otros testimonios lo discutieron.",
-            "La defensa encontró un apoyo inesperado: Hyman Lubinsky, un vendedor ambulante de helados, declaró que vio a una mujer salir del granero hacia las once y tres minutos. Era poco, pero en un caso sin testigos directos cualquier minuto contaba."
+            "¿Dónde estaba Lizzie mientras mataban a su padre? Según ella, en el piso de arriba del granero, buscando plomo para hacer pesos de pesca. Veinte minutos, quizá media hora [1]. Más tarde añadió que había estado comiendo peras. La policía consideró absurdo que alguien pasara ese tiempo en un desván sofocante en pleno agosto, y algunos agentes declararon que en el polvo del suelo no había huellas [7]. Otros testimonios lo discutieron.",
+            "La defensa encontró un apoyo inesperado: Hyman Lubinsky, un vendedor ambulante de helados, declaró que vio a una mujer salir del granero hacia las once y tres minutos [1]. Era poco, pero en un caso sin testigos directos cualquier minuto contaba."
           ]
         },
         {
           "titulo": "Lo que el jurado nunca vio",
           "parrafos": [
-            "El juicio empezó el 5 de junio de 1893 en New Bedford. El primer día, la acusación mostró en la sala los cráneos de Andrew y Abby para explicar las heridas. Lizzie se desmayó.",
+            "El juicio empezó el 5 de junio de 1893 en New Bedford. El primer día, la acusación mostró en la sala los cráneos de Andrew y Abby para explicar las heridas. Lizzie se desmayó [1].",
             "Pero varias de las pruebas más incómodas para ella se quedaron fuera. El tribunal excluyó su declaración en la investigación judicial, que había hecho sin abogado, que estaba llena de contradicciones y que, según se ha dicho, prestó bajo el efecto de un calmante. También excluyó el testimonio de Eli Bence, dependiente de una farmacia, que aseguró que la víspera del crimen Lizzie había intentado comprarle ácido prúsico, un veneno, para limpiar una capa de piel. Los jueces lo consideraron demasiado lejano a los hechos.",
-            "Sin esas piezas, la acusación quedó reducida a indicios: la casa cerrada, la coartada endeble, el vestido quemado y un hacha que nadie podía vincular con seguridad a las heridas. El jurado la absolvió el 20 de junio tras una deliberación muy breve."
+            "Sin esas piezas, la acusación quedó reducida a indicios: la casa cerrada, la coartada endeble, el vestido quemado y un hacha que nadie podía vincular con seguridad a las heridas. El jurado la absolvió el 20 de junio tras una deliberación muy breve [3]."
           ]
         },
         {
@@ -3870,6 +4143,28 @@
       "mapa": [
         41.7,
         -71.15
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Andrew y Abby Borden murieron en su casa el 4 de agosto de 1892, con unos noventa minutos de diferencia [4]."
+        },
+        {
+          "estado": "documentado",
+          "texto": "El jurado absolvió a Lizzie el 20 de junio de 1893 y nadie más fue acusado nunca de los crímenes [1]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que la cabeza de hacha sin mango del sótano fuera el arma: la acusación nunca lo demostró de forma convincente [1]."
+        },
+        {
+          "estado": "discutido",
+          "texto": "El vestido quemado: Lizzie dijo que estaba manchado de pintura y nunca se aclaró si era el que llevaba aquella mañana [1]."
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La cancioncilla de los cuarenta golpes: el arma fue un hacha de mano, la cuenta es falsa y calla que Lizzie fue absuelta [4]."
+        }
       ]
     },
     {
