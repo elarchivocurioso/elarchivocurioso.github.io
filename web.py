@@ -276,6 +276,13 @@ header nav a:hover { color:var(--texto); }
   border:1px solid var(--borde); background:var(--tarjeta); }
 .apoyo div:nth-child(2) { flex:1; min-width:220px; }
 .apoyo h2 { font-family:'Playfair Display',serif; font-weight:900; font-size:22px; }
+.expediente .apoyo { margin-top:48px; margin-bottom:0; border-left:3px solid var(--oro); }
+.opiniones { list-style:none; display:flex; flex-direction:column; gap:12px; }
+.opiniones li { padding:14px 16px; background:var(--tarjeta); border:1px solid var(--borde); }
+.opiniones p { font-size:16px; margin:6px 0; }
+.opiniones small { color:var(--texto-3); font-size:13px; }
+.estrellas { color:var(--oro); letter-spacing:.12em; font-size:16px; }
+.formulario { display:block; border:0; min-height:280px; }
 .apoyo p { color:var(--texto-2); font-size:15px; }
 footer { border-top:1px solid var(--borde); padding:28px 16px 40px; text-align:center; font-size:13px; color:var(--texto-3); }
 footer a { color:var(--texto-2); }
@@ -551,23 +558,111 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 </div></header>
 {cuerpo}
 {suscripcion(canal)}
-{apoyo(canal)}
-<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}temas/index.html">Temas</a> · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer>© {date.today().year} {escape(canal['nombre'])} · <a href="{raiz}temas/index.html">Temas</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya el archivo</a> · <a href="{raiz}acerca.html">Acerca del archivo</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{extra}
 </body>
 </html>
 """
 
 
-def apoyo(canal: dict) -> str:
-    """Bloque de donaciones; no aparece hasta que haya un enlace en "donaciones_url"."""
-    if not canal.get("donaciones_url"):
+def apoyo(canal: dict, raiz: str = "") -> str:
+    """Bloque de apoyo tras el artículo. Con "donaciones_url" (Ko-fi) sale el botón de donar;
+    sin él, solo lleva a la página «Apoya el archivo» (libros), así nunca hay un botón roto."""
+    donar = (f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener" target="_blank">'
+             f'{escape((canal.get("donaciones_texto") or "Invítanos a un café").capitalize())} ☕</a>'
+             if canal.get("donaciones_url") else "")
+    return (f'<section class="apoyo"><div class="logo" style="--t:56px">{LUPA_SVG}</div>'
+            f'<div><h2>¿Quieres que abramos el siguiente expediente?</h2><p>Cada caso lleva horas de archivo y fuentes. '
+            f'El Archivo Curioso es gratis y sin muros de pago: si te ha gustado, puedes ayudarnos a seguir.</p></div>'
+            f'<div class="botones" style="margin-top:0">{donar}'
+            f'<a class="boton secundario" href="{raiz}apoya.html">Otras formas de apoyar</a></div></section>')
+
+
+def estrellas(n: int) -> str:
+    n = max(1, min(5, int(n or 0)))
+    return f'<span class="estrellas" aria-label="{n} de 5">{"★" * n}{"☆" * (5 - n)}</span>'
+
+
+def lista_opiniones(ops: list[dict], raiz: str = "", con_expediente: bool = False) -> str:
+    """Opiniones ya APROBADAS (Web/datos/opiniones.json). Nunca se publica nada sin aprobar."""
+    items = ""
+    for o in ops:
+        sobre = (f' · sobre <a href="{raiz}expedientes/{o["_slug"]}.html">{escape(o["_titulo"])}</a>'
+                 if con_expediente and o.get("_slug") else "")
+        items += (f'<li>{estrellas(o.get("estrellas", 5))}'
+                  + (f'<p>«{escape(o["texto"])}»</p>' if o.get("texto") else "")
+                  + f'<small>{escape(o.get("nombre") or "Lector anónimo")} · {fecha_larga(o["fecha"])}{sobre}</small></li>')
+    return f'<ul class="opiniones">{items}</ul>' if items else ""
+
+
+def formulario_opinion(canal: dict, e: dict | None = None) -> str:
+    """Formulario de Tally (gratis, sin cuenta para el lector, cumple el RGPD). Las respuestas llegan privadas
+    a la cuenta de Tally y solo se publican las que se copian, aprobadas, a datos/opiniones.json."""
+    form = canal.get("opiniones_form")
+    if not form:
+        if SALIDA != WEB:   # solo en la vista previa: hueco visible para ver dónde irá
+            return ('<div class="relacionado"><p>[Vista previa] Aquí irá el formulario: estrellas del 1 al 5, opinión '
+                    'opcional y nombre opcional. Se activa en cuanto exista el formulario de Tally.</p></div>')
         return ""
-    return (f'<section class="apoyo ancho"><div class="logo" style="--t:56px">{LUPA_SVG}</div>'
-            f'<div><h2>¿Te gusta El Archivo Curioso?</h2><p>Cada expediente lleva horas de investigación. '
-            f'Si quieres ayudar a abrir el siguiente, puedes invitarnos a un café.</p></div>'
-            f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener">'
-            f'{escape(canal.get("donaciones_texto") or "Invítanos a un café")}</a></section>')
+    oculto = f"&expediente={urllib.parse.quote(e['_slug'])}" if e else "&expediente=general"
+    return (f'<iframe class="formulario" data-tally-src="https://tally.so/embed/{escape(form)}?alignLeft=1&hideTitle=1'
+            f'&transparentBackground=1&dynamicHeight=1{oculto}" loading="lazy" width="100%" height="320" frameborder="0" '
+            f'title="Deja tu opinión"></iframe>'
+            '<script async src="https://tally.so/widgets/embed.js"></script>'
+            '<p class="nota" style="margin-top:8px">Las opiniones se revisan antes de publicarse. No pedimos correo ni cuenta.</p>')
+
+
+def bloque_opiniones(e: dict, canal: dict, ops: list[dict]) -> str:
+    formulario = formulario_opinion(canal, e)
+    if not formulario and not ops:
+        return ""
+    return (f'<div class="bloque"><h2>¿Qué te ha parecido este expediente?</h2>{formulario}'
+            + (f'<h3 style="margin-top:22px">Lo que dicen otros lectores</h3>{lista_opiniones(ops)}' if ops else "")
+            + "</div>")
+
+
+def pagina_opiniones(canal: dict, ops: list[dict]) -> str:
+    vacio = ("Todavía no hay opiniones publicadas. ¿Quieres ser la primera persona?" if canal.get("opiniones_form")
+             else "Muy pronto podrás dejar aquí tu opinión sobre el archivo.")
+    lista = lista_opiniones(ops, con_expediente=True) or f'<p class="nota">{vacio}</p>'
+    cuerpo = f"""<main class="ancho seccion lectura">
+<h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Opiniones de los lectores</h1>
+<p class="nota" style="margin:10px 0 28px">Lo que opinan quienes han abierto el archivo. Todas se revisan antes de publicarse.</p>
+{lista}
+<div class="bloque"><h2>Deja tu opinión sobre el archivo</h2>{formulario_opinion(canal)}</div>
+</main>"""
+    return pagina(f"Opiniones · {canal['nombre']}", cuerpo, canal, ruta="opiniones.html",
+                  descripcion="Opiniones de los lectores de El Archivo Curioso.")
+
+
+def pagina_apoya(canal: dict, expedientes: list[dict]) -> str:
+    donar = ""
+    if canal.get("donaciones_url"):
+        donar = (f'<div class="bloque"><h2>Invítanos a un café</h2><p>La forma más directa: un donativo puntual, del '
+                 f'importe que quieras, con tarjeta o PayPal.</p><div class="botones">'
+                 f'<a class="boton" href="{escape(canal["donaciones_url"])}" rel="noopener" target="_blank">'
+                 f'{escape((canal.get("donaciones_texto") or "Invítanos a un café").capitalize())} ☕</a></div></div>')
+    libros = ""
+    for e in expedientes:
+        for l in e.get("lecturas", []):
+            libros += enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del expediente '
+                                                      f'<a href="expedientes/{e["_slug"]}.html">{escape(e["titulo"])}</a></span></li>')
+    bloque_libros = (f'<div class="bloque"><h2>Lee los libros de los expedientes</h2><p>Si compras alguno de estos '
+                     f'libros desde aquí, Amazon nos da una pequeña comisión y a ti no te cuesta nada más.</p>'
+                     f'<ul class="fuentes">{libros}</ul></div>') if libros else ""
+    cuerpo = f"""<main class="ancho seccion lectura">
+<h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Apoya el archivo</h1>
+<p class="bloque" style="margin-top:14px">El Archivo Curioso es gratis, sin muros de pago y sin anuncios invasivos. Detrás de cada expediente hay horas buscando fuentes, contrastando cifras y separando el mito de lo que pasó de verdad.</p>
+<div class="bloque"><h2>En qué se usa tu ayuda</h2><ul class="curiosidades">
+<li>Abrir más expedientes, con más investigación y mejores fuentes.</li>
+<li>Una voz más natural para los vídeos.</li>
+<li>Un dominio propio para la web, para que sea más fácil de encontrar y recordar.</li></ul></div>
+{donar}
+{bloque_libros}
+<div class="bloque"><h2>Y gratis</h2><p>Compartir un expediente con alguien a quien le vaya a encantar{', <a href="opiniones.html">dejar tu opinión</a>' if canal.get("opiniones_form") else ""} o suscribirte al <a href="{escape(canal['youtube'])}">canal de YouTube</a> también ayuda muchísimo.</p></div>
+</main>"""
+    return pagina(f"Apoya el archivo · {canal['nombre']}", cuerpo, canal, ruta="apoya.html",
+                  descripcion="Cómo apoyar a El Archivo Curioso: donativos, libros recomendados y formas gratuitas.")
 
 
 def suscripcion(canal: dict) -> str:
@@ -812,6 +907,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 {video}
 {bloques}
 {en_un_minuto}
+{apoyo(canal, "../")}
+{bloque_opiniones(e, canal, e.get("_opiniones", []))}
 {final}
 {compartir(e, f"expedientes/{e['_slug']}.html")}
 {nav}
@@ -967,6 +1064,19 @@ def generar() -> int:
         if e.get("_episodio"):
             e["_n"] = e["_episodio"]["_n"]
 
+    # Opiniones aprobadas: Web/datos/opiniones.json, lista de {"expediente": num o slug (o "general"),
+    # "estrellas": 1-5, "texto", "nombre", "fecha": "AAAA-MM-DD"}. Lo que no está aquí no se publica.
+    ruta_ops = WEB / "datos" / "opiniones.json"
+    opiniones = json.loads(ruta_ops.read_text(encoding="utf-8-sig")) if ruta_ops.exists() else []
+    por_clave = {k: e for e in visibles for k in (e.get("num"), e["_slug"]) if k}
+    for o in opiniones:
+        e = por_clave.get(o.get("expediente"))
+        e = (e.get("_episodio") or e) if e else None
+        if e:
+            o["_slug"], o["_titulo"] = e["_slug"], e["titulo"]
+            e.setdefault("_opiniones", []).append(o)
+    opiniones.sort(key=lambda o: o["fecha"], reverse=True)
+
     dir_exp = SALIDA / "expedientes"
     if dir_exp.exists():
         shutil.rmtree(dir_exp)
@@ -1016,6 +1126,8 @@ def generar() -> int:
 
     (SALIDA / "index.html").write_text(inicio(canal, listados), encoding="utf-8")
     (SALIDA / "buscar.html").write_text(buscar(canal), encoding="utf-8")
+    (SALIDA / "opiniones.html").write_text(pagina_opiniones(canal, opiniones), encoding="utf-8")
+    (SALIDA / "apoya.html").write_text(pagina_apoya(canal, listados), encoding="utf-8")
     (SALIDA / "privacidad.html").write_text(privacidad(canal), encoding="utf-8")
     (SALIDA / "acerca.html").write_text(acerca(canal), encoding="utf-8")
     (SALIDA / ".nojekyll").write_text("", encoding="utf-8")
@@ -1052,6 +1164,9 @@ def generar() -> int:
     entradas += [(f"{URL}/expedientes/{e['_slug']}.html", e["fecha"][:10]) for e in visibles]
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))
+    entradas.append((f"{URL}/apoya.html", hoy))
+    if canal.get("opiniones_form"):   # la página de opiniones no se anuncia hasta que exista el formulario
+        entradas.append((f"{URL}/opiniones.html", hoy))
     entradas.append((f"{URL}/acerca.html", hoy))
     entradas.append((f"{URL}/privacidad.html", hoy))
     (SALIDA / "sitemap.xml").write_text(
