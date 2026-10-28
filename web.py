@@ -836,8 +836,14 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     if e.get("etiquetas"):
         jsonld["keywords"] = ", ".join(e["etiquetas"])
     return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
-                  ruta=ruta, imagen=e["_img"], tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
+                  ruta=ruta, imagen=imagen_compartir(e), tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
                   extra=COPIAR_JS)
+
+
+def imagen_compartir(e: dict) -> str:
+    """Imagen al compartir el enlace: la tarjeta con el título tachado (og/<slug>.jpg) si ya está hecha."""
+    propia = f"og/{e['_slug']}.jpg"
+    return propia if (WEB / propia).exists() else e["_img"]
 
 
 def acerca(canal: dict) -> str:
@@ -998,6 +1004,11 @@ def generar() -> int:
         {e["youtube"]: {"num": e.get("num", ""), "titulo": e["titulo"], "url": f"{URL}/expedientes/{e['_slug']}.html"}
          for e in visibles if e.get("youtube")}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # Índice para Buscar y Sorpréndeme (rutas relativas a la raíz)
+    # Datos para las imágenes de compartir (las dibuja Promocion/compartir.py; aquí solo el texto)
+    (WEB / "datos" / "compartir.json").write_text(json.dumps(
+        [dict(zip(("antes", "tachado", "despues"), partes_titulo(e)), slug=e["_slug"], num=num_ficha(e),
+              img=e["_img"], tipo=e.get("tipo", "video")) for e in visibles],
+        ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (SALIDA / "indice.json").write_text(json.dumps(
         [{"t": e["titulo"], "u": f"expedientes/{e['_slug']}.html", "r": e.get("resumen", ""),
           "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""), "n": num_ficha(e)}
@@ -1079,6 +1090,16 @@ def publicar() -> None:
         if r.returncode != 0:
             print(f"AVISO: no se pudieron importar los artículos:\n{r.stderr.strip()}")
     generar()
+    # Imágenes para compartir con el título tachado (solo dibuja las nuevas o cambiadas); si hay alguna nueva,
+    # se vuelve a generar para que su página la use en og:image
+    dibujante = WEB.parent / "Promocion" / "compartir.py"
+    if dibujante.exists():
+        r = subprocess.run([sys.executable, "-X", "utf8", str(dibujante)], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", cwd=dibujante.parent)
+        if r.returncode != 0:
+            print(f"AVISO: no se pudieron dibujar las imágenes para compartir:\n{r.stderr.strip()[-500:]}")
+        elif not r.stdout.strip().endswith("0 imagen(es) para compartir dibujadas."):
+            generar()
     git("add", "-A")
     if git("status", "--porcelain").stdout.strip():
         r = git("commit", "-m", f"Actualizar web ({date.today().isoformat()})\n\n"
