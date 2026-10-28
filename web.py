@@ -204,6 +204,12 @@ header nav a:hover { color:var(--texto); }
 .ficha .num { color:var(--rojo); font-size:11px; }
 .ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:44px; line-height:1; color:var(--rojo); margin-bottom:2px; }
 .rejilla .ficha { height:100%; }
+/* Top 10 de Halloween: fila que se desliza en horizontal (cuenta atrás) */
+.fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(250px,280px); gap:18px; overflow-x:auto;
+  padding-bottom:12px; scroll-snap-type:x mandatory; scrollbar-color:var(--rojo) transparent; }
+.fila-top .ficha { scroll-snap-align:start; height:100%; }
+.cuenta a { color:var(--rojo); text-decoration:none; margin-left:6px; }
+.bloque-top { margin-bottom:56px; }
 .ficha h3 { font-weight:600; font-size:17px; line-height:1.4; }
 .ficha .meta { font-size:12px; color:var(--texto-3); }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
@@ -718,14 +724,30 @@ def num_ficha(e: dict) -> str:
 
 
 def ficha(e: dict, raiz: str = "") -> str:
+    """La ÚNICA forma de pintar una tarjeta (portada, temas, «De miedo»…). Los del Top 10 de Halloween llevan
+    el puesto en grande («Nº 7») y el título sin «TOP 7 HALLOWEEN:»."""
     tipo = "short" if e.get("tipo") == "short" else "video"
     meta = " · ".join(x for x in (e.get("lugar", ""), fecha_larga(e["fecha"])) if x)
     img = e["_img"] if e["_img"].startswith("http") else raiz + e["_img"]
+    puesto = puesto_top(e)
+    cabeza = (f'<div class="puesto">Nº {puesto}</div>' if puesto
+              else f'<div class="num mono">{escape(num_ficha(e))}</div>')
+    visible = titulo_limpio(e)
     return (f'<a class="ficha" data-tipo="{tipo}" href="{raiz}expedientes/{e["_slug"]}.html">'
             f'<div class="img" style="background-image:url({escape(img)})">'
             f'<span class="tipo {tipo}">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
-            f'<div class="txt"><div class="num mono">{escape(num_ficha(e))}</div>'
-            f'<h3 aria-label="{escape(e["titulo"])}">{titulo_html(e)}</h3><div class="meta">{escape(meta)}</div></div></a>')
+            f'<div class="txt">{cabeza}'
+            f'<h3 aria-label="{escape(visible["titulo"])}">{titulo_html(visible)}</h3><div class="meta">{escape(meta)}</div></div></a>')
+
+
+def titulo_limpio(e: dict) -> dict:
+    """El expediente con el título visible: sin el «TOP N HALLOWEEN:» del principio (la censura se conserva)."""
+    if not puesto_top(e):
+        return e
+    limpio = dict(e, titulo=TOP_HALLOWEEN.sub("", e["titulo"]))
+    if limpio.get("censura") and limpio["censura"].lower() not in limpio["titulo"].lower():
+        limpio.pop("censura")
+    return limpio
 
 
 def temas_de(expedientes: list[dict]) -> dict[str, list[dict]]:
@@ -780,14 +802,16 @@ def puesto_top(e: dict) -> int | None:
     return int(m.group(1)) if m else None
 
 
-def ficha_top(e: dict) -> str:
-    """Tarjeta del Top 10: número grande y título sin el «TOP N HALLOWEEN:» del principio."""
-    n = puesto_top(e)
-    corto = dict(e, titulo=TOP_HALLOWEEN.sub("", e["titulo"]))
-    if corto.get("censura") and corto["censura"].lower() not in corto["titulo"].lower():
-        corto.pop("censura")
-    html = re.sub(r'<div class="num mono">[^<]*</div>', "", ficha(corto), count=1)   # el puesto sustituye al nº de archivo
-    return html.replace('<div class="txt">', f'<div class="txt"><div class="puesto">Nº {n}</div>', 1)
+def bloque_top(expedientes: list[dict], raiz: str = "", enlace: bool = False) -> str:
+    """El Top 10 de Halloween como bloque propio, en cuenta atrás (Nº 10 → Nº 1), en una fila que se desliza."""
+    top = sorted((e for e in expedientes if puesto_top(e)), key=lambda e: -puesto_top(e))
+    if not top:
+        return ""
+    quedan = 10 - len(top)
+    mas = (f' <a href="{raiz}historias-de-miedo-reales.html">Ver todos los casos de miedo →</a>' if enlace else "")
+    return (f'<div class="seccion-cab"><h2>Top 10 de Halloween</h2><span class="cuenta">Cuenta atrás: {len(top)} de 10 '
+            f'abiertos{f". Los {quedan} restantes, muy pronto" if quedan > 0 else ""}.{mas}</span></div>'
+            f'<div class="fila-top">{"".join(ficha(e, raiz) for e in top)}</div>')
 
 
 def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
@@ -795,14 +819,8 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
     descripcion = ("Historias de miedo reales, documentadas y con fuentes: crímenes antiguos sin resolver, barcos fantasma, "
                    "bestias que aterrorizaron regiones enteras y leyendas que nacieron de hechos reales.")
     # Dos bloques: el Top 10 de Halloween en cuenta atrás (del 10 al 1) y el resto de casos oscuros
-    top = sorted((e for e in expedientes if puesto_top(e)), key=lambda e: -puesto_top(e))
     casos = [e for e in expedientes if not puesto_top(e)]
-    bloque_top = ""
-    if top:
-        quedan = 10 - len(top)
-        bloque_top = (f'<div class="seccion-cab"><h2>Top 10 de Halloween</h2><span class="cuenta">Cuenta atrás: '
-                      f'{len(top)} de 10 abiertos{f". Los {quedan} restantes, muy pronto" if quedan > 0 else ""}.</span></div>'
-                      f'<div class="rejilla">{"".join(ficha_top(e) for e in top)}</div>')
+    top = bloque_top(expedientes)
     cuerpo = f"""<main class="ancho seccion">
 <div class="sello-rojo mono" style="margin-bottom:22px">Solo para valientes</div>
 <h1 style="font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:1.08; max-width:18ch">Historias de miedo <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">reales</span></h1>
@@ -810,7 +828,7 @@ def pagina_miedo(expedientes: list[dict], canal: dict) -> str:
 <p class="bloque" style="margin-top:0">No hace falta inventar nada para pasar miedo. La historia está llena de sucesos que darían para una película de terror: una granja donde alguien vivió escondido en el desván, un barco que apareció a la deriva sin nadie a bordo, una bestia que atacó durante tres años a los pastores de una región de Francia o un juicio en Galicia contra un hombre que decía convertirse en lobo.</p>
 <p class="bloque" style="margin-top:14px">En El Archivo Curioso los contamos como lo que son: casos reales, con sus fuentes, separando lo que se sabe de lo que se añadió después. Sin morbo, pero sin quitarles una pizca de inquietud.</p>
 </div>
-{bloque_top}
+{top}
 <div class="seccion-cab" style="margin-top:56px"><h2>Casos oscuros</h2><span class="cuenta">{len(casos)} {"caso" if len(casos) == 1 else "casos"}. Léelos con la luz encendida.</span></div>
 <div class="rejilla">{"".join(ficha(e) for e in casos)}</div>
 </main>"""
@@ -861,7 +879,9 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
                  '<button class="activo" data-filtro="todos" aria-pressed="true">Todos</button>'
                  '<button data-filtro="video" aria-pressed="false">Vídeos</button>'
                  '<button data-filtro="short" aria-pressed="false">Shorts</button></div>')
-        rejilla = f'<div class="rejilla">{"".join(ficha(e) for e in expedientes)}</div>'
+        # La rejilla general: episodios y Shorts independientes. El Top 10 va en su propio bloque
+        generales = [e for e in expedientes if not puesto_top(e)]
+        rejilla = f'<div class="rejilla">{"".join(ficha(e) for e in generales)}</div>'
     else:
         lista = ""
         rejilla = (f'<div class="vacio"><div class="logo">{LUPA_SVG}</div>'
@@ -879,8 +899,9 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
   <a class="bajar mono" href="#expedientes">↓ {len(expedientes)} expedientes abiertos</a>
   <script type="application/json" id="frases">{datos_frases}</script>
 </section>
+<section class="seccion bloque-top">{bloque_top(expedientes, enlace=True)}</section>
 <section id="expedientes" class="seccion">
-  <div class="seccion-cab"><div><h2>Expedientes abiertos</h2><span class="cuenta">{len(expedientes)} casos. Ninguno debería haber pasado.</span></div>{lista}</div>
+  <div class="seccion-cab"><div><h2>Expedientes abiertos</h2><span class="cuenta">{len([e for e in expedientes if not puesto_top(e)])} casos. Ninguno debería haber pasado.</span></div>{lista}</div>
   {rejilla}
 </section>
 <section class="seccion" style="padding-top:0">
@@ -965,8 +986,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     cuerpo = f"""<div class="exposicion" aria-hidden="true"></div><div class="reloj mono" aria-hidden="true"></div>
 <main class="ancho expediente"><div class="lectura">
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
-<div class="ficha-num mono">Expediente {escape(num_ficha(e))}</div>
-<h1 aria-label="{escape(e['titulo'])}">{titulo_html(e, enfocable=True)}</h1>
+<div class="ficha-num mono">{f"Top 10 de Halloween · Nº {puesto_top(e)}" if puesto_top(e) else "Expediente " + escape(num_ficha(e))}</div>
+<h1 aria-label="{escape(titulo_limpio(e)['titulo'])}">{titulo_html(titulo_limpio(e), enfocable=True)}</h1>
 <div class="datos">{datos}</div>
 {video}
 {bloques}
@@ -1073,7 +1094,8 @@ def generar() -> int:
     canal = datos["canal"]
     ahora = datetime.now()
     visibles = [e for e in datos["expedientes"] if datetime.fromisoformat(e["fecha"]) <= ahora]
-    visibles.sort(key=lambda e: e["fecha"], reverse=True)
+    # Del más reciente al más antiguo; a igual fecha, por número (orden estable)
+    visibles.sort(key=lambda e: (e["fecha"], e.get("num") or ""), reverse=True)
     # Un mismo expediente puede aparecer dos veces (provisional sin YouTube, o vídeo subido dos veces):
     # se queda la primera entrada con YouTube y hereda el artículo y las lecturas de las otras
     por_titulo: dict[str, list[dict]] = {}
@@ -1190,8 +1212,9 @@ def generar() -> int:
               img=e["_img"], tipo=e.get("tipo", "video")) for e in visibles],
         ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (SALIDA / "indice.json").write_text(json.dumps(
-        [{"t": e["titulo"], "u": f"expedientes/{e['_slug']}.html", "r": e.get("resumen", ""),
-          "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""), "n": num_ficha(e)}
+        [{"t": titulo_limpio(e)["titulo"], "u": f"expedientes/{e['_slug']}.html", "r": e.get("resumen", ""),
+          "e": e.get("etiquetas", []), "y": e.get("epoca", ""), "l": e.get("lugar", ""),
+          "n": f"Top 10 de Halloween · Nº {puesto_top(e)}" if puesto_top(e) else num_ficha(e)}
          for e in listados], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     (SALIDA / "index.html").write_text(inicio(canal, listados), encoding="utf-8")

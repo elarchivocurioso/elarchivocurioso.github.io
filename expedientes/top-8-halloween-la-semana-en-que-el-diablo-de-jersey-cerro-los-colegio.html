@@ -128,6 +128,12 @@ header nav a:hover { color:var(--texto); }
 .ficha .num { color:var(--rojo); font-size:11px; }
 .ficha .puesto { font-family:'Playfair Display',serif; font-weight:900; font-size:44px; line-height:1; color:var(--rojo); margin-bottom:2px; }
 .rejilla .ficha { height:100%; }
+/* Top 10 de Halloween: fila que se desliza en horizontal (cuenta atrás) */
+.fila-top { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(250px,280px); gap:18px; overflow-x:auto;
+  padding-bottom:12px; scroll-snap-type:x mandatory; scrollbar-color:var(--rojo) transparent; }
+.fila-top .ficha { scroll-snap-align:start; height:100%; }
+.cuenta a { color:var(--rojo); text-decoration:none; margin-left:6px; }
+.bloque-top { margin-bottom:56px; }
 .ficha h3 { font-weight:600; font-size:17px; line-height:1.4; }
 .ficha .meta { font-size:12px; color:var(--texto-3); }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
@@ -246,8 +252,8 @@ footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',
 <div class="exposicion" aria-hidden="true"></div><div class="reloj mono" aria-hidden="true"></div>
 <main class="ancho expediente"><div class="lectura">
 <a class="volver" href="../index.html#expedientes">← Todos los expedientes</a>
-<div class="ficha-num mono">Expediente Nº 017 · 1735 (leyenda) y enero de 1909</div>
-<h1 aria-label="TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios">TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">cerró los colegios</span></h1>
+<div class="ficha-num mono">Top 10 de Halloween · Nº 8</div>
+<h1 aria-label="la semana en que el DIABLO de Jersey cerró los colegios">la semana en que el DIABLO de Jersey <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">cerró los colegios</span></h1>
 <div class="datos"><span><b>Lugar:</b> Nueva Jersey y Pensilvania (EE. UU.)</span><span><b>Publicado:</b> 28 de octubre de 2026</span><span><b>Formato:</b> Short</span></div>
 <div class="reproductor short"><iframe src="https://www.youtube-nocookie.com/embed/UeY-Fi2i0O0"
   title="TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios" loading="lazy" allowfullscreen
@@ -264,9 +270,9 @@ footer .ultima { display:block; margin-bottom:10px; font-family:'Special Elite',
 <line x1="66" y1="118" x2="110" y2="118" stroke="#C2443B" stroke-width="3"/>
 </svg></div><div><h2>¿Quieres que abramos el siguiente expediente?</h2><p>Cada caso lleva horas de archivo y fuentes. El Archivo Curioso es gratis y sin muros de pago: si te ha gustado, puedes ayudarnos a seguir.</p></div><div class="botones" style="margin-top:0"><a class="boton" href="https://ko-fi.com/elarchivocurioso" rel="noopener" target="_blank">Invítanos a un café ☕</a><a class="boton secundario" href="../apoya.html">Otras formas de apoyar</a></div></section>
 
-<div class="sabes-demasiado"><p class="grande">Ya sabes demasiado.</p><p class="peque">Pero el archivo no se acaba aquí.</p><a class="boton" href="top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html">Abrir el siguiente expediente</a></div>
+<div class="sabes-demasiado"><p class="grande">Ya sabes demasiado.</p><p class="peque">Pero el archivo no se acaba aquí.</p><a class="boton" href="top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html">Abrir el siguiente expediente</a></div>
 <div class="compartir"><p>¿Conoces a alguien a quien le encantaría este expediente? Pásaselo.</p><div><a href="https://wa.me/?text=TOP%208%20HALLOWEEN%3A%20la%20semana%20en%20que%20el%20DIABLO%20de%20Jersey%20cerr%C3%B3%20los%20colegios%20%C2%B7%20El%20Archivo%20Curioso%20https%3A//elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html" rel="noopener" target="_blank">WhatsApp</a><a href="https://t.me/share/url?url=https%3A//elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html&amp;text=TOP%208%20HALLOWEEN%3A%20la%20semana%20en%20que%20el%20DIABLO%20de%20Jersey%20cerr%C3%B3%20los%20colegios%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">Telegram</a><a href="https://twitter.com/intent/tweet?url=https%3A//elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html&amp;text=TOP%208%20HALLOWEEN%3A%20la%20semana%20en%20que%20el%20DIABLO%20de%20Jersey%20cerr%C3%B3%20los%20colegios%20%C2%B7%20El%20Archivo%20Curioso" rel="noopener" target="_blank">X</a><a href="https://www.meneame.net/submit?url=https%3A//elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html" rel="noopener" target="_blank">Menéame</a><a href="https://www.reddit.com/submit?url=https%3A//elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html&amp;title=TOP%208%20HALLOWEEN%3A%20la%20semana%20en%20que%20el%20DIABLO%20de%20Jersey%20cerr%C3%B3%20los%20colegios" rel="noopener" target="_blank">Reddit</a><button class="copiar" data-url="https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html">Copiar enlace</button></div></div>
-<nav class="navegacion" aria-label="Otros expedientes"><a href="gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html"><small>← Anterior</small>GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia</a><a class="sig" href="top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html"><small>Siguiente →</small>TOP 9 HALLOWEEN: el «MONSTRUO» saltarín que tuvo en vilo a Londres</a></nav>
+<nav class="navegacion" aria-label="Otros expedientes"><a href="top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html"><small>← Anterior</small>TOP 9 HALLOWEEN: el «MONSTRUO» saltarín que tuvo en vilo a Londres</a><a class="sig" href="top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html"><small>Siguiente →</small>TOP 7 HALLOWEEN: el caso LIZZIE BORDEN sigue abierto más de 130 años después</a></nav>
 </div></main>
 
 <footer>© 2026 El Archivo Curioso · <a href="../temas/index.html">Temas</a> · <a href="../apoya.html">Apoya el archivo</a> · <a href="../acerca.html">Acerca del archivo</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://elarchivocurioso.github.io/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>

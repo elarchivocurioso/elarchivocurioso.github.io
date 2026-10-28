@@ -1,29 +1,29 @@
 [
  {
-  "antes": "TOP 7 HALLOWEEN: el caso LIZZIE BORDEN ",
-  "tachado": "sigue abierto",
-  "despues": " más de 130 años después",
-  "slug": "top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de",
-  "num": "Nº 021 · 1892-1893",
-  "img": "portadas/S119.jpg",
-  "tipo": "short"
- },
- {
   "antes": "TOP 6 HALLOWEEN: la BESTIA de Gévaudan, el monstruo que ",
   "tachado": "aterrorizó a Francia",
   "despues": "",
   "slug": "top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra",
-  "num": "Nº 020 · 1764-1767",
+  "num": "Nº 021 · 1764-1767",
   "img": "portadas/S120.jpg",
   "tipo": "short"
  },
  {
-  "antes": "TOP 10 HALLOWEEN: ",
-  "tachado": "130 niños",
-  "despues": " DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron",
-  "slug": "top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond",
-  "num": "Nº 019 · 1284",
-  "img": "portadas/S116.jpg",
+  "antes": "TOP 7 HALLOWEEN: el caso LIZZIE BORDEN ",
+  "tachado": "sigue abierto",
+  "despues": " más de 130 años después",
+  "slug": "top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de",
+  "num": "Nº 020 · 1892-1893",
+  "img": "portadas/S119.jpg",
+  "tipo": "short"
+ },
+ {
+  "antes": "TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey ",
+  "tachado": "cerró los colegios",
+  "despues": "",
+  "slug": "top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio",
+  "num": "Nº 019 · 1735 (leyenda) y enero de 1909",
+  "img": "portadas/S118.jpg",
   "tipo": "short"
  },
  {
@@ -36,12 +36,21 @@
   "tipo": "short"
  },
  {
-  "antes": "TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey ",
-  "tachado": "cerró los colegios",
+  "antes": "TOP 10 HALLOWEEN: ",
+  "tachado": "130 niños",
+  "despues": " DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron",
+  "slug": "top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond",
+  "num": "Nº 017 · 1284",
+  "img": "portadas/S116.jpg",
+  "tipo": "short"
+ },
+ {
+  "antes": "GTA nació de un FALLO de programación: ",
+  "tachado": "la policía se volvió LOCA",
   "despues": "",
-  "slug": "top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio",
-  "num": "Nº 017 · 1735 (leyenda) y enero de 1909",
-  "img": "portadas/S118.jpg",
+  "slug": "gta-nacio-de-un-fallo-de-programacion-la-policia-se-volvio-loca",
+  "num": "Nº 016 · 1995-1997",
+  "img": "portadas/S115.jpg",
   "tipo": "short"
  },
  {
@@ -54,29 +63,20 @@
   "tipo": "video"
  },
  {
-  "antes": "GTA nació de un FALLO de programación: ",
-  "tachado": "la policía se volvió LOCA",
-  "despues": "",
-  "slug": "gta-nacio-de-un-fallo-de-programacion-la-policia-se-volvio-loca",
-  "num": "Nº 016 · 1995-1997",
-  "img": "portadas/S115.jpg",
+  "antes": "La VERDAD sobre las ",
+  "tachado": "habitaciones secretas",
+  "despues": " de H. H. Holmes, el estafador de Chicago",
+  "slug": "la-verdad-sobre-las-habitaciones-secretas-de-h-h-holmes-el-estafador-d",
+  "num": "Nº 015 · 1892-1895",
+  "img": "portadas/S114.jpg",
   "tipo": "short"
- },
- {
-  "antes": "NOSFERATU: la película de vampiros que un juez ",
-  "tachado": "ordenó destruir",
-  "despues": " (1922)",
-  "slug": "nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922",
-  "num": "Nº 015 · 1922-1925",
-  "img": "miniaturas/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.png",
-  "tipo": "video"
  },
  {
   "antes": "La película de vampiros que un JUEZ ",
   "tachado": "ordenó DESTRUIR",
   "despues": ": Nosferatu (1922)",
   "slug": "la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-nosferatu-1922",
-  "num": "Nº 015 · 1922-1925",
+  "num": "Nº 014 · 1922-1925",
   "img": "portadas/S113.jpg",
   "tipo": "short"
  },
@@ -85,18 +85,18 @@
   "tachado": "su famoso edificio",
   "despues": " (1893)",
   "slug": "h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici",
-  "num": "Nº 014 · 1886-1896",
+  "num": "Nº 015 · 1886-1896",
   "img": "miniaturas/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.png",
   "tipo": "video"
  },
  {
-  "antes": "La VERDAD sobre las ",
-  "tachado": "habitaciones secretas",
-  "despues": " de H. H. Holmes, el estafador de Chicago",
-  "slug": "la-verdad-sobre-las-habitaciones-secretas-de-h-h-holmes-el-estafador-d",
-  "num": "Nº 014 · 1892-1895",
-  "img": "portadas/S114.jpg",
-  "tipo": "short"
+  "antes": "NOSFERATU: la película de vampiros que un juez ",
+  "tachado": "ordenó destruir",
+  "despues": " (1922)",
+  "slug": "nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922",
+  "num": "Nº 014 · 1922-1925",
+  "img": "miniaturas/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.png",
+  "tipo": "video"
  },
  {
   "antes": "El MISTERIO del MARY CELESTE: el barco que apareció ",
@@ -243,12 +243,12 @@
   "tipo": "short"
  },
  {
-  "antes": "¿Napoleón era bajito? El mito que ",
-  "tachado": "nos creímos 200 años",
-  "despues": "",
-  "slug": "napoleon-era-bajito-el-mito-que-nos-creimos-200-anos",
-  "num": "Nº 005 · 1769-1821",
-  "img": "portadas/S102.jpg",
+  "antes": "Cleopatra vivió más cerca ",
+  "tachado": "del iPhone",
+  "despues": " que de las pirámides",
+  "slug": "cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides",
+  "num": "Nº 005 · 69-30 a. C.",
+  "img": "portadas/S104.jpg",
   "tipo": "short"
  },
  {
@@ -261,12 +261,12 @@
   "tipo": "short"
  },
  {
-  "antes": "Cleopatra vivió más cerca ",
-  "tachado": "del iPhone",
-  "despues": " que de las pirámides",
-  "slug": "cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides",
-  "num": "Nº 003 · 69-30 a. C.",
-  "img": "portadas/S104.jpg",
+  "antes": "¿Napoleón era bajito? El mito que ",
+  "tachado": "nos creímos 200 años",
+  "despues": "",
+  "slug": "napoleon-era-bajito-el-mito-que-nos-creimos-200-anos",
+  "num": "Nº 003 · 1769-1821",
+  "img": "portadas/S102.jpg",
   "tipo": "short"
  },
  {
