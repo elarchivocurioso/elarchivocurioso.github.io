@@ -6,6 +6,8 @@ Archivo en español de historias reales que parecen inventadas: sucesos insólit
 
 ## Expedientes
 
+- [TOP 7 HALLOWEEN: el caso LIZZIE BORDEN sigue abierto más de 130 años después](https://elarchivocurioso.github.io/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html): Número siete. Hay una cancioncilla infantil sobre esta mujer… y exagera casi todo lo que cuenta.
+- [TOP 6 HALLOWEEN: la BESTIA de Gévaudan, el monstruo que aterrorizó a Francia](https://elarchivocurioso.github.io/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html): Número seis. Durante tres años, algo acechó los bosques del sur de Francia… y nadie sabía qué era.
 - [TOP 10 HALLOWEEN: 130 niños DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron](https://elarchivocurioso.github.io/expedientes/top-10-halloween-130-ninos-desaparecidos-en-hamelin-y-nadie-sabe-adond.html): Número diez. Todos conocemos el cuento del flautista… Pero ¿y si hubiera algo de cierto?
 - [TOP 9 HALLOWEEN: el «MONSTRUO» saltarín que tuvo en vilo a Londres](https://elarchivocurioso.github.io/expedientes/top-9-halloween-el-monstruo-saltarin-que-tuvo-en-vilo-a-londres.html): Número nueve. Londres, mil ochocientos treinta y siete. Una figura con capa salta por encima de los muros…
 - [TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios](https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html): Número ocho. El Diablo de Jersey. Una leyenda con alas…
@@ -46,6 +48,7 @@ Archivo en español de historias reales que parecen inventadas: sucesos insólit
 - [Mitos de la historia](https://elarchivocurioso.github.io/temas/mitos-de-la-historia.html)
 - [Siglo XIX](https://elarchivocurioso.github.io/temas/siglo-xix.html)
 - [Siglo XVII](https://elarchivocurioso.github.io/temas/siglo-xvii.html)
+- [Siglo XVIII](https://elarchivocurioso.github.io/temas/siglo-xviii.html)
 - [Siglo XX](https://elarchivocurioso.github.io/temas/siglo-xx.html)
 - [Tormenta solar](https://elarchivocurioso.github.io/temas/tormenta-solar.html)
 - [Torre Eiffel](https://elarchivocurioso.github.io/temas/torre-eiffel.html)
