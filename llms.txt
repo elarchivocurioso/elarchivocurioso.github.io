@@ -1,0 +1,53 @@
+# El Archivo Curioso
+
+> Historias reales que parecen inventadas. Abrimos los expedientes de la historia: sucesos reales tan extraños que parecen inventados, personajes olvidados, misterios del pasado y curiosidades que no te contaron en clase.
+
+Archivo en español de historias reales que parecen inventadas: sucesos insólitos, mitos desmontados, crímenes antiguos y curiosidades de cine e historia. Cada expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.
+
+## Expedientes
+
+- [GTA VI: el FALLO que creó GTA, la filtración y los RÉCORDS del juego más esperado de la historia](https://elarchivocurioso.github.io/expedientes/gta-vi-el-fallo-que-creo-gta-la-filtracion-y-los-records-del-juego-mas.html): El diecinueve de noviembre de 2026 sale GTA seis. Millones de personas llevan años esperándolo. Sus tráileres han batido todas las marcas, y su fecha se ha movido dos veces.
+- [NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)](https://elarchivocurioso.github.io/expedientes/nosferatu-la-pelicula-de-vampiros-que-un-juez-ordeno-destruir-1922.html): En 1922 se estrenó en Berlín una película de miedo. Un vampiro calvo, de orejas puntiagudas y dedos larguísimos. Hoy es una de las películas más famosas de la historia del cine.
+- [H. H. HOLMES: el estafador de Chicago y la verdad sobre su famoso edificio (1893)](https://elarchivocurioso.github.io/expedientes/h-h-holmes-el-estafador-de-chicago-y-la-verdad-sobre-su-famoso-edifici.html): Seguro que has oído hablar de él. Un edificio en Chicago lleno de pasadizos secretos, trampillas y habitaciones sin salida. Y un asesino que, según la leyenda, mató allí a doscientas personas.
+- [El MISTERIO del MARY CELESTE: el barco que apareció sin nadie a bordo (1872)](https://elarchivocurioso.github.io/expedientes/el-misterio-del-mary-celeste-el-barco-que-aparecio-sin-nadie-a-bordo-1.html): En diciembre de 1872, unos marineros encontraron un barco navegando a la deriva en mitad del Atlántico. Estaba en buen estado y con su carga intacta. Pero no había nadie a bordo.
+- [La FIEBRE DE LOS TULIPANES: la primera burbuja de la historia… ¿o un mito?](https://elarchivocurioso.github.io/expedientes/la-fiebre-de-los-tulipanes-la-primera-burbuja-de-la-historia-o-un-mito.html): En el siglo diecisiete, en Holanda, se llegaron a pagar fortunas por un solo bulbo de tulipán. Luego los precios se desplomaron de la noche a la mañana. Es la famosa fiebre de los tulipanes, la primera burbuja financiera de la historia.
+- [VICTOR LUSTIG: el estafador que «vendió» la Torre Eiffel](https://elarchivocurioso.github.io/expedientes/victor-lustig-el-estafador-que-vendio-la-torre-eiffel.html): En 1925, un hombre elegante convenció a un empresario de París de que el gobierno iba a desmontar la Torre Eiffel y venderla como chatarra. Y el empresario pagó. El estafador se llamaba Victor Lustig, y esta es una de las estafas más famosas de la historia.
+- [El EVENTO CARRINGTON: la tormenta solar de 1859 que incendió los telégrafos](https://elarchivocurioso.github.io/expedientes/el-evento-carrington-la-tormenta-solar-de-1859-que-incendio-los-telegr.html): En septiembre de 1859, el cielo se iluminó de colores hasta en el Caribe. Los telégrafos echaban chispas, el papel ardía y algunos operadores recibieron descargas. Fue la mayor tormenta solar de la historia registrada.
+- [1816, EL AÑO SIN VERANO: el volcán que trajo nieve en junio (y creó a Frankenstein)](https://elarchivocurioso.github.io/expedientes/1816-el-ano-sin-verano-el-volcan-que-trajo-nieve-en-junio-y-creo-a-fra.html): En 1816 nevó en junio en Estados Unidos. En Europa no paraba de llover, las cosechas se perdieron y el hambre se extendió. Nadie sabía por qué.
+- [PHINEAS GAGE: el hombre que sobrevivió a una barra de hierro en la cabeza](https://elarchivocurioso.github.io/expedientes/phineas-gage-el-hombre-que-sobrevivio-a-una-barra-de-hierro-en-la-cabe.html): En 1848, una barra de hierro de más de un metro atravesó la cabeza de un joven trabajador del ferrocarril. Entró por su mejilla y salió por lo alto del cráneo. Y él no solo sobrevivió: a los pocos minutos estaba hablando.
+- [La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)](https://elarchivocurioso.github.io/expedientes/la-guerra-del-emu-cuando-el-ejercito-australiano-se-enfrento-a-20-000.html): En 1932 el ejército australiano envió soldados con ametralladoras contra miles de emús que arrasaban los campos de trigo. La operación fracasó.
+- [La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas](https://elarchivocurioso.github.io/expedientes/la-gran-inundacion-de-melaza-de-boston-la-ola-dulce-que-mato-a-21-pers.html): El 15 de enero de 1919 reventó en Boston un tanque con más de ocho millones de litros de melaza. La ola mató a 21 personas, y en 2016 se explicó por qué un jarabe fue tan letal.
+- [¿Napoleón era bajito? El mito que nos creímos 200 años](https://elarchivocurioso.github.io/expedientes/napoleon-era-bajito-el-mito-que-nos-creimos-200-anos.html): Napoleón medía alrededor de 1,68 m, una estatura normal para su época. El mito nace de confundir unidades francesas e inglesas y de las caricaturas británicas.
+- [Los vikingos nunca llevaron cuernos (la culpa es de una ópera)](https://elarchivocurioso.github.io/expedientes/los-vikingos-nunca-llevaron-cuernos-la-culpa-es-de-una-opera.html): El casco vikingo más completo que se conoce no tiene cuernos. La imagen popular nace del vestuario de una ópera de Wagner en 1876.
+- [Cleopatra vivió más cerca del iPhone que de las pirámides](https://elarchivocurioso.github.io/expedientes/cleopatra-vivio-mas-cerca-del-iphone-que-de-las-piramides.html): Cuando murió Cleopatra, la Gran Pirámide ya tenía unos 2.500 años. El primer iPhone llegó unos 2.000 años después de ella.
+- [¿Edison inventó la bombilla? La verdad](https://elarchivocurioso.github.io/expedientes/edison-invento-la-bombilla-la-verdad.html): Edison no inventó la bombilla: Joseph Swan ya iluminó una sala en Newcastle meses antes. El mérito de Edison fue una bombilla práctica y duradera y el sistema para llevar la luz a las casas.
+- [La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar](https://elarchivocurioso.github.io/expedientes/la-epidemia-de-baile-de-1518-la-ciudad-que-no-podia-dejar-de-bailar.html): En julio de 1518 una mujer empezó a bailar en las calles de Estrasburgo y no podía parar. En pocas semanas decenas de personas la siguieron, y las autoridades probaron una cura sorprendente: más baile.
+
+## Temas
+
+- [Absurdos](https://elarchivocurioso.github.io/temas/absurdos.html)
+- [Animales](https://elarchivocurioso.github.io/temas/animales.html)
+- [Barco fantasma](https://elarchivocurioso.github.io/temas/barco-fantasma.html)
+- [Burbujas económicas](https://elarchivocurioso.github.io/temas/burbujas-economicas.html)
+- [Cerebro](https://elarchivocurioso.github.io/temas/cerebro.html)
+- [Chicago 1893](https://elarchivocurioso.github.io/temas/chicago-1893.html)
+- [Ciencia](https://elarchivocurioso.github.io/temas/ciencia.html)
+- [Cine mudo](https://elarchivocurioso.github.io/temas/cine-mudo.html)
+- [Desastres](https://elarchivocurioso.github.io/temas/desastres.html)
+- [Drácula](https://elarchivocurioso.github.io/temas/dracula.html)
+- [Estafas históricas](https://elarchivocurioso.github.io/temas/estafas-historicas.html)
+- [Grand Theft Auto](https://elarchivocurioso.github.io/temas/grand-theft-auto.html)
+- [Historia de la medicina](https://elarchivocurioso.github.io/temas/historia-de-la-medicina.html)
+- [Mitos](https://elarchivocurioso.github.io/temas/mitos.html)
+- [Mitos de la historia](https://elarchivocurioso.github.io/temas/mitos-de-la-historia.html)
+- [Siglo XIX](https://elarchivocurioso.github.io/temas/siglo-xix.html)
+- [Siglo XVII](https://elarchivocurioso.github.io/temas/siglo-xvii.html)
+- [Siglo XX](https://elarchivocurioso.github.io/temas/siglo-xx.html)
+- [Tormenta solar](https://elarchivocurioso.github.io/temas/tormenta-solar.html)
+- [Torre Eiffel](https://elarchivocurioso.github.io/temas/torre-eiffel.html)
+- [Volcán Tambora](https://elarchivocurioso.github.io/temas/volcan-tambora.html)
+
+## Más
+
+- [Acerca del archivo y cómo trabajamos](https://elarchivocurioso.github.io/acerca.html)
+- [Canal de YouTube](https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ)

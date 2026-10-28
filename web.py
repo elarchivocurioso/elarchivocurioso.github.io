@@ -1058,7 +1058,22 @@ def generar() -> int:
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{escape_xml(u)}</loc><lastmod>{f}</lastmod></url>\n" for u, f in entradas)
         + "</urlset>\n", encoding="utf-8")
-    (SALIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {URL}/sitemap.xml\n", encoding="utf-8")
+    # Los buscadores de inteligencia artificial (ChatGPT, Perplexity, Claude, Gemini) también pueden leer y citar la web
+    robots_ia = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in (
+        "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "ClaudeBot", "Claude-SearchBot", "Google-Extended",
+        "Bingbot"))
+    (SALIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\n{robots_ia}Sitemap: {URL}/sitemap.xml\n",
+                                       encoding="utf-8")
+    # llms.txt: resumen del archivo para los asistentes de IA (propuesta llmstxt.org)
+    lineas = [f"# {canal['nombre']}", "", f"> {canal['lema']}. {canal['descripcion']}", "",
+              "Archivo en español de historias reales que parecen inventadas: sucesos insólitos, mitos desmontados, "
+              "crímenes antiguos y curiosidades de cine e historia. Cada expediente tiene un artículo con fuentes, "
+              "una sección de qué es mito y qué no, y su vídeo en YouTube.", "", "## Expedientes", ""]
+    lineas += [f"- [{e['titulo']}]({URL}/expedientes/{e['_slug']}.html): {e.get('resumen', '')}" for e in listados]
+    lineas += ["", "## Temas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
+    lineas += ["", "## Más", "", f"- [Acerca del archivo y cómo trabajamos]({URL}/acerca.html)",
+               f"- [Canal de YouTube]({canal['youtube']})", ""]
+    (SALIDA / "llms.txt").write_text("\n".join(lineas), encoding="utf-8")
 
     # Clave de IndexNow (Bing, Yandex...): un archivo con la clave en la raíz demuestra que la web es nuestra
     if not CLAVE_INDEXNOW.exists():
