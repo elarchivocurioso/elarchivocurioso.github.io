@@ -1468,11 +1468,10 @@ def parrafo(texto: str, fuentes: list[dict]) -> str:
     partes, ultimo = [], 0
     for m in NOTA_FUENTE.finditer(texto):
         n = int(m.group(1))
-        if not 1 <= n <= len(fuentes):
-            continue
         partes.append(escape(texto[ultimo:m.start()]).rstrip())
-        partes.append(f'<sup class="nota-fuente"><a href="#fuente-{n}" title="{escape(fuentes[n - 1]["titulo"])}">{n}</a></sup>')
         ultimo = m.end()
+        if 1 <= n <= len(fuentes):   # una nota sin fuente se quita: mejor sin nota que apuntando a otra fuente
+            partes.append(f'<sup class="nota-fuente"><a href="#fuente-{n}" title="{escape(fuentes[n - 1]["titulo"])}">{n}</a></sup>')
     partes.append(escape(texto[ultimo:]))
     # Algunos artículos traen negritas de Markdown («**Lo que se discute**»)
     return "<p>" + re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", "".join(partes)) + "</p>"
