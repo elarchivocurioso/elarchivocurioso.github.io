@@ -486,6 +486,12 @@ sup.nota-fuente a:hover { background:var(--rojo); color:#fff; }
 .progreso .barra i { position:absolute; left:0; top:0; bottom:0; width:0; background:var(--rojo); box-shadow:var(--brillo); }
 .relacionado { padding:14px 16px; border:1px solid var(--borde); border-left:3px solid var(--rojo); background:var(--tarjeta); border-radius:10px; margin-top:16px; }
 .relacionado p { font-size:16px; }
+.suscribirse { margin-top:48px; padding:24px 22px; border-radius:var(--radio); display:flex; flex-wrap:wrap; align-items:center; gap:14px 22px;
+  background:radial-gradient(circle at 0% 0%, rgba(210,70,60,.3), transparent 60%), var(--tarjeta); border:1px solid rgba(210,70,60,.45); }
+.suscribirse > div { flex:1; min-width:220px; }
+.suscribirse .grande { font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(24px,3.4vw,32px); line-height:1.1; color:#fff; }
+.suscribirse p { color:var(--texto-2); font-size:17px; }
+.suscribirse .redes-mini { flex-basis:100%; font-size:14px; color:var(--texto-3); }
 .sabes-demasiado { margin-top:56px; padding:48px 20px; text-align:center; border-radius:var(--radio); position:relative; overflow:hidden;
   background:radial-gradient(ellipse at 50% 120%, rgba(210,70,60,.35), transparent 60%), var(--tarjeta); border:1px solid var(--borde); }
 .sabes-demasiado p.grande { font-family:'Playfair Display',serif; font-style:italic; font-weight:900; font-size:clamp(30px,5vw,46px); }
@@ -1196,6 +1202,15 @@ def enlace_libro(libro: dict, canal: dict) -> str:
     return f'<li><a href="{escape(url)}" rel="sponsored noopener">{texto}</a></li>'
 
 
+def suscribirse(canal: dict) -> str:
+    """Al final de cada historia: suscribirse al canal de YouTube (con la ventana de confirmación) y las redes."""
+    url = f"{canal['youtube']}?sub_confirmation=1"
+    return (f'<div class="suscribirse"><div><p class="grande">¿Te ha gustado?</p><p>Cada día, un folio nuevo en YouTube.</p></div>'
+            f'<a class="boton" href="{escape(url)}" rel="noopener" target="_blank">▶ Suscribirme</a>'
+            '<p class="redes-mini">📲 También en <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> y '
+            '<a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a>: @elfolio13</p></div>')
+
+
 def compartir(e: dict, ruta: str) -> str:
     """Botones para compartir el folio (enlaces normales, sin scripts de terceros)."""
     url = f"{URL}/{ruta}"
@@ -1866,10 +1881,10 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 {texto}
 {en_un_minuto}
 {quiz}
-<div class="relacionado redes-folio"><p>📲 Más folios cada día en <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> y <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a>: @elfolio13</p></div>
 {lecturas}
 {apoyo(canal, "../")}
 {bloque_opiniones(e, canal, e.get("_opiniones", []))}
+{suscribirse(canal)}
 {final}
 {compartir(e, f"expedientes/{e['_slug']}.html")}
 {nav}
