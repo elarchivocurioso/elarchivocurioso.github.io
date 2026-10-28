@@ -1294,6 +1294,13 @@ def publicar() -> None:
                            encoding="utf-8", errors="replace")
         if r.returncode != 0:
             print(f"AVISO: no se pudieron importar los artículos:\n{r.stderr.strip()}")
+    # Portadas horizontales limpias para los Shorts nuevos (Promocion/portadas_shorts.py)
+    portadas = WEB.parent / "Promocion" / "portadas_shorts.py"
+    if portadas.exists():
+        r = subprocess.run([sys.executable, "-X", "utf8", str(portadas)], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
+        if r.returncode != 0:
+            print(f"AVISO: no se pudieron hacer las portadas de los Shorts:\n{r.stderr.strip()[-500:]}")
     generar()
     # Imágenes para compartir con el título tachado (solo dibuja las nuevas o cambiadas); si hay alguna nueva,
     # se vuelve a generar para que su página la use en og:image
