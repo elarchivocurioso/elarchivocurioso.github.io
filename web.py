@@ -13,8 +13,9 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "youtube": "ID del vídeo",
       "tipo": "video" | "short",
       "titulo": "...",
-      "tematica": "crimenes",           OBLIGATORIO: paranormal, crimenes, cine, fantasia, mitos, robos o desastres
-                                        (un Short con "de" la hereda de su episodio). Sin ella, la web no se genera.
+      "tematica": "crimenes",           paranormal, crimenes, cine, fantasia, mitos, robos o desastres. Si falta, se usa
+                                        la del episodio ("de") o "tematica_alt"; si no hay ninguna, la historia sale en
+                                        la portada y en su página, pero en ninguna temática, y se escribe un AVISO.
       "tematica_alt": "mitos",          opcional: segunda temática, si dudamos entre dos (sale en «Si te gusta esto»)
       "mapa": [lat, lon],               opcional: dónde pasó, para el mapa de la temática
       "verdad": [{"estado": "documentado" | "discutido" | "leyenda", "texto": "..."}],
@@ -1042,8 +1043,11 @@ def num_ficha(e: dict) -> str:
     return " · ".join(x for x in (f"Folio {e['_n']:03d}", e.get("epoca", "")) if x)
 
 
+SIN_TEMA = {"nombre": "", "corto": "", "intro": ""}   # historia aún sin clasificar (generar() avisa)
+
+
 def tematica(e: dict) -> dict:
-    return TEMATICAS[e["tematica"]]
+    return TEMATICAS.get(e.get("tematica"), SIN_TEMA)
 
 
 def semaforo_mini(e: dict) -> str:
@@ -1066,8 +1070,9 @@ def ficha(e: dict, raiz: str = "", con_tema: bool = True) -> str:
     cabeza = (f'<div class="puesto">Nº {puesto}</div>' if puesto
               else f'<div class="num mono">{escape(num_ficha(e))}</div>')
     visible = titulo_limpio(e)
-    tema = (f'<span class="etiqueta-tema">{escape(tematica(e)["nombre"])}</span>' if con_tema else "")
-    return (f'<a class="ficha t-{e["tematica"]}" style="--acento:var(--t-acento)" data-tipo="{tipo}" data-folio="{e["_n"]}" '
+    tema = (f'<span class="etiqueta-tema">{escape(tematica(e)["nombre"])}</span>' if con_tema and e["tematica"] else "")
+    clase = f' t-{e["tematica"]}" style="--acento:var(--t-acento)' if e["tematica"] else ""
+    return (f'<a class="ficha{clase}" data-tipo="{tipo}" data-folio="{e["_n"]}" '
             f'href="{raiz}expedientes/{e["_slug"]}.html">'
             f'<div class="img" style="background-image:url({escape(img)})">'
             f'<span class="leido-marca">✓ LEÍDO</span><span class="tipo">{"SHORT" if tipo == "short" else "VÍDEO"}</span></div>'
@@ -1574,8 +1579,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         final = (f'<div class="sabes-demasiado"><p class="grande">Parecía inventado.</p>'
                  f'<p class="peque">Pero está documentado. Y quedan más folios por abrir.</p>'
                  f'<a class="boton" href="{otro["_slug"]}.html">Abrir el próximo folio</a></div>')
-    miga = (f'<div class="miga mono"><a href="../index.html#folios">{escape(num_ficha(e).split(" · ")[0])}</a> · '
-            f'<a href="../{e["tematica"]}/">{escape(t["nombre"])}</a>'
+    miga = (f'<div class="miga mono"><a href="../index.html#folios">{escape(num_ficha(e).split(" · ")[0])}</a>'
+            + (f' · <a href="../{e["tematica"]}/">{escape(t["nombre"])}</a>' if e["tematica"] else "")
             + (f' · {escape(e["epoca"])}' if e.get("epoca") else "")
             + (f' · Top 10 de Halloween, nº {puesto_top(e)}' if puesto_top(e) else "") + "</div>")
     cuerpo = f"""<div class="exposicion" aria-hidden="true"></div>
@@ -1609,9 +1614,11 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         "headline": titulo_limpio(e)["titulo"][:110], "description": e.get("resumen") or e["titulo"],
         "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
         "url": f"{URL}/{ruta}", "mainEntityOfPage": f"{URL}/{ruta}", "inLanguage": "es",
-        "author": publisher, "publisher": publisher, "articleSection": t["nombre"],
+        "author": publisher, "publisher": publisher,
         "isPartOf": {"@type": "WebSite", "name": MARCA, "url": f"{URL}/"},
     }
+    if t["nombre"]:
+        articulo["articleSection"] = t["nombre"]
     if e.get("etiquetas"):
         articulo["keywords"] = ", ".join(e["etiquetas"])
     if fuentes:
@@ -1760,17 +1767,27 @@ def generar() -> int:
         if episodio:
             e["_episodio"] = episodio
             episodio.setdefault("_shorts", []).append(e)
-    # Cada historia tiene que llevar su temática (un Short de un episodio la hereda). Sin ella no se genera nada:
-    # así ninguna historia nueva se queda fuera de su temática sin que nadie se entere.
+    # Cada historia debe llevar su temática. Si falta, se usa la de su episodio («de») o su «tematica_alt»; si tampoco
+    # hay, sale en la portada y en su página, pero en ninguna temática, y se avisa. Nunca se para la web por esto:
+    # la sincronización publica cada día los vídeos que se hacen públicos.
     sin_tema = []
-    for e in visibles:
-        if not e.get("tematica") and e.get("_episodio", {}).get("tematica"):
-            e["tematica"] = e["_episodio"]["tematica"]
-        if e.get("tematica") not in TEMATICAS:
-            sin_tema.append(f"  {e.get('num', '?')} · {e['titulo']} → {e.get('tematica') or 'sin «tematica»'}")
+    # Primero los episodios y Shorts sueltos, después los Shorts de un episodio (que heredan la ya resuelta)
+    for e in sorted(visibles, key=lambda x: bool(x.get("_episodio"))):
+        if e.get("tematica") in TEMATICAS:
+            continue
+        original = e.get("tematica")
+        heredada = (e.get("_episodio") or {}).get("tematica")
+        if heredada in TEMATICAS:
+            e["tematica"] = heredada
+        elif e.get("tematica_alt") in TEMATICAS:
+            e["tematica"] = e["tematica_alt"]
+        else:
+            e["tematica"] = ""
+            sin_tema.append(f"  {e.get('num', '?')} · {e['titulo']} ({original or 'sin «tematica»'})")
     if sin_tema:
-        sys.exit("ERROR: estas historias no tienen una «tematica» válida (" + ", ".join(TEMATICAS) + "):\n"
-                 + "\n".join(sin_tema) + "\nAñádela en Web/datos/expedientes.json y vuelve a generar.")
+        print("AVISO: estas historias no tienen una «tematica» válida (" + ", ".join(TEMATICAS) + "). Se publican en la "
+              "portada y en su página, pero no en ninguna temática. Añádesela en Web/datos/expedientes.json:\n"
+              + "\n".join(sin_tema))
     # Los Shorts que salen de un episodio cuentan lo mismo: tienen página (para YouTube y Google), pero no tarjeta;
     # se ven dentro de su episodio. En las listas solo salen los episodios y los Shorts independientes.
     listados = [e for e in visibles if not e.get("_episodio")]
@@ -1929,8 +1946,8 @@ def generar() -> int:
               "", "## Temáticas", ""]
     lineas += [f"- [{t['nombre']}]({URL}/{k}/): {t['corto']}" for k, t in TEMATICAS.items()]
     lineas += ["", "## Folios", ""]
-    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)} · "
-               f"{tematica(e)['nombre']}: {e.get('resumen', '')}" for e in listados]
+    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)}"
+               + (f" · {tematica(e)['nombre']}" if e["tematica"] else "") + f": {e.get('resumen', '')}" for e in listados]
     lineas += ["", "## Etiquetas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
     lineas += ["", "## Más", "", f"- [Todos los artículos completos, en texto]({URL}/llms-full.txt)",
                f"- [Cómo verificamos cada folio]({URL}/acerca.html)",
@@ -1940,8 +1957,8 @@ def generar() -> int:
     completo = [f"# {MARCA}: todos los folios", "",
                 f"> {canal['lema']} Fuente: {URL}/ · Cada caso enlaza a su página, que es la que conviene citar.", ""]
     for e in listados:
-        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html",
-                     f"Temática: {tematica(e)['nombre']}"]
+        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html"]
+        completo += [f"Temática: {tematica(e)['nombre']}"] if e["tematica"] else []
         completo += [f"{k}: {e[c]}" for k, c in (("Lugar", "lugar"), ("Época", "epoca")) if e.get(c)]
         completo += ["", e.get("resumen", ""), ""]
         for seccion in e.get("articulo", []):
