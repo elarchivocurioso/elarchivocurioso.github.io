@@ -90,7 +90,7 @@ URL = f"https://{DOMINIO}" if DOMINIO else "https://elarchivocurioso.github.io"
 MARCA = "Folio 13"
 ANTES = "El Archivo Curioso"   # nombre anterior: sale en los datos para buscadores, para que sepan que es la misma web
 # Perfiles del archivo en redes: salen en «Acerca» y en sameAs, para que Google y las IAs sepan que son la misma marca
-REDES_SOCIALES = (("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
+REDES_SOCIALES = (("Instagram · @elfolio13", "https://www.instagram.com/elfolio13/"),
                   ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7"))
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
