@@ -978,7 +978,16 @@ def generar() -> int:
     if dir_temas.exists():
         shutil.rmtree(dir_temas)
     dir_temas.mkdir()
-    temas = temas_de(listados)
+    # Los temas se cuentan con todos los vídeos (así no desaparece ninguna página que Google ya conoce),
+    # pero en cada página un Short repetido se cambia por su episodio
+    temas = {}
+    for tema, es in temas_de(visibles).items():
+        unicos = []
+        for e in es:
+            e = e.get("_episodio") or e
+            if e not in unicos:
+                unicos.append(e)
+        temas[tema] = unicos
     for tema, es in temas.items():
         (dir_temas / f"{slug(tema)}.html").write_text(pagina_tema(tema, es, canal), encoding="utf-8")
     (dir_temas / "index.html").write_text(indice_temas(temas, canal), encoding="utf-8")
