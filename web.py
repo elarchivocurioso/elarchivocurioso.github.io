@@ -20,7 +20,10 @@ Para añadir un vídeo o Short, añade una entrada a datos/expedientes.json:
       "mapa": [lat, lon],               opcional: dónde pasó, para el mapa de la temática
       "verdad": [{"estado": "documentado" | "discutido" | "leyenda", "texto": "..."}],
                                         opcional: el semáforo de la verdad. Solo con lo que digan las fuentes; lo dudoso,
-                                        «discutido». Si no existe, no se muestra.
+                                        «discutido». Si no existe, no se muestra. El texto admite notas [n].
+      "aprender": ["...", "..."],       opcional: «Lo que vas a aprender» (si no, salen los apartados del artículo)
+      "test": [{"pregunta", "respuesta"}],  opcional: el test (si no, «¿Lo habrías creído?» con las curiosidades)
+                                        Los tres últimos los rellena Promocion/importar_articulos.py desde los artículos.
       "censura": "parte del título",    opcional: lo que sale tachado (si no, se tacha el final del título)
       "fecha": "AAAA-MM-DDTHH:MM",      fecha (y hora local, opcional) de publicación en YouTube
       "miniatura": "Identidad/Miniaturas/miniatura-A001-baile-1518.png",   opcional, ruta desde "Canal YouTube"
@@ -672,7 +675,9 @@ BASE_JS = """
           p.querySelector('.respuesta').classList.add('vista');
           if (contestadas === preguntas.length) {
             var m = quiz.querySelector('.marcador');
-            m.textContent = 'Te habrías creído ' + creidos + ' de ' + preguntas.length + '. Y todas son verdad: por eso están en el folio.';
+            m.textContent = m.dataset.modo === 'test'
+              ? 'Sabías ' + creidos + ' de ' + preguntas.length + '. Las respuestas están en el folio y en sus fuentes.'
+              : 'Te habrías creído ' + creidos + ' de ' + preguntas.length + '. Y todas son verdad: por eso están en el folio.';
           }
         });
       });
@@ -1474,8 +1479,10 @@ def parrafo(texto: str, fuentes: list[dict]) -> str:
 
 
 def lo_que_aprenderas(e: dict) -> list[tuple[str, str]]:
-    """3-5 puntos para «Lo que vas a aprender»: los apartados del artículo (con su ancla) o, si hay pocos,
-    las curiosidades del folio. Todo sale del propio folio."""
+    """3-5 puntos para «Lo que vas a aprender»: los que escribe GUIÓN ("aprender"); si no, los apartados del artículo
+    (con su ancla) o, si hay pocos, las curiosidades del folio. Todo sale del propio folio."""
+    if len(e.get("aprender", [])) >= 3:
+        return [(x, "") for x in e["aprender"][:5]]
     apartados = [(s["titulo"], f"#s{i}") for i, s in enumerate(e.get("articulo", [])) if s.get("titulo")]
     if len(apartados) >= 3:
         return apartados[:5]
@@ -1510,10 +1517,18 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         titulo = f'<h2>{escape(seccion["titulo"])}</h2>' if seccion.get("titulo") else ""   # la entradilla no lleva título
         texto += (f'<div class="bloque articulo" id="s{i}">{titulo}'
                   + "".join(parrafo(p, fuentes) for p in seccion["parrafos"]) + "</div>")
-    # «¿Lo habrías creído?»: las tres primeras curiosidades; las demás, en la lista
+    # «¿Lo habrías creído?»: las preguntas de GUIÓN ("test") o, si no hay, las tres primeras curiosidades
     curiosidades = e.get("curiosidades", [])
     quiz = ""
-    if curiosidades:
+    if e.get("test"):
+        preguntas = "".join(
+            f'<div class="pregunta-bloque"><p class="pregunta"><b>{escape(q["pregunta"])}</b></p><div class="opciones">'
+            f'<button type="button" data-cree="si">Lo sé</button><button type="button" data-cree="no">Ni idea</button></div>'
+            f'<p class="respuesta">{escape(q["respuesta"])}</p></div>' for q in e["test"][:3])
+        quiz = (f'<div class="quiz"><h2>¿Lo habrías creído?</h2><p class="nota">Pon a prueba lo que sabes de este folio.</p>'
+                f'{preguntas}<p class="marcador" aria-live="polite" data-modo="test"></p>'
+                f'<div class="progreso">TU ARCHIVO <span class="barra"><i></i></span><span data-leidos="corto"></span></div></div>')
+    elif curiosidades:
         preguntas = "".join(
             f'<div class="pregunta-bloque"><p class="pregunta">{escape(c)}</p><div class="opciones">'
             f'<button type="button" data-cree="si">Me lo creo</button><button type="button" data-cree="no">No me lo creo</button></div>'
@@ -1521,7 +1536,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         quiz = (f'<div class="quiz"><h2>¿Lo habrías creído?</h2><p class="nota">Tres datos de este folio. '
                 f'¿Te los habrías creído si te los cuentan sin fuentes?</p>{preguntas}<p class="marcador" aria-live="polite"></p>'
                 f'<div class="progreso">TU ARCHIVO <span class="barra"><i></i></span><span data-leidos="corto"></span></div></div>')
-    resto = curiosidades[3:]
+    resto = curiosidades if e.get("test") else curiosidades[3:]
     if resto:
         texto += ('<div class="bloque"><h2>Más datos del folio</h2><ul class="curiosidades">'
                   + "".join(f"<li>{escape(c)}</li>" for c in resto) + "</ul></div>")
@@ -1533,7 +1548,9 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     lado = ""
     if e.get("verdad"):
         filas = "".join(f'<li><em class="{VERDAD[v["estado"]][0]}">{VERDAD[v["estado"]][1].upper()}</em>'
-                        f'<span>{escape(v["texto"])}</span></li>' for v in e["verdad"] if v.get("estado") in VERDAD)
+                        f'<span>{parrafo(v["texto"], fuentes)[3:-4]}'
+                        + (f' <a href="{escape(v["url"])}" rel="noopener">(fuente)</a>' if v.get("url") else "")
+                        + '</span></li>' for v in e["verdad"] if v.get("estado") in VERDAD)
         lado += f'<div class="verdad"><h2>Semáforo de la verdad</h2><ul>{filas}</ul></div>'
     if fuentes:
         lado += ('<div class="fuentes-caja"><h2>Fuentes</h2><ol>'
@@ -1728,7 +1745,8 @@ def generar() -> int:
         for e in repetidas:
             if e is destino:
                 continue
-            for campo in ("articulo", "lecturas", "slug", "censura", "tematica", "tematica_alt", "mapa", "verdad"):
+            for campo in ("articulo", "lecturas", "slug", "censura", "tematica", "tematica_alt", "mapa", "verdad",
+                          "aprender", "test"):
                 if e.get(campo) and not destino.get(campo):
                     destino[campo] = e[campo]
             visibles.remove(e)

@@ -518,7 +518,9 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
           p.querySelector('.respuesta').classList.add('vista');
           if (contestadas === preguntas.length) {
             var m = quiz.querySelector('.marcador');
-            m.textContent = 'Te habrías creído ' + creidos + ' de ' + preguntas.length + '. Y todas son verdad: por eso están en el folio.';
+            m.textContent = m.dataset.modo === 'test'
+              ? 'Sabías ' + creidos + ' de ' + preguntas.length + '. Las respuestas están en el folio y en sus fuentes.'
+              : 'Te habrías creído ' + creidos + ' de ' + preguntas.length + '. Y todas son verdad: por eso están en el folio.';
           }
         });
       });
