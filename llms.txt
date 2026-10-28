@@ -8,6 +8,7 @@ Blog en español de historias de miedo reales y curiosidades de la historia: cr�
 
 ## Expedientes
 
+- [LIZZIE BORDEN: la mujer que una canción declaró culpable… y un jurado absolvió (1892)](https://elarchivocurioso.github.io/expedientes/lizzie-borden-la-mujer-que-una-cancion-declaro-culpable-y-un-jurado-ab.html): Una mañana de verano. Una casa cerrada con llave. Dentro, dos personas pierden la vida…
 - [TOP 6 HALLOWEEN: la BESTIA de Gévaudan, el monstruo que aterrorizó a Francia](https://elarchivocurioso.github.io/expedientes/top-6-halloween-la-bestia-de-gevaudan-el-monstruo-que-aterrorizo-a-fra.html): Número seis. Durante tres años, algo acechó los bosques del sur de Francia… y nadie sabía qué era.
 - [TOP 7 HALLOWEEN: el caso LIZZIE BORDEN sigue abierto más de 130 años después](https://elarchivocurioso.github.io/expedientes/top-7-halloween-el-caso-lizzie-borden-sigue-abierto-mas-de-130-anos-de.html): Número siete. Hay una cancioncilla infantil sobre esta mujer… y exagera casi todo lo que cuenta.
 - [TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios](https://elarchivocurioso.github.io/expedientes/top-8-halloween-la-semana-en-que-el-diablo-de-jersey-cerro-los-colegio.html): Número ocho. El Diablo de Jersey. Una leyenda con alas…
@@ -44,6 +45,7 @@ Blog en español de historias de miedo reales y curiosidades de la historia: cr�
 - [Drácula](https://elarchivocurioso.github.io/temas/dracula.html)
 - [Edad Media](https://elarchivocurioso.github.io/temas/edad-media.html)
 - [Estafas históricas](https://elarchivocurioso.github.io/temas/estafas-historicas.html)
+- [Fall River](https://elarchivocurioso.github.io/temas/fall-river.html)
 - [Grand Theft Auto](https://elarchivocurioso.github.io/temas/grand-theft-auto.html)
 - [Historia de la medicina](https://elarchivocurioso.github.io/temas/historia-de-la-medicina.html)
 - [Mitos](https://elarchivocurioso.github.io/temas/mitos.html)
