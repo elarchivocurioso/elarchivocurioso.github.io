@@ -61,6 +61,9 @@ LOGO_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "icono-512.png"
 BANNER_ORIGEN = WEB.parent / "Identidad" / "Archivo Curioso" / "banner.png"
 ICONOS = ("favicon-32.png", "apple-touch-icon.png")   # hechos una vez a partir de icono-512.png
 URL = "https://elarchivocurioso.github.io"
+# Perfiles del archivo en redes: salen en «Acerca» y en sameAs, para que Google y las IAs sepan que son la misma marca
+REDES_SOCIALES = (("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
+                  ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7"))
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 # Frases de la portada: cada visita muestra una al azar (solo las de expedientes ya publicados).
@@ -865,6 +868,12 @@ def ficha(e: dict, raiz: str = "") -> str:
             f'<h3 aria-label="{escape(visible["titulo"])}">{titulo_html(visible)}</h3><div class="meta">{escape(meta)}</div></div></a>')
 
 
+def donde_cuando(e: dict) -> str:
+    """« (Boston, 1919)» para los listados en texto: a una IA le sirve saber dónde y cuándo pasó."""
+    partes = [x for x in (e.get("lugar", ""), e.get("epoca", "")) if x]
+    return f" ({', '.join(partes)})" if partes else ""
+
+
 def titulo_limpio(e: dict) -> dict:
     """El expediente con el título visible: sin el «TOP N HALLOWEEN:» del principio (la censura se conserva)."""
     if not puesto_top(e):
@@ -1052,7 +1061,7 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
          "inLanguage": "es", "description": canal["descripcion"],
          "potentialAction": {"@type": "SearchAction", "target": f"{URL}/buscar.html?q={{q}}", "query-input": "required name=q"}},
         {"@context": "https://schema.org", "@type": "Organization", "name": canal["nombre"], "url": f"{URL}/",
-         "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]]},
+         "logo": f"{URL}/logo.png", "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
     ]
     return pagina(f"{canal['nombre']} | Historias de miedo reales y curiosidades de la historia", cuerpo, canal,
                   descripcion=canal["descripcion"],
@@ -1062,7 +1071,7 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
 def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: dict) -> str:
     tipo = "short" if e.get("tipo") == "short" else "video"
     datos = "".join(f"<span><b>{k}:</b> {escape(v)}</span>" for k, v in (
-        ("Lugar", e.get("lugar", "")), ("Publicado", fecha_larga(e["fecha"])),
+        ("Lugar", e.get("lugar", "")), ("Época", e.get("epoca", "")), ("Publicado", fecha_larga(e["fecha"])),
         ("Formato", "Short" if tipo == "short" else "Vídeo")) if v)
     bloques = f'<div class="bloque caso"><h2>El caso</h2><p>{escape(e["resumen"])}</p></div>' if e.get("resumen") else ""
     # Artículo completo: lista de secciones {"titulo": "...", "parrafos": ["...", ...]}
@@ -1137,24 +1146,33 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 {nav}
 </div></main>"""
     ruta = f"expedientes/{e['_slug']}.html"
-    publisher = {"@type": "Organization", "name": canal["nombre"], "logo": f"{URL}/logo.png"}
+    publisher = {"@type": "Organization", "name": canal["nombre"], "url": f"{URL}/", "logo": f"{URL}/logo.png"}
+    # El artículo va siempre (con sus fuentes como citas): es lo que leen y citan buscadores y asistentes de IA
+    articulo = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": titulo_limpio(e)["titulo"][:110], "description": e.get("resumen") or e["titulo"],
+        "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
+        "url": f"{URL}/{ruta}", "mainEntityOfPage": f"{URL}/{ruta}", "inLanguage": "es",
+        "author": publisher, "publisher": publisher,
+        "isPartOf": {"@type": "WebSite", "name": canal["nombre"], "url": f"{URL}/"},
+    }
+    if e.get("etiquetas"):
+        articulo["keywords"] = ", ".join(e["etiquetas"])
+    if e.get("fuentes"):
+        articulo["citation"] = [{"@type": "CreativeWork", "name": f["titulo"], "url": f["url"]} for f in e["fuentes"]]
+    if e.get("lugar"):
+        articulo["contentLocation"] = {"@type": "Place", "name": e["lugar"]}
+    if e.get("epoca"):
+        articulo["temporalCoverage"] = e["epoca"]
+    jsonld = [articulo]
     if e.get("youtube"):
-        jsonld = {
+        jsonld.append({
             "@context": "https://schema.org", "@type": "VideoObject",
             "name": e["titulo"], "description": e.get("resumen") or e["titulo"],
             "thumbnailUrl": [url_absoluta(e["_img"])], "uploadDate": fecha_iso(e["fecha"]),
             "embedUrl": f"https://www.youtube.com/embed/{e['youtube']}",
             "url": f"{URL}/{ruta}", "inLanguage": "es", "publisher": publisher,
-        }
-    else:
-        jsonld = {
-            "@context": "https://schema.org", "@type": "Article",
-            "headline": e["titulo"], "description": e.get("resumen") or e["titulo"],
-            "image": [url_absoluta(e["_img"])], "datePublished": fecha_iso(e["fecha"]),
-            "url": f"{URL}/{ruta}", "inLanguage": "es", "author": publisher, "publisher": publisher,
-        }
-    if e.get("etiquetas"):
-        jsonld["keywords"] = ", ".join(e["etiquetas"])
+        })
     return pagina(f"{e['titulo']} · {canal['nombre']}", cuerpo, canal, raiz="../", descripcion=e.get("resumen", ""),
                   ruta=ruta, imagen=imagen_compartir(e), tipo_og="video.other" if e.get("youtube") else "article", jsonld=jsonld,
                   extra=COPIAR_JS)
@@ -1168,9 +1186,7 @@ def imagen_compartir(e: dict) -> str:
 
 def acerca(canal: dict) -> str:
     redes = "".join(f'<li><a href="{escape(u)}" rel="noopener">{escape(n)}</a></li>' for n, u in (
-        ("YouTube · El Archivo Curioso", canal["youtube"]),
-        ("Instagram · @elarchivocuriosoo", "https://www.instagram.com/elarchivocuriosoo/"),
-        ("TikTok · @elarchivocurioso7", "https://www.tiktok.com/@elarchivocurioso7")))
+        ("YouTube · El Archivo Curioso", canal["youtube"]), *REDES_SOCIALES))
     cuerpo = f"""<main class="ancho legal">
 <a class="volver" href="index.html">← Inicio</a>
 <h1>Acerca de El Archivo Curioso</h1>
@@ -1409,8 +1425,9 @@ def generar() -> int:
         + "</urlset>\n", encoding="utf-8")
     # Los buscadores de inteligencia artificial (ChatGPT, Perplexity, Claude, Gemini) también pueden leer y citar la web
     robots_ia = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in (
-        "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "ClaudeBot", "Claude-SearchBot", "Google-Extended",
-        "Bingbot"))
+        "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "Perplexity-User", "ClaudeBot", "Claude-SearchBot",
+        "Claude-User", "Google-Extended", "Bingbot", "Applebot", "Applebot-Extended", "DuckAssistBot",
+        "Meta-ExternalAgent", "Amazonbot", "MistralAI-User", "CCBot"))
     (SALIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\n{robots_ia}Sitemap: {URL}/sitemap.xml\n",
                                        encoding="utf-8")
     # llms.txt: resumen del archivo para los asistentes de IA (propuesta llmstxt.org)
@@ -1420,11 +1437,29 @@ def generar() -> int:
               "expediente tiene un artículo con fuentes, una sección de qué es mito y qué no, y su vídeo en YouTube.", "",
               f"- [Historias de miedo reales]({URL}/historias-de-miedo-reales.html): selección de los casos más oscuros.",
               "", "## Expedientes", ""]
-    lineas += [f"- [{e['titulo']}]({URL}/expedientes/{e['_slug']}.html): {e.get('resumen', '')}" for e in listados]
+    lineas += [f"- [{titulo_limpio(e)['titulo']}]({URL}/expedientes/{e['_slug']}.html){donde_cuando(e)}: "
+               f"{e.get('resumen', '')}" for e in listados]
     lineas += ["", "## Temas", ""] + [f"- [{t}]({URL}/temas/{slug(t)}.html)" for t in temas]
-    lineas += ["", "## Más", "", f"- [Acerca del archivo y cómo trabajamos]({URL}/acerca.html)",
+    lineas += ["", "## Más", "", f"- [Todos los artículos completos, en texto]({URL}/llms-full.txt)",
+               f"- [Acerca del archivo y cómo trabajamos]({URL}/acerca.html)",
                f"- [Canal de YouTube]({canal['youtube']})", ""]
     (SALIDA / "llms.txt").write_text("\n".join(lineas), encoding="utf-8")
+    # llms-full.txt: los artículos enteros en texto plano, con sus fuentes, para que una IA pueda leerlos y citarlos
+    completo = [f"# {canal['nombre']}: todos los expedientes", "",
+                f"> {canal['lema']}. Fuente: {URL}/ · Cada caso enlaza a su página, que es la que conviene citar.", ""]
+    for e in listados:
+        completo += [f"## {titulo_limpio(e)['titulo']}", "", f"Página: {URL}/expedientes/{e['_slug']}.html"]
+        completo += [f"{k}: {e[c]}" for k, c in (("Lugar", "lugar"), ("Época", "epoca")) if e.get(c)]
+        completo += ["", e.get("resumen", ""), ""]
+        for seccion in e.get("articulo", []):
+            if seccion.get("titulo"):
+                completo += [f"### {seccion['titulo']}", ""]
+            completo += [p + "\n" for p in seccion["parrafos"]]
+        if e.get("curiosidades"):
+            completo += ["### Curiosidades", ""] + [f"- {c}" for c in e["curiosidades"]] + [""]
+        if e.get("fuentes"):
+            completo += ["### Fuentes", ""] + [f"- {f['titulo']}: {f['url']}" for f in e["fuentes"]] + [""]
+    (SALIDA / "llms-full.txt").write_text("\n".join(completo), encoding="utf-8")
 
     # Clave de IndexNow (Bing, Yandex...): un archivo con la clave en la raíz demuestra que la web es nuestra
     if not CLAVE_INDEXNOW.exists():
