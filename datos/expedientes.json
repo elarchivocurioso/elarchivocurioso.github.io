@@ -8936,6 +8936,43 @@
           "respuesta": "Una pista de carreras de coches teledirigidos, en el mismo edificio que la tienda de modelismo."
         }
       ]
+    },
+    {
+      "youtube": "ODzrojeqNMI",
+      "tipo": "short",
+      "titulo": "Lo que un teniente alemán anotó en su diario la Navidad de 1914",
+      "epoca": "diciembre de 1914",
+      "lugar": "frente occidental, Flandes",
+      "tematica": "mitos",
+      "mapa": [
+        50.7244,
+        2.8781
+      ],
+      "resumen": "«Los ingleses trajeron un balón… y muy pronto empezó un partido animado.»",
+      "curiosidades": [
+        "Fecha prevista de publicación: 20/12/2026",
+        "Tregua de Navidad de 1914 entre británicos y alemanes: villancicos, intercambio de tabaco, comida y botones",
+        "Fútbol improvisado en al menos tres o cuatro lugares, a veces con una lata de conservas; probablemente sin partidos organizados por el estado del terreno",
+        "El 3-2 a favor de los alemanes procede de un relato de Robert Graves de 1962, en parte ficción",
+        "Imágenes (Commons, comprobadas el 28/10/2026):"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Christmas truce»",
+          "url": "https://en.wikipedia.org/wiki/Christmas_truce"
+        },
+        {
+          "titulo": "CBS News, sobre las pruebas del partido",
+          "url": "https://www.cbsnews.com/news/did-wwi-really-stop-for-a-christmas-day-soccer-game"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Primera Guerra Mundial",
+        "Fútbol"
+      ],
+      "fecha": "2026-10-29T18:00",
+      "num": "S147"
     }
   ]
 }
