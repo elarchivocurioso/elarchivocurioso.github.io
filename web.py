@@ -604,6 +604,14 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .lista-raras p { font-size:15px; color:var(--texto-2); }
 .lista-lectores a { grid-template-columns:60px minmax(0,1fr); }
 .lista-lectores small { display:block; margin-top:6px; font-size:12px; color:var(--texto-3); }
+.aviso-afiliado { font-size:14px; color:var(--texto-3); border-left:3px solid var(--rojo); padding:6px 12px; margin:6px 0 22px; }
+.guia-libros { list-style:none; display:flex; flex-direction:column; gap:22px; margin-top:26px; }
+.guia-libros li { padding:22px 24px; background:var(--tarjeta); border:1px solid var(--borde); border-radius:var(--radio); }
+.guia-libros h2 { font-size:clamp(22px,3vw,28px); line-height:1.2; }
+.guia-libros .n { color:var(--rojo); font-family:'Playfair Display',serif; font-weight:900; margin-right:6px; }
+.guia-libros .autor { font-size:13px; color:var(--texto-3); margin:4px 0 12px; }
+.guia-libros p { font-size:17px; color:var(--texto-2); }
+.guia-libros .botones { margin-top:14px; }
 @media (max-width:980px) { .blog-grid { grid-template-columns:1fr; } .lado-blog { position:static; } }
 @media (max-width:640px) { .entrada { grid-template-columns:1fr; gap:12px; } .lista-raras a { grid-template-columns:42px minmax(0,1fr); } .lista-raras img { display:none; }
   .lista-raras a::before { font-size:30px; } .blog-cab form { flex-direction:column; } }
@@ -1129,7 +1137,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cinta_halloween(raiz) if halloween else ""}
 {cuerpo}
 {suscripcion(canal)}
-<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{extra}
 </body>
 </html>
@@ -1219,7 +1227,8 @@ def pagina_apoya(canal: dict, expedientes: list[dict]) -> str:
             libros += enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del folio '
                                                       f'<a href="expedientes/{e["_slug"]}.html">{escape(e["titulo"])}</a></span></li>')
     bloque_libros = (f'<div class="bloque"><h2>Lee los libros de los folios</h2><p>Si compras alguno de estos '
-                     f'libros desde aquí, Amazon nos da una pequeña comisión y a ti no te cuesta nada más.</p>'
+                     f'libros desde aquí, Amazon nos da una pequeña comisión y a ti no te cuesta nada más. '
+                     f'Están también, por temática, en la <a href="{PAGINA_LIBROS}">Biblioteca de Folio 13</a>.</p>'
                      f'<ul class="fuentes">{libros}</ul></div>') if libros else ""
     cuerpo = f"""<main class="ancho seccion lectura">
 <h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Apoya Folio 13</h1>
@@ -1260,9 +1269,16 @@ def enlace_libro(libro: dict, canal: dict) -> str:
         texto += f" <span class='nota'>— {escape(libro['nota'])}</span>"
     if not canal.get("amazon_tag"):
         return f"<li>{texto}</li>"
+    return f'<li><a href="{escape(url_amazon(libro, canal))}" rel="sponsored noopener">{texto}</a></li>'
+
+
+def url_amazon(libro: dict, canal: dict) -> str:
+    """Con "asin", la ficha del libro en Amazon.es (convierte mucho mejor); si no, la búsqueda por título y autor."""
+    tag = urllib.parse.quote(canal["amazon_tag"])
+    if libro.get("asin"):
+        return f"https://www.amazon.es/dp/{urllib.parse.quote(libro['asin'])}?tag={tag}"
     busqueda = urllib.parse.quote_plus(f"{libro['titulo']} {libro.get('autor', '')}".strip())
-    url = f"https://www.amazon.es/s?k={busqueda}&tag={urllib.parse.quote(canal['amazon_tag'])}"
-    return f'<li><a href="{escape(url)}" rel="sponsored noopener">{texto}</a></li>'
+    return f"https://www.amazon.es/s?k={busqueda}&tag={tag}"
 
 
 def suscribirse(canal: dict) -> str:
@@ -1778,6 +1794,9 @@ def lado_blog(expedientes: list[dict], canal: dict) -> str:
                f'<p style="margin-top:12px"><a class="boton" href="{PAGINA_CUENTA}">Cuenta tu historia</a></p>'
                f'<p class="nota" style="margin-top:10px"><a href="{LECTORES}/">Contadas por lectores →</a></p></div>'
                if canal.get("historias_form") else "")
+            + (f'<div class="caja"><h2>Biblioteca</h2><p class="nota">Los libros que hay detrás de cada folio, por temática, '
+               f'y nuestras listas de libros. <a href="{PAGINA_LIBROS}">Abrir la biblioteca →</a></p></div>'
+               if canal.get("amazon_tag") else "")
             + f'<div class="caja"><h2>Cómo trabajamos</h2><p class="nota">Cada historia lleva sus fuentes enlazadas y el semáforo de '
             f'la verdad: documentado, discutido o leyenda. <a href="acerca.html">Cómo verificamos →</a></p></div></aside>')
 
@@ -1950,6 +1969,144 @@ def pagina_lector(h: dict, canal: dict) -> str:
     texto = " ".join(h.get("texto", []))
     return pagina(f"{h['titulo']} · Contada por lectores · {MARCA}", cuerpo, canal, raiz="../",
                   ruta=f"{LECTORES}/{h['slug']}.html", descripcion=texto, tipo_og="article", jsonld=jsonld)
+
+
+# Guías de libros (afiliados de Amazon, reglas en Canal YouTube/DECISIONES.md). Las escribe GUIÓN en
+# Guiones/web/libros-<tema>.md y se publican como <mismo nombre>.html:
+#   # Título de la guía
+#   descripcion: texto para Google (hasta 155 caracteres)
+#   comprobado: AAAA-MM-DD          opcional: día en que se comprobó en Amazon.es que son de los más vendidos
+#   Entradilla (párrafos separados por una línea en blanco)
+#   ## Título del libro — Autor      un apartado por libro, en orden
+#   asin: 8467045031                si falta, el enlace lleva a la búsqueda en Amazon.es
+#   folio: S140                     opcional: el folio relacionado
+#   Párrafos sobre el libro
+#   ## Fuentes                      opcional: «- Título — URL»
+# Solo se publica lo que entrega GUIÓN: aquí no se añade ningún libro ni dato.
+GUIAS_DIR = WEB.parent / "Guiones" / "web"
+PAGINA_LIBROS = "libros.html"
+AVISO_AMAZON = ("En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los "
+                "requisitos aplicables.")
+
+
+def leer_guias() -> list[dict]:
+    guias = []
+    for md in sorted(GUIAS_DIR.glob("libros-*.md")) if GUIAS_DIR.exists() else []:
+        g = {"ruta": md.stem + ".html", "titulo": "", "descripcion": "", "comprobado": "", "intro": [], "libros": [],
+             "fuentes": []}
+        actual, bloque = None, []
+
+        def cerrar():
+            parrafos = [p.strip().replace("\n", " ") for p in "\n".join(bloque).split("\n\n") if p.strip()]
+            if actual is None:
+                g["intro"] = parrafos
+            elif actual != "fuentes":
+                actual["texto"] = parrafos
+
+        for linea in md.read_text(encoding="utf-8-sig").splitlines():
+            clave = re.match(r"^-?\s*(descripcion|descripción|comprobado|asin|folio)\s*:\s*(.+)$", linea.strip(), re.I)
+            if linea.startswith("# "):
+                g["titulo"] = linea[2:].strip()
+            elif linea.startswith("## "):
+                cerrar()
+                bloque = []
+                nombre = linea[3:].strip()
+                if nombre.lower() == "fuentes":
+                    actual = "fuentes"
+                else:
+                    partes = re.split(r"\s+[—–]\s+", nombre, maxsplit=1)
+                    actual = {"titulo": partes[0], "autor": partes[1] if len(partes) > 1 else ""}
+                    g["libros"].append(actual)
+            elif clave:
+                k = clave.group(1).lower().replace("descripción", "descripcion")
+                v = clave.group(2).strip()
+                if k in ("asin", "folio") and isinstance(actual, dict):
+                    actual[k] = v.upper() if k == "asin" else v
+                elif k in ("descripcion", "comprobado") and actual is None:
+                    g[k] = v
+            elif actual == "fuentes":
+                m = re.match(r"-\s+(.*?)\s+[—–-]\s+(https?://\S+)\s*$", linea)
+                if m:
+                    g["fuentes"].append({"titulo": m.group(1), "url": m.group(2)})
+            else:
+                bloque.append(linea)
+        cerrar()
+        if g["titulo"] and g["libros"]:
+            guias.append(g)
+        else:
+            print(f"  AVISO {md.name}: sin «# Título» o sin libros; no se publica")
+    return guias
+
+
+def pagina_guia(g: dict, visibles: list[dict], canal: dict) -> str:
+    por_num = {e["num"]: e for e in visibles if e.get("num")}   # también los Shorts: tienen su página
+    items = ""
+    for n, l in enumerate(g["libros"], 1):
+        botones = ""
+        if canal.get("amazon_tag"):
+            botones += (f'<a class="boton" href="{escape(url_amazon(l, canal))}" rel="sponsored noopener" '
+                        f'target="_blank">Ver en Amazon</a>')
+        folio = por_num.get(l.get("folio", ""))
+        if folio:
+            botones += (f'<a class="boton secundario" href="expedientes/{folio["_slug"]}.html">'
+                        f'Nuestro folio: {escape(titulo_buscador(folio))}</a>')
+        items += (f'<li><h2><span class="n">{n}</span> {escape(l["titulo"])}</h2>'
+                  + (f'<p class="autor mono">{escape(l["autor"])}</p>' if l["autor"] else "")
+                  + "".join(f"<p>{escape(p)}</p>" for p in l.get("texto", []))
+                  + (f'<div class="botones">{botones}</div>' if botones else "") + "</li>")
+    comprobado = (f" Lista comprobada en Amazon.es el {fecha_larga(g['comprobado'])}."
+                  if re.match(r"\d{4}-\d{2}-\d{2}", g["comprobado"]) else "")
+    fuentes = ('<div class="bloque"><h2>Fuentes</h2><ul class="fuentes">'
+               + "".join(f'<li><a href="{escape(f["url"])}" rel="noopener">{escape(f["titulo"])}</a></li>' for f in g["fuentes"])
+               + "</ul></div>") if g["fuentes"] else ""
+    cuerpo = f"""<main class="ancho seccion lectura" style="max-width:860px">
+<div class="miga mono"><a href="index.html">Blog</a> · <a href="{PAGINA_LIBROS}">Biblioteca</a></div>
+<h1 style="font-size:clamp(34px,6vw,58px); line-height:1.04; margin:14px 0 14px">{escape(g["titulo"])}</h1>
+<p class="aviso-afiliado">{AVISO_AMAZON}{comprobado}</p>
+<div class="articulo">{"".join(f"<p>{escape(p)}</p>" for p in g["intro"])}</div>
+<ol class="guia-libros">{items}</ol>
+{fuentes}
+<p class="nota" style="margin-top:28px"><a href="{PAGINA_LIBROS}">← Toda la Biblioteca de Folio 13</a></p>
+</main>"""
+    jsonld = [{"@context": "https://schema.org", "@type": "Article", "headline": g["titulo"][:110],
+               "url": f"{URL}/{g['ruta']}", "inLanguage": "es",
+               "publisher": {"@type": "Organization", "name": MARCA, "logo": f"{URL}/logo.png"}},
+              {"@context": "https://schema.org", "@type": "ItemList", "name": g["titulo"], "numberOfItems": len(g["libros"]),
+               "itemListElement": [{"@type": "ListItem", "position": i, "item": {
+                   "@type": "Book", "name": l["titulo"], **({"author": {"@type": "Person", "name": l["autor"]}} if l["autor"] else {})}}
+                   for i, l in enumerate(g["libros"], 1)]}]
+    return pagina(f"{g['titulo']} · {MARCA}", cuerpo, canal, ruta=g["ruta"], tipo_og="article",
+                  descripcion=g["descripcion"] or " ".join(g["intro"]), jsonld=jsonld)
+
+
+def pagina_libros(guias: list[dict], listados: list[dict], canal: dict) -> str:
+    """Biblioteca de Folio 13: las guías de libros y las lecturas de cada folio, por temática."""
+    tarjetas = "".join(f'<li><a href="{g["ruta"]}"><div><h2>{escape(g["titulo"])}</h2>'
+                       f'<p>{escape(g["descripcion"] or primera_frase(" ".join(g["intro"])))}</p></div></a></li>'
+                       for g in guias)
+    guias_html = (f'<section class="seccion" style="padding-top:12px"><div class="seccion-cab"><div><span class="kicker">Guías</span>'
+                  f'<h2>Listas de libros</h2></div></div><ol class="lista-raras lista-lectores">{tarjetas}</ol></section>') if guias else ""
+    por_tema = ""
+    for clave, t in TEMATICAS.items():
+        libros = "".join(enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del folio '
+                                                         f'<a href="expedientes/{e["_slug"]}.html">{escape(titulo_buscador(e))}</a></span></li>')
+                         for e in listados if e["tematica"] == clave for l in e.get("lecturas", []))
+        if libros:
+            por_tema += f'<div class="bloque"><h2>{escape(t["nombre"])}</h2><ul class="fuentes">{libros}</ul></div>'
+    cuerpo = f"""<main class="ancho seccion lectura" style="max-width:900px">
+<span class="mono" style="font-size:12px; color:var(--rojo)">Para leer más</span>
+<h1 style="font-size:clamp(36px,6vw,64px); line-height:1.02; margin:12px 0 14px">Biblioteca de Folio 13</h1>
+<p class="nota" style="font-size:19px">Los libros que hay detrás de los folios: historia, crímenes reales, misterios y leyendas contados por historiadores, periodistas y testigos. Cada uno enlaza al folio en el que lo usamos.</p>
+<p class="aviso-afiliado">{AVISO_AMAZON} Si compras un libro desde aquí, a ti no te cuesta más y nos ayudas a seguir abriendo folios.</p>
+{guias_html}
+<section class="seccion" style="padding-top:12px"><div class="seccion-cab"><div><span class="kicker">Por temática</span><h2>Los libros de cada folio</h2></div></div>
+{por_tema}
+</section>
+</main>"""
+    return pagina(f"Biblioteca de Folio 13: libros de historia, crímenes reales y misterios", cuerpo, canal,
+                  ruta=PAGINA_LIBROS,
+                  descripcion="Libros recomendados de historia, crímenes reales, misterios y leyendas: los que hay "
+                              "detrás de cada folio de Folio 13, por temática, y nuestras guías de libros.")
 
 
 NOTA_FUENTE = re.compile(r"\[(\d{1,2})\]")
@@ -2412,6 +2569,11 @@ def generar() -> int:
         (dir_lectores / f"{h['slug']}.html").write_text(pagina_lector(h, canal), encoding="utf-8")
     (dir_lectores / "index.html").write_text(pagina_lectores(canal, historias), encoding="utf-8")
     (SALIDA / PAGINA_CUENTA).write_text(pagina_cuenta(canal, historias), encoding="utf-8")
+    guias = leer_guias() if canal.get("amazon_tag") else []
+    for g in guias:
+        (SALIDA / g["ruta"]).write_text(pagina_guia(g, visibles, canal), encoding="utf-8")
+    if canal.get("amazon_tag"):
+        (SALIDA / PAGINA_LIBROS).write_text(pagina_libros(guias, listados, canal), encoding="utf-8")
     (SALIDA / "apoya.html").write_text(pagina_apoya(canal, listados), encoding="utf-8")
     de_miedo = [e for e in listados if es_de_miedo(e)]
     (SALIDA / "historias-de-miedo-reales.html").write_text(pagina_miedo(de_miedo, canal), encoding="utf-8")
@@ -2474,6 +2636,9 @@ def generar() -> int:
         entradas.append((f"{URL}/opiniones.html", hoy))
     if canal.get("historias_form"):
         entradas.append((f"{URL}/{PAGINA_CUENTA}", hoy))
+    if canal.get("amazon_tag"):
+        entradas.append((f"{URL}/{PAGINA_LIBROS}", hoy))
+        entradas += [(f"{URL}/{g['ruta']}", hoy) for g in guias]
     if historias:   # la sección no se anuncia mientras esté vacía
         entradas.append((f"{URL}/{LECTORES}/", historias[0]["fecha"][:10]))
         entradas += [(f"{URL}/{LECTORES}/{h['slug']}.html", h["fecha"][:10]) for h in historias]
