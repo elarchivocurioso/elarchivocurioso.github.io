@@ -9094,6 +9094,47 @@
       ],
       "fecha": "2026-10-29T19:30",
       "num": "S145"
+    },
+    {
+      "youtube": "UZuAuD2CmLI",
+      "tipo": "short",
+      "titulo": "El oficial de transmisiones que acabaría escribiendo sobre hobbits",
+      "epoca": "julio de 1916 - 1937",
+      "lugar": "el Somme (Francia) y Staffordshire (Inglaterra)",
+      "tematica": "fantasia",
+      "mapa": [
+        50.0028,
+        2.6528
+      ],
+      "resumen": "Julio de mil novecientos dieciséis. Un joven oficial llega al Somme.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 16/11/2026",
+        "Tolkien (nacido el 3 de enero de 1892) viajó a Francia en junio de 1916 como alférez del 11.º Batallón de los Lancashire Fusiliers; llegó a la zona del frente del Somme el 3 de julio de 1916",
+        "Fue oficial de transmisiones del batallón; medios: teléfonos de campaña, bengalas, lámparas, zumbadores Morse, palomas mensajeras y corredores",
+        "La ofensiva del Somme empezó el 1 de julio de 1916",
+        "Rob Gilson murió el 1 de julio de 1916 cerca de La Boisselle; según la cronología de John Garth, Tolkien lo supo el 17 de julio"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «J. R. R. Tolkien»",
+          "url": "https://en.wikipedia.org/wiki/J._R._R._Tolkien"
+        },
+        {
+          "titulo": "John Garth, cronología de Tolkien en el Somme",
+          "url": "https://johngarth.co.uk/php/somme_chronology.php"
+        },
+        {
+          "titulo": "Museo de Historia de la Ciencia de la Universidad de Oxford, «JRR Tolkien, World War One Signals Officer»",
+          "url": "https://blogs.mhs.ox.ac.uk/innovatingincombat/jrr-tolkien-world-war-one-signals-officer/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "El Hobbit",
+        "Batalla del Somme"
+      ],
+      "fecha": "2026-10-29T21:00",
+      "num": "S146"
     }
   ]
 }
