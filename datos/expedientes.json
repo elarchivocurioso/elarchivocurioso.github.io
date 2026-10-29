@@ -9093,7 +9093,45 @@
         "Excalibur"
       ],
       "fecha": "2026-10-29T19:30",
-      "num": "S145"
+      "num": "S145",
+      "articulo": [
+        {
+          "titulo": "El mito: una espada que hace rey",
+          "parrafos": [
+            "En la leyenda artúrica, Arturo demuestra que está destinado a reinar sacando una espada de la piedra. En el *Merlín* de Robert de Boron, escrito hacia el año 1200, la espada está clavada en un yunque colocado sobre una piedra, y solo el futuro rey es capaz de sacarla. En algunas versiones de la leyenda, esa espada y Excalibur ni siquiera son la misma: Excalibur sería otra arma que Arturo recibe más tarde.",
+            "Es una historia de ficción, contada y recontada durante siglos. Pero en la Toscana hay una espada clavada en una roca que no es literatura: se puede ver."
+          ]
+        },
+        {
+          "titulo": "La realidad: la espada de Montesiepi",
+          "parrafos": [
+            "Está en la Rotonda de Montesiepi, una pequeña capilla redonda en lo alto de una colina del municipio de Chiusdino, en la provincia de Siena. Según la tradición, la clavó en la roca un caballero llamado Galgano Guidotti en la Navidad de 1180, cuando decidió dejar las armas y hacerse ermitaño. Usó la espada, con la empuñadura hacia arriba, como una cruz ante la que rezar.",
+            "El gesto es justo el contrario al de Arturo: no saca la espada para reinar, la hunde en la piedra para renunciar. Conviene separar la tradición de lo documentado: la fecha de 1180 procede de las vidas del santo y de testimonios posteriores, mientras que lo que sí está registrado es que hay una espada en esa roca desde al menos 1270. Entre 1334 y 1336, Ambrogio Lorenzetti pintó en la capilla unos frescos donde aparecen la roca y la espada.",
+            "Al pie de la colina, los monjes cistercienses levantaron a partir de 1218 la abadía gótica de San Galgano, que hoy está en ruinas y sin techo."
+          ]
+        },
+        {
+          "titulo": "¿Falsa? Lo que dijo el análisis de 2001",
+          "parrafos": [
+            "Durante años, muchos sospecharon que la espada era una falsificación moderna. En 2001, un equipo coordinado por el químico Luigi Garlaschelli, de la Universidad de Pavía, la estudió. Según contó él mismo en la revista *Skeptical Inquirer* en 2006, la composición del metal no reveló aleaciones modernas, así que es «totalmente compatible con un origen medieval».",
+            "Hay que leer bien esa frase: «compatible» no es lo mismo que «fechada». El hierro no se puede datar de forma inequívoca, y el estudio lo que hace es descartar que sea una pieza moderna."
+          ]
+        },
+        {
+          "titulo": "¿Inspiró la leyenda de Arturo?",
+          "parrafos": [
+            "En 2003, el estudioso Mario Moiraghi defendió que la historia de la espada en la piedra pudo nacer en Italia, a partir de Galgano, como recogió entonces la BBC. Es una hipótesis: nadie lo ha probado. Garlaschelli la plantea como pregunta y apunta también la posibilidad contraria, que fueran los relatos artúricos los que dieron fama a Galgano.",
+            "Lo que no está en duda es que la espada sigue ahí, bajo una cubierta protectora, y que la ermita y la abadía se pueden visitar."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "L'enigma di San Galgano",
+          "autor": "Mario Moiraghi",
+          "nota": "2003. En italiano; defiende la hipótesis de que la leyenda de la espada en la piedra nació en la Toscana (hipótesis no probada)."
+        }
+      ]
     },
     {
       "youtube": "UZuAuD2CmLI",
@@ -9134,7 +9172,43 @@
         "Batalla del Somme"
       ],
       "fecha": "2026-10-29T21:00",
-      "num": "S146"
+      "num": "S146",
+      "articulo": [
+        {
+          "titulo": "Julio de 1916: un alférez llega al Somme",
+          "parrafos": [
+            "John Ronald Reuel Tolkien, nacido el 3 de enero de 1892, viajó a Francia en junio de 1916 como alférez del 11.º Batallón de los Lancashire Fusiliers. La gran ofensiva británica del Somme empezó el 1 de julio de 1916, y según la cronología del biógrafo John Garth, Tolkien llegó a la zona del frente el 3 de julio. Tenía veinticuatro años.",
+            "Su puesto era el de oficial de transmisiones del batallón: su trabajo consistía en que las órdenes y los mensajes llegaran. Para ello contaba con teléfonos de campaña, bengalas, lámparas de señales, zumbadores Morse, corredores y, cuando todo fallaba, palomas mensajeras. Las fuentes no coinciden en la fecha exacta del nombramiento: Wikipedia lo sitúa en junio y Garth, el 21 de julio."
+          ]
+        },
+        {
+          "titulo": "Los amigos del colegio",
+          "parrafos": [
+            "En Birmingham, Tolkien había formado con sus amigos de colegio un pequeño club, la T.C.B.S. Su núcleo eran cuatro: Tolkien, Rob Gilson, Geoffrey Bache Smith y Christopher Wiseman. Gilson murió el 1 de julio de 1916, el primer día de la ofensiva, cerca de La Boisselle; según Garth, Tolkien se enteró el 17 de julio.",
+            "Smith murió el 3 de diciembre de ese mismo año. De los cuatro, solo Tolkien y Wiseman sobrevivieron a la guerra. Décadas después, en el prólogo de la segunda edición de *El Señor de los Anillos* (1966), Tolkien escribió que en 1918 todos sus amigos íntimos, menos uno, habían muerto."
+          ]
+        },
+        {
+          "titulo": "La fiebre de las trincheras",
+          "parrafos": [
+            "A finales de octubre de 1916 cayó enfermo de fiebre de las trincheras, una infección que transmite el piojo del cuerpo y que era común en el frente. Dio parte de enfermo el 27 de octubre y el 8 de noviembre regresó a Inglaterra. Algunas fuentes dan otras fechas para la evacuación; aquí seguimos las de Garth."
+          ]
+        },
+        {
+          "titulo": "De la convalecencia a la Tierra Media",
+          "parrafos": [
+            "Mientras se recuperaba, entre finales de 1916 y 1917, empezó *The Book of Lost Tales* con *La caída de Gondolin*, uno de los primeros relatos de elfos de lo que acabaría siendo su mundo. Las fuentes no coinciden en el sitio exacto donde lo empezó: el hospital de Birmingham o los pueblos de Great Haywood o Little Haywood, en Staffordshire.",
+            "*El Hobbit* se publicó en 1937, veintiún años después del Somme. Biógrafos como Garth han señalado ecos de la guerra en su obra, pero conviene no exagerarlo: Tolkien rechazaba que su libro fuera una alegoría de ninguna guerra y prefería hablar de «aplicabilidad»."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Tolkien and the Great War",
+          "autor": "John Garth",
+          "nota": "2003. La biografía de referencia sobre Tolkien, sus amigos de la T.C.B.S. y la Primera Guerra Mundial."
+        }
+      ]
     }
   ]
 }
