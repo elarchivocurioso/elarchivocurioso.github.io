@@ -463,6 +463,12 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .guia-libros p { font-size:17px; color:var(--texto-2); }
 .guia-libros .botones { margin-top:14px; }
 .guia-libros .puesto { font-size:14px; color:var(--texto-3); font-style:italic; margin-bottom:10px; }
+.amz-pais { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:14px 0 6px; font-size:13px; color:var(--texto-3); }
+.amz-pais span { margin-right:4px; }
+.amz-pais button { font:inherit; font-size:13px; color:var(--texto-2); background:transparent; border:1px solid var(--borde);
+  border-radius:999px; padding:4px 12px; cursor:pointer; }
+.amz-pais button:hover { border-color:var(--rojo); color:var(--texto); }
+.amz-pais button[aria-pressed="true"] { background:var(--rojo); border-color:var(--rojo); color:#fff; }
 .saltos { margin:4px 0 8px; }
 .saltos small { color:var(--texto-3); margin-left:4px; }
 .estante { padding-top:34px; scroll-margin-top:90px; }
@@ -743,6 +749,43 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
       }).catch(function () { location.href = raiz + 'buscar.html'; });
     });
   });
+})();
+</script>
+
+<script>
+(function () {
+  var enlaces = document.querySelectorAll('a.amz[data-amz]');
+  var botones = document.querySelectorAll('.amz-pais button[data-pais]');
+  if (!enlaces.length) return;
+  function guardado() { try { return localStorage.getItem('amazon_pais'); } catch (e) { return null; } }
+  function deducido() {
+    var tz = '', idioma = (navigator.language || '').toLowerCase();
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    if (/^America\/(Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Mazatlan|Bahia_Banderas|Hermosillo|Tijuana)$/.test(tz)
+        || idioma === 'es-mx') return 'mx';
+    if (/^(Europe\/Madrid|Atlantic\/Canary|Africa\/Ceuta)$/.test(tz) || idioma === 'es-es') return 'es';
+    if (/^America\//.test(tz)) return 'us';
+    return 'es';
+  }
+  function aplicar(pais) {
+    enlaces.forEach(function (a) {
+      var t;
+      try { t = JSON.parse(a.dataset.amz)[pais]; } catch (e) {}
+      if (!t) return;
+      a.href = t[0];
+      a.rel = (t[1] ? 'sponsored ' : '') + 'noopener';
+      a.dataset.amzPais = pais;
+      if (a.hasAttribute('data-amz-texto')) a.textContent = t[2];
+    });
+    botones.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.pais === pais ? 'true' : 'false'); });
+  }
+  botones.forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { localStorage.setItem('amazon_pais', b.dataset.pais); } catch (e) {}
+      aplicar(b.dataset.pais);
+    });
+  });
+  aplicar(guardado() || deducido());
 })();
 </script>
 

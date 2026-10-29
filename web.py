@@ -613,6 +613,12 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .guia-libros p { font-size:17px; color:var(--texto-2); }
 .guia-libros .botones { margin-top:14px; }
 .guia-libros .puesto { font-size:14px; color:var(--texto-3); font-style:italic; margin-bottom:10px; }
+.amz-pais { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:14px 0 6px; font-size:13px; color:var(--texto-3); }
+.amz-pais span { margin-right:4px; }
+.amz-pais button { font:inherit; font-size:13px; color:var(--texto-2); background:transparent; border:1px solid var(--borde);
+  border-radius:999px; padding:4px 12px; cursor:pointer; }
+.amz-pais button:hover { border-color:var(--rojo); color:var(--texto); }
+.amz-pais button[aria-pressed="true"] { background:var(--rojo); border-color:var(--rojo); color:#fff; }
 .saltos { margin:4px 0 8px; }
 .saltos small { color:var(--texto-3); margin-left:4px; }
 .estante { padding-top:34px; scroll-margin-top:90px; }
@@ -957,7 +963,9 @@ METRICAS_JS = """
   document.addEventListener('click', function (ev) {
     var a = ev.target.closest && ev.target.closest('a[href]');
     if (!a || !a.hostname || a.hostname === location.hostname) return;
-    enviar('salida', {destino: destino(a.hostname), pagina: pagina, url: a.href.slice(0, 200)});
+    var datos = {destino: destino(a.hostname), pagina: pagina, url: a.href.slice(0, 200)};
+    if (datos.destino === 'Amazon') datos.pais = a.dataset.amzPais || 'es';   // la tienda que eligió AMAZON_JS
+    enviar('salida', datos);
   }, true);
   // Al pulsar el reproductor de YouTube, la página pierde el foco y el iframe se queda con él
   window.addEventListener('blur', function () {
@@ -980,6 +988,48 @@ METRICAS_JS = """
     segundos += 5;
     if (marcas.indexOf(segundos) > -1) enviar('tiempo', {pagina: pagina, segundos: segundos});
   }, 5000);
+})();
+</script>
+"""
+
+# Amazon del país del lector, sin cookies ni servicios externos: lo que eligió en el selector (se guarda en su
+# navegador) o, si no, lo que dicen su zona horaria y su idioma. México → amazon.com.mx; España → amazon.es; el resto
+# de América → amazon.com (envía a toda Latinoamérica); cualquier otro sitio → amazon.es.
+AMAZON_JS = """
+<script>
+(function () {
+  var enlaces = document.querySelectorAll('a.amz[data-amz]');
+  var botones = document.querySelectorAll('.amz-pais button[data-pais]');
+  if (!enlaces.length) return;
+  function guardado() { try { return localStorage.getItem('amazon_pais'); } catch (e) { return null; } }
+  function deducido() {
+    var tz = '', idioma = (navigator.language || '').toLowerCase();
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    if (/^America\\/(Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Mazatlan|Bahia_Banderas|Hermosillo|Tijuana)$/.test(tz)
+        || idioma === 'es-mx') return 'mx';
+    if (/^(Europe\\/Madrid|Atlantic\\/Canary|Africa\\/Ceuta)$/.test(tz) || idioma === 'es-es') return 'es';
+    if (/^America\\//.test(tz)) return 'us';
+    return 'es';
+  }
+  function aplicar(pais) {
+    enlaces.forEach(function (a) {
+      var t;
+      try { t = JSON.parse(a.dataset.amz)[pais]; } catch (e) {}
+      if (!t) return;
+      a.href = t[0];
+      a.rel = (t[1] ? 'sponsored ' : '') + 'noopener';
+      a.dataset.amzPais = pais;
+      if (a.hasAttribute('data-amz-texto')) a.textContent = t[2];
+    });
+    botones.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.pais === pais ? 'true' : 'false'); });
+  }
+  botones.forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { localStorage.setItem('amazon_pais', b.dataset.pais); } catch (e) {}
+      aplicar(b.dataset.pais);
+    });
+  });
+  aplicar(guardado() || deducido());
 })();
 </script>
 """
@@ -1205,7 +1255,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cuerpo}
 {suscripcion(canal)}
 <footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
-{BASE_JS}{METRICAS_JS if canal.get("umami_id") else ""}{extra}
+{BASE_JS}{AMAZON_JS if canal.get("amazon_tag") else ""}{METRICAS_JS if canal.get("umami_id") else ""}{extra}
 </body>
 </html>
 """
@@ -1296,7 +1346,7 @@ def pagina_apoya(canal: dict, expedientes: list[dict]) -> str:
     bloque_libros = (f'<div class="bloque"><h2>Lee los libros de los folios</h2><p>Si compras alguno de estos '
                      f'libros desde aquí, Amazon nos da una pequeña comisión y a ti no te cuesta nada más. '
                      f'Están también, por temática, en la <a href="{PAGINA_LIBROS}">Biblioteca de Folio 13</a>.</p>'
-                     f'<ul class="fuentes">{libros}</ul></div>') if libros else ""
+                     f'<ul class="fuentes">{libros}</ul>{selector_amazon(canal)}</div>') if libros else ""
     cuerpo = f"""<main class="ancho seccion lectura">
 <h1 style="font-family:'Playfair Display',serif; font-size:clamp(30px,5vw,46px)">Apoya Folio 13</h1>
 <p class="bloque" style="margin-top:14px">Folio 13 es gratis, sin muros de pago y sin anuncios invasivos. Detrás de cada folio hay horas buscando fuentes, contrastando cifras y separando el mito de lo que pasó de verdad.</p>
@@ -1322,12 +1372,31 @@ def suscripcion(canal: dict) -> str:
             f'<a class="boton" href="{escape(canal["newsletter_url"])}" rel="noopener">Suscribirme</a></section>')
 
 
+# Amazon por país. España usa "amazon_tag" (canal); México y EE. UU., "amazon_tag_mx" y "amazon_tag_us" cuando la
+# usuaria tenga esos programas (nunca un tag inventado: sin tag, el enlace va sin afiliado). En cada libro, "asin" es la
+# ficha de Amazon.es; "asin_mx" y "asin_us", las de esos países, solo si se han comprobado (puede ser otra edición):
+# si faltan, el enlace lleva a la búsqueda por título y autor en esa tienda. AMAZON_JS elige el país del lector en su
+# navegador (zona horaria e idioma, o lo que elija en el selector) y cambia los enlaces.
+AMAZON_TIENDAS = {"es": ("amazon.es", "España", "amazon_tag", "asin"),
+                  "mx": ("amazon.com.mx", "México", "amazon_tag_mx", "asin_mx"),
+                  "us": ("amazon.com", "EE. UU.", "amazon_tag_us", "asin_us")}
+# Texto obligatorio de cada programa de afiliados (el de México y EE. UU., comprobarlo al darse de alta)
+AMAZON_AVISOS = {"es": "En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen "
+                       "los requisitos aplicables.",
+                 "mx": "Como Afiliado de Amazon México, obtenemos ingresos por las compras adscritas que cumplen los "
+                       "requisitos aplicables.",
+                 "us": "As an Amazon Associate we earn from qualifying purchases."}
+
+
+def avisos_amazon(canal: dict) -> str:
+    return " ".join(AMAZON_AVISOS[p] for p, t in AMAZON_TIENDAS.items() if canal.get(t[2]))
+
+
 def aviso_afiliados(canal: dict) -> str:
     # Texto obligatorio del programa de Afiliados de Amazon
     if not canal.get("amazon_tag"):
         return ""
-    return ("<br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas "
-            "que cumplen los requisitos aplicables.</small>")
+    return f"<br><small>{avisos_amazon(canal)}</small>"
 
 
 def enlace_libro(libro: dict, canal: dict) -> str:
@@ -1336,16 +1405,43 @@ def enlace_libro(libro: dict, canal: dict) -> str:
         texto += f" <span class='nota'>— {escape(libro['nota'])}</span>"
     if not canal.get("amazon_tag"):
         return f"<li>{texto}</li>"
-    return f'<li><a href="{escape(url_amazon(libro, canal))}" rel="sponsored noopener">{texto}</a></li>'
+    return f"<li>{enlace_amazon(libro, canal, texto)}</li>"
 
 
-def url_amazon(libro: dict, canal: dict) -> str:
-    """Con "asin", la ficha del libro en Amazon.es (convierte mucho mejor); si no, la búsqueda por título y autor."""
-    tag = urllib.parse.quote(canal["amazon_tag"])
-    if libro.get("asin"):
-        return f"https://www.amazon.es/dp/{urllib.parse.quote(libro['asin'])}?tag={tag}"
+def url_amazon(libro: dict, canal: dict, pais: str = "es") -> tuple[str, bool]:
+    """(URL, lleva afiliado). Con el ASIN de ese país, la ficha del libro (convierte mucho mejor); si no, la búsqueda
+    por título y autor en esa tienda."""
+    dominio, _, campo_tag, campo_asin = AMAZON_TIENDAS[pais]
+    tag = canal.get(campo_tag, "")
+    if libro.get(campo_asin):
+        url = f"https://www.{dominio}/dp/{urllib.parse.quote(libro[campo_asin])}"
+        return (url + f"?tag={urllib.parse.quote(tag)}" if tag else url), bool(tag)
     busqueda = urllib.parse.quote_plus(f"{libro['titulo']} {libro.get('autor', '')}".strip())
-    return f"https://www.amazon.es/s?k={busqueda}&tag={tag}"
+    url = f"https://www.{dominio}/s?k={busqueda}"
+    return (url + f"&tag={urllib.parse.quote(tag)}" if tag else url), bool(tag)
+
+
+def enlace_amazon(libro: dict, canal: dict, contenido: str, clase: str = "") -> str:
+    """Enlace al libro en Amazon.es (sirve sin JavaScript), con los de las otras tiendas para AMAZON_JS.
+    En los botones (contenido vacío), el texto cambia con la tienda: «Ver en Amazon» o «Buscar en Amazon México»."""
+    tiendas = {}
+    for pais, (_, nombre, _, campo_asin) in AMAZON_TIENDAS.items():
+        url, afiliado = url_amazon(libro, canal, pais)
+        texto = ("Ver en Amazon" if pais == "es" else f"Ver en Amazon {nombre}") if libro.get(campo_asin) \
+            else ("Buscar en Amazon" if pais == "es" else f"Buscar en Amazon {nombre}")
+        tiendas[pais] = [url, 1 if afiliado else 0, texto]
+    url, afiliado, texto = tiendas["es"]
+    datos = escape(json.dumps(tiendas, ensure_ascii=False))
+    return (f'<a class="amz{" " + clase if clase else ""}" href="{escape(url)}" rel="{"sponsored " if afiliado else ""}noopener" '
+            f'target="_blank" data-amz="{datos}"{" data-amz-texto" if not contenido else ""}>{contenido or texto}</a>')
+
+
+def selector_amazon(canal: dict) -> str:
+    """«Enlaces de Amazon para: España · México · EE. UU.»: siempre visible donde hay libros, para cambiar a mano."""
+    if not canal.get("amazon_tag"):
+        return ""
+    botones = "".join(f'<button type="button" data-pais="{p}">{t[1]}</button>' for p, t in AMAZON_TIENDAS.items())
+    return f'<p class="amz-pais"><span>Enlaces de Amazon para:</span> {botones}</p>'
 
 
 def suscribirse(canal: dict) -> str:
@@ -2053,8 +2149,6 @@ def pagina_lector(h: dict, canal: dict) -> str:
 # Solo se publica lo que entrega GUIÓN: aquí no se añade ningún libro ni dato.
 GUIAS_DIR = WEB.parent / "Guiones" / "web"
 PAGINA_LIBROS = "libros.html"
-AVISO_AMAZON = ("En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los "
-                "requisitos aplicables.")
 
 
 def leer_guias() -> list[dict]:
@@ -2128,8 +2222,7 @@ def pagina_guia(g: dict, visibles: list[dict], canal: dict) -> str:
     for n, l in enumerate(g["libros"], 1):
         botones = ""
         if canal.get("amazon_tag"):
-            botones += (f'<a class="boton" href="{escape(url_amazon(l, canal))}" rel="sponsored noopener" '
-                        f'target="_blank">Ver en Amazon</a>')
+            botones += enlace_amazon(l, canal, "", "boton")
         folio = por_num.get(l.get("folio", ""))
         if folio:
             botones += (f'<a class="boton secundario" href="expedientes/{folio["_slug"]}.html">'
@@ -2147,8 +2240,9 @@ def pagina_guia(g: dict, visibles: list[dict], canal: dict) -> str:
     cuerpo = f"""<main class="ancho seccion lectura" style="max-width:860px">
 <div class="miga mono"><a href="index.html">Blog</a> · <a href="{PAGINA_LIBROS}">Biblioteca</a></div>
 <h1 style="font-size:clamp(34px,6vw,58px); line-height:1.04; margin:14px 0 14px">{escape(g["titulo"])}</h1>
-<p class="aviso-afiliado">{AVISO_AMAZON}{comprobado}</p>
+<p class="aviso-afiliado">{avisos_amazon(canal)}{comprobado}</p>
 <div class="articulo">{"".join(f"<p>{escape(p)}</p>" for p in g["intro"])}</div>
+{selector_amazon(canal)}
 <ol class="guia-libros">{items}</ol>
 {fuentes}
 <p class="nota" style="margin-top:28px"><a href="{PAGINA_LIBROS}">← Toda la Biblioteca de Folio 13</a></p>
@@ -2189,8 +2283,7 @@ def pagina_libros(guias: list[dict], listados: list[dict], canal: dict) -> str:
         for x in libros.values():
             l = x["libro"]
             folios = " · ".join(f'<a href="expedientes/{e["_slug"]}.html">{escape(titulo_buscador(e))}</a>' for e in x["folios"])
-            comprar = (f'<a class="boton" href="{escape(url_amazon(l, canal))}" rel="sponsored noopener" target="_blank">Ver en Amazon</a>'
-                       if canal.get("amazon_tag") else "")
+            comprar = enlace_amazon(l, canal, "", "boton") if canal.get("amazon_tag") else ""
             fichas += (f'<li class="libro"><h3>{escape(l["titulo"])}</h3>'
                        + (f'<p class="autor mono">{escape(l["autor"])}</p>' if l.get("autor") else "")
                        + (f'<p class="por-que">{escape(l["nota"])}</p>' if l.get("nota") else "")
@@ -2203,9 +2296,10 @@ def pagina_libros(guias: list[dict], listados: list[dict], canal: dict) -> str:
 <span class="mono" style="font-size:12px; color:var(--rojo)">Para leer más</span>
 <h1 style="font-size:clamp(36px,6vw,64px); line-height:1.02; margin:12px 0 14px">Biblioteca de Folio 13</h1>
 <p class="nota" style="font-size:19px">Los libros que hay detrás de los folios: historia, crímenes reales, misterios y leyendas contados por historiadores, periodistas y testigos. Cada uno enlaza al folio en el que lo usamos.</p>
-<p class="aviso-afiliado">{AVISO_AMAZON} Si compras un libro desde aquí, a ti no te cuesta más y nos ayudas a seguir abriendo folios.</p>
+<p class="aviso-afiliado">{avisos_amazon(canal)} Si compras un libro desde aquí, a ti no te cuesta más y nos ayudas a seguir abriendo folios.</p>
 {guias_html}
 <section class="seccion" style="padding-top:12px"><div class="seccion-cab"><div><span class="kicker">Por temática</span><h2>Los libros de cada folio</h2></div></div>
+{selector_amazon(canal)}
 {por_tema}
 </section>
 </main>"""
@@ -2299,7 +2393,7 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     lecturas = ""
     if e.get("lecturas"):
         lecturas = ('<div class="bloque"><h2>Para saber más</h2><ul class="fuentes">'
-                    + "".join(enlace_libro(l, canal) for l in e["lecturas"]) + "</ul></div>")
+                    + "".join(enlace_libro(l, canal) for l in e["lecturas"]) + f"</ul>{selector_amazon(canal)}</div>")
     # Columna lateral: semáforo (solo si el folio lo trae), fuentes numeradas y etiquetas
     lado = ""
     if e.get("verdad"):

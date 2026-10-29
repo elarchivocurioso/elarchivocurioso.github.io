@@ -464,6 +464,12 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .guia-libros p { font-size:17px; color:var(--texto-2); }
 .guia-libros .botones { margin-top:14px; }
 .guia-libros .puesto { font-size:14px; color:var(--texto-3); font-style:italic; margin-bottom:10px; }
+.amz-pais { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:14px 0 6px; font-size:13px; color:var(--texto-3); }
+.amz-pais span { margin-right:4px; }
+.amz-pais button { font:inherit; font-size:13px; color:var(--texto-2); background:transparent; border:1px solid var(--borde);
+  border-radius:999px; padding:4px 12px; cursor:pointer; }
+.amz-pais button:hover { border-color:var(--rojo); color:var(--texto); }
+.amz-pais button[aria-pressed="true"] { background:var(--rojo); border-color:var(--rojo); color:#fff; }
 .saltos { margin:4px 0 8px; }
 .saltos small { color:var(--texto-3); margin-left:4px; }
 .estante { padding-top:34px; scroll-margin-top:90px; }
@@ -624,7 +630,7 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
 <div class="bloque articulo" id="s0"><h2>Julio de 1916: un alférez llega al Somme</h2><p>John Ronald Reuel Tolkien, nacido el 3 de enero de 1892, viajó a Francia en junio de 1916 como alférez del 11.º Batallón de los Lancashire Fusiliers. La gran ofensiva británica del Somme empezó el 1 de julio de 1916, y según la cronología del biógrafo John Garth, Tolkien llegó a la zona del frente el 3 de julio. Tenía veinticuatro años.</p><p>Su puesto era el de oficial de transmisiones del batallón: su trabajo consistía en que las órdenes y los mensajes llegaran. Para ello contaba con teléfonos de campaña, bengalas, lámparas de señales, zumbadores Morse, corredores y, cuando todo fallaba, palomas mensajeras. Las fuentes no coinciden en la fecha exacta del nombramiento: Wikipedia lo sitúa en junio y Garth, el 21 de julio.</p></div><div class="bloque articulo" id="s1"><h2>Los amigos del colegio</h2><p>En Birmingham, Tolkien había formado con sus amigos de colegio un pequeño club, la T.C.B.S. Su núcleo eran cuatro: Tolkien, Rob Gilson, Geoffrey Bache Smith y Christopher Wiseman. Gilson murió el 1 de julio de 1916, el primer día de la ofensiva, cerca de La Boisselle; según Garth, Tolkien se enteró el 17 de julio.</p><p>Smith murió el 3 de diciembre de ese mismo año. De los cuatro, solo Tolkien y Wiseman sobrevivieron a la guerra. Décadas después, en el prólogo de la segunda edición de *El Señor de los Anillos* (1966), Tolkien escribió que en 1918 todos sus amigos íntimos, menos uno, habían muerto.</p></div><div class="bloque articulo" id="s2"><h2>La fiebre de las trincheras</h2><p>A finales de octubre de 1916 cayó enfermo de fiebre de las trincheras, una infección que transmite el piojo del cuerpo y que era común en el frente. Dio parte de enfermo el 27 de octubre y el 8 de noviembre regresó a Inglaterra. Algunas fuentes dan otras fechas para la evacuación; aquí seguimos las de Garth.</p></div><div class="bloque articulo" id="s3"><h2>De la convalecencia a la Tierra Media</h2><p>Mientras se recuperaba, entre finales de 1916 y 1917, empezó *The Book of Lost Tales* con *La caída de Gondolin*, uno de los primeros relatos de elfos de lo que acabaría siendo su mundo. Las fuentes no coinciden en el sitio exacto donde lo empezó: el hospital de Birmingham o los pueblos de Great Haywood o Little Haywood, en Staffordshire.</p><p>*El Hobbit* se publicó en 1937, veintiún años después del Somme. Biógrafos como Garth han señalado ecos de la guerra en su obra, pero conviene no exagerarlo: Tolkien rechazaba que su libro fuera una alegoría de ninguna guerra y prefería hablar de «aplicabilidad».</p></div><div class="bloque"><h2>Más datos del folio</h2><ul class="curiosidades"><li>La ofensiva del Somme empezó el 1 de julio de 1916</li><li>Rob Gilson murió el 1 de julio de 1916 cerca de La Boisselle; según la cronología de John Garth, Tolkien lo supo el 17 de julio</li></ul></div>
 
 <div class="quiz"><h2>¿Lo habrías creído?</h2><p class="nota">Tres datos de este folio. ¿Te los habrías creído si te los cuentan sin fuentes?</p><div class="pregunta-bloque"><p class="pregunta">Fecha prevista de publicación: 16/11/2026</p><div class="opciones"><button type="button" data-cree="si">Me lo creo</button><button type="button" data-cree="no">No me lo creo</button></div><p class="respuesta">✓ Es verdad. Está en este folio y en sus fuentes.</p></div><div class="pregunta-bloque"><p class="pregunta">Tolkien (nacido el 3 de enero de 1892) viajó a Francia en junio de 1916 como alférez del 11.º Batallón de los Lancashire Fusiliers; llegó a la zona del frente del Somme el 3 de julio de 1916</p><div class="opciones"><button type="button" data-cree="si">Me lo creo</button><button type="button" data-cree="no">No me lo creo</button></div><p class="respuesta">✓ Es verdad. Está en este folio y en sus fuentes.</p></div><div class="pregunta-bloque"><p class="pregunta">Fue oficial de transmisiones del batallón; medios: teléfonos de campaña, bengalas, lámparas, zumbadores Morse, palomas mensajeras y corredores</p><div class="opciones"><button type="button" data-cree="si">Me lo creo</button><button type="button" data-cree="no">No me lo creo</button></div><p class="respuesta">✓ Es verdad. Está en este folio y en sus fuentes.</p></div><p class="marcador" aria-live="polite"></p><div class="progreso">TU ARCHIVO <span class="barra"><i></i></span><span data-leidos="corto"></span></div></div>
-<div class="bloque"><h2>Para saber más</h2><ul class="fuentes"><li><a href="https://www.amazon.es/s?k=Tolkien+and+the+Great+War+John+Garth&amp;tag=elarchivocuri-21" rel="sponsored noopener"><i>Tolkien and the Great War</i>, John Garth <span class='nota'>— 2003. La biografía de referencia sobre Tolkien, sus amigos de la T.C.B.S. y la Primera Guerra Mundial.</span></a></li></ul></div>
+<div class="bloque"><h2>Para saber más</h2><ul class="fuentes"><li><a class="amz" href="https://www.amazon.es/s?k=Tolkien+and+the+Great+War+John+Garth&amp;tag=elarchivocuri-21" rel="sponsored noopener" target="_blank" data-amz="{&quot;es&quot;: [&quot;https://www.amazon.es/s?k=Tolkien+and+the+Great+War+John+Garth&amp;tag=elarchivocuri-21&quot;, 1, &quot;Buscar en Amazon&quot;], &quot;mx&quot;: [&quot;https://www.amazon.com.mx/s?k=Tolkien+and+the+Great+War+John+Garth&quot;, 0, &quot;Buscar en Amazon México&quot;], &quot;us&quot;: [&quot;https://www.amazon.com/s?k=Tolkien+and+the+Great+War+John+Garth&quot;, 0, &quot;Buscar en Amazon EE. UU.&quot;]}"><i>Tolkien and the Great War</i>, John Garth <span class='nota'>— 2003. La biografía de referencia sobre Tolkien, sus amigos de la T.C.B.S. y la Primera Guerra Mundial.</span></a></li></ul><p class="amz-pais"><span>Enlaces de Amazon para:</span> <button type="button" data-pais="es">España</button><button type="button" data-pais="mx">México</button><button type="button" data-pais="us">EE. UU.</button></p></div>
 <section class="apoyo"><div class="logo" style="--t:64px"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Folio 13">
 <defs><path id="arco-arriba-apoyo" d="M 100,100 m -64,0 a 64,64 0 1,1 128,0"/><path id="arco-abajo-apoyo" d="M 100,100 m -66,0 a 66,66 0 0,0 132,0"/></defs>
 <g transform="rotate(-8 100 100)">
@@ -778,6 +784,43 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
       }).catch(function () { location.href = raiz + 'buscar.html'; });
     });
   });
+})();
+</script>
+
+<script>
+(function () {
+  var enlaces = document.querySelectorAll('a.amz[data-amz]');
+  var botones = document.querySelectorAll('.amz-pais button[data-pais]');
+  if (!enlaces.length) return;
+  function guardado() { try { return localStorage.getItem('amazon_pais'); } catch (e) { return null; } }
+  function deducido() {
+    var tz = '', idioma = (navigator.language || '').toLowerCase();
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    if (/^America\/(Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Mazatlan|Bahia_Banderas|Hermosillo|Tijuana)$/.test(tz)
+        || idioma === 'es-mx') return 'mx';
+    if (/^(Europe\/Madrid|Atlantic\/Canary|Africa\/Ceuta)$/.test(tz) || idioma === 'es-es') return 'es';
+    if (/^America\//.test(tz)) return 'us';
+    return 'es';
+  }
+  function aplicar(pais) {
+    enlaces.forEach(function (a) {
+      var t;
+      try { t = JSON.parse(a.dataset.amz)[pais]; } catch (e) {}
+      if (!t) return;
+      a.href = t[0];
+      a.rel = (t[1] ? 'sponsored ' : '') + 'noopener';
+      a.dataset.amzPais = pais;
+      if (a.hasAttribute('data-amz-texto')) a.textContent = t[2];
+    });
+    botones.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.pais === pais ? 'true' : 'false'); });
+  }
+  botones.forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { localStorage.setItem('amazon_pais', b.dataset.pais); } catch (e) {}
+      aplicar(b.dataset.pais);
+    });
+  });
+  aplicar(guardado() || deducido());
 })();
 </script>
 
