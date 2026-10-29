@@ -613,6 +613,21 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .guia-libros p { font-size:17px; color:var(--texto-2); }
 .guia-libros .botones { margin-top:14px; }
 .guia-libros .puesto { font-size:14px; color:var(--texto-3); font-style:italic; margin-bottom:10px; }
+.saltos { margin:4px 0 8px; }
+.saltos small { color:var(--texto-3); margin-left:4px; }
+.estante { padding-top:34px; scroll-margin-top:90px; }
+.estante > h2 { font-size:clamp(24px,3.4vw,32px); margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid var(--borde); }
+.estanteria { list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; }
+.libro { display:flex; flex-direction:column; padding:20px 20px 18px; background:var(--tarjeta); border:1px solid var(--borde);
+  border-left:3px solid var(--rojo); border-radius:var(--radio); }
+.libro h3 { font-family:'Playfair Display',serif; font-style:italic; font-size:20px; line-height:1.25; }
+.libro .autor { font-size:12px; color:var(--texto-3); margin:6px 0 10px; letter-spacing:.04em; }
+.libro .por-que { font-size:15px; line-height:1.55; color:var(--texto-2); }
+.libro .del-folio { font-size:14px; color:var(--texto-2); margin:12px 0 16px; }
+.libro .del-folio .mono { display:block; font-size:11px; color:var(--rojo); text-transform:uppercase; letter-spacing:.08em; margin-bottom:2px; }
+.libro .del-folio a { color:var(--texto); }
+.libro .boton { margin-top:auto; align-self:flex-start; }
+@media (max-width:700px) { .estanteria { grid-template-columns:1fr; } }
 @media (max-width:980px) { .blog-grid { grid-template-columns:1fr; } .lado-blog { position:static; } }
 @media (max-width:640px) { .entrada { grid-template-columns:1fr; gap:12px; } .lista-raras a { grid-template-columns:42px minmax(0,1fr); } .lista-raras img { display:none; }
   .lista-raras a::before { font-size:30px; } .blog-cab form { flex-direction:column; } }
@@ -2100,18 +2115,39 @@ def pagina_guia(g: dict, visibles: list[dict], canal: dict) -> str:
 
 def pagina_libros(guias: list[dict], listados: list[dict], canal: dict) -> str:
     """Biblioteca de Folio 13: las guías de libros y las lecturas de cada folio, por temática."""
-    tarjetas = "".join(f'<li><a href="{g["ruta"]}"><div><h2>{escape(g["titulo"])}</h2>'
-                       f'<p>{escape(g["descripcion"] or primera_frase(" ".join(g["intro"])))}</p></div></a></li>'
-                       for g in guias)
+    tarjetas = ""
+    for g in guias:
+        nombres = ", ".join(f"«{l['titulo']}»" for l in g["libros"][:3])
+        resto = f" y {len(g['libros']) - 3} más" if len(g["libros"]) > 3 else ""
+        cuando = f" · Amazon.es, {fecha_larga(g['comprobado'])}" if g["comprobado"] else ""
+        tarjetas += (f'<li><a href="{g["ruta"]}"><div><h2>{escape(g["titulo"])}</h2><p>{escape(nombres + resto)}</p>'
+                     f'<small class="mono">{len(g["libros"])} libros{cuando}</small></div></a></li>')
     guias_html = (f'<section class="seccion" style="padding-top:12px"><div class="seccion-cab"><div><span class="kicker">Guías</span>'
                   f'<h2>Listas de libros</h2></div></div><ol class="lista-raras lista-lectores">{tarjetas}</ol></section>') if guias else ""
-    por_tema = ""
+    por_tema, saltos = "", ""
     for clave, t in TEMATICAS.items():
-        libros = "".join(enlace_libro(l, canal).replace("</li>", f' <span class="nota">· del folio '
-                                                         f'<a href="expedientes/{e["_slug"]}.html">{escape(titulo_buscador(e))}</a></span></li>')
-                         for e in listados if e["tematica"] == clave for l in e.get("lecturas", []))
-        if libros:
-            por_tema += f'<div class="bloque"><h2>{escape(t["nombre"])}</h2><ul class="fuentes">{libros}</ul></div>'
+        # Un libro que sale en varios folios va una sola vez, con todos sus folios
+        libros: dict[str, dict] = {}
+        for e in listados:
+            if e["tematica"] == clave:
+                for l in e.get("lecturas", []):
+                    libros.setdefault(l["titulo"], {"libro": l, "folios": []})["folios"].append(e)
+        if not libros:
+            continue
+        fichas = ""
+        for x in libros.values():
+            l = x["libro"]
+            folios = " · ".join(f'<a href="expedientes/{e["_slug"]}.html">{escape(titulo_buscador(e))}</a>' for e in x["folios"])
+            comprar = (f'<a class="boton" href="{escape(url_amazon(l, canal))}" rel="sponsored noopener" target="_blank">Ver en Amazon</a>'
+                       if canal.get("amazon_tag") else "")
+            fichas += (f'<li class="libro"><h3>{escape(l["titulo"])}</h3>'
+                       + (f'<p class="autor mono">{escape(l["autor"])}</p>' if l.get("autor") else "")
+                       + (f'<p class="por-que">{escape(l["nota"])}</p>' if l.get("nota") else "")
+                       + f'<p class="del-folio"><span class="mono">Del folio</span> {folios}</p>{comprar}</li>')
+        saltos += f'<a href="#{clave}">{escape(t["nombre"])} <small>{len(libros)}</small></a>'
+        por_tema += (f'<section class="estante t-{clave}" id="{clave}"><h2>{escape(t["nombre"])}</h2>'
+                     f'<ul class="estanteria">{fichas}</ul></section>')
+    por_tema = f'<div class="chips saltos">{saltos}</div>{por_tema}' if por_tema else ""
     cuerpo = f"""<main class="ancho seccion lectura" style="max-width:900px">
 <span class="mono" style="font-size:12px; color:var(--rojo)">Para leer más</span>
 <h1 style="font-size:clamp(36px,6vw,64px); line-height:1.02; margin:12px 0 14px">Biblioteca de Folio 13</h1>
