@@ -143,7 +143,7 @@ def revisar_local(errores: list[str], avisos: list[str]) -> int:
                 errores.append(f"sitemap.xml: {loc} no tiene página")
     # Folios cuyo título para buscadores sale del de YouTube (puede no nombrar el caso)
     for e in json.loads(DATOS.read_text(encoding="utf-8-sig"))["expedientes"]:
-        if not e.get("titulo_seo") and not (e.get("titulo_articulo") and len(e["titulo_articulo"]) <= 100):
+        if not e.get("titulo_seo") and not e.get("titulo_articulo"):
             avisos.append(f"Título SEO: {e.get('num', '?')} usa el de YouTube («{e['titulo'][:60]}»); "
                           "revisar si nombra el caso o ponerle \"titulo_seo\"")
     return len(paginas)

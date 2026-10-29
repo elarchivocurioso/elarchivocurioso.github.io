@@ -8724,6 +8724,47 @@
           "nota": "Clásico de 1966 sobre la matanza de Glencoe y la política que la hizo posible (en inglés)."
         }
       ]
+    },
+    {
+      "youtube": "PDku4TltW1k",
+      "tipo": "short",
+      "titulo": "¿Cómo acabó en una verdulería la lápida de un «inmortal»?",
+      "epoca": "1418 - 1839",
+      "lugar": "París",
+      "tematica": "fantasia",
+      "mapa": [
+        48.8506,
+        2.3433
+      ],
+      "resumen": "¿Cómo acaba en una verdulería la lápida de un supuesto inmortal?",
+      "curiosidades": [
+        "Fecha prevista de publicación: 13/11/2026",
+        "Nicolas Flamel, escribano público en París, murió el 22 de marzo de 1418 y fue enterrado en Saint-Jacques-de-la-Boucherie. En 1410 diseñó su propia lápida",
+        "En Harry Potter es el fabricante de la piedra filosofal y tiene 665 años",
+        "La iglesia se derribó durante la Revolución y solo quedó la torre Saint-Jacques",
+        "Un anticuario compró la lápida a una vendedora de fruta y verdura de la rue Saint-Jacques-la-Boucherie, que la usaba de mostrador («étal pour ses épinards»), y la ciudad de París la compró en 1839. Hoy está en el museo de Cluny"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Nicolas Flamel» (francés)",
+          "url": "https://fr.wikipedia.org/wiki/Nicolas_Flamel"
+        },
+        {
+          "titulo": "Sortiraparis, sobre la lápida de Flamel",
+          "url": "https://www.sortiraparis.com/en/what-to-visit-in-paris/history-heritage/articles/338885-nicolas-flamel-mystery-the-alchemist-s-tomb-in-paris"
+        },
+        {
+          "titulo": "Ficha de la lápida en Commons (datos del museo de Cluny)",
+          "url": "https://commons.wikimedia.org/wiki/File:Epitaphe_Nicolas_Flamel_Cluny.jpg"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XV",
+        "Harry Potter",
+        "Piedra filosofal"
+      ],
+      "fecha": "2026-10-29T16:30",
+      "num": "S144"
     }
   ]
 }
