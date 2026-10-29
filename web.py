@@ -612,6 +612,7 @@ footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display'
 .guia-libros .autor { font-size:13px; color:var(--texto-3); margin:4px 0 12px; }
 .guia-libros p { font-size:17px; color:var(--texto-2); }
 .guia-libros .botones { margin-top:14px; }
+.guia-libros .puesto { font-size:14px; color:var(--texto-3); font-style:italic; margin-bottom:10px; }
 @media (max-width:980px) { .blog-grid { grid-template-columns:1fr; } .lado-blog { position:static; } }
 @media (max-width:640px) { .entrada { grid-template-columns:1fr; gap:12px; } .lista-raras a { grid-template-columns:42px minmax(0,1fr); } .lista-raras img { display:none; }
   .lista-raras a::before { font-size:30px; } .blog-cab form { flex-direction:column; } }
@@ -1974,12 +1975,13 @@ def pagina_lector(h: dict, canal: dict) -> str:
 # Guías de libros (afiliados de Amazon, reglas en Canal YouTube/DECISIONES.md). Las escribe GUIÓN en
 # Guiones/web/libros-<tema>.md y se publican como <mismo nombre>.html:
 #   # Título de la guía
-#   descripcion: texto para Google (hasta 155 caracteres)
-#   comprobado: AAAA-MM-DD          opcional: día en que se comprobó en Amazon.es que son de los más vendidos
+#   descripcion: texto para Google (hasta 155 caracteres)       opcional; si falta, se compone con los libros
+#   Lista de Amazon.es consultada el DD/MM/AAAA.                (o «comprobado: AAAA-MM-DD»): sale junto al aviso
 #   Entradilla (párrafos separados por una línea en blanco)
-#   ## Título del libro — Autor      un apartado por libro, en orden
-#   asin: 8467045031                si falta, el enlace lleva a la búsqueda en Amazon.es
-#   folio: S140                     opcional: el folio relacionado
+#   ## 1. Título del libro — Autor   un apartado por libro, en orden (el número es opcional)
+#   - ASIN: 8467045031 · URL         si falta, el enlace lleva a la búsqueda en Amazon.es
+#   - En la lista: puesto 52 en «Hechos reales».                opcional
+#   - Folio relacionado: A027, …     opcional (o «folio: A027»)
 #   Párrafos sobre el libro
 #   ## Fuentes                      opcional: «- Título — URL»
 # Solo se publica lo que entrega GUIÓN: aquí no se añade ningún libro ni dato.
@@ -2004,8 +2006,12 @@ def leer_guias() -> list[dict]:
                 actual["texto"] = parrafos
 
         for linea in md.read_text(encoding="utf-8-sig").splitlines():
-            clave = re.match(r"^-?\s*(descripcion|descripción|comprobado|asin|folio)\s*:\s*(.+)$", linea.strip(), re.I)
-            if linea.startswith("# "):
+            clave = re.match(r"^-?\s*(descripcion|descripción|comprobado|asin|folio relacionado|folio|en la lista)\s*:\s*(.+)$",
+                             linea.strip(), re.I)
+            fecha = re.match(r"^Lista de Amazon\.es consultada el (\d{1,2})/(\d{1,2})/(\d{4})\.?\s*$", linea.strip(), re.I)
+            if fecha and actual is None:
+                g["comprobado"] = f"{fecha.group(3)}-{int(fecha.group(2)):02d}-{int(fecha.group(1)):02d}"
+            elif linea.startswith("# "):
                 g["titulo"] = linea[2:].strip()
             elif linea.startswith("## "):
                 cerrar()
@@ -2014,14 +2020,22 @@ def leer_guias() -> list[dict]:
                 if nombre.lower() == "fuentes":
                     actual = "fuentes"
                 else:
-                    partes = re.split(r"\s+[—–]\s+", nombre, maxsplit=1)
+                    partes = re.split(r"\s+[—–]\s+", re.sub(r"^\d+\.\s*", "", nombre), maxsplit=1)
                     actual = {"titulo": partes[0], "autor": partes[1] if len(partes) > 1 else ""}
                     g["libros"].append(actual)
             elif clave:
                 k = clave.group(1).lower().replace("descripción", "descripcion")
                 v = clave.group(2).strip()
-                if k in ("asin", "folio") and isinstance(actual, dict):
-                    actual[k] = v.upper() if k == "asin" else v
+                if isinstance(actual, dict) and k == "asin":
+                    codigo = re.match(r"([A-Z0-9]{10})\b", v.upper())
+                    if codigo:
+                        actual["asin"] = codigo.group(1)
+                elif isinstance(actual, dict) and k.startswith("folio"):
+                    num = re.match(r"([A-Z]\d{3})\b", v)
+                    if num:
+                        actual["folio"] = num.group(1)
+                elif isinstance(actual, dict) and k == "en la lista":
+                    actual["lista"] = v
                 elif k in ("descripcion", "comprobado") and actual is None:
                     g[k] = v
             elif actual == "fuentes":
@@ -2031,6 +2045,10 @@ def leer_guias() -> list[dict]:
             else:
                 bloque.append(linea)
         cerrar()
+        if not g["descripcion"] and g["libros"]:   # para Google: los primeros libros de la lista, sin añadir nada
+            nombres = ", ".join(f"«{l['titulo']}»" for l in g["libros"][:2])
+            cuando = (", " + "/".join(reversed(g["comprobado"].split("-")))) if g["comprobado"] else ""
+            g["descripcion"] = f"{g['titulo']}. {nombres} y {len(g['libros']) - 2} más (Amazon.es{cuando})."
         if g["titulo"] and g["libros"]:
             guias.append(g)
         else:
@@ -2052,6 +2070,7 @@ def pagina_guia(g: dict, visibles: list[dict], canal: dict) -> str:
                         f'Nuestro folio: {escape(titulo_buscador(folio))}</a>')
         items += (f'<li><h2><span class="n">{n}</span> {escape(l["titulo"])}</h2>'
                   + (f'<p class="autor mono">{escape(l["autor"])}</p>' if l["autor"] else "")
+                  + (f'<p class="puesto">En la lista: {escape(l["lista"])}</p>' if l.get("lista") else "")
                   + "".join(f"<p>{escape(p)}</p>" for p in l.get("texto", []))
                   + (f'<div class="botones">{botones}</div>' if botones else "") + "</li>")
     comprobado = (f" Lista comprobada en Amazon.es el {fecha_larga(g['comprobado'])}."
