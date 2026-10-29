@@ -342,7 +342,7 @@ header nav a:hover { color:#fff; }
 .vacio { text-align:center; padding:40px 16px 80px; color:var(--texto-2); }
 .vacio .logo { --t:90px; margin:0 auto 18px; }
 .chips { display:flex; flex-wrap:wrap; gap:8px; }
-.chips a { font-size:14px; color:var(--texto-2); text-decoration:none; padding:6px 13px; border:1px solid var(--borde-2); border-radius:999px; transition:all .2s; }
+.chips a, .chips span { font-size:14px; color:var(--texto-2); text-decoration:none; padding:6px 13px; border:1px solid var(--borde-2); border-radius:999px; transition:all .2s; }
 .chips a:hover { color:#000; border-color:#fff; background:#fff; }
 .chips a small { color:var(--texto-3); }
 .chips a:hover small { color:#000; }
@@ -1002,6 +1002,7 @@ def titulo_html(e: dict, enfocable: bool = False) -> str:
 
 
 TOTAL_FOLIOS = 0   # lo fija generar(): cuántos folios hay, para el contador «Has leído X de N»
+TEMAS_CON_PAGINA: set[str] = set()   # lo fija generar(): etiquetas con página propia (las de 2 o más folios)
 
 
 def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: str = "", extra: str = "",
@@ -1861,7 +1862,8 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                            for n, f in enumerate(fuentes, 1)) + "</ol></div>")
     if e.get("etiquetas"):
         lado += ('<div class="chips">'
-                 + "".join(f'<a href="../temas/{slug(x)}.html">{escape(x)}</a>' for x in e["etiquetas"]) + "</div>")
+                 + "".join(f'<a href="../temas/{slug(x)}.html">{escape(x)}</a>' if x in TEMAS_CON_PAGINA
+                           else f"<span>{escape(x)}</span>" for x in e["etiquetas"]) + "</div>")
     nav = '<nav class="navegacion" aria-label="Otros folios">'
     if anterior:
         nav += f'<a href="{anterior["_slug"]}.html"><small>← Folio anterior</small>{escape(anterior["titulo"])}</a>'
@@ -2130,8 +2132,9 @@ def generar() -> int:
     for e in visibles:
         if e.get("_episodio"):
             e["_n"] = e["_episodio"]["_n"]
-    global TOTAL_FOLIOS
+    global TOTAL_FOLIOS, TEMAS_CON_PAGINA
     TOTAL_FOLIOS = len(listados)
+    TEMAS_CON_PAGINA = set(temas_de(visibles))
 
     # Opiniones aprobadas: Web/datos/opiniones.json, lista de {"expediente": num o slug (o "general"),
     # "estrellas": 1-5, "texto", "nombre", "fecha": "AAAA-MM-DD"}. Lo que no está aquí no se publica.
