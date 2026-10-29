@@ -936,6 +936,54 @@ BASE_JS = """
 </script>
 """
 
+# Estadísticas sin cookies (Umami, "umami_id" en "canal"): además de las visitas y de dónde llega la gente, que cuenta
+# Umami solo, se envían estos eventos: «salida» (clic a YouTube, Instagram, TikTok, Ko-fi, Amazon…), «video» (se pulsa
+# el reproductor), «lectura» (llega a la mitad o al final del texto) y «tiempo» (30 s, 1, 3 y 5 min con la página a la vista).
+METRICAS_JS = """
+<script>
+(function () {
+  function enviar(nombre, datos) { if (window.umami) window.umami.track(nombre, datos); }
+  var pagina = location.pathname;
+  function destino(host) {
+    if (/youtube\\.com|youtu\\.be/.test(host)) return 'YouTube';
+    if (/instagram\\./.test(host)) return 'Instagram';
+    if (/tiktok\\./.test(host)) return 'TikTok';
+    if (/ko-fi\\./.test(host)) return 'Ko-fi';
+    if (/amazon\\./.test(host)) return 'Amazon';
+    if (/facebook\\./.test(host)) return 'Facebook';
+    if (/wa\\.me|t\\.me|twitter\\.com|x\\.com|meneame\\.net|reddit\\.com/.test(host)) return 'Compartir';
+    return 'Otra web';
+  }
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href]');
+    if (!a || !a.hostname || a.hostname === location.hostname) return;
+    enviar('salida', {destino: destino(a.hostname), pagina: pagina, url: a.href.slice(0, 200)});
+  }, true);
+  // Al pulsar el reproductor de YouTube, la página pierde el foco y el iframe se queda con él
+  window.addEventListener('blur', function () {
+    var f = document.activeElement;
+    if (f && f.tagName === 'IFRAME' && /youtube/.test(f.src)) enviar('video', {pagina: pagina});
+  });
+  var texto = document.querySelector('.hist-texto, .guia-libros, .articulo');
+  if (texto) {
+    var hitos = {};
+    window.addEventListener('scroll', function () {
+      var r = texto.getBoundingClientRect(), visto = (innerHeight - r.top) / r.height;
+      [['mitad', 0.5], ['final', 0.95]].forEach(function (h) {
+        if (visto >= h[1] && !hitos[h[0]]) { hitos[h[0]] = 1; enviar('lectura', {pagina: pagina, hasta: h[0]}); }
+      });
+    }, {passive: true});
+  }
+  var segundos = 0, marcas = [30, 60, 180, 300];
+  setInterval(function () {
+    if (document.visibilityState !== 'visible') return;
+    segundos += 5;
+    if (marcas.indexOf(segundos) > -1) enviar('tiempo', {pagina: pagina, segundos: segundos});
+  }, 5000);
+})();
+</script>
+"""
+
 # Portada: un secreto distinto en cada visita (las frases van en un JSON dentro de la página)
 FRASE_JS = """
 <script>
@@ -1114,6 +1162,9 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
     if canal.get("adsense"):   # Google AdSense: el código va en el <head> de todas las páginas
         seo += (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={escape(canal["adsense"])}" '
                 'crossorigin="anonymous"></script>\n')
+    if canal.get("umami_id"):   # estadísticas sin cookies; solo cuentan en el dominio de verdad, no en las vistas previas
+        seo += (f'<script defer src="https://cloud.umami.is/script.js" data-website-id="{escape(canal["umami_id"])}" '
+                f'data-domains="{escape(DOMINIO or "folio13.com")}"></script>\n')
     if canal.get("bing_verificacion"):
         seo += f'<meta name="msvalidate.01" content="{escape(canal["bing_verificacion"])}">\n'
     if jsonld:
@@ -1154,7 +1205,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cuerpo}
 {suscripcion(canal)}
 <footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
-{BASE_JS}{extra}
+{BASE_JS}{METRICAS_JS if canal.get("umami_id") else ""}{extra}
 </body>
 </html>
 """
@@ -2444,6 +2495,11 @@ def privacidad(canal: dict) -> str:
 <h2>7. Contacto</h2>
 <p>Para cualquier consulta sobre esta política, puedes escribir a través del <a href="CANAL">canal de YouTube</a>.</p>
 </main>""".replace("CANAL", escape(canal["youtube"]))
+    if canal.get("umami_id"):
+        cuerpo = cuerpo.replace("<h2>5. Servicios de Google</h2>", "<p><b>Estadísticas.</b> Para saber qué historias interesan "
+            "y de dónde llega la gente usamos Umami, una herramienta de estadísticas que no usa cookies ni guarda datos "
+            "personales: cuenta las visitas de forma anónima y agregada (la página que ves, la web de la que vienes, el país, "
+            "el tipo de dispositivo y en qué enlaces pulsas) y no permite saber quién eres.</p>\n<h2>5. Servicios de Google</h2>", 1)
     return pagina(f"Política de privacidad · {canal['nombre']}", cuerpo, canal, ruta="privacidad.html")
 
 
