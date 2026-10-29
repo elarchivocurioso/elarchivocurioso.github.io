@@ -8687,7 +8687,43 @@
         "George R. R. Martin"
       ],
       "fecha": "2026-10-29T15:00",
-      "num": "S143"
+      "num": "S143",
+      "articulo": [
+        {
+          "titulo": "Lo que contó George R. R. Martin",
+          "parrafos": [
+            "La Boda Roja es una de las escenas más recordadas de «Canción de hielo y fuego» y de su adaptación, «Juego de tronos». Pero no salió de ninguna boda real. Lo explicó el propio George R. R. Martin en la audioguía del castillo de Edimburgo que Historic Environment Scotland estrenó en febrero de 2020.",
+            "Según recogió el Edinburgh Evening News el 9 de febrero de 2020, Martin dijo que la escena se inspiró en gran parte en dos hechos de la historia de Escocia: la Cena Negra, en el propio castillo de Edimburgo, y la matanza de Glencoe. «Combiné los dos, le añadí una boda, y te sale la Boda Roja», resumió."
+          ]
+        },
+        {
+          "titulo": "Edimburgo, 1440: la Cena Negra",
+          "parrafos": [
+            "Jacobo II era rey de Escocia desde 1437, cuando tenía seis años, así que otros gobernaban en su nombre. El 24 de noviembre de 1440, William, sexto conde de Douglas, de unos dieciséis años, y su hermano pequeño David fueron invitados a cenar con el rey, que entonces tenía diez, en el castillo de Edimburgo.",
+            "Al terminar la cena, los dos hermanos fueron apresados, acusados de traición con cargos falsos y ejecutados. La escena se ha contado durante siglos con un detalle famoso, una cabeza de toro negro servida en la mesa, pero ese adorno aparece en cronistas posteriores, como Héctor Boecio en 1527, y no se puede dar por seguro."
+          ]
+        },
+        {
+          "titulo": "Glen Coe, 1692: los huéspedes que se volvieron contra sus anfitriones",
+          "parrafos": [
+            "Más de dos siglos y medio después, a finales de enero de 1692, unos 120 soldados al mando de Robert Campbell de Glenlyon llegaron al valle de Glen Coe. El clan MacDonald los alojó en sus casas durante cerca de dos semanas (algunas fuentes hablan de doce días).",
+            "La madrugada del 13 de febrero, los soldados se volvieron contra sus anfitriones. La matanza de Glencoe quedó en la memoria escocesa precisamente por eso: no fue solo un ataque, sino la traición a la hospitalidad, la misma regla sagrada que se rompe en la Boda Roja."
+          ]
+        },
+        {
+          "titulo": "Dos traiciones, una sola escena",
+          "parrafos": [
+            "De la Cena Negra viene la idea de invitar a alguien a la mesa para matarlo; de Glencoe, la de huéspedes que se vuelven contra quien les da cobijo. Martin juntó las dos y las convirtió en una boda. Por eso la escena resulta tan creíble: lo que parece inventado tiene detrás hechos documentados."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Glencoe: The Story of the Massacre",
+          "autor": "John Prebble",
+          "nota": "Clásico de 1966 sobre la matanza de Glencoe y la política que la hizo posible (en inglés)."
+        }
+      ]
     }
   ]
 }
