@@ -19,6 +19,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [El origen real de los Backrooms: la foto, la serie de YouTube y la película](https://folio13.com/expedientes/el-origen-real-de-los-backrooms-la-foto-la-serie-de-youtube-y-la-pelic.html) (Oshkosh, Wisconsin (Estados Unidos) e internet, 2002-2026) · Paranormal y leyendas: Esta habitación amarilla no existe. Eso creyó internet durante cinco años.
 - [¿Cómo acabó en una verdulería la lápida de un «inmortal»?](https://folio13.com/expedientes/como-acabo-en-una-verduleria-la-lapida-de-un-inmortal.html) (París, 1418 - 1839) · Detrás de la fantasía: ¿Cómo acaba en una verdulería la lápida de un supuesto inmortal?
 - [La Boda Roja no salió de una boda](https://folio13.com/expedientes/la-boda-roja-no-salio-de-una-boda.html) (castillo de Edimburgo y Glen Coe, Escocia, 1440 y 1692) · Detrás de la fantasía: La Boda Roja no salió de una boda.
 - [¿Por qué el Tenorio se representa en Todos los Santos? Mito contra realidad](https://folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html) (Madrid, España, 1844 - hoy) · Mitos desmontados: Dicen que el Tenorio se hace en noviembre porque se estrenó entonces.
@@ -76,6 +77,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Chicago 1893](https://folio13.com/temas/chicago-1893.html)
 - [Ciencia](https://folio13.com/temas/ciencia.html)
 - [Cine mudo](https://folio13.com/temas/cine-mudo.html)
+- [Creepypasta](https://folio13.com/temas/creepypasta.html)
 - [Crímenes de España](https://folio13.com/temas/crimenes-de-espana.html)
 - [Crímenes históricos](https://folio13.com/temas/crimenes-historicos.html)
 - [Crímenes históricos de España](https://folio13.com/temas/crimenes-historicos-de-espana.html)
@@ -105,6 +107,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Siglo XVII](https://folio13.com/temas/siglo-xvii.html)
 - [Siglo XVIII](https://folio13.com/temas/siglo-xviii.html)
 - [Siglo XX](https://folio13.com/temas/siglo-xx.html)
+- [Siglo XXI](https://folio13.com/temas/siglo-xxi.html)
 - [Top 10](https://folio13.com/temas/top-10.html)
 - [Tormenta solar](https://folio13.com/temas/tormenta-solar.html)
 - [Torre Eiffel](https://folio13.com/temas/torre-eiffel.html)
