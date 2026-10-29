@@ -401,6 +401,64 @@ footer .siguenos { display:block; margin-bottom:12px; font-family:'IBM Plex Mono
 footer .siguenos a { color:var(--texto); }
 footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--texto); }
 
+/* Blog: cabecera, entradas y columna lateral */
+.blog-cab { position:relative; padding-top:64px; padding-bottom:44px; isolation:isolate; }
+.blog-cab.portada { min-height:auto; display:block; }
+.blog-cab .calabaza.izq { left:auto; right:16%; width:clamp(56px,6vw,90px); }
+.blog-cab .kicker { font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.22em; color:var(--rojo); text-transform:uppercase; }
+.blog-cab h1 { font-weight:900; font-size:clamp(44px,8vw,104px); line-height:.98; letter-spacing:-.03em; margin:14px 0 10px; max-width:12ch; text-shadow:0 4px 40px rgba(0,0,0,.8); }
+.blog-cab h1 em { font-style:italic; color:var(--rojo); text-shadow:var(--brillo); }
+.blog-cab .lema { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(20px,2.4vw,28px); color:var(--texto-2); }
+.blog-cab .intro { max-width:620px; color:var(--texto-2); font-size:18px; margin-top:14px; }
+.blog-cab form { display:flex; gap:8px; margin-top:24px; max-width:560px; }
+.blog-cab input { flex:1; font:500 17px 'Source Serif 4',serif; padding:13px 20px; border-radius:999px; border:1px solid var(--borde-2); background:rgba(20,16,14,.75); color:var(--texto); }
+.blog-cab input:focus { outline:2px solid var(--rojo); outline-offset:2px; }
+.blog-grid { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:40px; align-items:start; padding-top:18px; padding-bottom:40px; }
+.entradas { display:flex; flex-direction:column; gap:22px; }
+.entrada { display:grid; grid-template-columns:280px minmax(0,1fr); gap:22px; align-items:center; text-decoration:none; color:var(--texto);
+  padding:14px; border-radius:var(--radio); border:1px solid var(--borde); background:linear-gradient(90deg, var(--tarjeta), rgba(20,16,14,.4));
+  transition:border-color .3s, transform .3s, box-shadow .3s; }
+.entrada:hover { border-color:var(--t-acento, var(--rojo)); transform:translateY(-3px); box-shadow:0 20px 50px -25px rgba(0,0,0,.95); color:var(--texto); }
+.entrada .foto { aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:var(--tarjeta-2); }
+.entrada img { width:100%; height:100%; object-fit:cover; display:block; filter:grayscale(.75) contrast(1.1) brightness(.7) sepia(.15); transition:filter .5s, transform 1s; }
+.entrada:hover img { filter:grayscale(.1) brightness(.9) sepia(.1); transform:scale(1.05); }
+.entrada .meta-blog { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--texto-3); display:flex; gap:10px; flex-wrap:wrap; }
+.entrada .meta-blog b { color:var(--t-acento, var(--rojo)); font-weight:600; }
+.entrada .gancho { display:block; margin-top:8px; font-family:'Playfair Display',serif; font-style:italic; color:var(--t-acento, var(--rojo)); font-size:17px; }
+.entrada h3 { font-size:clamp(21px,2.2vw,26px); line-height:1.15; margin:2px 0 8px; }
+.entrada p { color:var(--texto-2); font-size:16px; }
+.entrada .leer { display:inline-block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#fff; }
+.entrada .leer::after { content:" →"; transition:margin .3s; }
+.entrada:hover .leer::after { margin-left:6px; }
+.entrada.destacada { grid-template-columns:1fr; padding:0; overflow:hidden; background:var(--tarjeta); }
+.entrada.destacada .foto { border-radius:0; aspect-ratio:21/9; }
+.entrada.destacada .texto-entrada { padding:6px 24px 24px; }
+.entrada.destacada h3 { font-size:clamp(28px,3.6vw,42px); }
+.lado-blog { position:sticky; top:84px; display:flex; flex-direction:column; gap:14px; }
+.lado-blog .caja ul { list-style:none; display:flex; flex-direction:column; gap:2px; }
+.lado-blog .caja li a { display:flex; justify-content:space-between; gap:10px; padding:8px 10px; border-radius:8px; text-decoration:none; color:var(--texto); font-size:16px; }
+.lado-blog .caja li a:hover { background:rgba(255,255,255,.05); }
+.lado-blog .caja li small { font-family:'IBM Plex Mono',monospace; color:var(--t-acento, var(--texto-3)); font-size:12px; }
+.promo-lista { display:block; text-decoration:none; padding:20px; border-radius:var(--radio); color:#fff;
+  background:radial-gradient(circle at 100% 0%, rgba(210,70,60,.45), transparent 60%), var(--tarjeta); border:1px solid rgba(210,70,60,.45); }
+.promo-lista b { display:block; font-family:'Playfair Display',serif; font-size:44px; line-height:1; color:var(--rojo); }
+.promo-lista span { font-family:'Playfair Display',serif; font-size:21px; line-height:1.2; }
+.promo-lista em { display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--texto-2); }
+.lista-raras { list-style:none; counter-reset:n; display:flex; flex-direction:column; gap:14px; }
+.lista-raras li { counter-increment:n; }
+.lista-raras a { display:grid; grid-template-columns:60px 150px minmax(0,1fr); gap:16px; align-items:center; text-decoration:none; color:var(--texto);
+  padding:12px; border-radius:var(--radio); border:1px solid var(--borde); background:var(--tarjeta); transition:border-color .3s; }
+.lista-raras a:hover { border-color:var(--rojo); color:var(--texto); }
+.lista-raras a::before { content:counter(n); font-family:'Playfair Display',serif; font-weight:900; font-size:40px; color:var(--rojo); text-align:center; }
+.lista-raras img { width:150px; aspect-ratio:16/9; object-fit:cover; border-radius:8px; filter:grayscale(.7) brightness(.75); }
+.lista-raras h2 { font-size:20px; line-height:1.2; margin-bottom:4px; }
+.lista-raras p { font-size:15px; color:var(--texto-2); }
+.lista-lectores a { grid-template-columns:60px minmax(0,1fr); }
+.lista-lectores small { display:block; margin-top:6px; font-size:12px; color:var(--texto-3); }
+@media (max-width:980px) { .blog-grid { grid-template-columns:1fr; } .lado-blog { position:static; } }
+@media (max-width:640px) { .entrada { grid-template-columns:1fr; gap:12px; } .lista-raras a { grid-template-columns:42px minmax(0,1fr); } .lista-raras img { display:none; }
+  .lista-raras a::before { font-size:30px; } .blog-cab form { flex-direction:column; } }
+
 /* Misterio: con ratón, la página está en penumbra y una linterna alumbra donde miras (no en las historias, para leer bien) */
 .oscuridad { position:fixed; inset:0; z-index:48; pointer-events:none; opacity:0; transition:opacity 1.2s ease;
   background:radial-gradient(circle 300px at var(--cx,50%) var(--cy,40%), transparent 0, rgba(0,0,0,.18) 45%, rgba(0,0,0,.42) 100%); }
@@ -514,6 +572,7 @@ body:has(.hist) .oscuridad { display:none; }
     <a class="solo-ancho" href="../mapa.html">Mapa</a>
     <a class="solo-ancho" href="../acerca.html">Cómo verificamos</a>
     <a class="solo-ancho" href="../apoya.html">Apoyar</a>
+    <a class="solo-ancho" href="../cuenta-tu-historia.html">Cuenta tu historia</a>
     <a href="../buscar.html">Buscar</a>
     <a class="sorprendeme" href="../buscar.html">Al azar</a>
   </nav>
@@ -525,10 +584,10 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
 <div class="exposicion" aria-hidden="true"></div>
 <main class="hist">
 <div class="hist-cab"><div class="fondo-img" style="background-image:url(../portadas/S142.jpg)"></div><div class="ancho">
-<div class="miga mono"><a href="../folios.html">Folio 043</a> · <a href="../mitos/">Mitos desmontados</a> · 1844 - hoy</div>
+<div class="miga mono"><a href="../index.html">Blog</a> · <a href="../folios.html">Folio 043</a> · <a href="../mitos/">Mitos desmontados</a> · 1844 - hoy</div>
 <h1 aria-label="¿Por qué el Tenorio se representa en Todos los Santos?">¿Por qué el Tenorio se representa en <span class="tachado" tabindex="0" role="button" aria-pressed="false" title="Revelar">Todos los Santos?</span></h1>
 <p class="sub">Dicen que el Tenorio se hace en noviembre porque se estrenó entonces.</p>
-<div class="datos"><span><b>Lugar:</b> Madrid, España</span><span><b>Época:</b> 1844 - hoy</span><span><b>Publicado:</b> 29 de octubre de 2026</span><span><b>Formato:</b> Short</span></div>
+<div class="datos"><span><b>Publicado:</b> 29 de octubre de 2026</span><span><b>Lectura:</b> 3 min</span><span><b>Lugar:</b> Madrid, España</span><span><b>Época:</b> 1844 - hoy</span><span><b>Formato:</b> Short</span></div>
 </div></div>
 <div class="ancho">
 <div class="hist-grid">
@@ -555,7 +614,7 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
 </g></svg></div><div><h2>¿Abrimos el próximo folio?</h2><p>Cada folio lleva horas de archivo y fuentes. Folio 13 es gratis y sin muros de pago: si te ha gustado, puedes ayudarnos a seguir.</p></div><div class="botones" style="margin-top:0"><a class="boton" href="https://ko-fi.com/elarchivocurioso" rel="noopener" target="_blank">Invítanos a un café ☕</a><a class="boton secundario" href="../apoya.html">Otras formas de apoyar</a></div></section>
 <div class="bloque"><h2>¿Qué te ha parecido este folio?</h2><iframe class="formulario" data-tally-src="https://tally.so/embed/ArrjlN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&expediente=por-que-el-tenorio-se-representa-en-todos-los-santos" loading="lazy" width="100%" height="320" frameborder="0" title="Deja tu opinión"></iframe><script async src="https://tally.so/widgets/embed.js"></script><p class="nota" style="margin-top:8px">Las opiniones se revisan antes de publicarse. No pedimos correo ni cuenta.</p></div>
 <div class="suscribirse"><div><p class="grande">¿Te ha gustado?</p><p>Cada día, un folio nuevo en YouTube.</p></div><a class="boton" href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ?sub_confirmation=1" rel="noopener" target="_blank">▶ Suscribirme</a><p class="redes-mini">📲 También en <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> y <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a>: @elfolio13</p></div>
-<div class="sabes-demasiado"><p class="grande">Parecía inventado.</p><p class="peque">Pero está documentado. Y quedan más folios por abrir.</p><a class="boton" href="la-boda-roja-no-salio-de-una-boda.html">Abrir el próximo folio</a></div>
+<div class="sabes-demasiado"><p class="grande">Parecía falso.</p><p class="peque">Pero está documentado. ¿Te atreves con otra?</p><a class="boton" href="la-habitacion-de-los-backrooms-existio-de-verdad.html">Siguiente historia rarísima →</a><p class="peque" style="margin:14px 0 0">La habitación de los BACKROOMS existió de verdad</p></div>
 <div class="compartir"><p>¿Conoces a alguien que no se lo creería? Pásale este folio.</p><div><a href="https://wa.me/?text=%C2%BFPor%20qu%C3%A9%20el%20Tenorio%20se%20representa%20en%20Todos%20los%20Santos%3F%20%C2%B7%20Folio%2013%20https%3A//folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html" rel="noopener" target="_blank">WhatsApp</a><a href="https://t.me/share/url?url=https%3A//folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html&amp;text=%C2%BFPor%20qu%C3%A9%20el%20Tenorio%20se%20representa%20en%20Todos%20los%20Santos%3F%20%C2%B7%20Folio%2013" rel="noopener" target="_blank">Telegram</a><a href="https://twitter.com/intent/tweet?url=https%3A//folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html&amp;text=%C2%BFPor%20qu%C3%A9%20el%20Tenorio%20se%20representa%20en%20Todos%20los%20Santos%3F%20%C2%B7%20Folio%2013" rel="noopener" target="_blank">X</a><a href="https://www.meneame.net/submit?url=https%3A//folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html" rel="noopener" target="_blank">Menéame</a><a href="https://www.reddit.com/submit?url=https%3A//folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html&amp;title=%C2%BFPor%20qu%C3%A9%20el%20Tenorio%20se%20representa%20en%20Todos%20los%20Santos%3F" rel="noopener" target="_blank">Reddit</a><button class="copiar" data-url="https://folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html">Copiar enlace</button></div></div>
 <nav class="navegacion" aria-label="Otros folios"><a href="la-habitacion-de-los-backrooms-existio-de-verdad.html"><small>← Folio anterior</small>La habitación de los BACKROOMS existió de verdad</a><a class="sig" href="la-boda-roja-no-salio-de-una-boda.html"><small>Folio siguiente →</small>La Boda Roja no salió de una boda</a></nav>
 </div>
@@ -563,7 +622,7 @@ else if(n===0)t='Esta noche es Halloween. No leas solo.';else t='Noche de difunt
 </div>
 </div></main>
 
-<footer><span class="lema">Parece inventado. Está documentado.</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="../redes.html">Todas las redes</a></span>© 2026 Folio 13 · <a href="../index.html#tematicas">Temáticas</a> · <a href="../mapa.html">Mapa</a> · <a href="../temas/index.html">Etiquetas</a> · <a href="../historias-de-miedo-reales.html">Historias de miedo</a> · <a href="../opiniones.html">Opiniones</a> · <a href="../apoya.html">Apoya Folio 13</a> · <a href="../acerca.html">Cómo verificamos</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://folio13.com/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
+<footer><span class="lema">Parece inventado. Está documentado.</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="../redes.html">Todas las redes</a></span>© 2026 Folio 13 · <a href="../index.html#tematicas">Temáticas</a> · <a href="../mapa.html">Mapa</a> · <a href="../temas/index.html">Etiquetas</a> · <a href="../historias-de-miedo-reales.html">Historias de miedo</a> · <a href="../opiniones.html">Opiniones</a> · <a href="../cuenta-tu-historia.html">Cuenta tu historia</a> · <a href="../lectores/">Contadas por lectores</a> · <a href="../apoya.html">Apoya Folio 13</a> · <a href="../acerca.html">Cómo verificamos</a> · <a href="../privacidad.html">Política de privacidad</a> · <a href="https://www.youtube.com/channel/UCvZbC6P3sdaaEG9tmwSDcmQ">YouTube</a> · <a href="https://folio13.com/feed.xml">RSS</a><br><small>En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables.</small></footer>
 
 <script>
 (function () {

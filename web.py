@@ -550,6 +550,64 @@ footer .siguenos { display:block; margin-bottom:12px; font-family:'IBM Plex Mono
 footer .siguenos a { color:var(--texto); }
 footer .lema { display:block; margin-bottom:12px; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--texto); }
 
+/* Blog: cabecera, entradas y columna lateral */
+.blog-cab { position:relative; padding-top:64px; padding-bottom:44px; isolation:isolate; }
+.blog-cab.portada { min-height:auto; display:block; }
+.blog-cab .calabaza.izq { left:auto; right:16%; width:clamp(56px,6vw,90px); }
+.blog-cab .kicker { font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.22em; color:var(--rojo); text-transform:uppercase; }
+.blog-cab h1 { font-weight:900; font-size:clamp(44px,8vw,104px); line-height:.98; letter-spacing:-.03em; margin:14px 0 10px; max-width:12ch; text-shadow:0 4px 40px rgba(0,0,0,.8); }
+.blog-cab h1 em { font-style:italic; color:var(--rojo); text-shadow:var(--brillo); }
+.blog-cab .lema { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(20px,2.4vw,28px); color:var(--texto-2); }
+.blog-cab .intro { max-width:620px; color:var(--texto-2); font-size:18px; margin-top:14px; }
+.blog-cab form { display:flex; gap:8px; margin-top:24px; max-width:560px; }
+.blog-cab input { flex:1; font:500 17px 'Source Serif 4',serif; padding:13px 20px; border-radius:999px; border:1px solid var(--borde-2); background:rgba(20,16,14,.75); color:var(--texto); }
+.blog-cab input:focus { outline:2px solid var(--rojo); outline-offset:2px; }
+.blog-grid { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:40px; align-items:start; padding-top:18px; padding-bottom:40px; }
+.entradas { display:flex; flex-direction:column; gap:22px; }
+.entrada { display:grid; grid-template-columns:280px minmax(0,1fr); gap:22px; align-items:center; text-decoration:none; color:var(--texto);
+  padding:14px; border-radius:var(--radio); border:1px solid var(--borde); background:linear-gradient(90deg, var(--tarjeta), rgba(20,16,14,.4));
+  transition:border-color .3s, transform .3s, box-shadow .3s; }
+.entrada:hover { border-color:var(--t-acento, var(--rojo)); transform:translateY(-3px); box-shadow:0 20px 50px -25px rgba(0,0,0,.95); color:var(--texto); }
+.entrada .foto { aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:var(--tarjeta-2); }
+.entrada img { width:100%; height:100%; object-fit:cover; display:block; filter:grayscale(.75) contrast(1.1) brightness(.7) sepia(.15); transition:filter .5s, transform 1s; }
+.entrada:hover img { filter:grayscale(.1) brightness(.9) sepia(.1); transform:scale(1.05); }
+.entrada .meta-blog { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--texto-3); display:flex; gap:10px; flex-wrap:wrap; }
+.entrada .meta-blog b { color:var(--t-acento, var(--rojo)); font-weight:600; }
+.entrada .gancho { display:block; margin-top:8px; font-family:'Playfair Display',serif; font-style:italic; color:var(--t-acento, var(--rojo)); font-size:17px; }
+.entrada h3 { font-size:clamp(21px,2.2vw,26px); line-height:1.15; margin:2px 0 8px; }
+.entrada p { color:var(--texto-2); font-size:16px; }
+.entrada .leer { display:inline-block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#fff; }
+.entrada .leer::after { content:" →"; transition:margin .3s; }
+.entrada:hover .leer::after { margin-left:6px; }
+.entrada.destacada { grid-template-columns:1fr; padding:0; overflow:hidden; background:var(--tarjeta); }
+.entrada.destacada .foto { border-radius:0; aspect-ratio:21/9; }
+.entrada.destacada .texto-entrada { padding:6px 24px 24px; }
+.entrada.destacada h3 { font-size:clamp(28px,3.6vw,42px); }
+.lado-blog { position:sticky; top:84px; display:flex; flex-direction:column; gap:14px; }
+.lado-blog .caja ul { list-style:none; display:flex; flex-direction:column; gap:2px; }
+.lado-blog .caja li a { display:flex; justify-content:space-between; gap:10px; padding:8px 10px; border-radius:8px; text-decoration:none; color:var(--texto); font-size:16px; }
+.lado-blog .caja li a:hover { background:rgba(255,255,255,.05); }
+.lado-blog .caja li small { font-family:'IBM Plex Mono',monospace; color:var(--t-acento, var(--texto-3)); font-size:12px; }
+.promo-lista { display:block; text-decoration:none; padding:20px; border-radius:var(--radio); color:#fff;
+  background:radial-gradient(circle at 100% 0%, rgba(210,70,60,.45), transparent 60%), var(--tarjeta); border:1px solid rgba(210,70,60,.45); }
+.promo-lista b { display:block; font-family:'Playfair Display',serif; font-size:44px; line-height:1; color:var(--rojo); }
+.promo-lista span { font-family:'Playfair Display',serif; font-size:21px; line-height:1.2; }
+.promo-lista em { display:block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--texto-2); }
+.lista-raras { list-style:none; counter-reset:n; display:flex; flex-direction:column; gap:14px; }
+.lista-raras li { counter-increment:n; }
+.lista-raras a { display:grid; grid-template-columns:60px 150px minmax(0,1fr); gap:16px; align-items:center; text-decoration:none; color:var(--texto);
+  padding:12px; border-radius:var(--radio); border:1px solid var(--borde); background:var(--tarjeta); transition:border-color .3s; }
+.lista-raras a:hover { border-color:var(--rojo); color:var(--texto); }
+.lista-raras a::before { content:counter(n); font-family:'Playfair Display',serif; font-weight:900; font-size:40px; color:var(--rojo); text-align:center; }
+.lista-raras img { width:150px; aspect-ratio:16/9; object-fit:cover; border-radius:8px; filter:grayscale(.7) brightness(.75); }
+.lista-raras h2 { font-size:20px; line-height:1.2; margin-bottom:4px; }
+.lista-raras p { font-size:15px; color:var(--texto-2); }
+.lista-lectores a { grid-template-columns:60px minmax(0,1fr); }
+.lista-lectores small { display:block; margin-top:6px; font-size:12px; color:var(--texto-3); }
+@media (max-width:980px) { .blog-grid { grid-template-columns:1fr; } .lado-blog { position:static; } }
+@media (max-width:640px) { .entrada { grid-template-columns:1fr; gap:12px; } .lista-raras a { grid-template-columns:42px minmax(0,1fr); } .lista-raras img { display:none; }
+  .lista-raras a::before { font-size:30px; } .blog-cab form { flex-direction:column; } }
+
 /* Misterio: con ratón, la página está en penumbra y una linterna alumbra donde miras (no en las historias, para leer bien) */
 .oscuridad { position:fixed; inset:0; z-index:48; pointer-events:none; opacity:0; transition:opacity 1.2s ease;
   background:radial-gradient(circle 300px at var(--cx,50%) var(--cy,40%), transparent 0, rgba(0,0,0,.18) 45%, rgba(0,0,0,.42) 100%); }
@@ -1063,6 +1121,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
     <a class="solo-ancho" href="{raiz}mapa.html">Mapa</a>
     <a class="solo-ancho" href="{raiz}acerca.html">Cómo verificamos</a>
     <a class="solo-ancho" href="{raiz}apoya.html">Apoyar</a>
+    {f'<a class="solo-ancho" href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a>' if canal.get("historias_form") else ""}
     <a href="{raiz}buscar.html">Buscar</a>
     <a class="sorprendeme" href="{raiz}buscar.html">Al azar</a>
   </nav>
@@ -1070,7 +1129,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cinta_halloween(raiz) if halloween else ""}
 {cuerpo}
 {suscripcion(canal)}
-<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{extra}
 </body>
 </html>
@@ -1673,75 +1732,93 @@ def buscar(canal: dict) -> str:
                   descripcion="Busca entre todos los folios de Folio 13.", extra=BUSCAR_JS)
 
 
+PAGINA_RARAS = "historias-reales-que-parecen-falsas.html"
+
+
+def primera_frase(texto: str) -> str:
+    m = re.match(r"(.+?[.!?…])(\s|$)", texto or "")
+    return (m.group(1) if m else texto or "").strip()
+
+
+def entrada(e: dict, destacada: bool = False, raiz: str = "") -> str:
+    """Una historia como entrada de blog: foto, fecha · sección · lectura, «Parece falso, pero…», titular, primera frase."""
+    img = e["_img"] if e["_img"].startswith("http") else raiz + e["_img"]
+    t = tematica(e)
+    meta = [f"<span>{fecha_larga(e['fecha'])}</span>"]
+    if t["nombre"]:
+        meta.append(f"<b>{escape(t['nombre'])}</b>")
+    meta.append(f"<span>{minutos_lectura(e)} min de lectura</span>")
+    clase = f" t-{e['tematica']}" if e["tematica"] else ""
+    carga = "eager" if destacada else "lazy"
+    return (f'<a class="entrada{" destacada" if destacada else ""}{clase}" data-folio="{e["_n"]}" href="{raiz}expedientes/{e["_slug"]}.html">'
+            f'<div class="foto"><img src="{escape(img)}" alt="{escape(titulo_corto(e))}" loading="{carga}" decoding="async"></div>'
+            f'<div class="texto-entrada"><div class="meta-blog">{"".join(meta)}</div><span class="gancho">Parece falso, pero…</span>'
+            f'<h3>{escape(titulo_corto(e))}</h3><p>{escape(primera_frase(e.get("resumen", "")))}</p><span class="leer">Leer</span></div></a>')
+
+
+def lado_blog(expedientes: list[dict], canal: dict) -> str:
+    secciones = ""
+    for k, t in TEMATICAS.items():
+        n = sum(e["tematica"] == k for e in expedientes)
+        if n:
+            secciones += f'<li class="t-{k}"><a href="{k}/">{escape(t["nombre"])}<small>{n}</small></a></li>'
+    halloween = ('<a class="promo-lista" href="historias-de-miedo-reales.html" style="border-color:rgba(224,120,47,.5)">'
+                 '<span>Top 10 de Halloween: historias de miedo reales</span><em>Cuenta atrás →</em></a>') if es_halloween() else ""
+    return (f'<aside class="lado-blog">'
+            f'<a class="promo-lista" href="{PAGINA_RARAS}"><b>{len(expedientes)}</b><span>historias reales que parecen falsas</span>'
+            f'<em>La lista completa, para compartir →</em></a>{halloween}'
+            f'<div class="caja"><h2>Secciones del blog</h2><ul>{secciones}</ul></div>'
+            f'<div class="caja"><h2>Síguenos</h2><ul>'
+            f'<li><a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram <small>@elfolio13</small></a></li>'
+            f'<li><a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok <small>@elfolio13</small></a></li>'
+            f'<li><a href="{escape(canal["youtube"])}" rel="noopener">YouTube <small>Folio 13</small></a></li>'
+            f'<li><a href="feed.xml">RSS del blog <small>feed</small></a></li></ul></div>'
+            + (f'<div class="caja"><h2>¿Tienes una historia?</h2><p class="nota">¿Te pasó algo que nadie se cree? Cuéntanosla: '
+               f'si se puede documentar, la investigamos y la convertimos en un folio.</p>'
+               f'<p style="margin-top:12px"><a class="boton" href="{PAGINA_CUENTA}">Cuenta tu historia</a></p>'
+               f'<p class="nota" style="margin-top:10px"><a href="{LECTORES}/">Contadas por lectores →</a></p></div>'
+               if canal.get("historias_form") else "")
+            + f'<div class="caja"><h2>Cómo trabajamos</h2><p class="nota">Cada historia lleva sus fuentes enlazadas y el semáforo de '
+            f'la verdad: documentado, discutido o leyenda. <a href="acerca.html">Cómo verificamos →</a></p></div></aside>')
+
+
 def inicio(canal: dict, expedientes: list[dict]) -> str:
+    """Portada en forma de blog: «Historias que parecen falsas», las últimas entradas y las secciones (temáticas)."""
     temas = temas_de(expedientes)
-    # Solo las frases cuyo folio ya está publicado; la primera va en el HTML y el navegador elige otra al azar
-    por_num = {e["num"]: e for e in expedientes if e.get("num")}
-    frases = [dict(p, u=f'expedientes/{por_num[p["num"]]["_slug"]}.html', img=por_num[p["num"]]["_img"])
-              for p in (canal.get("portadas") or PORTADAS) if p.get("num") in por_num]
-    if not frases:
-        frases = [{"antes": "Hay cosas que ", "tachado": "parecen inventadas", "despues": ".", "u": "buscar.html"}]
-    p = frases[0]
-    frase = (f'<a href="{p["u"]}">{escape(p["antes"])}<span class="tachado">{escape(p["tachado"])}</span>'
-             f'{escape(p["despues"])}</a>')
-    abrir = (f'<a class="boton" href="expedientes/{expedientes[0]["_slug"]}.html">Abrir el último folio</a>'
-             if expedientes else "")
-    datos_frases = json.dumps(frases, ensure_ascii=False).replace("</", "<\\/")
-    # Portada por filas, como una plataforma: lo último, y luego una fila por temática (cada una lleva a su página)
-    ultimos = expedientes[:10]
-    fila_ultimos = ('<div class="fila">' + "".join(ficha(e) for e in ultimos)
-                    + f'<a class="fila-mas" href="folios.html">Ver los {len(expedientes)} folios →</a></div>') if expedientes else ""
+    foto = escape(imagen_de(expedientes))
+    ultimas = expedientes[:12]
+    entradas = (entrada(ultimas[0], destacada=True) + "".join(entrada(e) for e in ultimas[1:])) if ultimas else ""
     filas_tema = ""
     for n, clave in enumerate(TEMATICAS, 1):
         propios = [e for e in expedientes if e["tematica"] == clave]
         if not propios:
             continue
         t = TEMATICAS[clave]
-        filas_tema += (f'<section class="fila-tema t-{clave}"><div class="seccion-cab"><div><span class="kicker">Temática {n:02d}</span>'
-                       f'<h2>{escape(t["nombre"])}</h2></div><a class="ver-todo" href="{clave}/">Ver los {len(propios)} →</a></div>'
-                       '<div class="fila">' + "".join(ficha(e, con_tema=False) for e in propios[:10])
-                       + (f'<a class="fila-mas" href="{clave}/">Ver todos →</a>' if len(propios) > 10 else "")
-                       + "</div></section>")
-    tarjetas = "".join(tarjeta_tematica(k, i, [e for e in expedientes if e["tematica"] == k])
-                       for i, k in enumerate(TEMATICAS, 1))
+        filas_tema += (f'<section class="fila-tema t-{clave}"><div class="seccion-cab"><div><span class="kicker">Sección {n:02d}</span>'
+                       f'<h2>{escape(t["nombre"])}</h2></div><a class="ver-todo" href="{clave}/">Ver las {len(propios)} →</a></div>'
+                       '<div class="fila">' + "".join(ficha(e, con_tema=False) for e in propios[:10]) + "</div></section>")
     top = bloque_top(expedientes, enlace=True) if es_halloween() else ""
-    foto = escape(p.get("img") or imagen_de(expedientes))
     cuerpo = f"""<main class="ancho">
-<section class="portada">
+<section class="blog-cab portada">
   <div class="escena" aria-hidden="true"><div class="foto" style="background-image:url({foto})"></div><div class="foto-luz" style="background-image:url({foto})"></div><div class="ojos uno"><i></i><i></i></div><div class="ojos dos"><i></i><i></i></div></div>
   {deco_portada() if es_halloween() else ""}
-  <div class="portada-grid">
-  <div>
-    <h1 class="etiqueta-caso">{MARCA} · Historias reales con fuentes</h1>
-    <p id="frase" class="frase-grande" aria-label="{escape(p['antes'] + p['tachado'] + p['despues'])}">{frase}</p>
-    <p class="desc">Historias reales que parecen inventadas: crímenes, leyendas, cine maldito y misterios. Cada dato lleva su fuente para que lo compruebes tú.</p>
-    <p class="pista">Pasa la linterna por la foto. Toca lo tachado para leerlo.</p>
-    <div class="botones" id="abrir">{abrir}<a class="boton secundario sorprendeme" href="buscar.html">Una historia al azar</a></div>
-  </div>
-  <div class="lateral-portada">
-    <div class="logo sello-grande">{sello_svg("-portada")}</div>
-    <div class="contador">
-      <div><b>{len(expedientes)}</b><span>FOLIOS</span></div>
-      <div><b>{fuentes_de(expedientes)}</b><span>FUENTES</span></div>
-      <div><b>{len(TEMATICAS)}</b><span>TEMÁTICAS</span></div>
-    </div>
-    <p class="leidos" data-leidos>{len(expedientes)} historias reales, todas con sus fuentes.</p>
-  </div>
-  </div>
-  <a class="bajar mono" href="#tematicas">Abre el archivo</a>
-  <script type="application/json" id="frases">{datos_frases}</script>
+  <span class="kicker">El blog de Folio 13</span>
+  <h1>Historias que parecen <em>falsas</em></h1>
+  <p class="lema">{escape(canal['lema'])}</p>
+  <p class="intro">Historias rarísimas de la historia: cosas que parecen mentira pero son verdad. Casos reales increíbles, contados con sus fuentes para que puedas comprobarlos.</p>
+  <form action="buscar.html" role="search"><input name="q" type="search" placeholder="Busca un caso, un lugar o un año…" aria-label="Buscar historias"><button class="boton" type="submit">Buscar</button></form>
 </section>
-<section class="seccion" style="padding-top:12px; padding-bottom:20px">
-  <div class="seccion-cab"><div><span class="kicker">Recién abiertos</span><h2>Lo último del archivo</h2></div><a class="ver-todo" href="folios.html">Ver todos →</a></div>
-  {fila_ultimos}
-</section>
-<section id="tematicas" class="seccion" style="padding-top:20px">
-  <div class="seccion-cab"><div><span class="kicker">7 temáticas</span><h2>Elige por dónde empezar</h2></div><span class="cuenta"><a href="mapa.html">Ver todos en el mapa →</a></span></div>
-  <div class="rejilla-temas">{tarjetas}</div>
-</section>
+<div class="blog-grid">
+  <section aria-labelledby="ultimas">
+    <div class="seccion-cab"><div><span class="kicker">Recién publicadas</span><h2 id="ultimas">Últimas historias reales que parecen falsas</h2></div></div>
+    <div class="entradas">{entradas}</div>
+    <div class="botones"><a class="boton" href="folios.html">Ver las {len(expedientes)} historias</a><a class="boton secundario sorprendeme" href="buscar.html">Una historia al azar</a></div>
+  </section>
+  {lado_blog(expedientes, canal)}
+</div>
 {f'<section class="seccion bloque-top">{top}</section>' if top else ""}
-<section id="folios" class="seccion" style="padding-top:20px">
-  <div class="seccion-cab"><div><span class="kicker">Por temática</span><h2>Abre un archivo</h2></div><a class="ver-todo" href="folios.html">Todos los folios →</a></div>
+<section class="seccion" style="padding-top:20px">
+  <div class="seccion-cab"><div><span class="kicker">Secciones del blog</span><h2>Historias rarísimas de la historia, por tema</h2></div><a class="ver-todo" href="{PAGINA_RARAS}">La lista completa →</a></div>
   {filas_tema}
 </section>
 <section class="seccion" style="padding-top:0">
@@ -1753,6 +1830,10 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
         {"@context": "https://schema.org", "@type": "WebSite", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/",
          "inLanguage": "es", "description": canal["descripcion"],
          "potentialAction": {"@type": "SearchAction", "target": f"{URL}/buscar.html?q={{q}}", "query-input": "required name=q"}},
+        {"@context": "https://schema.org", "@type": "Blog", "name": f"{MARCA}: historias que parecen falsas", "url": f"{URL}/",
+         "inLanguage": "es", "publisher": {"@type": "Organization", "name": MARCA, "logo": f"{URL}/logo.png"},
+         "blogPost": [{"@type": "BlogPosting", "headline": titulo_corto(e)[:110], "url": f"{URL}/expedientes/{e['_slug']}.html",
+                       "datePublished": fecha_iso(e["fecha"])} for e in ultimas]},
         {"@context": "https://schema.org", "@type": "Organization", "name": MARCA, "alternateName": ANTES, "url": f"{URL}/",
          "slogan": canal["lema"], "description": canal["descripcion"], "logo": f"{URL}/logo.png",
          # De qué sabe la web: ayuda a buscadores y asistentes de IA a saber cuándo recomendarla
@@ -1760,9 +1841,115 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
                         "películas perdidas", "mitos de la historia", "robos famosos", "desastres históricos"],
          "sameAs": [canal["youtube"]] + [u for _, u in REDES_SOCIALES]},
     ]
-    return pagina(f"{MARCA} · Historias reales que parecen inventadas, con fuentes", cuerpo, canal,
-                  descripcion=canal["descripcion"],
-                  extra=FRASE_JS, jsonld=jsonld)
+    return pagina(f"Historias reales que parecen falsas | {MARCA}", cuerpo, canal,
+                  descripcion="Historias rarísimas de la historia que parecen mentira pero son verdad: casos reales increíbles, "
+                              "crímenes, leyendas y misterios, contados con sus fuentes.",
+                  jsonld=jsonld)
+
+
+def pagina_raras(listados: list[dict], canal: dict) -> str:
+    """La página para compartir: todas las historias reales que parecen falsas, numeradas, con su primera frase."""
+    n = len(listados)
+    items = "".join(f'<li><a href="expedientes/{e["_slug"]}.html"><img src="{escape(e["_img"])}" alt="{escape(titulo_corto(e))}" '
+                    f'loading="lazy" decoding="async"><div><h2>{escape(titulo_corto(e))}</h2>'
+                    f'<p>{escape(primera_frase(e.get("resumen", "")))}</p></div></a></li>' for e in listados)
+    descripcion = (f"{n} historias reales que parecen falsas: cosas que parecen mentira pero son verdad, casos reales "
+                   "increíbles y las historias más raras de la historia, con sus fuentes.")
+    cuerpo = f"""<main class="ancho seccion lectura" style="max-width:900px">
+<span class="mono" style="font-size:12px; color:var(--rojo)">La lista de Folio 13</span>
+<h1 style="font-size:clamp(36px,6vw,64px); line-height:1.02; margin:12px 0 14px">{n} historias reales que parecen falsas</h1>
+<p class="nota" style="font-size:19px; margin-bottom:10px">Cosas que parecen mentira pero son verdad: una ola de melaza que mató a 21 personas, un hombre que «vendió» la Torre Eiffel, un juicio a un hombre lobo en Galicia… Son algunas de las historias más raras de la historia, y todas están documentadas. Cada una enlaza a su folio, con las fuentes para comprobarla.</p>
+{compartir({"titulo": f"{n} historias reales que parecen falsas"}, PAGINA_RARAS)}
+<ol class="lista-raras" style="margin-top:28px">{items}</ol>
+</main>"""
+    jsonld = {"@context": "https://schema.org", "@type": "ItemList", "name": f"{n} historias reales que parecen falsas",
+              "numberOfItems": n, "itemListElement": [{"@type": "ListItem", "position": i, "name": titulo_corto(e),
+                                                       "url": f"{URL}/expedientes/{e['_slug']}.html"} for i, e in enumerate(listados, 1)]}
+    return pagina(f"{n} historias reales que parecen falsas (y están documentadas) · {MARCA}", cuerpo, canal, ruta=PAGINA_RARAS,
+                  descripcion=descripcion, jsonld=jsonld, extra=COPIAR_JS)
+
+# Historias de lectores. La gente las manda con el formulario de Tally de "historias_form" (en "canal"); llegan privadas
+# a la cuenta de Tally y SOLO se publican las que aprueba la usuaria, copiadas a datos/historias_lectores.json:
+#   {"slug": "...", "titulo": "...", "texto": ["párrafo", ...], "nombre": "Lucía, de Sevilla", "lugar": "...",
+#    "fecha": "AAAA-MM-DD"}
+# Salen aparte, en lectores/, marcadas como no verificadas. Las que se pueden documentar se convierten en un folio normal
+# de expedientes.json con "enviada_por": "Lucía, de Sevilla".
+LECTORES = "lectores"
+PAGINA_CUENTA = "cuenta-tu-historia.html"
+
+
+def formulario_historia(canal: dict) -> str:
+    form = canal.get("historias_form")
+    if not form:
+        return ""
+    return (f'<iframe class="formulario" data-tally-src="https://tally.so/embed/{escape(form)}?alignLeft=1&hideTitle=1'
+            f'&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="900" frameborder="0" '
+            f'title="Cuenta tu historia"></iframe>'
+            '<script async src="https://tally.so/widgets/embed.js"></script>')
+
+
+def pagina_cuenta(canal: dict, historias: list[dict]) -> str:
+    lectores = (f' en <a href="{LECTORES}/">Contadas por lectores</a>' if historias else " en la sección «Contadas por lectores»")
+    cuerpo = f"""<main class="ancho legal">
+<a class="volver" href="index.html">← Inicio</a>
+<h1>Cuenta tu historia</h1>
+<div class="fecha">¿Te pasó algo que nadie se cree? ¿En tu pueblo se cuenta una leyenda que nadie ha escrito?</div>
+<p>Mándanosla. Folio 13 cuenta historias reales que parecen inventadas, y muchas de las mejores no salen en ningún libro: las saben los abuelos, los vecinos o quien estaba allí.</p>
+<h2>Qué pasa después</h2>
+<ul>
+  <li><b>La leemos todas</b>, una a una, antes de publicar nada.</li>
+  <li><b>Si se puede documentar, la investigamos.</b> Buscamos hemeroteca, archivos y fuentes, y la convertimos en un folio con su artículo y sus fuentes. Saldrás como la persona que nos la contó.</li>
+  <li><b>Si no se puede comprobar, puede salir tal cual</b>{lectores}, con tu nombre o alias y marcada como historia no verificada.</li>
+  <li><b>No publicamos</b> datos personales, acusaciones contra personas reales con nombre y apellidos ni nada morboso. Si hace falta, la acortamos o la adaptamos.</li>
+</ul>
+<h2>Envíanosla</h2>
+{formulario_historia(canal) or '<p class="nota">Muy pronto podrás enviarnos tu historia desde aquí.</p>'}
+<p class="nota" style="margin-top:8px">El correo es opcional y nunca se publica. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p>
+</main>"""
+    return pagina(f"Cuenta tu historia · {MARCA}", cuerpo, canal, ruta=PAGINA_CUENTA,
+                  descripcion="¿Conoces una historia real que parece inventada? Cuéntasela a Folio 13: si se puede "
+                              "documentar, la investigamos y la convertimos en un folio con sus fuentes.")
+
+
+def pagina_lectores(canal: dict, historias: list[dict]) -> str:
+    items = "".join(f'<li><a href="{h["slug"]}.html"><div><h2>{escape(h["titulo"])}</h2>'
+                    f'<p>{escape(primera_frase(h["texto"][0]) if h.get("texto") else "")}</p>'
+                    f'<small class="mono">{escape(h.get("nombre") or "Un lector")} · {fecha_larga(h["fecha"])}</small></div></a></li>'
+                    for h in historias)
+    lista = (f'<ol class="lista-raras lista-lectores" style="margin-top:28px">{items}</ol>' if items
+             else '<p class="nota" style="margin-top:20px">Todavía no hay ninguna publicada. ¿Quieres que la primera sea la tuya?</p>')
+    cuerpo = f"""<main class="ancho seccion lectura" style="max-width:900px">
+<span class="mono" style="font-size:12px; color:var(--rojo)">Sin verificar</span>
+<h1 style="font-size:clamp(34px,6vw,58px); line-height:1.04; margin:12px 0 14px">Contadas por lectores</h1>
+<p class="nota" style="font-size:19px">Historias que nos han mandado quienes leen Folio 13. Las publicamos como nos llegaron: no las hemos podido comprobar, así que no son folios documentados. Las que sí se pueden documentar las investigamos y se convierten en folios con sus fuentes.</p>
+{lista}
+<div class="botones" style="margin-top:28px"><a class="boton" href="../{PAGINA_CUENTA}">Cuenta tu historia</a></div>
+</main>"""
+    return pagina(f"Contadas por lectores · {MARCA}", cuerpo, canal, raiz="../", ruta=f"{LECTORES}/",
+                  descripcion="Historias que nos mandan los lectores de Folio 13, publicadas tal como nos llegaron y "
+                              "marcadas como no verificadas.")
+
+
+def pagina_lector(h: dict, canal: dict) -> str:
+    nombre = h.get("nombre") or "Un lector"
+    datos = "".join(f"<span><b>{k}:</b> {escape(v)}</span>" for k, v in (
+        ("Nos la contó", nombre), ("Lugar", h.get("lugar", "")), ("Publicada", fecha_larga(h["fecha"]))) if v)
+    parrafos = "".join(f"<p>{escape(x)}</p>" for x in h.get("texto", []))
+    cuerpo = f"""<main class="ancho seccion lectura" style="max-width:780px">
+<div class="miga mono"><a href="../index.html">Blog</a> · <a href="./">Contadas por lectores</a></div>
+<h1 style="font-size:clamp(32px,5.5vw,52px); line-height:1.05; margin:14px 0 12px">{escape(h["titulo"])}</h1>
+<div class="datos">{datos}</div>
+<div class="relacionado" style="margin:22px 0"><p><b>Historia de un lector, sin verificar.</b> Nos la mandó {escape(nombre)} y la publicamos tal como nos llegó. Folio 13 no ha podido comprobarla: no es un folio documentado.</p></div>
+<div class="articulo">{parrafos}</div>
+<div class="bloque"><h2>¿Tú también tienes una?</h2><p>Si conoces una historia real que parece inventada, cuéntanosla. Las que se pueden documentar las investigamos y se convierten en folios.</p><a class="boton" href="../{PAGINA_CUENTA}">Cuenta tu historia</a></div>
+</main>"""
+    jsonld = {"@context": "https://schema.org", "@type": "Article", "headline": h["titulo"][:110],
+              "url": f"{URL}/{LECTORES}/{h['slug']}.html", "inLanguage": "es", "datePublished": h["fecha"][:10],
+              "author": {"@type": "Person", "name": nombre},
+              "publisher": {"@type": "Organization", "name": MARCA, "logo": f"{URL}/logo.png"}}
+    texto = " ".join(h.get("texto", []))
+    return pagina(f"{h['titulo']} · Contada por lectores · {MARCA}", cuerpo, canal, raiz="../",
+                  ruta=f"{LECTORES}/{h['slug']}.html", descripcion=texto, tipo_og="article", jsonld=jsonld)
 
 
 NOTA_FUENTE = re.compile(r"\[(\d{1,2})\]")
@@ -1804,7 +1991,9 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     t = tematica(e)
     fuentes = e.get("fuentes", [])
     datos = "".join(f"<span><b>{k}:</b> {escape(v)}</span>" for k, v in (
-        ("Lugar", e.get("lugar", "")), ("Época", e.get("epoca", "")), ("Publicado", fecha_larga(e["fecha"])),
+        ("Publicado", fecha_larga(e["fecha"])), ("Lectura", f"{minutos_lectura(e)} min"),
+        ("Nos la contó", e.get("enviada_por", "")),
+        ("Lugar", e.get("lugar", "")), ("Época", e.get("epoca", "")),
         ("Formato", "Short" if tipo == "short" else "Vídeo")) if v)
     # Lo que vas a aprender
     puntos = lo_que_aprenderas(e)
@@ -1897,11 +2086,12 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                          f'<a href="{s["_slug"]}.html">{escape(s["titulo"])}</a>: lo que cuenta este Short, con más detalle</p></div>')
     final = ""
     if siguiente or anterior:
-        otro = siguiente or anterior
-        final = (f'<div class="sabes-demasiado"><p class="grande">Parecía inventado.</p>'
-                 f'<p class="peque">Pero está documentado. Y quedan más folios por abrir.</p>'
-                 f'<a class="boton" href="{otro["_slug"]}.html">Abrir el próximo folio</a></div>')
-    miga = (f'<div class="miga mono"><a href="../folios.html">{escape(num_ficha(e).split(" · ")[0])}</a>'
+        otro = anterior or siguiente
+        final = (f'<div class="sabes-demasiado"><p class="grande">Parecía falso.</p>'
+                 f'<p class="peque">Pero está documentado. ¿Te atreves con otra?</p>'
+                 f'<a class="boton" href="{otro["_slug"]}.html">Siguiente historia rarísima →</a>'
+                 f'<p class="peque" style="margin:14px 0 0">{escape(titulo_corto(otro))}</p></div>')
+    miga = (f'<div class="miga mono"><a href="../index.html">Blog</a> · <a href="../folios.html">{escape(num_ficha(e).split(" · ")[0])}</a>'
             + (f' · <a href="../{e["tematica"]}/">{escape(t["nombre"])}</a>' if e["tematica"] else "")
             + (f' · {escape(e["epoca"])}' if e.get("epoca") else "")
             + (f' · Top 10 de Halloween, nº {puesto_top(e)}' if puesto_top(e) else "") + "</div>")
@@ -2033,6 +2223,7 @@ def privacidad(canal: dict) -> str:
 <p><b>Publicidad.</b> Esta web muestra anuncios de Google AdSense. Google y sus socios pueden usar cookies para mostrar anuncios según tus visitas a esta y otras webs. En la Unión Europea, te pedimos tu consentimiento antes, con el aviso de privacidad de Google. Puedes desactivar la publicidad personalizada en <a href="https://adssettings.google.com">la configuración de anuncios de Google</a>, y ver cómo usa Google los datos en <a href="https://policies.google.com/technologies/partner-sites">esta página</a>.</p>
 <p><b>Tu archivo.</b> La web recuerda en tu propio navegador (localStorage) qué folios has abierto, para el contador «Has leído X de N». No se envía a ningún sitio.</p>
 <p><b>Opiniones.</b> El formulario de opiniones es de Tally. Solo se publican las opiniones aprobadas, sin correo.</p>
+<p><b>Historias de lectores.</b> El formulario de <a href="cuenta-tu-historia.html">Cuenta tu historia</a> también es de Tally. Guardamos lo que nos envías para leerlo y, si lo apruebas al enviarlo, publicar la historia o un folio basado en ella con el nombre o alias que hayas puesto. El correo es opcional, solo lo usamos para preguntarte algo sobre tu historia y nunca se publica. Si quieres que borremos tu historia o tus datos, pídelo en los mensajes privados de nuestras redes.</p>
 <h2>5. Servicios de Google</h2>
 <p>La herramienta usa los Servicios de la API de YouTube. Al ver el canal también se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
 <p>El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</p>
@@ -2190,6 +2381,7 @@ def generar() -> int:
     (SALIDA / "folios.html").write_text(pagina_folios(listados, canal), encoding="utf-8")
     (SALIDA / "404.html").write_text(pagina_404(listados, canal), encoding="utf-8")
     (SALIDA / "redes.html").write_text(pagina_redes(canal), encoding="utf-8")
+    (SALIDA / PAGINA_RARAS).write_text(pagina_raras(listados, canal), encoding="utf-8")
 
     # Enlace de cada vídeo de YouTube a su página (para ponerlo en las descripciones de YouTube).
     # La sincronización de albuuss depende de este formato: {ID: {num, titulo, url}}
@@ -2211,6 +2403,15 @@ def generar() -> int:
     (SALIDA / "index.html").write_text(inicio(canal, listados), encoding="utf-8")
     (SALIDA / "buscar.html").write_text(buscar(canal), encoding="utf-8")
     (SALIDA / "opiniones.html").write_text(pagina_opiniones(canal, opiniones), encoding="utf-8")
+    ruta_lectores = WEB / "datos" / "historias_lectores.json"
+    historias = json.loads(ruta_lectores.read_text(encoding="utf-8-sig")) if ruta_lectores.exists() else []
+    historias.sort(key=lambda h: h["fecha"], reverse=True)
+    dir_lectores = SALIDA / LECTORES
+    dir_lectores.mkdir(exist_ok=True)
+    for h in historias:
+        (dir_lectores / f"{h['slug']}.html").write_text(pagina_lector(h, canal), encoding="utf-8")
+    (dir_lectores / "index.html").write_text(pagina_lectores(canal, historias), encoding="utf-8")
+    (SALIDA / PAGINA_CUENTA).write_text(pagina_cuenta(canal, historias), encoding="utf-8")
     (SALIDA / "apoya.html").write_text(pagina_apoya(canal, listados), encoding="utf-8")
     de_miedo = [e for e in listados if es_de_miedo(e)]
     (SALIDA / "historias-de-miedo-reales.html").write_text(pagina_miedo(de_miedo, canal), encoding="utf-8")
@@ -2245,11 +2446,13 @@ def generar() -> int:
         f"<link>{URL}/expedientes/{e['_slug']}.html</link>"
         f"<guid>{URL}/expedientes/{e['_slug']}.html</guid>"
         f"<pubDate>{format_datetime(datetime.fromisoformat(e['fecha']).astimezone())}</pubDate>"
+        + (f"<category>{escape_xml(tematica(e)['nombre'])}</category>" if e["tematica"] else "")
+        + f"<enclosure url=\"{escape_xml(url_absoluta(e['_img']))}\" length=\"0\" type=\"image/{'png' if e['_img'].endswith('.png') else 'jpeg'}\"/>"
         f"<description>{escape_xml(e.get('resumen', ''))}</description></item>"
         for e in visibles)
     (SALIDA / "feed.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
-        f"<title>{escape_xml(canal['nombre'])}</title><link>{URL}/</link>"
+        f"<title>{escape_xml(MARCA)} · Historias reales que parecen falsas</title><link>{URL}/</link>"
         f"<description>{escape_xml(canal['descripcion'])}</description><language>es</language>"
         f"{items}</channel></rss>\n", encoding="utf-8")
 
@@ -2261,6 +2464,7 @@ def generar() -> int:
                  for k in TEMATICAS]
     entradas.append((f"{URL}/mapa.html", hoy))
     entradas.append((f"{URL}/redes.html", hoy))
+    entradas.append((f"{URL}/{PAGINA_RARAS}", visibles[0]["fecha"][:10] if visibles else hoy))
     entradas.append((f"{URL}/folios.html", visibles[0]["fecha"][:10] if visibles else hoy))
     entradas += [(f"{URL}/temas/{slug(t)}.html", max(e["fecha"][:10] for e in es)) for t, es in temas.items()]
     entradas.append((f"{URL}/temas/index.html", hoy))
@@ -2268,6 +2472,11 @@ def generar() -> int:
     entradas.append((f"{URL}/historias-de-miedo-reales.html", hoy))
     if canal.get("opiniones_form"):   # la página de opiniones no se anuncia hasta que exista el formulario
         entradas.append((f"{URL}/opiniones.html", hoy))
+    if canal.get("historias_form"):
+        entradas.append((f"{URL}/{PAGINA_CUENTA}", hoy))
+    if historias:   # la sección no se anuncia mientras esté vacía
+        entradas.append((f"{URL}/{LECTORES}/", historias[0]["fecha"][:10]))
+        entradas += [(f"{URL}/{LECTORES}/{h['slug']}.html", h["fecha"][:10]) for h in historias]
     entradas.append((f"{URL}/acerca.html", hoy))
     entradas.append((f"{URL}/privacidad.html", hoy))
     (SALIDA / "sitemap.xml").write_text(
