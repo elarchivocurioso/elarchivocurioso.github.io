@@ -8764,7 +8764,44 @@
         "Piedra filosofal"
       ],
       "fecha": "2026-10-29T16:30",
-      "num": "S144"
+      "num": "S144",
+      "articulo": [
+        {
+          "titulo": "Un escribano de París, no un mago",
+          "parrafos": [
+            "Nicolas Flamel existió de verdad, pero no como lo pintan las novelas. Nació hacia 1340 y trabajó en París como escribano público, copista y librero jurado. Empezó en una pequeña tienda pegada a la iglesia de Saint-Jacques-la-Boucherie, en la rue des Écrivains, y después compró una casa justo enfrente.",
+            "Hacia 1370 se casó con Pernelle, que ya había enviudado dos veces. No tuvieron hijos y en 1372 se dejaron mutuamente sus bienes. Su fortuna, según los documentos que se conservan, salió del oficio de copista y librero, de esa herencia y de la compra y alquiler de casas en París y sus alrededores."
+          ]
+        },
+        {
+          "titulo": "Obras piadosas y una lápida hecha en vida",
+          "parrafos": [
+            "Con ese dinero, el matrimonio pagó arcos en el cementerio de los Inocentes, un portal en Saint-Jacques-la-Boucherie y casas para pobres. Una de ellas sigue en pie: la casa del número 51 de la rue de Montmorency, que hoy es un restaurante, aunque nada indica que Flamel viviera allí.",
+            "Flamel diseñó su propia lápida en 1410, ocho años antes de morir. Hizo testamento el 22 de noviembre de 1416, que se conserva en los Archivos Nacionales de Francia, y murió el 22 de marzo de 1418. Fue enterrado en Saint-Jacques-la-Boucherie, con la lápida colocada en un pilar."
+          ]
+        },
+        {
+          "titulo": "De la iglesia al puesto de espinacas",
+          "parrafos": [
+            "Durante la Revolución, la iglesia se derribó y solo quedó en pie su torre, la actual torre Saint-Jacques. La lápida desapareció hasta que un anticuario la encontró en manos de una vendedora de fruta y verdura de la rue Saint-Jacques-la-Boucherie, que la usaba como mostrador para sus espinacas.",
+            "El anticuario se la compró, y en 1839 la ciudad de París la adquirió. Hoy se puede ver en el museo de Cluny, el museo de la Edad Media de París."
+          ]
+        },
+        {
+          "titulo": "Cómo nació el «inmortal»",
+          "parrafos": [
+            "La fama de alquimista llegó después de su muerte. Ya en el siglo XV se decía que había sido mucho más rico de lo que fue, y eso alimentó el rumor de que había encontrado la piedra filosofal. En 1612, Pierre Arnauld de La Chevallerie publicó en París un «Libro de las figuras jeroglíficas» atribuido a Flamel, en el que este contaba que había hecho oro en 1382. No se ha encontrado ningún original medieval, y hoy se data a finales del siglo XVI o principios del XVII.",
+            "En 1712, el viajero Paul Lucas contó, sin acabar de creérselo, que un derviche le había asegurado que Flamel seguía vivo. En 1761, el abad Étienne-François Villain desmontó la leyenda con las escrituras notariales en la mano. Aun así, el mito llegó al siglo XX, y en «Harry Potter» Flamel es el creador de la piedra filosofal y tiene 665 años."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Histoire critique de Nicolas Flamel et de Pernelle sa femme",
+          "autor": "Étienne-François Villain",
+          "nota": "El estudio de 1761 que separó al Flamel de los documentos notariales del Flamel de la leyenda (en francés)."
+        }
+      ]
     },
     {
       "youtube": "RxKKhwRiIiE",
@@ -8972,7 +9009,49 @@
         "Fútbol"
       ],
       "fecha": "2026-10-29T18:00",
-      "num": "S147"
+      "num": "S147",
+      "articulo": [
+        {
+          "titulo": "Una guerra que no iba a durar",
+          "parrafos": [
+            "En diciembre de 1914, la Primera Guerra Mundial llevaba cinco meses y nadie avanzaba. Desde el mar del Norte hasta Suiza había una línea continua de trincheras. El 7 de diciembre, el papa Benedicto XV pidió una tregua oficial para Navidad, «que los cañones callen al menos la noche en que cantaron los ángeles». Los gobiernos dijeron que no.",
+            "Pero en el frente, sobre todo en Flandes, entre británicos y alemanes, la tregua llegó igual, sin permiso de nadie. Un capitán británico la describió como una tregua «no acordada y del todo no autorizada, pero perfectamente entendida». Se calcula que participaron unos 100.000 soldados."
+          ]
+        },
+        {
+          "titulo": "Velas, villancicos y botones",
+          "parrafos": [
+            "En la Nochebuena, los alemanes pusieron velas y árboles de Navidad en sus trincheras y cantaron villancicos. Los británicos respondieron con los suyos. Después vinieron los saludos a gritos y, al final, hombres de los dos bandos cruzaron la tierra de nadie para intercambiar comida, tabaco, alcohol y recuerdos como botones o gorras.",
+            "También se aprovechó para enterrar a los muertos que llevaban días entre las líneas, y hubo oficios religiosos conjuntos. En muchos sitios la tregua acabó la noche de Navidad; en otros duró hasta Año Nuevo."
+          ]
+        },
+        {
+          "titulo": "¿Hubo partido de fútbol?",
+          "parrafos": [
+            "Es la parte más famosa y la más discutida. El teniente alemán Kurt Zehmisch anotó en su diario que los ingleses trajeron un balón de sus trincheras y que pronto empezó un partido animado. El 1 de enero de 1915, The Times publicó la carta de un médico británico que hablaba de un partido jugado delante de la trinchera.",
+            "Los historiadores creen que hubo fútbol en al menos tres o cuatro lugares, pero como pachangas improvisadas, a veces con una lata de conservas en lugar de balón. Malcolm Brown y Shirley Seaton concluyeron en 1984 que un partido organizado era muy difícil en aquel terreno lleno de agujeros. Y el famoso 3-2 a favor de Alemania sale de un relato de Robert Graves publicado en 1962, en parte inventado."
+          ]
+        },
+        {
+          "titulo": "Lo que vino después",
+          "parrafos": [
+            "Los mandos no lo vieron con buenos ojos. El 29 de diciembre de 1914, una orden alemana prohibió confraternizar con el enemigo bajo pena de traición, y en Francia el gobierno dijo lo mismo. Para la Navidad de 1915, los aliados ordenaron ataques y bombardeos para que no se repitiera, y apenas hubo treguas breves.",
+            "Por eso la de 1914 quedó como algo único: unas horas en las que los soldados decidieron, por su cuenta, que esa noche no se disparaba."
+          ]
+        }
+      ],
+      "lecturas": [
+        {
+          "titulo": "Christmas Truce",
+          "autor": "Malcolm Brown y Shirley Seaton",
+          "nota": "El estudio clásico de 1984, con cartas y diarios de soldados (en inglés)."
+        },
+        {
+          "titulo": "The Truce: The Day the War Stopped",
+          "autor": "Chris Baker",
+          "nota": "Repasa con lupa qué se sabe y qué no de la tregua, incluido el fútbol (2014, en inglés)."
+        }
+      ]
     }
   ]
 }
