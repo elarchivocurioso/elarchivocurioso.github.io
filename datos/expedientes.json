@@ -9052,6 +9052,47 @@
           "nota": "Repasa con lupa qué se sabe y qué no de la tregua, incluido el fútbol (2014, en inglés)."
         }
       ]
+    },
+    {
+      "youtube": "3lu62Y4gIeg",
+      "tipo": "short",
+      "titulo": "Excalibur es una leyenda. Esta espada, no",
+      "epoca": "1180 - 2001",
+      "lugar": "Montesiepi, Chiusdino (Siena), Toscana",
+      "tematica": "fantasia",
+      "mapa": [
+        43.15,
+        11.0833
+      ],
+      "resumen": "Excalibur es una leyenda. Esta espada clavada en una roca es real.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 2/11/2026",
+        "En la leyenda artúrica, Arturo demuestra que es rey sacando una espada de la piedra (en el *Merlín* de Robert de Boron, hacia 1200, de un yunque sobre una piedra); en algunas versiones Excalibur es otra espada",
+        "La espada de San Galgano está en la Rotonda de Montesiepi, municipio de Chiusdino (Siena, Toscana)",
+        "Según la tradición, Galgano Guidotti, caballero, la clavó en la Navidad de 1180 al hacerse ermitaño y la usó como cruz; su gesto es el contrario al de Arturo (renunciar, no reinar)",
+        "Durante años se sospechó que era falsa; en 2001 la estudió un equipo coordinado por Luigi Garlaschelli (Universidad de Pavía): \"the composition of the metal did not reveal that modern alloys had been used, and so it is fully compatible with a medieval origin\" — Garlaschelli 2006 y http://news.bbc.co.uk/2/hi/europe/2999894.stm"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Luigi Garlaschelli, «The Real Sword in the Stone», *Skeptical Inquirer*, mayo/junio de 2006",
+          "url": "https://cdn.centerforinquiry.org/wp-content/uploads/sites/29/2006/05/22164608/p40.pdf"
+        },
+        {
+          "titulo": "Wikipedia, «Excalibur»",
+          "url": "https://en.wikipedia.org/wiki/Excalibur"
+        },
+        {
+          "titulo": "BBC News, «Sword legend 'came from Italy'», 2003",
+          "url": "http://news.bbc.co.uk/2/hi/europe/2999894.stm"
+        }
+      ],
+      "etiquetas": [
+        "Siglo ",
+        "Espada en la roca",
+        "Excalibur"
+      ],
+      "fecha": "2026-10-29T19:30",
+      "num": "S145"
     }
   ]
 }
