@@ -8647,6 +8647,47 @@
           "respuesta": "Porque había malvendido los derechos y no pudo cobrar por las muchas reposiciones."
         }
       ]
+    },
+    {
+      "youtube": "CchiyaK7--k",
+      "tipo": "short",
+      "titulo": "La Boda Roja no salió de una boda",
+      "epoca": "1440 y 1692",
+      "lugar": "castillo de Edimburgo y Glen Coe, Escocia",
+      "tematica": "fantasia",
+      "mapa": [
+        55.9486,
+        -3.2008
+      ],
+      "resumen": "La Boda Roja no salió de una boda.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 24/11/2026 (aniversario de la Cena Negra, 24 de noviembre de 1440)",
+        "Cita de Martin en la audioguía del castillo de Edimburgo (torre de David), lanzada por Historic Environment Scotland en febrero de 2020: «The Red Wedding, which is perhaps the most infamous scene in my book, was inspired in large part by two events in Scottish history - the Black Dinner here in Edinburgh, […] and the Glencoe Massacre […]. I combined the two of those and threw in a wedding and you get the Red Wedding.» — Edinburgh Evening News, 9/2/2020: https://www.edinburghnews.scotsman.com/whats-on/arts-and-entertainment/george-rr-martin-reveals-edinburgh-castle-inspiration-for-bloody-game-of-thrones-red-wedding-scene-1393905",
+        "Cena negra, 24 de noviembre de 1440: William, 6.º conde de Douglas (unos 16 años), y su hermano David cenan con Jacobo II (10 años) en el castillo de Edimburgo; tras la cena los acusan con cargos falsos y los ejecutan",
+        "Jacobo II, rey desde 1437 a los seis años",
+        "Glencoe, 1692: unos 120 soldados al mando de Robert Campbell de Glenlyon llegaron a finales de enero, fueron alojados por los MacDonald y la madrugada del 13 de febrero se volvieron contra ellos"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Edinburgh Evening News, 9/2/2020",
+          "url": "https://www.edinburghnews.scotsman.com/whats-on/arts-and-entertainment/george-rr-martin-reveals-edinburgh-castle-inspiration-for-bloody-game-of-thrones-red-wedding-scene-1393905"
+        },
+        {
+          "titulo": "Wikipedia, «Massacre of Glencoe»",
+          "url": "https://en.wikipedia.org/wiki/Massacre_of_Glencoe"
+        },
+        {
+          "titulo": "*Dictionary of National Biography*, «Douglas, William (1423?-1440)»",
+          "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Douglas,_William_(1423%3F-1440)"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XV",
+        "Juego de tronos",
+        "George R. R. Martin"
+      ],
+      "fecha": "2026-10-29T15:00",
+      "num": "S143"
     }
   ]
 }

@@ -19,6 +19,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [La Boda Roja no salió de una boda](https://folio13.com/expedientes/la-boda-roja-no-salio-de-una-boda.html) (castillo de Edimburgo y Glen Coe, Escocia, 1440 y 1692) · Detrás de la fantasía: La Boda Roja no salió de una boda.
 - [¿Por qué el Tenorio se representa en Todos los Santos? Mito contra realidad](https://folio13.com/expedientes/por-que-el-tenorio-se-representa-en-todos-los-santos.html) (Madrid, España, 1844 - hoy) · Mitos desmontados: Dicen que el Tenorio se hace en noviembre porque se estrenó entonces.
 - [La habitación de los Backrooms existió de verdad](https://folio13.com/expedientes/la-habitacion-de-los-backrooms-existio-de-verdad.html) (Oshkosh, Wisconsin (Estados Unidos), 2002-2024) · Paranormal y leyendas: Doce de junio de dos mil dos. Alguien fotografía un cuarto en obras.
 - [Top 10 monstruos reales de la historia: de Mary Ann Cotton al asesino del Zodiaco](https://folio13.com/expedientes/top-10-monstruos-reales-de-la-historia-y-el-numero-1-sigue-sin-nombre.html) (India, Reino Unido, España, Francia, Alemania y Estados Unidos, 1790-1974) · Crímenes del pasado: Diez asesinos reales y el detalle que los delató: Behram, Mary Ann Cotton, Burke y Hare, Garayo, Vacher, Landru, Kürten, Belle Gunness, Petiot… y el Zodiaco, que sigue sin nombre.
@@ -99,6 +100,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Mitos de la historia](https://folio13.com/temas/mitos-de-la-historia.html)
 - [Nacimiento del cine](https://folio13.com/temas/nacimiento-del-cine.html)
 - [Siglo XIX](https://folio13.com/temas/siglo-xix.html)
+- [Siglo XV](https://folio13.com/temas/siglo-xv.html)
 - [Siglo XVII](https://folio13.com/temas/siglo-xvii.html)
 - [Siglo XVIII](https://folio13.com/temas/siglo-xviii.html)
 - [Siglo XX](https://folio13.com/temas/siglo-xx.html)
