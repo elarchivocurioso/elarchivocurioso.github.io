@@ -2,6 +2,68 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## Por qué los médicos de la peste llevaban pico de pájaro (y por qué no fue en la peste negra)
+
+Página: https://folio13.com/expedientes/por-que-los-medicos-de-la-peste-llevaban-pico-de-pajaro.html
+Temática: Mitos desmontados
+Lugar: París y Roma
+Época: 1619 - 1656
+
+¿Por qué un médico visitaría a los apestados con cara de pájaro?
+
+Un médico que entra en la casa de un apestado con la cara convertida en un pico de ave, ojos de cristal y un bastón en la mano. Parece un disfraz de carnaval o una pesadilla medieval. Y, sin embargo, existió: hay grabados de la época que lo muestran con todo detalle.
+
+Lo que casi nadie cuenta es cuándo. El traje de pico no aparece en la peste negra de 1348, sino casi trescientos años después. Y el grabado más famoso de todos no es un retrato: es una burla.
+
+### Un pico lleno de perfume
+
+La primera descripción conocida del traje está en una biografía de Charles de Lorme, médico de la corte francesa, y se refiere al brote de peste de París de 1619 [1]. Un grabado de Jacques Callot de 1630 lo presenta como consejero y médico ordinario de Enrique IV y de Luis XIII [4].
+
+Según esa descripción, la máscara tenía una nariz de medio pie de largo, en forma de pico y llena de perfume [2]. No era un adorno. Dentro se metían hierbas y sustancias aromáticas: rosas y claveles secos, lavanda, menta, alcanfor, enebro, clavo, mirra o una esponja empapada en vinagre [2].
+
+La razón era la medicina de la época. Se creía que la enfermedad la causaba el miasma, un «mal aire» que se reconocía por su mal olor [1][2]. Si el peligro olía, la defensa era respirar a través de un filtro perfumado. Un tratado sobre la peste de 1721, el de Manget, lo resume en el pie de su grabado: la máscara tenía ojos de cristal y una larga nariz rellena de perfumes [5].
+
+### No era el traje de la peste negra
+
+La peste negra golpeó Europa desde 1347-1348. No hay pruebas de que entonces se usara nada parecido: el traje de pico aparece en el siglo XVII [2][6]. La imagen de un médico medieval con pico es, por tanto, una mezcla de dos épocas separadas por casi tres siglos.
+
+Tampoco hay que imaginar que todos los médicos de la peste lo llevaran: las fuentes describen el traje, no cuántos lo usaron. Y el papel de De Lorme como inventor tampoco es seguro: la atribución sale de una biografía suya y no todos los historiadores la aceptan [1].
+
+### La estampa que se burlaba del médico
+
+La figura que hoy todo el mundo reconoce viene de una estampa publicada en Núremberg en 1656 por Paulus Fürst, «Der Doctor Schnabel von Rom», el doctor Pico de Roma. El British Museum conserva un ejemplar y explica que deriva de una hoja romana del mismo año [3].
+
+No es un retrato serio. Acompaña a un poema satírico, mezcla de latín y alemán, en el que el doctor asusta a la gente y saca dinero de muertos y moribundos. El propio grabado dice que su infierno se llama bolsa y que el oro es el alma que se lleva [1]. Gerhart Altzenbach publicó hacia 1656 otra versión de la misma figura, sin intención satírica, y la cronología exacta entre las dos hojas sigue discutida [1].
+
+Así que la imagen que convirtió al médico de la peste en un icono del miedo nació, en parte, para reírse de él.
+
+### Curiosidades
+
+- Fecha prevista de publicación: 30/10/2026, 19:00 (S148, plan de MAIN del 29/10/2026).
+- La primera mención del traje está en una biografía del médico real Charles de Lorme, que servía a Luis XIII, y se refiere al brote de peste de París de 1619. La atribución se repite mucho, pero con reservas
+- Charles de Lorme (1584-1678): el retrato de Jacques Callot de 1630 lo llama consejero y médico ordinario de Enrique IV y de Luis XIII («Henrici Magni et Ludovici Iusti Consil. et Medico ordinario») y primer médico de Gastón de Orleans (inscripción del grabado, NGA 51280)
+- De Lorme describe una máscara con una «nose half a foot long, shaped like a beak, filled with perfume» (nariz de medio pie en forma de pico, llena de perfume). Entre lo que se ponía dentro, la lista incluye rosas y claveles secos, lavanda, menta, alcanfor, enebro, ámbar gris, clavo, mirra o una esponja con vinagre
+- El grabado de Manget (Traité de la peste, 1721) lo resume en su pie: «le masque a les yeux de cristal et un long nez rempli de parfums»
+
+### Semáforo de la verdad
+
+- documentado: La primera descripción del traje procede de una biografía de Charles de Lorme y se refiere a la peste de París de 1619 [1]
+- documentado: El pico iba relleno de hierbas y perfumes contra el miasma, el «mal aire» [2]
+- documentado: «Der Doctor Schnabel von Rom» se publicó en Núremberg en 1656 [3]
+- discutido: Que De Lorme inventara el traje: la atribución viene de su biografía y hay historiadores que no la aceptan [1]
+- discutido: Qué hoja de 1656 copió a cuál (Fürst, Altzenbach y la hoja romana) [1]
+- leyenda: Que los médicos de la peste negra de 1348 llevaran máscara de pico [2]
+
+### Fuentes
+
+- [1] Wikipedia (inglés), «Plague doctor»: https://en.wikipedia.org/wiki/Plague_doctor
+- [2] Wikipedia (inglés), «Plague doctor costume»: https://en.wikipedia.org/wiki/Plague_doctor_costume
+- [3] British Museum, «Der Doctor Schnabel von Rom» (1656): https://www.britishmuseum.org/collection/object/P_1876-0510-512
+- [4] Wikimedia Commons, Jacques Callot, «Charles De Lorme» (1630), National Gallery of Art: https://commons.wikimedia.org/wiki/File:Jacques_Callot,_Charles_De_Lorme,_1630,_NGA_51280.jpg
+- [5] Wikimedia Commons, grabado de Jean-Jacques Manget, «Traité de la peste» (1721): https://commons.wikimedia.org/wiki/File:A_Plague_Doctor_%E2%80%93_from_Jean-Jacques_Manget,_Trait%C3%A9_de_la_peste_(1721);_WHO_version.png
+- [6] Live Science, sobre los médicos de la peste: https://www.livescience.com/plague-doctors.html
+- [7] National Geographic, «Why plague doctors wore those strange beaked masks»: https://www.nationalgeographic.com/history/article/plague-doctors-beaked-masks-coronavirus
+
 ## El oficial de transmisiones que acabaría escribiendo sobre hobbits
 
 Página: https://folio13.com/expedientes/el-oficial-de-transmisiones-que-acabaria-escribiendo-sobre-hobbits.html
