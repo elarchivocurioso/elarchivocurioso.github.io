@@ -2,6 +2,63 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## La cabeza de toro negro de la «cena negra»: el detalle más famoso que nadie vio en 1440
+
+Página: https://folio13.com/expedientes/el-toro-negro-de-la-cena-que-inspiro-la-boda-roja.html
+Temática: Detrás de la fantasía
+Lugar: castillo de Edimburgo, Escocia
+Época: 24 de noviembre de 1440 (y la crónica de Boecio, 1527)
+
+Una cabeza de toro negro en la cena, como sentencia de muerte.
+
+Un rey de diez años invita a cenar a dos jóvenes nobles en el castillo de Edimburgo. En mitad del banquete, alguien pone sobre la mesa la cabeza de un toro negro: la señal de que los invitados están condenados. Poco después, los dos hermanos son decapitados.
+
+Es la escena que, según George R. R. Martin, inspiró en buena parte la Boda Roja de *Juego de tronos*. La cena y las ejecuciones son reales. El toro, en cambio, no aparece en ninguna crónica de la época.
+
+### Lo que pasó en el castillo
+
+William, sexto conde de Douglas, y su hermano David cenaron con el rey Jacobo II, que había nacido en octubre de 1430 y tenía diez años. Después de la cena fueron apresados y acusados de traición [3]. Los dos fueron decapitados en el castillo de Edimburgo el 24 de noviembre de 1440, y tres días más tarde ejecutaron también a Malcolm Fleming [1][2].
+
+Aquella noche pasó a la historia como la «cena negra», el *Black Dinner*. Pero lo que cuenta la crónica de la época es muy escueto: la llamada *Auchinleck Chronicle* solo dice que fueron ejecutados, sin detalles y sin ningún toro [1].
+
+### Un toro que llega un siglo tarde
+
+La cabeza de toro aparece por primera vez en los cronistas del siglo XVI, Héctor Boecio y, después, Pitscottie [2]. Boecio publicó su historia de Escocia en 1527, casi noventa años después de los hechos. Su obra es conocida por sus muchas inexactitudes y por la credulidad que se le reprocha [4].
+
+El *Dictionary of National Biography* británico, en su entrada de 1888 sobre el conde, lo resume así: el detalle es demasiado novelesco para creérselo sin más, aunque procede de una tradición que no se puede descartar del todo [2]. A finales del siglo XVI ya circulaba como símbolo: un texto escocés de 1594 cuenta que el canciller puso ante el conde una cabeza de toro, «signo y señal» de su condena a muerte [5]. Ese texto, por cierto, no dice de qué color era el toro. Lo de «toro negro» es la versión popular que se ha impuesto después.
+
+### De Edimburgo a Poniente
+
+En 2020, George R. R. Martin grabó una audioguía para el castillo de Edimburgo y explicó que la Boda Roja se inspiró en gran parte en dos episodios de la historia de Escocia: la cena negra y la masacre de Glencoe [6]. En su versión no hay toro, pero sí una señal: antes de la matanza, la orquesta empieza a tocar «Las lluvias de Castamere», la canción de los Lannister [7].
+
+La historia y la ficción comparten así la misma idea: una comida que se convierte en trampa. El toro, probablemente, es solo el adorno que alguien añadió al contarla.
+
+### Curiosidades
+
+- Fecha prevista de publicación: 31/10/2026, 22:00 (S152, plan de MAIN del 29/10/2026).
+- Fecha: William, 6.º conde de Douglas, fue decapitado en el castillo de Edimburgo el 24 de noviembre de 1440, junto con su hermano David; tres días después ejecutaron a Malcolm Fleming — *Dictionary of National Biography* (1888): https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Douglas,_William_(1423%3F-1440) ; Allan Kennedy (Universidad de Dundee): https://dundeescottishculture.org/history/scottish-history-at-a-glance-the-black-dinner-of-1440/
+- Los hermanos cenaron con Jacobo II (nacido en octubre de 1430, diez años) y, tras la cena, fueron apresados y ejecutados con cargos de traición
+- La crónica contemporánea (*Auchinleck Chronicle*) solo dice que fueron «put to deid», sin detalles ni toro; el toro es un adorno de cronistas posteriores — Kennedy: https://dundeescottishculture.org/history/scottish-history-at-a-glance-the-black-dinner-of-1440/
+- «The bull's head served at the royal banquet, first mentioned by Boece and Pitscottie»; el DNB lo considera un adorno «too romantic to be implicitly credited», aunque basado en una tradición que no se puede rechazar del todo; las únicas autoridades originales son la *Short Chronicle* y la continuación de Bower — DNB: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Douglas,_William_(1423%3F-1440)
+
+### Semáforo de la verdad
+
+- documentado: El conde de Douglas y su hermano fueron decapitados en el castillo de Edimburgo el 24 de noviembre de 1440 [1]
+- documentado: La crónica contemporánea no menciona ningún toro [1]
+- documentado: Martin dijo que la Boda Roja se inspiró en gran parte en la cena negra y en Glencoe [6]
+- discutido: La cabeza de toro: la mencionan por primera vez cronistas del siglo XVI y no se puede descartar del todo
+- leyenda: Que el toro fuera negro: el texto antiguo de 1594 no dice el color [5]
+
+### Fuentes
+
+- [1] Allan Kennedy (Universidad de Dundee), «The 'Black Dinner' of 1440»: https://dundeescottishculture.org/history/scottish-history-at-a-glance-the-black-dinner-of-1440/
+- [2] Dictionary of National Biography (1888), «Douglas, William (1423?-1440)»: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Douglas,_William_(1423%3F-1440)
+- [3] Wikipedia (inglés), «William Douglas, 6th Earl of Douglas»: https://en.wikipedia.org/wiki/William_Douglas,_6th_Earl_of_Douglas
+- [4] Wikipedia (inglés), «Hector Boece»: https://en.wikipedia.org/wiki/Hector_Boece
+- [5] Dictionary of the Older Scottish Tongue, entrada con la cita del «Black Book of Taymouth» (1594): https://www.dsl.ac.uk/entry/dost4219
+- [6] Edinburgh Evening News, «George RR Martin reveals Edinburgh Castle inspiration for bloody Game of Thrones Red Wedding scene» (2020): https://www.edinburghnews.scotsman.com/whats-on/arts-and-entertainment/george-rr-martin-reveals-edinburgh-castle-inspiration-for-bloody-game-of-thrones-red-wedding-scene-1393905
+- [7] Wikipedia (inglés), «The Rains of Castamere»: https://en.wikipedia.org/wiki/The_Rains_of_Castamere
+
 ## La cerda de Falaise y las ratas de Autun: cuando la justicia medieval juzgaba a los animales
 
 Página: https://folio13.com/expedientes/por-que-se-llevaba-a-juicio-a-cerdos-y-ratas.html
