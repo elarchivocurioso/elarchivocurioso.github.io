@@ -19,6 +19,8 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [Los tres fareros de las islas Flannan: lo que dicen los informes y el diario que alguien se inventó](https://folio13.com/expedientes/que-paso-con-los-tres-fareros-de-las-islas-flannan.html) (islas Flannan (Hébridas Exteriores, Escocia), diciembre de 1900) · Paranormal y leyendas: En la pizarra del faro quedó escrito: «lámpara limpia, depósito lleno».
+- [Roanoke y la palabra CROATOAN: el mensaje que dejaron los colonos desaparecidos](https://folio13.com/expedientes/roanoke-no-desaparecio-sin-dejar-rastro-que-paso-con-sus-colonos.html) (isla de Roanoke y Hatteras (Carolina del Norte, EE. UU.), 1587-1590) · Mitos desmontados: Dicen que la colonia de Roanoke se esfumó sin dejar rastro.
 - [Por qué los médicos de la peste llevaban pico de pájaro (y por qué no fue en la peste negra)](https://folio13.com/expedientes/por-que-los-medicos-de-la-peste-llevaban-pico-de-pajaro.html) (París y Roma, 1619 - 1656) · Mitos desmontados: ¿Por qué un médico visitaría a los apestados con cara de pájaro?
 - [El oficial de transmisiones que acabaría escribiendo sobre hobbits](https://folio13.com/expedientes/el-oficial-de-transmisiones-que-acabaria-escribiendo-sobre-hobbits.html) (el Somme (Francia) y Staffordshire (Inglaterra), julio de 1916 - 1937) · Detrás de la fantasía: Julio de mil novecientos dieciséis. Un joven oficial llega al Somme.
 - [Excalibur es una leyenda. Esta espada, no](https://folio13.com/expedientes/excalibur-es-una-leyenda-esta-espada-no.html) (Montesiepi, Chiusdino (Siena), Toscana, 1180 - 2001) · Detrás de la fantasía: Excalibur es una leyenda. Esta espada clavada en una roca es real.
@@ -108,6 +110,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Siglo ](https://folio13.com/temas/siglo.html)
 - [Siglo XIX](https://folio13.com/temas/siglo-xix.html)
 - [Siglo XV](https://folio13.com/temas/siglo-xv.html)
+- [Siglo XVI](https://folio13.com/temas/siglo-xvi.html)
 - [Siglo XVII](https://folio13.com/temas/siglo-xvii.html)
 - [Siglo XVIII](https://folio13.com/temas/siglo-xviii.html)
 - [Siglo XX](https://folio13.com/temas/siglo-xx.html)
