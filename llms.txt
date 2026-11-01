@@ -19,6 +19,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [Los brazos momificados junto a la espada en la roca de San Galgano: qué dijo el carbono 14](https://folio13.com/expedientes/de-quien-son-los-brazos-momificados-junto-a-la-espada-en-la-roca.html) (Montesiepi, Chiusdino (Siena), Toscana, siglo XII - 2006) · Detrás de la fantasía: Lo que nadie cuenta de esta capilla: guarda dos brazos momificados.
 - [La cabeza de toro negro de la «cena negra»: el detalle más famoso que nadie vio en 1440](https://folio13.com/expedientes/el-toro-negro-de-la-cena-que-inspiro-la-boda-roja.html) (castillo de Edimburgo, Escocia, 24 de noviembre de 1440 (y la crónica de Boecio, 1527)) · Detrás de la fantasía: Una cabeza de toro negro en la cena, como sentencia de muerte.
 - [La cerda de Falaise y las ratas de Autun: cuando la justicia medieval juzgaba a los animales](https://folio13.com/expedientes/por-que-se-llevaba-a-juicio-a-cerdos-y-ratas.html) (Falaise (Normandía) y Autun (Borgoña), 1386 - siglo XVI) · Crímenes del pasado: Esta iglesia guardó un fresco de una ejecución imposible.
 - [Los tres fareros de las islas Flannan: lo que dicen los informes y el diario que alguien se inventó](https://folio13.com/expedientes/que-paso-con-los-tres-fareros-de-las-islas-flannan.html) (islas Flannan (Hébridas Exteriores, Escocia), diciembre de 1900) · Paranormal y leyendas: En la pizarra del faro quedó escrito: «lámpara limpia, depósito lleno».
@@ -94,6 +95,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Drácula](https://folio13.com/temas/dracula.html)
 - [Edad Media](https://folio13.com/temas/edad-media.html)
 - [Error judicial](https://folio13.com/temas/error-judicial.html)
+- [Espada en la roca](https://folio13.com/temas/espada-en-la-roca.html)
 - [Estafas históricas](https://folio13.com/temas/estafas-historicas.html)
 - [Fall River](https://folio13.com/temas/fall-river.html)
 - [George A. Romero](https://folio13.com/temas/george-a-romero.html)
