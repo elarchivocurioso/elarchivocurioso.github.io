@@ -10018,6 +10018,132 @@
           "respuesta": "De uno de los primeros seguidores de Galgano, un ermitaño enterrado en la Rotonda."
         }
       ]
+    },
+    {
+      "youtube": "lZElm4XZZrg",
+      "tipo": "short",
+      "titulo": "¿Existió la maldición de Tutankamón? Un médico hizo las cuentas",
+      "epoca": "1922 - 1939 (estudio de 2002)",
+      "lugar": "Valle de los Reyes y El Cairo, Egipto",
+      "tematica": "mitos",
+      "mapa": [
+        30.04,
+        31.24
+      ],
+      "resumen": "Abrieron la tumba de Tutankamón… y vivieron, de media, setenta años.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 1/11/2026, 19:00 (S154, aprobada por la usuaria).",
+        "Estudio: Mark R. Nelson (Departamento de Epidemiología y Medicina Preventiva, Universidad de Monash), «The mummy's curse: historical cohort study», *BMJ* 2002;325:1482-4 (21/12/2002). Es un estudio de cohortes retrospectivo con 44 occidentales que, según Carter, estaban en Egipto en las fechas señaladas; 25 de ellos estuvieron potencialmente expuestos",
+        "Exposición: haber estado presente en al menos uno de estos cuatro momentos: la rotura de los sellos y la apertura de la tercera puerta (17/2/1923), la apertura del sarcófago, la de los ataúdes y el examen de la momia",
+        "Resultados: edad media al morir de 70 años entre los expuestos y de 75 entre los no expuestos (diferencia no significativa). Supervivencia tras la exposición: 20,8 frente a 28,9 años (P=0,95). Conclusión, en el original: «There was no significant association between exposure to the mummy's curse and survival»",
+        "Carnarvon: le picó un mosquito en el Valle de los Reyes en marzo de 1923. La picadura se infectó, se fue a El Cairo y allí tuvo erisipela, septicemia y neumonía. Murió el 5 de abril de 1923 en el hotel Continental-Savoy"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Mark R. Nelson, «The mummy's curse: historical cohort study», BMJ (2002)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC139048"
+        },
+        {
+          "titulo": "Griffith Institute (Universidad de Oxford), ficha de lord Carnarvon",
+          "url": "https://tutankhamun.griffith.ox.ac.uk/people/lord-carnarvon"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «George Herbert, 5th Earl of Carnarvon»",
+          "url": "https://en.wikipedia.org/wiki/George_Herbert,_5th_Earl_of_Carnarvon"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Curse of the pharaohs»",
+          "url": "https://en.wikipedia.org/wiki/Curse_of_the_pharaohs"
+        },
+        {
+          "titulo": "Museum of Hoaxes, «King Tut's Curse»",
+          "url": "https://hoaxes.org/archive/permalink/king_tuts_curse"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Maldición de Tutankamón",
+        "Lord Carnarvon"
+      ],
+      "fecha": "2026-11-01T19:00",
+      "num": "S154",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Abril de 1923. Pocos meses después de que se abra la tumba de Tutankamón, muere el hombre que pagó la excavación, lord Carnarvon. Los periódicos lo tienen claro: el faraón se ha vengado. Hablan de una inscripción que amenaza a quien perturbe su descanso y de las luces de El Cairo apagándose en el momento de su muerte.",
+            "Casi ochenta años después, un médico australiano decidió comprobarlo como se comprueba cualquier otra cosa en medicina: con datos. Su estudio se publicó en una de las revistas médicas más importantes del mundo."
+          ]
+        },
+        {
+          "titulo": "La muerte que lo empezó todo",
+          "parrafos": [
+            "En marzo de 1923, a lord Carnarvon le picó un mosquito en el Valle de los Reyes. La picadura se infectó. Se trasladó a El Cairo y allí sufrió erisipela, septicemia y neumonía. Murió el 5 de abril de 1923 en el hotel Continental-Savoy [2][3].",
+            "Dos semanas antes, la escritora Marie Corelli había publicado una carta en el *New York World* que desató un frenesí mediático. Se dijo que en la tumba había aparecido una maldición escrita, aunque no era cierto [4]. La supuesta inscripción nunca existió, y lo de las luces de El Cairo fue un añadido de los periódicos, sin confirmar [5]."
+          ]
+        },
+        {
+          "titulo": "Un estudio de cohortes para una momia",
+          "parrafos": [
+            "En 2002, Mark R. Nelson, del Departamento de Epidemiología y Medicina Preventiva de la Universidad de Monash, publicó en el *BMJ* un estudio con un título a la altura: «The mummy's curse», la maldición de la momia [1]. Tomó a los 44 occidentales que, según los registros de Carter, estaban en Egipto en las fechas clave. De ellos, 25 se consideraron expuestos a la maldición: habían estado presentes en al menos uno de cuatro momentos, la rotura de los sellos y la apertura de la tercera puerta (17 de febrero de 1923), la apertura del sarcófago, la de los ataúdes y el examen de la momia [1].",
+            "Después comparó cuánto vivieron unos y otros. Los expuestos murieron con una edad media de 70 años; los no expuestos, de 75. La supervivencia desde la exposición fue de 20,8 años frente a 28,9 [1]. Pero la diferencia no era estadísticamente significativa. La conclusión del artículo es literal: no había una asociación significativa entre la exposición a la maldición de la momia y la supervivencia [1].",
+            "Una limitación importante: los trabajadores egipcios quedaron fuera del estudio, que solo contó a occidentales [1]."
+          ]
+        },
+        {
+          "titulo": "El hombre que abrió la tumba",
+          "parrafos": [
+            "El mejor argumento contra la maldición es quizá Howard Carter, el arqueólogo que dirigió la excavación. Nació el 9 de mayo de 1874 y murió el 2 de marzo de 1939, más de dieciséis años después de abrir la tumba, según las fechas de su lápida en Londres [4]."
+          ]
+        }
+      ],
+      "titulo_articulo": "La maldición de Tutankamón, puesta a prueba: el estudio que hizo las cuentas en 2002",
+      "aprender": [
+        "De qué murió realmente lord Carnarvon.",
+        "Cómo nació la idea de la maldición en la prensa de 1923.",
+        "Qué comparó el estudio del BMJ de 2002 y qué resultado dio.",
+        "Cuánto tiempo vivió Howard Carter después de abrir la tumba."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Carnarvon murió el 5 de abril de 1923 en El Cairo tras infectarse una picadura de mosquito [2]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El estudio del BMJ de 2002 no encontró relación significativa entre la exposición y la supervivencia [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Howard Carter murió en 1939, más de dieciséis años después de abrir la tumba [4]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "La diferencia de 70 frente a 75 años: existe, pero el estudio la considera no significativa y solo incluye a occidentales [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "La inscripción de la tumba que amenazaba a los profanadores: no existía [5]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que las luces de El Cairo se apagaran al morir Carnarvon: es un detalle de prensa sin confirmar [5]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que en la tumba de Tutankamón había una inscripción con una maldición?",
+          "respuesta": "No. La prensa habló de ella en 1923, pero nunca existió."
+        },
+        {
+          "pregunta": "¿Qué encontró el estudio publicado en el BMJ en 2002?",
+          "respuesta": "Que no había relación significativa entre haber estado en la apertura de la tumba y vivir menos."
+        },
+        {
+          "pregunta": "¿De qué murió lord Carnarvon?",
+          "respuesta": "De una picadura de mosquito que se infectó, con erisipela, septicemia y neumonía."
+        }
+      ]
     }
   ]
 }
