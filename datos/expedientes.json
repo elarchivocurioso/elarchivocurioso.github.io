@@ -7418,7 +7418,7 @@
       "titulo_articulo": "Cortinas empapadas en cloruro de cal: el verano en que el Támesis puso contra las cuerdas al Parlamento británico"
     },
     {
-      "youtube": "6J7zPugqBy8",
+      "youtube": "rRDk8B11GkI",
       "tipo": "video",
       "titulo": "El crimen de la calle Fuencarral: el PRIMER juicio paralelo de España (1888)",
       "epoca": "1888-1890",
@@ -10142,6 +10142,133 @@
         {
           "pregunta": "¿De qué murió lord Carnarvon?",
           "respuesta": "De una picadura de mosquito que se infectó, con erisipela, septicemia y neumonía."
+        }
+      ]
+    },
+    {
+      "youtube": "lmaiM_7dSm0",
+      "tipo": "short",
+      "titulo": "«Todo bien»: ¿qué pasó con la expedición Franklin?",
+      "epoca": "1845-1848 (y hallazgos de 2014 y 2016)",
+      "lugar": "isla del Rey Guillermo (Nunavut, Canadá)",
+      "tematica": "desastres",
+      "mapa": [
+        69.1667,
+        -97.4167
+      ],
+      "resumen": "Esta nota de mil ochocientos cuarenta y siete dice: «Todo bien».",
+      "curiosidades": [
+        "Fecha prevista de publicación: 1/11/2026, 22:00 (S155, aprobada por la usuaria).",
+        "La expedición salió de Greenhithe el 19 de mayo de 1845 con el HMS Erebus y el HMS Terror para buscar el paso del Noroeste. Iban 134 hombres; cinco se quedaron en la bahía de Disko, así que siguieron 129",
+        "Los barcos quedaron atrapados en el hielo desde el 12 de septiembre de 1846 («having been beset since 12th Sept 1846», nota de 1848)",
+        "La nota es un formulario impreso del Almirantazgo. El primer mensaje, del 28 de mayo de 1847 y firmado por Graham Gore y Charles F. Des Voeux, dice «All well» (todo bien)",
+        "El 25 de abril de 1848 se añadió un segundo mensaje alrededor del primero. McClintock lo describe así: «Round the margin of the paper upon which Lieutenant Gore in 1847 wrote those words of hope and promise, another hand had subsequently written…»"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Canadian Museum of History, «A very special piece of paper»",
+          "url": "https://www.historymuseum.ca/blog/a-very-special-piece-of-paper/"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Franklin's lost expedition»",
+          "url": "https://en.wikipedia.org/wiki/Franklin%27s_lost_expedition"
+        },
+        {
+          "titulo": "Francis McClintock, «The Voyage of the Fox» (1859), en Canadian Mysteries",
+          "url": "https://canadianmysteries.ca/sites/franklin/archive/text/McClintockFox_en.htm"
+        },
+        {
+          "titulo": "Parks Canada, «Inuit traditional knowledge»",
+          "url": "https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/inuit/qaujimajatuqangit"
+        },
+        {
+          "titulo": "Royal Museums Greenwich, «How Inuit oral history helped locate Erebus and Terror»",
+          "url": "https://www.rmg.co.uk/stories/maritime-history/how-inuit-oral-history-helped-locate-erebus-terror"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Nota de Victory Point",
+        "HMS Erebus"
+      ],
+      "fecha": "2026-11-01T22:00",
+      "num": "S155",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "En 1859, en un montón de piedras de una isla helada del Ártico canadiense, unos exploradores encontraron un formulario de la Marina británica. En el centro, con buena letra, alguien había escrito en 1847 dos palabras tranquilizadoras: «All well», todo bien.",
+            "Pero el papel no acababa ahí. Un año después, otra mano había escrito alrededor, en los márgenes, un segundo mensaje. Es uno de los documentos más estremecedores de la historia de la exploración, y cuenta en pocas líneas el final de 129 hombres."
+          ]
+        },
+        {
+          "titulo": "Dos barcos en busca de un paso",
+          "parrafos": [
+            "La expedición de sir John Franklin salió de Greenhithe, en Inglaterra, el 19 de mayo de 1845 con dos barcos, el HMS Erebus y el HMS Terror, para buscar el paso del Noroeste. Iban 134 hombres; cinco se quedaron en la bahía de Disko y siguieron 129 [2]. Desde el 12 de septiembre de 1846, los dos barcos quedaron atrapados en el hielo [1]."
+          ]
+        },
+        {
+          "titulo": "La nota",
+          "parrafos": [
+            "El documento es un formulario impreso del Almirantazgo. El primer mensaje, del 28 de mayo de 1847, lo firmaban Graham Gore y Charles F. Des Voeux, y terminaba con «All well» [1].",
+            "El 25 de abril de 1848 alguien escribió un segundo mensaje alrededor del primero. El explorador Francis McClintock lo describió así: alrededor del margen del papel en el que el teniente Gore había escrito aquellas palabras de esperanza, otra mano había escrito después [3]. Lo que decía cambiaba todo. Sir John Franklin había muerto el 11 de junio de 1847. Los barcos se habían abandonado el 22 de abril de 1848. Habían desembarcado 105 hombres a las órdenes de Francis Crozier, y ya habían muerto 9 oficiales y 15 marineros. Al día siguiente partirían hacia el río Back. Firmaban Crozier y James Fitzjames [1][2].",
+            "La nota la encontró William Hobson, de la expedición de McClintock, en un mojón de piedras de la costa noroeste de la isla del Rey Guillermo, en mayo de 1859 [2][3]. Ninguno de los 129 hombres sobrevivió [2]. Las causas de tantas muertes, del escorbuto al frío y el hambre, siguen discutiéndose."
+          ]
+        },
+        {
+          "titulo": "Lo que sabían los inuit",
+          "parrafos": [
+            "Durante más de siglo y medio, los barcos siguieron perdidos. Pero los inuit sabían cosas. En 1854, el explorador John Rae oyó que se había visto a unos 40 hombres caminando hacia el sur por la isla, y en 1869 Charles Francis Hall recogió testimonios sobre dónde estaba un pecio [4].",
+            "El Erebus apareció en 2014 en una zona delimitada gracias a ese conocimiento tradicional, en el que fue clave el historiador de Gjoa Haven Louie Kamookak [4][5]. El Terror apareció el 3 de septiembre de 2016 en la bahía Terror, gracias al aviso de Sammy Kogvik, un ranger inuit que años antes había visto algo parecido a un mástil asomando del hielo [5].",
+            "El original de la nota pertenece al National Maritime Museum de Greenwich [1]."
+          ]
+        }
+      ],
+      "titulo_articulo": "«Todo bien»: la nota de la expedición Franklin y el mensaje que alguien escribió en sus márgenes",
+      "aprender": [
+        "Qué buscaba la expedición Franklin y cuántos hombres la formaban.",
+        "Qué decía el primer mensaje de la nota, de mayo de 1847.",
+        "Qué añadieron Crozier y Fitzjames en abril de 1848.",
+        "Cómo los testimonios inuit ayudaron a encontrar los barcos en 2014 y 2016."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El primer mensaje, de mayo de 1847, decía «All well» [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El mensaje de 1848 informa de la muerte de Franklin y del abandono de los barcos [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El conocimiento tradicional inuit ayudó a localizar el Erebus en 2014 [4]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Las causas de las muertes (escorbuto, plomo, frío, hambre) siguen en debate [2]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que lo que vio Sammy Kogvik fuera el mástil del Terror: nadie lo ha confirmado [5]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que la expedición se perdiera sin dejar rastro escrito: la nota de 1847-1848 cuenta qué pasó hasta abril de 1848 [1]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que la expedición Franklin desapareció sin dejar ningún mensaje?",
+          "respuesta": "No. Dejaron una nota en un mojón de piedras con mensajes de 1847 y 1848."
+        },
+        {
+          "pregunta": "¿Cuándo murió sir John Franklin, según la nota?",
+          "respuesta": "El 11 de junio de 1847."
+        },
+        {
+          "pregunta": "¿Quién ayudó a encontrar el Terror en 2016?",
+          "respuesta": "Sammy Kogvik, un ranger inuit de Gjoa Haven."
         }
       ]
     }
