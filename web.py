@@ -2510,6 +2510,14 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                        '</iframe></div>') if s.get("youtube") else ""
         en_un_minuto += (f'<div class="bloque"><h2>En 1 minuto</h2>{reproductor}<p class="ver-yt">'
                          f'<a href="{s["_slug"]}.html">{escape(s["titulo"])}</a>: lo que cuenta este Short, con más detalle</p></div>')
+    # Las partes en vertical de este episodio (sin página propia)
+    if e.get("_partes"):
+        reproductores = "".join(
+            f'<div class="reproductor short"><iframe src="https://www.youtube-nocookie.com/embed/{escape(p["youtube"])}"'
+            f' title="{escape(p["titulo"])}" loading="lazy" allowfullscreen'
+            ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">'
+            '</iframe></div>' for p in e["_partes"] if p.get("youtube"))
+        en_un_minuto += f'<div class="bloque"><h2>Este folio, en partes</h2>{reproductores}</div>'
     final = ""
     if siguiente or anterior:
         otro = anterior or siguiente
@@ -2673,6 +2681,10 @@ def generar() -> int:
     visibles = [e for e in datos["expedientes"] if datetime.fromisoformat(e["fecha"]) <= ahora]
     # Del más reciente al más antiguo; a igual fecha, por número (orden estable)
     visibles.sort(key=lambda e: (e["fecha"], e.get("num") or ""), reverse=True)
+    # Partes de un episodio en vertical ("parte_de" = num del episodio, S177 en adelante): cuentan lo mismo que su
+    # episodio, así que no tienen página ni tarjeta; se ven dentro del episodio y su enlace lleva a él
+    partes = sorted((e for e in visibles if e.get("parte_de")), key=lambda e: e["fecha"])
+    visibles = [e for e in visibles if not e.get("parte_de")]
     # Un mismo expediente puede aparecer dos veces (provisional sin YouTube, o vídeo subido dos veces):
     # se queda la primera entrada con YouTube y hereda el artículo y las lecturas de las otras
     por_titulo: dict[str, list[dict]] = {}
@@ -2724,6 +2736,9 @@ def generar() -> int:
         if episodio:
             e["_episodio"] = episodio
             episodio.setdefault("_shorts", []).append(e)
+    for p in partes:
+        if por_num.get(p["parte_de"]):
+            por_num[p["parte_de"]].setdefault("_partes", []).append(p)
     # Cada historia debe llevar su temática. Si falta, se usa la de su episodio («de») o su «tematica_alt»; si tampoco
     # hay, sale en la portada y en su página, pero en ninguna temática, y se avisa. Nunca se para la web por esto:
     # la sincronización publica cada día los vídeos que se hacen públicos.
@@ -2818,7 +2833,9 @@ def generar() -> int:
     # La sincronización de albuuss depende de este formato: {ID: {num, titulo, url}}
     (SALIDA / "enlaces.json").write_text(json.dumps(
         {e["youtube"]: {"num": e.get("num", ""), "titulo": e["titulo"], "url": f"{URL}/expedientes/{e['_slug']}.html"}
-         for e in visibles if e.get("youtube")}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+         for e in visibles if e.get("youtube")}
+        | {p["youtube"]: {"num": p.get("num", ""), "titulo": p["titulo"], "url": f"{URL}/expedientes/{ep['_slug']}.html"}
+           for p in partes if p.get("youtube") and (ep := por_num.get(p["parte_de"]))}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # Índice para Buscar y Sorpréndeme (rutas relativas a la raíz)
     # Datos para las imágenes de compartir (las dibuja Promocion/compartir.py; aquí solo el texto)
     (WEB / "datos" / "compartir.json").write_text(json.dumps(
