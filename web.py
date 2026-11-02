@@ -665,11 +665,11 @@ body:has(.hist) .oscuridad { display:none; }
 }
 """
 
-# Temporada de Halloween (del 15 de octubre al 2 de noviembre). web.py solo mete la decoración si genera en esas fechas,
-# y el navegador la enciende solo en esas fechas: el 3 de noviembre desaparece sola aunque no se vuelva a publicar.
+# Temporada de Halloween (del 15 de octubre al 1 de noviembre). web.py solo mete la decoración si genera en esas fechas,
+# y el navegador la enciende solo en esas fechas: el 2 de noviembre desaparece sola aunque no se vuelva a publicar.
 def es_halloween(d: date | None = None) -> bool:
     d = d or date.today()
-    return date(d.year, 10, 15) <= d <= date(d.year, 11, 2)
+    return date(d.year, 10, 15) <= d <= date(d.year, 11, 1)
 
 
 def telarana_svg() -> str:
@@ -779,7 +779,7 @@ HALLOWEEN_CSS = """
 """
 
 # Va en <head> para que no haya parpadeo: enciende la temporada solo entre el 15 de octubre y el 2 de noviembre
-HALLOWEEN_INICIO = """<script>(function(){var d=new Date(),y=d.getFullYear();if(d>=new Date(y,9,15)&&d<new Date(y,10,3))document.documentElement.classList.add('halloween');})();</script>"""
+HALLOWEEN_INICIO = """<script>(function(){var d=new Date(),y=d.getFullYear();if(d>=new Date(y,9,15)&&d<new Date(y,10,2))document.documentElement.classList.add('halloween');})();</script>"""
 
 # Texto de la cinta según el día (cuenta atrás hasta el 31)
 HALLOWEEN_CINTA_JS = """<script>(function(){var c=document.getElementById('cinta-texto');if(!c)return;var d=new Date(),y=d.getFullYear();
