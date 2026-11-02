@@ -95,7 +95,7 @@ ANTES = "El Archivo Curioso"   # nombre anterior: sale en los datos para buscado
 # Perfiles del archivo en redes: salen en «Acerca» y en sameAs, para que Google y las IAs sepan que son la misma marca
 REDES_SOCIALES = (("Instagram · @elfolio13", "https://www.instagram.com/elfolio13/"),
                   ("TikTok · @elfolio13", "https://www.tiktok.com/@elfolio13"),
-                  ("Facebook · Folio 13", "https://www.facebook.com/profile.php?id=61596062008062"))
+                  ("Facebook · Folio 13", "https://www.facebook.com/folio13"))
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 # Frases de la portada: cada visita muestra una al azar (solo las de expedientes ya publicados).
@@ -1323,7 +1323,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 {cinta_halloween(raiz) if halloween else ""}{cinta_navidad(canal, raiz) if navidad else ""}
 {cuerpo}
 {suscripcion(canal)}
-<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
+<footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/folio13" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
 {BASE_JS}{AMAZON_JS if canal.get("amazon_tag") else ""}{METRICAS_JS if canal.get("umami_id") else ""}{extra}
 </body>
 </html>
@@ -1859,7 +1859,7 @@ def pagina_redes(canal: dict) -> str:
     redes = (("Instagram", "@elfolio13", "https://www.instagram.com/elfolio13/", "Reels y carruseles de cada folio."),
              ("TikTok", "@elfolio13", "https://www.tiktok.com/@elfolio13", "Los Shorts y los vídeos, cada día."),
              ("YouTube", "Folio 13", canal["youtube"], "Los episodios completos."),
-             ("Facebook", "Folio 13", "https://www.facebook.com/profile.php?id=61596062008062", "Los folios y los Reels."))
+             ("Facebook", "Folio 13", "https://www.facebook.com/folio13", "Los folios y los Reels."))
     tarjetas = "".join(f'<a class="tema t-{c}" href="{escape(u)}" rel="noopener"><div><div class="num">{escape(r).upper()}</div>'
                        f'<h3>{escape(h)}</h3><p>{escape(d)}</p></div><div class="pie">Seguir</div></a>'
                        for (r, h, u, d), c in zip(redes, ("crimenes", "paranormal", "cine", "robos")))
