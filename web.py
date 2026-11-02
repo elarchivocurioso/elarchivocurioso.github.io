@@ -806,6 +806,75 @@ def deco_portada() -> str:
             f'<div class="calabaza der">{CALABAZA_SVG}</div></div>')
 
 
+# Temporada de Navidad (del 1 de diciembre al 6 de enero, Reyes). Igual que Halloween: web.py solo mete la decoración
+# si genera en esas fechas, y el navegador la apaga sola el 7 de enero aunque no se vuelva a publicar.
+def es_navidad(d: date | None = None) -> bool:
+    d = d or date.today()
+    return d.month == 12 or (d.month == 1 and d.day <= 6)
+
+
+NAVIDAD_CSS = """
+/* Navidad: solo con la clase .navidad en <html>, que pone el navegador en temporada */
+.cinta-navidad, .deco-navidad { display:none; }
+.navidad { --oro:#D9B45A; }
+.navidad .cinta-navidad { display:block; position:relative; z-index:39; text-align:center; font-size:12.5px; line-height:1.5;
+  padding:7px 16px; color:#EADFC4; background:linear-gradient(90deg,#06100B,#0F2418 50%,#06100B); border-bottom:1px solid rgba(217,180,90,.35); }
+.cinta-navidad a { color:var(--oro); font-weight:600; text-decoration:none; margin-left:6px; white-space:nowrap; }
+.cinta-navidad a:hover { color:#F3D88E; }
+.estrella { display:inline-block; width:9px; height:9px; margin-right:9px; vertical-align:0; background:var(--oro);
+  clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%); filter:drop-shadow(0 0 4px rgba(217,180,90,.9));
+  animation:destello 2.2s ease-in-out infinite alternate; }
+@keyframes destello { 0% { transform:scale(1) rotate(0); opacity:1; } 50% { transform:scale(.75) rotate(20deg); opacity:.7; }
+  100% { transform:scale(1.1) rotate(45deg); opacity:.95; } }
+.navidad .deco-navidad { display:block; }
+/* Portada: nieve que cae despacio sobre la escena y la linterna se vuelve dorada */
+.nieve { position:absolute; inset:0 -16px; overflow:hidden; z-index:-1; pointer-events:none; }
+.nieve i { position:absolute; top:-12px; left:var(--l); width:var(--t,4px); height:var(--t,4px); border-radius:50%; background:#F4EEE2;
+  opacity:var(--o,.5); filter:blur(.4px); animation:nieve var(--v,14s) linear infinite var(--r,0s); }
+@keyframes nieve { 0% { transform:translate(0,0); } 50% { transform:translate(18px,50vh); } 100% { transform:translate(-6px,100vh); } }
+.navidad .linterna { background:radial-gradient(circle 360px at var(--x,50%) var(--y,40%), rgba(217,180,90,.15), rgba(7,6,6,0) 60%),
+  radial-gradient(circle 900px at var(--x,50%) var(--y,40%), transparent 0, rgba(0,0,0,.55) 70%); }
+/* En temporada, los rótulos de sección llevan una estrella dorada */
+.navidad .seccion-cab .kicker { color:var(--oro); }
+.navidad .seccion-cab .kicker::before { content:""; display:inline-block; width:8px; height:8px; margin-right:8px; vertical-align:0; background:var(--oro);
+  clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%); animation:destello 2.2s ease-in-out infinite alternate; }
+.navidad .fila, .navidad .fila-top { scrollbar-color:var(--oro) transparent; }
+.navidad .etiqueta-caso { color:var(--oro); }
+.navidad .etiqueta-caso::before { background:var(--oro); box-shadow:0 0 16px rgba(217,180,90,.8); }
+@media (max-width:720px) { .cinta-navidad { font-size:11px; letter-spacing:.08em; } .cinta-navidad .largo { display:none; } }
+@media (prefers-reduced-motion:reduce) {
+  .estrella, .navidad .seccion-cab .kicker::before { animation:none; } .nieve { display:none; }
+}
+"""
+
+# Va en <head> para que no haya parpadeo: enciende la temporada solo entre el 1 de diciembre y el 6 de enero
+NAVIDAD_INICIO = """<script>(function(){var d=new Date();if(d.getMonth()===11||(d.getMonth()===0&&d.getDate()<=6))document.documentElement.classList.add('navidad');})();</script>"""
+
+# Texto de la cinta según el día (cuenta atrás hasta Nochebuena, luego Navidad y Reyes)
+NAVIDAD_CINTA_JS = """<script>(function(){var c=document.getElementById('cinta-navidad-texto');if(!c)return;var d=new Date(),m=d.getMonth(),dia=d.getDate(),t;
+var n=Math.round((new Date(d.getFullYear(),11,24)-new Date(d.getFullYear(),m,dia))/864e5);
+if(m===11&&n>1)t='Faltan '+n+' noches para Nochebuena.';else if(m===11&&n===1)t='Mañana es Nochebuena.';
+else if(m===11&&n===0)t='Esta noche es Nochebuena. Feliz Navidad.';else if(m===11)t='Feliz Navidad. Los folios siguen abiertos.';
+else if(m===0&&dia===5)t='Esta noche vienen los Reyes.';else if(m===0&&dia===6)t='Feliz día de Reyes.';
+else t='Felices fiestas. Los folios siguen abiertos.';c.textContent=t;})();</script>"""
+
+
+def cinta_navidad(canal: dict, raiz: str = "") -> str:
+    # Con afiliados, la cinta lleva a la biblioteca (un libro con fuentes es un buen regalo); sin ellos, a todos los folios
+    enlace = (f'<a href="{raiz}{PAGINA_LIBROS}">Ideas para regalar<span class="largo">: libros que parecen inventados</span> →</a>'
+              if canal.get("amazon_tag") else
+              f'<a href="{raiz}folios.html">Abre los folios<span class="largo"> para leer estas fiestas</span> →</a>')
+    return (f'<div class="cinta-navidad mono" role="note"><span class="estrella" aria-hidden="true"></span>'
+            f'<span id="cinta-navidad-texto">Felices fiestas.</span>{enlace}</div>{NAVIDAD_CINTA_JS}')
+
+
+def deco_portada_navidad() -> str:
+    """Nieve que cae sobre la portada (solo se ve con la clase .navidad)."""
+    copos = "".join(f'<i style="--l:{(i * 37) % 100}%;--t:{2 + i % 4}px;--o:{.35 + (i % 5) * .12:.2f};--v:{11 + (i * 7) % 12}s;'
+                    f'--r:-{(i * 5) % 14}s"></i>' for i in range(40))
+    return f'<div class="deco-navidad" aria-hidden="true"><div class="nieve">{copos}</div></div>'
+
+
 # Revelar lo tachado, la linterna, la barra de lectura, «Tu archivo» (folios leídos), el test y «Al azar»; en todas las páginas
 BASE_JS = """
 <script>
@@ -1192,7 +1261,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
     if len(texto) > 158:   # Google corta hacia los 155-160 caracteres: mejor cortar nosotros, en una palabra
         texto = texto[:155].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
     desc = escape(texto)
-    halloween = es_halloween()
+    halloween, navidad = es_halloween(), es_navidad()
     # Etiquetas para buscadores (Google, Bing) y para las vistas previas al compartir en redes
     seo = (f'<link rel="canonical" href="{URL}/{ruta}">\n'
            f'<meta property="og:site_name" content="{escape(canal["nombre"])}">\n'
@@ -1231,9 +1300,9 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
 <link rel="apple-touch-icon" href="{raiz}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap">
-<style>{CSS}{HALLOWEEN_CSS if halloween else ""}</style>
+<style>{CSS}{HALLOWEEN_CSS if halloween else ""}{NAVIDAD_CSS if navidad else ""}</style>
 <script>document.documentElement.classList.add('con-js');</script>
-{HALLOWEEN_INICIO if halloween else ""}
+{HALLOWEEN_INICIO if halloween else ""}{NAVIDAD_INICIO if navidad else ""}
 </head>
 <body data-raiz="{raiz}" data-total="{TOTAL_FOLIOS}"{f' data-folio="{folio}"' if folio else ""}>
 <div class="niebla-fondo" aria-hidden="true"></div><div class="oscuridad" aria-hidden="true"></div>
@@ -1251,7 +1320,7 @@ def pagina(titulo: str, cuerpo: str, canal: dict, raiz: str = "", descripcion: s
     <a class="sorprendeme" href="{raiz}buscar.html">Al azar</a>
   </nav>
 </div></header>
-{cinta_halloween(raiz) if halloween else ""}
+{cinta_halloween(raiz) if halloween else ""}{cinta_navidad(canal, raiz) if navidad else ""}
 {cuerpo}
 {suscripcion(canal)}
 <footer><span class="lema">{escape(canal['lema'])}</span><span class="siguenos">Síguenos: <a href="https://www.instagram.com/elfolio13/" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@elfolio13" rel="noopener">TikTok</a> · <a href="{escape(canal['youtube'])}" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/profile.php?id=61596062008062" rel="noopener">Facebook</a> · <a href="{raiz}redes.html">Todas las redes</a></span>© {date.today().year} {MARCA} · <a href="{raiz}index.html#tematicas">Temáticas</a> · <a href="{raiz}mapa.html">Mapa</a> · <a href="{raiz}temas/index.html">Etiquetas</a> · <a href="{raiz}historias-de-miedo-reales.html">Historias de miedo</a> · {f'<a href="{raiz}opiniones.html">Opiniones</a> · ' if canal.get("opiniones_form") else ""}{f'<a href="{raiz}{PAGINA_CUENTA}">Cuenta tu historia</a> · <a href="{raiz}{LECTORES}/">Contadas por lectores</a> · ' if canal.get("historias_form") else ""}{f'<a href="{raiz}{PAGINA_LIBROS}">Biblioteca</a> · ' if canal.get("amazon_tag") else ""}<a href="{raiz}apoya.html">Apoya Folio 13</a> · <a href="{raiz}acerca.html">Cómo verificamos</a> · <a href="{raiz}privacidad.html">Política de privacidad</a> · <a href="{escape(canal['youtube'])}">YouTube</a> · <a href="{URL}/feed.xml">RSS</a>{aviso_afiliados(canal)}</footer>
@@ -1983,7 +2052,7 @@ def inicio(canal: dict, expedientes: list[dict]) -> str:
     cuerpo = f"""<main class="ancho">
 <section class="blog-cab portada">
   <div class="escena" aria-hidden="true"><div class="foto" style="background-image:url({foto})"></div><div class="foto-luz" style="background-image:url({foto})"></div><div class="ojos uno"><i></i><i></i></div><div class="ojos dos"><i></i><i></i></div></div>
-  {deco_portada() if es_halloween() else ""}
+  {deco_portada() if es_halloween() else ""}{deco_portada_navidad() if es_navidad() else ""}
   <span class="kicker">El blog de Folio 13</span>
   <h1>Historias que parecen <em>falsas</em></h1>
   <p class="lema">{escape(canal['lema'])}</p>
