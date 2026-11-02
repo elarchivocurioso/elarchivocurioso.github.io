@@ -10271,6 +10271,136 @@
           "respuesta": "Sammy Kogvik, un ranger inuit de Gjoa Haven."
         }
       ]
+    },
+    {
+      "youtube": "UI2KV0gjxqA",
+      "tipo": "short",
+      "titulo": "El libro «de Flamel» apareció 194 años después de su muerte",
+      "epoca": "1418 - 1612",
+      "lugar": "París",
+      "tematica": "fantasia",
+      "mapa": [
+        48.8567,
+        2.3522
+      ],
+      "resumen": "El mito: el alquimista Flamel dejó escrito cómo fabricó oro.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 2/11/2026, 02:00 (S156, aprobada por la usuaria).",
+        "Nicolas Flamel, escribano público de París, murió en 1418. Su fortuna salía de su oficio, de los bienes de Pernelle y de sus inversiones en casas y rentas",
+        "No hay pruebas de que practicara la alquimia: «there is no evidence that the historical Nicolas Flamel practised alchemy»; la asociación con la piedra filosofal surge a finales del siglo XV",
+        "Los tratados de alquimia con su nombre son atribuciones posteriores, de finales del siglo XV al XVII",
+        "*Livre des figures hiéroglyphiques*: publicado en París en 1612, dentro de *Trois traitez de la philosophie naturelle*, por Pierre Arnauld, sieur de la Chevallerie; edición inglesa en Londres en 1624"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia (francés), «Nicolas Flamel»",
+          "url": "https://fr.wikipedia.org/wiki/Nicolas_Flamel"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Nicolas Flamel»",
+          "url": "https://en.wikipedia.org/wiki/Nicolas_Flamel"
+        },
+        {
+          "titulo": "Ciudad de París, «Nicolas Flamel, alchimiste de papier» (museo de Cluny)",
+          "url": "https://www.paris.fr/evenements/nicolas-flamel-alchimiste-de-papier-117753"
+        },
+        {
+          "titulo": "Medievalists.net, sobre la exposición de Cluny (2026)",
+          "url": "https://www.medievalists.net/2026/10/nicolas-flamel-medieval-exhibition-paris/"
+        },
+        {
+          "titulo": "Wikimedia Commons, «Epitaphe Nicolas Flamel Cluny»",
+          "url": "https://commons.wikimedia.org/wiki/File:Epitaphe_Nicolas_Flamel_Cluny.jpg"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Nicolas Barnaud»",
+          "url": "https://en.wikipedia.org/wiki/Nicolas_Barnaud"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XV",
+        "Libro de Abraham el Judío",
+        "Figuras jeroglíficas"
+      ],
+      "fecha": "2026-11-02T02:00",
+      "num": "S156",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Nicolas Flamel es el alquimista más famoso de la historia: el hombre que, según la leyenda, encontró la piedra filosofal, convirtió el mercurio en oro y quizá nunca murió. Aparece hasta en *Harry Potter*. Y la historia de cómo lo consiguió la contó él mismo, en un libro.",
+            "El problema es la fecha de ese libro. Flamel murió en 1418. El libro que lleva su nombre se publicó en París en 1612. Y en los documentos que dejó en vida no hay ni rastro de alquimia."
+          ]
+        },
+        {
+          "titulo": "El Flamel de los documentos",
+          "parrafos": [
+            "Nicolas Flamel fue escribano público en París y murió en 1418. Su fortuna tenía una explicación muy terrenal: su oficio, los bienes de su mujer, Pernelle, y sus inversiones en casas y rentas [1][2]. Su propia lápida, conservada en el museo de Cluny, habla de las rentas y casas que dejó a su iglesia [5].",
+            "En sus documentos no se menciona ninguna piedra filosofal. La leyenda del alquimista nace a finales del siglo XV, casi cincuenta años después de su muerte, según la exposición que el museo de Cluny le dedica en 2026-2027 [3]. Como resume Medievalists.net, no hay pruebas de que el Flamel histórico practicara la alquimia [4]."
+          ]
+        },
+        {
+          "titulo": "Un libro de 1612",
+          "parrafos": [
+            "El texto que convirtió a Flamel en mito es el *Livre des figures hiéroglyphiques*, el «Libro de las figuras jeroglíficas». Se publicó en París en 1612, dentro de un volumen titulado *Trois traitez de la philosophie naturelle*, a cargo de Pierre Arnauld, señor de la Chevallerie. En 1624 salió una edición inglesa en Londres [1][2]. Entre la muerte de Flamel y ese libro pasaron 194 años.",
+            "El libro se presenta como escrito por el propio Flamel. Cuenta que compró por dos florines un viejo libro, el «Libro de Abraham el Judío»; que pasó años sin entender sus figuras; que viajó a España en busca de ayuda; y que el 25 de abril de 1382, con Pernelle, transmutó mercurio primero en plata y después en oro [1][2]."
+          ]
+        },
+        {
+          "titulo": "La pista que lo delata",
+          "parrafos": [
+            "No se ha encontrado ningún original medieval ni del *Libro de las figuras* ni del *Libro de Abraham el Judío*. Por el vocabulario y los anacronismos, todo apunta a un texto de finales del siglo XVI o principios del XVII [1]. Una de las pistas, señalada por el investigador Claude Gagnon, es que el libro cita al alquimista Lambsprinck, cuyo tratado se publicó por primera vez en 1599, en latín, en una recopilación de Nicolas Barnaud [1][6]. Un texto supuestamente escrito antes de 1418 cita algo que no se imprimió hasta casi dos siglos después.",
+            "Quién lo escribió de verdad no se sabe. Se ha culpado al propio editor y también al escritor Béroalde de Verville [1]. Lo seguro es que el Flamel alquimista es, como dice el título de la exposición de Cluny, un alquimista «de papel»."
+          ]
+        }
+      ],
+      "titulo_articulo": "El libro de Nicolas Flamel que apareció 194 años después de su muerte",
+      "aprender": [
+        "Quién fue el Nicolas Flamel real y de dónde salía su fortuna.",
+        "Qué cuenta el «Libro de las figuras jeroglíficas» y cuándo apareció.",
+        "Qué pista delata que el libro no es medieval.",
+        "Qué dicen hoy los historiadores y el museo de Cluny."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Flamel fue escribano público en París y murió en 1418 [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En sus documentos no hay mención de la piedra filosofal [3]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El «Libro de las figuras jeroglíficas» se publicó en París en 1612 [2]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Quién escribió el libro de 1612: se ha señalado al editor y a Béroalde de Verville [1]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que Flamel convirtiera mercurio en oro en 1382: solo lo cuenta un libro publicado en 1612 [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que su riqueza viniera de la alquimia: salía de su oficio, de su mujer y de sus inversiones [2]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que Nicolas Flamel dejó escrito cómo fabricó oro?",
+          "respuesta": "No. El libro que lo cuenta se publicó en 1612, 194 años después de su muerte, y en sus documentos no hay alquimia."
+        },
+        {
+          "pregunta": "¿Qué cita delata que el libro no es medieval?",
+          "respuesta": "La del alquimista Lambsprinck, cuyo tratado no se publicó hasta 1599."
+        },
+        {
+          "pregunta": "¿De dónde salía la fortuna real de Flamel?",
+          "respuesta": "De su oficio de escribano, de los bienes de Pernelle y de sus inversiones en casas y rentas."
+        }
+      ]
     }
   ]
 }
