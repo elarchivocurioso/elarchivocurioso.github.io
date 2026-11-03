@@ -511,6 +511,13 @@ sup.nota-fuente a:hover { background:var(--rojo); color:#fff; }
 .navegacion a small { display:block; color:var(--rojo); font-size:11px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em; }
 .navegacion a:hover { border-color:var(--rojo); transform:translateY(-2px); }
 .navegacion .sig { text-align:right; grid-column:2; }
+.relacionados { margin-top:36px; } .relacionados h2 { margin-bottom:12px; }
+.relacionados div { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.relacionados a { display:block; padding:16px 18px; border:1px solid var(--borde); border-radius:var(--radio); text-decoration:none; color:var(--texto); font-size:17px;
+  font-family:'Playfair Display',serif; transition:all .3s; background:var(--tarjeta); }
+.relacionados a small { display:block; color:var(--rojo); font-size:11px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em; }
+.relacionados a:hover { border-color:var(--rojo); transform:translateY(-2px); }
+@media (max-width:760px) { .relacionados div { grid-template-columns:1fr; } }
 @media (max-width:960px) { .hist-grid { grid-template-columns:1fr; } .hist-lado { position:static; } .fuentes-caja { transform:none; } }
 @media (max-width:600px) { .navegacion { grid-template-columns:1fr; } .navegacion .sig { grid-column:auto; } .hist-cab .ancho { padding-top:48px; } }
 
@@ -2485,6 +2492,10 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
     if siguiente:
         nav += f'<a class="sig" href="{siguiente["_slug"]}.html"><small>Folio siguiente →</small>{escape(siguiente["titulo"])}</a>'
     nav += "</nav>"
+    if e.get("_relacionados"):
+        nav = ('<nav class="relacionados" aria-label="Folios relacionados"><h2>Folios relacionados</h2><div>'
+               + "".join(f'<a href="{r["_slug"]}.html"><small>{escape(num_ficha(r).split(" · ")[0])}</small>{escape(r["titulo"])}</a>'
+                         for r in e["_relacionados"]) + "</div></nav>" + nav)
     if e.get("youtube"):
         video = f"""<div class="reproductor {tipo}"><iframe src="https://www.youtube-nocookie.com/embed/{escape(e['youtube'])}"
   title="{escape(e['titulo'])}" loading="lazy" allowfullscreen
@@ -2790,6 +2801,18 @@ def generar() -> int:
     if dir_exp.exists():
         shutil.rmtree(dir_exp)
     dir_exp.mkdir()
+    # Folios relacionados: 3 por página, por temática y etiquetas en común (sin repetir el anterior ni el siguiente).
+    # Pesan más los episodios y se reparte para que ningún folio se quede sin enlaces que lleguen a él.
+    recibidos = {x["_slug"]: 0 for x in listados}
+    for i, e in enumerate(listados):
+        vecinos = {e["_slug"]} | {listados[j]["_slug"] for j in (i - 1, i + 1) if 0 <= j < len(listados)}
+        def afinidad(x):
+            return (3 * (x["tematica"] == e["tematica"]) + (x.get("tematica_alt") in (e["tematica"], e.get("tematica_alt")))
+                    + len(set(x.get("etiquetas", [])) & set(e.get("etiquetas", [])))
+                    + (x.get("tipo") == "video") - 0.6 * recibidos[x["_slug"]])
+        e["_relacionados"] = sorted((x for x in listados if x["_slug"] not in vecinos), key=afinidad, reverse=True)[:3]
+        for x in e["_relacionados"]:
+            recibidos[x["_slug"]] += 1
     for i, e in enumerate(listados):
         anterior = listados[i + 1] if i + 1 < len(listados) else None   # más antiguo
         siguiente = listados[i - 1] if i > 0 else None                  # más reciente

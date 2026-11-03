@@ -361,6 +361,13 @@ sup.nota-fuente a:hover { background:var(--rojo); color:#fff; }
 .navegacion a small { display:block; color:var(--rojo); font-size:11px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em; }
 .navegacion a:hover { border-color:var(--rojo); transform:translateY(-2px); }
 .navegacion .sig { text-align:right; grid-column:2; }
+.relacionados { margin-top:36px; } .relacionados h2 { margin-bottom:12px; }
+.relacionados div { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.relacionados a { display:block; padding:16px 18px; border:1px solid var(--borde); border-radius:var(--radio); text-decoration:none; color:var(--texto); font-size:17px;
+  font-family:'Playfair Display',serif; transition:all .3s; background:var(--tarjeta); }
+.relacionados a small { display:block; color:var(--rojo); font-size:11px; margin-bottom:6px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em; }
+.relacionados a:hover { border-color:var(--rojo); transform:translateY(-2px); }
+@media (max-width:760px) { .relacionados div { grid-template-columns:1fr; } }
 @media (max-width:960px) { .hist-grid { grid-template-columns:1fr; } .hist-lado { position:static; } .fuentes-caja { transform:none; } }
 @media (max-width:600px) { .navegacion { grid-template-columns:1fr; } .navegacion .sig { grid-column:auto; } .hist-cab .ancho { padding-top:48px; } }
 
