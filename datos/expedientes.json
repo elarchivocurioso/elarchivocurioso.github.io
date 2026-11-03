@@ -7884,7 +7884,7 @@
       "titulo_articulo": "«Solo o en compañía de otros»: la frase de una sentencia de 1983 y las preguntas que el caso Urquijo nunca contestó"
     },
     {
-      "youtube": "SF_ImYArQ_Y",
+      "youtube": "5NijIBWNEoY",
       "tipo": "video",
       "titulo": "CONDENADA siendo INOCENTE: el caso de Mijas y la prueba de ADN que lo cambió todo",
       "epoca": "1999-2026",
@@ -10917,6 +10917,130 @@
         {
           "pregunta": "¿Cuánto metraje inédito se recuperó, más o menos?",
           "respuesta": "Unos 25 minutos."
+        }
+      ]
+    },
+    {
+      "youtube": "hN1Fq1hGc5U",
+      "tipo": "short",
+      "titulo": "Los juegos del hambre nacieron de un mito griego",
+      "epoca": "mito griego y Roma antigua (siglos I-II d. C.)",
+      "lugar": "Creta, Atenas y Roma",
+      "tematica": "fantasia",
+      "mapa": [
+        35.2981,
+        25.1631
+      ],
+      "resumen": "¿Qué ciudad entregaba catorce de sus jóvenes a un monstruo?",
+      "curiosidades": [
+        "Fecha prevista de publicación: 3/11/2026, 22:00 (S161, aprobada por la usuaria).",
+        "Suzanne Collins, Q&A de Scholastic (2008): «A significant influence would have to be the Greek myth of Theseus and the Minotaur. The myth tells how in punishment for past deeds, Athens periodically had to send seven youths and seven maidens to Crete, where they were thrown in the Labyrinth and devoured by the monstrous Minotaur. […] Theseus, who was the son of the king, volunteered to go. I guess in her own way, Katniss is a futuristic Theseus. In keeping with the classical roots, I send my tributes into an updated version of the Roman gladiator games […]. Panem itself comes from the expression \"Panem et Circenses\" which translates into \"Bread and Circuses.\"»",
+        "Plutarco, *Vida de Teseo* 15 y 17: Atenas pactó enviar a Minos «every nine years a tribute of seven youths and as many maidens», que en Creta morían a manos del Minotauro en el Laberinto; Teseo «offered himself independently of the lot»",
+        "El palacio de Cnosos se identifica con el de Minos; el Laberinto nunca se ha encontrado",
+        "Juvenal, *Sátira* X, vv. 77-81: «…nunc se / continet atque duas tantum res anxius optat, / panem et circenses» (el pueblo, que antes daba mandos y legiones, ahora solo ansía dos cosas: pan y juegos del circo). Juvenal vivió h. 55-128; el libro de la sátira X es de principios del siglo II"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Scholastic, entrevista con Suzanne Collins (2008), PDF",
+          "url": "https://shop.scholastic.co.uk/resources/208351/asset_derivatives/2116407"
+        },
+        {
+          "titulo": "Plutarco, «Vida de Teseo» (LacusCurtius)",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Minotaur»",
+          "url": "https://en.wikipedia.org/wiki/Minotaur"
+        },
+        {
+          "titulo": "Juvenal, «Sátira X» (The Latin Library)",
+          "url": "https://www.thelatinlibrary.com/juvenal/10.shtml"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Juvenal»",
+          "url": "https://en.wikipedia.org/wiki/Juvenal"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Colosseum»",
+          "url": "https://en.wikipedia.org/wiki/Colosseum"
+        }
+      ],
+      "etiquetas": [
+        "Suzanne Collins",
+        "Teseo"
+      ],
+      "fecha": "2026-11-03T22:00",
+      "num": "S161",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Una ciudad derrotada tiene que enviar cada cierto tiempo a sus jóvenes a morir en un lugar del que no se sale, para que una potencia lejana recuerde quién manda. Uno de ellos se ofrece voluntario. Parece el argumento de una saga juvenil de este siglo, y lo es. Pero también tiene más de dos mil años.",
+            "La propia autora de *Los juegos del hambre*, Suzanne Collins, lo explicó en 2008: su historia mezcla un mito griego con los espectáculos de la Roma antigua. Hasta el nombre de su país inventado sale de un verso latino."
+          ]
+        },
+        {
+          "titulo": "Lo que dijo la autora",
+          "parrafos": [
+            "En una entrevista publicada por su editorial, Scholastic, en 2008, Suzanne Collins señaló como gran influencia el mito griego de Teseo y el Minotauro. Contó que, como castigo por hechos pasados, Atenas tenía que enviar periódicamente a Creta siete muchachos y siete muchachas, que eran arrojados al Laberinto y devorados por el Minotauro. Teseo, el hijo del rey, se ofreció voluntario. «A su manera, Katniss es un Teseo futurista», dijo [1].",
+            "Añadió que, siguiendo esas raíces clásicas, mandaba a sus tributos a una versión actualizada de los juegos de gladiadores romanos, y que el nombre de Panem viene de la expresión latina *panem et circenses*, «pan y circo» [1]."
+          ]
+        },
+        {
+          "titulo": "El tributo de Atenas",
+          "parrafos": [
+            "La versión más conocida del mito está en la *Vida de Teseo* de Plutarco. Atenas pactó enviar al rey Minos de Creta, cada nueve años, un tributo de siete jóvenes y otras tantas doncellas, que morían en el Laberinto a manos del Minotauro. Teseo se ofreció sin esperar al sorteo [2]. Otras fuentes antiguas hablan de un envío cada año o cada siete. El palacio de Cnosos se asocia con el rey Minos, pero el Laberinto nunca se ha encontrado [3]. Todo esto es mito."
+          ]
+        },
+        {
+          "titulo": "Pan y juegos del circo",
+          "parrafos": [
+            "La parte romana, en cambio, es historia. El poeta Juvenal, que vivió aproximadamente entre los años 55 y 128, escribió a principios del siglo II que el pueblo de Roma, que antes repartía mandos y legiones, ya solo ansiaba dos cosas: pan y juegos del circo [4][5]. *Circenses* eran sobre todo las carreras de carros del circo; los gladiadores luchaban en los anfiteatros.",
+            "El mayor de esos anfiteatros, el Coliseo, se inauguró en el año 80 y acogía combates de gladiadores ante unas 50.000 personas, según las estimaciones modernas más prudentes [6]. Collins juntó las dos cosas: el tributo de jóvenes del mito y el espectáculo de masas de Roma."
+          ]
+        }
+      ],
+      "titulo_articulo": "«Los juegos del hambre» nacieron de un mito griego: Teseo, el Minotauro y «pan y circo»",
+      "aprender": [
+        "Qué contó Suzanne Collins sobre el origen de su novela.",
+        "Qué dice el mito de Teseo y el Minotauro, según Plutarco.",
+        "De qué poeta romano sale la expresión «pan y circo» y qué significa.",
+        "Qué parte de todo esto es mito y qué parte es historia."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Suzanne Collins citó el mito de Teseo y los juegos romanos como influencias, y explicó que Panem viene de «panem et circenses» [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "La expresión «panem et circenses» es de la Sátira X de Juvenal [4]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El Coliseo se inauguró hacia el año 80 y acogía combates de gladiadores [6]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Cada cuánto se enviaba el tributo: cada nueve años en Plutarco; cada año o cada siete en otras fuentes [2]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "El Minotauro y su Laberinto: son mito y el Laberinto nunca se ha encontrado [3]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿De dónde sale el nombre de Panem?",
+          "respuesta": "De la expresión latina «panem et circenses», «pan y circo», del poeta Juvenal."
+        },
+        {
+          "pregunta": "¿Es verdad que se ha encontrado el Laberinto del Minotauro?",
+          "respuesta": "No. El mito lo sitúa en Creta, pero nunca se ha encontrado."
+        },
+        {
+          "pregunta": "¿Qué personaje mitológico dijo Collins que era el modelo de Katniss?",
+          "respuesta": "Teseo, que se ofreció voluntario para ir a Creta."
         }
       ]
     }
