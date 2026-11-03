@@ -2,6 +2,62 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## La «Metrópolis» perdida que apareció en Buenos Aires: 25 minutos que estuvieron 80 años en una lata
+
+Página: https://folio13.com/expedientes/la-metropolis-perdida-aparecio-en-buenos-aires.html
+Temática: Cine maldito y perdido
+Lugar: Berlín y Buenos Aires
+Época: 1927-2010
+
+En Buenos Aires, alguien abre una lata… y dentro hay cine perdido.
+
+Durante ochenta años, uno de los clásicos más famosos del cine se vio incompleto. *Metrópolis*, de Fritz Lang, se estrenó en Berlín en 1927 con unos 153 minutos, y casi enseguida la recortaron. Aquel metraje se dio por perdido para siempre.
+
+En 2008 apareció. No en Alemania, sino en Buenos Aires, en una lata bien rotulada en el estante de un museo. Y llevaba allí décadas.
+
+### Una película recortada desde el principio
+
+*Metrópolis* se estrenó en Berlín, en el UFA-Palast am Zoo, el 10 de enero de 1927, con unos 4.189 metros de película, alrededor de 153 minutos [1]. Paramount la acortó para Estados Unidos hasta unos 116 minutos, y la propia UFA estrenó en Alemania, en agosto de 1927, otra versión recortada [1]. El metraje eliminado se dio por perdido hasta 2008 [1].
+
+### Una lata en un estante
+
+Lo que apareció en el Museo del Cine de Buenos Aires fue un negativo de 16 milímetros sacado en los años sesenta o setenta de una copia de 35 milímetros del montaje original [1]. El hallazgo se anunció en Berlín el 1 de julio de 2008 [1]. Contenía unos 25 minutos que no se habían visto desde 1927, alrededor de una quinta parte de la película [1].
+
+Según la reconstrucción del semanario *Die Zeit*, la historia empezó en 1928, cuando el distribuidor porteño Adolfo Z. Wilson trajo una copia de la versión original. En los años sesenta la tenía el crítico Manuel Peña Rodríguez, que la vendió al Fondo Nacional de las Artes, y en 1992 pasó al Museo del Cine [2].
+
+En 2008, Paula Félix-Didier asumió la dirección del museo [2]. Con el historiador Fernando Martín Peña, que unos veinte años antes había intentado ver esa copia sin conseguirlo, la buscaron. Según contaron los dos en 2010, encontrarla les llevó unos diez minutos, porque la lata estaba bien rotulada [3]. Es su testimonio, no un documento.
+
+### El reestreno
+
+La versión restaurada se presentó el 12 de febrero de 2010 en la gala de la 60.ª Berlinale, en el Friedrichstadt-Palast, con la partitura original de Gottfried Huppertz tocada en directo [1][4]. Se proyectó a la vez en una pantalla junto a la Puerta de Brandeburgo y en la Alte Oper de Fráncfort [1].
+
+Aun así, la película no está completa. La versión de 2010 dura 148 minutos y le faltan unos cinco o seis minutos según la fuente. Dos secuencias estaban demasiado dañadas y se sustituyen por rótulos que explican lo que pasaba [1].
+
+### Curiosidades
+
+- Fecha prevista de publicación: 3/11/2026, 19:00 (S160, aprobada por la usuaria).
+- *Metropolis* se estrenó en Berlín (UFA-Palast am Zoo) el 10 de enero de 1927, con unos 4.189 m (unos 153 min). Paramount la acortó para Estados Unidos (unos 116 min) y la UFA estrenó en Alemania en agosto de 1927 otra versión recortada (unos 118 min)
+- Ese metraje se dio por perdido hasta 2008 (de 1927 a 2008 van 81 años; la narración dice «ochenta años»)
+- Lo hallado fue un negativo de reducción de 16 mm, sacado en los años sesenta o setenta de una copia de 35 mm del montaje original, en el Museo del Cine de Buenos Aires. Se anunció en Berlín el 1 de julio de 2008
+- Minutos recuperados: unos 25 («about 25 minutes», más o menos una quinta parte de la película)
+
+### Semáforo de la verdad
+
+- documentado: La copia con el metraje perdido se encontró en el Museo del Cine de Buenos Aires y se anunció en 2008
+- documentado: La versión restaurada se reestrenó en la Berlinale el 12 de febrero de 2010
+- documentado: Dos secuencias se sustituyen por rótulos porque estaban demasiado dañadas
+- discutido: Cuánto metraje se recuperó: unos 25 minutos según la mayoría de fuentes; otras hablan de más de 30
+- discutido: Cuándo y quién llevó la copia a Argentina: 1928 y Adolfo Z. Wilson según *Die Zeit*; otras fuentes dan 1927 o «un coleccionista» [2]
+- leyenda: Que la versión de 2010 sea la película completa: siguen faltando unos minutos
+
+### Fuentes
+
+- [1] Wikipedia (inglés), «Metropolis (1927 film)»: https://en.wikipedia.org/wiki/Metropolis_(1927_film)
+- [2] The Local, resumen de la reconstrucción de «Die Zeit» (2 de julio de 2008): https://www.thelocal.de/20080702/12847
+- [3] ScreenAnarchy, entrevista a Paula Félix-Didier y Fernando Martín Peña en el San Francisco Silent Film Festival (2010): https://screenanarchy.com/2010/07/sfsff-2010-metropolis-1927--onstage-interview-with-eddie-muller-paula-felix-didier-and-fernando-mart.html
+- [4] The Bioscope, «The new Metropolis» (2010): https://thebioscope.net/2010/02/12/the-new-metropolis/
+- [5] CBS News, «Original Metropolis found after 80 years»: https://www.cbsnews.com/news/original-metropolis-found-after-80-years/
+
 ## Thomas Blood, el hombre que aplastó la corona de Inglaterra… y salió perdonado
 
 Página: https://folio13.com/expedientes/thomas-blood-aplasto-la-corona-y-el-rey-lo-perdono.html
