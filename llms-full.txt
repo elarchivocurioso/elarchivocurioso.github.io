@@ -2,6 +2,66 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## El Valbanera: el barco hundido con los botes salvavidas todavía en su sitio
+
+Página: https://folio13.com/expedientes/que-paso-con-el-valbanera-los-botes-seguian-en-su-sitio.html
+Temática: Desastres y epidemias
+Lugar: Santiago de Cuba, La Habana y cayos de Florida
+Época: septiembre de 1919
+
+Los mástiles asoman del mar; los botes salvavidas siguen en su sitio.
+
+Septiembre de 1919. Un vapor español cargado de emigrantes canarios desaparece en medio de un huracán, frente a La Habana. Días después, la Marina de Estados Unidos encuentra sus mástiles asomando en unos bajos de arena de Florida. A bordo no queda nadie, y los botes salvavidas siguen colgados donde estaban.
+
+Al Valbanera se le llama a veces el «Titanic canario» [5]. Pero, a diferencia del Titanic, no hubo supervivientes que contaran lo que pasó. Lo que sabemos sale del pecio.
+
+### Un barco de emigrantes
+
+El Valbanera era un vapor español de la naviera Pinillos que llevaba emigrantes, sobre todo canarios, a Cuba. Salió de Barcelona el 10 de agosto de 1919 [3][1].
+
+El 5 de septiembre llegó a Santiago de Cuba, el primer puerto cubano de su ruta. Allí desembarcaron 742 pasajeros, aunque muchos tenían billete hasta La Habana [1][3]. Esa decisión les salvó la vida.
+
+### El huracán
+
+El 9 de septiembre, el Valbanera llegó frente a La Habana, pero no pudo entrar en el puerto por el huracán. Avisó de que se alejaba de la costa para capear el temporal. Fue su último contacto confirmado [2].
+
+El 12 de septiembre, un cazasubmarinos de la Marina de Estados Unidos vio unos mástiles asomando del agua en Halfmoon Shoal, en los bajos de arena de las Quicksands, al oeste de Cayo Hueso. El 19 se leyó en el casco el nombre: «Valbanera» [1][2]. El barco no había desaparecido sin dejar rastro.
+
+### Los botes, sin arriar
+
+Murieron las 488 personas que iban a bordo [1]. Nunca se recuperó ningún cuerpo [1][2]. Y hay un detalle que todavía estremece: los pescantes de los botes salvavidas, los brazos que sirven para bajarlos al agua, estaban en posición de estiba. Los botes no se llegaron a arriar [1].
+
+¿Por qué? Nadie lo sabe con certeza. El arqueólogo Matthew Lawrence, de la NOAA, propone que la fuerza del huracán hizo imposible bajarlos [4]. Es una hipótesis razonable, no una certeza.
+
+Ni siquiera las cifras cuadran del todo. Las fuentes no coinciden en cuántos pasajeros llevaba al salir de Canarias ni en cuántos bajaron en Santiago, y la versión española de Wikipedia recoge que «otras fuentes» hablan de cadáveres vistos por buzos dentro del barco [3]. La NOAA y la Wikipedia inglesa son claras: no se vio ni se recuperó ningún cuerpo [1][2].
+
+Hoy el pecio descansa a unos ocho metros de profundidad, casi enterrado en la arena [4]. Alrededor de él han crecido leyendas de náufragos, tiburones y saqueadores. Ninguna está confirmada.
+
+### Curiosidades
+
+- Fecha prevista de publicación: 4/11/2026, 02:00 (S162, aprobada por la usuaria).
+- El Valbanera era un vapor español de la naviera Pinillos que llevaba emigrantes, sobre todo canarios, a Cuba; salió de Barcelona el 10 de agosto de 1919
+- El 5 de septiembre de 1919, en Santiago de Cuba, desembarcaron 742 pasajeros, aunque muchos tenían billete hasta La Habana (NOAA y es.wikipedia dan 742; en.wikipedia da 749; el guion dice «más de setecientos»)
+- El 9 de septiembre no pudo entrar en La Habana por el huracán y avisó de que se alejaba de la costa para capear el temporal; fue su último contacto confirmado
+- El pecio apareció en Halfmoon Shoal, en los bajos de arena de las Quicksands, al oeste de Cayo Hueso y junto al canal que los separa de Rebecca Shoal. Un cazasubmarinos de la Marina de EE. UU. vio los mástiles el 12 de septiembre y el 19 se leyó el nombre «Valbanera» en el casco
+
+### Semáforo de la verdad
+
+- documentado: El Valbanera se hundió con las 488 personas que iban a bordo y no hubo supervivientes [1]
+- documentado: Los botes salvavidas no se arriaron: los pescantes estaban en posición de estiba [1]
+- documentado: El pecio se identificó el 19 de septiembre de 1919 en los bajos al oeste de Cayo Hueso [2]
+- discutido: Por qué no se arriaron los botes: la fuerza del huracán es una hipótesis [4]
+- discutido: Cuántos pasajeros bajaron en Santiago: 742 según la NOAA, 749 según otras fuentes [2]
+- leyenda: Que el Valbanera desapareciera sin dejar rastro: el pecio se encontró e identificó en pocos días [1]
+
+### Fuentes
+
+- [1] NOAA, Florida Keys National Marine Sanctuary, «Valbanera»: https://floridakeys.noaa.gov/shipwrecks/valbanera.html
+- [2] Wikipedia (inglés), «SS Valbanera»: https://en.wikipedia.org/wiki/SS_Valbanera
+- [3] Wikipedia (español), «Valbanera»: https://es.wikipedia.org/wiki/Valbanera
+- [4] WLRN, «Lost in the Quicksands» (2021): https://www.wlrn.org/news/2021-09-08/lost-in-the-quicksands-new-expedition-seeks-stories-from-the-wreck-of-the-valbanera
+- [5] Diario de Avisos, «Valbanera, el Titanic canario» (2026): https://diariodeavisos.elespanol.com/2026/07/valbanera-el-titanic-canario/
+
 ## «Los juegos del hambre» nacieron de un mito griego: Teseo, el Minotauro y «pan y circo»
 
 Página: https://folio13.com/expedientes/los-juegos-del-hambre-nacieron-de-un-mito-griego.html

@@ -11043,6 +11043,134 @@
           "respuesta": "Teseo, que se ofreció voluntario para ir a Creta."
         }
       ]
+    },
+    {
+      "youtube": "N76LIGjNte0",
+      "tipo": "short",
+      "titulo": "¿Qué pasó con el Valbanera? Los botes seguían en su sitio",
+      "epoca": "septiembre de 1919",
+      "lugar": "Santiago de Cuba, La Habana y cayos de Florida",
+      "tematica": "desastres",
+      "mapa": [
+        20.0217,
+        -75.8294
+      ],
+      "resumen": "Los mástiles asoman del mar; los botes salvavidas siguen en su sitio.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 4/11/2026, 02:00 (S162, aprobada por la usuaria).",
+        "El Valbanera era un vapor español de la naviera Pinillos que llevaba emigrantes, sobre todo canarios, a Cuba; salió de Barcelona el 10 de agosto de 1919",
+        "El 5 de septiembre de 1919, en Santiago de Cuba, desembarcaron 742 pasajeros, aunque muchos tenían billete hasta La Habana (NOAA y es.wikipedia dan 742; en.wikipedia da 749; el guion dice «más de setecientos»)",
+        "El 9 de septiembre no pudo entrar en La Habana por el huracán y avisó de que se alejaba de la costa para capear el temporal; fue su último contacto confirmado",
+        "El pecio apareció en Halfmoon Shoal, en los bajos de arena de las Quicksands, al oeste de Cayo Hueso y junto al canal que los separa de Rebecca Shoal. Un cazasubmarinos de la Marina de EE. UU. vio los mástiles el 12 de septiembre y el 19 se leyó el nombre «Valbanera» en el casco"
+      ],
+      "fuentes": [
+        {
+          "titulo": "NOAA, Florida Keys National Marine Sanctuary, «Valbanera»",
+          "url": "https://floridakeys.noaa.gov/shipwrecks/valbanera.html"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «SS Valbanera»",
+          "url": "https://en.wikipedia.org/wiki/SS_Valbanera"
+        },
+        {
+          "titulo": "Wikipedia (español), «Valbanera»",
+          "url": "https://es.wikipedia.org/wiki/Valbanera"
+        },
+        {
+          "titulo": "WLRN, «Lost in the Quicksands» (2021)",
+          "url": "https://www.wlrn.org/news/2021-09-08/lost-in-the-quicksands-new-expedition-seeks-stories-from-the-wreck-of-the-valbanera"
+        },
+        {
+          "titulo": "Diario de Avisos, «Valbanera, el Titanic canario» (2026)",
+          "url": "https://diariodeavisos.elespanol.com/2026/07/valbanera-el-titanic-canario/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Naufragio",
+        "Huracán de 1919"
+      ],
+      "fecha": "2026-11-04T02:00",
+      "num": "S162",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Septiembre de 1919. Un vapor español cargado de emigrantes canarios desaparece en medio de un huracán, frente a La Habana. Días después, la Marina de Estados Unidos encuentra sus mástiles asomando en unos bajos de arena de Florida. A bordo no queda nadie, y los botes salvavidas siguen colgados donde estaban.",
+            "Al Valbanera se le llama a veces el «Titanic canario» [5]. Pero, a diferencia del Titanic, no hubo supervivientes que contaran lo que pasó. Lo que sabemos sale del pecio."
+          ]
+        },
+        {
+          "titulo": "Un barco de emigrantes",
+          "parrafos": [
+            "El Valbanera era un vapor español de la naviera Pinillos que llevaba emigrantes, sobre todo canarios, a Cuba. Salió de Barcelona el 10 de agosto de 1919 [3][1].",
+            "El 5 de septiembre llegó a Santiago de Cuba, el primer puerto cubano de su ruta. Allí desembarcaron 742 pasajeros, aunque muchos tenían billete hasta La Habana [1][3]. Esa decisión les salvó la vida."
+          ]
+        },
+        {
+          "titulo": "El huracán",
+          "parrafos": [
+            "El 9 de septiembre, el Valbanera llegó frente a La Habana, pero no pudo entrar en el puerto por el huracán. Avisó de que se alejaba de la costa para capear el temporal. Fue su último contacto confirmado [2].",
+            "El 12 de septiembre, un cazasubmarinos de la Marina de Estados Unidos vio unos mástiles asomando del agua en Halfmoon Shoal, en los bajos de arena de las Quicksands, al oeste de Cayo Hueso. El 19 se leyó en el casco el nombre: «Valbanera» [1][2]. El barco no había desaparecido sin dejar rastro."
+          ]
+        },
+        {
+          "titulo": "Los botes, sin arriar",
+          "parrafos": [
+            "Murieron las 488 personas que iban a bordo [1]. Nunca se recuperó ningún cuerpo [1][2]. Y hay un detalle que todavía estremece: los pescantes de los botes salvavidas, los brazos que sirven para bajarlos al agua, estaban en posición de estiba. Los botes no se llegaron a arriar [1].",
+            "¿Por qué? Nadie lo sabe con certeza. El arqueólogo Matthew Lawrence, de la NOAA, propone que la fuerza del huracán hizo imposible bajarlos [4]. Es una hipótesis razonable, no una certeza.",
+            "Ni siquiera las cifras cuadran del todo. Las fuentes no coinciden en cuántos pasajeros llevaba al salir de Canarias ni en cuántos bajaron en Santiago, y la versión española de Wikipedia recoge que «otras fuentes» hablan de cadáveres vistos por buzos dentro del barco [3]. La NOAA y la Wikipedia inglesa son claras: no se vio ni se recuperó ningún cuerpo [1][2].",
+            "Hoy el pecio descansa a unos ocho metros de profundidad, casi enterrado en la arena [4]. Alrededor de él han crecido leyendas de náufragos, tiburones y saqueadores. Ninguna está confirmada."
+          ]
+        }
+      ],
+      "titulo_articulo": "El Valbanera: el barco hundido con los botes salvavidas todavía en su sitio",
+      "aprender": [
+        "Qué era el Valbanera y adónde llevaba a sus pasajeros.",
+        "Por qué cientos de pasajeros se salvaron al bajarse antes de tiempo.",
+        "Dónde y cómo se encontró el barco hundido.",
+        "Qué revela el detalle de los botes salvavidas y qué no."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "El Valbanera se hundió con las 488 personas que iban a bordo y no hubo supervivientes [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Los botes salvavidas no se arriaron: los pescantes estaban en posición de estiba [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El pecio se identificó el 19 de septiembre de 1919 en los bajos al oeste de Cayo Hueso [2]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Por qué no se arriaron los botes: la fuerza del huracán es una hipótesis [4]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Cuántos pasajeros bajaron en Santiago: 742 según la NOAA, 749 según otras fuentes [2]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que el Valbanera desapareciera sin dejar rastro: el pecio se encontró e identificó en pocos días [1]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que el Valbanera desapareció y nunca se encontró?",
+          "respuesta": "No. Sus mástiles se vieron el 12 de septiembre de 1919 y el barco se identificó el 19."
+        },
+        {
+          "pregunta": "¿Qué indica el estado de los pescantes de los botes?",
+          "respuesta": "Que los botes salvavidas no se llegaron a bajar al agua."
+        },
+        {
+          "pregunta": "¿Por qué se salvaron cientos de pasajeros?",
+          "respuesta": "Porque desembarcaron en Santiago de Cuba, antes de llegar a La Habana."
+        }
+      ]
     }
   ]
 }
