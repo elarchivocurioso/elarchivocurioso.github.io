@@ -19,6 +19,9 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [«Alférez Tolkien, enfermo»: la línea del diario de guerra que lo sacó del Somme](https://folio13.com/expedientes/alferez-tolkien-enfermo-la-linea-que-lo-saco-del-somme.html) (el Somme y Le Touquet (Francia), octubre de 1916 - agosto de 1918) · Detrás de la fantasía: «Alférez J. R. R.
+- [El Mosquito Bowl: el partido de Nochebuena de 1944 y los 15 jugadores que no volvieron de Okinawa](https://folio13.com/expedientes/mosquito-bowl-65-marines-un-balon-y-la-nochebuena-de-1944.html) (Guadalcanal, islas Salomón, 24 de diciembre de 1944) · Mitos desmontados: De los 65 jugadores de aquel partido, 15 morirían en Okinawa.
+- [Tutankamón empezó con un escalón: los días de noviembre de 1922 que cambiaron la arqueología](https://folio13.com/expedientes/tutankamon-empezo-con-un-escalon-4-de-noviembre-de-1922.html) (Valle de los Reyes, Egipto, noviembre de 1922) · Mitos desmontados: Valle de los Reyes, noviembre de mil novecientos veintidós: asoma un escalón.
 - [El Valbanera: el barco hundido con los botes salvavidas todavía en su sitio](https://folio13.com/expedientes/que-paso-con-el-valbanera-los-botes-seguian-en-su-sitio.html) (Santiago de Cuba, La Habana y cayos de Florida, septiembre de 1919) · Desastres y epidemias: Los mástiles asoman del mar; los botes salvavidas siguen en su sitio.
 - [«Los juegos del hambre» nacieron de un mito griego: Teseo, el Minotauro y «pan y circo»](https://folio13.com/expedientes/los-juegos-del-hambre-nacieron-de-un-mito-griego.html) (Creta, Atenas y Roma, mito griego y Roma antigua (siglos I-II d. C.)) · Detrás de la fantasía: ¿Qué ciudad entregaba catorce de sus jóvenes a un monstruo?
 - [La «Metrópolis» perdida que apareció en Buenos Aires: 25 minutos que estuvieron 80 años en una lata](https://folio13.com/expedientes/la-metropolis-perdida-aparecio-en-buenos-aires.html) (Berlín y Buenos Aires, 1927-2010) · Cine maldito y perdido: En Buenos Aires, alguien abre una lata… y dentro hay cine perdido.
@@ -89,6 +92,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Animales](https://folio13.com/temas/animales.html)
 - [Barcelona 1912](https://folio13.com/temas/barcelona-1912.html)
 - [Barco fantasma](https://folio13.com/temas/barco-fantasma.html)
+- [Batalla del Somme](https://folio13.com/temas/batalla-del-somme.html)
 - [Burbujas económicas](https://folio13.com/temas/burbujas-economicas.html)
 - [Cerebro](https://folio13.com/temas/cerebro.html)
 - [Chicago 1893](https://folio13.com/temas/chicago-1893.html)
@@ -116,10 +120,12 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [La llegada de un tren](https://folio13.com/temas/la-llegada-de-un-tren.html)
 - [Lon Chaney](https://folio13.com/temas/lon-chaney.html)
 - [Londres](https://folio13.com/temas/londres.html)
+- [Lord Carnarvon](https://folio13.com/temas/lord-carnarvon.html)
 - [Louvre](https://folio13.com/temas/louvre.html)
 - [Mitos](https://folio13.com/temas/mitos.html)
 - [Mitos de la historia](https://folio13.com/temas/mitos-de-la-historia.html)
 - [Nacimiento del cine](https://folio13.com/temas/nacimiento-del-cine.html)
+- [Primera Guerra Mundial](https://folio13.com/temas/primera-guerra-mundial.html)
 - [Siglo ](https://folio13.com/temas/siglo.html)
 - [Siglo XIX](https://folio13.com/temas/siglo-xix.html)
 - [Siglo XV](https://folio13.com/temas/siglo-xv.html)
