@@ -11591,6 +11591,137 @@
       "fecha": "2026-11-05T17:00",
       "num": "S180",
       "de": "A028"
+    },
+    {
+      "youtube": "TgAAeBchrkI",
+      "tipo": "short",
+      "titulo": "La carta sin firma que destapó a Guy Fawkes",
+      "epoca": "octubre y noviembre de 1605",
+      "lugar": "Londres, Inglaterra",
+      "tematica": "mitos",
+      "mapa": [
+        51.4994,
+        -0.1242
+      ],
+      "resumen": "Una carta anónima avisa: si aprecia su vida, no vaya al Parlamento.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 5/11/2026, 19:00 (S166, aprobada por la usuaria).",
+        "La carta llegó el 26 de octubre de 1605, sin firma y con la letra disfrazada; un desconocido se la dio en la calle a un lacayo de lord Monteagle. Se conserva en los Archivos Nacionales británicos (SP 14/216/2)",
+        "Texto (versión modernizada de los Archivos Nacionales): «I would advise you, as you tender your life, to devise some excuse to shift off your attendance at this Parliament» y «they shall receive a terrible blow this Parliament and yet they shall not see who hurts them»",
+        "Monteagle llevó la carta a Whitehall, a Robert Cecil. El autor sigue sin conocerse; Francis Tresham es el sospechoso tradicional",
+        "Registros: el 4 de noviembre, un primer registro (Suffolk, Monteagle y Whynniard) encontró leña y a un hombre que dijo ser criado de Thomas Percy. «Late that night», un segundo registro dirigido por Thomas Knyvet detuvo a Fawkes, que dijo llamarse John Johnson"
+      ],
+      "fuentes": [
+        {
+          "titulo": "The National Archives (Reino Unido), «The Monteagle letter»",
+          "url": "https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-monteagle-letter/"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Gunpowder Plot»",
+          "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Robert Catesby»",
+          "url": "https://en.wikipedia.org/wiki/Robert_Catesby"
+        },
+        {
+          "titulo": "History Hit, sobre la Conspiración de la Pólvora",
+          "url": "https://www.historyhit.com/facts-about-the-gunpowder-plot/"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Guy Fawkes Night»",
+          "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Guy Fawkes mask»",
+          "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_mask"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XVII",
+        "Conspiración de la pólvora",
+        "Robert Catesby"
+      ],
+      "fecha": "2026-11-05T19:00",
+      "num": "S166",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "Octubre de 1605. Un desconocido se acerca en la calle a un criado de lord Monteagle y le entrega una carta sin firma, con la letra disfrazada. Le aconseja a su señor que, si aprecia su vida, busque una excusa para no ir a la apertura del Parlamento: recibirán un golpe terrible y no verán quién les hiere.",
+            "Diez días después, en un sótano bajo la Cámara de los Lores, los guardias encontraron a un hombre junto a 36 barriles de pólvora. Se llamaba Guy Fawkes, y hoy su cara está en máscaras de todo el mundo. Pero el plan no era suyo."
+          ]
+        },
+        {
+          "titulo": "La carta de Monteagle",
+          "parrafos": [
+            "La carta llegó el 26 de octubre de 1605. Un desconocido se la dio en la calle a un lacayo de lord Monteagle. No llevaba firma y la letra estaba disfrazada. Hoy se conserva en los Archivos Nacionales británicos [1][2].",
+            "En la versión modernizada que publican los Archivos Nacionales, la carta le aconseja que, si aprecia su vida, busque alguna excusa para no asistir a este Parlamento, porque recibirán un golpe terrible sin ver quién les hiere [1]. Monteagle la llevó a Whitehall, a Robert Cecil [2]. Quién la escribió sigue sin saberse. El sospechoso tradicional es Francis Tresham, uno de los conspiradores, pero hay otras teorías [2]."
+          ]
+        },
+        {
+          "titulo": "La noche del 4 de noviembre",
+          "parrafos": [
+            "El rey Jacobo I tenía que abrir el Parlamento el 5 de noviembre de 1605 [2]. El día 4, un primer registro encontró leña en el sótano bajo la Cámara de los Lores y a un hombre que dijo ser criado de Thomas Percy. Esa misma noche, ya tarde, un segundo registro dirigido por Thomas Knyvet detuvo a ese hombre, que dijo llamarse John Johnson [2]. Era Guy Fawkes. Bajo la leña y el carbón había 36 barriles de pólvora [1][4]."
+          ]
+        },
+        {
+          "titulo": "El jefe era otro",
+          "parrafos": [
+            "Fawkes no dirigía el plan. El jefe del grupo de católicos ingleses que preparó la conspiración era Robert Catesby [3][4]. A Fawkes, que tenía experiencia militar en Flandes, le encargaron los explosivos [4]."
+          ]
+        },
+        {
+          "titulo": "Hogueras y una máscara",
+          "parrafos": [
+            "Tras la detención se encendieron hogueras en Londres, y una ley de enero de 1606 convirtió el 5 de noviembre en un día anual de acción de gracias [5]. De ahí viene la Noche de Guy Fawkes, aunque su forma actual llegó mucho después.",
+            "La máscara que hoy se ve en protestas de todo el mundo la diseñó el dibujante David Lloyd para el cómic *V de Vendetta*, a partir de las figuras de Fawkes que se queman en esas hogueras. Salió en la película de 2005 y la adoptó el grupo Anonymous en 2008 [6]."
+          ]
+        }
+      ],
+      "titulo_articulo": "La carta sin firma que destapó la Conspiración de la Pólvora (y por qué Guy Fawkes no era el jefe)",
+      "aprender": [
+        "Qué decía la carta anónima de 1605 y dónde se conserva.",
+        "Cómo se descubrió la pólvora la noche del 4 de noviembre.",
+        "Quién dirigía de verdad la conspiración.",
+        "De dónde vienen las hogueras del 5 de noviembre y la famosa máscara."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "La carta anónima llegó a lord Monteagle el 26 de octubre de 1605 y se conserva en los Archivos Nacionales [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En el sótano bajo la Cámara de los Lores había 36 barriles de pólvora [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "El 5 de noviembre se convirtió por ley en día de acción de gracias en 1606 [5]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Quién escribió la carta: el sospechoso tradicional es Francis Tresham, pero no está probado [2]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que Guy Fawkes fuera el líder de la conspiración: el jefe era Robert Catesby [3]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que Guy Fawkes dirigía la Conspiración de la Pólvora?",
+          "respuesta": "No. El jefe era Robert Catesby; a Fawkes le encargaron los explosivos."
+        },
+        {
+          "pregunta": "¿Qué nombre dio Fawkes al ser detenido?",
+          "respuesta": "John Johnson."
+        },
+        {
+          "pregunta": "¿Quién diseñó la máscara de Guy Fawkes que se ve hoy en las protestas?",
+          "respuesta": "El dibujante David Lloyd, para el cómic «V de Vendetta»."
+        }
+      ]
     }
   ]
 }
