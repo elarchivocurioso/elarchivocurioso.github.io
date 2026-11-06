@@ -715,7 +715,7 @@
       "titulo_articulo": "Cleopatra vivió más cerca del iPhone que de las pirámides"
     },
     {
-      "youtube": "6FOBq5w86vg",
+      "youtube": "FnhrivSoLV4",
       "num": "A002",
       "tipo": "video",
       "titulo": "La GRAN INUNDACIÓN DE MELAZA de Boston: la ola dulce que mató a 21 personas",
@@ -1093,7 +1093,7 @@
       "titulo_articulo": "Por qué el frío convirtió la melaza de Boston en una trampa mortal"
     },
     {
-      "youtube": "uTWN9_BrErg",
+      "youtube": "RTitsDWUtiI",
       "num": "S106",
       "tipo": "short",
       "fecha": "2026-10-27T21:05",
@@ -11740,6 +11740,43 @@
       "fecha": "2026-11-06T17:00",
       "num": "S182",
       "de": "A028"
+    },
+    {
+      "youtube": "HWPO1balIj4",
+      "tipo": "short",
+      "titulo": "CHICAGO, 1860: ¿cómo se levanta una ciudad?",
+      "epoca": "1854-1861",
+      "lugar": "Chicago (Illinois, Estados Unidos)",
+      "tematica": "desastres",
+      "resumen": "Eres ingeniero en Chicago y tu ciudad está hundida en el barro.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 6/11/2026, 22:00 (S171, aprobada por la usuaria).",
+        "Chicago estaba apenas por encima del nivel del lago Míchigan: drenaba mal, el agua se estancaba y llegaron las epidemias",
+        "El cólera de 1854 mató a 1.424 personas en Chicago, que tenía entre 60.000 y 70.000 habitantes",
+        "En 1856 el ingeniero Ellis S. Chesbrough propuso un alcantarillado para toda la ciudad, y el Ayuntamiento lo aprobó. Se tendieron las tuberías, se cubrieron calles y aceras con varios pies de tierra y se levantaron con gatos de tornillo la mayoría de los edificios (los pagaban sus dueños)",
+        "1860: en Lake Street, entre Clark y LaSalle, un equipo de 600 hombres con 6.000 gatos de tornillo levantó a la vez una hilera de edificios de 320 pies (unos 100 m, media manzana), 4 pies y 8 pulgadas (1,4 m), en cinco días. Los comercios siguieron abiertos"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Raising of Chicago»",
+          "url": "https://en.wikipedia.org/wiki/Raising_of_Chicago"
+        },
+        {
+          "titulo": "WTTW Chicago, «Tremont House»",
+          "url": "https://www.wttw.com/node/1011"
+        },
+        {
+          "titulo": "ASCE, «Ellis Sylvester Chesbrough»",
+          "url": "https://www.asce.org/about-civil-engineering/history-and-heritage/notable-civil-engineers/ellis-sylvester-chesbrough"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Alcantarillado",
+        "Ingeniería"
+      ],
+      "fecha": "2026-11-06T22:00",
+      "num": "S171"
     }
   ]
 }
