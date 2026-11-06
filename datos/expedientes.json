@@ -436,7 +436,26 @@
           "texto": "Que midiera alrededor de 1,57 metros: sale de leer en pulgadas inglesas una medida tomada en pulgadas francesas [3]"
         }
       ],
-      "titulo_articulo": "¿Napoleón era bajito? El mito que nos creímos 200 años"
+      "titulo_articulo": "¿Napoleón era bajito? El mito que nos creímos 200 años",
+      "faq": [
+        {
+          "pregunta": "¿Cuánto medía Napoleón?",
+          "respuesta": "La medida de Santa Elena, 5 pies, 2 pulgadas y 4 líneas francesas, equivale a unos 1,686 metros [1]."
+        },
+        {
+          "pregunta": "¿Por qué se dice que Napoleón era bajito?",
+          "respuesta": "Por confundir unidades francesas e inglesas y por caricaturas como el «Little Boney» de James Gillray [3]."
+        },
+        {
+          "pregunta": "¿Gillray conoció a Napoleón?",
+          "respuesta": "No. Lo caricaturizó sin haberlo visto nunca en persona [3]."
+        },
+        {
+          "pregunta": "¿El apodo «le petit caporal» hablaba de su estatura?",
+          "respuesta": "No hablaba de centímetros. Que naciera en la batalla de Lodi es una explicación tradicional sin pruebas de la época [7]."
+        }
+      ],
+      "respuesta": "No. Napoleón medía alrededor de 1,68 metros, una estatura normal para su época. El mito nace de leer en pulgadas inglesas una medida tomada en pulgadas francesas, que son más largas, y de las caricaturas británicas que lo dibujaban diminuto [1][3]."
     },
     {
       "youtube": "n2VzGwBZtVs",
@@ -567,7 +586,26 @@
           "texto": "Que los vikingos combatieran con cascos de cuernos; la imagen se popularizó con el vestuario de Doepler para Wagner en 1876 [7]."
         }
       ],
-      "titulo_articulo": "Los vikingos nunca llevaron cuernos (la culpa es de una ópera)"
+      "titulo_articulo": "Los vikingos nunca llevaron cuernos (la culpa es de una ópera)",
+      "faq": [
+        {
+          "pregunta": "¿De dónde viene la idea de los vikingos con cuernos?",
+          "respuesta": "De los diseños de Carl Emil Doepler para «El anillo del nibelungo», de Wagner, en 1876 [7]."
+        },
+        {
+          "pregunta": "¿Cómo era un casco vikingo de verdad?",
+          "respuesta": "El de Gjermundbu es un casquete redondeado de 4 placas, con una protección en forma de gafas para los ojos y la nariz [3]."
+        },
+        {
+          "pregunta": "¿Existen cascos antiguos con cuernos en Escandinavia?",
+          "respuesta": "Sí, los de Veksø, en Dinamarca, pero son de hacia el 900 a. C., muchos siglos antes de los vikingos [6]."
+        },
+        {
+          "pregunta": "¿Hablan de cuernos los textos de la época vikinga?",
+          "respuesta": "No. Mencionan cascos a menudo, pero nunca con cuernos [5]."
+        }
+      ],
+      "respuesta": "Los vikingos no llevaban cascos con cuernos. Ninguno de los cascos de la época vikinga que se conservan los tiene, y el más completo, el de Gjermundbu, hallado en Noruega en 1943, es un casquete liso. La imagen se popularizó con el vestuario de una ópera de Wagner en 1876 [3][7]."
     },
     {
       "youtube": "yDs3ABTPRyQ",
@@ -3580,7 +3618,26 @@
           "texto": "La fecha de 1484 que dio William Manchester, que no citó ninguna prueba para sostenerla [1]"
         }
       ],
-      "titulo_articulo": "El flautista de Hamelín: lo que dicen los documentos sobre los niños de 1284"
+      "titulo_articulo": "El flautista de Hamelín: lo que dicen los documentos sobre los niños de 1284",
+      "faq": [
+        {
+          "pregunta": "¿Es real la historia del flautista de Hamelín?",
+          "respuesta": "Tiene una base histórica: los documentos de Hamelín hablan de 130 niños perdidos en 1284, aunque no se sabe qué les pasó [1]."
+        },
+        {
+          "pregunta": "¿Cuándo aparecen las ratas en la leyenda?",
+          "respuesta": "Hacia 1559, casi tres siglos después; los relatos anteriores no las mencionan [1]."
+        },
+        {
+          "pregunta": "¿Qué les pasó a los niños de Hamelín?",
+          "respuesta": "La hipótesis más aceptada es la emigración de jóvenes hacia el este, pero ninguna explicación se ha demostrado [1]."
+        },
+        {
+          "pregunta": "¿Cuál es la prueba más antigua?",
+          "respuesta": "Una vidriera de la iglesia del mercado de Hamelín, de hacia 1300, destruida en 1660 y conocida por descripciones y por una acuarela de 1592 [1]."
+        }
+      ],
+      "respuesta": "Algo pasó de verdad: Hamelín recordó durante siglos la pérdida de 130 «niños» el 26 de junio de 1284, en una vidriera, en crónicas y en inscripciones. Lo que no es cierto son las ratas, que no aparecen en la historia hasta hacia 1559 [1]."
     },
     {
       "youtube": "ytwYRXqx-2U",
@@ -3821,7 +3878,26 @@
           "texto": "El nacimiento del decimotercer hijo de la Madre Leeds en 1735 no tiene respaldo documental [1]"
         }
       ],
-      "titulo_articulo": "El Diablo de Jersey: la semana de 1909 en que una leyenda paralizó Nueva Jersey"
+      "titulo_articulo": "El Diablo de Jersey: la semana de 1909 en que una leyenda paralizó Nueva Jersey",
+      "faq": [
+        {
+          "pregunta": "¿Qué es el Diablo de Jersey?",
+          "respuesta": "Una criatura de la leyenda de Nueva Jersey: según una versión, el decimotercer hijo de la Madre Leeds, nacido en 1735, que desarrolló alas, cola y garras y huyó a los Pine Barrens [1]."
+        },
+        {
+          "pregunta": "¿Existió la Madre Leeds?",
+          "respuesta": "El nacimiento de su decimotercer hijo en 1735 no tiene respaldo documental [1]."
+        },
+        {
+          "pregunta": "¿Qué era el «diablo» que se exhibió en Filadelfia en 1909?",
+          "respuesta": "Un canguro disfrazado por Norman Jeffries, agente de prensa del museo [2]."
+        },
+        {
+          "pregunta": "¿Es verdad que la policía le disparó?",
+          "respuesta": "Solo lo contaron los periódicos; no hay registros que lo confirmen [1]."
+        }
+      ],
+      "respuesta": "El Diablo de Jersey es una leyenda del siglo XVIII, pero su gran momento fue real: entre el 16 y el 23 de enero de 1909, la prensa publicó cientos de supuestos avistamientos en el sur de Nueva Jersey y la zona de Filadelfia, y cerraron temporalmente algunos colegios y fábricas [2]."
     },
     {
       "youtube": "mv6RTbWCgSg",
@@ -8553,7 +8629,26 @@
           "respuesta": "En Revolution Raceway, una pista de carreras de coches teledirigidos."
         }
       ],
-      "de": "A028"
+      "de": "A028",
+      "faq": [
+        {
+          "pregunta": "¿Dónde está la habitación de los Backrooms?",
+          "respuesta": "En el edificio de HobbyTown, en Oregon Street, en Oshkosh (Wisconsin). Hoy ese espacio es Revolution Raceway, una pista de coches teledirigidos [3]."
+        },
+        {
+          "pregunta": "¿Cuándo se publicó la foto por primera vez?",
+          "respuesta": "El 2 de marzo de 2003, en el diario de obras de la web de la tienda, junto a otra foto del mismo espacio desde otro ángulo [1][5]."
+        },
+        {
+          "pregunta": "¿Cómo se encontró el origen de la foto?",
+          "respuesta": "Un grupo de aficionados reunido en el Discord de Virtual Carbon pasó por la Wayback Machine el enlace roto de un tuit de 2019 y apareció la página de 2003 [2][4]."
+        },
+        {
+          "pregunta": "¿Es verdad que la foto no tenía ningún rastro?",
+          "respuesta": "No. Estaba en internet desde 2003, y un tuit de 2019 ya decía dónde se había hecho [4]."
+        }
+      ],
+      "respuesta": "La foto original de los Backrooms se hizo el 12 de junio de 2002 con una cámara Sony Cyber-shot en la segunda planta de HobbyTown Oshkosh, una tienda de modelismo de Wisconsin. Era el «antes» de una reforma, y se identificó en mayo de 2024 gracias a la Wayback Machine [1]."
     },
     {
       "youtube": "osrCfXy55V0",
@@ -8687,7 +8782,26 @@
           "pregunta": "¿Por qué Zorrilla no se hizo rico con el *Tenorio*?",
           "respuesta": "Porque había malvendido los derechos y no pudo cobrar por las muchas reposiciones."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Cuándo se estrenó Don Juan Tenorio?",
+          "respuesta": "El 28 de marzo de 1844, en el Teatro de la Cruz de Madrid [1]."
+        },
+        {
+          "pregunta": "¿Qué obra se representaba por difuntos antes del Tenorio?",
+          "respuesta": "«No hay plazo que no se cumpla ni deuda que no se pague y convidado de piedra», de Antonio de Zamora [3]."
+        },
+        {
+          "pregunta": "¿Se sabe con certeza por qué se hace en Todos los Santos?",
+          "respuesta": "No. El origen es incierto; la explicación más aceptada es el tema de la muerte en la propia obra [4]."
+        },
+        {
+          "pregunta": "¿Ganó dinero Zorrilla con el Tenorio?",
+          "respuesta": "No. Malvendió los derechos y no cobró por sus muchas reposiciones [2]."
+        }
+      ],
+      "respuesta": "No es porque se estrenara en noviembre: Don Juan Tenorio se estrenó el 28 de marzo de 1844. Se representa por difuntos porque sustituyó a otro Don Juan, el de Antonio de Zamora, que ya se hacía en esas fechas, y porque su segunda parte transcurre entre muertos y en un panteón [1][3][4]."
     },
     {
       "youtube": "CchiyaK7--k",
@@ -8765,7 +8879,26 @@
           "nota": "Clásico de 1966 sobre la matanza de Glencoe y la política que la hizo posible (en inglés)."
         }
       ],
-      "titulo_seo": "La Boda Roja y su origen real: la Cena Negra de 1440 y la matanza de Glencoe de 1692"
+      "titulo_seo": "La Boda Roja y su origen real: la Cena Negra de 1440 y la matanza de Glencoe de 1692",
+      "faq": [
+        {
+          "pregunta": "¿Qué fue la Cena Negra?",
+          "respuesta": "El 24 de noviembre de 1440, el joven conde de Douglas y su hermano fueron invitados a cenar con Jacobo II en el castillo de Edimburgo, apresados y ejecutados [3]."
+        },
+        {
+          "pregunta": "¿Qué pasó en Glencoe en 1692?",
+          "respuesta": "Unos 120 soldados alojados durante cerca de dos semanas por el clan MacDonald se volvieron contra sus anfitriones la madrugada del 13 de febrero [2]."
+        },
+        {
+          "pregunta": "¿Es verdad que en la Cena Negra sirvieron una cabeza de toro negro?",
+          "respuesta": "No se puede dar por seguro: ese detalle aparece en cronistas posteriores, como Héctor Boecio en 1527."
+        },
+        {
+          "pregunta": "¿Dónde lo explicó George R. R. Martin?",
+          "respuesta": "En la audioguía del castillo de Edimburgo que se estrenó en febrero de 2020 [1]."
+        }
+      ],
+      "respuesta": "La Boda Roja no se basa en ninguna boda real. George R. R. Martin contó que la inspiraron dos hechos de la historia de Escocia: la Cena Negra de 1440, en el castillo de Edimburgo, y la matanza de Glencoe de 1692. Él juntó los dos y les añadió una boda [1]."
     },
     {
       "youtube": "PDku4TltW1k",
@@ -8844,7 +8977,26 @@
           "nota": "El estudio de 1761 que separó al Flamel de los documentos notariales del Flamel de la leyenda (en francés)."
         }
       ],
-      "titulo_seo": "La lápida de Nicolas Flamel, el «inmortal» de París que acabó en un puesto de verduras"
+      "titulo_seo": "La lápida de Nicolas Flamel, el «inmortal» de París que acabó en un puesto de verduras",
+      "faq": [
+        {
+          "pregunta": "¿Quién fue Nicolas Flamel en realidad?",
+          "respuesta": "Un escribano público, copista y librero de París, nacido hacia 1340 y muerto el 22 de marzo de 1418 [1]."
+        },
+        {
+          "pregunta": "¿Encontró Flamel la piedra filosofal?",
+          "respuesta": "No. Su fama de alquimista nació después de su muerte, y el libro que lo cuenta se publicó en 1612 [1]."
+        },
+        {
+          "pregunta": "¿De dónde salió la fortuna de Flamel?",
+          "respuesta": "De su oficio de copista y librero, de la herencia que se dejaron él y su esposa Pernelle y de comprar y alquilar casas [1]."
+        },
+        {
+          "pregunta": "¿Dónde se puede ver hoy su lápida?",
+          "respuesta": "En el museo de Cluny, el museo de la Edad Media de París [2][3]."
+        }
+      ],
+      "respuesta": "La lápida de Nicolas Flamel estaba en la iglesia de Saint-Jacques-la-Boucherie, en París. Cuando la derribaron durante la Revolución, desapareció hasta que un anticuario la encontró en una verdulería que la usaba de mostrador para las espinacas. París la compró en 1839 y hoy está en el museo de Cluny [1][2]."
     },
     {
       "youtube": "RxKKhwRiIiE",
@@ -9095,7 +9247,26 @@
           "nota": "Repasa con lupa qué se sabe y qué no de la tregua, incluido el fútbol (2014, en inglés)."
         }
       ],
-      "titulo_seo": "Tregua de Navidad de 1914: el diario del teniente Kurt Zehmisch y el partido de fútbol"
+      "titulo_seo": "Tregua de Navidad de 1914: el diario del teniente Kurt Zehmisch y el partido de fútbol",
+      "faq": [
+        {
+          "pregunta": "¿Hubo un partido de fútbol en la tregua de Navidad de 1914?",
+          "respuesta": "Hubo fútbol improvisado en al menos tres o cuatro lugares, según los historiadores, pero no un partido organizado [1][2]."
+        },
+        {
+          "pregunta": "¿Qué anotó el teniente Kurt Zehmisch?",
+          "respuesta": "Que los ingleses trajeron un balón de sus trincheras y que pronto empezó un partido animado [1]."
+        },
+        {
+          "pregunta": "¿Es verdad que Alemania ganó 3-2?",
+          "respuesta": "No está documentado: ese resultado sale de un relato de Robert Graves de 1962, en parte inventado [1]."
+        },
+        {
+          "pregunta": "¿Se repitió la tregua en 1915?",
+          "respuesta": "Apenas. Los mandos prohibieron confraternizar y para la Navidad de 1915 los aliados ordenaron ataques y bombardeos [1]."
+        }
+      ],
+      "respuesta": "En la Navidad de 1914, unos 100.000 soldados británicos y alemanes pararon la guerra por su cuenta, sobre todo en Flandes: cantaron villancicos, cruzaron la tierra de nadie e intercambiaron regalos. Hubo pachangas de fútbol en algunos puntos, pero el famoso 3-2 sale de un relato en parte inventado [1][2]."
     },
     {
       "youtube": "3lu62Y4gIeg",
@@ -9175,7 +9346,26 @@
           "nota": "2003. En italiano; defiende la hipótesis de que la leyenda de la espada en la piedra nació en la Toscana (hipótesis no probada)."
         }
       ],
-      "titulo_seo": "La espada de Galgano en la roca de Montesiepi (Toscana): la real frente a Excalibur"
+      "titulo_seo": "La espada de Galgano en la roca de Montesiepi (Toscana): la real frente a Excalibur",
+      "faq": [
+        {
+          "pregunta": "¿Dónde está la espada en la roca de verdad?",
+          "respuesta": "En la Rotonda de Montesiepi, una capilla redonda del municipio de Chiusdino, en la provincia de Siena, junto a las ruinas de la abadía de San Galgano."
+        },
+        {
+          "pregunta": "¿La espada de San Galgano es falsa?",
+          "respuesta": "El análisis de 2001 coordinado por Luigi Garlaschelli no encontró aleaciones modernas: es compatible con un origen medieval, aunque el hierro no se puede fechar con exactitud [1]."
+        },
+        {
+          "pregunta": "¿Inspiró San Galgano la leyenda del rey Arturo?",
+          "respuesta": "Es una hipótesis que defendió Mario Moiraghi en 2003, pero nadie la ha probado; también pudo ocurrir al revés [3]."
+        },
+        {
+          "pregunta": "¿Es lo mismo la espada en la piedra que Excalibur?",
+          "respuesta": "No siempre: en algunas versiones de la leyenda, Excalibur es otra espada que Arturo recibe más tarde [2]."
+        }
+      ],
+      "respuesta": "Excalibur y la espada en la piedra son leyenda artúrica. Pero en la Rotonda de Montesiepi, en la Toscana, hay una espada real clavada en una roca: según la tradición, la hundió allí el caballero Galgano Guidotti en 1180 al hacerse ermitaño, y está documentada desde al menos 1270."
     },
     {
       "youtube": "UZuAuD2CmLI",
@@ -9253,7 +9443,26 @@
           "nota": "2003. La biografía de referencia sobre Tolkien, sus amigos de la T.C.B.S. y la Primera Guerra Mundial."
         }
       ],
-      "titulo_seo": "Tolkien en la batalla del Somme (1916): de oficial de transmisiones a escribir El hobbit"
+      "titulo_seo": "Tolkien en la batalla del Somme (1916): de oficial de transmisiones a escribir El hobbit",
+      "faq": [
+        {
+          "pregunta": "¿Qué hacía Tolkien en la Primera Guerra Mundial?",
+          "respuesta": "Era oficial de transmisiones del 11.º Batallón de los Lancashire Fusiliers: se ocupaba de que llegaran órdenes y mensajes [2][3]."
+        },
+        {
+          "pregunta": "¿Por qué dejó Tolkien el frente?",
+          "respuesta": "Enfermó de fiebre de las trincheras, que transmite el piojo del cuerpo, y el 8 de noviembre de 1916 regresó a Inglaterra [2]."
+        },
+        {
+          "pregunta": "¿Qué empezó a escribir Tolkien al volver de la guerra?",
+          "respuesta": "«The Book of Lost Tales», con «La caída de Gondolin», uno de sus primeros relatos de elfos [1]."
+        },
+        {
+          "pregunta": "¿Es «El Señor de los Anillos» una alegoría de la guerra?",
+          "respuesta": "Tolkien lo rechazaba y prefería hablar de «aplicabilidad», aunque sus biógrafos señalan ecos de la guerra en su obra [1]."
+        }
+      ],
+      "respuesta": "Ese oficial era J. R. R. Tolkien. En julio de 1916, con veinticuatro años, llegó a la batalla del Somme como oficial de transmisiones de su batallón. Allí perdió a amigos íntimos, enfermó de fiebre de las trincheras y, mientras se recuperaba, empezó sus primeros relatos de la Tierra Media [1][2]."
     },
     {
       "youtube": "pmMW3apzgys",
@@ -9389,7 +9598,26 @@
           "pregunta": "¿Qué tiene de especial el grabado de Paulus Fürst de 1656?",
           "respuesta": "Que es una sátira: se burla del médico que asusta a la gente y cobra a los moribundos."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué llevaban dentro del pico los médicos de la peste?",
+          "respuesta": "Hierbas y sustancias aromáticas como rosas y claveles secos, lavanda, menta, alcanfor, enebro, clavo o mirra, o una esponja con vinagre [2]."
+        },
+        {
+          "pregunta": "¿Usaban máscara de pico en la peste negra?",
+          "respuesta": "No hay pruebas: la primera descripción del traje se refiere a la peste de París de 1619 [1][2]."
+        },
+        {
+          "pregunta": "¿Quién inventó el traje de médico de la peste?",
+          "respuesta": "Se atribuye a Charles de Lorme, médico de la corte francesa, pero la atribución viene de su biografía y no todos los historiadores la aceptan [1]."
+        },
+        {
+          "pregunta": "¿De dónde sale la imagen más famosa del médico de la peste?",
+          "respuesta": "De «Der Doctor Schnabel von Rom», una estampa satírica publicada en Núremberg en 1656 [3]."
+        }
+      ],
+      "respuesta": "El pico iba relleno de hierbas y perfumes. Se creía que la enfermedad la causaba el miasma, un «mal aire» que se reconocía por su olor, y el pico servía de filtro. El traje es del siglo XVII, no de la peste negra de 1348 [1][2]."
     },
     {
       "youtube": "Iv4-fLhxdps",
@@ -9516,7 +9744,26 @@
           "pregunta": "¿Por qué los hallazgos de Hatteras no cierran el caso?",
           "respuesta": "Porque están en un estrato del siglo XVII y otros arqueólogos discuten su datación y su origen."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué significa CROATOAN?",
+          "respuesta": "Es el nombre de la isla de Croatoan, donde había nacido Manteo; hoy corresponde a la zona de Hatteras, en Carolina del Norte [2][3]."
+        },
+        {
+          "pregunta": "¿Desapareció la colonia de Roanoke sin dejar rastro?",
+          "respuesta": "No. Dejaron la señal acordada: CROATOAN en un poste y CRO en un árbol, sin la cruz que indicaba peligro [1][3]."
+        },
+        {
+          "pregunta": "¿Por qué John White no fue a buscarlos a Croatoan?",
+          "respuesta": "Lo intentó, pero un huracán alejó el barco de la costa [2]."
+        },
+        {
+          "pregunta": "¿Se han encontrado restos de los colonos en Hatteras?",
+          "respuesta": "En Cape Creek han aparecido objetos europeos, pero el estrato es del siglo XVII y su relación con los colonos de 1587 se discute [4]."
+        }
+      ],
+      "respuesta": "CROATOAN era el nombre de la isla de Manteo, un indígena aliado de los ingleses, en la zona de la actual Hatteras. Los colonos de Roanoke habían pactado con su gobernador, John White, tallar el nombre del lugar adonde se fueran y añadir una cruz si se marchaban en peligro. En 1590 no había ninguna cruz [2][3]."
     },
     {
       "youtube": "KXNPYsloW9s",
@@ -9635,7 +9882,26 @@
           "pregunta": "¿Qué concluyó el superintendente Muirhead?",
           "respuesta": "Que una ola extraordinaria subió por la roca y se los llevó."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Cuándo desaparecieron los fareros de las islas Flannan?",
+          "respuesta": "Según la investigación, la tarde del 15 de diciembre de 1900. El barco de relevo no los echó en falta hasta el día 26 [1]."
+        },
+        {
+          "pregunta": "¿Cómo se llamaban los tres fareros?",
+          "respuesta": "James Ducat, Thomas Marshall y Donald McArthur [1]."
+        },
+        {
+          "pregunta": "¿Es real el diario del faro con tormentas y rezos?",
+          "respuesta": "No. Esas entradas son ficción posterior y aparecen impresas por primera vez en 1965 [2][3]."
+        },
+        {
+          "pregunta": "¿Y la silla volcada y la comida sin tocar?",
+          "respuesta": "Vienen de un poema de Wilfrid Wilson Gibson de 1912, no de los informes [2]."
+        }
+      ],
+      "respuesta": "Nadie lo sabe con certeza. La investigación oficial concluyó que una ola extraordinaria se llevó a los tres fareros del muelle oeste de Eilean Mòr en diciembre de 1900: había barandillas dobladas, una roca desplazada y faltaban dos equipos de ropa de agua [1][2]."
     },
     {
       "youtube": "Jn2iCVnqJ0c",
@@ -10017,7 +10283,26 @@
           "pregunta": "¿De quién eran probablemente?",
           "respuesta": "De uno de los primeros seguidores de Galgano, un ermitaño enterrado en la Rotonda."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿De quién son los brazos momificados de San Galgano?",
+          "respuesta": "No se sabe con certeza. Nunca se consideraron de Galgano; lo más probable es que fueran de un ermitaño seguidor suyo [1]."
+        },
+        {
+          "pregunta": "¿Es verdad que eran de un ladrón castigado por los lobos?",
+          "respuesta": "No. Es una leyenda: cuenta que alguien intentó arrancar la espada y los lobos le arrancaron los brazos [1]."
+        },
+        {
+          "pregunta": "¿Qué demostró el carbono 14?",
+          "respuesta": "Que los brazos son del siglo XII, cuando se creía que eran reliquias tardías y falsas [1][2]."
+        },
+        {
+          "pregunta": "¿Dónde están ahora los brazos?",
+          "respuesta": "En un relicario de hierro con ventana antibalas, en la Rotonda de Montesiepi [1]."
+        }
+      ],
+      "respuesta": "En la capilla de Montesiepi, junto a la espada de San Galgano, se exponían dos brazos momificados. El carbono 14 los fechó en el siglo XII, la época del santo. Lo más probable es que fueran de uno de sus primeros seguidores, un ermitaño enterrado allí [1][2]."
     },
     {
       "youtube": "lZElm4XZZrg",
@@ -10143,7 +10428,26 @@
           "pregunta": "¿De qué murió lord Carnarvon?",
           "respuesta": "De una picadura de mosquito que se infectó, con erisipela, septicemia y neumonía."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿De qué murió lord Carnarvon?",
+          "respuesta": "Se le infectó una picadura de mosquito, sufrió erisipela, septicemia y neumonía, y murió en El Cairo el 5 de abril de 1923 [2][3]."
+        },
+        {
+          "pregunta": "¿Había una inscripción con una maldición en la tumba?",
+          "respuesta": "No. Esa inscripción nunca existió; la difundió la prensa de la época [5]."
+        },
+        {
+          "pregunta": "¿Qué demostró el estudio del BMJ de 2002?",
+          "respuesta": "Que los 25 expuestos murieron de media a los 70 años y los no expuestos a los 75, una diferencia que no es estadísticamente significativa. Solo incluyó a occidentales [1]."
+        },
+        {
+          "pregunta": "¿Cuánto vivió Howard Carter después de abrir la tumba?",
+          "respuesta": "Más de dieciséis años: murió el 2 de marzo de 1939 [4]."
+        }
+      ],
+      "respuesta": "No hay pruebas de que la maldición existiera. En 2002, un estudio publicado en el BMJ comparó a los occidentales que estuvieron en la apertura de la tumba con los que no y no encontró una diferencia significativa en cuánto vivieron [1]."
     },
     {
       "youtube": "lmaiM_7dSm0",
@@ -10270,7 +10574,26 @@
           "pregunta": "¿Quién ayudó a encontrar el Terror en 2016?",
           "respuesta": "Sammy Kogvik, un ranger inuit de Gjoa Haven."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué decía la nota de la expedición Franklin?",
+          "respuesta": "El mensaje de mayo de 1847 decía «All well». El de abril de 1848 contaba la muerte de Franklin y el abandono de los barcos [1]."
+        },
+        {
+          "pregunta": "¿Cuántos hombres iban en la expedición Franklin?",
+          "respuesta": "Salieron 134 en 1845 con el HMS Erebus y el HMS Terror; cinco se quedaron en la bahía de Disko, así que siguieron 129 [2]."
+        },
+        {
+          "pregunta": "¿De qué murieron los hombres de Franklin?",
+          "respuesta": "Las causas siguen en debate: escorbuto, plomo, frío y hambre [2]."
+        },
+        {
+          "pregunta": "¿Cómo se encontraron los barcos?",
+          "respuesta": "El conocimiento tradicional inuit ayudó a localizar el Erebus en 2014; el Terror apareció en 2016 [4][5]."
+        }
+      ],
+      "respuesta": "«All well», todo bien, era el primer mensaje de la nota, escrito en mayo de 1847, cuando la expedición aún iba bien. En abril de 1848, Crozier y Fitzjames añadieron en sus márgenes que Franklin había muerto y que abandonaban los barcos [1]."
     },
     {
       "youtube": "UI2KV0gjxqA",
@@ -10665,7 +10988,30 @@
           "pregunta": "¿Dicen los Evangelios que en la esponja había posca?",
           "respuesta": "No. Dicen «vinagre»; identificarlo con la posca es una interpretación."
         }
-      ]
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué era exactamente la posca?",
+          "respuesta": "Agua con vinagre de vino. Era la bebida típica de soldados, clases bajas y esclavos, menos nutritiva y sabrosa que el vino [1]."
+        },
+        {
+          "pregunta": "¿Bebían vinagre puro los legionarios?",
+          "respuesta": "No. El vinagre iba rebajado con agua; beberlo puro es una exageración del mito [1]."
+        },
+        {
+          "pregunta": "¿La posca protegía de infecciones?",
+          "respuesta": "Es posible que la acidez hiciera el agua algo más segura, pero no está demostrado que evitara enfermedades [4]."
+        },
+        {
+          "pregunta": "¿Era posca el vinagre que dieron a Jesús en la cruz?",
+          "respuesta": "Los Evangelios solo dicen «vinagre». Muchos autores lo identifican con la posca de los soldados, pero es una interpretación, no un dato [5][6]."
+        },
+        {
+          "pregunta": "¿También la bebían los generales y emperadores?",
+          "respuesta": "Sí. Plutarco cuenta que Catón el Viejo pedía vinagre en campaña, y la Historia Augusta dice que Adriano comía en público tocino, queso y posca [2][3]."
+        }
+      ],
+      "respuesta": "La posca era agua mezclada con vinagre de vino. Los soldados romanos la bebían porque era barata: rebajar con agua un vino que se había agriado doblaba la ración de líquido por muy poco dinero, y además refrescaba [1][4]."
     },
     {
       "youtube": "TzMzpqgBu8E",

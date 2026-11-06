@@ -438,6 +438,9 @@ header nav a:hover { color:#fff; }
 .aprender li a { text-decoration:none; }
 .aprender li a:hover { text-decoration:underline; }
 .aprender .meta { font-size:11px; color:var(--texto-3); margin-top:12px; }
+.respuesta-corta { border-left:3px solid var(--rojo); padding:4px 0 4px 16px; margin-bottom:24px; font-size:19px; }
+.respuesta-corta b { display:block; font:400 12px 'IBM Plex Mono',monospace; letter-spacing:.18em; color:var(--rojo); text-transform:uppercase; margin-bottom:6px; }
+.faq h3 { font-size:19px; margin:18px 0 6px; }
 .reproductor { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; background:#000; border-radius:var(--radio); box-shadow:0 30px 80px -30px rgba(0,0,0,.95), 0 0 0 1px var(--borde); }
 .reproductor.short { max-width:340px; aspect-ratio:9/16; margin:0 auto; }
 .reproductor iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
@@ -2437,6 +2440,13 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
                            f"{len(fuentes)} {'fuente' if len(fuentes) == 1 else 'fuentes'}"])
         aprender = (f'<div class="aprender"><h2>Lo que vas a aprender</h2><ol>{items}</ol>'
                     f'<div class="meta mono">{escape(meta)}</div></div>')
+    # La respuesta corta va arriba (2-3 líneas) y las preguntas frecuentes tras el artículo: es lo que citan las IA
+    respuesta = (f'<div class="respuesta-corta"><b>La respuesta corta</b>{parrafo(e["respuesta"], fuentes)[3:-4]}</div>'
+                 if e.get("respuesta") else "")
+    faq = ""
+    if e.get("faq"):
+        faq = ('<div class="bloque faq"><h2>Preguntas frecuentes</h2>'
+               + "".join(f'<h3>{escape(q["pregunta"])}</h3>{parrafo(q["respuesta"], fuentes)}' for q in e["faq"]) + "</div>")
     # Artículo completo: lista de secciones {"titulo": "...", "parrafos": ["...", ...]}
     texto = ""
     for i, seccion in enumerate(e.get("articulo", [])):
@@ -2552,9 +2562,11 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
 <div class="ancho">
 <div class="hist-grid">
 <div class="hist-texto">
+{respuesta}
 {aprender}
 {video}
 {texto}
+{faq}
 {en_un_minuto}
 {quiz}
 {lecturas}
@@ -2594,6 +2606,10 @@ def expediente(e: dict, anterior: dict | None, siguiente: dict | None, canal: di
         migas.append({"@type": "ListItem", "position": 2, "name": t["nombre"], "item": f"{URL}/{e['tematica']}/"})
     migas.append({"@type": "ListItem", "position": len(migas) + 1, "name": titulo_buscador(e)})
     jsonld = [articulo, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": migas}]
+    if e.get("faq"):
+        jsonld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q["pregunta"],
+             "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"\s*\[\d{1,2}\]", "", q["respuesta"])}} for q in e["faq"]]})
     if e.get("youtube"):
         jsonld.append({
             "@context": "https://schema.org", "@type": "VideoObject",
