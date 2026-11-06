@@ -141,9 +141,10 @@ def revisar_local(errores: list[str], avisos: list[str]) -> int:
             destino = WEB / (camino + "index.html" if camino.endswith("/") or not camino else camino)
             if not destino.exists():
                 errores.append(f"sitemap.xml: {loc} no tiene página")
-    # Folios cuyo título para buscadores sale del de YouTube (puede no nombrar el caso)
+    # Folios cuyo título para buscadores sale del de YouTube (puede no nombrar el caso); las partes de un episodio
+    # ("parte_de") no tienen página propia
     for e in json.loads(DATOS.read_text(encoding="utf-8-sig"))["expedientes"]:
-        if not e.get("titulo_seo") and not e.get("titulo_articulo"):
+        if not e.get("titulo_seo") and not e.get("titulo_articulo") and not e.get("parte_de"):
             avisos.append(f"Título SEO: {e.get('num', '?')} usa el de YouTube («{e['titulo'][:60]}»); "
                           "revisar si nombra el caso o ponerle \"titulo_seo\"")
     return len(paginas)

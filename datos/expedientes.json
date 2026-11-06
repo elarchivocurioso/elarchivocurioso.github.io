@@ -18,7 +18,7 @@
   },
   "expedientes": [
     {
-      "youtube": "_4PaBdSZXuA",
+      "youtube": "5YB245EPWcc",
       "tipo": "video",
       "titulo": "La EPIDEMIA DE BAILE de 1518: la ciudad que no podía dejar de bailar",
       "epoca": "1518",
@@ -570,7 +570,7 @@
       "titulo_articulo": "Los vikingos nunca llevaron cuernos (la culpa es de una ópera)"
     },
     {
-      "youtube": "UgproHL8drs",
+      "youtube": "yDs3ABTPRyQ",
       "tipo": "short",
       "titulo": "Cleopatra vivió más cerca del iPhone que de las pirámides",
       "epoca": "69-30 a. C.",
@@ -985,7 +985,7 @@
       "titulo_articulo": "La guerra del emú: cuando Australia sacó las ametralladoras contra unas aves"
     },
     {
-      "youtube": "c--zhvTm08U",
+      "youtube": "2XA3sZls-Yw",
       "num": "S105",
       "tipo": "short",
       "fecha": "2026-10-27T21:03",
@@ -11454,7 +11454,7 @@
         50.0553,
         2.6897
       ],
-      "resumen": "«Alférez J. R. R.",
+      "resumen": "El 18 de noviembre de 1916, el último día de la batalla del Somme, el diario de guerra de su batallón británico dio de baja por enfermedad al alférez Tolkien. Detrás de esa línea hay unos piojos, una fiebre y el comienzo de la Tierra Media.",
       "curiosidades": [
         "Fecha prevista de publicación: 5/11/2026, 02:00 (S165, aprobada por la usuaria).",
         "Diario de guerra del 11.º Batallón de los Lancashire Fusiliers (The National Archives, WO 95/2246), 18 de noviembre de 1916: «2nd Lt. J.R.R. Tolkien (sick) struck off the strength». Es una de las dos únicas veces que el diario lo nombra — John Bourne y Andy Johnson, «The Fellowship of the Trenches: JRR Tolkien's brother officers in the 11th (Service) Battalion Lancashire Fusiliers», Western Front Association, 25/03/2026, nota 20",
@@ -11722,6 +11722,15 @@
           "respuesta": "El dibujante David Lloyd, para el cómic «V de Vendetta»."
         }
       ]
+    },
+    {
+      "youtube": "lxU7SZwDOUI",
+      "tipo": "short",
+      "titulo": "BACKROOMS (3/5): el vídeo de un chico de 16 años",
+      "parte_de": "A028",
+      "fecha": "2026-11-06T13:00",
+      "num": "S181",
+      "de": "A028"
     }
   ]
 }
