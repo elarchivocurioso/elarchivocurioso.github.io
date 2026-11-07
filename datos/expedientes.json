@@ -894,7 +894,7 @@
       "titulo_articulo": "Una ola de melaza en Boston: el día que un jarabe mató a 21 personas"
     },
     {
-      "youtube": "Q4L4l8-mS1M",
+      "youtube": "qo3h-iBNHOE",
       "num": "A003",
       "tipo": "video",
       "titulo": "La GUERRA DEL EMÚ: cuando el ejército australiano se enfrentó a 20.000 aves (1932)",
@@ -1867,7 +1867,7 @@
       "titulo_articulo": "El evento Carrington: la tormenta solar que hizo arder los telégrafos en 1859"
     },
     {
-      "youtube": "gCFYlkS09xo",
+      "youtube": "znAJHkHve1A",
       "tipo": "short",
       "titulo": "Enviaron mensajes SIN BATERÍAS gracias a una tormenta solar ☀️",
       "epoca": "1859",
@@ -12142,6 +12142,43 @@
       "fecha": "2026-11-07T17:00",
       "num": "S184",
       "de": "A004"
+    },
+    {
+      "youtube": "IREp8fQRh4E",
+      "tipo": "short",
+      "titulo": "LATAS DE CONSERVA: ¿y el abrelatas?",
+      "epoca": "1795-1858",
+      "lugar": "Francia e Inglaterra",
+      "tematica": "mitos",
+      "resumen": "Eres pastelero en Francia y los soldados de tu país pasan hambre.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 7/11/2026, 22:00 (S172, aprobada por la usuaria).",
+        "Nicolas Appert era confitero y nació en Châlons-en-Champagne en 1749",
+        "En 1795 el ejército francés ofreció un premio de 12.000 francos a quien encontrara un método nuevo para conservar alimentos",
+        "Appert metía la comida en tarros de cristal, los tapaba con corcho y lacre y los hervía al baño maría",
+        "En 1810 la Oficina de Artes y Manufacturas le pagó 12.000 francos con la condición de hacer público el método"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Nicolas Appert»",
+          "url": "https://en.wikipedia.org/wiki/Nicolas_Appert"
+        },
+        {
+          "titulo": "Smithsonian Magazine, «Why the Can Opener Wasn't Invented Until Almost 50 Years After the Can»",
+          "url": "https://www.smithsonianmag.com/smart-news/why-can-opener-wasnt-invented-until-almost-50-years-after-can-180964590/"
+        },
+        {
+          "titulo": "Smithsonian Magazine, «The Father of Canning Knew His Process Worked, But Not Why It Worked»",
+          "url": "https://www.smithsonianmag.com/smart-news/father-canning-knew-his-process-worked-not-why-it-worked-180961960/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XVIII",
+        "Nicolas Appert",
+        "Abrelatas"
+      ],
+      "fecha": "2026-11-07T22:00",
+      "num": "S172"
     }
   ]
 }
