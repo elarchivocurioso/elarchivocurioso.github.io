@@ -1623,7 +1623,7 @@
       "titulo_articulo": "1816, el año sin verano: un volcán, nieve en junio y el nacimiento de Frankenstein"
     },
     {
-      "youtube": "YbPF0QQVU0I",
+      "youtube": "Tay8Qs7B29A",
       "tipo": "short",
       "titulo": "Un VOLCÁN ayudó a crear a FRANKENSTEIN 🌋",
       "epoca": "1815-1816",
@@ -12091,6 +12091,7 @@
       "youtube": "HWPO1balIj4",
       "tipo": "short",
       "titulo": "CHICAGO, 1860: ¿cómo se levanta una ciudad?",
+      "titulo_seo": "La elevación de Chicago (1856-1861): edificios levantados con gatos de tornillo",
       "epoca": "1854-1861",
       "lugar": "Chicago (Illinois, Estados Unidos)",
       "tematica": "desastres",
@@ -12123,6 +12124,15 @@
       ],
       "fecha": "2026-11-06T22:00",
       "num": "S171"
+    },
+    {
+      "youtube": "fc8x_RLXTJA",
+      "tipo": "short",
+      "titulo": "BACKROOMS (5/5): ¿qué hay hoy en esa habitación?",
+      "parte_de": "A028",
+      "fecha": "2026-11-07T13:00",
+      "num": "S183",
+      "de": "A028"
     }
   ]
 }
