@@ -1230,7 +1230,7 @@
       "titulo_articulo": "Por qué las ametralladoras no pudieron con los emús"
     },
     {
-      "youtube": "pnpMJ9tX8JI",
+      "youtube": "cFKTLebb5Bc",
       "tipo": "video",
       "titulo": "PHINEAS GAGE: el hombre que sobrevivió a una barra de hierro en la cabeza",
       "epoca": "1848-1860",
@@ -2620,7 +2620,7 @@
       "titulo_articulo": "El Mary Celeste: el barco que apareció intacto y sin nadie a bordo"
     },
     {
-      "youtube": "q-4LNa7J4F4",
+      "youtube": "bQGK-vzBsTA",
       "tipo": "short",
       "titulo": "El barco fantasma MARY CELESTE: el creador de Sherlock Holmes inventó parte del misterio",
       "epoca": "1872-1884",
@@ -12198,6 +12198,43 @@
       "fecha": "2026-11-08T17:00",
       "num": "S186",
       "de": "A004"
+    },
+    {
+      "youtube": "yoe4_r2YL8Q",
+      "tipo": "short",
+      "titulo": "EJÉRCITO FANTASMA: tanques que se inflaban",
+      "epoca": "1944-1945",
+      "lugar": "Francia, Luxemburgo y Alemania",
+      "tematica": "mitos",
+      "resumen": "Eres general en mil novecientos cuarenta y cuatro y te faltan tanques.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 8/11/2026, 22:00 (S173, aprobada por la usuaria).",
+        "El «Ghost Army» era oficialmente el 23rd Headquarters Special Troops: unos 1.100 hombres (1.023 soldados y 82 oficiales, según Smithsonian). Se activó en enero de 1944 y llegó a Europa en mayo de 1944",
+        "Tenía versiones hinchables de todos los vehículos y piezas de artillería de una división, que desde miles de pies de altura parecían reales — Smithsonian, misma URL",
+        "Altavoces montados en semiorugas, que se oían a unas 15 millas (24 km), y transmisiones de radio falsas",
+        "Operación Viersen (marzo de 1945): simularon que las divisiones 30.ª y 79.ª cruzaban el Rin unas 10 millas al sur del cruce real, con más de 600 señuelos, radio falsa y el sonido grabado de montar pontones — Smithsonian, misma URL, y https://ghostarmy.org/about/history/intro/"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Smithsonian Magazine, «How the Ghost Army of WWII Used Art to Deceive the Nazis»",
+          "url": "https://www.smithsonianmag.com/history/how-the-ghost-army-of-wwii-used-art-to-deceive-the-nazis-180980336/"
+        },
+        {
+          "titulo": "Wikipedia, «Ghost Army»",
+          "url": "https://en.wikipedia.org/wiki/Ghost_Army"
+        },
+        {
+          "titulo": "Ghost Army Legacy Project, ficha de William Ralph Blass",
+          "url": "https://ghostarmy.org/roster/William-Ralph-Blass"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Ejército fantasma",
+        "Tanques hinchables"
+      ],
+      "fecha": "2026-11-08T22:00",
+      "num": "S173"
     }
   ]
 }
