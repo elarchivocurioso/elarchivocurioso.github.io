@@ -1476,7 +1476,7 @@
       "titulo_articulo": "La barra de Phineas Gage: qué era exactamente y dónde está hoy"
     },
     {
-      "youtube": "9SYd1HiSA1M",
+      "youtube": "OCg_vW9Ve0w",
       "tipo": "video",
       "titulo": "1816, EL AÑO SIN VERANO: el volcán que trajo nieve en junio (y creó a Frankenstein)",
       "epoca": "1815-1816",
@@ -3380,7 +3380,7 @@
       "titulo_articulo": "GTA VI: del fallo de programación en Escocia al juego más esperado de la historia"
     },
     {
-      "youtube": "G4ysC_DHmCw",
+      "youtube": "cvLNnJIB7TE",
       "tipo": "short",
       "titulo": "GTA nació de un FALLO de programación: la policía se volvió LOCA",
       "epoca": "1995-1997",
@@ -12387,6 +12387,136 @@
         {
           "pregunta": "¿Cuántos años llevaba en pie el Muro en 1989?",
           "respuesta": "28 años, desde el 13 de agosto de 1961."
+        }
+      ]
+    },
+    {
+      "youtube": "CBlYOJA8pGw",
+      "tipo": "short",
+      "titulo": "Harald Jäger, el oficial que levantó la barrera sin una orden",
+      "epoca": "9 de noviembre de 1989",
+      "lugar": "Bornholmer Straße, Berlín",
+      "tematica": "mitos",
+      "mapa": [
+        52.5542,
+        13.4036
+      ],
+      "resumen": "Ningún superior ordenó abrir el primer paso del Muro.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 10/11/2026, 02:00 (S169, aprobada por la usuaria).",
+        "Contexto en una frase: la tarde del 9 de noviembre de 1989, la televisión emitió el anuncio confuso de Günter Schabowski sobre la nueva norma de viajes",
+        "Harald Jäger, comandante de la Stasi (Wikipedia: «major»), jefe adjunto del control de pasaportes en Bornholmer Straße y al frente del turno esa noche; vio la rueda de prensa en la sala de descanso",
+        "Sus superiores le ordenaron primero mandar a casa a quien no tuviera permiso y después dejar pasar solo a los más alterados; cuando pidió instrucciones, no le dieron ninguna orden de abrir",
+        "A los primeros que salieron les sellaron el pasaporte como no válido: perdían la ciudadanía de la RDA sin saberlo («expatriating the passport holders without their knowledge»)"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Stiftung Berliner Mauer, «Bornholmer Straße»",
+          "url": "https://www.stiftung-berliner-mauer.de/en/node/1859"
+        },
+        {
+          "titulo": "The Local (AFP), «The guard who opened the Berlin Wall» (2014)",
+          "url": "https://www.thelocal.de/20141106/guard-who-opened-berlin-wall-harald-jaeger"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Bornholmer Straße border crossing»",
+          "url": "https://en.wikipedia.org/wiki/Bornholmer_Stra%C3%9Fe_border_crossing"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Harald Jäger»",
+          "url": "https://en.wikipedia.org/wiki/Harald_J%C3%A4ger"
+        },
+        {
+          "titulo": "bpb, «9. November 1989»",
+          "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/deutschland-chronik/132175/9-november-1989/"
+        },
+        {
+          "titulo": "berlin.de, Landesdenkmalamt, «Bornholmer Straße»",
+          "url": "https://www.berlin.de/landesdenkmalamt/denkmale/berliner-mauer/mauer-denkmale/bornholmer-strasse-647238.php"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Bornholmer Straße",
+        "Harald Jäger"
+      ],
+      "fecha": "2026-11-10T02:00",
+      "num": "S169",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "La noche del 9 de noviembre de 1989, en un paso fronterizo del norte de Berlín, miles de personas gritan para que les dejen salir. Al otro lado de la barrera, un oficial de la Stasi llama una y otra vez a sus superiores. Nadie le da la orden que necesita.",
+            "Pasadas las once de la noche, el oficial decide por su cuenta. En la hora siguiente, unas 20.000 personas cruzan un puente hacia Berlín Oeste sin que nadie les pida los papeles. Se llamaba Harald Jäger."
+          ]
+        },
+        {
+          "titulo": "La noche del anuncio",
+          "parrafos": [
+            "Esa tarde, la televisión había emitido el anuncio confuso de Günter Schabowski sobre una nueva norma de viajes [1][3]. Harald Jäger, comandante de la Stasi y jefe adjunto del control de pasaportes del paso de Bornholmer Straße, estaba al frente del turno. Vio la rueda de prensa en la sala de descanso [2][4].",
+            "Muy pronto empezó a llegar gente. Jäger pidió instrucciones. Sus superiores le ordenaron primero mandar a casa a quien no tuviera permiso, y después dejar pasar solo a los más alterados [2][4]. Ninguna de esas órdenes era abrir."
+          ]
+        },
+        {
+          "titulo": "Un sello con trampa",
+          "parrafos": [
+            "Con los primeros que dejaron salir se usó un truco: les sellaron el pasaporte de forma que quedaba invalidado. Perdían la ciudadanía de la RDA sin saberlo, y no podrían volver [1][3].",
+            "Pero la multitud seguía creciendo. Jäger llegó a la conclusión de que mantener cerrado el paso podía poner en peligro a la gente y a sus propios hombres [4]. Pasadas las once de la noche, según el relato que dio años después a la agencia AFP, ordenó abrir la barrera [2]. La hora exacta varía según la fuente, entre las 23:14 y hacia las 23:30 [2][3][5]."
+          ]
+        },
+        {
+          "titulo": "Veinte mil personas en una hora",
+          "parrafos": [
+            "En la hora siguiente, unas 20.000 personas cruzaron sin control el puente Bösebrücke [1][3]. Bornholmer Straße fue el primer paso de la ciudad en abrirse; los demás pasos de Berlín se fueron abriendo a lo largo de esa noche [2][6]. Hubo después quien le disputó el primer puesto: en 2009, el excoronel de la Stasi Heinz Schäfer dijo que él había abierto unas horas antes su paso de Waltersdorf, en el sur de la ciudad [4]. Bornholmer Straße sigue siendo, para la mayoría de las fuentes, el primero de la ciudad.",
+            "Jäger, sin embargo, no quiso el mérito. Años después dijo que no fue él quien abrió el Muro, sino los ciudadanos de la RDA que se reunieron aquella noche, y que lo único que se le podía reconocer era que todo ocurrió sin derramar sangre [2]."
+          ]
+        }
+      ],
+      "titulo_articulo": "Harald Jäger, el oficial que levantó la barrera de Bornholmer Straße sin una orden",
+      "aprender": [
+        "Quién era Harald Jäger y qué hacía esa noche en Bornholmer Straße.",
+        "Qué órdenes recibió antes de abrir, y cuál no recibió.",
+        "Qué truco usaron con los pasaportes de los primeros que salieron.",
+        "Por qué decidió levantar la barrera."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "Harald Jäger estaba al frente del turno de Bornholmer Straße la noche del 9 de noviembre de 1989 [4]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "A los primeros en salir les invalidaron el pasaporte sin decírselo [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Unas 20.000 personas cruzaron el puente Bösebrücke en la hora siguiente a la apertura [1]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "La hora exacta de la apertura: 23:14 según la bpb; hacia las 23:30 según otras fuentes [5]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Que fuera el primer paso del Muro abierto: un excoronel de la Stasi dijo en 2009 que él había abierto antes el paso de Waltersdorf [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que Jäger abriera por orden de sus superiores: nadie le ordenó abrir [4]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Es verdad que Harald Jäger recibió la orden de abrir la frontera?",
+          "respuesta": "No. Recibió otras órdenes, pero nunca la de abrir; lo decidió él."
+        },
+        {
+          "pregunta": "¿Qué les pasó, sin saberlo, a los primeros que salieron por Bornholmer Straße?",
+          "respuesta": "Les invalidaron el pasaporte y perdieron la ciudadanía de la RDA."
+        },
+        {
+          "pregunta": "¿Cuántas personas cruzaron el puente en la hora siguiente?",
+          "respuesta": "Unas 20.000."
         }
       ]
     }
