@@ -3038,7 +3038,8 @@ def generar() -> int:
 
 def git(*args: str) -> subprocess.CompletedProcess:
     exe = shutil.which("git") or r"C:\Program Files\Git\cmd\git.exe"
-    return subprocess.run([exe, *args], cwd=WEB, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    return subprocess.run([exe, *args], cwd=WEB, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                          creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
 
 
 def publicar() -> None:
@@ -3048,14 +3049,14 @@ def publicar() -> None:
     importador = WEB.parent / "Promocion" / "importar_articulos.py"
     if importador.exists():
         r = subprocess.run([sys.executable, "-X", "utf8", str(importador)], capture_output=True, text=True,
-                           encoding="utf-8", errors="replace")
+                           encoding="utf-8", errors="replace", creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
         if r.returncode != 0:
             print(f"AVISO: no se pudieron importar los artículos:\n{r.stderr.strip()}")
     # Portadas horizontales limpias para los Shorts nuevos (Promocion/portadas_shorts.py)
     portadas = WEB.parent / "Promocion" / "portadas_shorts.py"
     if portadas.exists():
         r = subprocess.run([sys.executable, "-X", "utf8", str(portadas)], capture_output=True, text=True,
-                           encoding="utf-8", errors="replace")
+                           encoding="utf-8", errors="replace", creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
         if r.returncode != 0:
             print(f"AVISO: no se pudieron hacer las portadas de los Shorts:\n{r.stderr.strip()[-500:]}")
     generar()
@@ -3064,7 +3065,8 @@ def publicar() -> None:
     dibujante = WEB.parent / "Promocion" / "compartir.py"
     if dibujante.exists():
         r = subprocess.run([sys.executable, "-X", "utf8", str(dibujante)], capture_output=True, text=True,
-                           encoding="utf-8", errors="replace", cwd=dibujante.parent)
+                           encoding="utf-8", errors="replace", cwd=dibujante.parent,
+                           creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
         if r.returncode != 0:
             print(f"AVISO: no se pudieron dibujar las imágenes para compartir:\n{r.stderr.strip()[-500:]}")
         elif not r.stdout.strip().endswith("0 imagen(es) para compartir dibujadas."):
