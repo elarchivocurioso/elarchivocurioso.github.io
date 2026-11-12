@@ -1724,7 +1724,7 @@
       "titulo_articulo": "Del Tambora a Villa Diodati: cómo las tormentas de 1816 entraron en Frankenstein"
     },
     {
-      "youtube": "m8tW15aqnWo",
+      "youtube": "l4f4eF7ML2Q",
       "tipo": "video",
       "titulo": "El EVENTO CARRINGTON: la tormenta solar de 1859 que incendió los telégrafos",
       "epoca": "1859",
@@ -3502,7 +3502,7 @@
       "titulo_articulo": "«Race'n'Chase»: el juego de policías que se convirtió en GTA"
     },
     {
-      "youtube": "R5MAx2_PDNA",
+      "youtube": "ybCShXcQJ9I",
       "tipo": "short",
       "titulo": "TOP 10 HALLOWEEN: 130 niños DESAPARECIDOS en Hamelín… y nadie sabe adónde fueron",
       "epoca": "1284",
@@ -3640,7 +3640,7 @@
       "respuesta": "Algo pasó de verdad: Hamelín recordó durante siglos la pérdida de 130 «niños» el 26 de junio de 1284, en una vidriera, en crónicas y en inscripciones. Lo que no es cierto son las ratas, que no aparecen en la historia hasta hacia 1559 [1]."
     },
     {
-      "youtube": "ytwYRXqx-2U",
+      "youtube": "TbJGmztRLYc",
       "tipo": "short",
       "titulo": "TOP 9 HALLOWEEN: el «MONSTRUO» saltarín que tuvo en vilo a Londres",
       "epoca": "1837-1904",
@@ -3760,7 +3760,7 @@
       "titulo_articulo": "Spring-heeled Jack: el fantasma saltarín que inventó el Londres victoriano"
     },
     {
-      "youtube": "UeY-Fi2i0O0",
+      "youtube": "vK0i9aWOiBE",
       "tipo": "short",
       "titulo": "TOP 8 HALLOWEEN: la semana en que el DIABLO de Jersey cerró los colegios",
       "epoca": "1735 (leyenda) y enero de 1909",
@@ -12537,6 +12537,189 @@
       "fecha": "2026-11-10T17:00",
       "num": "S190",
       "de": "A013"
+    },
+    {
+      "youtube": "8FQ2lSER5KY",
+      "tipo": "short",
+      "titulo": "ARMISTICIO: la tumba que dice 10 de noviembre",
+      "epoca": "11 de noviembre de 1918",
+      "lugar": "Compiègne y Vrigne-Meuse (Francia)",
+      "tematica": "mitos",
+      "resumen": "«El armisticio se firmó a las cinco de esta mañana…»",
+      "curiosidades": [
+        "Fecha prevista de publicación: 11/11/2026 (Día del Armisticio). La hora, pendiente de Alba.",
+        "El armisticio se acordó a las 5:00 del 11/11/1918 en el vagón de Foch, en el bosque de Compiègne, y entró en vigor a las 11:00, hora de París. Las firmas se hicieron, según la fuente, entre las 5:00 y las 5:45",
+        "La cita del gancho y del bucle es el comunicado oficial británico, emitido a las 10:20 por la Press Bureau y anunciado por Lloyd George: «The armistice was signed at five o'clock this morning, and hostilities are to cease on all fronts at 11 a.m. to-day.» Traducción al español. La voz la dice entre comillas",
+        "Se siguió combatiendo hasta las 11:00; el último día hubo 10.944 bajas, de ellas 2.738 muertos — misma fuente (que cita *EyeWitness to History*, 2004).",
+        "Augustin Trébuchon (1878-1918): pastor del municipio antes de la guerra, voluntario desde el 4/8/1914, enlace (messenger) del 415.º Regimiento de Infantería; cayó a las 10:45 del 11/11/1918 en Vrigne-sur-Meuse; fue el último soldado francés muerto en la guerra; llevaba un mensaje: «Rassemblement à 11h 30 pour le ravitaillement» («Reunión a las 11:30 para el avituallamiento»; la voz dice «para comer»); su memorial y el registro del pueblo dan como fecha el 10/11/1918; «Nobody knows who ordered the death date to be changed, but it is said to be so for all French soldiers who died on 11 November»; está enterrado en el cementerio de Vrigne-Meuse"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia (inglés), «Armistice of 11 November 1918»",
+          "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Augustin Trébuchon»",
+          "url": "https://en.wikipedia.org/wiki/Augustin_Tr%C3%A9buchon"
+        },
+        {
+          "titulo": "The Connexion, sobre la fecha de su tumba",
+          "url": "https://connexionfrance.com/French-news/Grave-of-French-WW1-soldier-killed-in-France-on-Nov-11-has-wrong-date"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "11 de noviembre",
+        "Primera Guerra Mundial"
+      ],
+      "fecha": "2026-11-11T11:00",
+      "num": "S237"
+    },
+    {
+      "youtube": "msfOGC1Xmvs",
+      "tipo": "short",
+      "titulo": "LIZZIE BORDEN (5/7): un juicio sin testigos",
+      "parte_de": "A013",
+      "fecha": "2026-11-11T13:00",
+      "num": "S191",
+      "de": "A013"
+    },
+    {
+      "youtube": "2VJKoMUDWRs",
+      "tipo": "short",
+      "titulo": "LIZZIE BORDEN (6/7): ¿qué decidió el jurado?",
+      "parte_de": "A013",
+      "fecha": "2026-11-11T17:00",
+      "num": "S192",
+      "de": "A013"
+    },
+    {
+      "youtube": "yX3bhwtky_o",
+      "tipo": "short",
+      "titulo": "La Ruta 66 cumple cien años y casi se llamó Ruta 60",
+      "epoca": "11 de noviembre de 1926",
+      "lugar": "Estados Unidos, de Chicago a California",
+      "tematica": "mitos",
+      "mapa": [
+        41.8819,
+        -87.6278
+      ],
+      "resumen": "Medía 3.940 kilómetros, y en 1985 la sacaron de la red oficial.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 11/11/2026, 19:00 (S170, aprobada por la usuaria).",
+        "Establecida el 11 de noviembre de 1926; las señales se pusieron al año siguiente",
+        "Longitud original: 2.448 millas (3.940 km), de Chicago (Illinois) a Los Ángeles; en 1936 se alargó hasta Santa Monica",
+        "Ocho estados: Illinois, Misuri, Kansas, Oklahoma, Texas, Nuevo México, Arizona y California",
+        "El número: Cyrus Avery, promotor de la ruta, quería el 60; Kentucky defendió que el 60 pasara por su estado y lo consiguió; se propuso el 62 para la ruta Chicago-Los Ángeles, a Avery no le gustó, y el ingeniero de Oklahoma John M. Page vio que el 66 estaba libre"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia (inglés), «U.S. Route 66»",
+          "url": "https://en.wikipedia.org/wiki/U.S._Route_66"
+        },
+        {
+          "titulo": "Springfield, Misuri, «History of Route 66»",
+          "url": "https://springfieldmo.org/history-of-route-66"
+        },
+        {
+          "titulo": "HISTORY, «Route 66 decertified»",
+          "url": "https://www.history.com/this-day-in-history/june-27/route-66-decertified"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Cyrus Avery»",
+          "url": "https://en.wikipedia.org/wiki/Cyrus_Avery"
+        },
+        {
+          "titulo": "Missouri State University Libraries, sobre el telegrama de 1926",
+          "url": "https://libnotes.missouristate.edu/?p=6107"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Cyrus Avery",
+        "Carreteras de Estados Unidos"
+      ],
+      "fecha": "2026-11-11T19:00",
+      "num": "S170",
+      "articulo": [
+        {
+          "titulo": "",
+          "parrafos": [
+            "El 11 de noviembre de 1926 nació en Estados Unidos una carretera que acabaría siendo la más famosa del mundo: la Ruta 66. Iba de Chicago a Los Ángeles, cruzaba ocho estados y medía unos 3.940 kilómetros. Pero ese número, el que hoy decora camisetas y letreros de neón, fue casi un accidente.",
+            "Su principal promotor quería otro. Lo perdió en una disputa con un estado vecino, y el 66 apareció porque estaba libre. Cien años después, la carretera ya no existe oficialmente, y aun así sigue ahí."
+          ]
+        },
+        {
+          "titulo": "Chicago - Los Ángeles",
+          "parrafos": [
+            "La Ruta 66 se estableció el 11 de noviembre de 1926, dentro del nuevo sistema de carreteras federales numeradas de Estados Unidos; las señales se pusieron al año siguiente [1][2]. Su recorrido original medía 2.448 millas, unos 3.940 kilómetros, desde Chicago, en Illinois, hasta Los Ángeles. En 1936 se alargó hasta Santa Monica [1].",
+            "Atravesaba ocho estados: Illinois, Misuri, Kansas, Oklahoma, Texas, Nuevo México, Arizona y California [1][3]."
+          ]
+        },
+        {
+          "titulo": "La pelea por un número",
+          "parrafos": [
+            "Cyrus Avery, el gran promotor de la ruta, quería para ella el número 60. Pero Kentucky defendió que el 60 pasara por su estado, y lo consiguió. Se propuso entonces el 62 para la carretera de Chicago a Los Ángeles, y a Avery no le gustó. Según la versión más citada, fue el ingeniero de Oklahoma John M. Page quien se dio cuenta de que el 66 estaba libre [1][4]. Las fuentes cuentan con detalles distintos quién propuso qué, pero todas coinciden en lo esencial: el 66 fue la segunda opción.",
+            "El telegrama que pidió el número 66 salió de Springfield, en Misuri, el 30 de abril de 1926 [5]."
+          ]
+        },
+        {
+          "titulo": "La carretera madre",
+          "parrafos": [
+            "En los años treinta, la Ruta 66 fue la gran vía de huida hacia California de las familias del Dust Bowl, la región de las Grandes Llanuras arrasada por las tormentas de polvo y la sequía. Más de 200.000 personas viajaron desde allí hacia California [3]. En 1939, John Steinbeck la llamó «la carretera madre» en su novela *Las uvas de la ira* [1][3]."
+          ]
+        },
+        {
+          "titulo": "Desaparecer sin irse",
+          "parrafos": [
+            "Las autopistas interestatales la fueron dejando atrás. En octubre de 1984, la Interestatal 40 rodeó su último tramo, en Williams, Arizona, y en 1985 la Ruta 66 dejó de formar parte del sistema de carreteras federales; HISTORY sitúa la decisión el 27 de junio [1][3].",
+            "Pero la carretera no desapareció. Muchos de sus tramos siguen existiendo como carreteras locales y están señalizados como «Historic Route 66» [1]. Cien años después, ya no es oficial, pero todavía se puede recorrer."
+          ]
+        }
+      ],
+      "titulo_articulo": "La Ruta 66 cumple cien años: la carretera que casi se llamó Ruta 60",
+      "aprender": [
+        "Cuándo nació la Ruta 66 y qué recorrido tenía.",
+        "Por qué no se llamó Ruta 60.",
+        "Por qué Steinbeck la llamó «la carretera madre».",
+        "Qué pasó con ella en 1985 y qué queda hoy."
+      ],
+      "verdad": [
+        {
+          "estado": "documentado",
+          "texto": "La Ruta 66 se estableció el 11 de noviembre de 1926 [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "Medía 2.448 millas e iba de Chicago a Los Ángeles por ocho estados [1]"
+        },
+        {
+          "estado": "documentado",
+          "texto": "En 1985 se retiró del sistema de carreteras federales [3]"
+        },
+        {
+          "estado": "discutido",
+          "texto": "Quién propuso el 62 y quién encontró el 66: las versiones cambian; Wikipedia cita a John M. Page [4]"
+        },
+        {
+          "estado": "leyenda",
+          "texto": "Que la Ruta 66 ya no exista: dejó de ser carretera federal, pero muchos tramos siguen abiertos como «Historic Route 66» [1]"
+        }
+      ],
+      "test": [
+        {
+          "pregunta": "¿Qué número quería Cyrus Avery para la carretera?",
+          "respuesta": "El 60, pero se lo quedó una ruta que pasaba por Kentucky."
+        },
+        {
+          "pregunta": "¿Quién llamó a la Ruta 66 «la carretera madre»?",
+          "respuesta": "John Steinbeck, en «Las uvas de la ira» (1939)."
+        },
+        {
+          "pregunta": "¿Es verdad que la Ruta 66 desapareció en 1985?",
+          "respuesta": "No del todo. Dejó de ser carretera federal, pero muchos tramos siguen existiendo como «Historic Route 66»."
+        }
+      ]
     }
   ]
 }

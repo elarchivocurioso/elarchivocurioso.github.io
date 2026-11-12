@@ -1,5 +1,25 @@
 [
  {
+  "antes": "La Ruta 66 cumple cien años y ",
+  "tachado": "casi se llamó Ruta 60",
+  "despues": "",
+  "slug": "la-ruta-66-cumple-cien-anos-y-casi-se-llamo-ruta-60",
+  "num": "Folio 074 · 11 de noviembre de 1926",
+  "img": "portadas/S170.jpg",
+  "tipo": "short",
+  "tematica": "Mitos desmontados"
+ },
+ {
+  "antes": "ARMISTICIO: la tumba que dice ",
+  "tachado": "10 de noviembre",
+  "despues": "",
+  "slug": "armisticio-la-tumba-que-dice-10-de-noviembre",
+  "num": "Folio 073 · 11 de noviembre de 1918",
+  "img": "portadas/S237.jpg",
+  "tipo": "short",
+  "tematica": "Mitos desmontados"
+ },
+ {
   "antes": "Harald Jäger, el oficial que levantó la ",
   "tachado": "barrera sin una orden",
   "despues": "",
