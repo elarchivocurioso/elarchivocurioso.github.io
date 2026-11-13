@@ -2223,7 +2223,7 @@
       "titulo_articulo": "Las reglas del timo: la psicología con la que Lustig «vendió» la Torre Eiffel"
     },
     {
-      "youtube": "JKUBZ1wBI5s",
+      "youtube": "8nxHe-b2_4c",
       "tipo": "video",
       "titulo": "La FIEBRE DE LOS TULIPANES: la primera burbuja de la historia… ¿o un mito?",
       "epoca": "1634-1637",
@@ -4407,7 +4407,7 @@
       "titulo_articulo": "El vestido que Lizzie Borden quemó en la estufa: la prueba que nunca se pudo examinar"
     },
     {
-      "youtube": "VpQmXpkUrsA",
+      "youtube": "dULdmfpEbo0",
       "tipo": "short",
       "titulo": "TOP 5 HALLOWEEN: los LEONES de Tsavo, la leyenda que paralizó un ferrocarril",
       "epoca": "1898",
@@ -4530,7 +4530,7 @@
       "titulo_articulo": "Los leones de Tsavo: la historia real detrás de la leyenda que detuvo un ferrocarril"
     },
     {
-      "youtube": "V58tgJPn9ak",
+      "youtube": "ZN_wHIptPx4",
       "tipo": "short",
       "titulo": "TOP 4 HALLOWEEN: la CONDESA sangrienta, el caso de Erzsébet Báthory",
       "epoca": "hacia 1590-1614",
@@ -4646,7 +4646,7 @@
       "titulo_articulo": "Erzsébet Báthory: la condesa de Čachtice entre el documento y la leyenda"
     },
     {
-      "youtube": "TJ1VxXszcRE",
+      "youtube": "LYbVPxbyVrQ",
       "tipo": "short",
       "titulo": "TOP 3 HALLOWEEN: el HOMBRE LOBO de Allariz existió… y fue juzgado en España",
       "epoca": "1852-1863",
@@ -12739,6 +12739,39 @@
       "fecha": "2026-11-12T17:00",
       "num": "S194",
       "de": "A005"
+    },
+    {
+      "youtube": "i4XV02eNUpc",
+      "tipo": "short",
+      "titulo": "CANDLE COVE: el programa que nunca existió",
+      "epoca": "2009-2016 (el relato se sitúa hacia 1971)",
+      "lugar": "internet; el relato sitúa la historia en Ironton y Ashland (Ohio y Kentucky, Estados Unidos)",
+      "tematica": "paranormal",
+      "resumen": "El programa infantil más inquietante de internet nunca se emitió.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Know Your Meme, ficha «Candle Cove»):**",
+        "«Written sometime in 2009 by webcartoonist Kris Straub», en forma de conversación de un foro.",
+        "Los usuarios recuerdan un programa sobre una niña, Janice, y unos piratas.",
+        "Al final, uno revela que el programa era «30 minutes of static».",
+        "Subido a Ichor Falls «on March 15th, 2009 under a Creative Commons license»."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Know Your Meme, «Candle Cove»",
+          "url": "https://knowyourmeme.com/memes/candle-cove"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Candle Cove»",
+          "url": "https://en.wikipedia.org/wiki/Candle_Cove"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XXI",
+        "Creepypasta",
+        "Leyendas de internet"
+      ],
+      "fecha": "2026-11-13T13:00",
+      "num": "S244"
     }
   ]
 }
