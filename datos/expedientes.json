@@ -12806,6 +12806,39 @@
       "fecha": "2026-11-13T17:00",
       "num": "S239",
       "titulo_seo": "Los agujeros del Coliseo de Roma: el saqueo de las grapas de hierro que unían sus piedras"
+    },
+    {
+      "youtube": "bxrZWsosg3Y",
+      "tipo": "short",
+      "titulo": "TITANIC: ¿existió Jack Dawson?",
+      "epoca": "1888-1997",
+      "lugar": "Halifax (Canadá), cementerio de Fairview Lawn",
+      "tematica": "cine",
+      "resumen": "Esta tumba dice J. Dawson. Y murió en el Titanic.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Encyclopedia Titanica, ficha de Joseph Dawson):**",
+        "Nació en St Thomas, Dublín, hacia septiembre de 1888.",
+        "Se enroló en el Titanic el 6/4/1912 como «trimmer» (el que lleva el carbón a las calderas). Edad en la ficha: «23 years 7 months».",
+        "«His body was recovered (#227) and was buried in Fairview Lawn Cemetery, Halifax, Nova Scotia, on 8 May 1912.»",
+        "«Body recovered by: Mackay-Bennett (No. 227)»."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Encyclopedia Titanica, «Joseph Dawson»",
+          "url": "https://www.encyclopedia-titanica.org/titanic-victim/joseph-dawson.html"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Fairview Lawn Cemetery»",
+          "url": "https://en.wikipedia.org/wiki/Fairview_Lawn_Cemetery"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Jack Dawson",
+        "Joseph Dawson"
+      ],
+      "fecha": "2026-11-14T13:00",
+      "num": "S243"
     }
   ]
 }
