@@ -12771,7 +12771,8 @@
         "Leyendas de internet"
       ],
       "fecha": "2026-11-13T13:00",
-      "num": "S244"
+      "num": "S244",
+      "titulo_seo": "Candle Cove: la creepypasta de Kris Straub (2009) sobre un programa que nunca existió"
     },
     {
       "youtube": "E7BC7a1LIYU",
@@ -12780,7 +12781,7 @@
       "epoca": "siglos I-XVIII",
       "lugar": "Roma (Coliseo)",
       "tematica": "robos",
-      "resumen": "Estos agujeros del Coliseo no los hizo el tiempo.",
+      "resumen": "Los agujeros de la fachada del Coliseo no los hizo el tiempo: tras su abandono se excavaron para arrancar las grapas de hierro que unían los bloques de travertino y reutilizar el metal.",
       "curiosidades": [
         "**Fuente que no es Wikipedia (Parco archeologico del Colosseo):** cartel del propio Parco junto a la fachada, «I \"Buchi\" del Colosseo / The \"Holes\" of the Colosseum». Lo transcribe y fotografía la Historical Marker Database: «La facciata esterna del colosseo mostra numerose cavità, anche molto profonde, scavate in corrispondenza dei giunti dei blocchi di travertino… I fori sono il risultato delle attività di spoliazione dei perni che tenevano uniti tra loro i blocchi, con lo scopo di recuperare il metallo e riutilizzarlo. Risalgono al periodo successivo l'abbandono dell'anfiteatro quando l'edificio venne convertito ad altri usi e funzioni.» («Erected by Parco»)",
         "Construcción del año 72 al 80 (Vespasiano y Tito). La pared exterior necesitó más de 100.000 m³ de travertino, «set without mortar; they were held together by 300 tons of iron clamps»",
@@ -12803,7 +12804,8 @@
         "Anfiteatro Flavio"
       ],
       "fecha": "2026-11-13T17:00",
-      "num": "S239"
+      "num": "S239",
+      "titulo_seo": "Los agujeros del Coliseo de Roma: el saqueo de las grapas de hierro que unían sus piedras"
     }
   ]
 }
