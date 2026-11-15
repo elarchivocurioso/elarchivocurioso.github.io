@@ -12839,6 +12839,43 @@
       "fecha": "2026-11-14T13:00",
       "num": "S243",
       "titulo_seo": "La tumba de «J. Dawson» en Halifax: Joseph Dawson, carbonero del Titanic que no era Jack"
+    },
+    {
+      "youtube": "n-mZ_-oFeD8",
+      "tipo": "short",
+      "titulo": "TECLADO QWERTY: ¿por qué no va en orden?",
+      "epoca": "1868-1891",
+      "lugar": "Milwaukee e Ilion (Estados Unidos)",
+      "tematica": "mitos",
+      "resumen": "Dicen que el teclado se desordenó para no atascarse.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Smithsonian):** Jimmy Stamp, «Fact or Fiction? The Legend of the QWERTY Keyboard» (3/5/2013), puesto al día por Ellen Wexler el 25/2/2025 como «The QWERTY Keyboard Will Never Die. Where Did the 150-Year-Old Design Come From?», *Smithsonian Magazine*",
+        "«The invention's true origin story has long been the subject of debate. Some argue it was created to prevent typewriter jams, while others insist it's linked to the telegraph.»",
+        "Sholes, «a politician, printer, newspaper man and amateur inventor in Milwaukee»; patentó la máquina con otros en 1868; «Their keyboard resembled a piano and was built with an alphabetical arrangement».",
+        "La teoría de los atascos: separar pares de letras frecuentes para que las varillas («type bars») no se atascaran. El artículo señala que la «e» y la «r» están juntas aunque «er» es muy frecuente en inglés.",
+        "Koichi y Motoko Yasuoka (Universidad de Kioto, artículo de 2011): «the mechanics of the typewriter didn't influence the keyboard design… the QWERTY system emerged in response to one group of early users: telegraph operators»; también niegan que Sholes quisiera frenar al que escribe."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Smithsonian Magazine, Jimmy Stamp y Ellen Wexler (2013, 2025)",
+          "url": "https://www.smithsonianmag.com/innovation/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Sholes and Glidden typewriter»",
+          "url": "https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «QWERTY»",
+          "url": "https://en.wikipedia.org/wiki/QWERTY"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Por qué el teclado no está en orden",
+        "Máquina de escribir"
+      ],
+      "fecha": "2026-11-15T13:00",
+      "num": "S240"
     }
   ]
 }

@@ -2,6 +2,29 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## Teclado qwerty: ¿por qué no va en orden?
+
+Página: https://folio13.com/expedientes/teclado-qwerty-por-que-no-va-en-orden.html
+Temática: Mitos desmontados
+Lugar: Milwaukee e Ilion (Estados Unidos)
+Época: 1868-1891
+
+Dicen que el teclado se desordenó para no atascarse.
+
+### Curiosidades
+
+- **Fuente que no es Wikipedia (Smithsonian):** Jimmy Stamp, «Fact or Fiction? The Legend of the QWERTY Keyboard» (3/5/2013), puesto al día por Ellen Wexler el 25/2/2025 como «The QWERTY Keyboard Will Never Die. Where Did the 150-Year-Old Design Come From?», *Smithsonian Magazine*
+- «The invention's true origin story has long been the subject of debate. Some argue it was created to prevent typewriter jams, while others insist it's linked to the telegraph.»
+- Sholes, «a politician, printer, newspaper man and amateur inventor in Milwaukee»; patentó la máquina con otros en 1868; «Their keyboard resembled a piano and was built with an alphabetical arrangement».
+- La teoría de los atascos: separar pares de letras frecuentes para que las varillas («type bars») no se atascaran. El artículo señala que la «e» y la «r» están juntas aunque «er» es muy frecuente en inglés.
+- Koichi y Motoko Yasuoka (Universidad de Kioto, artículo de 2011): «the mechanics of the typewriter didn't influence the keyboard design… the QWERTY system emerged in response to one group of early users: telegraph operators»; también niegan que Sholes quisiera frenar al que escribe.
+
+### Fuentes
+
+- [1] Smithsonian Magazine, Jimmy Stamp y Ellen Wexler (2013, 2025): https://www.smithsonianmag.com/innovation/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/
+- [2] Wikipedia (inglés), «Sholes and Glidden typewriter»: https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter
+- [3] Wikipedia (inglés), «QWERTY»: https://en.wikipedia.org/wiki/QWERTY
+
 ## La tumba de «J. Dawson» en Halifax: Joseph Dawson, carbonero del Titanic que no era Jack
 
 Página: https://folio13.com/expedientes/titanic-existio-jack-dawson.html
