@@ -2727,7 +2727,7 @@
       "titulo_articulo": "«J. Habakuk Jephson's Statement»: el relato de Conan Doyle que se coló en el misterio del Mary Celeste"
     },
     {
-      "youtube": "cGdxWX4mSQI",
+      "youtube": "ktovqgZUmn8",
       "tipo": "video",
       "titulo": "NOSFERATU: la película de vampiros que un juez ordenó destruir (1922)",
       "epoca": "1922-1925",
@@ -5128,7 +5128,7 @@
       "titulo_articulo": "London After Midnight: cómo se reconstruye una película de vampiros que nadie vivo ha visto"
     },
     {
-      "youtube": "tm3C8EukAQ4",
+      "youtube": "WQ_eT-Eu49Q",
       "tipo": "short",
       "titulo": "Esta película de vampiros ARDIÓ en 1965… y nadie ha vuelto a verla",
       "epoca": "1927-2002",
@@ -5372,7 +5372,7 @@
       "titulo_articulo": "El crimen de Cuenca: cómo se fabricó una condena por un muerto que seguía vivo"
     },
     {
-      "youtube": "EDjQU4dBhwQ",
+      "youtube": "m3pH6mLRzBI",
       "tipo": "short",
       "titulo": "Condenados por un crimen que NUNCA existió: el pastor de Cuenca volvió VIVO",
       "epoca": "1910-1926",
@@ -5622,7 +5622,7 @@
       "titulo_articulo": "El tren de los Lumière y el público que nunca huyó: cómo se fabricó el mito fundacional del cine"
     },
     {
-      "youtube": "ejzbQkaZ3h4",
+      "youtube": "dJaAPzYkrLM",
       "tipo": "short",
       "titulo": "El tren que hizo HUIR al público… y el MITO que nadie comprobó (Lumière)",
       "epoca": "1895-1896",
@@ -12814,9 +12814,8 @@
       "epoca": "1888-1997",
       "lugar": "Halifax (Canadá), cementerio de Fairview Lawn",
       "tematica": "cine",
-      "resumen": "Esta tumba dice J. Dawson. Y murió en el Titanic.",
+      "resumen": "En Halifax hay una tumba que dice «J. Dawson», víctima del Titanic. No era Jack, el de la película de 1997: era Joseph Dawson, un irlandés de 23 años que movía carbón.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (Encyclopedia Titanica, ficha de Joseph Dawson):**",
         "Nació en St Thomas, Dublín, hacia septiembre de 1888.",
         "Se enroló en el Titanic el 6/4/1912 como «trimmer» (el que lleva el carbón a las calderas). Edad en la ficha: «23 years 7 months».",
         "«His body was recovered (#227) and was buried in Fairview Lawn Cemetery, Halifax, Nova Scotia, on 8 May 1912.»",
@@ -12838,7 +12837,8 @@
         "Joseph Dawson"
       ],
       "fecha": "2026-11-14T13:00",
-      "num": "S243"
+      "num": "S243",
+      "titulo_seo": "La tumba de «J. Dawson» en Halifax: Joseph Dawson, carbonero del Titanic que no era Jack"
     }
   ]
 }
