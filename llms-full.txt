@@ -2,6 +2,29 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
+## El videojuego que Atari enterró en el desierto
+
+Página: https://folio13.com/expedientes/el-videojuego-que-atari-enterro-en-el-desierto.html
+Temática: Mitos desmontados
+Lugar: Alamogordo, Nuevo México (Estados Unidos)
+Época: 1982-2014
+
+En dos mil catorce, unas excavadoras desenterraron videojuegos en pleno desierto.
+
+### Curiosidades
+
+- **Fuente que no es Wikipedia (Centre for Computing History, museo de Cambridge que recibió piezas de la excavación):** «New Mexico landfill site is excavated for Atari materials» (26/4/2014): Atari tiró material «in September 1983» cerca de Alamogordo; se fabricaron «5 million» cartuchos de E.T. y se vendieron «1.5 million»; se sospechaba que había «over 700,000 game cartridges»; se recuperaron «only around 1000»; había «game cartridges other than E.T., as well as peripherals»
+- **Segunda fuente, académica:** Ruggill, McAllister, Kocurek y Guins, «Dig? Dug!: Field Notes from the Microsoft-sponsored Excavation of the Alamogordo, NM Atari Dump Site», *Reconstruction* 15, n.º 3 (2015), escrito por arqueólogos del equipo: el material fue del almacén de El Paso (Texas) a Alamogordo en septiembre de 1983; la excavación fue en abril de 2014 y abierta al público
+- Wikipedia:
+- El *Alamogordo Daily News* habló de «between 10 and 20» camiones; otras cifras: 10, unos 20 o 14.
+- Hormigón encima desde el 29/9/1983.
+
+### Fuentes
+
+- [1] Centre for Computing History (2014): https://www.computinghistory.org.uk/det/57264/New-Mexico-landfill-site-is-excavated-for-Atari-materials/
+- [2] Ruggill, McAllister, Kocurek y Guins, *Reconstruction* (2015): https://digitalcommons.odu.edu/reconstruction/vol15/iss3/10
+- [3] Wikipedia (inglés), «Atari video game burial»: https://en.wikipedia.org/wiki/Atari_video_game_burial
+
 ## El teclado QWERTY de Christopher Sholes (1868-1874): por qué las letras no van en orden
 
 Página: https://folio13.com/expedientes/teclado-qwerty-por-que-no-va-en-orden.html
