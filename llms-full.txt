@@ -2,18 +2,17 @@
 
 > Parece inventado. Está documentado. Fuente: https://folio13.com/ · Cada caso enlaza a su página, que es la que conviene citar.
 
-## Teclado qwerty: ¿por qué no va en orden?
+## El teclado QWERTY de Christopher Sholes (1868-1874): por qué las letras no van en orden
 
 Página: https://folio13.com/expedientes/teclado-qwerty-por-que-no-va-en-orden.html
 Temática: Mitos desmontados
 Lugar: Milwaukee e Ilion (Estados Unidos)
 Época: 1868-1891
 
-Dicen que el teclado se desordenó para no atascarse.
+Christopher Sholes, impresor de Milwaukee, patentó en 1868 una máquina de escribir con teclado alfabético. Por qué acabó en QWERTY se discute: ¿para que no chocaran las varillas o por los telegrafistas? Remington la vendió desde 1874.
 
 ### Curiosidades
 
-- **Fuente que no es Wikipedia (Smithsonian):** Jimmy Stamp, «Fact or Fiction? The Legend of the QWERTY Keyboard» (3/5/2013), puesto al día por Ellen Wexler el 25/2/2025 como «The QWERTY Keyboard Will Never Die. Where Did the 150-Year-Old Design Come From?», *Smithsonian Magazine*
 - «The invention's true origin story has long been the subject of debate. Some argue it was created to prevent typewriter jams, while others insist it's linked to the telegraph.»
 - Sholes, «a politician, printer, newspaper man and amateur inventor in Milwaukee»; patentó la máquina con otros en 1868; «Their keyboard resembled a piano and was built with an alphabetical arrangement».
 - La teoría de los atascos: separar pares de letras frecuentes para que las varillas («type bars») no se atascaran. El artículo señala que la «e» y la «r» están juntas aunque «er» es muy frecuente en inglés.

@@ -6125,7 +6125,7 @@
       "titulo_articulo": "Enriqueta Martí, la «vampira del Raval»: lo que dicen los documentos frente a un siglo de leyenda"
     },
     {
-      "youtube": "MmnD0RQj_aw",
+      "youtube": "__YNSUTYZGY",
       "tipo": "short",
       "titulo": "Así INVENTÓ la prensa a la «vampira» de Barcelona (1912)",
       "epoca": "1912-1913",
@@ -6385,7 +6385,7 @@
       "titulo_articulo": "Vincenzo Peruggia y la Mona Lisa: la bata imposible, el patriota que quería vender el cuadro y las seis copias que nadie ha visto"
     },
     {
-      "youtube": "VBYZQNwXxqU",
+      "youtube": "-j73U_ZkEkI",
       "tipo": "short",
       "titulo": "Miles de personas hicieron COLA para ver un HUECO vacío: la Mona Lisa (1911)",
       "epoca": "1911-1913",
@@ -12847,9 +12847,8 @@
       "epoca": "1868-1891",
       "lugar": "Milwaukee e Ilion (Estados Unidos)",
       "tematica": "mitos",
-      "resumen": "Dicen que el teclado se desordenó para no atascarse.",
+      "resumen": "Christopher Sholes, impresor de Milwaukee, patentó en 1868 una máquina de escribir con teclado alfabético. Por qué acabó en QWERTY se discute: ¿para que no chocaran las varillas o por los telegrafistas? Remington la vendió desde 1874.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (Smithsonian):** Jimmy Stamp, «Fact or Fiction? The Legend of the QWERTY Keyboard» (3/5/2013), puesto al día por Ellen Wexler el 25/2/2025 como «The QWERTY Keyboard Will Never Die. Where Did the 150-Year-Old Design Come From?», *Smithsonian Magazine*",
         "«The invention's true origin story has long been the subject of debate. Some argue it was created to prevent typewriter jams, while others insist it's linked to the telegraph.»",
         "Sholes, «a politician, printer, newspaper man and amateur inventor in Milwaukee»; patentó la máquina con otros en 1868; «Their keyboard resembled a piano and was built with an alphabetical arrangement».",
         "La teoría de los atascos: separar pares de letras frecuentes para que las varillas («type bars») no se atascaran. El artículo señala que la «e» y la «r» están juntas aunque «er» es muy frecuente en inglés.",
@@ -12875,7 +12874,8 @@
         "Máquina de escribir"
       ],
       "fecha": "2026-11-15T13:00",
-      "num": "S240"
+      "num": "S240",
+      "titulo_seo": "El teclado QWERTY de Christopher Sholes (1868-1874): por qué las letras no van en orden"
     }
   ]
 }
