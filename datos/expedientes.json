@@ -157,7 +157,7 @@
       "titulo_articulo": "1518: el verano en que Estrasburgo no podía dejar de bailar"
     },
     {
-      "youtube": "VzDGAwrxWM4",
+      "youtube": "bq6BC6Le0zI",
       "tipo": "short",
       "titulo": "¿Edison inventó la bombilla? La verdad",
       "epoca": "1879",
@@ -4994,7 +4994,7 @@
       "titulo_articulo": "Jack el Destripador: Whitechapel, 1888, y el enigma que nadie ha resuelto"
     },
     {
-      "youtube": "-97TNfGrCU8",
+      "youtube": "3VYdkPEfFzI",
       "tipo": "video",
       "titulo": "La película PERDIDA más buscada del cine: London After Midnight (1927) | Cine maldito nº 1",
       "epoca": "1927-2017",
@@ -8123,7 +8123,7 @@
       "titulo_seo": "Dolores Vázquez y el caso de Mijas: condenada siendo inocente y la prueba de ADN"
     },
     {
-      "youtube": "HPPyfHnTEZ0",
+      "youtube": "TYcoWD1uWeQ",
       "tipo": "short",
       "titulo": "Una COLILLA demostró que era INOCENTE: el caso de Mijas",
       "epoca": "1999-2006",
@@ -8400,7 +8400,7 @@
       "titulo_seo": "Top 10 monstruos reales de la historia: de Mary Ann Cotton al asesino del Zodiaco"
     },
     {
-      "youtube": "HvlmXfz6OIo",
+      "youtube": "Qg9KwYFTi_g",
       "tipo": "short",
       "titulo": "Este mensaje tardó 51 AÑOS en descifrarse… y no decía su NOMBRE",
       "epoca": "1969-2020",
@@ -12997,6 +12997,39 @@
       ],
       "fecha": "2026-11-18T17:00",
       "num": "S245"
+    },
+    {
+      "youtube": "6sEDgKx7HSI",
+      "tipo": "short",
+      "titulo": "POLYBIUS: la máquina que nadie ha encontrado",
+      "epoca": "1981 (la leyenda) - 1998-2000 (primera mención)",
+      "lugar": "Portland, Oregón (Estados Unidos)",
+      "tematica": "paranormal",
+      "resumen": "Una máquina recreativa que daba pesadillas. Y nadie la ha encontrado.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Skeptoid, Brian Dunning, episodio 362, «Polybius: Video Game of Death», 14/5/2013):**",
+        "La leyenda: una máquina en uno o dos salones de Portland (Oregón) en 1981; los jugadores tenían náuseas, dolor de cabeza y pesadillas; unos hombres de traje negro venían a descargar sus datos; luego las máquinas desaparecieron.",
+        "Primera mención conocida: una ficha anónima en Coinop.org fechada el 3/8/1998 (puede que se hiciera el 6/2/2000). Con todos los datos «desconocidos». La revista *Electronic Games* (1981-1984) nunca la nombró.",
+        "Hechos reales: el 29/11/1981, en un mismo salón de Portland, un chico dejó una partida de más de 28 horas con dolor de estómago y otro tuvo una migraña jugando y se desmayó. Unos diez días después, agentes locales, estatales y federales (FBI) registraron salones por máquinas trucadas para apuestas.",
+        "Conclusión: Polybius nunca existió; la leyenda salió de hechos reales."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Skeptoid #362, «Polybius: Video Game of Death» (2013)",
+          "url": "https://skeptoid.com/episodes/4362"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Polybius (urban legend)»",
+          "url": "https://en.wikipedia.org/wiki/Polybius_(urban_legend)"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Leyendas urbanas",
+        "Máquinas recreativas"
+      ],
+      "fecha": "2026-11-19T13:00",
+      "num": "S246"
     }
   ]
 }
