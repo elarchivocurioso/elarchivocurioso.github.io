@@ -13030,6 +13030,39 @@
       "fecha": "2026-11-19T13:00",
       "num": "S246",
       "titulo_seo": "Polybius, la recreativa que nunca existió: la leyenda de Portland (1981) y su origen real"
+    },
+    {
+      "youtube": "rPAMX1Tuotk",
+      "tipo": "short",
+      "titulo": "LA GRAN EVASIÓN: lo que la película no contó",
+      "epoca": "1943-1944 (la película, 1963)",
+      "lugar": "Stalag Luft III, Sagan (hoy Żagań, Polonia)",
+      "tematica": "cine",
+      "resumen": "La fuga de La gran evasión fue real. La moto, no.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (PBS, NOVA, «The Three That Got Away», Alan Burgess, 2004):**",
+        "La noche del 24 al 25 de marzo de 1944, 76 prisioneros aliados salieron de Stalag Luft III (Sagan, a unos 160 km al sureste de Berlín) por el túnel «Harry».",
+        "Harry iba a unos 30 pies (9 metros) bajo tierra y medía más de 300 pies (unos 100 metros).",
+        "Casi todos fueron capturados enseguida; Hitler mandó fusilar a 50 de ellos.",
+        "Solo tres llegaron a la libertad: el holandés Bram van der Stok y los noruegos Per Bergsland y Jens Müller, todos de la RAF."
+      ],
+      "fuentes": [
+        {
+          "titulo": "PBS NOVA, «The Three That Got Away» (2004)",
+          "url": "https://www.pbs.org/wgbh/nova/greatescape/three.html"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Stalag Luft III»",
+          "url": "https://en.wikipedia.org/wiki/Stalag_Luft_III"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Stalag Luft III",
+        "Segunda Guerra Mundial"
+      ],
+      "fecha": "2026-11-20T13:00",
+      "num": "S247"
     }
   ]
 }

@@ -19,6 +19,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 
 ## Folios
 
+- [La gran evasión: lo que la película no contó](https://folio13.com/expedientes/la-gran-evasion-lo-que-la-pelicula-no-conto.html) (Stalag Luft III, Sagan (hoy Żagań, Polonia), 1943-1944 (la película, 1963)) · Cine maldito y perdido: La fuga de La gran evasión fue real. La moto, no.
 - [Polybius, la recreativa que nunca existió: la leyenda de Portland (1981) y su origen real](https://folio13.com/expedientes/polybius-la-maquina-que-nadie-ha-encontrado.html) (Portland, Oregón (Estados Unidos), 1981 (la leyenda) - 1998-2000 (primera mención)) · Paranormal y leyendas: Polybius, la máquina recreativa de Portland (1981) que daba pesadillas, no aparece en ninguna fuente de la época: su primera mención es de 1998-2000. La leyenda salió de hechos reales de noviembre de 1981.
 - [El aligátor de una alcantarilla de Harlem (1935): la noticia real del New York Times](https://folio13.com/expedientes/sacaron-un-cocodrilo-de-una-alcantarilla.html) (East Harlem, calle 123 Este, junto al río Harlem (Nueva York, Estados Unidos), 1935) · Mitos desmontados: El 9 de febrero de 1935, unos chicos de East Harlem sacaron con una cuerda un aligátor de unos 2,3 metros de una alcantarilla de la calle 123 Este, en Nueva York. Lo contó The New York Times al día siguiente.
 - [Por qué no se cae la Torre de Pisa: la tierra que le quitaron tras cerrarla en 1990](https://folio13.com/expedientes/torre-de-pisa-por-que-no-se-cae.html) (Pisa (Italia), plaza del Duomo, 1173-2008) · Desastres y epidemias: La Torre de Pisa se empezó en 1173 y se inclinó por el suelo blando. En 1990 la cerraron porque podía caerse; le sacaron tierra del lado contrario y se enderezó 46 centímetros.
@@ -144,6 +145,7 @@ Folio 13 (antes El Archivo Curioso) es una web en español de historias reales q
 - [Mitos de la historia](https://folio13.com/temas/mitos-de-la-historia.html)
 - [Nacimiento del cine](https://folio13.com/temas/nacimiento-del-cine.html)
 - [Primera Guerra Mundial](https://folio13.com/temas/primera-guerra-mundial.html)
+- [Segunda Guerra Mundial](https://folio13.com/temas/segunda-guerra-mundial.html)
 - [Siglo ](https://folio13.com/temas/siglo.html)
 - [Siglo XIX](https://folio13.com/temas/siglo-xix.html)
 - [Siglo XV](https://folio13.com/temas/siglo-xv.html)
