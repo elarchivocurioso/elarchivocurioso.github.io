@@ -13063,6 +13063,43 @@
       "fecha": "2026-11-20T13:00",
       "num": "S247",
       "titulo_seo": "La gran evasión real: el túnel Harry de Stalag Luft III (1944) y lo que cambió la película"
+    },
+    {
+      "youtube": "247pzRsaNNM",
+      "tipo": "short",
+      "titulo": "El Ratoncito Pérez tiene casa en Madrid",
+      "epoca": "1894 (el cuento) - 2003 (la placa)",
+      "lugar": "calle del Arenal, 8, Madrid (España)",
+      "tematica": "mitos",
+      "resumen": "El Ratoncito Pérez tiene casa. Y está en el centro de Madrid.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Time Out Madrid, Llorenç Julià Ruiz, 20/8/2026):** el padre jesuita Luis Coloma escribió el cuento «allá por el año 1894», por encargo de la reina regente María Cristina, para Alfonso XIII, que tenía «apenas ocho años» y acababa de perder un diente. El ratón vivía en una caja de galletas de la confitería Prast, en la calle del Arenal, 8, junto a la Puerta del Sol. Hay una placa y una Casita-Museo",
+        "**esMadrid (web de turismo del Ayuntamiento):** Pérez «nació en el siglo XIX de la mano del padre Luis Coloma», para Alfonso XIII, que perdió un diente a los 8 años; vivía «en una caja de galletas»",
+        "Wikipedia (inglés), «Ratoncito Pérez»:",
+        "Cuento de 1894; Buby era el apodo que la reina daba a Alfonso XIII.",
+        "Placa del Ayuntamiento en 2003 en Arenal, 8: «the first fictional character honored with a plaque by the City Council»."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Time Out Madrid (2026)",
+          "url": "https://www.timeout.es/madrid/es/noticias/dia-del-raton-perez-esta-la-historia-del-entranable-personaje-que-tiene-hasta-su-propio-museo-en-madrid-082026"
+        },
+        {
+          "titulo": "esMadrid",
+          "url": "https://www.esmadrid.com/node/69371"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Ratoncito Pérez»",
+          "url": "https://en.wikipedia.org/wiki/Ratoncito_P%C3%A9rez"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Ratón Pérez",
+        "Padre Coloma"
+      ],
+      "fecha": "2026-11-21T13:00",
+      "num": "S248"
     }
   ]
 }
