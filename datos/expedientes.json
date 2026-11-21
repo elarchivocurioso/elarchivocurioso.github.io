@@ -1370,7 +1370,7 @@
       "titulo_articulo": "Phineas Gage: el hombre de la barra de hierro y la leyenda que lo persiguió"
     },
     {
-      "youtube": "xmxdzH-pZSU",
+      "youtube": "fRtDqkMH4do",
       "tipo": "short",
       "titulo": "Una barra de hierro le atravesó la cabeza… y a los minutos estaba HABLANDO",
       "epoca": "1848",
@@ -2115,7 +2115,7 @@
       "titulo_articulo": "Victor Lustig, el «conde» que vendió la Torre Eiffel a un chatarrero"
     },
     {
-      "youtube": "fD5IBQsYNtY",
+      "youtube": "x7zob-G5syQ",
       "tipo": "short",
       "titulo": "El hombre que «vendió» la TORRE EIFFEL (y su víctima no lo denunció)",
       "epoca": "1925",
@@ -2866,7 +2866,7 @@
       "titulo_articulo": "Nosferatu: la película que un tribunal condenó a desaparecer"
     },
     {
-      "youtube": "XtHCT32B-Fw",
+      "youtube": "fvciEHDrIE0",
       "tipo": "short",
       "titulo": "La película de vampiros que un JUEZ ordenó DESTRUIR: Nosferatu (1922)",
       "epoca": "1922-1925",
@@ -5476,7 +5476,7 @@
       "titulo_articulo": "El pastor de Cuenca que volvió vivo: una carta, una boda y una sentencia que se vino abajo"
     },
     {
-      "youtube": "_wamBwii4KI",
+      "youtube": "N5XnmNEnCms",
       "tipo": "video",
       "titulo": "El tren que hizo HUIR al público: la VERDAD detrás del mito de los Lumière (1895)",
       "epoca": "1895-1896",
@@ -13038,9 +13038,8 @@
       "epoca": "1943-1944 (la película, 1963)",
       "lugar": "Stalag Luft III, Sagan (hoy Żagań, Polonia)",
       "tematica": "cine",
-      "resumen": "La fuga de La gran evasión fue real. La moto, no.",
+      "resumen": "En marzo de 1944, 76 aviadores aliados salieron de Stalag Luft III por el túnel Harry. Solo tres llegaron a casa, y en la fuga real no hubo ninguna moto.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (PBS, NOVA, «The Three That Got Away», Alan Burgess, 2004):**",
         "La noche del 24 al 25 de marzo de 1944, 76 prisioneros aliados salieron de Stalag Luft III (Sagan, a unos 160 km al sureste de Berlín) por el túnel «Harry».",
         "Harry iba a unos 30 pies (9 metros) bajo tierra y medía más de 300 pies (unos 100 metros).",
         "Casi todos fueron capturados enseguida; Hitler mandó fusilar a 50 de ellos.",
@@ -13062,7 +13061,8 @@
         "Segunda Guerra Mundial"
       ],
       "fecha": "2026-11-20T13:00",
-      "num": "S247"
+      "num": "S247",
+      "titulo_seo": "La gran evasión real: el túnel Harry de Stalag Luft III (1944) y lo que cambió la película"
     }
   ]
 }
