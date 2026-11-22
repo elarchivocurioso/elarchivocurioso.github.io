@@ -13101,6 +13101,39 @@
       "fecha": "2026-11-21T13:00",
       "num": "S248",
       "titulo_seo": "La casa del Ratoncito Pérez en Madrid: el cuento del padre Coloma para Alfonso XIII (1894)"
+    },
+    {
+      "youtube": "gmuyE-23u8Y",
+      "tipo": "short",
+      "titulo": "BEN DROWNED: el videojuego «encantado»",
+      "epoca": "septiembre de 2010",
+      "lugar": "internet (un foro de 4chan)",
+      "tematica": "paranormal",
+      "resumen": "Un chico compró un videojuego usado. Y dentro había un fantasma.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Game Informer, Phil Kollar, «The Creepiest Majora's Mask Story You'll Ever Read», 13/9/2010):**",
+        "La historia salió en «some forums» y la recogió el blog Creepy Pasta, que la atribuye a «Jadusable».",
+        "El narrador compra un cartucho usado de *Majora's Mask* en una venta de garaje para su Nintendo 64.",
+        "El vendedor, un anciano, le dice «Goodbye then!», pero él cree que dijo «Goodbye Ben».",
+        "En el juego hay una sola partida guardada, llamada «BEN»."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Game Informer (2010)",
+          "url": "https://www.gameinformer.com/b/news/archive/2010/09/13/the-creepiest-majora-s-mask-story-you-ll-ever-read.aspx"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Ben Drowned»",
+          "url": "https://en.wikipedia.org/wiki/Ben_Drowned"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XXI",
+        "Creepypasta",
+        "Leyendas de internet"
+      ],
+      "fecha": "2026-11-22T13:00",
+      "num": "S249"
     }
   ]
 }
