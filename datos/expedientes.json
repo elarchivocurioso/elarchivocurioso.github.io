@@ -5975,7 +5975,7 @@
       "titulo_articulo": "Benjamin Christensen, el director que se reservó el papel de Satanás"
     },
     {
-      "youtube": "Hf5jIfONaW8",
+      "youtube": "ZWjFvvjk_mc",
       "tipo": "video",
       "titulo": "La «VAMPIRA» de Barcelona: lo que la prensa inventó sobre Enriqueta Martí (1912)",
       "epoca": "1912-1913",
@@ -13134,6 +13134,47 @@
       ],
       "fecha": "2026-11-22T13:00",
       "num": "S249"
+    },
+    {
+      "youtube": "a0yNtXW64TI",
+      "tipo": "short",
+      "titulo": "MOBY DICK: la ballena que hundió un barco de verdad",
+      "epoca": "noviembre de 1820",
+      "lugar": "Pacífico sur",
+      "tematica": "desastres",
+      "mapa": [
+        41.2828,
+        -70.0994
+      ],
+      "resumen": "Pacífico, mil ochocientos veinte. Una ballena embiste un barco. Y vuelve.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 22/11/2026, 22:00 (S174, aprobada por la usuaria).",
+        "El Essex era un ballenero de Nantucket. El 20 de noviembre de 1820, en el Pacífico sur, a unas 2.000 millas náuticas (3.700 km) de la costa de Sudamérica, lo embistió un cachalote de unos 26 m («reportedly around 85 feet»), según el relato del primer oficial, Owen Chase",
+        "La ballena embistió, se sumergió bajo el barco y volvió. Chase escribe que «again struck the ship» y que «crushed the bow» (le hundió la proa)",
+        "Quedaron 20 hombres en tres botes balleneros",
+        "El capitán Pollard rechazó ir a las Marquesas porque temía a los caníbales («was afraid they would encounter cannibals there»)"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Essex (whaleship)»",
+          "url": "https://en.wikipedia.org/wiki/Essex_(whaleship)"
+        },
+        {
+          "titulo": "Wikipedia, «Moby-Dick» (apartado de fuentes: el Essex y Mocha Dick)",
+          "url": "https://en.wikipedia.org/wiki/Moby-Dick"
+        },
+        {
+          "titulo": "Nantucket Historical Association, «Moby-Dick and Nantucket's Moby-Dick: The Attack on the Essex»",
+          "url": "https://nha.org/research/nantucket-history/history-topics/moby-dick-and-nantuckets-moby-dick-the-attack-on-the-essex/"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Ballenero Essex",
+        "Herman Melville"
+      ],
+      "fecha": "2026-11-22T22:00",
+      "num": "S174"
     }
   ]
 }
