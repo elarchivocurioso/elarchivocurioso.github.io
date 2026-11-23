@@ -6241,7 +6241,7 @@
       "titulo_seo": "Enriqueta Martí: así inventó la prensa de 1912 a la «vampira» de Barcelona"
     },
     {
-      "youtube": "oWEFaGi-blo",
+      "youtube": "EjVITkvMXVo",
       "tipo": "video",
       "titulo": "El LADRÓN que hizo FAMOSA a la Mona Lisa: la verdad del hurto del Louvre (1911)",
       "epoca": "1911-1914",
@@ -13208,6 +13208,47 @@
       ],
       "fecha": "2026-11-23T13:00",
       "num": "S250"
+    },
+    {
+      "youtube": "wumxdqmuGHY",
+      "tipo": "short",
+      "titulo": "ROBINSON CRUSOE: pidió que lo dejaran solo",
+      "epoca": "1704-1709",
+      "lugar": "archipiélago Juan Fernández (Chile)",
+      "tematica": "mitos",
+      "mapa": [
+        -33.64,
+        -78.85
+      ],
+      "resumen": "Chile tiene una isla con el nombre de un personaje de novela.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 23/11/2026, 22:00 (S175, aprobada por la usuaria).",
+        "Alexander Selkirk nació en Lower Largo (Fife, Escocia) en 1676",
+        "Navegaba en el Cinque Ports, del capitán Thomas Stradling. En septiembre de 1704 se quedó en Más a Tierra porque dudaba de que el barco aguantara: «He declared that he would rather stay on Juan Fernández than continue in a dangerously leaky ship»",
+        "El Cinque Ports se hundió después frente a la costa de lo que hoy es Colombia; los supervivientes acabaron presos de los españoles en Lima",
+        "Pasó en la isla cuatro años y cuatro meses (1704-1709). Lo rescataron el 2 de febrero de 1709 el Duke y el Duchess, de la expedición corsaria de Woodes Rogers, con William Dampier de piloto"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Alexander Selkirk»",
+          "url": "https://en.wikipedia.org/wiki/Alexander_Selkirk"
+        },
+        {
+          "titulo": "Wikipedia, «Robinson Crusoe Island»",
+          "url": "https://en.wikipedia.org/wiki/Robinson_Crusoe_Island"
+        },
+        {
+          "titulo": "Britannica, «Alexander Selkirk» (septiembre de 1704, «after a quarrel with his captain», en tierra «at his own request»)",
+          "url": "https://www.britannica.com/biography/Alexander-Selkirk"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XVIII",
+        "Alexander Selkirk",
+        "Náufragos"
+      ],
+      "fecha": "2026-11-23T22:00",
+      "num": "S175"
     }
   ]
 }
