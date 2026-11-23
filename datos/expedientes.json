@@ -13175,6 +13175,39 @@
       "fecha": "2026-11-22T22:00",
       "num": "S174",
       "titulo_seo": "El ballenero Essex (1820): el cachalote que hundió el barco e inspiró Moby Dick"
+    },
+    {
+      "youtube": "xf6-OGmsy0Q",
+      "tipo": "short",
+      "titulo": "CONTRA EL HIELO: la historia real de Mikkelsen",
+      "epoca": "1909-1912 (la película, 2022)",
+      "lugar": "isla Shannon, noreste de Groenlandia",
+      "tematica": "cine",
+      "resumen": "Volvieron tras meses en el hielo, y sus compañeros ya no estaban.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Store norske leksikon, la gran enciclopedia noruega, ficha «Ejnar Mikkelsen»):**",
+        "Expedición Alabama, 1909-1912.",
+        "En marzo de 1910, Mikkelsen e Iver P. Iversen (1884-1968) salieron en trineo hacia el norte; a la vuelta se quedaron sin comida y llegaron a duras penas a la isla Shannon en noviembre, tras unos 3.000 km.",
+        "La tripulación se había ido en un barco noruego; ellos dos «tilbrakte to år der» (pasaron allí dos años).",
+        "Los rescataron unos cazadores de focas noruegos en el *Sjøblomsten*."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Store norske leksikon, «Ejnar Mikkelsen»",
+          "url": "https://snl.no/Ejnar_Mikkelsen"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Ejnar Mikkelsen»",
+          "url": "https://en.wikipedia.org/wiki/Ejnar_Mikkelsen"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Ejnar Mikkelsen",
+        "Iver Iversen"
+      ],
+      "fecha": "2026-11-23T13:00",
+      "num": "S250"
     }
   ]
 }
