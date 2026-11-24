@@ -13183,9 +13183,8 @@
       "epoca": "1909-1912 (la película, 2022)",
       "lugar": "isla Shannon, noreste de Groenlandia",
       "tematica": "cine",
-      "resumen": "Volvieron tras meses en el hielo, y sus compañeros ya no estaban.",
+      "resumen": "En 1910 Ejnar Mikkelsen e Iver Iversen recorrieron unos 3.000 km en trineo por Groenlandia y, al volver, su tripulación se había ido: pasaron dos inviernos solos en la isla Shannon hasta su rescate en 1912.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (Store norske leksikon, la gran enciclopedia noruega, ficha «Ejnar Mikkelsen»):**",
         "Expedición Alabama, 1909-1912.",
         "En marzo de 1910, Mikkelsen e Iver P. Iversen (1884-1968) salieron en trineo hacia el norte; a la vuelta se quedaron sin comida y llegaron a duras penas a la isla Shannon en noviembre, tras unos 3.000 km.",
         "La tripulación se había ido en un barco noruego; ellos dos «tilbrakte to år der» (pasaron allí dos años).",
@@ -13207,7 +13206,8 @@
         "Iver Iversen"
       ],
       "fecha": "2026-11-23T13:00",
-      "num": "S250"
+      "num": "S250",
+      "titulo_seo": "Contra el hielo, la historia real: Mikkelsen e Iversen, solos en Groenlandia (1910-1912)"
     },
     {
       "youtube": "wumxdqmuGHY",
@@ -13220,9 +13220,8 @@
         -33.64,
         -78.85
       ],
-      "resumen": "Chile tiene una isla con el nombre de un personaje de novela.",
+      "resumen": "En 1704 el escocés Alexander Selkirk pidió que lo dejaran en la isla Más a Tierra porque no se fiaba de su barco y pasó allí cuatro años y cuatro meses. Hoy esa isla de Chile se llama Robinson Crusoe.",
       "curiosidades": [
-        "Fecha prevista de publicación: 23/11/2026, 22:00 (S175, aprobada por la usuaria).",
         "Alexander Selkirk nació en Lower Largo (Fife, Escocia) en 1676",
         "Navegaba en el Cinque Ports, del capitán Thomas Stradling. En septiembre de 1704 se quedó en Más a Tierra porque dudaba de que el barco aguantara: «He declared that he would rather stay on Juan Fernández than continue in a dangerously leaky ship»",
         "El Cinque Ports se hundió después frente a la costa de lo que hoy es Colombia; los supervivientes acabaron presos de los españoles en Lima",
@@ -13248,7 +13247,8 @@
         "Náufragos"
       ],
       "fecha": "2026-11-23T22:00",
-      "num": "S175"
+      "num": "S175",
+      "titulo_seo": "Alexander Selkirk: cuatro años solo en la isla Robinson Crusoe de Chile (1704-1709)"
     }
   ]
 }
