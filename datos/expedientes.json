@@ -13286,6 +13286,47 @@
       ],
       "fecha": "2026-11-24T13:00",
       "num": "S252"
+    },
+    {
+      "youtube": "y_zt0_W-yzQ",
+      "tipo": "short",
+      "titulo": "VUELTA AL MUNDO: ¿de verdad se podía en 80 días?",
+      "epoca": "noviembre de 1889 - enero de 1890",
+      "lugar": "Nueva York, Amiens y la vuelta al mundo",
+      "tematica": "mitos",
+      "mapa": [
+        49.892,
+        2.299
+      ],
+      "resumen": "La vuelta al mundo en ochenta días… se hizo en setenta y dos.",
+      "curiosidades": [
+        "Fecha prevista de publicación: 24/11/2026, 22:00 (S176, aprobada por la usuaria).",
+        "Nellie Bly (Elizabeth Jane Cochran, 1864) trabajaba para el New York World, de Joseph Pulitzer",
+        "Salió de Hoboken (Nueva Jersey) el 14 de noviembre de 1889 y terminó en Jersey City el 25 de enero de 1890. Tardó 72 días, 6 horas y 11 minutos",
+        "Solo se llevó el vestido que llevaba puesto, un abrigo resistente, varias mudas de ropa interior y una bolsa pequeña de aseo; el dinero, en una bolsa colgada al cuello",
+        "Conoció a Julio Verne en Amiens (Francia)"
+      ],
+      "fuentes": [
+        {
+          "titulo": "Wikipedia, «Around the World in Seventy-Two Days»",
+          "url": "https://en.wikipedia.org/wiki/Around_the_World_in_Seventy-Two_Days"
+        },
+        {
+          "titulo": "Wikipedia, «Nellie Bly»",
+          "url": "https://en.wikipedia.org/wiki/Nellie_Bly"
+        },
+        {
+          "titulo": "Nellie Bly, «Around the World in Seventy-Two Days» (1890), texto completo",
+          "url": "https://digital.library.upenn.edu/women/bly/world/world.html"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XIX",
+        "Nellie Bly",
+        "Julio Verne"
+      ],
+      "fecha": "2026-11-24T22:00",
+      "num": "S176"
     }
   ]
 }
