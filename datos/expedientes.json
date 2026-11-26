@@ -13360,6 +13360,43 @@
       "fecha": "2026-11-25T13:00",
       "num": "S251",
       "titulo_seo": "Los ataques de tiburón de Nueva Jersey en 1916 y la novela Tiburón de Peter Benchley"
+    },
+    {
+      "youtube": "O0x6WEQJDZc",
+      "tipo": "short",
+      "titulo": "LA CHICA DE LA CURVA: ¿de dónde viene?",
+      "epoca": "hacia 1930 (Estados Unidos) - hoy; siglo XIX (los «jinetes fantasma»)",
+      "lugar": "carreteras de España, Estados Unidos y medio mundo",
+      "tematica": "mitos",
+      "resumen": "Una chica pide que la lleves. En la curva, desaparece.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Atlas Obscura, Mark Hay, «The Vanishing Hitchhiker Legend Is an Ancient Tale That Keeps Evolving», 10/10/2024):**",
+        "Historias de «autoestopistas fantasma» corrían en Estados Unidos desde los años 30.",
+        "Dos estudiantes de Berkeley, Richard K. Beardsley y Rosalie Hankey, buscaron el accidente que podía haber inspirado la suya, sin encontrarlo, y reunieron «nearly 80» versiones de todo el país en dos meses.",
+        "Lo publicaron en 1942 en el primer número de *California Folklore Quarterly*.",
+        "En 1944, el folclorista Louis C. Jones lo relacionó con los «ghost riders» europeos del siglo XIX: mujeres fantasma que se subían al caballo de los hombres y desaparecían al llegar."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Atlas Obscura (2024)",
+          "url": "https://www.atlasobscura.com/articles/vanishing-hitchhiker-urban-legend"
+        },
+        {
+          "titulo": "Wikipedia (español), «La chica de la curva»",
+          "url": "https://es.wikipedia.org/wiki/La_chica_de_la_curva"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Vanishing hitchhiker»",
+          "url": "https://en.wikipedia.org/wiki/Vanishing_hitchhiker"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Autoestopista fantasma",
+        "Leyendas urbanas"
+      ],
+      "fecha": "2026-11-26T13:00",
+      "num": "S253"
     }
   ]
 }
