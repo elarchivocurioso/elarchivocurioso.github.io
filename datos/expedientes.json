@@ -13397,6 +13397,39 @@
       "fecha": "2026-11-26T13:00",
       "num": "S253",
       "titulo_seo": "La chica de la curva: la autoestopista fantasma, estudiada ya en 1942, y su origen"
+    },
+    {
+      "youtube": "Ex1uU8B1-w0",
+      "tipo": "short",
+      "titulo": "EL EXORCISTA: el caso real de 1949",
+      "epoca": "1949 (la noticia) - 1971 (la novela) - 1973 (la película)",
+      "lugar": "Washington y alrededores (Estados Unidos)",
+      "tematica": "cine",
+      "resumen": "El exorcista salió de un caso real. Pero no era una niña.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (Strange Magazine, Mark Opsasnick, «The Haunted Boy of Cottage City», 1999):**",
+        "Blatty, entonces estudiante de 20 años en Georgetown, leyó en *The Washington Post* del 20/8/1949 el artículo de Bill Brinkley «Priest Frees Mt. Rainier Boy Reported Held In Devil's Grip», sobre un chico de 14 años.",
+        "Escribió la novela entre 1969 y 1971 (salió en mayo de 1971) y cambió al chico de 14 por una niña de 12.",
+        "La película se estrenó el 26/12/1973.",
+        "El autor concluye que gran parte de la historia se apoya en rumores y relatos de oídas, y que el chico no vivía en Mount Rainier sino en Cottage City."
+      ],
+      "fuentes": [
+        {
+          "titulo": "Strange Magazine, Mark Opsasnick (1999)",
+          "url": "http://www.strangemag.com/exorcistpage1.html"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Exorcism of Roland Doe»",
+          "url": "https://en.wikipedia.org/wiki/Exorcism_of_Roland_Doe"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Caso 1949",
+        "William Peter Blatty"
+      ],
+      "fecha": "2026-11-27T17:00",
+      "num": "S255"
     }
   ]
 }
