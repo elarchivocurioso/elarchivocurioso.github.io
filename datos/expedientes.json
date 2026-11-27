@@ -13368,9 +13368,8 @@
       "epoca": "hacia 1930 (Estados Unidos) - hoy; siglo XIX (los «jinetes fantasma»)",
       "lugar": "carreteras de España, Estados Unidos y medio mundo",
       "tematica": "mitos",
-      "resumen": "Una chica pide que la lleves. En la curva, desaparece.",
+      "resumen": "La chica de la curva es la versión española de la autoestopista fantasma, una leyenda que en Estados Unidos ya se contaba en los años 30. En 1942 dos estudiantes de Berkeley reunieron 79 versiones y no encontraron el accidente que la habría inspirado.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (Atlas Obscura, Mark Hay, «The Vanishing Hitchhiker Legend Is an Ancient Tale That Keeps Evolving», 10/10/2024):**",
         "Historias de «autoestopistas fantasma» corrían en Estados Unidos desde los años 30.",
         "Dos estudiantes de Berkeley, Richard K. Beardsley y Rosalie Hankey, buscaron el accidente que podía haber inspirado la suya, sin encontrarlo, y reunieron «nearly 80» versiones de todo el país en dos meses.",
         "Lo publicaron en 1942 en el primer número de *California Folklore Quarterly*.",
@@ -13396,7 +13395,8 @@
         "Leyendas urbanas"
       ],
       "fecha": "2026-11-26T13:00",
-      "num": "S253"
+      "num": "S253",
+      "titulo_seo": "La chica de la curva: la autoestopista fantasma, estudiada ya en 1942, y su origen"
     }
   ]
 }
