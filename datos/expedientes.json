@@ -13430,6 +13430,39 @@
       "fecha": "2026-11-27T17:00",
       "num": "S255",
       "titulo_seo": "El caso real de El exorcista: la noticia de 1949 que leyó Blatty en Georgetown"
+    },
+    {
+      "youtube": "_4jNTs1eDWw",
+      "tipo": "short",
+      "titulo": "El casero que le dio nombre a Mario",
+      "epoca": "1981 (Nintendo alquila la nave) - 2015 (Miyamoto lo confirma)",
+      "lugar": "Tukwila, cerca de Seattle (Estados Unidos)",
+      "tematica": "mitos",
+      "resumen": "El Mario de los videojuegos se llama así por un casero.",
+      "curiosidades": [
+        "**Fuente que no es Wikipedia (NPR, Bill Chappell, «Mario Segale, Inspiration For Nintendo's Hero Plumber, Has Died», 2/11/2018, publicado también por KPBS):**",
+        "Segale, constructor y promotor inmobiliario de la zona de Seattle, nacido el 30/4/1934, murió a los 84 años; fue la inspiración del nombre de Mario.",
+        "Nintendo le alquilaba una nave; la historia de que irrumpió en las oficinas de Tukwila para reclamar el alquiler se presenta como «allegedly».",
+        "Miyamoto no tenía nombres claros para los personajes de *Donkey Kong*.",
+        "Casi nunca hablaba con la prensa; en 1993 bromeó en *The Seattle Times*: «You might say I'm still waiting for my royalty checks»."
+      ],
+      "fuentes": [
+        {
+          "titulo": "NPR / KPBS (2018)",
+          "url": "https://www.kpbs.org/news/2018/11/02/mario-segale-inspiration-for-nintendos-hero"
+        },
+        {
+          "titulo": "Wikipedia (inglés), «Mario Segale»",
+          "url": "https://en.wikipedia.org/wiki/Mario_Segale"
+        }
+      ],
+      "etiquetas": [
+        "Siglo XX",
+        "Mario",
+        "Nintendo"
+      ],
+      "fecha": "2026-11-28T17:00",
+      "num": "S254"
     }
   ]
 }
