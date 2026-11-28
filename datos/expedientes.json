@@ -13405,9 +13405,8 @@
       "epoca": "1949 (la noticia) - 1971 (la novela) - 1973 (la película)",
       "lugar": "Washington y alrededores (Estados Unidos)",
       "tematica": "cine",
-      "resumen": "El exorcista salió de un caso real. Pero no era una niña.",
+      "resumen": "El exorcista (novela de 1971, película de 1973) salió de una noticia de The Washington Post de 1949 que leyó William Peter Blatty, estudiante en Georgetown. Era un chico de 14 años, no una niña, y los investigadores no encontraron nada sobrenatural.",
       "curiosidades": [
-        "**Fuente que no es Wikipedia (Strange Magazine, Mark Opsasnick, «The Haunted Boy of Cottage City», 1999):**",
         "Blatty, entonces estudiante de 20 años en Georgetown, leyó en *The Washington Post* del 20/8/1949 el artículo de Bill Brinkley «Priest Frees Mt. Rainier Boy Reported Held In Devil's Grip», sobre un chico de 14 años.",
         "Escribió la novela entre 1969 y 1971 (salió en mayo de 1971) y cambió al chico de 14 por una niña de 12.",
         "La película se estrenó el 26/12/1973.",
@@ -13429,7 +13428,8 @@
         "William Peter Blatty"
       ],
       "fecha": "2026-11-27T17:00",
-      "num": "S255"
+      "num": "S255",
+      "titulo_seo": "El caso real de El exorcista: la noticia de 1949 que leyó Blatty en Georgetown"
     }
   ]
 }
